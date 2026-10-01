@@ -21,7 +21,7 @@ and an interactive globe, in English and German.
 - **Up to date:** the data comes from Wikidata and is checked for changes every week.
 - **Public domain** ([CC0 1.0](LICENSE)), free to use, share and adapt.
 
-## Screenshots
+## Screenshots (example with flag card)
 
 | Front | Back with full info | Night mode | Globe |
 |---|---|---|---|
