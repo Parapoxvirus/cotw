@@ -1,0 +1,32 @@
+id: '174'
+iso2: PE
+iso3: PER
+wikidata: Q419
+status: sovereign
+name:
+  en: Peru
+  de: Peru
+formal_name:
+  en: The Republic of Perú
+  de: Republik Peru
+capitals:
+- name:
+    en: Lima
+    de: Lima
+  role: capital
+  wikidata: Q2868
+  lat: -12.06
+  lon: -77.0375
+borders:
+- '026'
+- '031'
+- '044'
+- '048'
+- '064'
+regions:
+- Americas
+- Latin America and the Caribbean
+- South America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Peru
+  de: https://de.wikipedia.org/wiki/Peru

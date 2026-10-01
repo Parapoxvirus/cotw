@@ -1,0 +1,27 @@
+id: '188'
+iso2: KN
+iso3: KNA
+wikidata: Q763
+status: sovereign
+name:
+  en: Saint Kitts and Nevis
+  de: St. Kitts und Nevis
+formal_name:
+  en: Federation of Saint Christopher and Nevis
+  de: Föderation St. Kitts und Nevis
+capitals:
+- name:
+    en: Basseterre
+    de: Basseterre
+  role: capital
+  wikidata: Q41295
+  lat: 17.29833
+  lon: -62.73417
+borders: []
+regions:
+- Americas
+- Latin America and the Caribbean
+- Caribbean
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis
+  de: https://de.wikipedia.org/wiki/St._Kitts_und_Nevis

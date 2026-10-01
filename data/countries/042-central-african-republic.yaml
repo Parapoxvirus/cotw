@@ -1,0 +1,30 @@
+id: '042'
+iso2: CF
+iso3: CAF
+wikidata: Q929
+status: sovereign
+name:
+  en: Central African Republic, The
+  de: Zentralafrikanische Republik
+capitals:
+- name:
+    en: Bangui
+    de: Bangui
+  role: capital
+  wikidata: Q3832
+  lat: 4.37325
+  lon: 18.56283
+borders:
+- '039'
+- '043'
+- '050'
+- '051'
+- '210'
+- '213'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Middle Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Central_African_Republic
+  de: https://de.wikipedia.org/wiki/Zentralafrikanische_Republik

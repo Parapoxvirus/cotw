@@ -1,0 +1,30 @@
+id: '223'
+iso2: TG
+iso3: TGO
+wikidata: Q945
+status: sovereign
+name:
+  en: Togo
+  de: Togo
+formal_name:
+  en: The Togolese Republic
+  de: Republik Togo
+capitals:
+- name:
+    en: Lomé
+    de: Lomé
+  role: capital
+  wikidata: Q3792
+  lat: 6.13
+  lon: 1.21583
+borders:
+- '023'
+- '035'
+- '084'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Western Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Togo
+  de: https://de.wikipedia.org/wiki/Togo

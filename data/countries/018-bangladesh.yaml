@@ -1,0 +1,28 @@
+id: '018'
+iso2: BD
+iso3: BGD
+wikidata: Q902
+status: sovereign
+name:
+  en: Bangladesh
+  de: Bangladesch
+formal_name:
+  en: The People's Republic of Bangladesh
+  de: Volksrepublik Bangladesch
+capitals:
+- name:
+    en: Dhaka
+    de: Dhaka
+  role: capital
+  wikidata: Q1354
+  lat: 23.72889
+  lon: 90.39444
+borders:
+- '103'
+- '151'
+regions:
+- Asia
+- Southern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Bangladesh
+  de: https://de.wikipedia.org/wiki/Bangladesch

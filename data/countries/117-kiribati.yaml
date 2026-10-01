@@ -1,0 +1,26 @@
+id: '117'
+iso2: KI
+iso3: KIR
+wikidata: Q710
+status: sovereign
+name:
+  en: Kiribati
+  de: Kiribati
+formal_name:
+  en: The Republic of Kiribati
+  de: Republik Kiribati
+capitals:
+- name:
+    en: South Tarawa
+    de: South Tarawa
+  role: capital
+  wikidata: Q131233
+  lat: 1.33333
+  lon: 172.96667
+borders: []
+regions:
+- Oceania
+- Micronesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Kiribati
+  de: https://de.wikipedia.org/wiki/Kiribati

@@ -1,0 +1,31 @@
+id: '029'
+iso2: BW
+iso3: BWA
+wikidata: Q963
+status: sovereign
+name:
+  en: Botswana
+  de: Botswana / Botsuana
+formal_name:
+  en: The Republic of Botswana
+  de: Republik Botsuana
+capitals:
+- name:
+    en: Gaborone
+    de: Gaborone
+  role: capital
+  wikidata: Q3919
+  lat: -24.65694
+  lon: 25.90861
+borders:
+- '152'
+- '207'
+- '247'
+- '248'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Southern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Botswana
+  de: https://de.wikipedia.org/wiki/Botswana

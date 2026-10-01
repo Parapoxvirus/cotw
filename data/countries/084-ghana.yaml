@@ -1,0 +1,30 @@
+id: '084'
+iso2: GH
+iso3: GHA
+wikidata: Q117
+status: sovereign
+name:
+  en: Ghana
+  de: Ghana
+formal_name:
+  en: The Republic of Ghana
+  de: Republik Ghana
+capitals:
+- name:
+    en: Accra
+    de: Accra
+  role: capital
+  wikidata: Q3761
+  lat: 5.55602
+  lon: -0.1969
+borders:
+- '035'
+- '054'
+- '223'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Western Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Ghana
+  de: https://de.wikipedia.org/wiki/Ghana

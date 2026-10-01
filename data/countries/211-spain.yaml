@@ -1,0 +1,31 @@
+id: '211'
+iso2: ES
+iso3: ESP
+wikidata: Q29
+status: sovereign
+name:
+  en: Spain
+  de: Spanien
+formal_name:
+  en: The Kingdom of Spain
+  de: Königreich Spanien
+capitals:
+- name:
+    en: Madrid
+    de: Madrid
+  role: capital
+  wikidata: Q2807
+  lat: 40.41694
+  lon: -3.70333
+borders:
+- '006'
+- '076'
+- '085'
+- '149'
+- '178'
+regions:
+- Europe
+- Southern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Spain
+  de: https://de.wikipedia.org/wiki/Spanien

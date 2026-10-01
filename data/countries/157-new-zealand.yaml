@@ -1,0 +1,23 @@
+id: '157'
+iso2: NZ
+iso3: NZL
+wikidata: Q664
+status: sovereign
+name:
+  en: New Zealand
+  de: Neuseeland
+capitals:
+- name:
+    en: Wellington
+    de: Wellington
+  role: capital
+  wikidata: Q23661
+  lat: -41.28889
+  lon: 174.77722
+borders: []
+regions:
+- Oceania
+- Australia and New Zealand
+wikipedia:
+  en: https://en.wikipedia.org/wiki/New_Zealand
+  de: https://de.wikipedia.org/wiki/Neuseeland

@@ -1,0 +1,32 @@
+--- Africa ---
+COTW::Africa::Northern-Africa
+COTW::Africa::Sub-Saharan-Africa::Eastern-Africa
+COTW::Africa::Sub-Saharan-Africa::Middle-Africa
+COTW::Africa::Sub-Saharan-Africa::Southern-Africa
+COTW::Africa::Sub-Saharan-Africa::Western-Africa
+
+--- Americas ---
+COTW::Americas::Latin-America-and-the-Caribbean::Caribbean
+COTW::Americas::Latin-America-and-the-Caribbean::Central-America
+COTW::Americas::Latin-America-and-the-Caribbean::South-America
+COTW::Americas::Northern-America
+
+--- Asia ---
+COTW::Asia::Central-Asia
+COTW::Asia::Eastern-Asia
+COTW::Asia::South-eastern-Asia
+COTW::Asia::Southern-Asia
+COTW::Asia::Western-Asia
+
+--- Europe ---
+COTW::Europe::Eastern-Europe
+COTW::Europe::Northern-Europe
+COTW::Europe::Northern-Europe::Channel-Islands
+COTW::Europe::Southern-Europe
+COTW::Europe::Western-Europe
+
+--- Oceania ---
+COTW::Oceania::Australia-and-New-Zealand
+COTW::Oceania::Melanesia
+COTW::Oceania::Micronesia
+COTW::Oceania::Polynesia

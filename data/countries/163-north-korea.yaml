@@ -1,0 +1,29 @@
+id: '163'
+iso2: KP
+iso3: PRK
+wikidata: Q423
+status: sovereign
+name:
+  en: North Korea
+  de: Nordkorea
+formal_name:
+  en: The Democratic People's Republic of Korea
+  de: Demokratische Volksrepublik Korea
+capitals:
+- name:
+    en: Pyongyang
+    de: Pjöngjang
+  role: capital
+  wikidata: Q18808
+  lat: 39.01667
+  lon: 125.7475
+borders:
+- '045'
+- '184'
+- '209'
+regions:
+- Asia
+- Eastern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/North_Korea
+  de: https://de.wikipedia.org/wiki/Nordkorea

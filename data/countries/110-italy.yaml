@@ -1,0 +1,32 @@
+id: '110'
+iso2: IT
+iso3: ITA
+wikidata: Q38
+status: sovereign
+name:
+  en: Italy
+  de: Italien
+formal_name:
+  en: The Italian Republic
+  de: Italienische Republik
+capitals:
+- name:
+    en: Rome
+    de: Rom
+  role: capital
+  wikidata: Q220
+  lat: 41.89306
+  lon: 12.48278
+borders:
+- '014'
+- '076'
+- '098'
+- '194'
+- '204'
+- '217'
+regions:
+- Europe
+- Southern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Italy
+  de: https://de.wikipedia.org/wiki/Italien

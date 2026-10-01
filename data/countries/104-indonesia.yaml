@@ -1,0 +1,29 @@
+id: '104'
+iso2: ID
+iso3: IDN
+wikidata: Q252
+status: sovereign
+name:
+  en: Indonesia
+  de: Indonesien
+formal_name:
+  en: The Republic of Indonesia
+  de: Republik Indonesien
+capitals:
+- name:
+    en: Jakarta
+    de: Jakarta
+  role: capital
+  wikidata: Q3630
+  lat: -6.17528
+  lon: 106.82694
+borders:
+- '133'
+- '172'
+- '222'
+regions:
+- Asia
+- South-eastern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Indonesia
+  de: https://de.wikipedia.org/wiki/Indonesien

@@ -1,0 +1,26 @@
+id: '022'
+iso2: BZ
+iso3: BLZ
+wikidata: Q242
+status: sovereign
+name:
+  en: Belize
+  de: Belize
+capitals:
+- name:
+    en: Belmopan
+    de: Belmopan
+  role: capital
+  wikidata: Q3043
+  lat: 17.25
+  lon: -88.7675
+borders:
+- '091'
+- '142'
+regions:
+- Americas
+- Latin America and the Caribbean
+- Central America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Belize
+  de: https://de.wikipedia.org/wiki/Belize

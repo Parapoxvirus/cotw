@@ -1,0 +1,28 @@
+id: '079'
+iso2: TF
+iso3: ATF
+wikidata: Q129003
+status: dependency
+dependency_of: '076'
+name:
+  en: French Southern and Antarctic Lands
+  de: Französische Süd- und Antarktisgebiete
+capitals:
+- name:
+    en: Saint Pierre
+    de: Saint Pierre
+  label:
+    en: on Réunion
+    de: auf Réunion
+  role: capital
+  wikidata: Q249884
+  lat: -21.34194
+  lon: 55.47778
+borders: []
+regions:
+- Africa
+- Sub-Saharan Africa
+- Eastern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/French_Southern_and_Antarctic_Lands
+  de: https://de.wikipedia.org/wiki/Französische_Süd-_und_Antarktisgebiete

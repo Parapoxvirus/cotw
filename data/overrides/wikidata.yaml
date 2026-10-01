@@ -1,0 +1,13 @@
+# Manual decisions for the Wikidata link-up. Every entry carries a reason.
+#
+# country: iso2 → QID when P297 is ambiguous or points at the wrong item.
+country:
+  NL:
+    qid: Q55
+    reason: >-
+      P297 "NL" is on Q29999 (Kingdom of the Netherlands). The deck entry is the constituent
+      country Netherlands (Q55, Natural Earth uses the same); Aruba, Curaçao and Sint Maarten
+      are separate entries with dependency_of = NL.
+  CY:
+    qid: Q229
+    reason: P297 "CY" is on both Q229 (the country) and Q644636 (the island); the country it is.

@@ -1,0 +1,27 @@
+id: '037'
+iso2: CV
+iso3: CPV
+wikidata: Q1011
+status: sovereign
+name:
+  en: Cabo Verde
+  de: Kap Verde
+formal_name:
+  en: The Republic of Cabo Verde
+  de: Republik Cabo Verde
+capitals:
+- name:
+    en: Praia
+    de: Praia
+  role: capital
+  wikidata: Q3751
+  lat: 14.91772
+  lon: -23.50916
+borders: []
+regions:
+- Africa
+- Sub-Saharan Africa
+- Western Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Cape_Verde
+  de: https://de.wikipedia.org/wiki/Kap_Verde

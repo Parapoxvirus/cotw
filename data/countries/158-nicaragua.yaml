@@ -1,0 +1,29 @@
+id: '158'
+iso2: NI
+iso3: NIC
+wikidata: Q811
+status: sovereign
+name:
+  en: Nicaragua
+  de: Nicaragua
+formal_name:
+  en: The Republic of Nicaragua
+  de: Republik Nicaragua
+capitals:
+- name:
+    en: Managua
+    de: Managua
+  role: capital
+  wikidata: Q3274
+  lat: 12.15468
+  lon: -86.27372
+borders:
+- '053'
+- '099'
+regions:
+- Americas
+- Latin America and the Caribbean
+- Central America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Nicaragua
+  de: https://de.wikipedia.org/wiki/Nicaragua

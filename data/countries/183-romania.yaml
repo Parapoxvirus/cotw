@@ -1,0 +1,28 @@
+id: '183'
+iso2: RO
+iso3: ROU
+wikidata: Q218
+status: sovereign
+name:
+  en: Romania
+  de: Rumänien
+capitals:
+- name:
+    en: Bucharest
+    de: Bukarest
+  role: capital
+  wikidata: Q19660
+  lat: 44.41336
+  lon: 26.09778
+borders:
+- '034'
+- '101'
+- '144'
+- '198'
+- '233'
+regions:
+- Europe
+- Eastern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Romania
+  de: https://de.wikipedia.org/wiki/Rumänien

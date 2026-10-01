@@ -1,0 +1,27 @@
+id: '082'
+iso2: GE
+iso3: GEO
+wikidata: Q230
+status: sovereign
+name:
+  en: Georgia
+  de: Georgien
+capitals:
+- name:
+    en: Tbilisi
+    de: Tiflis
+  role: capital
+  wikidata: Q994
+  lat: 41.7225
+  lon: 44.7925
+borders:
+- '011'
+- '015'
+- '184'
+- '228'
+regions:
+- Asia
+- Western Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Georgia_(country)
+  de: https://de.wikipedia.org/wiki/Georgien

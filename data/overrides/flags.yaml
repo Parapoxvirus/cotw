@@ -1,0 +1,36 @@
+# Manual flag decisions, keyed by COTW id. Two kinds:
+#   file: <Commons file name>   → use this file instead of the Wikidata P41 pick (ambiguous or absent P41)
+#   license: <LicenseShortName> → accept this non-PD/CC0 license for the chosen file
+# Every entry needs a reason.
+'027':
+  file: Flag of the Netherlands.svg
+  reason: Bonaire, Sint Eustatius and Saba have no joint flag; Wikidata's only P41 (Dutch flag) is deprecated.
+    The Dutch flag is used, as in v3.
+'047':
+  file: Infobox Flag of the Cocos (Keeling) Islands.svg
+  reason: Wikidata's P41 file is CC BY-SA 4.0; this rendering of the same flag is public domain.
+089:
+  file: Flag of France.svg
+  reason: Two preferred-rank P41 statements (tricolor and the unofficial local flag). The official flag
+    is the tricolor, consistent with the other French overseas departments and v3.
+'141':
+  file: Flag of France.svg
+  reason: Wikidata's preferred P41 is the departmental logo flag, which spells out "Département de Mayotte"
+    and would give the answer away on flag cards. The official flag is the tricolor, as for the other
+    French overseas departments and in v3.
+'167':
+  file: Flag of Oman (2-1).svg
+  reason: Wikidata's P41 file is licensed OGL-om 1.0 (attribution license); this rendering of the flag
+    in the official 1:2 ratio is public domain.
+'186':
+  file: Flag of France.svg
+  reason: Wikidata's P41 is the unofficial local flag (CC BY 2.5); the official flag is the tricolor,
+    as in v3.
+'235':
+  file: Flag of the United Kingdom (1-2).svg
+  reason: Wikidata's preferred P41 is the 3:5 land-forces variant; the standard ratio used by the UK government
+    is 1:2, as in v3.
+'245':
+  file: Flag of the Sahrawi Arab Democratic Republic.svg
+  reason: Wikidata's only P41 is deprecated (disputed territory). The entry is Western Sahara / Sahrawi
+    Republic; the SADR flag is used, as in v3.

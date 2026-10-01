@@ -1,0 +1,34 @@
+id: '198'
+iso2: RS
+iso3: SRB
+wikidata: Q403
+status: sovereign
+name:
+  en: Serbia
+  de: Serbien
+formal_name:
+  en: The Republic of Serbia
+  de: Republik Serbien
+capitals:
+- name:
+    en: Belgrade
+    de: Belgrad
+  role: capital
+  wikidata: Q3711
+  lat: 44.81778
+  lon: 20.45694
+borders:
+- '028'
+- '034'
+- '055'
+- '101'
+- '118'
+- '147'
+- '164'
+- '183'
+regions:
+- Europe
+- Southern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Serbia
+  de: https://de.wikipedia.org/wiki/Serbien

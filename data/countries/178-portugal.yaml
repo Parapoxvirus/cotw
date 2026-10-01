@@ -1,0 +1,27 @@
+id: '178'
+iso2: PT
+iso3: PRT
+wikidata: Q45
+status: sovereign
+name:
+  en: Portugal
+  de: Portugal
+formal_name:
+  en: The Portuguese Republic
+  de: Portugiesische Republik
+capitals:
+- name:
+    en: Lisbon
+    de: Lissabon
+  role: capital
+  wikidata: Q597
+  lat: 38.70804
+  lon: -9.13902
+borders:
+- '211'
+regions:
+- Europe
+- Southern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Portugal
+  de: https://de.wikipedia.org/wiki/Portugal

@@ -1,0 +1,33 @@
+id: '071'
+iso2: ET
+iso3: ETH
+wikidata: Q115
+status: sovereign
+name:
+  en: Ethiopia
+  de: Äthiopien
+formal_name:
+  en: The Federal Democratic Republic of Ethiopia
+  de: Demokratische Bundesrepublik Äthiopien
+capitals:
+- name:
+    en: Addis Ababa
+    de: Addis Abeba
+  role: capital
+  wikidata: Q3624
+  lat: 9.03583
+  lon: 38.7525
+borders:
+- '061'
+- '068'
+- '116'
+- '206'
+- '210'
+- '213'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Eastern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Ethiopia
+  de: https://de.wikipedia.org/wiki/Äthiopien

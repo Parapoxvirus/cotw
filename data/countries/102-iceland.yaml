@@ -1,0 +1,23 @@
+id: '102'
+iso2: IS
+iso3: ISL
+wikidata: Q189
+status: sovereign
+name:
+  en: Iceland
+  de: Island
+capitals:
+- name:
+    en: Reykjavík
+    de: Reykjavík
+  role: capital
+  wikidata: Q1764
+  lat: 64.1475
+  lon: -21.935
+borders: []
+regions:
+- Europe
+- Northern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Iceland
+  de: https://de.wikipedia.org/wiki/Island

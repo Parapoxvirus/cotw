@@ -1,0 +1,9 @@
+# Downloaded geodata and other caches: never committed, only derived results are.
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.egg-info/
+build/
+dist/

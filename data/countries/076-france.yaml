@@ -1,0 +1,34 @@
+id: '076'
+iso2: FR
+iso3: FRA
+wikidata: Q142
+status: sovereign
+name:
+  en: France
+  de: Frankreich
+formal_name:
+  en: The French Republic
+  de: Französische Republik
+capitals:
+- name:
+    en: Paris
+    de: Paris
+  role: capital
+  wikidata: Q90
+  lat: 48.85667
+  lon: 2.35222
+borders:
+- '006'
+- '021'
+- '083'
+- '110'
+- '129'
+- '145'
+- '211'
+- '217'
+regions:
+- Europe
+- Western Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/France
+  de: https://de.wikipedia.org/wiki/Frankreich

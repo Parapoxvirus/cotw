@@ -1,0 +1,40 @@
+id: '184'
+iso2: RU
+iso3: RUS
+wikidata: Q159
+status: sovereign
+name:
+  en: Russia
+  de: Russland
+formal_name:
+  en: The Russian Federation
+  de: Russische Föderation
+capitals:
+- name:
+    en: Moscow
+    de: Moskau
+  role: capital
+  wikidata: Q649
+  lat: 55.75056
+  lon: 37.6175
+borders:
+- '015'
+- '020'
+- '045'
+- '069'
+- '075'
+- '082'
+- '115'
+- '122'
+- '128'
+- '146'
+- '163'
+- '166'
+- '177'
+- '233'
+regions:
+- Europe
+- Eastern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Russia
+  de: https://de.wikipedia.org/wiki/Russland

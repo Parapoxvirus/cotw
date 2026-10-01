@@ -1,0 +1,30 @@
+id: '035'
+iso2: BF
+iso3: BFA
+wikidata: Q965
+status: sovereign
+name:
+  en: Burkina Faso
+  de: Burkina Faso
+capitals:
+- name:
+    en: Ouagadougou / Wagadugu
+    de: Ouagadougou / Wagadugu
+  role: capital
+  wikidata: Q3777
+  lat: 12.36861
+  lon: -1.5275
+borders:
+- '023'
+- '054'
+- '084'
+- '135'
+- '159'
+- '223'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Western Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Burkina_Faso
+  de: https://de.wikipedia.org/wiki/Burkina_Faso

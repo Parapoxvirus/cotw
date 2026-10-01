@@ -1,0 +1,33 @@
+id: '196'
+iso2: SA
+iso3: SAU
+wikidata: Q851
+status: sovereign
+name:
+  en: Saudi Arabia
+  de: Saudi-Arabien
+formal_name:
+  en: The Kingdom of Saudi Arabia
+  de: Königreich Saudi-Arabien
+capitals:
+- name:
+    en: Riyadh
+    de: Riad
+  role: capital
+  wikidata: Q3692
+  lat: 24.65
+  lon: 46.71
+borders:
+- '106'
+- '114'
+- '119'
+- '167'
+- '180'
+- '234'
+- '246'
+regions:
+- Asia
+- Western Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Saudi_Arabia
+  de: https://de.wikipedia.org/wiki/Saudi-Arabien

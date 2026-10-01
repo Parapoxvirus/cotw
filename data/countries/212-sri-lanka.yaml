@@ -1,0 +1,39 @@
+id: '212'
+iso2: LK
+iso3: LKA
+wikidata: Q854
+status: sovereign
+name:
+  en: Sri Lanka
+  de: Sri Lanka
+formal_name:
+  en: The Democratic Socialist Republic of Sri Lanka
+  de: Demokratische Sozialistische Republik Sri Lanka
+capitals:
+- name:
+    en: Sri Jayawardenepura
+    de: Sri Jayawardenepura
+  label:
+    en: capital
+    de: Hauptstadt
+  role: capital
+  wikidata: Q41963
+  lat: 6.9
+  lon: 79.91639
+- name:
+    en: Colombo
+    de: Colombo
+  label:
+    en: seat of government
+    de: Regierungssitz
+  role: seat_of_government
+  wikidata: Q35381
+  lat: 6.92667
+  lon: 79.86056
+borders: []
+regions:
+- Asia
+- Southern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Sri_Lanka
+  de: https://de.wikipedia.org/wiki/Sri_Lanka

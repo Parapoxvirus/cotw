@@ -1,0 +1,32 @@
+id: '001'
+iso2: AF
+iso3: AFG
+wikidata: Q889
+status: sovereign
+name:
+  en: Afghanistan
+  de: Afghanistan
+formal_name:
+  en: Islamic Emirate of Afghanistan
+  de: Islamisches Emirat Afghanistan
+capitals:
+- name:
+    en: Kabul
+    de: Kabul
+  role: capital
+  wikidata: Q5838
+  lat: 34.53278
+  lon: 69.16583
+borders:
+- '045'
+- '105'
+- '168'
+- '219'
+- '229'
+- '239'
+regions:
+- Asia
+- Southern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Afghanistan
+  de: https://de.wikipedia.org/wiki/Afghanistan

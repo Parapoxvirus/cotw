@@ -1,0 +1,25 @@
+id: '087'
+iso2: GL
+iso3: GRL
+wikidata: Q223
+status: dependency
+dependency_of: '060'
+name:
+  en: Greenland
+  de: Grönland
+capitals:
+- name:
+    en: Nuuk
+    de: Nuuk
+  role: capital
+  wikidata: Q226
+  lat: 64.175
+  lon: -51.73333
+borders:
+- '040'
+regions:
+- Americas
+- Northern America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Greenland
+  de: https://de.wikipedia.org/wiki/Grönland

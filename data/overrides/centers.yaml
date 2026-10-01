@@ -1,0 +1,11 @@
+# Map centers that differ from the default (centroid of the largest polygon). Keyed by
+# COTW id: lat, lon and a reason. Used for both maps of the entry.
+'117':
+  lat: 0.0
+  lon: -170.5
+  reason: Kiribati is scattered across the antimeridian (Gilbert, Phoenix and Line Islands); the largest island (Kiritimati)
+    lies at the eastern edge.
+'237':
+  lat: 48.0
+  lon: -115.0
+  reason: Shifted north-west so that Alaska and Hawaii stay within the map 2 window of the United States.

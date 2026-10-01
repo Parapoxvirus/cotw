@@ -1,0 +1,25 @@
+id: '208'
+iso2: GS
+iso3: SGS
+wikidata: Q35086
+status: dependency
+dependency_of: '235'
+name:
+  en: South Georgia and the South Sandwich Islands
+  de: Südgeorgien und die Südlichen Sandwichinseln
+capitals:
+- name:
+    en: King Edward Point
+    de: King Edward Point
+  role: capital
+  wikidata: Q393878
+  lat: -54.28329
+  lon: -36.49418
+borders: []
+regions:
+- Americas
+- Latin America and the Caribbean
+- South America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/South_Georgia_and_the_South_Sandwich_Islands
+  de: https://de.wikipedia.org/wiki/Südgeorgien_und_die_Südlichen_Sandwichinseln

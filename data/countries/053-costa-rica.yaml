@@ -1,0 +1,29 @@
+id: '053'
+iso2: CR
+iso3: CRI
+wikidata: Q800
+status: sovereign
+name:
+  en: Costa Rica
+  de: Costa Rica
+formal_name:
+  en: The Republic of Costa Rica
+  de: Republik Costa Rica
+capitals:
+- name:
+    en: San José
+    de: San José
+  role: capital
+  wikidata: Q3070
+  lat: 9.93274
+  lon: -84.07961
+borders:
+- '158'
+- '171'
+regions:
+- Americas
+- Latin America and the Caribbean
+- Central America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Costa_Rica
+  de: https://de.wikipedia.org/wiki/Costa_Rica

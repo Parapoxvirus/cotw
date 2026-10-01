@@ -1,0 +1,27 @@
+id: '180'
+iso2: QA
+iso3: QAT
+wikidata: Q846
+status: sovereign
+name:
+  en: Qatar
+  de: Katar
+formal_name:
+  en: The State of Qatar
+  de: Staat Katar
+capitals:
+- name:
+    en: Doha
+    de: Doha
+  role: capital
+  wikidata: Q3861
+  lat: 25.28611
+  lon: 51.52944
+borders:
+- '196'
+regions:
+- Asia
+- Western Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Qatar
+  de: https://de.wikipedia.org/wiki/Katar

@@ -1,0 +1,27 @@
+id: '195'
+iso2: ST
+iso3: STP
+wikidata: Q1039
+status: sovereign
+name:
+  en: Sao Tome and Principe
+  de: São Tomé und Príncipe
+formal_name:
+  en: The Democratic Republic of São Tomé and Príncipe
+  de: Demokratische Republik São Tomé und Príncipe
+capitals:
+- name:
+    en: São Tomé
+    de: São Tomé
+  role: capital
+  wikidata: Q3932
+  lat: 0.3375
+  lon: 6.72833
+borders: []
+regions:
+- Africa
+- Sub-Saharan Africa
+- Middle Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe
+  de: https://de.wikipedia.org/wiki/São_Tomé_und_Príncipe

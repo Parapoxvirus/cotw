@@ -1,0 +1,30 @@
+id: '086'
+iso2: GR
+iso3: GRC
+wikidata: Q41
+status: sovereign
+name:
+  en: Greece
+  de: Griechenland
+formal_name:
+  en: The Hellenic Republic
+  de: Hellenische Republik
+capitals:
+- name:
+    en: Athens
+    de: Athen
+  role: capital
+  wikidata: Q1524
+  lat: 37.98417
+  lon: 23.72806
+borders:
+- '003'
+- '034'
+- '164'
+- '228'
+regions:
+- Europe
+- Southern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Greece
+  de: https://de.wikipedia.org/wiki/Griechenland

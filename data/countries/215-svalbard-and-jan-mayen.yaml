@@ -1,0 +1,23 @@
+id: '215'
+iso2: SJ
+iso3: SJM
+wikidata: Q842829
+status: dependency
+dependency_of: '166'
+name:
+  en: Svalbard and Jan Mayen
+  de: Svalbard und Jan Mayen
+capitals:
+- name:
+    en: Longyearbyen
+    de: Longyearbyen
+  role: capital
+  wikidata: Q25923
+  lat: 78.21667
+  lon: 15.63333
+borders: []
+regions:
+- Europe
+- Northern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Svalbard_and_Jan_Mayen

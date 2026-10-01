@@ -1,0 +1,28 @@
+id: '127'
+iso2: LI
+iso3: LIE
+wikidata: Q347
+status: sovereign
+name:
+  en: Liechtenstein
+  de: Liechtenstein
+formal_name:
+  en: The Principality of Liechtenstein
+  de: Fürstentum Liechtenstein
+capitals:
+- name:
+    en: Vaduz
+    de: Vaduz
+  role: capital
+  wikidata: Q1844
+  lat: 47.14056
+  lon: 9.52222
+borders:
+- '014'
+- '217'
+regions:
+- Europe
+- Western Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Liechtenstein
+  de: https://de.wikipedia.org/wiki/Liechtenstein

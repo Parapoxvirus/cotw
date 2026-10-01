@@ -1,0 +1,32 @@
+id: '116'
+iso2: KE
+iso3: KEN
+wikidata: Q114
+status: sovereign
+name:
+  en: Kenya
+  de: Kenia
+formal_name:
+  en: The Republic of Kenya
+  de: Republik Kenia
+capitals:
+- name:
+    en: Nairobi
+    de: Nairobi
+  role: capital
+  wikidata: Q3870
+  lat: -1.28639
+  lon: 36.81722
+borders:
+- '071'
+- '206'
+- '210'
+- '220'
+- '232'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Eastern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Kenya
+  de: https://de.wikipedia.org/wiki/Kenia

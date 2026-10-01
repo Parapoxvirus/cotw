@@ -1,0 +1,30 @@
+id: '080'
+iso2: GA
+iso3: GAB
+wikidata: Q1000
+status: sovereign
+name:
+  en: Gabon
+  de: Gabun
+formal_name:
+  en: The Gabonese Republic
+  de: Gabunische Republik
+capitals:
+- name:
+    en: Libreville
+    de: Libreville
+  role: capital
+  wikidata: Q3825
+  lat: 0.40778
+  lon: 9.44028
+borders:
+- '039'
+- '051'
+- '067'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Middle Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Gabon
+  de: https://de.wikipedia.org/wiki/Gabun

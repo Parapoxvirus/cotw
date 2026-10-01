@@ -1,0 +1,27 @@
+id: '033'
+iso2: BN
+iso3: BRN
+wikidata: Q921
+status: sovereign
+name:
+  en: Brunei
+  de: Brunei
+formal_name:
+  en: The Nation of Brunei, the Abode of Peace
+  de: Brunei Darussalam
+capitals:
+- name:
+    en: Bandar Seri Begawan
+    de: Bandar Seri Begawan
+  role: capital
+  wikidata: Q9279
+  lat: 4.91667
+  lon: 114.91667
+borders:
+- '133'
+regions:
+- Asia
+- South-eastern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Brunei
+  de: https://de.wikipedia.org/wiki/Brunei

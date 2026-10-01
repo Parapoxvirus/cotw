@@ -1,0 +1,31 @@
+id: '055'
+iso2: HR
+iso3: HRV
+wikidata: Q224
+status: sovereign
+name:
+  en: Croatia
+  de: Kroatien
+formal_name:
+  en: The Republic of Croatia
+  de: Republik Kroatien
+capitals:
+- name:
+    en: Zagreb
+    de: Zagreb
+  role: capital
+  wikidata: Q1435
+  lat: 45.81306
+  lon: 15.97722
+borders:
+- '028'
+- '101'
+- '147'
+- '198'
+- '204'
+regions:
+- Europe
+- Southern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Croatia
+  de: https://de.wikipedia.org/wiki/Kroatien

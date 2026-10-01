@@ -1,0 +1,25 @@
+id: '013'
+iso2: AU
+iso3: AUS
+wikidata: Q408
+status: sovereign
+name:
+  en: Australia
+  de: Australien
+formal_name:
+  en: The Commonwealth of Australia
+capitals:
+- name:
+    en: Canberra
+    de: Canberra
+  role: capital
+  wikidata: Q3114
+  lat: -35.29306
+  lon: 149.12694
+borders: []
+regions:
+- Oceania
+- Australia and New Zealand
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Australia
+  de: https://de.wikipedia.org/wiki/Australien

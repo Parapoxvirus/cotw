@@ -1,0 +1,26 @@
+id: '134'
+iso2: MV
+iso3: MDV
+wikidata: Q826
+status: sovereign
+name:
+  en: Maldives
+  de: Malediven
+formal_name:
+  en: The Republic of Maldives
+  de: Republik Malediven
+capitals:
+- name:
+    en: Malé
+    de: Malé
+  role: capital
+  wikidata: Q9347
+  lat: 4.175
+  lon: 73.50833
+borders: []
+regions:
+- Asia
+- Southern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Maldives
+  de: https://de.wikipedia.org/wiki/Malediven

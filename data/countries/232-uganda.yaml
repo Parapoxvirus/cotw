@@ -1,0 +1,32 @@
+id: '232'
+iso2: UG
+iso3: UGA
+wikidata: Q1036
+status: sovereign
+name:
+  en: Uganda
+  de: Uganda
+formal_name:
+  en: The Republic of Uganda
+  de: Republik Uganda
+capitals:
+- name:
+    en: Kampala
+    de: Kampala
+  role: capital
+  wikidata: Q3894
+  lat: 0.31361
+  lon: 32.58111
+borders:
+- '050'
+- '116'
+- '185'
+- '210'
+- '220'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Eastern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Uganda
+  de: https://de.wikipedia.org/wiki/Uganda

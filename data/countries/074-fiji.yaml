@@ -1,0 +1,26 @@
+id: '074'
+iso2: FJ
+iso3: FJI
+wikidata: Q712
+status: sovereign
+name:
+  en: Fiji
+  de: Fidschi
+formal_name:
+  en: The Republic of Fiji
+  de: Republik Fidschi
+capitals:
+- name:
+    en: Suva
+    de: Suva
+  role: capital
+  wikidata: Q38807
+  lat: -18.13333
+  lon: 178.43333
+borders: []
+regions:
+- Oceania
+- Melanesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Fiji
+  de: https://de.wikipedia.org/wiki/Fidschi

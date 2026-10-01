@@ -1,0 +1,56 @@
+id: '207'
+iso2: ZA
+iso3: ZAF
+wikidata: Q258
+status: sovereign
+name:
+  en: South Africa
+  de: Südafrika
+formal_name:
+  en: The Republic of South Africa
+  de: Republik Südafrika
+capitals:
+- name:
+    en: Pretoria
+    de: Pretoria
+  label:
+    en: executive
+    de: Exekutive
+  role: executive
+  wikidata: Q3926
+  lat: -25.74639
+  lon: 28.18806
+- name:
+    en: Cape Town
+    de: Kapstadt
+  label:
+    en: legislative
+    de: Legislative
+  role: legislative
+  wikidata: Q5465
+  lat: -33.92528
+  lon: 18.42389
+- name:
+    en: Bloemfontein
+    de: Bloemfontein
+  label:
+    en: judicial
+    de: Judikative
+  role: judicial
+  wikidata: Q37701
+  lat: -29.1
+  lon: 26.21667
+borders:
+- '029'
+- '070'
+- '124'
+- '150'
+- '152'
+- '248'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Southern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/South_Africa
+  de: https://de.wikipedia.org/wiki/Südafrika

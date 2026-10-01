@@ -1,0 +1,788 @@
+{
+ "": [
+  {
+   "coord": [
+    51.4050246,
+    11.0516449
+   ],
+   "country": "Q183",
+   "label_de": "Mönchberg",
+   "qid": "Q138937331"
+  }
+ ],
+ "Bagdad": [
+  {
+   "coord": [
+    34.582777777,
+    -115.875555555
+   ],
+   "country": "Q30",
+   "label_de": "Bagdad",
+   "qid": "Q139063"
+  },
+  {
+   "coord": [
+    25.95,
+    -97.15
+   ],
+   "country": "Q96",
+   "label_de": null,
+   "qid": "Q543904"
+  },
+  {
+   "coord": [
+    53.16555556,
+    17.31638889
+   ],
+   "country": "Q36",
+   "label_de": "Bagdad",
+   "qid": "Q799859"
+  },
+  {
+   "coord": [
+    34.5767,
+    -113.175
+   ],
+   "country": "Q30",
+   "label_de": "Bagdad",
+   "qid": "Q799863"
+  },
+  {
+   "coord": [
+    30.595833333,
+    -87.035555555
+   ],
+   "country": "Q30",
+   "label_de": "Bagdad",
+   "qid": "Q799865"
+  },
+  {
+   "coord": [
+    -42.6167,
+    147.217
+   ],
+   "country": "Q408",
+   "label_de": null,
+   "qid": "Q2879005"
+  },
+  {
+   "coord": [
+    38.2622,
+    -85.0578
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q3248608"
+  },
+  {
+   "coord": [
+    39.5045,
+    -121.5797
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q4841505"
+  },
+  {
+   "coord": [
+    42.4828,
+    -78.92
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q4841506"
+  },
+  {
+   "coord": [
+    37.9053,
+    -77.4233
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q4841507"
+  },
+  {
+   "coord": [
+    45.6561,
+    -88.7036
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q4841508"
+  },
+  {
+   "coord": [
+    41.37536667,
+    2.17043611
+   ],
+   "country": "Q29",
+   "label_de": null,
+   "qid": "Q6117073"
+  },
+  {
+   "coord": [
+    45.91666667,
+    -65.85
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q28550677"
+  },
+  {
+   "coord": [
+    14.2085,
+    1.4547
+   ],
+   "country": "Q1032",
+   "label_de": "Bagdad",
+   "qid": "Q126002042"
+  }
+ ],
+ "Canberra": [
+  {
+   "coord": [
+    -35.293055555,
+    149.126944444
+   ],
+   "country": "Q408",
+   "label_de": "Canberra",
+   "qid": "Q3114"
+  },
+  {
+   "coord": [
+    -35.349,
+    149.089
+   ],
+   "country": "Q408",
+   "label_de": null,
+   "qid": "Q2973482"
+  },
+  {
+   "coord": [
+    51.6863,
+    5.1198
+   ],
+   "country": "Q55",
+   "label_de": "Canberra",
+   "qid": "Q18982642"
+  },
+  {
+   "coord": [
+    -35.219166666,
+    148.996944444
+   ],
+   "country": "Q408",
+   "label_de": null,
+   "qid": "Q29020412"
+  },
+  {
+   "coord": [
+    -35.2817,
+    149.1311
+   ],
+   "country": "Q408",
+   "label_de": null,
+   "qid": "Q56284269"
+  },
+  {
+   "coord": [
+    1.449571832,
+    103.809406089
+   ],
+   "country": "Q334",
+   "label_de": null,
+   "qid": "Q138711593"
+  }
+ ],
+ "Fagatogo": [
+  {
+   "coord": [
+    -14.2825,
+    -170.69
+   ],
+   "country": "Q30",
+   "label_de": "Fagatogo",
+   "qid": "Q1257213"
+  }
+ ],
+ "Fakaofo": [
+  {
+   "coord": [
+    -9.38,
+    -171.219
+   ],
+   "country": "Q664",
+   "label_de": "Fakaofo",
+   "qid": "Q650847"
+  },
+  {
+   "coord": [
+    -9.373944,
+    -171.264616
+   ],
+   "country": "Q664",
+   "label_de": "Fakaofo",
+   "qid": "Q2140263"
+  }
+ ],
+ "Hong Kong": [
+  {
+   "coord": [
+    22.278333333,
+    114.158611111
+   ],
+   "country": "Q148",
+   "label_de": "Hongkong",
+   "qid": "Q8646"
+  },
+  {
+   "coord": [
+    47.540555555,
+    -82.536111111
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q115261778"
+  }
+ ],
+ "Kiev": [
+  {
+   "coord": [
+    51.72027778,
+    64.32416667
+   ],
+   "country": "Q232",
+   "label_de": null,
+   "qid": "Q16663294"
+  },
+  {
+   "coord": [
+    57.611885802,
+    -1.834292725
+   ],
+   "country": "Q145",
+   "label_de": null,
+   "qid": "Q103911832"
+  }
+ ],
+ "Kralendijk": [
+  {
+   "coord": [
+    12.150833333,
+    -68.276666666
+   ],
+   "country": "Q55",
+   "label_de": "Kralendijk",
+   "qid": "Q331584"
+  }
+ ],
+ "London": [
+  {
+   "coord": [
+    51.507222222,
+    -0.1275
+   ],
+   "country": "Q145",
+   "label_de": "London",
+   "qid": "Q84"
+  },
+  {
+   "coord": [
+    35.3258,
+    -93.2367
+   ],
+   "country": "Q30",
+   "label_de": "London",
+   "qid": "Q79348"
+  },
+  {
+   "coord": [
+    42.9837,
+    -81.2497
+   ],
+   "country": "Q16",
+   "label_de": "London",
+   "qid": "Q92561"
+  },
+  {
+   "coord": [
+    36.47583,
+    -119.44222
+   ],
+   "country": "Q30",
+   "label_de": "London",
+   "qid": "Q586353"
+  },
+  {
+   "coord": [
+    39.887466,
+    -83.445041
+   ],
+   "country": "Q30",
+   "label_de": "London",
+   "qid": "Q1001456"
+  },
+  {
+   "coord": [
+    1.983333333,
+    -157.475
+   ],
+   "country": "Q710",
+   "label_de": "London",
+   "qid": "Q2477346"
+  },
+  {
+   "coord": [
+    37.1275,
+    -84.0842
+   ],
+   "country": "Q30",
+   "label_de": "London",
+   "qid": "Q3061911"
+  },
+  {
+   "coord": [
+    46.6322,
+    5.0985
+   ],
+   "country": "Q142",
+   "label_de": "London",
+   "qid": "Q6669727"
+  },
+  {
+   "coord": [
+    38.1944,
+    -81.3686
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q6669736"
+  },
+  {
+   "coord": [
+    43.0478,
+    -89.0128
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q6669738"
+  },
+  {
+   "coord": [
+    44.808495,
+    20.463161
+   ],
+   "country": "Q403",
+   "label_de": null,
+   "qid": "Q6669759"
+  },
+  {
+   "coord": [
+    59.3335,
+    18.06094444
+   ],
+   "country": "Q34",
+   "label_de": null,
+   "qid": "Q10429750"
+  },
+  {
+   "coord": [
+    30.6769,
+    -99.5764
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q14710970"
+  },
+  {
+   "coord": [
+    43.52611111,
+    -93.06277778
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q20657974"
+  },
+  {
+   "coord": [
+    39.62555556,
+    -85.92027778
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q22059065"
+  },
+  {
+   "coord": [
+    47.20277778,
+    -91.56972222
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q22073611"
+  },
+  {
+   "coord": [
+    51.483333333,
+    -0.083333333
+   ],
+   "country": "Q145",
+   "label_de": "London",
+   "qid": "Q23939248"
+  },
+  {
+   "coord": [
+    -1.715600523,
+    124.709119694
+   ],
+   "country": "Q252",
+   "label_de": null,
+   "qid": "Q25201358"
+  },
+  {
+   "coord": [
+    43.09805556,
+    -81.23444444
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q28163686"
+  },
+  {
+   "coord": [
+    42.98,
+    -81.2
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q61042482"
+  },
+  {
+   "coord": [
+    56.325515488,
+    -2.680750173
+   ],
+   "country": "Q145",
+   "label_de": null,
+   "qid": "Q103900608"
+  },
+  {
+   "coord": [
+    2.26815,
+    9.78934
+   ],
+   "country": "Q983",
+   "label_de": "London, Äquatorialguinea",
+   "qid": "Q106582185"
+  },
+  {
+   "coord": [
+    43.083888888,
+    -81.298611111
+   ],
+   "country": "Q16",
+   "label_de": "London Township (Ontario)",
+   "qid": "Q115262072"
+  },
+  {
+   "coord": [
+    53.0718,
+    -4.40381
+   ],
+   "country": "Q145",
+   "label_de": null,
+   "qid": "Q115712275"
+  },
+  {
+   "coord": [
+    38.1944,
+    -81.3706
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q116696849"
+  }
+ ],
+ "Longyearbyen": [
+  {
+   "coord": [
+    78.216666666,
+    15.633333333
+   ],
+   "country": "Q20",
+   "label_de": "Longyearbyen",
+   "qid": "Q25923"
+  }
+ ],
+ "Oranjestad": [
+  {
+   "coord": [
+    12.518611111,
+    -70.035833333
+   ],
+   "country": "Q21203",
+   "label_de": "Oranjestad",
+   "qid": "Q131243"
+  },
+  {
+   "coord": [
+    17.483333333,
+    -62.983333333
+   ],
+   "country": "Q55",
+   "label_de": "Oranjestad",
+   "qid": "Q217610"
+  }
+ ],
+ "Oslo": [
+  {
+   "coord": [
+    48.195833333,
+    -97.131388888
+   ],
+   "country": "Q30",
+   "label_de": "Oslo",
+   "qid": "Q888491"
+  },
+  {
+   "coord": [
+    27.583333333,
+    -80.383333333
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q1794768"
+  },
+  {
+   "coord": [
+    51.54728333,
+    -0.055575
+   ],
+   "country": "Q145",
+   "label_de": null,
+   "qid": "Q16896934"
+  },
+  {
+   "coord": [
+    43.8922,
+    -92.7386
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q19321913"
+  },
+  {
+   "coord": [
+    51.852,
+    4.5098
+   ],
+   "country": "Q55",
+   "label_de": "Oslo",
+   "qid": "Q19397868"
+  },
+  {
+   "coord": [
+    59.91273,
+    10.74609
+   ],
+   "country": "Q20",
+   "label_de": "Oslo",
+   "qid": "Q49755148"
+  },
+  {
+   "coord": [
+    60.549456242,
+    -0.30165597
+   ],
+   "country": "Q145",
+   "label_de": null,
+   "qid": "Q103905540"
+  }
+ ],
+ "Saint Pierre": [
+  {
+   "coord": [
+    -20.22251,
+    57.53823
+   ],
+   "country": "Q1027",
+   "label_de": "Saint-Pierre",
+   "qid": "Q1154985"
+  },
+  {
+   "coord": [
+    54.915454395,
+    -3.57745867
+   ],
+   "country": "Q145",
+   "label_de": null,
+   "qid": "Q103780078"
+  },
+  {
+   "coord": [
+    45.76605,
+    4.83291
+   ],
+   "country": "Q142",
+   "label_de": null,
+   "qid": "Q108537084"
+  },
+  {
+   "coord": [
+    49.67506,
+    -1.80073
+   ],
+   "country": "Q142",
+   "label_de": null,
+   "qid": "Q108628216"
+  },
+  {
+   "coord": [
+    1.2861,
+    103.8537
+   ],
+   "country": "Q334",
+   "label_de": null,
+   "qid": "Q111915493"
+  }
+ ],
+ "Teheran": [
+  {
+   "coord": [
+    40.2244879,
+    -89.7990001
+   ],
+   "country": "Q30",
+   "label_de": null,
+   "qid": "Q122560315"
+  }
+ ],
+ "The Bottom": [
+  {
+   "coord": [
+    17.626111111,
+    -63.249166666
+   ],
+   "country": "Q55",
+   "label_de": "The Bottom",
+   "qid": "Q475718"
+  },
+  {
+   "coord": [
+    48.62491,
+    -53.82029
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q22481946"
+  },
+  {
+   "coord": [
+    48.6252778,
+    -53.8202778
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q111670275"
+  },
+  {
+   "coord": [
+    49.598611111,
+    -54.226111111
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q111670276"
+  },
+  {
+   "coord": [
+    48.439444444,
+    -53.550555555
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q111670277"
+  },
+  {
+   "coord": [
+    48.384166666,
+    -53.669722222
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q111670278"
+  },
+  {
+   "coord": [
+    47.612222222,
+    -55.901388888
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q111909935"
+  },
+  {
+   "coord": [
+    47.674166666,
+    -58.601666666
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q111909936"
+  },
+  {
+   "coord": [
+    47.721944444,
+    -53.961111111
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q111909937"
+  },
+  {
+   "coord": [
+    48.094444444,
+    -53.940833333
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q111909938"
+  },
+  {
+   "coord": [
+    48.63,
+    -53.7725
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q111909939"
+  },
+  {
+   "coord": [
+    49.590277777,
+    -57.919444444
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q111909940"
+  },
+  {
+   "coord": [
+    49.8625,
+    -56.81
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q111909941"
+  },
+  {
+   "coord": [
+    50.156111111,
+    -56.626111111
+   ],
+   "country": "Q16",
+   "label_de": null,
+   "qid": "Q111909942"
+  }
+ ]
+}

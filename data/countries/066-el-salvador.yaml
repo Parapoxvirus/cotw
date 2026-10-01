@@ -1,0 +1,29 @@
+id: '066'
+iso2: SV
+iso3: SLV
+wikidata: Q792
+status: sovereign
+name:
+  en: El Salvador
+  de: El Salvador
+formal_name:
+  en: The Republic of El Salvador
+  de: Republik El Salvador
+capitals:
+- name:
+    en: San Salvador
+    de: San Salvador
+  role: capital
+  wikidata: Q3110
+  lat: 13.6976
+  lon: -89.19116
+borders:
+- '091'
+- '099'
+regions:
+- Americas
+- Latin America and the Caribbean
+- Central America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/El_Salvador
+  de: https://de.wikipedia.org/wiki/El_Salvador

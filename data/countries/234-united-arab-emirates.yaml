@@ -1,0 +1,25 @@
+id: '234'
+iso2: AE
+iso3: ARE
+wikidata: Q878
+status: sovereign
+name:
+  en: United Arab Emirates, The
+  de: Vereinigte Arabische Emirate
+capitals:
+- name:
+    en: Abu Dhabi
+    de: Abu Dhabi
+  role: capital
+  wikidata: Q1519
+  lat: 24.45111
+  lon: 54.39694
+borders:
+- '167'
+- '196'
+regions:
+- Asia
+- Western Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/United_Arab_Emirates
+  de: https://de.wikipedia.org/wiki/Vereinigte_Arabische_Emirate

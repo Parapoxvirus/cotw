@@ -1,0 +1,25 @@
+id: '187'
+iso2: SH
+iso3: SHN
+wikidata: Q192184
+status: dependency
+dependency_of: '235'
+name:
+  en: Saint Helena, Ascension and Tristan da Cunha
+  de: Saint Helena, Ascension and Tristan da Cunha
+capitals:
+- name:
+    en: Jamestown
+    de: Jamestown
+  role: capital
+  wikidata: Q30970
+  lat: -15.92514
+  lon: -5.71792
+borders: []
+regions:
+- Africa
+- Sub-Saharan Africa
+- Western Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Saint_Helena,_Ascension_and_Tristan_da_Cunha
+  de: https://de.wikipedia.org/wiki/St._Helena,_Ascension_und_Tristan_da_Cunha

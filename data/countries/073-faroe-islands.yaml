@@ -1,0 +1,24 @@
+id: '073'
+iso2: FO
+iso3: FRO
+wikidata: Q4628
+status: dependency
+dependency_of: '060'
+name:
+  en: Faroe Islands
+  de: Färöer
+capitals:
+- name:
+    en: Tórshavn
+    de: Tórshavn
+  role: capital
+  wikidata: Q10704
+  lat: 62.00981
+  lon: -6.77135
+borders: []
+regions:
+- Europe
+- Northern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Faroe_Islands
+  de: https://de.wikipedia.org/wiki/Färöer

@@ -1,0 +1,33 @@
+id: '177'
+iso2: PL
+iso3: POL
+wikidata: Q36
+status: sovereign
+name:
+  en: Poland
+  de: Polen
+formal_name:
+  en: The Republic of Poland
+  de: Republik Polen
+capitals:
+- name:
+    en: Warsaw
+    de: Warschau
+  role: capital
+  wikidata: Q270
+  lat: 52.23
+  lon: 21.01111
+borders:
+- '020'
+- '059'
+- '083'
+- '128'
+- '184'
+- '203'
+- '233'
+regions:
+- Europe
+- Eastern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Poland
+  de: https://de.wikipedia.org/wiki/Polen

@@ -1,0 +1,24 @@
+id: '108'
+iso2: IM
+iso3: IMN
+wikidata: Q9676
+status: dependency
+dependency_of: '235'
+name:
+  en: Isle of Man
+  de: Isle of Man
+capitals:
+- name:
+    en: Douglas
+    de: Douglas
+  role: capital
+  wikidata: Q18569
+  lat: 54.15
+  lon: -4.4775
+borders: []
+regions:
+- Europe
+- Northern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Isle_of_Man
+  de: https://de.wikipedia.org/wiki/Isle_of_Man

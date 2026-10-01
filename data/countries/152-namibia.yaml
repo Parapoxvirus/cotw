@@ -1,0 +1,31 @@
+id: '152'
+iso2: NA
+iso3: NAM
+wikidata: Q1030
+status: sovereign
+name:
+  en: Namibia
+  de: Namibia
+formal_name:
+  en: The Republic of Namibia
+  de: Republik Namibia
+capitals:
+- name:
+    en: Windhoek
+    de: Windhoek
+  role: capital
+  wikidata: Q3935
+  lat: -22.57
+  lon: 17.08361
+borders:
+- '007'
+- '029'
+- '207'
+- '247'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Southern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Namibia
+  de: https://de.wikipedia.org/wiki/Namibia

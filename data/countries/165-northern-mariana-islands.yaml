@@ -1,0 +1,27 @@
+id: '165'
+iso2: MP
+iso3: MNP
+wikidata: Q16644
+status: dependency
+dependency_of: '237'
+name:
+  en: Northern Mariana Islands
+  de: Nördliche Marianen
+formal_name:
+  en: Commonwealth of the Northern Mariana Islands
+  de: Commonwealth der Nördlichen Marianen
+capitals:
+- name:
+    en: Saipan
+    de: Saipan
+  role: capital
+  wikidata: Q49755159
+  lat: 15.21233
+  lon: 145.7545
+borders: []
+regions:
+- Oceania
+- Micronesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Northern_Mariana_Islands
+  de: https://de.wikipedia.org/wiki/Nördliche_Marianen

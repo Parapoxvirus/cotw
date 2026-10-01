@@ -1,0 +1,42 @@
+id: '170'
+iso2: PS
+iso3: PSE
+wikidata: Q219060
+status: disputed
+name:
+  en: Palestine
+  de: Palästina
+formal_name:
+  en: State of Palestine
+  de: Staat Palästina
+capitals:
+- name:
+    en: East Jerusalem
+    de: Ostjerusalem
+  label:
+    en: proclaimed
+    de: beansprucht
+  role: proclaimed
+  wikidata: Q212938
+  lat: 31.78336
+  lon: 35.23388
+- name:
+    en: Ramallah
+    de: Ramallah
+  label:
+    en: de facto
+    de: de facto
+  role: de_facto
+  wikidata: Q158119
+  lat: 31.89694
+  lon: 35.20167
+borders:
+- '065'
+- '109'
+- '114'
+regions:
+- Asia
+- Western Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Palestine
+  de: https://de.wikipedia.org/wiki/Palästina_(Staat)

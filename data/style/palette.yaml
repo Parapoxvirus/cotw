@@ -1,0 +1,44 @@
+# Map colors, one place for both palettes. Day colors follow the v3 maps; night colors are
+# derived from the v3 note-type CSS (card background #2C2C2C). Every map is written twice,
+# `…-day.svg` and `…-night.svg`, each with one palette; the card shows the one that matches
+# Anki's night mode (docs/MAPS.md).
+day:
+  background: '#FBF8F3'   # outside the map (unused while maps are square, kept for templates)
+  sea: '#68A3DE'
+  coast: '#2D6399'        # stroke around every land polygon (coasts and land borders)
+  entry: '#487D29'
+  neighbor: '#A6C295'
+  land: '#DAE6AF'         # other land
+  eez: '#86B4E6'          # exclusive economic zone fill, lighter than the sea
+  territorial: '#B9D4F0'  # 12 nm territorial sea, outline only, lighter still
+  marker_fill: '#FFFFFF'  # capital markers and number bodies; identical in both modes
+  marker_outline: '#1F2328' # anthracite outline; identical in both modes
+  highlight: '#D7263D'    # micro-state highlight circle
+night:
+  background: '#2C2C2C'
+  sea: '#1F3550'
+  coast: '#7FA6CC'
+  entry: '#7FB84A'
+  neighbor: '#5E7050'
+  land: '#4B4F45'
+  eez: '#2C4B6F'
+  territorial: '#4A6F94'
+  marker_fill: '#FFFFFF'
+  marker_outline: '#1F2328'
+  highlight: '#FF6B6B'
+# Globe (_cotw-globe.js) only: the parts the maps don't have. Everything else (sea, land,
+# entry, neighbor, eez, coast, highlight) is shared with the maps above. `space` is the
+# canvas outside the sphere; `transparent` lets the card background show through.
+# `selected` fills the country whose tooltip is shown (card backs only); the entry keeps
+# `entry` even when it is the one selected.
+globe:
+  day:
+    space: transparent
+    rim: '#2D6399'        # sphere outline
+    graticule: '#FFFFFF33' # 30° grid over the sea, faint
+    selected: '#D5D7A4'   # tooltip country: land blended 30 % toward warm sand, quiet
+  night:
+    space: transparent
+    rim: '#7FA6CC'
+    graticule: '#FFFFFF1F'
+    selected: '#75634F'   # tooltip country, dark warm brown

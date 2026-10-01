@@ -1,0 +1,38 @@
+id: '148'
+iso2: MS
+iso3: MSR
+wikidata: Q13353
+status: dependency
+dependency_of: '235'
+name:
+  en: Montserrat
+  de: Montserrat
+capitals:
+- name:
+    en: Plymouth
+    de: Plymouth
+  label:
+    en: de jure
+    de: de jure
+  role: de_jure
+  wikidata: Q30990
+  lat: 16.70642
+  lon: -62.21584
+- name:
+    en: Brades
+    de: Brades
+  label:
+    en: de facto
+    de: de facto
+  role: de_facto
+  wikidata: Q31006
+  lat: 16.79278
+  lon: -62.21056
+borders: []
+regions:
+- Americas
+- Latin America and the Caribbean
+- Caribbean
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Montserrat
+  de: https://de.wikipedia.org/wiki/Montserrat

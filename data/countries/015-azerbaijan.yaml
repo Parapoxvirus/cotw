@@ -1,0 +1,31 @@
+id: '015'
+iso2: AZ
+iso3: AZE
+wikidata: Q227
+status: sovereign
+name:
+  en: Azerbaijan
+  de: Aserbaidschan
+formal_name:
+  en: The Republic of Azerbaijan
+  de: Republik Aserbaidschan
+capitals:
+- name:
+    en: Baku
+    de: Baku
+  role: capital
+  wikidata: Q9248
+  lat: 40.36666
+  lon: 49.83518
+borders:
+- '011'
+- '082'
+- '105'
+- '184'
+- '228'
+regions:
+- Asia
+- Western Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Azerbaijan
+  de: https://de.wikipedia.org/wiki/Aserbaidschan

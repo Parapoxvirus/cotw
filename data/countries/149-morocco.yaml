@@ -1,0 +1,29 @@
+id: '149'
+iso2: MA
+iso3: MAR
+wikidata: Q1028
+status: sovereign
+name:
+  en: Morocco
+  de: Marokko
+formal_name:
+  en: The Kingdom of Morocco
+  de: Königreich Marokko
+capitals:
+- name:
+    en: Rabat
+    de: Rabat
+  role: capital
+  wikidata: Q3551
+  lat: 34.02111
+  lon: -6.84139
+borders:
+- '004'
+- '211'
+- '245'
+regions:
+- Africa
+- Northern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Morocco
+  de: https://de.wikipedia.org/wiki/Marokko

@@ -1,0 +1,28 @@
+id: '030'
+iso2: BV
+iso3: BVT
+wikidata: Q23408
+status: dependency
+dependency_of: '166'
+name:
+  en: Bouvet Island
+  de: Bouvetinsel
+capitals:
+- name:
+    en: Oslo
+    de: Oslo
+  label:
+    en: uninhabited
+    de: unbewohnt
+  role: capital
+  wikidata: Q585
+  lat: 59.91333
+  lon: 10.73889
+borders: []
+regions:
+- Americas
+- Latin America and the Caribbean
+- South America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Bouvet_Island
+  de: https://de.wikipedia.org/wiki/Bouvetinsel

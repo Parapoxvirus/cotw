@@ -1,0 +1,24 @@
+id: '024'
+iso2: BM
+iso3: BMU
+wikidata: Q23635
+status: dependency
+dependency_of: '235'
+name:
+  en: Bermuda
+  de: Bermuda
+capitals:
+- name:
+    en: Hamilton
+    de: Hamilton
+  role: capital
+  wikidata: Q30985
+  lat: 32.295
+  lon: -64.78306
+borders: []
+regions:
+- Americas
+- Northern America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Bermuda
+  de: https://de.wikipedia.org/wiki/Bermuda

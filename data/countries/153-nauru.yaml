@@ -1,0 +1,29 @@
+id: '153'
+iso2: NR
+iso3: NRU
+wikidata: Q697
+status: sovereign
+name:
+  en: Nauru
+  de: Nauru
+formal_name:
+  en: The Republic of Nauru
+  de: Republik Nauru
+capitals:
+- name:
+    en: Yaren
+    de: Yaren
+  label:
+    en: de facto
+    de: de facto
+  role: de_facto
+  wikidata: Q31026
+  lat: -0.5477
+  lon: 166.92087
+borders: []
+regions:
+- Oceania
+- Micronesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Nauru
+  de: https://de.wikipedia.org/wiki/Nauru

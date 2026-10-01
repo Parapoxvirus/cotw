@@ -1,0 +1,31 @@
+id: '115'
+iso2: KZ
+iso3: KAZ
+wikidata: Q232
+status: sovereign
+name:
+  en: Kazakhstan
+  de: Kasachstan
+formal_name:
+  en: The Republic of Kazakhstan
+  de: Republik Kasachstan
+capitals:
+- name:
+    en: Astana
+    de: Astana
+  role: capital
+  wikidata: Q1520
+  lat: 51.13333
+  lon: 71.43333
+borders:
+- '045'
+- '120'
+- '184'
+- '229'
+- '239'
+regions:
+- Asia
+- Central Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Kazakhstan
+  de: https://de.wikipedia.org/wiki/Kasachstan

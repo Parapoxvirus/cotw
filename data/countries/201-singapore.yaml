@@ -1,0 +1,26 @@
+id: '201'
+iso2: SG
+iso3: SGP
+wikidata: Q334
+status: sovereign
+name:
+  en: Singapore
+  de: Singapur
+formal_name:
+  en: The Republic of Singapore
+  de: Republik Singapur
+capitals:
+- name:
+    en: Singapore
+    de: Singapur
+  role: capital
+  wikidata: Q334
+  lat: 1.3
+  lon: 103.8
+borders: []
+regions:
+- Asia
+- South-eastern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Singapore
+  de: https://de.wikipedia.org/wiki/Singapur

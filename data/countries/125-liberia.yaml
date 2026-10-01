@@ -1,0 +1,30 @@
+id: '125'
+iso2: LR
+iso3: LBR
+wikidata: Q1014
+status: sovereign
+name:
+  en: Liberia
+  de: Liberia
+formal_name:
+  en: The Republic of Liberia
+  de: Republik Liberia
+capitals:
+- name:
+    en: Monrovia
+    de: Monrovia
+  role: capital
+  wikidata: Q3748
+  lat: 6.31056
+  lon: -10.80472
+borders:
+- '054'
+- '093'
+- '200'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Western Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Liberia
+  de: https://de.wikipedia.org/wiki/Liberia

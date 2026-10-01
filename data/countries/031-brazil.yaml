@@ -1,0 +1,37 @@
+id: '031'
+iso2: BR
+iso3: BRA
+wikidata: Q155
+status: sovereign
+name:
+  en: Brazil
+  de: Brasilien
+formal_name:
+  en: The Federative Republic of Brazil
+  de: Föderative Republik Brasilien
+capitals:
+- name:
+    en: Brasília
+    de: Brasília
+  role: capital
+  wikidata: Q2844
+  lat: -15.79389
+  lon: -47.88278
+borders:
+- '010'
+- '026'
+- '048'
+- '077'
+- '095'
+- '173'
+- '174'
+- '214'
+- '238'
+- '241'
+regions:
+- Americas
+- Latin America and the Caribbean
+- South America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Brazil
+  de: https://de.wikipedia.org/wiki/Brasilien

@@ -1,0 +1,44 @@
+id: '023'
+iso2: BJ
+iso3: BEN
+wikidata: Q962
+status: sovereign
+name:
+  en: Benin
+  de: Benin
+formal_name:
+  en: The Republic of Benin
+  de: Republik Benin
+capitals:
+- name:
+    en: Porto-Novo
+    de: Porto-Novo
+  label:
+    en: capital
+    de: Hauptstadt
+  role: capital
+  wikidata: Q3799
+  lat: 6.48333
+  lon: 2.61667
+- name:
+    en: Cotonou
+    de: Cotonou
+  label:
+    en: seat of government
+    de: Regierungssitz
+  role: seat_of_government
+  wikidata: Q43595
+  lat: 6.36667
+  lon: 2.41667
+borders:
+- '035'
+- '159'
+- '160'
+- '223'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Western Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Benin
+  de: https://de.wikipedia.org/wiki/Benin

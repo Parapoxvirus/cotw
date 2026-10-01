@@ -1,0 +1,30 @@
+id: '061'
+iso2: DJ
+iso3: DJI
+wikidata: Q977
+status: sovereign
+name:
+  en: Djibouti
+  de: Dschibuti
+formal_name:
+  en: The Republic of Djibouti
+  de: Republik Dschibuti
+capitals:
+- name:
+    en: Djibouti City
+    de: Dschibuti-Stadt
+  role: capital
+  wikidata: Q3604
+  lat: 11.595
+  lon: 43.14806
+borders:
+- '068'
+- '071'
+- '206'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Eastern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Djibouti
+  de: https://de.wikipedia.org/wiki/Dschibuti

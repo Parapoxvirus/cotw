@@ -1,0 +1,29 @@
+id: '129'
+iso2: LU
+iso3: LUX
+wikidata: Q32
+status: sovereign
+name:
+  en: Luxembourg
+  de: Luxemburg
+formal_name:
+  en: The Grand Duchy of Luxembourg
+  de: Grossherzogtum Luxemburg
+capitals:
+- name:
+    en: Luxembourg
+    de: Luxemburg
+  role: capital
+  wikidata: Q1842
+  lat: 49.61139
+  lon: 6.13
+borders:
+- '021'
+- '076'
+- '083'
+regions:
+- Europe
+- Western Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Luxembourg
+  de: https://de.wikipedia.org/wiki/Luxemburg

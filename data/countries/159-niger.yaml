@@ -1,0 +1,34 @@
+id: '159'
+iso2: NE
+iso3: NER
+wikidata: Q1032
+status: sovereign
+name:
+  en: Niger, The
+  de: Niger
+formal_name:
+  en: The Republic of the Niger
+  de: Republik Niger
+capitals:
+- name:
+    en: Niamey
+    de: Niamey
+  role: capital
+  wikidata: Q3674
+  lat: 13.515
+  lon: 2.1175
+borders:
+- '004'
+- '023'
+- '035'
+- '043'
+- '126'
+- '135'
+- '160'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Western Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Niger
+  de: https://de.wikipedia.org/wiki/Niger

@@ -1,0 +1,28 @@
+id: '113'
+iso2: JE
+iso3: JEY
+wikidata: Q785
+status: dependency
+dependency_of: '235'
+name:
+  en: Jersey
+  de: Jersey
+formal_name:
+  en: Bailiwick of Jersey
+  de: Vogtei Jersey
+capitals:
+- name:
+    en: Saint Helier
+    de: Saint Helier
+  role: capital
+  wikidata: Q147738
+  lat: 49.18583
+  lon: -2.11
+borders: []
+regions:
+- Europe
+- Northern Europe
+- Channel Islands
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Jersey
+  de: https://de.wikipedia.org/wiki/Jersey

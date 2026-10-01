@@ -1,0 +1,35 @@
+id: '083'
+iso2: DE
+iso3: DEU
+wikidata: Q183
+status: sovereign
+name:
+  en: Germany
+  de: Deutschland
+formal_name:
+  en: The Federal Republic of Germany
+  de: Bundesrepublik Deutschland
+capitals:
+- name:
+    en: Berlin
+    de: Berlin
+  role: capital
+  wikidata: Q64
+  lat: 52.51667
+  lon: 13.38333
+borders:
+- '014'
+- '021'
+- '059'
+- '060'
+- '076'
+- '129'
+- '155'
+- '177'
+- '217'
+regions:
+- Europe
+- Western Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Germany
+  de: https://de.wikipedia.org/wiki/Deutschland

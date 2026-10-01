@@ -1,0 +1,27 @@
+id: '002'
+iso2: AX
+iso3: ALA
+wikidata: Q5689
+status: dependency
+dependency_of: '075'
+name:
+  en: Åland
+  de: Åland
+formal_name:
+  en: Åland Islands
+  de: Åland Inseln
+capitals:
+- name:
+    en: Mariehamn
+    de: Mariehamn
+  role: capital
+  wikidata: Q48329
+  lat: 60.09861
+  lon: 19.94444
+borders: []
+regions:
+- Europe
+- Northern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Åland
+  de: https://de.wikipedia.org/wiki/Åland

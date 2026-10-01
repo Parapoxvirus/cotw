@@ -1,0 +1,45 @@
+name: Wikidata check
+
+# Weekly change monitoring (docs/MONITORING.md): compares the committed Wikidata/Commons
+# caches with the live state and opens one `wikidata` issue per deviation. Nothing is applied.
+on:
+  schedule:
+    - cron: "17 4 * * 1"  # Monday 04:17 UTC
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only print the would-be issues"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    container: node:20-bookworm
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install system Python
+        run: |
+          apt-get update -qq
+          apt-get install -y -qq --no-install-recommends python3 python3-venv >/dev/null
+      - name: Install package
+        run: |
+          python3 -m venv .venv
+          .venv/bin/pip install -q --upgrade pip
+          .venv/bin/pip install -q -e ".[fetch]"
+      - name: Check Wikidata and Commons
+        env:
+          # Built-in Actions token; a repo secret COTW_MONITOR_TOKEN (issue read/write) takes
+          # precedence if the built-in token lacks the permission (docs/MONITORING.md).
+          COTW_MONITOR_TOKEN: ${{ secrets.COTW_MONITOR_TOKEN || github.token }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: |
+          if [ "$DRY_RUN" = "true" ]; then
+            .venv/bin/python -m cotw check-wikidata --dry-run
+          else
+            .venv/bin/python -m cotw check-wikidata
+          fi

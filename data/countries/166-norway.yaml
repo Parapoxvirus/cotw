@@ -1,0 +1,29 @@
+id: '166'
+iso2: 'NO'
+iso3: NOR
+wikidata: Q20
+status: sovereign
+name:
+  en: Norway
+  de: Norwegen
+formal_name:
+  en: The Kingdom of Norway
+  de: Königreich Norwegen
+capitals:
+- name:
+    en: Oslo
+    de: Oslo
+  role: capital
+  wikidata: Q585
+  lat: 59.91333
+  lon: 10.73889
+borders:
+- '075'
+- '184'
+- '216'
+regions:
+- Europe
+- Northern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Norway
+  de: https://de.wikipedia.org/wiki/Norwegen

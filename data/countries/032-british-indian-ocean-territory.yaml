@@ -1,0 +1,28 @@
+id: '032'
+iso2: IO
+iso3: IOT
+wikidata: Q43448
+status: dependency
+dependency_of: '235'
+name:
+  en: British Indian Ocean Territory
+  de: Britisches Territorium im Indischen Ozean
+capitals:
+- name:
+    en: London
+    de: London
+  label:
+    en: inhabited by military only
+    de: nur durch Militär bewohnt
+  role: capital
+  wikidata: Q84
+  lat: 51.50722
+  lon: -0.1275
+borders: []
+regions:
+- Africa
+- Sub-Saharan Africa
+- Eastern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/British_Indian_Ocean_Territory
+  de: https://de.wikipedia.org/wiki/Britisches_Territorium_im_Indischen_Ozean

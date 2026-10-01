@@ -1,0 +1,27 @@
+id: '162'
+iso2: NF
+iso3: NFK
+wikidata: Q31057
+status: dependency
+dependency_of: '013'
+name:
+  en: Norfolk Island
+  de: Norfolkinsel
+formal_name:
+  en: Territory of Norfolk Island
+  de: Territorium der Norfolkinsel
+capitals:
+- name:
+    en: Kingston
+    de: Kingston
+  role: capital
+  wikidata: Q30963
+  lat: -29.05
+  lon: 167.96667
+borders: []
+regions:
+- Oceania
+- Australia and New Zealand
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Norfolk_Island
+  de: https://de.wikipedia.org/wiki/Norfolkinsel

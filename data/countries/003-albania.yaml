@@ -1,0 +1,30 @@
+id: '003'
+iso2: AL
+iso3: ALB
+wikidata: Q222
+status: sovereign
+name:
+  en: Albania
+  de: Albanien
+formal_name:
+  en: The Republic of Albania
+  de: Republik Albanien
+capitals:
+- name:
+    en: Tirana
+    de: Tirana
+  role: capital
+  wikidata: Q19689
+  lat: 41.32833
+  lon: 19.81806
+borders:
+- '086'
+- '118'
+- '147'
+- '164'
+regions:
+- Europe
+- Southern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Albania
+  de: https://de.wikipedia.org/wiki/Albanien

@@ -1,0 +1,33 @@
+id: '210'
+iso2: SS
+iso3: SSD
+wikidata: Q958
+status: sovereign
+name:
+  en: South Sudan
+  de: Südsudan
+formal_name:
+  en: The Republic of South Sudan
+  de: Republik Südsudan
+capitals:
+- name:
+    en: Juba
+    de: Juba
+  role: capital
+  wikidata: Q1947
+  lat: 4.85389
+  lon: 31.5825
+borders:
+- '042'
+- '050'
+- '071'
+- '116'
+- '213'
+- '232'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Eastern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/South_Sudan
+  de: https://de.wikipedia.org/wiki/Südsudan

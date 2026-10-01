@@ -1,0 +1,31 @@
+id: '020'
+iso2: BY
+iso3: BLR
+wikidata: Q184
+status: sovereign
+name:
+  en: Belarus
+  de: Belarus / Weissrussland
+formal_name:
+  en: The Republic of Belarus
+  de: Republik Belarus
+capitals:
+- name:
+    en: Minsk
+    de: Minsk
+  role: capital
+  wikidata: Q2280
+  lat: 53.90225
+  lon: 27.56184
+borders:
+- '122'
+- '128'
+- '177'
+- '184'
+- '233'
+regions:
+- Europe
+- Eastern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Belarus
+  de: https://de.wikipedia.org/wiki/Belarus

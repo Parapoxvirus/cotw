@@ -1,0 +1,32 @@
+id: '245'
+iso2: EH
+iso3: ESH
+wikidata: Q6250
+status: disputed
+name:
+  en: Western Sahara / Sahrawi Republic
+  de: Westsahara / Demokratische Arabische Republik Sahara
+formal_name:
+  en: Sahrawi Arab Democratic Republic
+  de: Arabische Saharauische Demokratische Republik
+capitals:
+- name:
+    en: El Aaiún
+    de: El Aaiún
+  label:
+    en: according to constitution
+    de: gemäss Verfassung
+  role: capital
+  wikidata: Q47837
+  lat: 27.15
+  lon: -13.2
+borders:
+- '004'
+- '139'
+- '149'
+regions:
+- Africa
+- Northern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Sahrawi_Arab_Democratic_Republic
+  de: https://de.wikipedia.org/wiki/Westsahara

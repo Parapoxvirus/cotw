@@ -1,0 +1,34 @@
+id: '217'
+iso2: CH
+iso3: CHE
+wikidata: Q39
+status: sovereign
+name:
+  en: Switzerland
+  de: Schweiz
+formal_name:
+  en: The Swiss Confederation
+  de: Schweizerische Eidgenossenschaft
+capitals:
+- name:
+    en: Bern
+    de: Bern
+  label:
+    en: seat of government
+    de: Regierungssitz
+  role: seat_of_government
+  wikidata: Q70
+  lat: 46.94798
+  lon: 7.44743
+borders:
+- '014'
+- '076'
+- '083'
+- '110'
+- '127'
+regions:
+- Europe
+- Western Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Switzerland
+  de: https://de.wikipedia.org/wiki/Schweiz

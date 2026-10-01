@@ -1,0 +1,30 @@
+id: '095'
+iso2: GY
+iso3: GUY
+wikidata: Q734
+status: sovereign
+name:
+  en: Guyana
+  de: Guyana
+formal_name:
+  en: The Co-operative Republic of Guyana
+  de: Kooperative Republik Guyana
+capitals:
+- name:
+    en: Georgetown
+    de: Georgetown
+  role: capital
+  wikidata: Q10717
+  lat: 6.80583
+  lon: -58.15083
+borders:
+- '031'
+- '214'
+- '241'
+regions:
+- Americas
+- Latin America and the Caribbean
+- South America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Guyana
+  de: https://de.wikipedia.org/wiki/Guyana

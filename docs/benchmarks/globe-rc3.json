@@ -1,0 +1,412 @@
+{
+  "widthCssPx": 800,
+  "dpr": 2,
+  "samplesPerLoad": 5,
+  "framesPerTrace": 120,
+  "runs": [
+    {
+      "cpuThrottle": 1,
+      "coldPaintMs": {
+        "p50": 53.5,
+        "p95": 78.3,
+        "max": 78.3
+      },
+      "subsequentPaintMs": {
+        "p50": 33.5,
+        "p95": 33.5,
+        "max": 33.5
+      },
+      "firstFrames": [
+        {
+          "id": "209",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 17.200000762939453,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "209",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 17,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "209",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 16.5,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "209",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 17,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "209",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 21.600000381469727,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "117",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 4.799999237060547,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "117",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 4.200000762939453,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "117",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 4.200000762939453,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "117",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 4.100000381469727,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "117",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 4.600000381469727,
+          "interacting": false,
+          "borders": 816
+        }
+      ],
+      "loadLongTasksMs": [
+        57,
+        54
+      ],
+      "coldDetailHandoffLongTasksMs": [
+        57,
+        54
+      ],
+      "traces": {
+        "africa-europe-drag": {
+          "drawMs": {
+            "p50": 2.8,
+            "p95": 4,
+            "max": 6.3
+          },
+          "rafIntervalMs": {
+            "p50": 17.2,
+            "p95": 19.8,
+            "max": 22.2
+          },
+          "levels": [
+            1
+          ],
+          "bordersEveryFrame": true
+        },
+        "africa-europe-wheel": {
+          "drawMs": {
+            "p50": 2.3,
+            "p95": 7.4,
+            "max": 10.7
+          },
+          "rafIntervalMs": {
+            "p50": 17.2,
+            "p95": 27.8,
+            "max": 39.3
+          },
+          "levels": [
+            1,
+            2
+          ],
+          "bordersEveryFrame": true
+        },
+        "pacific-drag": {
+          "drawMs": {
+            "p50": 1.4,
+            "p95": 3.2,
+            "max": 5.3
+          },
+          "rafIntervalMs": {
+            "p50": 16.7,
+            "p95": 19.8,
+            "max": 21.2
+          },
+          "levels": [
+            1
+          ],
+          "bordersEveryFrame": true
+        },
+        "pacific-wheel": {
+          "drawMs": {
+            "p50": 0.7,
+            "p95": 4.4,
+            "max": 5.7
+          },
+          "rafIntervalMs": {
+            "p50": 16.7,
+            "p95": 17.4,
+            "max": 20.9
+          },
+          "levels": [
+            1,
+            2
+          ],
+          "bordersEveryFrame": true
+        },
+        "pacific-pinch": {
+          "drawMs": {
+            "p50": 0.6,
+            "p95": 4,
+            "max": 5.1
+          },
+          "rafIntervalMs": null,
+          "levels": [
+            1,
+            2
+          ],
+          "bordersEveryFrame": true
+        }
+      }
+    },
+    {
+      "cpuThrottle": 4,
+      "coldPaintMs": {
+        "p50": 178.3,
+        "p95": 187.2,
+        "max": 187.2
+      },
+      "subsequentPaintMs": {
+        "p50": 89.8,
+        "p95": 96.7,
+        "max": 96.7
+      },
+      "firstFrames": [
+        {
+          "id": "209",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 69.70000076293945,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "209",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 65.80000114440918,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "209",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 62.39999961853027,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "209",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 61.39999961853027,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "209",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 62.20000076293945,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "117",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 24.799999237060547,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "117",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 18.69999885559082,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "117",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 20.5,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "117",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 23,
+          "interacting": false,
+          "borders": 816
+        },
+        {
+          "id": "117",
+          "level": 0,
+          "want": 2,
+          "stroke": true,
+          "ms": 26.5,
+          "interacting": false,
+          "borders": 816
+        }
+      ],
+      "loadLongTasksMs": [
+        80,
+        87,
+        181,
+        167,
+        139
+      ],
+      "coldDetailHandoffLongTasksMs": [
+        181,
+        167
+      ],
+      "traces": {
+        "africa-europe-drag": {
+          "drawMs": {
+            "p50": 10.9,
+            "p95": 12.6,
+            "max": 16.1
+          },
+          "rafIntervalMs": {
+            "p50": 67.4,
+            "p95": 78.2,
+            "max": 98.8
+          },
+          "levels": [
+            0,
+            1
+          ],
+          "bordersEveryFrame": true
+        },
+        "africa-europe-wheel": {
+          "drawMs": {
+            "p50": 3.3,
+            "p95": 7.8,
+            "max": 16.1
+          },
+          "rafIntervalMs": {
+            "p50": 37.3,
+            "p95": 63,
+            "max": 83.7
+          },
+          "levels": [
+            0,
+            1
+          ],
+          "bordersEveryFrame": true
+        },
+        "pacific-drag": {
+          "drawMs": {
+            "p50": 5.7,
+            "p95": 7.4,
+            "max": 10.5
+          },
+          "rafIntervalMs": {
+            "p50": 30.8,
+            "p95": 40.7,
+            "max": 47.5
+          },
+          "levels": [
+            1
+          ],
+          "bordersEveryFrame": true
+        },
+        "pacific-wheel": {
+          "drawMs": {
+            "p50": 1.4,
+            "p95": 3.8,
+            "max": 21.1
+          },
+          "rafIntervalMs": {
+            "p50": 16.9,
+            "p95": 29.9,
+            "max": 39.6
+          },
+          "levels": [
+            0,
+            1,
+            2
+          ],
+          "bordersEveryFrame": true
+        },
+        "pacific-pinch": {
+          "drawMs": {
+            "p50": 1.5,
+            "p95": 3.4,
+            "max": 24.4
+          },
+          "rafIntervalMs": null,
+          "levels": [
+            1,
+            2
+          ],
+          "bordersEveryFrame": true
+        }
+      }
+    }
+  ],
+  "assets": {
+    "globe": {
+      "bytes": 226168,
+      "sha256": "3becdf443d259dbe43e46237441673caf1c50a0235c3d686b270b4a251787e64"
+    },
+    "globe-detail": {
+      "bytes": 1430197,
+      "sha256": "e4ee3242cfe23c177f0af80d038aa2e1adb13ef4606f5b9c6ddeb4b5517261e0"
+    }
+  },
+  "browser": "147.0.7727.55"
+}

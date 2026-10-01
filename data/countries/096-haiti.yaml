@@ -1,0 +1,28 @@
+id: '096'
+iso2: HT
+iso3: HTI
+wikidata: Q790
+status: sovereign
+name:
+  en: Haiti
+  de: Haiti
+formal_name:
+  en: The Republic of Haiti
+  de: Republik Haiti
+capitals:
+- name:
+    en: Port-au-Prince
+    de: Port-au-Prince
+  role: capital
+  wikidata: Q34261
+  lat: 18.54694
+  lon: -72.34028
+borders:
+- '063'
+regions:
+- Americas
+- Latin America and the Caribbean
+- Caribbean
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Haiti
+  de: https://de.wikipedia.org/wiki/Haiti

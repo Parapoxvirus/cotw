@@ -1,0 +1,31 @@
+id: '164'
+iso2: MK
+iso3: MKD
+wikidata: Q221
+status: sovereign
+name:
+  en: North Macedonia
+  de: Nordmazedonien
+formal_name:
+  en: Republic of North Macedonia
+  de: Republik Nordmazedonien
+capitals:
+- name:
+    en: Skopje
+    de: Skopje
+  role: capital
+  wikidata: Q384
+  lat: 41.99611
+  lon: 21.43167
+borders:
+- '003'
+- '034'
+- '086'
+- '118'
+- '198'
+regions:
+- Europe
+- Southern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/North_Macedonia
+  de: https://de.wikipedia.org/wiki/Nordmazedonien

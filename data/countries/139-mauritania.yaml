@@ -1,0 +1,31 @@
+id: '139'
+iso2: MR
+iso3: MRT
+wikidata: Q1025
+status: sovereign
+name:
+  en: Mauritania
+  de: Mauretanien
+formal_name:
+  en: The Islamic Republic of Mauritania
+  de: Islamische Republik Mauretanien
+capitals:
+- name:
+    en: Nouakchott
+    de: Nouakchott
+  role: capital
+  wikidata: Q3688
+  lat: 18.08581
+  lon: -15.9785
+borders:
+- '004'
+- '135'
+- '197'
+- '245'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Western Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Mauritania
+  de: https://de.wikipedia.org/wiki/Mauretanien

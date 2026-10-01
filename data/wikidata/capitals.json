@@ -1,0 +1,5145 @@
+{
+ "Q1000": [
+  {
+   "coord": [
+    0.407777777,
+    9.440277777
+   ],
+   "end": null,
+   "label_de": "Libreville",
+   "label_en": "Libreville",
+   "qid": "Q3825",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1005": [
+  {
+   "coord": [
+    13.453055555,
+    -16.5775
+   ],
+   "end": null,
+   "label_de": "Banjul",
+   "label_en": "Banjul",
+   "qid": "Q3726",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1006": [
+  {
+   "coord": [
+    9.509166666,
+    -13.712222222
+   ],
+   "end": null,
+   "label_de": "Conakry",
+   "label_en": "Conakry",
+   "qid": "Q3733",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1007": [
+  {
+   "coord": [
+    11.86,
+    -15.583333333
+   ],
+   "end": null,
+   "label_de": "Bissau",
+   "label_en": "Bissau",
+   "qid": "Q3739",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1008": [
+  {
+   "coord": [
+    5.336388888,
+    -4.026666666
+   ],
+   "end": "1983-03-01T00:00:00Z",
+   "label_de": "Abidjan",
+   "label_en": "Abidjan",
+   "qid": "Q1515",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1933-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    6.816111111,
+    -5.274166666
+   ],
+   "end": null,
+   "label_de": "Yamoussoukro",
+   "label_en": "Yamoussoukro",
+   "qid": "Q3768",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1983-03-01T00:00:00Z"
+  }
+ ],
+ "Q1009": [
+  {
+   "coord": [
+    3.857777777,
+    11.518055555
+   ],
+   "end": null,
+   "label_de": "Yaoundé",
+   "label_en": "Yaoundé",
+   "qid": "Q3808",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1011": [
+  {
+   "coord": [
+    14.917719444,
+    -23.509155555
+   ],
+   "end": null,
+   "label_de": "Praia",
+   "label_en": "Praia",
+   "qid": "Q3751",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1013": [
+  {
+   "coord": [
+    -29.31,
+    27.48
+   ],
+   "end": null,
+   "label_de": "Maseru",
+   "label_en": "Maseru",
+   "qid": "Q3909",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1014": [
+  {
+   "coord": [
+    6.310555555,
+    -10.804722222
+   ],
+   "end": null,
+   "label_de": "Monrovia",
+   "label_en": "Monrovia",
+   "qid": "Q3748",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1016": [
+  {
+   "coord": [
+    32.8875,
+    13.1875
+   ],
+   "end": null,
+   "label_de": "Tripolis",
+   "label_en": "Tripoli",
+   "qid": "Q3579",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1019": [
+  {
+   "coord": [
+    -18.91,
+    47.525
+   ],
+   "end": null,
+   "label_de": "Antananarivo",
+   "label_en": "Antananarivo",
+   "qid": "Q3915",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1020": [
+  {
+   "coord": [
+    -13.986388888,
+    33.768055555
+   ],
+   "end": null,
+   "label_de": "Lilongwe",
+   "label_en": "Lilongwe",
+   "qid": "Q3876",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1975-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    -15.385957,
+    35.318801
+   ],
+   "end": "1975-01-01T00:00:00Z",
+   "label_de": "Zomba",
+   "label_en": "Zomba",
+   "qid": "Q219117",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1880-01-01T00:00:00Z"
+  }
+ ],
+ "Q1025": [
+  {
+   "coord": [
+    18.08581,
+    -15.9785
+   ],
+   "end": null,
+   "label_de": "Nouakchott",
+   "label_en": "Nouakchott",
+   "qid": "Q3688",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1027": [
+  {
+   "coord": [
+    -20.161944444,
+    57.498888888
+   ],
+   "end": null,
+   "label_de": "Port Louis",
+   "label_en": "Port Louis",
+   "qid": "Q3929",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1028": [
+  {
+   "coord": [
+    34.021111111,
+    -6.841388888
+   ],
+   "end": null,
+   "label_de": "Rabat",
+   "label_en": "Rabat",
+   "qid": "Q3551",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1029": [
+  {
+   "coord": [
+    -25.968888888,
+    32.573333333
+   ],
+   "end": null,
+   "label_de": "Maputo",
+   "label_en": "Maputo",
+   "qid": "Q3889",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1030": [
+  {
+   "coord": [
+    -22.57,
+    17.083611111
+   ],
+   "end": null,
+   "label_de": "Windhoek",
+   "label_en": "Windhoek",
+   "qid": "Q3935",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1032": [
+  {
+   "coord": [
+    13.515,
+    2.1175
+   ],
+   "end": null,
+   "label_de": "Niamey",
+   "label_en": "Niamey",
+   "qid": "Q3674",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1033": [
+  {
+   "coord": [
+    9.055555555,
+    7.491388888
+   ],
+   "end": null,
+   "label_de": null,
+   "label_en": "Abuja",
+   "qid": "Q3787",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1991-12-12T00:00:00Z"
+  },
+  {
+   "coord": [
+    6.456111111,
+    3.393611111
+   ],
+   "end": "1991-12-12T00:00:00Z",
+   "label_de": "Lagos",
+   "label_en": "Lagos",
+   "qid": "Q8673",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1914-01-01T00:00:00Z"
+  }
+ ],
+ "Q1036": [
+  {
+   "coord": [
+    0.313611111,
+    32.581111111
+   ],
+   "end": null,
+   "label_de": "Kampala",
+   "label_en": "Kampala",
+   "qid": "Q3894",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1037": [
+  {
+   "coord": [
+    -1.9525,
+    30.115
+   ],
+   "end": null,
+   "label_de": "Kigali",
+   "label_en": "Kigali",
+   "qid": "Q3859",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1039": [
+  {
+   "coord": [
+    0.3375,
+    6.728333333
+   ],
+   "end": null,
+   "label_de": "São Tomé",
+   "label_en": "São Tomé",
+   "qid": "Q3932",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1041": [
+  {
+   "coord": [
+    14.672555555,
+    -17.432
+   ],
+   "end": null,
+   "label_de": "Dakar",
+   "label_en": "Dakar",
+   "qid": "Q3718",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1042": [
+  {
+   "coord": [
+    -4.623611111,
+    55.454444444
+   ],
+   "end": null,
+   "label_de": "Victoria",
+   "label_en": "Victoria",
+   "qid": "Q3940",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1044": [
+  {
+   "coord": [
+    8.487222222,
+    -13.235555555
+   ],
+   "end": null,
+   "label_de": "Freetown",
+   "label_en": "Freetown",
+   "qid": "Q3780",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1045": [
+  {
+   "coord": [
+    2.039166666,
+    45.341944444
+   ],
+   "end": null,
+   "label_de": "Mogadischu",
+   "label_en": "Mogadishu",
+   "qid": "Q2449",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1049": [
+  {
+   "coord": [
+    15.60308,
+    32.52654
+   ],
+   "end": null,
+   "label_de": "Chartum",
+   "label_en": "Khartoum",
+   "qid": "Q1963",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1050": [
+  {
+   "coord": [
+    -26.316666666,
+    31.133333333
+   ],
+   "end": null,
+   "label_de": "Mbabane",
+   "label_en": "Mbabane",
+   "qid": "Q3904",
+   "rank": "ontology#normal",
+   "role": "executive",
+   "role_qid": "Q35798",
+   "start": null
+  },
+  {
+   "coord": [
+    -26.44648,
+    31.206411
+   ],
+   "end": null,
+   "label_de": "Lobamba",
+   "label_en": "Lobamba",
+   "qid": "Q101418",
+   "rank": "ontology#normal",
+   "role": "legislative",
+   "role_qid": "Q11204",
+   "start": null
+  }
+ ],
+ "Q114": [
+  {
+   "coord": [
+    -1.286388888,
+    36.817222222
+   ],
+   "end": null,
+   "label_de": "Nairobi",
+   "label_en": "Nairobi",
+   "qid": "Q3870",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q115": [
+  {
+   "coord": [
+    9.035833333,
+    38.7525
+   ],
+   "end": null,
+   "label_de": "Addis Abeba",
+   "label_en": "Addis Ababa",
+   "qid": "Q3624",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q117": [
+  {
+   "coord": [
+    5.55602,
+    -0.1969
+   ],
+   "end": null,
+   "label_de": "Accra",
+   "label_en": "Accra",
+   "qid": "Q3761",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q11703": [
+  {
+   "coord": [
+    18.35,
+    -64.95
+   ],
+   "end": null,
+   "label_de": "Charlotte Amalie",
+   "label_en": "Charlotte Amalie",
+   "qid": "Q51681",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1183": [
+  {
+   "coord": [
+    18.465277777,
+    -66.116666666
+   ],
+   "end": null,
+   "label_de": "San Juan",
+   "label_en": "San Juan",
+   "qid": "Q41211",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1246": [
+  {
+   "coord": [
+    42.666666666,
+    21.166666666
+   ],
+   "end": null,
+   "label_de": "Pristina",
+   "label_en": "Pristina",
+   "qid": "Q25270",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q126125": [
+  {
+   "coord": [
+    18.066666666,
+    -63.084722222
+   ],
+   "end": null,
+   "label_de": "Marigot",
+   "label_en": "Marigot",
+   "qid": "Q200605",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q129003": [
+  {
+   "coord": [
+    -49.35,
+    70.216666666
+   ],
+   "end": null,
+   "label_de": "Port-aux-Français",
+   "label_en": "Port-aux-Français",
+   "qid": "Q839559",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q13353": [
+  {
+   "coord": [
+    16.706416666,
+    -62.215838888
+   ],
+   "end": null,
+   "label_de": "Plymouth",
+   "label_en": "Plymouth",
+   "qid": "Q30990",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    16.792777777,
+    -62.210555555
+   ],
+   "end": null,
+   "label_de": "Brades",
+   "label_en": "Brades",
+   "qid": "Q31006",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q1410": [
+  {
+   "coord": [
+    36.14,
+    -5.35
+   ],
+   "end": null,
+   "label_de": "Gibraltar",
+   "label_en": "Gibraltar",
+   "qid": "Q1410",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q142": [
+  {
+   "coord": [
+    51.507222222,
+    -0.1275
+   ],
+   "end": "1942-01-01T00:00:00Z",
+   "label_de": "London",
+   "label_en": "London",
+   "qid": "Q84",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1940-06-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    48.856666666,
+    2.352222222
+   ],
+   "end": null,
+   "label_de": "Paris",
+   "label_en": "Paris",
+   "qid": "Q90",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1789-10-05T00:00:00Z"
+  },
+  {
+   "coord": [
+    47.392777777,
+    0.688333333
+   ],
+   "end": "1940-06-13T00:00:00Z",
+   "label_de": "Tours",
+   "label_en": "Tours",
+   "qid": "Q288",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1940-06-10T00:00:00Z"
+  },
+  {
+   "coord": [
+    48.805,
+    2.135
+   ],
+   "end": "1789-10-05T00:00:00Z",
+   "label_de": "Versailles",
+   "label_en": "Versailles",
+   "qid": "Q621",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1682-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    48.805,
+    2.135
+   ],
+   "end": "1879-01-01T00:00:00Z",
+   "label_de": "Versailles",
+   "label_en": "Versailles",
+   "qid": "Q621",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1871-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    44.837777777,
+    -0.579444444
+   ],
+   "end": "1940-06-28T00:00:00Z",
+   "label_de": "Bordeaux",
+   "label_en": "Bordeaux",
+   "qid": "Q1479",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1940-06-14T00:00:00Z"
+  },
+  {
+   "coord": [
+    36.776388888,
+    3.058611111
+   ],
+   "end": "1944-01-01T00:00:00Z",
+   "label_de": "Algier",
+   "label_en": "Algiers",
+   "qid": "Q3561",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1942-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    -4.269444444,
+    15.271111111
+   ],
+   "end": "1942-01-01T00:00:00Z",
+   "label_de": "Brazzaville",
+   "label_en": "Brazzaville",
+   "qid": "Q3844",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1940-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    46.126944444,
+    3.425833333
+   ],
+   "end": "1944-08-20T00:00:00Z",
+   "label_de": "Vichy",
+   "label_en": "Vichy",
+   "qid": "Q93351",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1940-07-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    49.278611111,
+    -0.703888888
+   ],
+   "end": "1944-09-01T00:00:00Z",
+   "label_de": "Bayeux",
+   "label_en": "Bayeux",
+   "qid": "Q183910",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1944-06-01T00:00:00Z"
+  }
+ ],
+ "Q145": [
+  {
+   "coord": [
+    51.507222222,
+    -0.1275
+   ],
+   "end": null,
+   "label_de": "London",
+   "label_en": "London",
+   "qid": "Q84",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q14773": [
+  {
+   "coord": [
+    22.19327778,
+    113.53941667
+   ],
+   "end": null,
+   "label_de": "Concelho de Macau",
+   "label_en": "Municipality of Macau",
+   "qid": "Q841086",
+   "rank": "ontology#deprecated",
+   "role": null,
+   "role_qid": null,
+   "start": "1999-01-01T00:00:00Z"
+  }
+ ],
+ "Q148": [
+  {
+   "coord": [
+    39.90403,
+    116.407526
+   ],
+   "end": null,
+   "label_de": "Peking",
+   "label_en": "Beijing",
+   "qid": "Q956",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1949-10-01T00:00:00Z"
+  }
+ ],
+ "Q155": [
+  {
+   "coord": [
+    -15.793888888,
+    -47.882777777
+   ],
+   "end": null,
+   "label_de": "Brasília",
+   "label_en": "Brasília",
+   "qid": "Q2844",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1960-04-22T00:00:00Z"
+  },
+  {
+   "coord": [
+    -22.911111111,
+    -43.205555555
+   ],
+   "end": "1960-04-22T00:00:00Z",
+   "label_de": "Rio de Janeiro",
+   "label_en": "Rio de Janeiro",
+   "qid": "Q8678",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q159": [
+  {
+   "coord": [
+    55.750555555,
+    37.6175
+   ],
+   "end": null,
+   "label_de": "Moskau",
+   "label_en": "Moscow",
+   "qid": "Q649",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1918-03-11T00:00:00Z"
+  },
+  {
+   "coord": [
+    59.95,
+    30.316666666
+   ],
+   "end": "1918-03-11T00:00:00Z",
+   "label_de": "Sankt Petersburg",
+   "label_en": "Saint Petersburg",
+   "qid": "Q656",
+   "rank": "ontology#deprecated",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q16": [
+  {
+   "coord": [
+    45.424722222,
+    -75.695
+   ],
+   "end": null,
+   "label_de": "Ottawa",
+   "label_en": "Ottawa",
+   "qid": "Q1930",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1867-05-15T00:00:00Z"
+  }
+ ],
+ "Q16635": [
+  {
+   "coord": [
+    13.483333333,
+    144.75
+   ],
+   "end": null,
+   "label_de": "Hagåtña",
+   "label_en": "Hagåtña",
+   "qid": "Q30988",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q16641": [
+  {
+   "coord": [
+    -14.279444444,
+    -170.700555555
+   ],
+   "end": null,
+   "label_de": "Pago Pago",
+   "label_en": "Pago Pago",
+   "qid": "Q51678",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q16644": [
+  {
+   "coord": [
+    15.21233,
+    145.7545
+   ],
+   "end": null,
+   "label_de": "Saipan",
+   "label_en": "Saipan",
+   "qid": "Q49755159",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q17": [
+  {
+   "coord": [
+    35.689444444,
+    139.691666666
+   ],
+   "end": null,
+   "label_de": "Tokio",
+   "label_en": "Tokyo",
+   "qid": "Q1490",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1943-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    35.683888888,
+    139.774444444
+   ],
+   "end": "1868-01-01T00:00:00Z",
+   "label_de": "Edo",
+   "label_en": "Edo",
+   "qid": "Q215646",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1603-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    34.934722222,
+    136.084444444
+   ],
+   "end": "0745-01-01T00:00:00Z",
+   "label_de": "Shigaraki-Palast",
+   "label_en": "Shigaraki Palace",
+   "qid": "Q262438",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "0744-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    35.0,
+    135.76666667
+   ],
+   "end": "1869-01-01T00:00:00Z",
+   "label_de": "Heian-kyō",
+   "label_en": "Heian-kyō",
+   "qid": "Q751907",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "0794-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    34.69111111,
+    135.79472222
+   ],
+   "end": "0784-01-01T00:00:00Z",
+   "label_de": "Heijō-kyō",
+   "label_en": "Heijō-kyō",
+   "qid": "Q862509",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "0710-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    34.943204,
+    135.703232
+   ],
+   "end": "0794-01-01T00:00:00Z",
+   "label_de": "Nagaoka-kyō",
+   "label_en": "Nagaoka-kyō",
+   "qid": "Q1052803",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "0784-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    35.68,
+    139.77
+   ],
+   "end": "1943-01-01T00:00:00Z",
+   "label_de": "Tokio Präfektur",
+   "label_en": "Tokyo Prefecture",
+   "qid": "Q1189121",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1868-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    35.67666667,
+    139.76472222
+   ],
+   "end": "1943-01-01T00:00:00Z",
+   "label_de": "Tokio",
+   "label_en": "Tokyo City",
+   "qid": "Q1207735",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1889-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    34.68527778,
+    135.16833333
+   ],
+   "end": "1180-01-01T00:00:00Z",
+   "label_de": "Fukuhara-kyō",
+   "label_en": "Fukuhara-kyō",
+   "qid": "Q6031707",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q17012": [
+  {
+   "coord": [
+    15.996944444,
+    -61.732777777
+   ],
+   "end": null,
+   "label_de": "Basse-Terre",
+   "label_en": "Basse-Terre",
+   "qid": "Q167024",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q17054": [
+  {
+   "coord": [
+    14.6,
+    -61.066666666
+   ],
+   "end": null,
+   "label_de": "Fort-de-France",
+   "label_en": "Fort-de-France",
+   "qid": "Q81621",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q17063": [
+  {
+   "coord": [
+    -12.781388888,
+    45.231666666
+   ],
+   "end": null,
+   "label_de": "Mamoudzou",
+   "label_en": "Mamoudzou",
+   "qid": "Q132676",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "2023-08-27T00:00:00Z"
+  },
+  {
+   "coord": [
+    -12.788333333,
+    45.2725
+   ],
+   "end": "2023-08-26T00:00:00Z",
+   "label_de": "Dzaoudzi",
+   "label_en": "Dzaoudzi",
+   "qid": "Q846048",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "2011-03-31T00:00:00Z"
+  }
+ ],
+ "Q17070": [
+  {
+   "coord": [
+    -20.878888888,
+    55.448055555
+   ],
+   "end": null,
+   "label_de": "Saint-Denis",
+   "label_en": "Saint-Denis",
+   "qid": "Q47045",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q18221": [
+  {
+   "coord": [
+    21.460277777,
+    -71.141388888
+   ],
+   "end": null,
+   "label_de": "Cockburn Town",
+   "label_en": "Cockburn Town",
+   "qid": "Q34205",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q183": [
+  {
+   "coord": [
+    52.516666666,
+    13.383333333
+   ],
+   "end": null,
+   "label_de": "Berlin",
+   "label_en": "Berlin",
+   "qid": "Q64",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": "Q129319315",
+   "start": "1867-07-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    52.516666666,
+    13.383333333
+   ],
+   "end": null,
+   "label_de": "Berlin",
+   "label_en": "Berlin",
+   "qid": "Q64",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": "Q129319315",
+   "start": "1990-10-03T00:00:00Z"
+  },
+  {
+   "coord": [
+    52.516666666,
+    13.383333333
+   ],
+   "end": null,
+   "label_de": "Berlin",
+   "label_en": "Berlin",
+   "qid": "Q64",
+   "rank": "ontology#preferred",
+   "role": "seat_of_government",
+   "role_qid": "Q1901835",
+   "start": "1999-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    50.735277777,
+    7.102222222
+   ],
+   "end": "1999-01-01T00:00:00Z",
+   "label_de": "Bonn",
+   "label_en": "Bonn",
+   "qid": "Q586",
+   "rank": "ontology#normal",
+   "role": "seat_of_government",
+   "role_qid": "Q1901835",
+   "start": "1949-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    50.735277777,
+    7.102222222
+   ],
+   "end": "1990-01-01T00:00:00Z",
+   "label_de": "Bonn",
+   "label_en": "Bonn",
+   "qid": "Q586",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": "Q129319315",
+   "start": "1973-01-01T00:00:00Z"
+  }
+ ],
+ "Q184": [
+  {
+   "coord": [
+    53.902246,
+    27.561837
+   ],
+   "end": null,
+   "label_de": "Minsk",
+   "label_en": "Minsk",
+   "qid": "Q2280",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q189": [
+  {
+   "coord": [
+    64.1475,
+    -21.935
+   ],
+   "end": null,
+   "label_de": "Reykjavík",
+   "label_en": "Reykjavík",
+   "qid": "Q1764",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q191": [
+  {
+   "coord": [
+    59.437222222,
+    24.745
+   ],
+   "end": null,
+   "label_de": "Tallinn",
+   "label_en": "Tallinn",
+   "qid": "Q1770",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q192184": [
+  {
+   "coord": [
+    -15.925138888,
+    -5.717916666
+   ],
+   "end": null,
+   "label_de": "Jamestown",
+   "label_en": "Jamestown",
+   "qid": "Q30970",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q20": [
+  {
+   "coord": [
+    59.913333333,
+    10.738888888
+   ],
+   "end": null,
+   "label_de": null,
+   "label_en": null,
+   "qid": "Q585",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q211": [
+  {
+   "coord": [
+    56.9475,
+    24.106944444
+   ],
+   "end": null,
+   "label_de": "Riga",
+   "label_en": "Riga",
+   "qid": "Q1773",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q212": [
+  {
+   "coord": [
+    50.45,
+    30.523611111
+   ],
+   "end": null,
+   "label_de": "Kiew",
+   "label_en": "Kyiv",
+   "qid": "Q1899",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q21203": [
+  {
+   "coord": [
+    12.518611111,
+    -70.035833333
+   ],
+   "end": null,
+   "label_de": "Oranjestad",
+   "label_en": "Oranjestad",
+   "qid": "Q131243",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q213": [
+  {
+   "coord": [
+    50.0875,
+    14.421388888
+   ],
+   "end": null,
+   "label_de": "Prag",
+   "label_en": "Prague",
+   "qid": "Q1085",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q214": [
+  {
+   "coord": [
+    48.1516988,
+    17.1093063
+   ],
+   "end": null,
+   "label_de": "Bratislava",
+   "label_en": "Bratislava",
+   "qid": "Q1780",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q215": [
+  {
+   "coord": [
+    46.051388888,
+    14.506111111
+   ],
+   "end": null,
+   "label_de": "Ljubljana",
+   "label_en": "Ljubljana",
+   "qid": "Q437",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q217": [
+  {
+   "coord": [
+    47.022777777,
+    28.835277777
+   ],
+   "end": null,
+   "label_de": "Kischinau",
+   "label_en": "Chișinău",
+   "qid": "Q21197",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q218": [
+  {
+   "coord": [
+    44.413361111,
+    26.097777777
+   ],
+   "end": null,
+   "label_de": "Bukarest",
+   "label_en": "Bucharest",
+   "qid": "Q19660",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q219": [
+  {
+   "coord": [
+    42.697886,
+    23.321726
+   ],
+   "end": null,
+   "label_de": "Sofia",
+   "label_en": "Sofia",
+   "qid": "Q472",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q219060": [
+  {
+   "coord": [
+    31.776679,
+    35.234156
+   ],
+   "end": null,
+   "label_de": "Jerusalem",
+   "label_en": "Jerusalem",
+   "qid": "Q1218",
+   "rank": "ontology#deprecated",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    31.896944444,
+    35.201666666
+   ],
+   "end": null,
+   "label_de": "Ramallah",
+   "label_en": "Ramallah",
+   "qid": "Q158119",
+   "rank": "ontology#normal",
+   "role": "de_facto",
+   "role_qid": "Q712144",
+   "start": null
+  },
+  {
+   "coord": [
+    31.78336,
+    35.23388
+   ],
+   "end": null,
+   "label_de": "Ostjerusalem",
+   "label_en": "East Jerusalem",
+   "qid": "Q212938",
+   "rank": "ontology#normal",
+   "role": "de_jure",
+   "role_qid": "Q132555",
+   "start": null
+  }
+ ],
+ "Q221": [
+  {
+   "coord": [
+    41.996111111,
+    21.431666666
+   ],
+   "end": null,
+   "label_de": "Skopje",
+   "label_en": "Skopje",
+   "qid": "Q384",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q222": [
+  {
+   "coord": [
+    41.328333333,
+    19.818055555
+   ],
+   "end": null,
+   "label_de": "Tirana",
+   "label_en": "Tirana",
+   "qid": "Q19689",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q223": [
+  {
+   "coord": [
+    64.175,
+    -51.733333333
+   ],
+   "end": null,
+   "label_de": "Nuuk",
+   "label_en": "Nuuk",
+   "qid": "Q226",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q224": [
+  {
+   "coord": [
+    45.813055555,
+    15.977222222
+   ],
+   "end": null,
+   "label_de": "Zagreb",
+   "label_en": "Zagreb",
+   "qid": "Q1435",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q225": [
+  {
+   "coord": [
+    43.856388888,
+    18.413055555
+   ],
+   "end": null,
+   "label_de": "Sarajevo",
+   "label_en": "Sarajevo",
+   "qid": "Q11194",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q227": [
+  {
+   "coord": [
+    40.366655555,
+    49.835183333
+   ],
+   "end": null,
+   "label_de": "Baku",
+   "label_en": "Baku",
+   "qid": "Q9248",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q228": [
+  {
+   "coord": [
+    42.507222222,
+    1.522222222
+   ],
+   "end": null,
+   "label_de": "Andorra la Vella",
+   "label_en": "Andorra la Vella",
+   "qid": "Q1863",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q229": [
+  {
+   "coord": [
+    35.1725,
+    33.365
+   ],
+   "end": null,
+   "label_de": "Nikosia",
+   "label_en": "Nicosia",
+   "qid": "Q3856",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q230": [
+  {
+   "coord": [
+    41.7225,
+    44.7925
+   ],
+   "end": null,
+   "label_de": "Tiflis",
+   "label_en": "Tbilisi",
+   "qid": "Q994",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1122-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    42.271666666,
+    42.705555555
+   ],
+   "end": "1122-01-01T00:00:00Z",
+   "label_de": "Kutaissi",
+   "label_en": "Kutaisi",
+   "qid": "Q172415",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "0978-01-01T00:00:00Z"
+  }
+ ],
+ "Q232": [
+  {
+   "coord": [
+    51.133333333,
+    71.433333333
+   ],
+   "end": null,
+   "label_de": "Astana",
+   "label_en": "Astana",
+   "qid": "Q1520",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1997-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    43.24,
+    76.915
+   ],
+   "end": "1997-01-01T00:00:00Z",
+   "label_de": "Almaty",
+   "label_en": "Almaty",
+   "qid": "Q35493",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1991-01-01T00:00:00Z"
+  }
+ ],
+ "Q233": [
+  {
+   "coord": [
+    35.897777777,
+    14.5125
+   ],
+   "end": null,
+   "label_de": "Valletta",
+   "label_en": "Valletta",
+   "qid": "Q23800",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q235": [
+  {
+   "coord": [
+    43.731111111,
+    7.42
+   ],
+   "end": null,
+   "label_de": "Monaco",
+   "label_en": "Monaco",
+   "qid": "Q235",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q236": [
+  {
+   "coord": [
+    42.441388888,
+    19.262777777
+   ],
+   "end": null,
+   "label_de": "Podgorica",
+   "label_en": "Podgorica",
+   "qid": "Q23564",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q23635": [
+  {
+   "coord": [
+    32.295,
+    -64.783055555
+   ],
+   "end": null,
+   "label_de": "Hamilton",
+   "label_en": "Hamilton",
+   "qid": "Q30985",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q237": [
+  {
+   "coord": [
+    41.904,
+    12.453
+   ],
+   "end": null,
+   "label_de": "Vatikanstadt",
+   "label_en": "Vatican City",
+   "qid": "Q237",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q238": [
+  {
+   "coord": [
+    43.932011111,
+    12.44845
+   ],
+   "end": null,
+   "label_de": "San Marino",
+   "label_en": "San Marino",
+   "qid": "Q1848",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q241": [
+  {
+   "coord": [
+    23.136666666,
+    -82.358888888
+   ],
+   "end": null,
+   "label_de": "Havanna",
+   "label_en": "Havana",
+   "qid": "Q1563",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q242": [
+  {
+   "coord": [
+    17.25,
+    -88.7675
+   ],
+   "end": null,
+   "label_de": "Belmopan",
+   "label_en": "Belmopan",
+   "qid": "Q3043",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q244": [
+  {
+   "coord": [
+    13.0975,
+    -59.616666666
+   ],
+   "end": null,
+   "label_de": "Bridgetown",
+   "label_en": "Bridgetown",
+   "qid": "Q36168",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q252": [
+  {
+   "coord": [
+    -6.175277777,
+    106.826944444
+   ],
+   "end": "1946-01-04T00:00:00Z",
+   "label_de": "Jakarta",
+   "label_en": "Jakarta",
+   "qid": "Q3630",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1945-08-17T00:00:00Z"
+  },
+  {
+   "coord": [
+    -6.175277777,
+    106.826944444
+   ],
+   "end": null,
+   "label_de": "Jakarta",
+   "label_en": "Jakarta",
+   "qid": "Q3630",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1950-08-17T00:00:00Z"
+  },
+  {
+   "coord": [
+    -0.309722222,
+    100.375277777
+   ],
+   "end": "1950-08-17T00:00:00Z",
+   "label_de": "Bukittinggi",
+   "label_en": "Bukittinggi",
+   "qid": "Q7248",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1948-12-22T00:00:00Z"
+  },
+  {
+   "coord": [
+    -7.800456766,
+    110.391280229
+   ],
+   "end": "1948-12-22T00:00:00Z",
+   "label_de": "Yogyakarta",
+   "label_en": "Yogyakarta",
+   "qid": "Q7568",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1946-01-04T00:00:00Z"
+  },
+  {
+   "coord": [
+    -0.972972222,
+    116.708833333
+   ],
+   "end": null,
+   "label_de": "Nusantara",
+   "label_en": "Nusantara",
+   "qid": "Q110601629",
+   "rank": "ontology#deprecated",
+   "role": null,
+   "role_qid": null,
+   "start": "http://www.wikidata.org/.well-known/genid/ad025ca7c8f286486053f034db4eb959"
+  }
+ ],
+ "Q25228": [
+  {
+   "coord": [
+    18.220833333,
+    -63.051666666
+   ],
+   "end": null,
+   "label_de": "The Valley",
+   "label_en": "The Valley",
+   "qid": "Q30994",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q25230": [
+  {
+   "coord": [
+    49.46,
+    -2.55194
+   ],
+   "end": null,
+   "label_de": "Saint Peter Port",
+   "label_en": "Saint Peter Port",
+   "qid": "Q174262",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q25279": [
+  {
+   "coord": [
+    12.108,
+    -68.935
+   ],
+   "end": null,
+   "label_de": "Willemstad",
+   "label_en": "Willemstad",
+   "qid": "Q132679",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q25305": [
+  {
+   "coord": [
+    18.433333333,
+    -64.616666666
+   ],
+   "end": null,
+   "label_de": "Road Town",
+   "label_en": "Road Town",
+   "qid": "Q179431",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q25362": [
+  {
+   "coord": [
+    17.898611111,
+    -62.849166666
+   ],
+   "end": null,
+   "label_de": "Gustavia",
+   "label_en": "Gustavia",
+   "qid": "Q34112",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q258": [
+  {
+   "coord": [
+    -25.746388888,
+    28.188055555
+   ],
+   "end": null,
+   "label_de": "Pretoria",
+   "label_en": "Pretoria",
+   "qid": "Q3926",
+   "rank": "ontology#normal",
+   "role": "executive",
+   "role_qid": "Q35798",
+   "start": null
+  },
+  {
+   "coord": [
+    -33.925277777,
+    18.423888888
+   ],
+   "end": null,
+   "label_de": "Kapstadt",
+   "label_en": "Cape Town",
+   "qid": "Q5465",
+   "rank": "ontology#normal",
+   "role": "legislative",
+   "role_qid": "Q11204",
+   "start": null
+  },
+  {
+   "coord": [
+    -29.1,
+    26.216666666
+   ],
+   "end": null,
+   "label_de": "Bloemfontein",
+   "label_en": "Bloemfontein",
+   "qid": "Q37701",
+   "rank": "ontology#normal",
+   "role": "judicial",
+   "role_qid": "Q105985",
+   "start": null
+  }
+ ],
+ "Q262": [
+  {
+   "coord": [
+    36.776388888,
+    3.058611111
+   ],
+   "end": null,
+   "label_de": "Algier",
+   "label_en": "Algiers",
+   "qid": "Q3561",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q26273": [
+  {
+   "coord": [
+    18.024166666,
+    -63.043333333
+   ],
+   "end": null,
+   "label_de": "Philipsburg",
+   "label_en": "Philipsburg",
+   "qid": "Q30958",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q265": [
+  {
+   "coord": [
+    41.311111111,
+    69.279722222
+   ],
+   "end": null,
+   "label_de": "Taschkent",
+   "label_en": "Tashkent",
+   "qid": "Q269",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q26988": [
+  {
+   "coord": [
+    -21.207,
+    -159.771
+   ],
+   "end": null,
+   "label_de": "Avarua",
+   "label_en": "Avarua",
+   "qid": "Q170482",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q27": [
+  {
+   "coord": [
+    53.349722222,
+    -6.260277777
+   ],
+   "end": null,
+   "label_de": "Dublin",
+   "label_en": "Dublin",
+   "qid": "Q1761",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q28": [
+  {
+   "coord": [
+    47.498333333,
+    19.040833333
+   ],
+   "end": null,
+   "label_de": "Budapest",
+   "label_en": "Budapest",
+   "qid": "Q1781",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q29": [
+  {
+   "coord": [
+    40.416944444,
+    -3.703333333
+   ],
+   "end": null,
+   "label_de": "Madrid",
+   "label_en": "Madrid",
+   "qid": "Q2807",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    39.8565219,
+    -4.024974933
+   ],
+   "end": "1561-01-01T00:00:00Z",
+   "label_de": "Toledo",
+   "label_en": "Toledo city",
+   "qid": "Q31844059",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1519-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    39.8581,
+    -4.02263
+   ],
+   "end": "1561-01-01T00:00:00Z",
+   "label_de": "Toledo",
+   "label_en": "Toledo city",
+   "qid": "Q31844059",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1519-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    41.6523,
+    -4.72854
+   ],
+   "end": "1606-01-01T00:00:00Z",
+   "label_de": null,
+   "label_en": "Valladolid city",
+   "qid": "Q31925679",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1601-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    41.65232777,
+    -4.72334924
+   ],
+   "end": "1606-01-01T00:00:00Z",
+   "label_de": null,
+   "label_en": "Valladolid city",
+   "qid": "Q31925679",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1601-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    40.40841191,
+    -3.68760088
+   ],
+   "end": "1601-01-01T00:00:00Z",
+   "label_de": "Stadt Madrid",
+   "label_en": "Madrid city",
+   "qid": "Q116170766",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1561-01-01T00:00:00Z"
+  }
+ ],
+ "Q298": [
+  {
+   "coord": [
+    -33.4375,
+    -70.65
+   ],
+   "end": null,
+   "label_de": "Santiago de Chile",
+   "label_en": "Santiago",
+   "qid": "Q2887",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q30": [
+  {
+   "coord": [
+    40.712777777,
+    -74.006111111
+   ],
+   "end": "1790-12-05T00:00:00Z",
+   "label_de": "New York City",
+   "label_en": "New York City",
+   "qid": "Q60",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1785-01-11T00:00:00Z"
+  },
+  {
+   "coord": [
+    38.895,
+    -77.036666666
+   ],
+   "end": null,
+   "label_de": "Washington, D.C.",
+   "label_en": "Washington, D.C.",
+   "qid": "Q61",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1800-11-17T00:00:00Z"
+  },
+  {
+   "coord": [
+    39.952777777,
+    -75.163611111
+   ],
+   "end": "1800-05-14T00:00:00Z",
+   "label_de": "Philadelphia",
+   "label_en": "Philadelphia",
+   "qid": "Q1345",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1790-12-06T00:00:00Z"
+  }
+ ],
+ "Q30971": [
+  {
+   "coord": [
+    -17.539722222,
+    -149.568888888
+   ],
+   "end": null,
+   "label_de": "Papeete",
+   "label_en": "Papeete",
+   "qid": "Q130800",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q31": [
+  {
+   "coord": [
+    50.846666666,
+    4.351666666
+   ],
+   "end": null,
+   "label_de": "Brüssel",
+   "label_en": "Brussels",
+   "qid": "Q239",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q31057": [
+  {
+   "coord": [
+    -29.05,
+    167.966666666
+   ],
+   "end": null,
+   "label_de": "Kingston",
+   "label_en": "Kingston",
+   "qid": "Q30963",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q31063": [
+  {
+   "coord": [
+    -10.421666666,
+    105.678055555
+   ],
+   "end": null,
+   "label_de": "Flying Fish Cove",
+   "label_en": "Flying Fish Cove",
+   "qid": "Q30980",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q32": [
+  {
+   "coord": [
+    49.611388888,
+    6.13
+   ],
+   "end": null,
+   "label_de": "Luxemburg",
+   "label_en": "Luxembourg",
+   "qid": "Q1842",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q33": [
+  {
+   "coord": [
+    60.170833333,
+    24.9375
+   ],
+   "end": null,
+   "label_de": "Helsinki",
+   "label_en": "Helsinki",
+   "qid": "Q1757",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1812-04-08T00:00:00Z"
+  },
+  {
+   "coord": [
+    60.451666666,
+    22.266944444
+   ],
+   "end": "1812-04-08T00:00:00Z",
+   "label_de": "Turku",
+   "label_en": "Turku",
+   "qid": "Q38511",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1809-09-17T00:00:00Z"
+  }
+ ],
+ "Q334": [
+  {
+   "coord": [
+    1.3,
+    103.8
+   ],
+   "end": null,
+   "label_de": "Singapur",
+   "label_en": "Singapore",
+   "qid": "Q334",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q33788": [
+  {
+   "coord": [
+    -22.266666666,
+    166.45
+   ],
+   "end": null,
+   "label_de": "Nouméa",
+   "label_en": "Nouméa",
+   "qid": "Q9733",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q34": [
+  {
+   "coord": [
+    59.329444444,
+    18.068611111
+   ],
+   "end": null,
+   "label_de": "Stockholm",
+   "label_en": "Stockholm",
+   "qid": "Q1754",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q34020": [
+  {
+   "coord": [
+    -19.056,
+    -169.921
+   ],
+   "end": null,
+   "label_de": "Alofi",
+   "label_en": "Alofi",
+   "qid": "Q30966",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q34617": [
+  {
+   "coord": [
+    46.777777777,
+    -56.177777777
+   ],
+   "end": null,
+   "label_de": "Saint-Pierre",
+   "label_en": "Saint-Pierre",
+   "qid": "Q185678",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q347": [
+  {
+   "coord": [
+    47.140555555,
+    9.522222222
+   ],
+   "end": null,
+   "label_de": "Vaduz",
+   "label_en": "Vaduz",
+   "qid": "Q1844",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q35": [
+  {
+   "coord": [
+    55.676111111,
+    12.568888888
+   ],
+   "end": null,
+   "label_de": "Kopenhagen",
+   "label_en": "Copenhagen",
+   "qid": "Q1748",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q35086": [
+  {
+   "coord": [
+    -54.281472,
+    -36.508028
+   ],
+   "end": null,
+   "label_de": "Grytviken",
+   "label_en": "Grytviken",
+   "qid": "Q185672",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    -54.283291411,
+    -36.494181949
+   ],
+   "end": null,
+   "label_de": "King Edward Point",
+   "label_en": "King Edward Point",
+   "qid": "Q393878",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "2010-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    -54.282264,
+    -36.48714
+   ],
+   "end": null,
+   "label_de": "King Edward Point",
+   "label_en": "King Edward Point",
+   "qid": "Q393878",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "2010-01-01T00:00:00Z"
+  }
+ ],
+ "Q35555": [
+  {
+   "coord": [
+    -13.2827,
+    -176.1737
+   ],
+   "end": null,
+   "label_de": "Mata-Utu",
+   "label_en": "Mata-Utu",
+   "qid": "Q31002",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q35672": [
+  {
+   "coord": [
+    -25.066666666,
+    -130.1
+   ],
+   "end": null,
+   "label_de": "Adamstown",
+   "label_en": "Adamstown",
+   "qid": "Q48273",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q36": [
+  {
+   "coord": [
+    52.23,
+    21.011111111
+   ],
+   "end": null,
+   "label_de": "Warschau",
+   "label_en": "Warsaw",
+   "qid": "Q270",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1795-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    50.061388888,
+    19.937222222
+   ],
+   "end": "1795-01-01T00:00:00Z",
+   "label_de": "Krakau",
+   "label_en": "Kraków",
+   "qid": "Q31487",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1038-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    52.533333333,
+    17.6
+   ],
+   "end": "1038-01-01T00:00:00Z",
+   "label_de": "Gniezno",
+   "label_en": "Gniezno",
+   "qid": "Q51432",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q36004": [
+  {
+   "coord": [
+    -12.186944444,
+    96.828333333
+   ],
+   "end": null,
+   "label_de": "West Island",
+   "label_en": "West Island",
+   "qid": "Q48675",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q37": [
+  {
+   "coord": [
+    54.687222222,
+    25.28
+   ],
+   "end": null,
+   "label_de": "Vilnius",
+   "label_en": "Vilnius",
+   "qid": "Q216",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1939-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    54.9,
+    23.933333333
+   ],
+   "end": "1939-01-01T00:00:00Z",
+   "label_de": "Kaunas",
+   "label_en": "Kaunas",
+   "qid": "Q4115712",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1920-01-01T00:00:00Z"
+  }
+ ],
+ "Q3769": [
+  {
+   "coord": [
+    4.938611111,
+    -52.335
+   ],
+   "end": null,
+   "label_de": "Cayenne",
+   "label_en": "Cayenne",
+   "qid": "Q44401",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q38": [
+  {
+   "coord": [
+    41.893055555,
+    12.482777777
+   ],
+   "end": null,
+   "label_de": "Rom",
+   "label_en": "Rome",
+   "qid": "Q220",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1946-06-02T00:00:00Z"
+  },
+  {
+   "coord": [
+    45.079166666,
+    7.676111111
+   ],
+   "end": "1865-01-01T00:00:00Z",
+   "label_de": "Turin",
+   "label_en": "Turin",
+   "qid": "Q495",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1861-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    43.771388888,
+    11.254166666
+   ],
+   "end": "1871-01-01T00:00:00Z",
+   "label_de": "Florenz",
+   "label_en": "Florence",
+   "qid": "Q2044",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1865-01-01T00:00:00Z"
+  }
+ ],
+ "Q39": [
+  {
+   "coord": [
+    46.94798,
+    7.44743
+   ],
+   "end": null,
+   "label_de": "Bern",
+   "label_en": "Bern",
+   "qid": "Q70",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1848-11-28T00:00:00Z"
+  }
+ ],
+ "Q398": [
+  {
+   "coord": [
+    26.216666666,
+    50.583333333
+   ],
+   "end": null,
+   "label_de": "Manama",
+   "label_en": "Manama",
+   "qid": "Q3882",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q399": [
+  {
+   "coord": [
+    40.181388888,
+    44.514444444
+   ],
+   "end": null,
+   "label_de": "Jerewan",
+   "label_en": "Yerevan",
+   "qid": "Q1953",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q40": [
+  {
+   "coord": [
+    48.208333333,
+    16.3725
+   ],
+   "end": null,
+   "label_de": "Wien",
+   "label_en": "Vienna",
+   "qid": "Q1741",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q403": [
+  {
+   "coord": [
+    44.817777777,
+    20.456944444
+   ],
+   "end": null,
+   "label_de": "Belgrad",
+   "label_en": "Belgrade",
+   "qid": "Q3711",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q408": [
+  {
+   "coord": [
+    -35.293055555,
+    149.126944444
+   ],
+   "end": null,
+   "label_de": "Canberra",
+   "label_en": "Canberra",
+   "qid": "Q3114",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1927-05-09T00:00:00Z"
+  },
+  {
+   "coord": [
+    -37.814166666,
+    144.963055555
+   ],
+   "end": "1927-05-09T00:00:00Z",
+   "label_de": "Melbourne",
+   "label_en": "Melbourne",
+   "qid": "Q3141",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1901-01-01T00:00:00Z"
+  }
+ ],
+ "Q41": [
+  {
+   "coord": [
+    37.984166666,
+    23.728055555
+   ],
+   "end": null,
+   "label_de": "Athen",
+   "label_en": "Athens",
+   "qid": "Q1524",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    37.984166666,
+    23.728055555
+   ],
+   "end": null,
+   "label_de": "Athen",
+   "label_en": "Athens",
+   "qid": "Q1524",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1834-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    37.565833333,
+    22.8
+   ],
+   "end": "1833-01-01T00:00:00Z",
+   "label_de": "Nafplio",
+   "label_en": "Nafplio",
+   "qid": "Q202337",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1828-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    37.74667,
+    23.4275
+   ],
+   "end": "1828-01-01T00:00:00Z",
+   "label_de": "Aigina",
+   "label_en": "Aegina",
+   "qid": "Q3720429",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1826-11-11T00:00:00Z"
+  }
+ ],
+ "Q414": [
+  {
+   "coord": [
+    -34.599722222,
+    -58.381944444
+   ],
+   "end": null,
+   "label_de": "Buenos Aires",
+   "label_en": "Buenos Aires",
+   "qid": "Q1486",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q419": [
+  {
+   "coord": [
+    -12.06,
+    -77.0375
+   ],
+   "end": null,
+   "label_de": "Lima",
+   "label_en": "Lima",
+   "qid": "Q2868",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q423": [
+  {
+   "coord": [
+    39.016666666,
+    125.7475
+   ],
+   "end": null,
+   "label_de": "Pjöngjang",
+   "label_en": "Pyongyang",
+   "qid": "Q18808",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q424": [
+  {
+   "coord": [
+    11.569583333,
+    104.921027777
+   ],
+   "end": null,
+   "label_de": "Phnom Penh",
+   "label_en": "Phnom Penh",
+   "qid": "Q1850",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q43": [
+  {
+   "coord": [
+    39.93576,
+    32.83869
+   ],
+   "end": null,
+   "label_de": "Ankara",
+   "label_en": "Ankara",
+   "qid": "Q3640",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1923-10-29T00:00:00Z"
+  }
+ ],
+ "Q43448": [
+  {
+   "coord": [
+    -7.313333333,
+    72.411111111
+   ],
+   "end": null,
+   "label_de": "Diego Garcia",
+   "label_en": "Diego Garcia",
+   "qid": "Q184851",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q45": [
+  {
+   "coord": [
+    38.708042,
+    -9.139016
+   ],
+   "end": null,
+   "label_de": "Lissabon",
+   "label_en": "Lisbon",
+   "qid": "Q597",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1385-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    40.211111111,
+    -8.428888888
+   ],
+   "end": "1255-01-01T00:00:00Z",
+   "label_de": "Coimbra",
+   "label_en": "Coimbra",
+   "qid": "Q45412",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1129-01-01T00:00:00Z"
+  }
+ ],
+ "Q4628": [
+  {
+   "coord": [
+    62.00981,
+    -6.77135
+   ],
+   "end": null,
+   "label_de": "Tórshavn",
+   "label_en": "Tórshavn",
+   "qid": "Q10704",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q55": [
+  {
+   "coord": [
+    52.366666666,
+    4.883333333
+   ],
+   "end": null,
+   "label_de": "Amsterdam",
+   "label_en": "Amsterdam",
+   "qid": "Q727",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    52.08,
+    4.31
+   ],
+   "end": null,
+   "label_de": "Den Haag",
+   "label_en": "The Hague",
+   "qid": "Q36600",
+   "rank": "ontology#deprecated",
+   "role": "seat_of_government",
+   "role_qid": "Q1901835",
+   "start": null
+  }
+ ],
+ "Q5689": [
+  {
+   "coord": [
+    60.09861111,
+    19.94444444
+   ],
+   "end": null,
+   "label_de": "Mariehamn",
+   "label_en": "Mariehamn",
+   "qid": "Q48329",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q574": [
+  {
+   "coord": [
+    -8.553611111,
+    125.578333333
+   ],
+   "end": null,
+   "label_de": "Dili",
+   "label_en": "Dili",
+   "qid": "Q9310",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1769-10-10T00:00:00Z"
+  }
+ ],
+ "Q5785": [
+  {
+   "coord": [
+    19.296388888,
+    -81.381666666
+   ],
+   "end": null,
+   "label_de": "George Town",
+   "label_en": "George Town",
+   "qid": "Q172996",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q657": [
+  {
+   "coord": [
+    12.11,
+    15.05
+   ],
+   "end": null,
+   "label_de": "N’Djamena",
+   "label_en": "N'Djamena",
+   "qid": "Q3659",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q664": [
+  {
+   "coord": [
+    -41.288888888,
+    174.777222222
+   ],
+   "end": null,
+   "label_de": "Wellington",
+   "label_en": "Wellington",
+   "qid": "Q23661",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1865-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    -36.849166666,
+    174.765277777
+   ],
+   "end": "1865-01-01T00:00:00Z",
+   "label_de": "Auckland",
+   "label_en": "Auckland",
+   "qid": "Q37100",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1841-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    -35.304,
+    174.122
+   ],
+   "end": "1841-01-01T00:00:00Z",
+   "label_de": null,
+   "label_en": "Okiato",
+   "qid": "Q7081990",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1840-01-01T00:00:00Z"
+  }
+ ],
+ "Q668": [
+  {
+   "coord": [
+    28.613888888,
+    77.208888888
+   ],
+   "end": null,
+   "label_de": "Neu-Delhi",
+   "label_en": "New Delhi",
+   "qid": "Q987",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q672": [
+  {
+   "coord": [
+    -8.504777777,
+    179.117361111
+   ],
+   "end": null,
+   "label_de": "Funafuti",
+   "label_en": "Funafuti",
+   "qid": "Q34126",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q678": [
+  {
+   "coord": [
+    -21.1343401,
+    -175.201808
+   ],
+   "end": null,
+   "label_de": "Nukuʻalofa",
+   "label_en": "Nukuʻalofa",
+   "qid": "Q38834",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q683": [
+  {
+   "coord": [
+    -13.833333333,
+    -171.833333333
+   ],
+   "end": null,
+   "label_de": "Apia",
+   "label_en": "Apia",
+   "qid": "Q36260",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q685": [
+  {
+   "coord": [
+    -9.433333,
+    159.95
+   ],
+   "end": null,
+   "label_de": "Honiara",
+   "label_en": "Honiara",
+   "qid": "Q40921",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q686": [
+  {
+   "coord": [
+    -17.73333,
+    168.316667
+   ],
+   "end": null,
+   "label_de": "Port Vila",
+   "label_en": "Port Vila",
+   "qid": "Q37806",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q691": [
+  {
+   "coord": [
+    -9.478888888,
+    147.149444444
+   ],
+   "end": null,
+   "label_de": "Port Moresby",
+   "label_en": "Port Moresby",
+   "qid": "Q36526",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q695": [
+  {
+   "coord": [
+    7.500556,
+    134.624167
+   ],
+   "end": null,
+   "label_de": "Ngerulmud",
+   "label_en": "Ngerulmud",
+   "qid": "Q515229",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "2006-10-07T00:00:00Z"
+  },
+  {
+   "coord": [
+    7.34333,
+    134.48042
+   ],
+   "end": "2006-10-06T00:00:00Z",
+   "label_de": "Koror",
+   "label_en": "Koror",
+   "qid": "Q527748",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q697": [
+  {
+   "coord": [
+    -0.5477,
+    166.920867
+   ],
+   "end": null,
+   "label_de": "Yaren",
+   "label_en": "Yaren District",
+   "qid": "Q31026",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q702": [
+  {
+   "coord": [
+    6.917777777,
+    158.185
+   ],
+   "end": null,
+   "label_de": "Palikir",
+   "label_en": "Palikir",
+   "qid": "Q42751",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1989-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    6.963888888,
+    158.208055555
+   ],
+   "end": "1989-01-01T00:00:00Z",
+   "label_de": "Kolonia",
+   "label_en": "Kolonia",
+   "qid": "Q514165",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1979-01-01T00:00:00Z"
+  }
+ ],
+ "Q709": [
+  {
+   "coord": [
+    7.0918,
+    171.3802
+   ],
+   "end": null,
+   "label_de": "Majuro",
+   "label_en": "Majuro",
+   "qid": "Q12919",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q710": [
+  {
+   "coord": [
+    1.333333333,
+    172.966666666
+   ],
+   "end": null,
+   "label_de": "South Tarawa",
+   "label_en": "South Tarawa",
+   "qid": "Q131233",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q711": [
+  {
+   "coord": [
+    47.921357,
+    106.905515
+   ],
+   "end": null,
+   "label_de": "Ulaanbaatar",
+   "label_en": "Ulaanbaatar",
+   "qid": "Q23430",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q712": [
+  {
+   "coord": [
+    -18.133333333,
+    178.433333333
+   ],
+   "end": null,
+   "label_de": "Suva",
+   "label_en": "Suva",
+   "qid": "Q38807",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q717": [
+  {
+   "coord": [
+    10.506111111,
+    -66.914444444
+   ],
+   "end": null,
+   "label_de": "Caracas",
+   "label_en": "Caracas",
+   "qid": "Q1533",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q730": [
+  {
+   "coord": [
+    5.866666666,
+    -55.166666666
+   ],
+   "end": null,
+   "label_de": "Paramaribo",
+   "label_en": "Paramaribo",
+   "qid": "Q3001",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q733": [
+  {
+   "coord": [
+    -25.28,
+    -57.634444444
+   ],
+   "end": null,
+   "label_de": "Asunción",
+   "label_en": "Asunción",
+   "qid": "Q2933",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q734": [
+  {
+   "coord": [
+    6.805833333,
+    -58.150833333
+   ],
+   "end": null,
+   "label_de": "Georgetown",
+   "label_en": "Georgetown",
+   "qid": "Q10717",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q736": [
+  {
+   "coord": [
+    -0.22,
+    -78.5125
+   ],
+   "end": null,
+   "label_de": "Quito",
+   "label_en": "Quito",
+   "qid": "Q2900",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q739": [
+  {
+   "coord": [
+    4.60971,
+    -74.08175
+   ],
+   "end": null,
+   "label_de": "Bogotá",
+   "label_en": "Bogotá",
+   "qid": "Q2841",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q750": [
+  {
+   "coord": [
+    -16.495833333,
+    -68.133333333
+   ],
+   "end": null,
+   "label_de": "La Paz",
+   "label_en": "La Paz",
+   "qid": "Q1491",
+   "rank": "ontology#normal",
+   "role": "executive",
+   "role_qid": "Q35798",
+   "start": "1899-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    -19.0475,
+    -65.26
+   ],
+   "end": null,
+   "label_de": "Sucre",
+   "label_en": "Sucre",
+   "qid": "Q2907",
+   "rank": "ontology#normal",
+   "role": "judicial",
+   "role_qid": "Q105985",
+   "start": null
+  }
+ ],
+ "Q754": [
+  {
+   "coord": [
+    10.666666666,
+    -61.516666666
+   ],
+   "end": null,
+   "label_de": "Port of Spain",
+   "label_en": "Port of Spain",
+   "qid": "Q39178",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q757": [
+  {
+   "coord": [
+    13.15527,
+    -61.22742
+   ],
+   "end": null,
+   "label_de": "Kingstown",
+   "label_en": "Kingstown",
+   "qid": "Q41474",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q760": [
+  {
+   "coord": [
+    14.010833333,
+    -60.989444444
+   ],
+   "end": null,
+   "label_de": "Castries",
+   "label_en": "Castries",
+   "qid": "Q41699",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q763": [
+  {
+   "coord": [
+    17.298333333,
+    -62.734166666
+   ],
+   "end": null,
+   "label_de": "Basseterre",
+   "label_en": "Basseterre",
+   "qid": "Q41295",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q766": [
+  {
+   "coord": [
+    17.971388888,
+    -76.793055555
+   ],
+   "end": null,
+   "label_de": "Kingston",
+   "label_en": "Kingston",
+   "qid": "Q34692",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q769": [
+  {
+   "coord": [
+    12.0525,
+    -61.753055555
+   ],
+   "end": null,
+   "label_de": "St. George’s",
+   "label_en": "St. George's",
+   "qid": "Q41547",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q77": [
+  {
+   "coord": [
+    -34.905916666,
+    -56.191311111
+   ],
+   "end": null,
+   "label_de": "Montevideo",
+   "label_en": "Montevideo",
+   "qid": "Q1335",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q774": [
+  {
+   "coord": [
+    14.641666666,
+    -90.513333333
+   ],
+   "end": null,
+   "label_de": "Guatemala-Stadt",
+   "label_en": "Guatemala City",
+   "qid": "Q1555",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q778": [
+  {
+   "coord": [
+    25.078055555,
+    -77.338611111
+   ],
+   "end": null,
+   "label_de": "Nassau",
+   "label_en": "Nassau",
+   "qid": "Q2467",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q781": [
+  {
+   "coord": [
+    17.121111111,
+    -61.844722222
+   ],
+   "end": null,
+   "label_de": null,
+   "label_en": null,
+   "qid": "Q36262",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q783": [
+  {
+   "coord": [
+    14.105783333,
+    -87.204705555
+   ],
+   "end": null,
+   "label_de": "Tegucigalpa",
+   "label_en": "Tegucigalpa",
+   "qid": "Q3238",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q784": [
+  {
+   "coord": [
+    15.3,
+    -61.383333333
+   ],
+   "end": null,
+   "label_de": "Roseau",
+   "label_en": "Roseau",
+   "qid": "Q36281",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q785": [
+  {
+   "coord": [
+    49.185833333,
+    -2.11
+   ],
+   "end": null,
+   "label_de": "Saint Helier",
+   "label_en": "Saint Helier",
+   "qid": "Q147738",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q786": [
+  {
+   "coord": [
+    18.4625,
+    -69.936111111
+   ],
+   "end": null,
+   "label_de": "Santo Domingo",
+   "label_en": "Santo Domingo",
+   "qid": "Q34820",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q79": [
+  {
+   "coord": [
+    30.044444444,
+    31.235833333
+   ],
+   "end": null,
+   "label_de": "Kairo",
+   "label_en": "Cairo",
+   "qid": "Q85",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    29.844667,
+    31.250917
+   ],
+   "end": "-2215-01-01T00:00:00Z",
+   "label_de": "Memphis",
+   "label_en": "Memphis",
+   "qid": "Q5715",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "-2706-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    26.333333333,
+    31.9
+   ],
+   "end": "-2706-01-01T00:00:00Z",
+   "label_de": null,
+   "label_en": "Thinis",
+   "qid": "Q1153959",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "-3031-01-01T00:00:00Z"
+  }
+ ],
+ "Q790": [
+  {
+   "coord": [
+    18.546944444,
+    -72.340277777
+   ],
+   "end": null,
+   "label_de": "Port-au-Prince",
+   "label_en": "Port-au-Prince",
+   "qid": "Q34261",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q792": [
+  {
+   "coord": [
+    13.697597222,
+    -89.191155555
+   ],
+   "end": null,
+   "label_de": "San Salvador",
+   "label_en": "San Salvador",
+   "qid": "Q3110",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q794": [
+  {
+   "coord": [
+    35.688888888,
+    51.389722222
+   ],
+   "end": null,
+   "label_de": "Teheran",
+   "label_en": "Tehran",
+   "qid": "Q3616",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q796": [
+  {
+   "coord": [
+    33.315277777,
+    44.366111111
+   ],
+   "end": null,
+   "label_de": "Bagdad",
+   "label_en": "Baghdad",
+   "qid": "Q1530",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q800": [
+  {
+   "coord": [
+    9.932738888,
+    -84.079613888
+   ],
+   "end": null,
+   "label_de": "San José",
+   "label_en": "San José",
+   "qid": "Q3070",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q801": [
+  {
+   "coord": [
+    31.776679,
+    35.234156
+   ],
+   "end": null,
+   "label_de": "Jerusalem",
+   "label_en": "Jerusalem",
+   "qid": "Q1218",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1949-11-07T00:00:00Z"
+  },
+  {
+   "coord": [
+    32.08,
+    34.78
+   ],
+   "end": null,
+   "label_de": "Tel Aviv-Jaffa",
+   "label_en": "Tel Aviv",
+   "qid": "Q33935",
+   "rank": "ontology#deprecated",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    32.08,
+    34.78
+   ],
+   "end": "1949-11-07T00:00:00Z",
+   "label_de": "Tel Aviv-Jaffa",
+   "label_en": "Tel Aviv",
+   "qid": "Q33935",
+   "rank": "ontology#deprecated",
+   "role": null,
+   "role_qid": null,
+   "start": "1948-05-14T00:00:00Z"
+  }
+ ],
+ "Q804": [
+  {
+   "coord": [
+    8.971111111,
+    -79.534722222
+   ],
+   "end": null,
+   "label_de": "Panama-Stadt",
+   "label_en": "Panama City",
+   "qid": "Q3306",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q805": [
+  {
+   "coord": [
+    15.35,
+    44.2
+   ],
+   "end": null,
+   "label_de": "Sanaa",
+   "label_en": "Sanaa",
+   "qid": "Q2471",
+   "rank": "ontology#normal",
+   "role": "de_jure",
+   "role_qid": "Q132555",
+   "start": "1990-05-22T00:00:00Z"
+  },
+  {
+   "coord": [
+    12.8,
+    45.033333333
+   ],
+   "end": null,
+   "label_de": "Aden",
+   "label_en": "Aden",
+   "qid": "Q131694",
+   "rank": "ontology#normal",
+   "role": "de_facto",
+   "role_qid": "Q712144",
+   "start": null
+  }
+ ],
+ "Q810": [
+  {
+   "coord": [
+    31.930983,
+    35.926084
+   ],
+   "end": null,
+   "label_de": "Amman",
+   "label_en": "Amman",
+   "qid": "Q3805",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    31.95,
+    35.933333333
+   ],
+   "end": null,
+   "label_de": "Amman",
+   "label_en": "Amman",
+   "qid": "Q3805",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q811": [
+  {
+   "coord": [
+    12.154680555,
+    -86.273725
+   ],
+   "end": null,
+   "label_de": "Managua",
+   "label_en": "Managua",
+   "qid": "Q3274",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q813": [
+  {
+   "coord": [
+    42.866666666,
+    74.566666666
+   ],
+   "end": null,
+   "label_de": "Bischkek",
+   "label_en": "Bishkek",
+   "qid": "Q9361",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q817": [
+  {
+   "coord": [
+    29.375,
+    47.98
+   ],
+   "end": null,
+   "label_de": "Kuweit-Stadt",
+   "label_en": "Kuwait City",
+   "qid": "Q35178",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q819": [
+  {
+   "coord": [
+    17.98,
+    102.63
+   ],
+   "end": null,
+   "label_de": "Vientiane",
+   "label_en": "Vientiane",
+   "qid": "Q9326",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q822": [
+  {
+   "coord": [
+    33.886944444,
+    35.513055555
+   ],
+   "end": null,
+   "label_de": "Beirut",
+   "label_en": "Beirut",
+   "qid": "Q3820",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q826": [
+  {
+   "coord": [
+    4.175,
+    73.508333333
+   ],
+   "end": null,
+   "label_de": "Malé",
+   "label_en": "Malé",
+   "qid": "Q9347",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q833": [
+  {
+   "coord": [
+    3.147777777,
+    101.695277777
+   ],
+   "end": null,
+   "label_de": "Kuala Lumpur",
+   "label_en": "Kuala Lumpur",
+   "qid": "Q1865",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    2.93,
+    101.69
+   ],
+   "end": null,
+   "label_de": "Putrajaya",
+   "label_en": "Putrajaya",
+   "qid": "Q182378",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q836": [
+  {
+   "coord": [
+    19.7475,
+    96.115
+   ],
+   "end": null,
+   "label_de": "Naypyidaw",
+   "label_en": "Naypyidaw",
+   "qid": "Q37400",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "2005-11-06T00:00:00Z"
+  },
+  {
+   "coord": [
+    16.795,
+    96.16
+   ],
+   "end": "2005-11-06T00:00:00Z",
+   "label_de": "Rangun",
+   "label_en": "Yangon",
+   "qid": "Q37995",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1948-01-04T00:00:00Z"
+  },
+  {
+   "coord": [
+    16.80528,
+    96.15611
+   ],
+   "end": "2005-11-06T00:00:00Z",
+   "label_de": "Rangun",
+   "label_en": "Yangon",
+   "qid": "Q37995",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1948-01-04T00:00:00Z"
+  }
+ ],
+ "Q837": [
+  {
+   "coord": [
+    27.71,
+    85.32
+   ],
+   "end": null,
+   "label_de": "Kathmandu",
+   "label_en": "Kathmandu",
+   "qid": "Q3037",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q842": [
+  {
+   "coord": [
+    23.613888888,
+    58.592222222
+   ],
+   "end": null,
+   "label_de": "Maskat",
+   "label_en": "Muscat",
+   "qid": "Q3826",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q843": [
+  {
+   "coord": [
+    33.698888888,
+    73.036944444
+   ],
+   "end": null,
+   "label_de": "Islamabad",
+   "label_en": "Islamabad",
+   "qid": "Q1362",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    33.6007,
+    73.0679
+   ],
+   "end": null,
+   "label_de": "Rawalpindi",
+   "label_en": "Rawalpindi",
+   "qid": "Q93230",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q846": [
+  {
+   "coord": [
+    25.286111111,
+    51.529444444
+   ],
+   "end": null,
+   "label_de": "Doha",
+   "label_en": "Doha",
+   "qid": "Q3861",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q851": [
+  {
+   "coord": [
+    24.65,
+    46.71
+   ],
+   "end": null,
+   "label_de": "Riad",
+   "label_en": "Riyadh",
+   "qid": "Q3692",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1819-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    24.733333333,
+    46.575555555
+   ],
+   "end": "1818-01-01T00:00:00Z",
+   "label_de": "Diriyya",
+   "label_en": "Diriyah",
+   "qid": "Q277505",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q854": [
+  {
+   "coord": [
+    6.926666666,
+    79.860555555
+   ],
+   "end": null,
+   "label_de": "Colombo",
+   "label_en": "Colombo",
+   "qid": "Q35381",
+   "rank": "ontology#normal",
+   "role": "executive",
+   "role_qid": "Q35798",
+   "start": null
+  },
+  {
+   "coord": [
+    6.9,
+    79.916388888
+   ],
+   "end": null,
+   "label_de": "Sri Jayewardenepura Kotte",
+   "label_en": "Sri Jayawardenepura Kotte",
+   "qid": "Q41963",
+   "rank": "ontology#normal",
+   "role": "legislative",
+   "role_qid": "Q11204",
+   "start": null
+  }
+ ],
+ "Q858": [
+  {
+   "coord": [
+    33.513,
+    36.292
+   ],
+   "end": null,
+   "label_de": "Damaskus",
+   "label_en": "Damascus",
+   "qid": "Q3766",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    33.513055555,
+    36.291944444
+   ],
+   "end": null,
+   "label_de": "Damaskus",
+   "label_en": "Damascus",
+   "qid": "Q3766",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q863": [
+  {
+   "coord": [
+    38.573055555,
+    68.786388888
+   ],
+   "end": null,
+   "label_de": "Duschanbe",
+   "label_en": "Dushanbe",
+   "qid": "Q9365",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q8646": [
+  {
+   "coord": [
+    22.278333333,
+    114.174444444
+   ],
+   "end": "1997-06-30T00:00:00Z",
+   "label_de": "Victoria City",
+   "label_en": "Victoria",
+   "qid": "Q963152",
+   "rank": "ontology#deprecated",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q865": [
+  {
+   "coord": [
+    25.0375,
+    121.5625
+   ],
+   "end": null,
+   "label_de": "Taipeh",
+   "label_en": "Taipei",
+   "qid": "Q1867",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1949-12-09T00:00:00Z"
+  },
+  {
+   "coord": [
+    30.66,
+    104.063333333
+   ],
+   "end": "1949-12-07T00:00:00Z",
+   "label_de": "Chengdu",
+   "label_en": "Chengdu",
+   "qid": "Q30002",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1949-11-29T00:00:00Z"
+  },
+  {
+   "coord": [
+    39.905,
+    116.391388888
+   ],
+   "end": "1928-06-01T00:00:00Z",
+   "label_de": null,
+   "label_en": "Jingzhao",
+   "qid": "Q4164068",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1914-10-04T00:00:00Z"
+  },
+  {
+   "coord": [
+    39.905,
+    116.391388888
+   ],
+   "end": "1914-10-04T00:00:00Z",
+   "label_de": null,
+   "label_en": "Shuntian Fu",
+   "qid": "Q7334692",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1912-04-02T00:00:00Z"
+  },
+  {
+   "coord": [
+    32.04316,
+    118.77864
+   ],
+   "end": "1937-11-21T00:00:00Z",
+   "label_de": "Nanking",
+   "label_en": "Nan-ching",
+   "qid": "Q10906766",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1928-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    32.04316,
+    118.77864
+   ],
+   "end": "1949-01-16T00:00:00Z",
+   "label_de": "Nanking",
+   "label_en": "Nan-ching",
+   "qid": "Q10906766",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1946-05-05T00:00:00Z"
+  },
+  {
+   "coord": null,
+   "end": "1912-04-02T00:00:00Z",
+   "label_de": "Nanjing Fu",
+   "label_en": "Nanjing Fu",
+   "qid": "Q24841127",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1912-01-01T00:00:00Z"
+  },
+  {
+   "coord": [
+    29.55,
+    106.55
+   ],
+   "end": "1949-11-29T00:00:00Z",
+   "label_de": null,
+   "label_en": "Ch'ung-ch'ing",
+   "qid": "Q46451169",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1949-10-13T00:00:00Z"
+  },
+  {
+   "coord": [
+    29.55,
+    106.55
+   ],
+   "end": "1949-11-29T00:00:00Z",
+   "label_de": null,
+   "label_en": "Ch'ung-ch'ing",
+   "qid": "Q46451169",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1949-10-15T00:00:00Z"
+  },
+  {
+   "coord": [
+    23.128795,
+    113.258976111
+   ],
+   "end": "1949-10-13T00:00:00Z",
+   "label_de": null,
+   "label_en": "Kuang-chou",
+   "qid": "Q46452338",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1949-02-06T00:00:00Z"
+  }
+ ],
+ "Q869": [
+  {
+   "coord": [
+    13.75,
+    100.516666666
+   ],
+   "end": null,
+   "label_de": "Bangkok",
+   "label_en": "Bangkok",
+   "qid": "Q1861",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1767-01-01T00:00:00Z"
+  }
+ ],
+ "Q874": [
+  {
+   "coord": [
+    37.95,
+    58.383333333
+   ],
+   "end": null,
+   "label_de": "Aşgabat",
+   "label_en": "Ashgabat",
+   "qid": "Q23438",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q878": [
+  {
+   "coord": [
+    24.451111111,
+    54.396944444
+   ],
+   "end": null,
+   "label_de": "Abu Dhabi",
+   "label_en": "Abu Dhabi",
+   "qid": "Q1519",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q881": [
+  {
+   "coord": [
+    21.0245,
+    105.84117
+   ],
+   "end": null,
+   "label_de": "Hanoi",
+   "label_en": "Hanoi",
+   "qid": "Q1858",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q884": [
+  {
+   "coord": [
+    37.56,
+    126.99
+   ],
+   "end": null,
+   "label_de": "Seoul",
+   "label_en": "Seoul",
+   "qid": "Q8684",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q889": [
+  {
+   "coord": [
+    34.532777777,
+    69.165833333
+   ],
+   "end": null,
+   "label_de": "Kabul",
+   "label_en": "Kabul",
+   "qid": "Q5838",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q902": [
+  {
+   "coord": [
+    23.728888888,
+    90.394444444
+   ],
+   "end": null,
+   "label_de": "Dhaka",
+   "label_en": "Dhaka",
+   "qid": "Q1354",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q912": [
+  {
+   "coord": [
+    12.645833333,
+    -7.992222222
+   ],
+   "end": null,
+   "label_de": "Bamako",
+   "label_en": "Bamako",
+   "qid": "Q3703",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q916": [
+  {
+   "coord": [
+    -8.838333333,
+    13.234444444
+   ],
+   "end": null,
+   "label_de": "Luanda",
+   "label_en": "Luanda",
+   "qid": "Q3897",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q917": [
+  {
+   "coord": [
+    27.47135,
+    89.63367
+   ],
+   "end": null,
+   "label_de": "Thimphu",
+   "label_en": "Thimphu",
+   "qid": "Q9270",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q921": [
+  {
+   "coord": [
+    4.916666666,
+    114.916666666
+   ],
+   "end": null,
+   "label_de": "Bandar Seri Begawan",
+   "label_en": "Bandar Seri Begawan",
+   "qid": "Q9279",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q924": [
+  {
+   "coord": [
+    -6.816111111,
+    39.280277777
+   ],
+   "end": "1996-02-01T00:00:00Z",
+   "label_de": "Daressalam",
+   "label_en": "Dar es Salaam",
+   "qid": "Q1960",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    -6.1835,
+    35.746
+   ],
+   "end": null,
+   "label_de": "Dodoma",
+   "label_en": "Dodoma",
+   "qid": "Q3866",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "1996-02-01T00:00:00Z"
+  }
+ ],
+ "Q928": [
+  {
+   "coord": [
+    14.595833333,
+    120.977222222
+   ],
+   "end": null,
+   "label_de": "Manila",
+   "label_en": "Manila",
+   "qid": "Q1461",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q929": [
+  {
+   "coord": [
+    4.37325,
+    18.562833333
+   ],
+   "end": null,
+   "label_de": "Bangui",
+   "label_en": "Bangui",
+   "qid": "Q3832",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q945": [
+  {
+   "coord": [
+    6.13,
+    1.215833333
+   ],
+   "end": null,
+   "label_de": "Lomé",
+   "label_en": "Lomé",
+   "qid": "Q3792",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q948": [
+  {
+   "coord": [
+    36.800833333,
+    10.18
+   ],
+   "end": null,
+   "label_de": "Tunis",
+   "label_en": "Tunis",
+   "qid": "Q3572",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q953": [
+  {
+   "coord": [
+    -15.416666666,
+    28.283333333
+   ],
+   "end": null,
+   "label_de": "Lusaka",
+   "label_en": "Lusaka",
+   "qid": "Q3881",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q954": [
+  {
+   "coord": [
+    -17.829166666,
+    31.052222222
+   ],
+   "end": null,
+   "label_de": "Harare",
+   "label_en": "Harare",
+   "qid": "Q3921",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q958": [
+  {
+   "coord": [
+    4.853888888,
+    31.5825
+   ],
+   "end": null,
+   "label_de": "Juba",
+   "label_en": "Juba",
+   "qid": "Q1947",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q96": [
+  {
+   "coord": [
+    19.353773,
+    -99.13589
+   ],
+   "end": null,
+   "label_de": "Mexiko-Stadt",
+   "label_en": "Mexico City",
+   "qid": "Q1489",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q962": [
+  {
+   "coord": [
+    6.483333333,
+    2.616666666
+   ],
+   "end": null,
+   "label_de": "Porto-Novo",
+   "label_en": "Porto-Novo",
+   "qid": "Q3799",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    6.366666666,
+    2.416666666
+   ],
+   "end": null,
+   "label_de": "Cotonou",
+   "label_en": "Cotonou",
+   "qid": "Q43595",
+   "rank": "ontology#normal",
+   "role": "seat_of_government",
+   "role_qid": "Q1901835",
+   "start": null
+  }
+ ],
+ "Q963": [
+  {
+   "coord": [
+    -24.656944444,
+    25.908611111
+   ],
+   "end": null,
+   "label_de": "Gaborone",
+   "label_en": "Gaborone",
+   "qid": "Q3919",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q9648": [
+  {
+   "coord": [
+    -51.693861,
+    -57.849556
+   ],
+   "end": null,
+   "label_de": "Stanley",
+   "label_en": "Stanley",
+   "qid": "Q12245",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q965": [
+  {
+   "coord": [
+    12.368611111,
+    -1.5275
+   ],
+   "end": null,
+   "label_de": "Ouagadougou",
+   "label_en": "Ouagadougou",
+   "qid": "Q3777",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q967": [
+  {
+   "coord": [
+    -3.3825,
+    29.361111111
+   ],
+   "end": "2019-01-15T00:00:00Z",
+   "label_de": "Bujumbura",
+   "label_en": "Bujumbura",
+   "qid": "Q3854",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  },
+  {
+   "coord": [
+    -3.428333333,
+    29.925
+   ],
+   "end": null,
+   "label_de": "Gitega",
+   "label_en": "Gitega",
+   "qid": "Q167551",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "2019-01-16T00:00:00Z"
+  }
+ ],
+ "Q9676": [
+  {
+   "coord": [
+    54.15,
+    -4.4775
+   ],
+   "end": null,
+   "label_de": "Douglas",
+   "label_en": "Douglas",
+   "qid": "Q18569",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q970": [
+  {
+   "coord": [
+    -11.703611111,
+    43.253611111
+   ],
+   "end": null,
+   "label_de": "Moroni",
+   "label_en": "Moroni",
+   "qid": "Q3901",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q971": [
+  {
+   "coord": [
+    -4.269444444,
+    15.271111111
+   ],
+   "end": null,
+   "label_de": "Brazzaville",
+   "label_en": "Brazzaville",
+   "qid": "Q3844",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q974": [
+  {
+   "coord": [
+    -4.321944444,
+    15.311944444
+   ],
+   "end": null,
+   "label_de": "Kinshasa",
+   "label_en": "Kinshasa",
+   "qid": "Q3838",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q977": [
+  {
+   "coord": [
+    11.595,
+    43.148055555
+   ],
+   "end": null,
+   "label_de": "Dschibuti",
+   "label_en": "Djibouti",
+   "qid": "Q3604",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ],
+ "Q983": [
+  {
+   "coord": [
+    3.752063888,
+    8.7737
+   ],
+   "end": "2026-01-03T00:00:00Z",
+   "label_de": "Malabo",
+   "label_en": "Malabo",
+   "qid": "Q3818",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": "1968-10-12T00:00:00Z"
+  },
+  {
+   "coord": [
+    1.591666666,
+    10.822222222
+   ],
+   "end": null,
+   "label_de": "Ciudad de la Paz",
+   "label_en": "Ciudad de la Paz",
+   "qid": "Q1140136",
+   "rank": "ontology#preferred",
+   "role": null,
+   "role_qid": null,
+   "start": "2026-01-03T00:00:00Z"
+  }
+ ],
+ "Q986": [
+  {
+   "coord": [
+    15.333333333,
+    38.916666666
+   ],
+   "end": null,
+   "label_de": "Asmara",
+   "label_en": "Asmara",
+   "qid": "Q3642",
+   "rank": "ontology#normal",
+   "role": null,
+   "role_qid": null,
+   "start": null
+  }
+ ]
+}

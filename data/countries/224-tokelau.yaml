@@ -1,0 +1,24 @@
+id: '224'
+iso2: TK
+iso3: TKL
+wikidata: Q36823
+status: dependency
+dependency_of: '157'
+name:
+  en: Tokelau
+  de: Tokelau
+capitals:
+- name:
+    en: Fakaofo
+    de: Fakaofo
+  role: capital
+  wikidata: Q650847
+  lat: -9.38
+  lon: -171.219
+borders: []
+regions:
+- Oceania
+- Polynesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Tokelau
+  de: https://de.wikipedia.org/wiki/Tokelau

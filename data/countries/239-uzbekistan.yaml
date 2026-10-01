@@ -1,0 +1,31 @@
+id: '239'
+iso2: UZ
+iso3: UZB
+wikidata: Q265
+status: sovereign
+name:
+  en: Uzbekistan
+  de: Usbekistan
+formal_name:
+  en: The Republic of Uzbekistan
+  de: Republik Usbekistan
+capitals:
+- name:
+    en: Tashkent
+    de: Taschkent
+  role: capital
+  wikidata: Q269
+  lat: 41.31111
+  lon: 69.27972
+borders:
+- '001'
+- '115'
+- '120'
+- '219'
+- '229'
+regions:
+- Asia
+- Central Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Uzbekistan
+  de: https://de.wikipedia.org/wiki/Usbekistan

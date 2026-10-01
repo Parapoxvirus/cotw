@@ -1,0 +1,31 @@
+id: '121'
+iso2: LA
+iso3: LAO
+wikidata: Q819
+status: sovereign
+name:
+  en: Laos
+  de: Laos
+formal_name:
+  en: The Lao People's Democratic Republic
+  de: Demokratische Volksrepublik Laos
+capitals:
+- name:
+    en: Vientiane
+    de: Vientiane
+  role: capital
+  wikidata: Q9326
+  lat: 17.98
+  lon: 102.63
+borders:
+- '038'
+- '045'
+- '151'
+- '221'
+- '242'
+regions:
+- Asia
+- South-eastern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Laos
+  de: https://de.wikipedia.org/wiki/Laos

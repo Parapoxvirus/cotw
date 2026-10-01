@@ -1,0 +1,30 @@
+id: '204'
+iso2: SI
+iso3: SVN
+wikidata: Q215
+status: sovereign
+name:
+  en: Slovenia
+  de: Slowenien
+formal_name:
+  en: The Republic of Slovenia
+  de: Republik Slowenien
+capitals:
+- name:
+    en: Ljubljana
+    de: Ljubljana / Laibach
+  role: capital
+  wikidata: Q437
+  lat: 46.05139
+  lon: 14.50611
+borders:
+- '014'
+- '055'
+- '101'
+- '110'
+regions:
+- Europe
+- Southern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Slovenia
+  de: https://de.wikipedia.org/wiki/Slowenien

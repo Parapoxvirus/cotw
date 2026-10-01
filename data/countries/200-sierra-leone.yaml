@@ -1,0 +1,29 @@
+id: '200'
+iso2: SL
+iso3: SLE
+wikidata: Q1044
+status: sovereign
+name:
+  en: Sierra Leone
+  de: Sierra Leone
+formal_name:
+  en: The Republic of Sierra Leone
+  de: Republik Sierra Leone
+capitals:
+- name:
+    en: Freetown
+    de: Freetown
+  role: capital
+  wikidata: Q3780
+  lat: 8.48722
+  lon: -13.23556
+borders:
+- '093'
+- '125'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Western Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Sierra_Leone
+  de: https://de.wikipedia.org/wiki/Sierra_Leone

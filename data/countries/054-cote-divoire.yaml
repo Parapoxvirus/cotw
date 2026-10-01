@@ -1,0 +1,45 @@
+id: '054'
+iso2: CI
+iso3: CIV
+wikidata: Q1008
+status: sovereign
+name:
+  en: Côte d’Ivoire / Ivory Coast, The
+  de: Elfenbeinküste / Côte d’Ivoire
+formal_name:
+  en: The Republic of Côte d'Ivoire
+  de: Republik Côte d’Ivoire
+capitals:
+- name:
+    en: Yamoussoukro
+    de: Yamoussoukro
+  label:
+    en: capital
+    de: Hauptstadt
+  role: capital
+  wikidata: Q3768
+  lat: 6.81611
+  lon: -5.27417
+- name:
+    en: Abidjan
+    de: Abidjan
+  label:
+    en: seat of government
+    de: Regierungssitz
+  role: seat_of_government
+  wikidata: Q1515
+  lat: 5.33639
+  lon: -4.02667
+borders:
+- '035'
+- '084'
+- '093'
+- '125'
+- '135'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Western Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Ivory_Coast
+  de: https://de.wikipedia.org/wiki/Elfenbeinküste

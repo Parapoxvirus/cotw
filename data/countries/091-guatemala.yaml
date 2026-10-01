@@ -1,0 +1,31 @@
+id: '091'
+iso2: GT
+iso3: GTM
+wikidata: Q774
+status: sovereign
+name:
+  en: Guatemala
+  de: Guatemala
+formal_name:
+  en: The Republic of Guatemala
+  de: Republik Guatemala
+capitals:
+- name:
+    en: Guatemala City
+    de: Guatemala-Stadt
+  role: capital
+  wikidata: Q1555
+  lat: 14.64167
+  lon: -90.51333
+borders:
+- '022'
+- '066'
+- '099'
+- '142'
+regions:
+- Americas
+- Latin America and the Caribbean
+- Central America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Guatemala
+  de: https://de.wikipedia.org/wiki/Guatemala

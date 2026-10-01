@@ -1,0 +1,33 @@
+id: '004'
+iso2: DZ
+iso3: DZA
+wikidata: Q262
+status: sovereign
+name:
+  en: Algeria
+  de: Algerien
+formal_name:
+  en: The People's Democratic Republic of Algeria
+  de: Demokratische Volksrepublik Algerien
+capitals:
+- name:
+    en: Algiers
+    de: Algier
+  role: capital
+  wikidata: Q3561
+  lat: 36.77639
+  lon: 3.05861
+borders:
+- '126'
+- '135'
+- '139'
+- '149'
+- '159'
+- '227'
+- '245'
+regions:
+- Africa
+- Northern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Algeria
+  de: https://de.wikipedia.org/wiki/Algerien

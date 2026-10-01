@@ -1,0 +1,30 @@
+id: '206'
+iso2: SO
+iso3: SOM
+wikidata: Q1045
+status: sovereign
+name:
+  en: Somalia
+  de: Somalia
+formal_name:
+  en: The Federal Republic of Somalia
+  de: Bundesrepublik Somalia
+capitals:
+- name:
+    en: Mogadishu
+    de: Mogadischu
+  role: capital
+  wikidata: Q2449
+  lat: 2.03917
+  lon: 45.34194
+borders:
+- '061'
+- '071'
+- '116'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Eastern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Somalia
+  de: https://de.wikipedia.org/wiki/Somalia

@@ -1,0 +1,24 @@
+id: '176'
+iso2: PN
+iso3: PCN
+wikidata: Q35672
+status: dependency
+dependency_of: '235'
+name:
+  en: Pitcairn Islands
+  de: Pitcairninseln
+capitals:
+- name:
+    en: Adamstown
+    de: Adamstown
+  role: capital
+  wikidata: Q48273
+  lat: -25.06667
+  lon: -130.1
+borders: []
+regions:
+- Oceania
+- Polynesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Pitcairn_Islands
+  de: https://de.wikipedia.org/wiki/Pitcairninseln

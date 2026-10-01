@@ -1,0 +1,19 @@
+# Manual corrections to the Natural Earth land adjacency (data/derived/ne-borders.yaml).
+# Pairs are ISO-2 codes, applied symmetrically. Every entry carries a reason.
+add:
+  - pair: [BW, ZM]
+    reason: >-
+      Botswana and Zambia share a ~150 m land border at the Kazungula quadripoint
+      (border agreement 2013, Kazungula Bridge 2021); Natural Earth draws a Namibia–Zimbabwe
+      contact there instead.
+  - pair: [CN, MO]
+    reason: >-
+      Macao borders Zhuhai (Portas do Cerco / Cotai) by land; Natural Earth 10m draws Macao
+      without a shared boundary line. The spreadsheet lists CN for MO, and the issue asks for
+      symmetry with HK/MO.
+  - pair: [CA, GL]
+    reason: >-
+      Since the 2022 Canada–Denmark agreement Hans Island is split between Canada and
+      Greenland, creating a land border; Natural Earth 5.1.1 still assigns the whole island
+      to one side.
+remove: []

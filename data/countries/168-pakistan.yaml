@@ -1,0 +1,30 @@
+id: '168'
+iso2: PK
+iso3: PAK
+wikidata: Q843
+status: sovereign
+name:
+  en: Pakistan
+  de: Pakistan
+formal_name:
+  en: The Islamic Republic of Pakistan
+  de: Islamische Republik Pakistan
+capitals:
+- name:
+    en: Islamabad
+    de: Islamabad
+  role: capital
+  wikidata: Q1362
+  lat: 33.69889
+  lon: 73.03694
+borders:
+- '001'
+- '045'
+- '103'
+- '105'
+regions:
+- Asia
+- Southern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Pakistan
+  de: https://de.wikipedia.org/wiki/Pakistan

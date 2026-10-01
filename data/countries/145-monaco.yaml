@@ -1,0 +1,27 @@
+id: '145'
+iso2: MC
+iso3: MCO
+wikidata: Q235
+status: sovereign
+name:
+  en: Monaco
+  de: Monaco
+formal_name:
+  en: The Principality of Monaco
+  de: Fürstentum Monaco
+capitals:
+- name:
+    en: Monaco
+    de: Monaco
+  role: capital
+  wikidata: Q235
+  lat: 43.73111
+  lon: 7.42
+borders:
+- '076'
+regions:
+- Europe
+- Western Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Monaco
+  de: https://de.wikipedia.org/wiki/Monaco

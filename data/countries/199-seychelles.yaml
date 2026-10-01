@@ -1,0 +1,27 @@
+id: '199'
+iso2: SC
+iso3: SYC
+wikidata: Q1042
+status: sovereign
+name:
+  en: Seychelles
+  de: Seychellen
+formal_name:
+  en: The Republic of Seychelles
+  de: Republik Seychellen
+capitals:
+- name:
+    en: Victoria
+    de: Victoria
+  role: capital
+  wikidata: Q3940
+  lat: -4.62361
+  lon: 55.45444
+borders: []
+regions:
+- Africa
+- Sub-Saharan Africa
+- Eastern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Seychelles
+  de: https://de.wikipedia.org/wiki/Seychellen

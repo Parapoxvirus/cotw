@@ -1,0 +1,23 @@
+id: '052'
+iso2: CK
+iso3: COK
+wikidata: Q26988
+status: sovereign
+name:
+  en: Cook Islands
+  de: Cookinseln
+capitals:
+- name:
+    en: Avarua
+    de: Avarua
+  role: capital
+  wikidata: Q170482
+  lat: -21.207
+  lon: -159.771
+borders: []
+regions:
+- Oceania
+- Polynesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Cook_Islands
+  de: https://de.wikipedia.org/wiki/Cookinseln

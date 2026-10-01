@@ -1,0 +1,30 @@
+id: '128'
+iso2: LT
+iso3: LTU
+wikidata: Q37
+status: sovereign
+name:
+  en: Lithuania
+  de: Litauen
+formal_name:
+  en: The Republic of Lithuania
+  de: Republik Litauen
+capitals:
+- name:
+    en: Vilnius
+    de: Vilnius / Wilna
+  role: capital
+  wikidata: Q216
+  lat: 54.68722
+  lon: 25.28
+borders:
+- '020'
+- '122'
+- '177'
+- '184'
+regions:
+- Europe
+- Northern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Lithuania
+  de: https://de.wikipedia.org/wiki/Litauen

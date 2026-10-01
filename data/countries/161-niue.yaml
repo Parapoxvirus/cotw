@@ -1,0 +1,24 @@
+id: '161'
+iso2: NU
+iso3: NIU
+wikidata: Q34020
+status: dependency
+dependency_of: '157'
+name:
+  en: Niue
+  de: Niue
+capitals:
+- name:
+    en: Alofi
+    de: Alofi
+  role: capital
+  wikidata: Q30966
+  lat: -19.056
+  lon: -169.921
+borders: []
+regions:
+- Oceania
+- Polynesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Niue
+  de: https://de.wikipedia.org/wiki/Niue

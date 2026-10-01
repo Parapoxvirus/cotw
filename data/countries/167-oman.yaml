@@ -1,0 +1,29 @@
+id: '167'
+iso2: OM
+iso3: OMN
+wikidata: Q842
+status: sovereign
+name:
+  en: Oman
+  de: Oman
+formal_name:
+  en: The Sultanate of Oman
+  de: Sultanat Oman
+capitals:
+- name:
+    en: Muscat
+    de: Maskat
+  role: capital
+  wikidata: Q3826
+  lat: 23.61389
+  lon: 58.59222
+borders:
+- '196'
+- '234'
+- '246'
+regions:
+- Asia
+- Western Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Oman
+  de: https://de.wikipedia.org/wiki/Oman

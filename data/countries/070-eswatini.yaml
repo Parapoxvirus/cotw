@@ -1,0 +1,45 @@
+id: '070'
+iso2: SZ
+iso3: SWZ
+wikidata: Q1050
+status: sovereign
+name:
+  en: Eswatini
+  de: Eswatini
+name_label:
+  en: formerly Swaziland
+  de: ehemals Swasiland
+formal_name:
+  en: The Kingdom of Eswatini
+  de: Königreich Eswatini
+capitals:
+- name:
+    en: Mbabane
+    de: Mbabane
+  label:
+    en: capital
+    de: Hauptstadt
+  role: capital
+  wikidata: Q3904
+  lat: -26.31667
+  lon: 31.13333
+- name:
+    en: Lobamba
+    de: Lobamba
+  label:
+    en: seat of government
+    de: Regierungssitz
+  role: seat_of_government
+  wikidata: Q101418
+  lat: -26.44648
+  lon: 31.20641
+borders:
+- '150'
+- '207'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Southern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Eswatini
+  de: https://de.wikipedia.org/wiki/Eswatini

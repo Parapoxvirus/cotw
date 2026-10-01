@@ -1,0 +1,72 @@
+# Manual decisions for capitals. Keyed by ISO-2, then the EN capital name as in the
+# spreadsheet. Every entry carries a reason.
+#
+# renames: the spreadsheet's EN name is wrong (German spelling or outdated); the corrected
+#          EN name is used for the entry and for the Wikidata match.
+renames:
+  AM:
+    Yerewan:
+      en: Yerevan
+      reason: German spelling in the EN column; EN is Yerevan (Wikidata Q1913 label).
+  DJ:
+    Dschibuti City:
+      en: Djibouti City
+      reason: German spelling in the EN column; EN is Djibouti (City) (Wikidata Q3604 label "Djibouti").
+  ET:
+    Addis Abeba:
+      en: Addis Ababa
+      reason: German spelling in the EN column; EN is Addis Ababa (Wikidata Q3624 label).
+  IR:
+    Teheran:
+      en: Tehran
+      reason: German spelling in the EN column; EN is Tehran (Wikidata Q3616 label).
+  IQ:
+    Bagdad:
+      en: Baghdad
+      reason: German spelling in the EN column; EN is Baghdad (Wikidata Q1530 label).
+  UA:
+    Kiev:
+      en: Kyiv
+      reason: Kyiv is the official romanization (since 2018) and the Wikidata EN label (Q1899).
+#
+# capitals: Wikidata item (and P625 coordinates) when neither P36 nor an exact-label lookup
+#           resolves the place.
+capitals:
+  AG:
+    Saint John’s:
+      wikidata: Q36262
+      reason: >-
+        P36 of Antigua and Barbuda, but the item carries no EN/DE label in Wikidata at fetch
+        time (2026-09-24), so the label match fails. Coordinates from the P36 cache.
+  BV:
+    Oslo:
+      wikidata: Q585
+      reason: >-
+        Bouvet Island is uninhabited and administered from Oslo (spreadsheet). Q585 carries no
+        EN/DE label in Wikidata at fetch time (2026-09-24). Coordinates from the P36 cache.
+  'NO':  # quoted: bare NO is a YAML boolean
+    Oslo:
+      wikidata: Q585
+      reason: >-
+        P36 of Norway, but the item carries no EN/DE label in Wikidata at fetch time
+        (2026-09-24), so the label match fails. Coordinates from the P36 cache.
+  EH:
+    El Aaiún:
+      wikidata: Q47837
+      lat: 27.15
+      lon: -13.2
+      reason: EN label is "Laayoune", El Aaiún is an alias; coordinates = Wikidata P625.
+  TF:
+    Saint Pierre:
+      wikidata: Q249884
+      lat: -21.34194
+      lon: 55.47778
+      reason: >-
+        Saint-Pierre on Réunion hosts the TAAF administration (spreadsheet). Wikidata P36 lists
+        Port-aux-Français (the main base) instead; kept as in the deck. Coordinates = P625.
+  MO:
+    Macao:
+      wikidata: Q14773
+      lat: 22.19
+      lon: 113.53806
+      reason: City territory, the capital is the entity itself; P36 points at "Municipality of Macau". Coordinates = P625.

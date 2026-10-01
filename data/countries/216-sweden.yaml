@@ -1,0 +1,28 @@
+id: '216'
+iso2: SE
+iso3: SWE
+wikidata: Q34
+status: sovereign
+name:
+  en: Sweden
+  de: Schweden
+formal_name:
+  en: The Kingdom of Sweden
+  de: Königreich Schweden
+capitals:
+- name:
+    en: Stockholm
+    de: Stockholm
+  role: capital
+  wikidata: Q1754
+  lat: 59.32944
+  lon: 18.06861
+borders:
+- '075'
+- '166'
+regions:
+- Europe
+- Northern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Sweden
+  de: https://de.wikipedia.org/wiki/Schweden

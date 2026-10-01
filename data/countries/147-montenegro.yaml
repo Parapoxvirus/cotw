@@ -1,0 +1,28 @@
+id: '147'
+iso2: ME
+iso3: MNE
+wikidata: Q236
+status: sovereign
+name:
+  en: Montenegro
+  de: Montenegro
+capitals:
+- name:
+    en: Podgorica
+    de: Podgorica
+  role: capital
+  wikidata: Q23564
+  lat: 42.44139
+  lon: 19.26278
+borders:
+- '003'
+- '028'
+- '055'
+- '118'
+- '198'
+regions:
+- Europe
+- Southern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Montenegro
+  de: https://de.wikipedia.org/wiki/Montenegro

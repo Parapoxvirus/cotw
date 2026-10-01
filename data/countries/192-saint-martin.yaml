@@ -1,0 +1,26 @@
+id: '192'
+iso2: MF
+iso3: MAF
+wikidata: Q126125
+status: dependency
+dependency_of: '076'
+name:
+  en: Saint-Martin
+  de: Saint-Martin
+capitals:
+- name:
+    en: Marigot
+    de: Marigot
+  role: capital
+  wikidata: Q200605
+  lat: 18.06667
+  lon: -63.08472
+borders:
+- '202'
+regions:
+- Americas
+- Latin America and the Caribbean
+- Caribbean
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Saint_Martin_(island)
+  de: https://de.wikipedia.org/wiki/Saint-Martin_(Gebietskörperschaft)

@@ -1,0 +1,41 @@
+id: '155'
+iso2: NL
+iso3: NLD
+wikidata: Q55
+status: sovereign
+name:
+  en: Netherlands, The
+  de: Niederlande
+formal_name:
+  en: The Kingdom of the Netherlands
+  de: Königreich der Niederlande
+capitals:
+- name:
+    en: Amsterdam
+    de: Amsterdam
+  label:
+    en: capital
+    de: Hauptstadt
+  role: capital
+  wikidata: Q727
+  lat: 52.36667
+  lon: 4.88333
+- name:
+    en: The Hague
+    de: Den Haag
+  label:
+    en: seat of government
+    de: Regierungssitz
+  role: seat_of_government
+  wikidata: Q36600
+  lat: 52.08
+  lon: 4.31
+borders:
+- '021'
+- '083'
+regions:
+- Europe
+- Western Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Netherlands
+  de: https://de.wikipedia.org/wiki/Niederlande

@@ -1,0 +1,27 @@
+id: '077'
+iso2: GF
+iso3: GUF
+wikidata: Q3769
+status: dependency
+dependency_of: '076'
+name:
+  en: French Guiana
+  de: Französisch-Guayana
+capitals:
+- name:
+    en: Cayenne
+    de: Cayenne
+  role: capital
+  wikidata: Q44401
+  lat: 4.93861
+  lon: -52.335
+borders:
+- '031'
+- '214'
+regions:
+- Americas
+- Latin America and the Caribbean
+- South America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/French_Guiana
+  de: https://de.wikipedia.org/wiki/Französisch-Guayana

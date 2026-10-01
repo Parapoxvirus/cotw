@@ -1,0 +1,25 @@
+id: '085'
+iso2: GI
+iso3: GIB
+wikidata: Q1410
+status: dependency
+dependency_of: '235'
+name:
+  en: Gibraltar
+  de: Gibraltar
+capitals:
+- name:
+    en: Gibraltar
+    de: Gibraltar
+  role: capital
+  wikidata: Q1410
+  lat: 36.14
+  lon: -5.35
+borders:
+- '211'
+regions:
+- Europe
+- Southern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Gibraltar
+  de: https://de.wikipedia.org/wiki/Gibraltar

@@ -1,0 +1,27 @@
+id: '222'
+iso2: TL
+iso3: TLS
+wikidata: Q574
+status: sovereign
+name:
+  en: Timor-Leste / East Timor
+  de: Timor-Leste / Osttimor
+formal_name:
+  en: The Democratic Republic of Timor-Leste
+  de: Demokratische Republik Timor-Leste
+capitals:
+- name:
+    en: Dili
+    de: Dili
+  role: capital
+  wikidata: Q9310
+  lat: -8.55361
+  lon: 125.57833
+borders:
+- '104'
+regions:
+- Asia
+- South-eastern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Timor-Leste
+  de: https://de.wikipedia.org/wiki/Osttimor

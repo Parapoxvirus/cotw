@@ -1,0 +1,26 @@
+id: '240'
+iso2: VU
+iso3: VUT
+wikidata: Q686
+status: sovereign
+name:
+  en: Vanuatu
+  de: Vanuatu
+formal_name:
+  en: The Republic of Vanuatu
+  de: Republik Vanuatu
+capitals:
+- name:
+    en: Port Vila
+    de: Port Vila
+  role: capital
+  wikidata: Q37806
+  lat: -17.73333
+  lon: 168.31667
+borders: []
+regions:
+- Oceania
+- Melanesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Vanuatu
+  de: https://de.wikipedia.org/wiki/Vanuatu

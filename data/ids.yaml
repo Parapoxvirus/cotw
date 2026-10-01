@@ -1,0 +1,994 @@
+# Frozen COTW IDs (DECISIONS.md A1). Assigned once, never changed, never reused.
+# New entries are appended with the next free number.
+'001':
+  slug: afghanistan
+  iso2: AF
+  wikidata: Q889
+'002':
+  slug: aland
+  iso2: AX
+  wikidata: Q5689
+'003':
+  slug: albania
+  iso2: AL
+  wikidata: Q222
+'004':
+  slug: algeria
+  iso2: DZ
+  wikidata: Q262
+'005':
+  slug: american-samoa
+  iso2: AS
+  wikidata: Q16641
+'006':
+  slug: andorra
+  iso2: AD
+  wikidata: Q228
+'007':
+  slug: angola
+  iso2: AO
+  wikidata: Q916
+008:
+  slug: anguilla
+  iso2: AI
+  wikidata: Q25228
+009:
+  slug: antigua-and-barbuda
+  iso2: AG
+  wikidata: Q781
+'010':
+  slug: argentina
+  iso2: AR
+  wikidata: Q414
+'011':
+  slug: armenia
+  iso2: AM
+  wikidata: Q399
+'012':
+  slug: aruba
+  iso2: AW
+  wikidata: Q21203
+'013':
+  slug: australia
+  iso2: AU
+  wikidata: Q408
+'014':
+  slug: austria
+  iso2: AT
+  wikidata: Q40
+'015':
+  slug: azerbaijan
+  iso2: AZ
+  wikidata: Q227
+'016':
+  slug: bahamas
+  iso2: BS
+  wikidata: Q778
+'017':
+  slug: bahrain
+  iso2: BH
+  wikidata: Q398
+018:
+  slug: bangladesh
+  iso2: BD
+  wikidata: Q902
+019:
+  slug: barbados
+  iso2: BB
+  wikidata: Q244
+'020':
+  slug: belarus
+  iso2: BY
+  wikidata: Q184
+'021':
+  slug: belgium
+  iso2: BE
+  wikidata: Q31
+'022':
+  slug: belize
+  iso2: BZ
+  wikidata: Q242
+'023':
+  slug: benin
+  iso2: BJ
+  wikidata: Q962
+'024':
+  slug: bermuda
+  iso2: BM
+  wikidata: Q23635
+'025':
+  slug: bhutan
+  iso2: BT
+  wikidata: Q917
+'026':
+  slug: bolivia
+  iso2: BO
+  wikidata: Q750
+'027':
+  slug: bonaire-sint-eustatius-and-saba
+  iso2: BQ
+  wikidata: Q27561
+028:
+  slug: bosnia-and-herzegovina
+  iso2: BA
+  wikidata: Q225
+029:
+  slug: botswana
+  iso2: BW
+  wikidata: Q963
+'030':
+  slug: bouvet-island
+  iso2: BV
+  wikidata: Q23408
+'031':
+  slug: brazil
+  iso2: BR
+  wikidata: Q155
+'032':
+  slug: british-indian-ocean-territory
+  iso2: IO
+  wikidata: Q43448
+'033':
+  slug: brunei
+  iso2: BN
+  wikidata: Q921
+'034':
+  slug: bulgaria
+  iso2: BG
+  wikidata: Q219
+'035':
+  slug: burkina-faso
+  iso2: BF
+  wikidata: Q965
+'036':
+  slug: burundi
+  iso2: BI
+  wikidata: Q967
+'037':
+  slug: cabo-verde
+  iso2: CV
+  wikidata: Q1011
+038:
+  slug: cambodia
+  iso2: KH
+  wikidata: Q424
+039:
+  slug: cameroon
+  iso2: CM
+  wikidata: Q1009
+'040':
+  slug: canada
+  iso2: CA
+  wikidata: Q16
+'041':
+  slug: cayman-islands
+  iso2: KY
+  wikidata: Q5785
+'042':
+  slug: central-african-republic
+  iso2: CF
+  wikidata: Q929
+'043':
+  slug: chad
+  iso2: TD
+  wikidata: Q657
+'044':
+  slug: chile
+  iso2: CL
+  wikidata: Q298
+'045':
+  slug: china
+  iso2: CN
+  wikidata: Q148
+'046':
+  slug: christmas-island
+  iso2: CX
+  wikidata: Q31063
+'047':
+  slug: cocos-islands
+  iso2: CC
+  wikidata: Q36004
+048:
+  slug: colombia
+  iso2: CO
+  wikidata: Q739
+049:
+  slug: comoros
+  iso2: KM
+  wikidata: Q970
+'050':
+  slug: congo-the-democratic-republic-of-the
+  iso2: CD
+  wikidata: Q974
+'051':
+  slug: congo-the-republic-of-the
+  iso2: CG
+  wikidata: Q971
+'052':
+  slug: cook-islands
+  iso2: CK
+  wikidata: Q26988
+'053':
+  slug: costa-rica
+  iso2: CR
+  wikidata: Q800
+'054':
+  slug: cote-divoire
+  iso2: CI
+  wikidata: Q1008
+'055':
+  slug: croatia
+  iso2: HR
+  wikidata: Q224
+'056':
+  slug: cuba
+  iso2: CU
+  wikidata: Q241
+'057':
+  slug: curacao
+  iso2: CW
+  wikidata: Q25279
+058:
+  slug: cyprus
+  iso2: CY
+  wikidata: Q229
+059:
+  slug: czech-republic
+  iso2: CZ
+  wikidata: Q213
+'060':
+  slug: denmark
+  iso2: DK
+  wikidata: Q35
+'061':
+  slug: djibouti
+  iso2: DJ
+  wikidata: Q977
+'062':
+  slug: dominica
+  iso2: DM
+  wikidata: Q784
+'063':
+  slug: dominican-republic
+  iso2: DO
+  wikidata: Q786
+'064':
+  slug: ecuador
+  iso2: EC
+  wikidata: Q736
+'065':
+  slug: egypt
+  iso2: EG
+  wikidata: Q79
+'066':
+  slug: el-salvador
+  iso2: SV
+  wikidata: Q792
+'067':
+  slug: equatorial-guinea
+  iso2: GQ
+  wikidata: Q983
+068:
+  slug: eritrea
+  iso2: ER
+  wikidata: Q986
+069:
+  slug: estonia
+  iso2: EE
+  wikidata: Q191
+'070':
+  slug: eswatini
+  iso2: SZ
+  wikidata: Q1050
+'071':
+  slug: ethiopia
+  iso2: ET
+  wikidata: Q115
+'072':
+  slug: falkland-islands
+  iso2: FK
+  wikidata: Q9648
+'073':
+  slug: faroe-islands
+  iso2: FO
+  wikidata: Q4628
+'074':
+  slug: fiji
+  iso2: FJ
+  wikidata: Q712
+'075':
+  slug: finland
+  iso2: FI
+  wikidata: Q33
+'076':
+  slug: france
+  iso2: FR
+  wikidata: Q142
+'077':
+  slug: french-guiana
+  iso2: GF
+  wikidata: Q3769
+078:
+  slug: french-polynesia
+  iso2: PF
+  wikidata: Q30971
+079:
+  slug: french-southern-and-antarctic-lands
+  iso2: TF
+  wikidata: Q129003
+080:
+  slug: gabon
+  iso2: GA
+  wikidata: Q1000
+081:
+  slug: gambia
+  iso2: GM
+  wikidata: Q1005
+082:
+  slug: georgia
+  iso2: GE
+  wikidata: Q230
+083:
+  slug: germany
+  iso2: DE
+  wikidata: Q183
+084:
+  slug: ghana
+  iso2: GH
+  wikidata: Q117
+085:
+  slug: gibraltar
+  iso2: GI
+  wikidata: Q1410
+086:
+  slug: greece
+  iso2: GR
+  wikidata: Q41
+087:
+  slug: greenland
+  iso2: GL
+  wikidata: Q223
+088:
+  slug: grenada
+  iso2: GD
+  wikidata: Q769
+089:
+  slug: guadeloupe
+  iso2: GP
+  wikidata: Q17012
+090:
+  slug: guam
+  iso2: GU
+  wikidata: Q16635
+091:
+  slug: guatemala
+  iso2: GT
+  wikidata: Q774
+092:
+  slug: guernsey
+  iso2: GG
+  wikidata: Q25230
+093:
+  slug: guinea
+  iso2: GN
+  wikidata: Q1006
+094:
+  slug: guinea-bissau
+  iso2: GW
+  wikidata: Q1007
+095:
+  slug: guyana
+  iso2: GY
+  wikidata: Q734
+096:
+  slug: haiti
+  iso2: HT
+  wikidata: Q790
+097:
+  slug: heard-island-and-mcdonald-islands
+  iso2: HM
+  wikidata: Q131198
+098:
+  slug: holy-see
+  iso2: VA
+  wikidata: Q237
+099:
+  slug: honduras
+  iso2: HN
+  wikidata: Q783
+'100':
+  slug: hong-kong
+  iso2: HK
+  wikidata: Q8646
+'101':
+  slug: hungary
+  iso2: HU
+  wikidata: Q28
+'102':
+  slug: iceland
+  iso2: IS
+  wikidata: Q189
+'103':
+  slug: india
+  iso2: IN
+  wikidata: Q668
+'104':
+  slug: indonesia
+  iso2: ID
+  wikidata: Q252
+'105':
+  slug: iran
+  iso2: IR
+  wikidata: Q794
+'106':
+  slug: iraq
+  iso2: IQ
+  wikidata: Q796
+'107':
+  slug: ireland
+  iso2: IE
+  wikidata: Q27
+'108':
+  slug: isle-of-man
+  iso2: IM
+  wikidata: Q9676
+'109':
+  slug: israel
+  iso2: IL
+  wikidata: Q801
+'110':
+  slug: italy
+  iso2: IT
+  wikidata: Q38
+'111':
+  slug: jamaica
+  iso2: JM
+  wikidata: Q766
+'112':
+  slug: japan
+  iso2: JP
+  wikidata: Q17
+'113':
+  slug: jersey
+  iso2: JE
+  wikidata: Q785
+'114':
+  slug: jordan
+  iso2: JO
+  wikidata: Q810
+'115':
+  slug: kazakhstan
+  iso2: KZ
+  wikidata: Q232
+'116':
+  slug: kenya
+  iso2: KE
+  wikidata: Q114
+'117':
+  slug: kiribati
+  iso2: KI
+  wikidata: Q710
+'118':
+  slug: kosovo
+  iso2: XK
+  wikidata: Q1246
+'119':
+  slug: kuwait
+  iso2: KW
+  wikidata: Q817
+'120':
+  slug: kyrgyzstan
+  iso2: KG
+  wikidata: Q813
+'121':
+  slug: laos
+  iso2: LA
+  wikidata: Q819
+'122':
+  slug: latvia
+  iso2: LV
+  wikidata: Q211
+'123':
+  slug: lebanon
+  iso2: LB
+  wikidata: Q822
+'124':
+  slug: lesotho
+  iso2: LS
+  wikidata: Q1013
+'125':
+  slug: liberia
+  iso2: LR
+  wikidata: Q1014
+'126':
+  slug: libya
+  iso2: LY
+  wikidata: Q1016
+'127':
+  slug: liechtenstein
+  iso2: LI
+  wikidata: Q347
+'128':
+  slug: lithuania
+  iso2: LT
+  wikidata: Q37
+'129':
+  slug: luxembourg
+  iso2: LU
+  wikidata: Q32
+'130':
+  slug: macao
+  iso2: MO
+  wikidata: Q14773
+'131':
+  slug: madagascar
+  iso2: MG
+  wikidata: Q1019
+'132':
+  slug: malawi
+  iso2: MW
+  wikidata: Q1020
+'133':
+  slug: malaysia
+  iso2: MY
+  wikidata: Q833
+'134':
+  slug: maldives
+  iso2: MV
+  wikidata: Q826
+'135':
+  slug: mali
+  iso2: ML
+  wikidata: Q912
+'136':
+  slug: malta
+  iso2: MT
+  wikidata: Q233
+'137':
+  slug: marshall-islands
+  iso2: MH
+  wikidata: Q709
+'138':
+  slug: martinique
+  iso2: MQ
+  wikidata: Q17054
+'139':
+  slug: mauritania
+  iso2: MR
+  wikidata: Q1025
+'140':
+  slug: mauritius
+  iso2: MU
+  wikidata: Q1027
+'141':
+  slug: mayotte
+  iso2: YT
+  wikidata: Q17063
+'142':
+  slug: mexico
+  iso2: MX
+  wikidata: Q96
+'143':
+  slug: micronesia
+  iso2: FM
+  wikidata: Q702
+'144':
+  slug: moldova
+  iso2: MD
+  wikidata: Q217
+'145':
+  slug: monaco
+  iso2: MC
+  wikidata: Q235
+'146':
+  slug: mongolia
+  iso2: MN
+  wikidata: Q711
+'147':
+  slug: montenegro
+  iso2: ME
+  wikidata: Q236
+'148':
+  slug: montserrat
+  iso2: MS
+  wikidata: Q13353
+'149':
+  slug: morocco
+  iso2: MA
+  wikidata: Q1028
+'150':
+  slug: mozambique
+  iso2: MZ
+  wikidata: Q1029
+'151':
+  slug: myanmar-burma
+  iso2: MM
+  wikidata: Q836
+'152':
+  slug: namibia
+  iso2: NA
+  wikidata: Q1030
+'153':
+  slug: nauru
+  iso2: NR
+  wikidata: Q697
+'154':
+  slug: nepal
+  iso2: NP
+  wikidata: Q837
+'155':
+  slug: netherlands
+  iso2: NL
+  wikidata: Q55
+'156':
+  slug: new-caledonia
+  iso2: NC
+  wikidata: Q33788
+'157':
+  slug: new-zealand
+  iso2: NZ
+  wikidata: Q664
+'158':
+  slug: nicaragua
+  iso2: NI
+  wikidata: Q811
+'159':
+  slug: niger
+  iso2: NE
+  wikidata: Q1032
+'160':
+  slug: nigeria
+  iso2: NG
+  wikidata: Q1033
+'161':
+  slug: niue
+  iso2: NU
+  wikidata: Q34020
+'162':
+  slug: norfolk-island
+  iso2: NF
+  wikidata: Q31057
+'163':
+  slug: north-korea
+  iso2: KP
+  wikidata: Q423
+'164':
+  slug: north-macedonia
+  iso2: MK
+  wikidata: Q221
+'165':
+  slug: northern-mariana-islands
+  iso2: MP
+  wikidata: Q16644
+'166':
+  slug: norway
+  iso2: 'NO'
+  wikidata: Q20
+'167':
+  slug: oman
+  iso2: OM
+  wikidata: Q842
+'168':
+  slug: pakistan
+  iso2: PK
+  wikidata: Q843
+'169':
+  slug: palau
+  iso2: PW
+  wikidata: Q695
+'170':
+  slug: palestine
+  iso2: PS
+  wikidata: Q219060
+'171':
+  slug: panama
+  iso2: PA
+  wikidata: Q804
+'172':
+  slug: papua-new-guinea
+  iso2: PG
+  wikidata: Q691
+'173':
+  slug: paraguay
+  iso2: PY
+  wikidata: Q733
+'174':
+  slug: peru
+  iso2: PE
+  wikidata: Q419
+'175':
+  slug: philippines
+  iso2: PH
+  wikidata: Q928
+'176':
+  slug: pitcairn-islands
+  iso2: PN
+  wikidata: Q35672
+'177':
+  slug: poland
+  iso2: PL
+  wikidata: Q36
+'178':
+  slug: portugal
+  iso2: PT
+  wikidata: Q45
+'179':
+  slug: puerto-rico
+  iso2: PR
+  wikidata: Q1183
+'180':
+  slug: qatar
+  iso2: QA
+  wikidata: Q846
+'181':
+  slug: republic-of-china-taiwan
+  iso2: TW
+  wikidata: Q865
+'182':
+  slug: reunion
+  iso2: RE
+  wikidata: Q17070
+'183':
+  slug: romania
+  iso2: RO
+  wikidata: Q218
+'184':
+  slug: russia
+  iso2: RU
+  wikidata: Q159
+'185':
+  slug: rwanda
+  iso2: RW
+  wikidata: Q1037
+'186':
+  slug: saint-barthelemy
+  iso2: BL
+  wikidata: Q25362
+'187':
+  slug: saint-helena-ascension-and-tristan-da-cunha
+  iso2: SH
+  wikidata: Q192184
+'188':
+  slug: saint-kitts-and-nevis
+  iso2: KN
+  wikidata: Q763
+'189':
+  slug: saint-lucia
+  iso2: LC
+  wikidata: Q760
+'190':
+  slug: saint-pierre-and-miquelon
+  iso2: PM
+  wikidata: Q34617
+'191':
+  slug: saint-vincent-and-the-grenadines
+  iso2: VC
+  wikidata: Q757
+'192':
+  slug: saint-martin
+  iso2: MF
+  wikidata: Q126125
+'193':
+  slug: samoa
+  iso2: WS
+  wikidata: Q683
+'194':
+  slug: san-marino
+  iso2: SM
+  wikidata: Q238
+'195':
+  slug: sao-tome-and-principe
+  iso2: ST
+  wikidata: Q1039
+'196':
+  slug: saudi-arabia
+  iso2: SA
+  wikidata: Q851
+'197':
+  slug: senegal
+  iso2: SN
+  wikidata: Q1041
+'198':
+  slug: serbia
+  iso2: RS
+  wikidata: Q403
+'199':
+  slug: seychelles
+  iso2: SC
+  wikidata: Q1042
+'200':
+  slug: sierra-leone
+  iso2: SL
+  wikidata: Q1044
+'201':
+  slug: singapore
+  iso2: SG
+  wikidata: Q334
+'202':
+  slug: sint-maarten
+  iso2: SX
+  wikidata: Q26273
+'203':
+  slug: slovakia
+  iso2: SK
+  wikidata: Q214
+'204':
+  slug: slovenia
+  iso2: SI
+  wikidata: Q215
+'205':
+  slug: solomon-islands
+  iso2: SB
+  wikidata: Q685
+'206':
+  slug: somalia
+  iso2: SO
+  wikidata: Q1045
+'207':
+  slug: south-africa
+  iso2: ZA
+  wikidata: Q258
+'208':
+  slug: south-georgia-and-the-south-sandwich-islands
+  iso2: GS
+  wikidata: Q35086
+'209':
+  slug: south-korea
+  iso2: KR
+  wikidata: Q884
+'210':
+  slug: south-sudan
+  iso2: SS
+  wikidata: Q958
+'211':
+  slug: spain
+  iso2: ES
+  wikidata: Q29
+'212':
+  slug: sri-lanka
+  iso2: LK
+  wikidata: Q854
+'213':
+  slug: sudan
+  iso2: SD
+  wikidata: Q1049
+'214':
+  slug: suriname
+  iso2: SR
+  wikidata: Q730
+'215':
+  slug: svalbard-and-jan-mayen
+  iso2: SJ
+  wikidata: Q842829
+'216':
+  slug: sweden
+  iso2: SE
+  wikidata: Q34
+'217':
+  slug: switzerland
+  iso2: CH
+  wikidata: Q39
+'218':
+  slug: syria
+  iso2: SY
+  wikidata: Q858
+'219':
+  slug: tajikistan
+  iso2: TJ
+  wikidata: Q863
+'220':
+  slug: tanzania
+  iso2: TZ
+  wikidata: Q924
+'221':
+  slug: thailand
+  iso2: TH
+  wikidata: Q869
+'222':
+  slug: timor-leste
+  iso2: TL
+  wikidata: Q574
+'223':
+  slug: togo
+  iso2: TG
+  wikidata: Q945
+'224':
+  slug: tokelau
+  iso2: TK
+  wikidata: Q36823
+'225':
+  slug: tonga
+  iso2: TO
+  wikidata: Q678
+'226':
+  slug: trinidad-and-tobago
+  iso2: TT
+  wikidata: Q754
+'227':
+  slug: tunisia
+  iso2: TN
+  wikidata: Q948
+'228':
+  slug: turkey
+  iso2: TR
+  wikidata: Q43
+'229':
+  slug: turkmenistan
+  iso2: TM
+  wikidata: Q874
+'230':
+  slug: turks-and-caicos-islands
+  iso2: TC
+  wikidata: Q18221
+'231':
+  slug: tuvalu
+  iso2: TV
+  wikidata: Q672
+'232':
+  slug: uganda
+  iso2: UG
+  wikidata: Q1036
+'233':
+  slug: ukraine
+  iso2: UA
+  wikidata: Q212
+'234':
+  slug: united-arab-emirates
+  iso2: AE
+  wikidata: Q878
+'235':
+  slug: united-kingdom
+  iso2: GB
+  wikidata: Q145
+'236':
+  slug: united-states-virgin-islands
+  iso2: VI
+  wikidata: Q11703
+'237':
+  slug: united-states
+  iso2: US
+  wikidata: Q30
+'238':
+  slug: uruguay
+  iso2: UY
+  wikidata: Q77
+'239':
+  slug: uzbekistan
+  iso2: UZ
+  wikidata: Q265
+'240':
+  slug: vanuatu
+  iso2: VU
+  wikidata: Q686
+'241':
+  slug: venezuela
+  iso2: VE
+  wikidata: Q717
+'242':
+  slug: vietnam
+  iso2: VN
+  wikidata: Q881
+'243':
+  slug: virgin-islands
+  iso2: VG
+  wikidata: Q25305
+'244':
+  slug: wallis-and-futuna
+  iso2: WF
+  wikidata: Q35555
+'245':
+  slug: western-sahara
+  iso2: EH
+  wikidata: Q6250
+'246':
+  slug: yemen
+  iso2: YE
+  wikidata: Q805
+'247':
+  slug: zambia
+  iso2: ZM
+  wikidata: Q953
+'248':
+  slug: zimbabwe
+  iso2: ZW
+  wikidata: Q954

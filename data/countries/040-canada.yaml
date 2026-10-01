@@ -1,0 +1,25 @@
+id: '040'
+iso2: CA
+iso3: CAN
+wikidata: Q16
+status: sovereign
+name:
+  en: Canada
+  de: Kanada
+capitals:
+- name:
+    en: Ottawa
+    de: Ottawa
+  role: capital
+  wikidata: Q1930
+  lat: 45.42472
+  lon: -75.695
+borders:
+- '087'
+- '237'
+regions:
+- Americas
+- Northern America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Canada
+  de: https://de.wikipedia.org/wiki/Kanada

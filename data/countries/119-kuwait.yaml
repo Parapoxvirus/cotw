@@ -1,0 +1,28 @@
+id: '119'
+iso2: KW
+iso3: KWT
+wikidata: Q817
+status: sovereign
+name:
+  en: Kuwait
+  de: Kuwait
+formal_name:
+  en: The State of Kuwait
+  de: Staat Kuwait
+capitals:
+- name:
+    en: Kuwait City
+    de: Kuwait-Stadt
+  role: capital
+  wikidata: Q35178
+  lat: 29.375
+  lon: 47.98
+borders:
+- '106'
+- '196'
+regions:
+- Asia
+- Western Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Kuwait
+  de: https://de.wikipedia.org/wiki/Kuwait

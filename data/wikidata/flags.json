@@ -1,0 +1,4446 @@
+{
+ "Q1000": [
+  {
+   "end": null,
+   "file": "Flag of Gabon.svg",
+   "rank": "preferred",
+   "start": "1960-08-09T00:00:00Z"
+  },
+  {
+   "end": "1960-08-09T00:00:00Z",
+   "file": "Flag of Gabon (1959–1960).svg",
+   "rank": "normal",
+   "start": "1959-01-01T00:00:00Z"
+  }
+ ],
+ "Q1005": [
+  {
+   "end": null,
+   "file": "Flag of The Gambia.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1006": [
+  {
+   "end": null,
+   "file": "Flag of Guinea.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1007": [
+  {
+   "end": null,
+   "file": "Flag of Guinea-Bissau.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1008": [
+  {
+   "end": null,
+   "file": "Flag of Côte d'Ivoire.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1009": [
+  {
+   "end": null,
+   "file": "Flag of Cameroon.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1011": [
+  {
+   "end": null,
+   "file": "Flag of Cape Verde (10-17).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1013": [
+  {
+   "end": null,
+   "file": "Flag of Lesotho.svg",
+   "rank": "preferred",
+   "start": "2006-10-04T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Lesotho (1966–1987).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "2006-10-04T00:00:00Z",
+   "file": "Flag of Lesotho (1987–2006).svg",
+   "rank": "normal",
+   "start": "1987-01-02T00:00:00Z"
+  }
+ ],
+ "Q1014": [
+  {
+   "end": null,
+   "file": "Flag of Liberia.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1016": [
+  {
+   "end": null,
+   "file": "Flag of Libya.svg",
+   "rank": "preferred",
+   "start": "2011-01-01T00:00:00Z"
+  },
+  {
+   "end": "1969-01-01T00:00:00Z",
+   "file": "Flag of Libya.svg",
+   "rank": "normal",
+   "start": "1951-01-01T00:00:00Z"
+  },
+  {
+   "end": "1972-01-01T00:00:00Z",
+   "file": "Flag of Libya (1969–1972).svg",
+   "rank": "normal",
+   "start": "1969-01-01T00:00:00Z"
+  },
+  {
+   "end": "1977-01-01T00:00:00Z",
+   "file": "Flag of Libya (1972–1977).svg",
+   "rank": "normal",
+   "start": "1972-01-01T00:00:00Z"
+  },
+  {
+   "end": "2011-01-01T00:00:00Z",
+   "file": "Flag of Libya (1977–2011).svg",
+   "rank": "normal",
+   "start": "1977-01-01T00:00:00Z"
+  }
+ ],
+ "Q1019": [
+  {
+   "end": null,
+   "file": "Flag of Madagascar.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1020": [
+  {
+   "end": null,
+   "file": "Flag of Malawi.svg",
+   "rank": "preferred",
+   "start": "2012-05-28T00:00:00Z"
+  },
+  {
+   "end": "2010-07-29T00:00:00Z",
+   "file": "Flag of Malawi.svg",
+   "rank": "normal",
+   "start": "1964-07-06T00:00:00Z"
+  },
+  {
+   "end": "2012-05-28T00:00:00Z",
+   "file": "Flag of Malawi (2010–2012).svg",
+   "rank": "normal",
+   "start": "2010-07-29T00:00:00Z"
+  }
+ ],
+ "Q1025": [
+  {
+   "end": null,
+   "file": "Flag of Mauritania.svg",
+   "rank": "preferred",
+   "start": "2017-08-15T00:00:00Z"
+  },
+  {
+   "end": "2017-08-15T00:00:00Z",
+   "file": "Flag of Mauritania (1959–2017).svg",
+   "rank": "normal",
+   "start": "1959-01-01T00:00:00Z"
+  }
+ ],
+ "Q1027": [
+  {
+   "end": null,
+   "file": "Flag of Mauritius.svg",
+   "rank": "normal",
+   "start": "1968-03-12T00:00:00Z"
+  }
+ ],
+ "Q1028": [
+  {
+   "end": null,
+   "file": "Flag of Morocco.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1029": [
+  {
+   "end": null,
+   "file": "Flag of Mozambique.svg",
+   "rank": "preferred",
+   "start": "1983-05-01T00:00:00Z"
+  },
+  {
+   "end": "1975-01-01T00:00:00Z",
+   "file": "Flag of Mozambique (1974–1975).svg",
+   "rank": "normal",
+   "start": "1974-01-01T00:00:00Z"
+  },
+  {
+   "end": "1983-01-01T00:00:00Z",
+   "file": "Flag of Mozambique (1975–1983).svg",
+   "rank": "normal",
+   "start": "1975-01-01T00:00:00Z"
+  },
+  {
+   "end": "1983-01-01T00:00:00Z",
+   "file": "Flag of Mozambique (1983).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1030": [
+  {
+   "end": null,
+   "file": "Flag of Namibia.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1032": [
+  {
+   "end": null,
+   "file": "Flag of Niger.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1033": [
+  {
+   "end": null,
+   "file": "Flag of Nigeria.svg",
+   "rank": "normal",
+   "start": "1960-10-01T00:00:00Z"
+  }
+ ],
+ "Q1036": [
+  {
+   "end": null,
+   "file": "Flag of Uganda.svg",
+   "rank": "preferred",
+   "start": "1962-10-09T00:00:00Z"
+  },
+  {
+   "end": "1962-10-09T00:00:00Z",
+   "file": "Flag of Uganda 1962.svg",
+   "rank": "normal",
+   "start": "1962-03-01T00:00:00Z"
+  }
+ ],
+ "Q1037": [
+  {
+   "end": null,
+   "file": "Flag of Rwanda.svg",
+   "rank": "preferred",
+   "start": "2001-10-25T00:00:00Z"
+  },
+  {
+   "end": "1961-09-01T00:00:00Z",
+   "file": "Flag of Rwanda (January – September 1961).svg",
+   "rank": "normal",
+   "start": "1961-01-28T00:00:00Z"
+  },
+  {
+   "end": "2001-10-24T00:00:00Z",
+   "file": "Flag of Rwanda (1961–2001).svg",
+   "rank": "normal",
+   "start": "1961-10-01T00:00:00Z"
+  }
+ ],
+ "Q1039": [
+  {
+   "end": null,
+   "file": "Flag of São Tomé and Príncipe.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1041": [
+  {
+   "end": null,
+   "file": "Flag of Senegal.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1042": [
+  {
+   "end": null,
+   "file": "Flag of Seychelles.svg",
+   "rank": "preferred",
+   "start": "1996-06-18T00:00:00Z"
+  },
+  {
+   "end": "1976-06-01T00:00:00Z",
+   "file": "Flag of Seychelles (1961–1976).svg",
+   "rank": "normal",
+   "start": "1961-01-01T00:00:00Z"
+  },
+  {
+   "end": "1977-06-01T00:00:00Z",
+   "file": "Flag of Seychelles (1976–1977).svg",
+   "rank": "normal",
+   "start": "1976-06-01T00:00:00Z"
+  },
+  {
+   "end": "1996-06-18T00:00:00Z",
+   "file": "Flag of Seychelles (1977–1996).svg",
+   "rank": "normal",
+   "start": "1977-06-01T00:00:00Z"
+  }
+ ],
+ "Q1044": [
+  {
+   "end": null,
+   "file": "Flag of Sierra Leone.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1045": [
+  {
+   "end": null,
+   "file": "Flag of Somalia.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1049": [
+  {
+   "end": null,
+   "file": "Flag of Sudan.svg",
+   "rank": "preferred",
+   "start": "1970-05-20T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Sudan (1956–1970).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1050": [
+  {
+   "end": null,
+   "file": "Flag of Eswatini.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q114": [
+  {
+   "end": null,
+   "file": "Flag of Kenya.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q115": [
+  {
+   "end": null,
+   "file": "Flag of Ethiopia.svg",
+   "rank": "preferred",
+   "start": "1996-10-31T00:00:00Z"
+  },
+  {
+   "end": "1974-01-01T00:00:00Z",
+   "file": "Flag of Ethiopia (1897–1974).svg",
+   "rank": "normal",
+   "start": "1897-01-01T00:00:00Z"
+  },
+  {
+   "end": "1987-01-01T00:00:00Z",
+   "file": "Flag of Ethiopia (1975–1987).svg",
+   "rank": "normal",
+   "start": "1975-01-01T00:00:00Z"
+  },
+  {
+   "end": "1991-01-01T00:00:00Z",
+   "file": "Flag of Ethiopia (1987–1991).svg",
+   "rank": "normal",
+   "start": "1987-01-01T00:00:00Z"
+  },
+  {
+   "end": "1996-02-06T00:00:00Z",
+   "file": "Flag of Ethiopia (1991–1996).svg",
+   "rank": "normal",
+   "start": "1991-01-01T00:00:00Z"
+  },
+  {
+   "end": "1996-10-31T00:00:00Z",
+   "file": "Flag of Ethiopia (1996–2009).svg",
+   "rank": "normal",
+   "start": "1996-02-06T00:00:00Z"
+  }
+ ],
+ "Q117": [
+  {
+   "end": null,
+   "file": "Flag of Ghana.svg",
+   "rank": "preferred",
+   "start": "1966-01-01T00:00:00Z"
+  },
+  {
+   "end": "1961-01-01T00:00:00Z",
+   "file": "Flag of the Union of African States (1958-1961).svg",
+   "rank": "normal",
+   "start": "1958-01-01T00:00:00Z"
+  },
+  {
+   "end": "1962-01-01T00:00:00Z",
+   "file": "Flag of the Union of African States (1961–1962).svg",
+   "rank": "normal",
+   "start": "1961-01-01T00:00:00Z"
+  },
+  {
+   "end": "1966-01-01T00:00:00Z",
+   "file": "Flag of Ghana (1964–1966).svg",
+   "rank": "normal",
+   "start": "1964-01-01T00:00:00Z"
+  }
+ ],
+ "Q11703": [
+  {
+   "end": null,
+   "file": "Flag of the United States Virgin Islands.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1183": [
+  {
+   "end": null,
+   "file": "Flag of Puerto Rico.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1246": [
+  {
+   "end": null,
+   "file": "Flag of Kosovo.svg",
+   "rank": "preferred",
+   "start": "2008-02-17T00:00:00Z"
+  },
+  {
+   "end": "2008-02-17T00:00:00Z",
+   "file": "Flag of the United Nations.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q126125": [
+  {
+   "end": null,
+   "file": "Flag of France.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q129003": [
+  {
+   "end": null,
+   "file": "Flag of the French Southern and Antarctic Lands.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q131198": [
+  {
+   "end": null,
+   "file": "Flag of Australia (converted).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q13353": [
+  {
+   "end": null,
+   "file": "Flag of Montserrat.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q1410": [
+  {
+   "end": null,
+   "file": "Flag of Gibraltar.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q142": [
+  {
+   "end": null,
+   "file": "Flag of France.svg",
+   "rank": "preferred",
+   "start": "2020-07-13T00:00:00Z"
+  },
+  {
+   "end": "1300-01-01T00:00:00Z",
+   "file": "Flag of France (XII-XIII).svg",
+   "rank": "normal",
+   "start": "1101-01-01T00:00:00Z"
+  },
+  {
+   "end": "1600-01-01T00:00:00Z",
+   "file": "Bannière de France style 1500.svg",
+   "rank": "normal",
+   "start": "1301-01-01T00:00:00Z"
+  },
+  {
+   "end": "1790-01-01T00:00:00Z",
+   "file": "Royal Standard of the King of France.svg",
+   "rank": "normal",
+   "start": "1638-01-01T00:00:00Z"
+  },
+  {
+   "end": "1794-05-20T00:00:00Z",
+   "file": "Flag of France (1790–1794).svg",
+   "rank": "normal",
+   "start": "1790-01-01T00:00:00Z"
+  },
+  {
+   "end": "1814-01-01T00:00:00Z",
+   "file": "Flag of France.svg",
+   "rank": "normal",
+   "start": "1794-05-20T00:00:00Z"
+  },
+  {
+   "end": "1830-07-27T00:00:00Z",
+   "file": "Flag of France (1814–1830).svg",
+   "rank": "normal",
+   "start": "1815-01-01T00:00:00Z"
+  },
+  {
+   "end": "1958-10-04T00:00:00Z",
+   "file": "Flag of France.svg",
+   "rank": "normal",
+   "start": "1830-07-27T00:00:00Z"
+  },
+  {
+   "end": "1974-05-27T00:00:00Z",
+   "file": "Flag of France (1958–1976).svg",
+   "rank": "normal",
+   "start": "1958-10-04T00:00:00Z"
+  },
+  {
+   "end": "2020-07-13T00:00:00Z",
+   "file": "Flag of France (1976–2020).svg",
+   "rank": "normal",
+   "start": "1974-05-27T00:00:00Z"
+  }
+ ],
+ "Q145": [
+  {
+   "end": null,
+   "file": "Flag of the United Kingdom (3-5).svg",
+   "rank": "preferred",
+   "start": "1801-01-01T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of the United Kingdom (1-2).svg",
+   "rank": "deprecated",
+   "start": null
+  },
+  {
+   "end": "1800-01-01T00:00:00Z",
+   "file": "Flag of Great Britain (1707–1800).svg",
+   "rank": "normal",
+   "start": "1707-01-01T00:00:00Z"
+  }
+ ],
+ "Q14773": [
+  {
+   "end": null,
+   "file": "Flag of Macau.svg",
+   "rank": "normal",
+   "start": "1999-12-20T00:00:00Z"
+  }
+ ],
+ "Q148": [
+  {
+   "end": null,
+   "file": "Flag of the People's Republic of China.svg",
+   "rank": "normal",
+   "start": "1949-09-27T00:00:00Z"
+  }
+ ],
+ "Q155": [
+  {
+   "end": null,
+   "file": "Flag of Brazil.svg",
+   "rank": "preferred",
+   "start": "1992-05-11T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Brazil (1822–1853).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": null,
+   "file": "Flag of Brazil (1853-1889).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1889-11-19T00:00:00Z",
+   "file": "Flag of Brazil (November 1889).svg",
+   "rank": "normal",
+   "start": "1889-11-15T00:00:00Z"
+  },
+  {
+   "end": "1960-04-14T00:00:00Z",
+   "file": "Flag of Brazil (1889–1960).svg",
+   "rank": "normal",
+   "start": "1889-11-19T00:00:00Z"
+  },
+  {
+   "end": "1968-05-28T00:00:00Z",
+   "file": "Flag of Brazil (1960–1968).svg",
+   "rank": "normal",
+   "start": "1960-04-14T00:00:00Z"
+  },
+  {
+   "end": "1992-05-11T00:00:00Z",
+   "file": "Flag of Brazil (1968–1992).svg",
+   "rank": "normal",
+   "start": "1968-05-28T00:00:00Z"
+  }
+ ],
+ "Q159": [
+  {
+   "end": null,
+   "file": "Flag of Russia.svg",
+   "rank": "preferred",
+   "start": "1993-12-11T00:00:00Z"
+  },
+  {
+   "end": "1896-01-01T00:00:00Z",
+   "file": "Flag of Russia (1858–1896).svg",
+   "rank": "normal",
+   "start": "1858-01-01T00:00:00Z"
+  },
+  {
+   "end": "1918-01-01T00:00:00Z",
+   "file": "Flag of Russia.svg",
+   "rank": "normal",
+   "start": "1896-05-11T00:00:00Z"
+  },
+  {
+   "end": "1937-01-01T00:00:00Z",
+   "file": "Flag of the Russian Soviet Federative Socialist Republic (1918–1925).svg",
+   "rank": "deprecated",
+   "start": "1918-01-01T00:00:00Z"
+  },
+  {
+   "end": "1954-01-01T00:00:00Z",
+   "file": "Flag of the Russian Soviet Federative Socialist Republic (1937–1954).svg",
+   "rank": "normal",
+   "start": "1937-01-01T00:00:00Z"
+  },
+  {
+   "end": "1991-08-22T00:00:00Z",
+   "file": "Flag of the Russian Soviet Federative Socialist Republic (1954–1991).svg",
+   "rank": "normal",
+   "start": "1954-01-01T00:00:00Z"
+  },
+  {
+   "end": "1993-12-11T00:00:00Z",
+   "file": "Flag of Russia (1991–1993).svg",
+   "rank": "normal",
+   "start": "1991-08-22T00:00:00Z"
+  }
+ ],
+ "Q16": [
+  {
+   "end": null,
+   "file": "Flag of Canada (Pantone).svg",
+   "rank": "preferred",
+   "start": "1965-02-15T00:00:00Z"
+  },
+  {
+   "end": "1921-01-01T00:00:00Z",
+   "file": "Flag of Canada (1868–1921).svg",
+   "rank": "normal",
+   "start": "1868-01-01T00:00:00Z"
+  },
+  {
+   "end": "1957-01-01T00:00:00Z",
+   "file": "Flag of Canada (1921–1957).svg",
+   "rank": "normal",
+   "start": "1921-01-01T00:00:00Z"
+  },
+  {
+   "end": "1965-02-15T00:00:00Z",
+   "file": "Flag of Canada (1957–1965).svg",
+   "rank": "normal",
+   "start": "1957-01-01T00:00:00Z"
+  },
+  {
+   "end": "1965-02-15T00:00:00Z",
+   "file": "Flag of Canada (1964).svg",
+   "rank": "normal",
+   "start": "1964-01-01T00:00:00Z"
+  }
+ ],
+ "Q16635": [
+  {
+   "end": null,
+   "file": "Flag of Guam.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q16641": [
+  {
+   "end": null,
+   "file": "Flag of American Samoa.svg",
+   "rank": "preferred",
+   "start": "1960-04-27T00:00:00Z"
+  },
+  {
+   "end": "1959-07-03T00:00:00Z",
+   "file": "Flag of the United States (1912-1959).svg",
+   "rank": "normal",
+   "start": "1912-07-04T00:00:00Z"
+  },
+  {
+   "end": "1960-04-27T00:00:00Z",
+   "file": "US flag 49 stars.svg",
+   "rank": "normal",
+   "start": "1959-07-04T00:00:00Z"
+  }
+ ],
+ "Q16644": [
+  {
+   "end": null,
+   "file": "Flag of the Northern Mariana Islands.svg",
+   "rank": "normal",
+   "start": "1985-07-01T00:00:00Z"
+  }
+ ],
+ "Q17": [
+  {
+   "end": null,
+   "file": "Flag of Japan.svg",
+   "rank": "preferred",
+   "start": "1999-08-13T00:00:00Z"
+  },
+  {
+   "end": "1999-08-12T00:00:00Z",
+   "file": "Flag of Japan (1870–1999).svg",
+   "rank": "normal",
+   "start": "1870-02-27T00:00:00Z"
+  }
+ ],
+ "Q17012": [
+  {
+   "end": null,
+   "file": "Flag of France.svg",
+   "rank": "preferred",
+   "start": null
+  },
+  {
+   "end": null,
+   "file": "Flag of Guadeloupe (Local).svg",
+   "rank": "preferred",
+   "start": null
+  },
+  {
+   "end": null,
+   "file": "Flag of Guadeloupe (local) variant.svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": null,
+   "file": "Unofficial flag of Guadeloupe (local).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q17054": [
+  {
+   "end": null,
+   "file": "Flag-of-Martinique.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q17063": [
+  {
+   "end": null,
+   "file": "Flag of Mayotte (Local).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q17070": [
+  {
+   "end": null,
+   "file": "Flag of France.svg",
+   "rank": "preferred",
+   "start": "1794-02-15T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Proposed flag of Réunion (VAR).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q18221": [
+  {
+   "end": null,
+   "file": "Flag of the Turks and Caicos Islands.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q183": [
+  {
+   "end": null,
+   "file": "Flag of Germany.svg",
+   "rank": "preferred",
+   "start": "1949-05-23T00:00:00Z"
+  },
+  {
+   "end": "1918-01-01T00:00:00Z",
+   "file": "Flag of Germany (1867–1918).svg",
+   "rank": "normal",
+   "start": "1867-07-01T00:00:00Z"
+  },
+  {
+   "end": "1933-03-12T00:00:00Z",
+   "file": "Flag of Germany (3-2).svg",
+   "rank": "normal",
+   "start": "1919-04-11T00:00:00Z"
+  },
+  {
+   "end": "1935-09-15T00:00:00Z",
+   "file": "Flag of Germany (1867–1918).svg",
+   "rank": "normal",
+   "start": "1933-03-13T00:00:00Z"
+  },
+  {
+   "end": "1945-05-08T00:00:00Z",
+   "file": "Flag of Germany (1935–1945).svg",
+   "rank": "normal",
+   "start": "1935-09-16T00:00:00Z"
+  },
+  {
+   "end": "1949-01-01T00:00:00Z",
+   "file": "Merchant flag of Germany (1946–1949).svg",
+   "rank": "normal",
+   "start": "1947-01-17T00:00:00Z"
+  }
+ ],
+ "Q184": [
+  {
+   "end": null,
+   "file": "Flag of Belarus.svg",
+   "rank": "preferred",
+   "start": "2012-05-01T00:00:00Z"
+  },
+  {
+   "end": "1927-01-01T00:00:00Z",
+   "file": "Flag of the Byelorussian Soviet Socialist Republic (1919–1927).svg",
+   "rank": "normal",
+   "start": "1919-01-01T00:00:00Z"
+  },
+  {
+   "end": "1937-01-01T00:00:00Z",
+   "file": "Flag of the Byelorussian Soviet Socialist Republic (1927–1937).svg",
+   "rank": "normal",
+   "start": "1927-01-01T00:00:00Z"
+  },
+  {
+   "end": "1951-12-25T00:00:00Z",
+   "file": "Flag of the Byelorussian Soviet Socialist Republic (1937–1951).svg",
+   "rank": "normal",
+   "start": "1937-01-01T00:00:00Z"
+  },
+  {
+   "end": "1991-09-19T00:00:00Z",
+   "file": "Flag of the Byelorussian Soviet Socialist Republic (1951–1991).svg",
+   "rank": "normal",
+   "start": "1951-12-25T00:00:00Z"
+  },
+  {
+   "end": "1995-06-07T00:00:00Z",
+   "file": "Flag of Belarus (1918, 1991–1995).svg",
+   "rank": "normal",
+   "start": "1991-09-19T00:00:00Z"
+  },
+  {
+   "end": "2012-05-01T00:00:00Z",
+   "file": "Flag of Belarus (1995–2012).svg",
+   "rank": "normal",
+   "start": "1995-06-07T00:00:00Z"
+  }
+ ],
+ "Q189": [
+  {
+   "end": null,
+   "file": "Flag of Iceland.svg",
+   "rank": "preferred",
+   "start": "1944-06-17T00:00:00Z"
+  },
+  {
+   "end": "1944-06-17T00:00:00Z",
+   "file": "Flag of Iceland (1918–1944).svg",
+   "rank": "normal",
+   "start": "1918-11-30T00:00:00Z"
+  }
+ ],
+ "Q191": [
+  {
+   "end": null,
+   "file": "Flag of Estonia.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q192184": [
+  {
+   "end": null,
+   "file": "Flag of the United Kingdom (1-2).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q20": [
+  {
+   "end": null,
+   "file": "Flag of Norway.svg",
+   "rank": "normal",
+   "start": "1821-07-13T00:00:00Z"
+  }
+ ],
+ "Q211": [
+  {
+   "end": null,
+   "file": "Flag of Latvia.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q212": [
+  {
+   "end": null,
+   "file": "Flag of Ukraine.svg",
+   "rank": "preferred",
+   "start": "1992-01-28T00:00:00Z"
+  },
+  {
+   "end": "1921-01-01T00:00:00Z",
+   "file": "Flag of Ukraine (1917–1921).svg",
+   "rank": "normal",
+   "start": "1917-01-01T00:00:00Z"
+  },
+  {
+   "end": "1992-01-28T00:00:00Z",
+   "file": "Flag of Ukraine (1991–1992).svg",
+   "rank": "normal",
+   "start": "1991-09-18T00:00:00Z"
+  }
+ ],
+ "Q21203": [
+  {
+   "end": null,
+   "file": "Flag of Aruba.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q213": [
+  {
+   "end": null,
+   "file": "Flag of the Czech Republic.svg",
+   "rank": "normal",
+   "start": "1920-03-30T00:00:00Z"
+  }
+ ],
+ "Q214": [
+  {
+   "end": null,
+   "file": "Flag of Slovakia.svg",
+   "rank": "normal",
+   "start": "1992-09-03T00:00:00Z"
+  },
+  {
+   "end": "1945-01-01T00:00:00Z",
+   "file": "Flag of Slovakia (1939–1945).svg",
+   "rank": "deprecated",
+   "start": "1939-01-01T00:00:00Z"
+  }
+ ],
+ "Q215": [
+  {
+   "end": null,
+   "file": "Flag of Slovenia.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q217": [
+  {
+   "end": null,
+   "file": "Flag of Moldova.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q218": [
+  {
+   "end": null,
+   "file": "Flag of Romania.svg",
+   "rank": "preferred",
+   "start": "1989-12-27T00:00:00Z"
+  },
+  {
+   "end": "1866-01-01T00:00:00Z",
+   "file": "Flag of the United Principalities of Romania (1862–1866).svg",
+   "rank": "normal",
+   "start": "1862-01-01T00:00:00Z"
+  },
+  {
+   "end": "1947-12-30T00:00:00Z",
+   "file": "Flag of Romania.svg",
+   "rank": "normal",
+   "start": "1867-04-24T00:00:00Z"
+  },
+  {
+   "end": "1949-03-28T00:00:00Z",
+   "file": "Flag of Romania (January-March 1948).svg",
+   "rank": "normal",
+   "start": "1947-12-30T00:00:00Z"
+  },
+  {
+   "end": "1952-01-01T00:00:00Z",
+   "file": "Flag of Romania (1948–1952).svg",
+   "rank": "normal",
+   "start": "1949-03-28T00:00:00Z"
+  },
+  {
+   "end": "1965-01-01T00:00:00Z",
+   "file": "Flag of Romania (1952–1965).svg",
+   "rank": "normal",
+   "start": "1952-01-01T00:00:00Z"
+  },
+  {
+   "end": "1989-12-27T00:00:00Z",
+   "file": "Flag of Romania (1965–1989).svg",
+   "rank": "normal",
+   "start": "1965-01-01T00:00:00Z"
+  }
+ ],
+ "Q219": [
+  {
+   "end": null,
+   "file": "Flag of Bulgaria.svg",
+   "rank": "preferred",
+   "start": "1990-11-22T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Bulgaria (digital).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1947-12-06T00:00:00Z",
+   "file": "Flag of Bulgaria.svg",
+   "rank": "normal",
+   "start": "1879-12-16T00:00:00Z"
+  },
+  {
+   "end": "1948-01-01T00:00:00Z",
+   "file": "Flag of Bulgaria (1946–1948).svg",
+   "rank": "normal",
+   "start": "1947-12-06T00:00:00Z"
+  },
+  {
+   "end": "1968-01-05T00:00:00Z",
+   "file": "Flag of Bulgaria (1948–1967).svg",
+   "rank": "normal",
+   "start": "1948-01-01T00:00:00Z"
+  },
+  {
+   "end": "1971-05-18T00:00:00Z",
+   "file": "Flag of Bulgaria (1967–1971).svg",
+   "rank": "normal",
+   "start": "1968-01-05T00:00:00Z"
+  },
+  {
+   "end": "1990-11-22T00:00:00Z",
+   "file": "Flag of Bulgaria (1971–1990).svg",
+   "rank": "normal",
+   "start": "1971-05-18T00:00:00Z"
+  }
+ ],
+ "Q219060": [
+  {
+   "end": null,
+   "file": "Flag of Palestine.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q221": [
+  {
+   "end": null,
+   "file": "Flag of North Macedonia.svg",
+   "rank": "preferred",
+   "start": "1995-10-06T00:00:00Z"
+  },
+  {
+   "end": "1995-10-05T00:00:00Z",
+   "file": "Flag of Macedonia (1992–1995).svg",
+   "rank": "normal",
+   "start": "1992-08-11T00:00:00Z"
+  }
+ ],
+ "Q222": [
+  {
+   "end": null,
+   "file": "Flag of Albania.svg",
+   "rank": "preferred",
+   "start": "1992-01-01T00:00:00Z"
+  },
+  {
+   "end": "1914-01-01T00:00:00Z",
+   "file": "Flag of Albanian Provisional Government (1912-1914).svg",
+   "rank": "normal",
+   "start": "1912-01-01T00:00:00Z"
+  },
+  {
+   "end": "1920-01-01T00:00:00Z",
+   "file": "Flag of Albania (1914–1920).svg",
+   "rank": "normal",
+   "start": "1914-01-01T00:00:00Z"
+  },
+  {
+   "end": "1926-01-01T00:00:00Z",
+   "file": "Flag of Albania (1920–1926).svg",
+   "rank": "normal",
+   "start": "1920-01-01T00:00:00Z"
+  },
+  {
+   "end": "1928-01-01T00:00:00Z",
+   "file": "Flag of Albania (1926–1928).svg",
+   "rank": "normal",
+   "start": "1926-01-01T00:00:00Z"
+  },
+  {
+   "end": "1939-01-01T00:00:00Z",
+   "file": "Flag of Albania (1934–1939).svg",
+   "rank": "normal",
+   "start": "1928-01-01T00:00:00Z"
+  },
+  {
+   "end": "1943-01-01T00:00:00Z",
+   "file": "Flag of Albania (1939–1943).svg",
+   "rank": "normal",
+   "start": "1939-01-01T00:00:00Z"
+  },
+  {
+   "end": "1944-01-01T00:00:00Z",
+   "file": "Flag of Albania (1943–1944).svg",
+   "rank": "normal",
+   "start": "1943-01-01T00:00:00Z"
+  },
+  {
+   "end": "1946-01-01T00:00:00Z",
+   "file": "Flag of Albania (1944–1946).svg",
+   "rank": "normal",
+   "start": "1944-01-01T00:00:00Z"
+  },
+  {
+   "end": "1992-01-01T00:00:00Z",
+   "file": "Flag of Albania (1946–1992).svg",
+   "rank": "normal",
+   "start": "1946-01-01T00:00:00Z"
+  }
+ ],
+ "Q223": [
+  {
+   "end": null,
+   "file": "Flag of Greenland.svg",
+   "rank": "preferred",
+   "start": "1985-06-21T00:00:00Z"
+  },
+  {
+   "end": "1985-06-21T00:00:00Z",
+   "file": "Flag of Denmark.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q224": [
+  {
+   "end": null,
+   "file": "Flag of Croatia.svg",
+   "rank": "preferred",
+   "start": "1990-12-21T00:00:00Z"
+  },
+  {
+   "end": "1990-12-21T00:00:00Z",
+   "file": "Flag of Croatia (white chequy).svg",
+   "rank": "normal",
+   "start": "1990-06-27T00:00:00Z"
+  }
+ ],
+ "Q225": [
+  {
+   "end": null,
+   "file": "Flag of Bosnia and Herzegovina.svg",
+   "rank": "preferred",
+   "start": "1998-02-04T00:00:00Z"
+  },
+  {
+   "end": "1998-02-04T00:00:00Z",
+   "file": "Flag of Bosnia and Herzegovina (1992–1998).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q227": [
+  {
+   "end": null,
+   "file": "Flag of Azerbaijan.svg",
+   "rank": "preferred",
+   "start": "2013-10-22T00:00:00Z"
+  },
+  {
+   "end": "2013-10-22T00:00:00Z",
+   "file": "Flag of Azerbaijan (1991–2013).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q228": [
+  {
+   "end": null,
+   "file": "Flag of Andorra.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q229": [
+  {
+   "end": null,
+   "file": "Flag of Cyprus.svg",
+   "rank": "preferred",
+   "start": "2006-08-20T00:00:00Z"
+  },
+  {
+   "end": "1960-08-16T00:00:00Z",
+   "file": "Flag of Cyprus (1960).svg",
+   "rank": "normal",
+   "start": "1960-04-01T00:00:00Z"
+  },
+  {
+   "end": "2006-08-20T00:00:00Z",
+   "file": "Flag of Cyprus (1960–2006).svg",
+   "rank": "normal",
+   "start": "1960-08-16T00:00:00Z"
+  }
+ ],
+ "Q230": [
+  {
+   "end": null,
+   "file": "Flag of Georgia.svg",
+   "rank": "preferred",
+   "start": "2004-01-14T00:00:00Z"
+  },
+  {
+   "end": "2004-01-14T00:00:00Z",
+   "file": "Flag of Georgia (1990–2004).svg",
+   "rank": "normal",
+   "start": "1990-01-01T00:00:00Z"
+  }
+ ],
+ "Q232": [
+  {
+   "end": null,
+   "file": "Flag of Kazakhstan.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q233": [
+  {
+   "end": null,
+   "file": "Flag of Malta.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q23408": [
+  {
+   "end": null,
+   "file": "Flag of Norway.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q235": [
+  {
+   "end": null,
+   "file": "Flag of Monaco.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q236": [
+  {
+   "end": null,
+   "file": "Flag of Montenegro.svg",
+   "rank": "normal",
+   "start": "2004-07-13T00:00:00Z"
+  }
+ ],
+ "Q23635": [
+  {
+   "end": null,
+   "file": "Flag of Bermuda.svg",
+   "rank": "preferred",
+   "start": "1999-01-01T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Bermuda (1875–1910).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1999-01-01T00:00:00Z",
+   "file": "Flag of Bermuda (1910–1999).svg",
+   "rank": "normal",
+   "start": "1910-01-01T00:00:00Z"
+  }
+ ],
+ "Q237": [
+  {
+   "end": null,
+   "file": "Flag of Vatican City (2023–present).svg",
+   "rank": "preferred",
+   "start": null
+  },
+  {
+   "end": null,
+   "file": "Flag of Vatican City (2001–2023).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1803-01-01T00:00:00Z",
+   "file": "Flag of the Papal States (pre 1808).svg",
+   "rank": "normal",
+   "start": "0754-01-01T00:00:00Z"
+  },
+  {
+   "end": "1825-01-01T00:00:00Z",
+   "file": "Flag of the Papal States (1803-1825).svg",
+   "rank": "normal",
+   "start": "1803-01-01T00:00:00Z"
+  },
+  {
+   "end": "1870-01-01T00:00:00Z",
+   "file": "Flag of the Papal States (1825-1870).svg",
+   "rank": "normal",
+   "start": "1825-01-01T00:00:00Z"
+  }
+ ],
+ "Q238": [
+  {
+   "end": null,
+   "file": "Flag of San Marino.svg",
+   "rank": "normal",
+   "start": "2011-08-09T00:00:00Z"
+  }
+ ],
+ "Q241": [
+  {
+   "end": null,
+   "file": "Flag of Cuba.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q242": [
+  {
+   "end": null,
+   "file": "Flag of Belize.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q244": [
+  {
+   "end": null,
+   "file": "Flag of Barbados.svg",
+   "rank": "preferred",
+   "start": "1966-11-30T00:00:00Z"
+  },
+  {
+   "end": "1966-11-30T00:00:00Z",
+   "file": "Flag of Barbados (1870–1966).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q252": [
+  {
+   "end": null,
+   "file": "Flag of Indonesia.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q25228": [
+  {
+   "end": null,
+   "file": "Flag of Anguilla.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q25230": [
+  {
+   "end": null,
+   "file": "Flag of Guernsey.svg",
+   "rank": "preferred",
+   "start": "1985-04-30T00:00:00Z"
+  },
+  {
+   "end": "1985-04-30T00:00:00Z",
+   "file": "Flag of Guernsey (1936).svg",
+   "rank": "normal",
+   "start": "1936-01-01T00:00:00Z"
+  }
+ ],
+ "Q25279": [
+  {
+   "end": null,
+   "file": "Flag of Curaçao.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q25305": [
+  {
+   "end": null,
+   "file": "Flag of the British Virgin Islands.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q25362": [
+  {
+   "end": null,
+   "file": "Flag of Saint Barthélemy (local).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q258": [
+  {
+   "end": null,
+   "file": "Flag of South Africa.svg",
+   "rank": "preferred",
+   "start": "1994-04-27T00:00:00Z"
+  },
+  {
+   "end": "1912-01-01T00:00:00Z",
+   "file": "Red Ensign of South Africa (1910–1912).svg",
+   "rank": "normal",
+   "start": "1910-01-01T00:00:00Z"
+  },
+  {
+   "end": "1928-05-31T00:00:00Z",
+   "file": "Red Ensign of South Africa (1912–1951).svg",
+   "rank": "normal",
+   "start": "1912-01-01T00:00:00Z"
+  },
+  {
+   "end": "1994-04-20T00:00:00Z",
+   "file": "Flag of South Africa (1928–1994, dark colors).svg",
+   "rank": "normal",
+   "start": "1928-05-31T00:00:00Z"
+  }
+ ],
+ "Q262": [
+  {
+   "end": null,
+   "file": "Flag of Algeria.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q26273": [
+  {
+   "end": null,
+   "file": "Flag of Sint Maarten.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q265": [
+  {
+   "end": null,
+   "file": "Flag of Uzbekistan.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q26988": [
+  {
+   "end": null,
+   "file": "Flag of the Cook Islands.svg",
+   "rank": "preferred",
+   "start": "1979-08-04T00:00:00Z"
+  },
+  {
+   "end": "1973-07-23T00:00:00Z",
+   "file": "Flag of New Zealand.svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1979-08-04T00:00:00Z",
+   "file": "Flag of the Cook Islands (1973-1979).svg",
+   "rank": "normal",
+   "start": "1973-07-23T00:00:00Z"
+  }
+ ],
+ "Q27": [
+  {
+   "end": null,
+   "file": "Flag of Ireland.svg",
+   "rank": "normal",
+   "start": "1937-12-29T00:00:00Z"
+  }
+ ],
+ "Q27561": [
+  {
+   "end": null,
+   "file": "Flag of the Netherlands.svg",
+   "rank": "deprecated",
+   "start": null
+  }
+ ],
+ "Q28": [
+  {
+   "end": null,
+   "file": "Flag of Hungary.svg",
+   "rank": "preferred",
+   "start": "1957-05-23T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Hungary (1918–1919).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1000-01-01T00:00:00Z",
+   "file": "Flag of Hungary (895-1000).svg",
+   "rank": "normal",
+   "start": "0895-01-01T00:00:00Z"
+  },
+  {
+   "end": "1038-01-01T00:00:00Z",
+   "file": "Flag of Stephen I of Hungary.svg",
+   "rank": "normal",
+   "start": "1000-01-01T00:00:00Z"
+  },
+  {
+   "end": "1172-01-01T00:00:00Z",
+   "file": "Flag of Hungary (11th-12th century).svg",
+   "rank": "normal",
+   "start": "1046-01-01T00:00:00Z"
+  },
+  {
+   "end": "1196-01-01T00:00:00Z",
+   "file": "Flag of Hungary (late 12th century).svg",
+   "rank": "normal",
+   "start": "1172-01-01T00:00:00Z"
+  },
+  {
+   "end": "1301-01-01T00:00:00Z",
+   "file": "Flag of Hungary (13th century).svg",
+   "rank": "normal",
+   "start": "1196-01-01T00:00:00Z"
+  },
+  {
+   "end": "1382-01-01T00:00:00Z",
+   "file": "Flag of Hungary (1301-1382).svg",
+   "rank": "normal",
+   "start": "1301-01-01T00:00:00Z"
+  },
+  {
+   "end": "1437-01-01T00:00:00Z",
+   "file": "Flag of Sigismund of Hungary.svg",
+   "rank": "normal",
+   "start": "1387-01-01T00:00:00Z"
+  },
+  {
+   "end": "1444-01-01T00:00:00Z",
+   "file": "Flag of Vladislaus I of Hungary.svg",
+   "rank": "normal",
+   "start": "1440-01-01T00:00:00Z"
+  },
+  {
+   "end": "1490-01-01T00:00:00Z",
+   "file": "Flag of Matthias I of Hungary.svg",
+   "rank": "normal",
+   "start": "1458-01-01T00:00:00Z"
+  },
+  {
+   "end": "1516-01-01T00:00:00Z",
+   "file": "Flag of Vladislaus II of Hungary.svg",
+   "rank": "normal",
+   "start": "1490-01-01T00:00:00Z"
+  },
+  {
+   "end": "1526-01-01T00:00:00Z",
+   "file": "Flag of Louis II of Hungary.svg",
+   "rank": "normal",
+   "start": "1516-01-01T00:00:00Z"
+  },
+  {
+   "end": "1848-04-10T00:00:00Z",
+   "file": "Flag of the Habsburg Monarchy.svg",
+   "rank": "normal",
+   "start": "1720-01-01T00:00:00Z"
+  },
+  {
+   "end": "1849-04-19T00:00:00Z",
+   "file": "Flag of Hungary (1848-1849, 1867-1869).svg",
+   "rank": "normal",
+   "start": "1848-04-11T00:00:00Z"
+  },
+  {
+   "end": "1867-07-28T00:00:00Z",
+   "file": "Flag of the Habsburg Monarchy.svg",
+   "rank": "normal",
+   "start": "1849-08-13T00:00:00Z"
+  },
+  {
+   "end": "1869-01-01T00:00:00Z",
+   "file": "Flag of Hungary (1848-1849, 1867-1869).svg",
+   "rank": "normal",
+   "start": "1867-07-28T00:00:00Z"
+  },
+  {
+   "end": "1874-02-08T00:00:00Z",
+   "file": "Flag of Hungary (1869-1874).svg",
+   "rank": "normal",
+   "start": "1869-01-01T00:00:00Z"
+  },
+  {
+   "end": "1896-01-11T00:00:00Z",
+   "file": "Flag of Hungary (1874-1896).svg",
+   "rank": "normal",
+   "start": "1874-02-09T00:00:00Z"
+  },
+  {
+   "end": "1915-11-05T00:00:00Z",
+   "file": "Flag of Hungary (1896-1915).svg",
+   "rank": "normal",
+   "start": "1896-01-12T00:00:00Z"
+  },
+  {
+   "end": "1918-11-28T00:00:00Z",
+   "file": "Flag of Hungary (1915-1918, 1919-1946).svg",
+   "rank": "normal",
+   "start": "1915-11-06T00:00:00Z"
+  },
+  {
+   "end": "1919-08-01T00:00:00Z",
+   "file": "Flag of Hungary (1919).svg",
+   "rank": "normal",
+   "start": "1919-03-21T00:00:00Z"
+  },
+  {
+   "end": "1946-06-04T00:00:00Z",
+   "file": "Flag of Hungary (1915-1918, 1919-1946).svg",
+   "rank": "normal",
+   "start": "1919-08-06T00:00:00Z"
+  },
+  {
+   "end": "1949-08-19T00:00:00Z",
+   "file": "Flag of Hungary (1946-1949, 1956-1957).svg",
+   "rank": "normal",
+   "start": "1946-06-05T00:00:00Z"
+  },
+  {
+   "end": "1956-11-11T00:00:00Z",
+   "file": "Flag of Hungary (1949-1956).svg",
+   "rank": "normal",
+   "start": "1949-08-20T00:00:00Z"
+  },
+  {
+   "end": "1957-05-22T00:00:00Z",
+   "file": "Flag of Hungary (1946-1949, 1956-1957).svg",
+   "rank": "normal",
+   "start": "1956-11-12T00:00:00Z"
+  },
+  {
+   "end": "2003-10-01T00:00:00Z",
+   "file": "Flag of Hungary (1989-2003).svg",
+   "rank": "normal",
+   "start": "1989-10-01T00:00:00Z"
+  }
+ ],
+ "Q29": [
+  {
+   "end": null,
+   "file": "Flag of Spain.svg",
+   "rank": "preferred",
+   "start": "1981-12-06T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Spain (1873–1874).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1760-01-01T00:00:00Z",
+   "file": "Flag of Spain (1701–1760).svg",
+   "rank": "normal",
+   "start": "1701-01-01T00:00:00Z"
+  },
+  {
+   "end": "1843-10-13T00:00:00Z",
+   "file": "Flag of Spain (1760–1785).svg",
+   "rank": "normal",
+   "start": "1760-01-01T00:00:00Z"
+  },
+  {
+   "end": "1873-01-01T00:00:00Z",
+   "file": "Flag of Spain (1785–1873, 1875–1931).svg",
+   "rank": "normal",
+   "start": "1843-10-13T00:00:00Z"
+  },
+  {
+   "end": "1931-04-13T00:00:00Z",
+   "file": "Flag of Spain (1785–1873, 1875–1931).svg",
+   "rank": "normal",
+   "start": "1874-01-01T00:00:00Z"
+  },
+  {
+   "end": "1939-01-01T00:00:00Z",
+   "file": "Flag of the Second Spanish Republic.svg",
+   "rank": "normal",
+   "start": "1931-04-14T00:00:00Z"
+  },
+  {
+   "end": "1945-10-11T00:00:00Z",
+   "file": "Flag of Spain (1938–1945).svg",
+   "rank": "normal",
+   "start": "1939-01-01T00:00:00Z"
+  },
+  {
+   "end": "1977-01-21T00:00:00Z",
+   "file": "Flag of Spain (1945–1977).svg",
+   "rank": "normal",
+   "start": "1945-10-11T00:00:00Z"
+  },
+  {
+   "end": "1981-12-06T00:00:00Z",
+   "file": "Flag of Spain (1977–1981).svg",
+   "rank": "normal",
+   "start": "1977-01-21T00:00:00Z"
+  }
+ ],
+ "Q298": [
+  {
+   "end": null,
+   "file": "Flag of Chile.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q30": [
+  {
+   "end": null,
+   "file": "Flag of the United States (DDD-F-416E specifications).svg",
+   "rank": "preferred",
+   "start": "1960-07-04T00:00:00Z"
+  },
+  {
+   "end": "1777-06-14T00:00:00Z",
+   "file": "Flag of the United States (1776–1777).svg",
+   "rank": "deprecated",
+   "start": "1775-12-03T00:00:00Z"
+  },
+  {
+   "end": "1795-05-01T00:00:00Z",
+   "file": "Flag of the United States (1777–1795).svg",
+   "rank": "normal",
+   "start": "1777-06-14T00:00:00Z"
+  },
+  {
+   "end": "1818-07-04T00:00:00Z",
+   "file": "Flag of the United States (1795-1818).svg",
+   "rank": "normal",
+   "start": "1795-05-01T00:00:00Z"
+  },
+  {
+   "end": "1819-07-04T00:00:00Z",
+   "file": "Flag of the United States (1818–1819).svg",
+   "rank": "normal",
+   "start": "1818-07-04T00:00:00Z"
+  },
+  {
+   "end": "1820-07-04T00:00:00Z",
+   "file": "Flag of the United States (1819–1820).svg",
+   "rank": "normal",
+   "start": "1819-07-04T00:00:00Z"
+  },
+  {
+   "end": "1822-07-04T00:00:00Z",
+   "file": "Flag of the United States (1820–1822).svg",
+   "rank": "normal",
+   "start": "1820-07-04T00:00:00Z"
+  },
+  {
+   "end": "1836-07-04T00:00:00Z",
+   "file": "Flag of the United States (1822–1836).svg",
+   "rank": "normal",
+   "start": "1822-07-04T00:00:00Z"
+  },
+  {
+   "end": "1837-07-04T00:00:00Z",
+   "file": "Flag of the United States (1836–1837).svg",
+   "rank": "normal",
+   "start": "1836-07-04T00:00:00Z"
+  },
+  {
+   "end": "1845-07-04T00:00:00Z",
+   "file": "Flag of the United States (1837–1845).svg",
+   "rank": "normal",
+   "start": "1837-07-04T00:00:00Z"
+  },
+  {
+   "end": "1846-07-04T00:00:00Z",
+   "file": "Flag of the United States (1845–1846).svg",
+   "rank": "normal",
+   "start": "1845-07-04T00:00:00Z"
+  },
+  {
+   "end": "1847-07-04T00:00:00Z",
+   "file": "Flag of the United States (1846–1847).svg",
+   "rank": "normal",
+   "start": "1846-07-04T00:00:00Z"
+  },
+  {
+   "end": "1848-07-04T00:00:00Z",
+   "file": "Flag of the United States (1847–1848).svg",
+   "rank": "normal",
+   "start": "1847-07-04T00:00:00Z"
+  },
+  {
+   "end": "1851-07-04T00:00:00Z",
+   "file": "Flag of the United States (1848–1851).svg",
+   "rank": "normal",
+   "start": "1848-07-04T00:00:00Z"
+  },
+  {
+   "end": "1858-07-04T00:00:00Z",
+   "file": "Flag of the United States (1851–1858).svg",
+   "rank": "normal",
+   "start": "1851-07-04T00:00:00Z"
+  },
+  {
+   "end": "1859-07-04T00:00:00Z",
+   "file": "Flag of the United States (1858–1859).svg",
+   "rank": "normal",
+   "start": "1858-07-04T00:00:00Z"
+  },
+  {
+   "end": "1861-07-04T00:00:00Z",
+   "file": "Flag of the United States (1859–1861).svg",
+   "rank": "normal",
+   "start": "1859-07-04T00:00:00Z"
+  },
+  {
+   "end": "1863-07-04T00:00:00Z",
+   "file": "Flag of the United States (1861–1863).svg",
+   "rank": "normal",
+   "start": "1861-07-04T00:00:00Z"
+  },
+  {
+   "end": "1865-01-01T00:00:00Z",
+   "file": "Flag of the United States (1863–1865).svg",
+   "rank": "deprecated",
+   "start": "1863-01-01T00:00:00Z"
+  },
+  {
+   "end": "1867-07-04T00:00:00Z",
+   "file": "Flag of the United States (1865–1867).svg",
+   "rank": "normal",
+   "start": "1865-07-04T00:00:00Z"
+  },
+  {
+   "end": "1877-07-04T00:00:00Z",
+   "file": "Flag of the United States (1867-1877).svg",
+   "rank": "normal",
+   "start": "1867-07-04T00:00:00Z"
+  },
+  {
+   "end": "1890-07-04T00:00:00Z",
+   "file": "Flag of the United States (1877–1890).svg",
+   "rank": "normal",
+   "start": "1877-07-04T00:00:00Z"
+  },
+  {
+   "end": "1891-07-04T00:00:00Z",
+   "file": "Flag of the United States (1890–1891).svg",
+   "rank": "normal",
+   "start": "1890-07-04T00:00:00Z"
+  },
+  {
+   "end": "1896-07-04T00:00:00Z",
+   "file": "Flag of the United States (1891–1896).svg",
+   "rank": "normal",
+   "start": "1891-07-04T00:00:00Z"
+  },
+  {
+   "end": "1908-07-04T00:00:00Z",
+   "file": "Flag of the United States (1896–1908).svg",
+   "rank": "normal",
+   "start": "1896-07-04T00:00:00Z"
+  },
+  {
+   "end": "1912-07-04T00:00:00Z",
+   "file": "Flag of the United States (1908–1912).svg",
+   "rank": "normal",
+   "start": "1908-07-04T00:00:00Z"
+  },
+  {
+   "end": "1959-07-04T00:00:00Z",
+   "file": "Flag of the United States (1912-1959).svg",
+   "rank": "normal",
+   "start": "1912-07-04T00:00:00Z"
+  },
+  {
+   "end": "1960-07-03T00:00:00Z",
+   "file": "Flag of the United States (1959–1960).svg",
+   "rank": "normal",
+   "start": "1959-07-04T00:00:00Z"
+  },
+  {
+   "end": "1960-07-04T00:00:00Z",
+   "file": "Flag of the United States (1959–1960).svg",
+   "rank": "deprecated",
+   "start": "1959-07-04T00:00:00Z"
+  }
+ ],
+ "Q30971": [
+  {
+   "end": null,
+   "file": "Flag of French Polynesia.svg",
+   "rank": "preferred",
+   "start": "1984-12-04T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of France.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q31": [
+  {
+   "end": null,
+   "file": "Flag of Belgium.svg",
+   "rank": "preferred",
+   "start": "1831-01-23T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Belgium (civil).svg",
+   "rank": "normal",
+   "start": "1831-01-23T00:00:00Z"
+  }
+ ],
+ "Q31057": [
+  {
+   "end": null,
+   "file": "Flag of Norfolk Island.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q31063": [
+  {
+   "end": null,
+   "file": "Flag of Christmas Island.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q32": [
+  {
+   "end": null,
+   "file": "Flag of Luxembourg.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q33": [
+  {
+   "end": null,
+   "file": "Flag of Finland.svg",
+   "rank": "normal",
+   "start": "1918-05-29T00:00:00Z"
+  }
+ ],
+ "Q334": [
+  {
+   "end": null,
+   "file": "Flag of Singapore.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q33788": [
+  {
+   "end": null,
+   "file": "Flag of FLNKS.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q34": [
+  {
+   "end": null,
+   "file": "Flag of Sweden.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q34020": [
+  {
+   "end": null,
+   "file": "Flag of Niue.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q34617": [
+  {
+   "end": null,
+   "file": "Flag of Saint-Pierre and Miquelon.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q347": [
+  {
+   "end": null,
+   "file": "Flag of Liechtenstein.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q35": [
+  {
+   "end": null,
+   "file": "Flag of Denmark.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q35086": [
+  {
+   "end": null,
+   "file": "Flag of South Georgia and the South Sandwich Islands.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q35555": [
+  {
+   "end": null,
+   "file": "Flag of Wallis and Futuna.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q35672": [
+  {
+   "end": null,
+   "file": "Flag of the Pitcairn Islands.svg",
+   "rank": "preferred",
+   "start": "1984-04-02T00:00:00Z"
+  },
+  {
+   "end": "1984-04-02T00:00:00Z",
+   "file": "Flag of the United Kingdom (1-2).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q36": [
+  {
+   "end": null,
+   "file": "Flag of Poland.svg",
+   "rank": "preferred",
+   "start": "1980-01-31T00:00:00Z"
+  },
+  {
+   "end": "1928-01-01T00:00:00Z",
+   "file": "Flag of Poland (1919–1928).svg",
+   "rank": "normal",
+   "start": "1919-01-01T00:00:00Z"
+  },
+  {
+   "end": "1980-01-31T00:00:00Z",
+   "file": "Flag of Poland (1928–1980).svg",
+   "rank": "normal",
+   "start": "1927-12-13T00:00:00Z"
+  }
+ ],
+ "Q36004": [
+  {
+   "end": null,
+   "file": "Flag of the Cocos (Keeling) Island.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q36823": [
+  {
+   "end": null,
+   "file": "Flag of Tokelau.svg",
+   "rank": "preferred",
+   "start": "2009-09-07T00:00:00Z"
+  },
+  {
+   "end": "2009-09-07T00:00:00Z",
+   "file": "Flag of New Zealand.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q37": [
+  {
+   "end": null,
+   "file": "Flag of Lithuania.svg",
+   "rank": "preferred",
+   "start": "2004-09-01T00:00:00Z"
+  },
+  {
+   "end": "1940-07-21T00:00:00Z",
+   "file": "Flag of Lithuania (1918–1940).svg",
+   "rank": "normal",
+   "start": "1918-04-19T00:00:00Z"
+  },
+  {
+   "end": "2004-08-31T00:00:00Z",
+   "file": "Flag of Lithuania (1988–2004).svg",
+   "rank": "normal",
+   "start": "1990-03-11T00:00:00Z"
+  }
+ ],
+ "Q3769": [
+  {
+   "end": null,
+   "file": "Flag of France.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q38": [
+  {
+   "end": null,
+   "file": "Flag of Italy.svg",
+   "rank": "preferred",
+   "start": "2006-07-28T00:00:00Z"
+  },
+  {
+   "end": "1946-06-19T00:00:00Z",
+   "file": "Flag of Italy (1861–1946).svg",
+   "rank": "normal",
+   "start": "1861-01-01T00:00:00Z"
+  },
+  {
+   "end": "2003-01-17T00:00:00Z",
+   "file": "Flag of Italy (1946–2003).svg",
+   "rank": "normal",
+   "start": "1946-06-19T00:00:00Z"
+  },
+  {
+   "end": "2006-07-28T00:00:00Z",
+   "file": "Flag of Italy (2003–2006).svg",
+   "rank": "normal",
+   "start": "2003-01-17T00:00:00Z"
+  }
+ ],
+ "Q39": [
+  {
+   "end": null,
+   "file": "Flag of Switzerland.svg",
+   "rank": "preferred",
+   "start": "1889-12-12T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Civil Ensign of Switzerland (Pantone).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": null,
+   "file": "Civil Ensign of Switzerland.svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": null,
+   "file": "Flag of Switzerland (Pantone).svg",
+   "rank": "normal",
+   "start": "1889-12-12T00:00:00Z"
+  }
+ ],
+ "Q398": [
+  {
+   "end": null,
+   "file": "Flag of Bahrain.svg",
+   "rank": "preferred",
+   "start": "2002-02-14T00:00:00Z"
+  },
+  {
+   "end": "1972-01-01T00:00:00Z",
+   "file": "Flag of Bahrain (1932–1972).svg",
+   "rank": "normal",
+   "start": "1932-01-01T00:00:00Z"
+  },
+  {
+   "end": "2002-02-14T00:00:00Z",
+   "file": "Flag of Bahrain (1972–2002).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q399": [
+  {
+   "end": null,
+   "file": "Flag of Armenia.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q40": [
+  {
+   "end": null,
+   "file": "Flag of Austria.svg",
+   "rank": "preferred",
+   "start": "1945-05-01T00:00:00Z"
+  },
+  {
+   "end": "1867-03-15T00:00:00Z",
+   "file": "Flag of the Habsburg Monarchy.svg",
+   "rank": "normal",
+   "start": "1804-08-11T00:00:00Z"
+  },
+  {
+   "end": "1938-03-13T00:00:00Z",
+   "file": "Flag of Austria.svg",
+   "rank": "normal",
+   "start": "1919-10-21T00:00:00Z"
+  }
+ ],
+ "Q403": [
+  {
+   "end": null,
+   "file": "Flag of Serbia.svg",
+   "rank": "preferred",
+   "start": "2010-11-11T00:00:00Z"
+  },
+  {
+   "end": "1882-02-22T00:00:00Z",
+   "file": "Civil flag of Serbia.svg",
+   "rank": "normal",
+   "start": "1835-04-27T00:00:00Z"
+  },
+  {
+   "end": "1918-12-01T00:00:00Z",
+   "file": "Flag of Serbia (1882–1918).svg",
+   "rank": "normal",
+   "start": "1882-02-22T00:00:00Z"
+  },
+  {
+   "end": "1944-10-20T00:00:00Z",
+   "file": "Flag of the Government of National Salvation (occupied Yugoslavia).svg",
+   "rank": "normal",
+   "start": "1941-04-17T00:00:00Z"
+  },
+  {
+   "end": "1992-04-27T00:00:00Z",
+   "file": "Flag of Montenegro (1946–1993), Flag of Serbia (1947–1992).svg",
+   "rank": "normal",
+   "start": "1946-01-01T00:00:00Z"
+  },
+  {
+   "end": "2004-08-17T00:00:00Z",
+   "file": "Flag of Serbia (1992–2004).svg",
+   "rank": "normal",
+   "start": "1992-04-27T00:00:00Z"
+  },
+  {
+   "end": "2010-11-10T00:00:00Z",
+   "file": "Flag of Serbia (2004–2010).svg",
+   "rank": "normal",
+   "start": "2004-08-17T00:00:00Z"
+  }
+ ],
+ "Q408": [
+  {
+   "end": null,
+   "file": "Flag of Australia (converted).svg",
+   "rank": "normal",
+   "start": "1908-12-08T00:00:00Z"
+  }
+ ],
+ "Q41": [
+  {
+   "end": null,
+   "file": "Flag of Greece.svg",
+   "rank": "preferred",
+   "start": "1978-01-01T00:00:00Z"
+  },
+  {
+   "end": "1830-01-01T00:00:00Z",
+   "file": "Greek Independence 1821.svg",
+   "rank": "normal",
+   "start": "1821-01-01T00:00:00Z"
+  },
+  {
+   "end": "1978-01-01T00:00:00Z",
+   "file": "Flag of Greece (1822-1978).svg",
+   "rank": "normal",
+   "start": "1822-01-01T00:00:00Z"
+  }
+ ],
+ "Q414": [
+  {
+   "end": null,
+   "file": "Flag of Argentina.svg",
+   "rank": "preferred",
+   "start": "1985-07-25T00:00:00Z"
+  },
+  {
+   "end": "1985-07-25T00:00:00Z",
+   "file": "Flag of Argentina (civil).svg",
+   "rank": "normal",
+   "start": "1812-02-27T00:00:00Z"
+  }
+ ],
+ "Q419": [
+  {
+   "end": null,
+   "file": "Flag of Peru.svg",
+   "rank": "preferred",
+   "start": null
+  },
+  {
+   "end": null,
+   "file": "War flag of Peru.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q423": [
+  {
+   "end": null,
+   "file": "Flag of North Korea.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q424": [
+  {
+   "end": null,
+   "file": "Flag of Cambodia.svg",
+   "rank": "preferred",
+   "start": "1993-06-30T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of the State of Cambodia (1989–1992).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1942-01-01T00:00:00Z",
+   "file": "Flag of Cambodia (1863–1948).svg",
+   "rank": "normal",
+   "start": "1863-01-01T00:00:00Z"
+  },
+  {
+   "end": "1945-01-01T00:00:00Z",
+   "file": "Flag of Cambodia under Japanese occupation.svg",
+   "rank": "normal",
+   "start": "1942-01-01T00:00:00Z"
+  },
+  {
+   "end": "1948-01-01T00:00:00Z",
+   "file": "Flag of Cambodia (1863–1948).svg",
+   "rank": "normal",
+   "start": "1945-01-01T00:00:00Z"
+  },
+  {
+   "end": "1970-01-01T00:00:00Z",
+   "file": "Flag of Cambodia.svg",
+   "rank": "normal",
+   "start": "1948-01-01T00:00:00Z"
+  },
+  {
+   "end": "1975-01-01T00:00:00Z",
+   "file": "Flag of the Khmer Republic.svg",
+   "rank": "normal",
+   "start": "1970-01-01T00:00:00Z"
+  },
+  {
+   "end": "1979-01-01T00:00:00Z",
+   "file": "Flag of Democratic Kampuchea.svg",
+   "rank": "normal",
+   "start": "1975-01-01T00:00:00Z"
+  },
+  {
+   "end": "1989-01-01T00:00:00Z",
+   "file": "Flag of the People's Republic of Kampuchea.svg",
+   "rank": "normal",
+   "start": "1979-01-01T00:00:00Z"
+  },
+  {
+   "end": "1993-06-30T00:00:00Z",
+   "file": "Flag of Cambodia (1992–1993).svg",
+   "rank": "normal",
+   "start": "1992-01-01T00:00:00Z"
+  }
+ ],
+ "Q43": [
+  {
+   "end": null,
+   "file": "Flag of Turkey.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q43448": [
+  {
+   "end": null,
+   "file": "Flag of the Commissioner of the British Indian Ocean Territory.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q45": [
+  {
+   "end": null,
+   "file": "Flag of Portugal (official).svg",
+   "rank": "preferred",
+   "start": "1911-06-30T00:00:00Z"
+  },
+  {
+   "end": "1143-01-01T00:00:00Z",
+   "file": "PortugueseFlag1095.svg",
+   "rank": "normal",
+   "start": "1095-01-01T00:00:00Z"
+  },
+  {
+   "end": "1185-01-01T00:00:00Z",
+   "file": "PortugueseFlag1143.svg",
+   "rank": "normal",
+   "start": "1143-01-01T00:00:00Z"
+  },
+  {
+   "end": "1248-01-01T00:00:00Z",
+   "file": "PortugueseFlag1185.svg",
+   "rank": "normal",
+   "start": "1185-01-01T00:00:00Z"
+  },
+  {
+   "end": "1385-01-01T00:00:00Z",
+   "file": "Flag of the Kingdom of Portugal (1248–1385).svg",
+   "rank": "normal",
+   "start": "1248-01-01T00:00:00Z"
+  },
+  {
+   "end": "1485-01-01T00:00:00Z",
+   "file": "Flag of the Kingdom of Portugal (1385–1485).svg",
+   "rank": "normal",
+   "start": "1385-01-01T00:00:00Z"
+  },
+  {
+   "end": "1495-01-01T00:00:00Z",
+   "file": "Flag of the Kingdom of Portugal (1485–mid-16th century).svg",
+   "rank": "normal",
+   "start": "1485-01-01T00:00:00Z"
+  },
+  {
+   "end": "1521-01-01T00:00:00Z",
+   "file": "Flag of Portugal (1495).svg",
+   "rank": "normal",
+   "start": "1495-01-01T00:00:00Z"
+  },
+  {
+   "end": "1578-01-01T00:00:00Z",
+   "file": "Flag of Portugal (1521).svg",
+   "rank": "normal",
+   "start": "1521-01-01T00:00:00Z"
+  },
+  {
+   "end": "1640-01-01T00:00:00Z",
+   "file": "Flag of Portugal (1578).svg",
+   "rank": "normal",
+   "start": "1578-01-01T00:00:00Z"
+  },
+  {
+   "end": "1667-01-01T00:00:00Z",
+   "file": "Flag of Portugal (1640).svg",
+   "rank": "normal",
+   "start": "1640-01-01T00:00:00Z"
+  },
+  {
+   "end": "1707-01-01T00:00:00Z",
+   "file": "Flag of Portugal (1667).svg",
+   "rank": "normal",
+   "start": "1667-01-01T00:00:00Z"
+  },
+  {
+   "end": "1750-01-01T00:00:00Z",
+   "file": "Flag of Portugal (1707).svg",
+   "rank": "normal",
+   "start": "1707-01-01T00:00:00Z"
+  },
+  {
+   "end": "1816-01-01T00:00:00Z",
+   "file": "Flag of Portugal (1750) (variant).svg",
+   "rank": "normal",
+   "start": "1750-01-01T00:00:00Z"
+  },
+  {
+   "end": "1830-01-01T00:00:00Z",
+   "file": "Flag of the United Kingdom of Portugal, Brazil, and the Algarves (1815-1825).svg",
+   "rank": "normal",
+   "start": "1816-01-01T00:00:00Z"
+  },
+  {
+   "end": "1911-06-30T00:00:00Z",
+   "file": "Flag of Portugal (1830–1910).svg",
+   "rank": "normal",
+   "start": "1830-01-01T00:00:00Z"
+  }
+ ],
+ "Q4628": [
+  {
+   "end": null,
+   "file": "Flag of the Faroe Islands.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q55": [
+  {
+   "end": null,
+   "file": "Flag of the Netherlands.svg",
+   "rank": "preferred",
+   "start": "1806-01-01T00:00:00Z"
+  },
+  {
+   "end": "1652-01-01T00:00:00Z",
+   "file": "Prinsenvlag.svg",
+   "rank": "normal",
+   "start": "1572-01-01T00:00:00Z"
+  },
+  {
+   "end": "1795-01-01T00:00:00Z",
+   "file": "Statenvlag.svg",
+   "rank": "normal",
+   "start": "1652-01-01T00:00:00Z"
+  },
+  {
+   "end": "1806-01-01T00:00:00Z",
+   "file": "Flag of the navy of the Batavian Republic.svg",
+   "rank": "normal",
+   "start": "1795-01-01T00:00:00Z"
+  }
+ ],
+ "Q5689": [
+  {
+   "end": null,
+   "file": "Flag of Åland.svg",
+   "rank": "normal",
+   "start": "1954-04-03T00:00:00Z"
+  }
+ ],
+ "Q574": [
+  {
+   "end": null,
+   "file": "Flag of East Timor.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q5785": [
+  {
+   "end": null,
+   "file": "Flag of the Cayman Islands.svg",
+   "rank": "preferred",
+   "start": "1999-01-01T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of the Cayman Islands (1959—1999).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q6250": [
+  {
+   "end": null,
+   "file": "Flag of the Sahrawi Arab Democratic Republic.svg",
+   "rank": "deprecated",
+   "start": null
+  }
+ ],
+ "Q657": [
+  {
+   "end": null,
+   "file": "Flag of Chad.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q664": [
+  {
+   "end": null,
+   "file": "Flag of New Zealand.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q668": [
+  {
+   "end": null,
+   "file": "Flag of India.svg",
+   "rank": "preferred",
+   "start": "1946-07-22T00:00:00Z"
+  },
+  {
+   "end": "1947-01-01T00:00:00Z",
+   "file": "British Raj Red Ensign.svg",
+   "rank": "normal",
+   "start": "1858-01-01T00:00:00Z"
+  }
+ ],
+ "Q672": [
+  {
+   "end": null,
+   "file": "Flag of Tuvalu.svg",
+   "rank": "preferred",
+   "start": "1997-04-11T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Tuvalu (1995–1997).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1978-10-01T00:00:00Z",
+   "file": "Flag of Tuvalu (1976–1978).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1995-10-01T00:00:00Z",
+   "file": "Flag of Tuvalu (1978–1995).svg",
+   "rank": "normal",
+   "start": "1978-10-01T00:00:00Z"
+  },
+  {
+   "end": "1995-12-31T00:00:00Z",
+   "file": "Flag of Tuvalu (1995).svg",
+   "rank": "normal",
+   "start": "1995-10-01T00:00:00Z"
+  }
+ ],
+ "Q678": [
+  {
+   "end": null,
+   "file": "Flag of Tonga.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q683": [
+  {
+   "end": null,
+   "file": "Flag of Samoa.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q685": [
+  {
+   "end": null,
+   "file": "Flag of the Solomon Islands.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q686": [
+  {
+   "end": null,
+   "file": "Flag of Vanuatu.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q691": [
+  {
+   "end": null,
+   "file": "Flag of Papua New Guinea.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q695": [
+  {
+   "end": null,
+   "file": "Flag of Palau.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q697": [
+  {
+   "end": null,
+   "file": "Flag of Nauru.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q702": [
+  {
+   "end": null,
+   "file": "Flag of the Federated States of Micronesia.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q709": [
+  {
+   "end": null,
+   "file": "Flag of the Marshall Islands.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q710": [
+  {
+   "end": null,
+   "file": "Flag of Kiribati.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q711": [
+  {
+   "end": null,
+   "file": "Flag of Mongolia.svg",
+   "rank": "preferred",
+   "start": "2011-01-01T00:00:00Z"
+  },
+  {
+   "end": "1992-01-01T00:00:00Z",
+   "file": "Flag of the Mongolian People's Republic (1945–1992).svg",
+   "rank": "normal",
+   "start": "1945-01-01T00:00:00Z"
+  },
+  {
+   "end": "2011-01-01T00:00:00Z",
+   "file": "Flag of Mongolia (1992–2011).svg",
+   "rank": "normal",
+   "start": "1992-01-01T00:00:00Z"
+  }
+ ],
+ "Q712": [
+  {
+   "end": null,
+   "file": "Flag of Fiji.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q717": [
+  {
+   "end": null,
+   "file": "Flag of Venezuela.svg",
+   "rank": "preferred",
+   "start": "2006-03-12T00:00:00Z"
+  },
+  {
+   "end": "1899-01-01T00:00:00Z",
+   "file": "Flag of Venezuela (1811).svg",
+   "rank": "normal",
+   "start": "1817-01-01T00:00:00Z"
+  },
+  {
+   "end": "1903-01-01T00:00:00Z",
+   "file": "Bandera de la Guerra a Muerte.svg",
+   "rank": "normal",
+   "start": "1899-01-01T00:00:00Z"
+  },
+  {
+   "end": "1905-01-01T00:00:00Z",
+   "file": "Bandera de Angostura (20 de noviembre de 1817).svg",
+   "rank": "normal",
+   "start": "1903-01-01T00:00:00Z"
+  },
+  {
+   "end": "1917-01-01T00:00:00Z",
+   "file": "Flag of Venezuela (1830-1836).svg",
+   "rank": "normal",
+   "start": "1905-01-01T00:00:00Z"
+  },
+  {
+   "end": "1920-01-01T00:00:00Z",
+   "file": "Flag of Venezuela (1836–1859).svg",
+   "rank": "normal",
+   "start": "1917-04-16T00:00:00Z"
+  },
+  {
+   "end": "1923-01-01T00:00:00Z",
+   "file": "Flag of Venezuela (1817 and 1859).svg",
+   "rank": "normal",
+   "start": "1920-01-01T00:00:00Z"
+  },
+  {
+   "end": "1926-07-29T00:00:00Z",
+   "file": "Flag of Venezuela (1859–1863).svg",
+   "rank": "normal",
+   "start": "1923-01-01T00:00:00Z"
+  },
+  {
+   "end": "1927-03-28T00:00:00Z",
+   "file": "Flag of Venezuela (1863–1905).svg",
+   "rank": "normal",
+   "start": "1926-07-29T00:00:00Z"
+  },
+  {
+   "end": "1930-09-15T00:00:00Z",
+   "file": "Flag of Venezuela (1905–1930).svg",
+   "rank": "normal",
+   "start": "1927-03-28T00:00:00Z"
+  },
+  {
+   "end": "1954-02-17T00:00:00Z",
+   "file": "Flag of Venezuela (1930–2006).svg",
+   "rank": "normal",
+   "start": "1930-07-15T00:00:00Z"
+  },
+  {
+   "end": "2006-03-12T00:00:00Z",
+   "file": "State flag of Venezuela (1954–2006).svg",
+   "rank": "normal",
+   "start": "1954-02-17T00:00:00Z"
+  }
+ ],
+ "Q730": [
+  {
+   "end": null,
+   "file": "Flag of Suriname.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q733": [
+  {
+   "end": null,
+   "file": "Flag of Paraguay.svg",
+   "rank": "preferred",
+   "start": "2013-01-01T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Paraguay (1988–1990).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": null,
+   "file": "Flag of Paraguay (reverse).svg",
+   "rank": "normal",
+   "start": "2013-01-01T00:00:00Z"
+  },
+  {
+   "end": "1825-01-01T00:00:00Z",
+   "file": "Flag of Paraguay (1812-1826).svg",
+   "rank": "normal",
+   "start": "1812-01-01T00:00:00Z"
+  },
+  {
+   "end": "1879-11-25T00:00:00Z",
+   "file": "Flag of Paraguay (1826-1842).svg",
+   "rank": "normal",
+   "start": "1826-01-01T00:00:00Z"
+  },
+  {
+   "end": "1954-01-01T00:00:00Z",
+   "file": "Flag of Paraguay (1842–1954).svg",
+   "rank": "normal",
+   "start": "1842-01-01T00:00:00Z"
+  },
+  {
+   "end": "1988-01-01T00:00:00Z",
+   "file": "Flag of Paraguay (1954–1988).svg",
+   "rank": "normal",
+   "start": "1954-01-01T00:00:00Z"
+  },
+  {
+   "end": "2013-01-01T00:00:00Z",
+   "file": "Flag of Paraguay (1990–2013).svg",
+   "rank": "normal",
+   "start": "1990-01-01T00:00:00Z"
+  }
+ ],
+ "Q734": [
+  {
+   "end": null,
+   "file": "Flag of Guyana.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q736": [
+  {
+   "end": null,
+   "file": "Flag of Ecuador.svg",
+   "rank": "preferred",
+   "start": "2009-11-01T00:00:00Z"
+  },
+  {
+   "end": "1860-09-26T00:00:00Z",
+   "file": "Flag of Ecuador (1845–1860).svg",
+   "rank": "normal",
+   "start": "1845-11-06T00:00:00Z"
+  },
+  {
+   "end": "1900-10-31T00:00:00Z",
+   "file": "Civil flag and ensign of Ecuador.svg",
+   "rank": "normal",
+   "start": "1860-09-26T00:00:00Z"
+  },
+  {
+   "end": "2009-11-01T00:00:00Z",
+   "file": "Flag of Ecuador (1900–2009).svg",
+   "rank": "normal",
+   "start": "1900-10-31T00:00:00Z"
+  }
+ ],
+ "Q739": [
+  {
+   "end": null,
+   "file": "Flag of Colombia.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q750": [
+  {
+   "end": null,
+   "file": "Flag of Bolivia.svg",
+   "rank": "preferred",
+   "start": null
+  },
+  {
+   "end": null,
+   "file": "Bandera de Bolivia (Estado).svg",
+   "rank": "normal",
+   "start": "1851-10-31T00:00:00Z"
+  }
+ ],
+ "Q754": [
+  {
+   "end": null,
+   "file": "Flag of Trinidad and Tobago.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q757": [
+  {
+   "end": null,
+   "file": "Flag of Saint Vincent and the Grenadines.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q760": [
+  {
+   "end": null,
+   "file": "Flag of Saint Lucia.svg",
+   "rank": "preferred",
+   "start": "2002-02-22T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Saint Lucia (1967–1979).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1967-03-01T00:00:00Z",
+   "file": "Flag of Saint Lucia (1939–1967).svg",
+   "rank": "normal",
+   "start": "1939-01-01T00:00:00Z"
+  },
+  {
+   "end": "2002-02-22T00:00:00Z",
+   "file": "Flag of Saint Lucia (1979–2002).svg",
+   "rank": "normal",
+   "start": "1979-02-22T00:00:00Z"
+  }
+ ],
+ "Q763": [
+  {
+   "end": null,
+   "file": "Flag of Saint Kitts and Nevis.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q766": [
+  {
+   "end": null,
+   "file": "Flag of Jamaica.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q769": [
+  {
+   "end": null,
+   "file": "Flag of Grenada.svg",
+   "rank": "preferred",
+   "start": "1974-02-07T00:00:00Z"
+  },
+  {
+   "end": "1967-03-03T00:00:00Z",
+   "file": "Flag of Grenada (1903–1967).svg",
+   "rank": "normal",
+   "start": "1903-01-01T00:00:00Z"
+  },
+  {
+   "end": "1974-02-07T00:00:00Z",
+   "file": "Flag of Grenada (1967–1974).svg",
+   "rank": "normal",
+   "start": "1967-03-03T00:00:00Z"
+  }
+ ],
+ "Q77": [
+  {
+   "end": null,
+   "file": "Flag of Uruguay.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q774": [
+  {
+   "end": null,
+   "file": "Flag of Guatemala.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q778": [
+  {
+   "end": null,
+   "file": "Flag of the Bahamas.svg",
+   "rank": "preferred",
+   "start": "1973-07-10T00:00:00Z"
+  },
+  {
+   "end": "1973-07-10T00:00:00Z",
+   "file": "Flag of the Bahamas (1964–1973).svg",
+   "rank": "normal",
+   "start": "1964-01-01T00:00:00Z"
+  }
+ ],
+ "Q781": [
+  {
+   "end": null,
+   "file": "Flag of Antigua and Barbuda.svg",
+   "rank": "preferred",
+   "start": "1967-02-27T00:00:00Z"
+  },
+  {
+   "end": "1962-01-01T00:00:00Z",
+   "file": "Flag of Antigua and Barbuda (1956–1962).svg",
+   "rank": "normal",
+   "start": "1956-01-01T00:00:00Z"
+  },
+  {
+   "end": "1967-01-01T00:00:00Z",
+   "file": "Flag of Antigua and Barbuda (1962–1967).svg",
+   "rank": "normal",
+   "start": "1962-01-01T00:00:00Z"
+  }
+ ],
+ "Q783": [
+  {
+   "end": null,
+   "file": "Flag of Honduras (1949–2022, 2026–present).svg",
+   "rank": "preferred",
+   "start": "2026-01-25T00:00:00Z"
+  },
+  {
+   "end": "1824-01-01T00:00:00Z",
+   "file": "Flag of the United Provinces of Central America.svg",
+   "rank": "normal",
+   "start": "1823-01-01T00:00:00Z"
+  },
+  {
+   "end": "1839-01-01T00:00:00Z",
+   "file": "Flag of the Federal Republic of Central America.svg",
+   "rank": "normal",
+   "start": "1825-01-01T00:00:00Z"
+  },
+  {
+   "end": "1866-02-16T00:00:00Z",
+   "file": "Flag of Honduras (1839-1866).svg",
+   "rank": "normal",
+   "start": "1839-01-01T00:00:00Z"
+  },
+  {
+   "end": "1898-11-13T00:00:00Z",
+   "file": "Flag of Honduras (1866-1898).svg",
+   "rank": "normal",
+   "start": "1866-02-16T00:00:00Z"
+  },
+  {
+   "end": "1949-01-26T00:00:00Z",
+   "file": "Flag of Honduras (1890s yellow star variant).svg",
+   "rank": "normal",
+   "start": "1898-11-13T00:00:00Z"
+  },
+  {
+   "end": "2022-01-27T00:00:00Z",
+   "file": "Flag of Honduras (1949–2022, 2026–present).svg",
+   "rank": "normal",
+   "start": "1949-01-26T00:00:00Z"
+  },
+  {
+   "end": "2026-01-25T00:00:00Z",
+   "file": "Flag of Honduras (2022–2026).svg",
+   "rank": "normal",
+   "start": "2022-01-27T00:00:00Z"
+  }
+ ],
+ "Q784": [
+  {
+   "end": null,
+   "file": "Flag of Dominica.svg",
+   "rank": "preferred",
+   "start": "1990-01-01T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Dominica (1978–1981).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1978-11-03T00:00:00Z",
+   "file": "Flag of Dominica (1965–1978).svg",
+   "rank": "normal",
+   "start": "1961-01-01T00:00:00Z"
+  },
+  {
+   "end": "1988-01-01T00:00:00Z",
+   "file": "Flag of Dominica (1981–1988).svg",
+   "rank": "normal",
+   "start": "1981-11-03T00:00:00Z"
+  },
+  {
+   "end": "1990-01-01T00:00:00Z",
+   "file": "Flag of Dominica (1988–1990).svg",
+   "rank": "normal",
+   "start": "1988-01-01T00:00:00Z"
+  }
+ ],
+ "Q785": [
+  {
+   "end": null,
+   "file": "Flag of Jersey.svg",
+   "rank": "preferred",
+   "start": "1981-04-07T00:00:00Z"
+  },
+  {
+   "end": "1981-04-07T00:00:00Z",
+   "file": "Flag of Jersey (pre 1981).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q786": [
+  {
+   "end": null,
+   "file": "Flag of the Dominican Republic.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q79": [
+  {
+   "end": null,
+   "file": "Flag of Egypt.svg",
+   "rank": "preferred",
+   "start": "1983-01-01T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Egypt (1922-1958).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1867-01-01T00:00:00Z",
+   "file": "Flag of Egypt (1844–1867).svg",
+   "rank": "normal",
+   "start": "1844-01-01T00:00:00Z"
+  },
+  {
+   "end": "1881-01-01T00:00:00Z",
+   "file": "Flag of Muhammad Ali.svg",
+   "rank": "normal",
+   "start": "1867-01-01T00:00:00Z"
+  },
+  {
+   "end": "1922-01-01T00:00:00Z",
+   "file": "Flag of Egypt (1882–1922).svg",
+   "rank": "normal",
+   "start": "1881-01-01T00:00:00Z"
+  },
+  {
+   "end": "1984-01-01T00:00:00Z",
+   "file": "Flag of Egypt (1972–1984).svg",
+   "rank": "normal",
+   "start": "1972-01-01T00:00:00Z"
+  },
+  {
+   "end": "1999-01-01T00:00:00Z",
+   "file": "Flag of the United Arab Republic (1958–1971), Flag of Syria (1980–2024).svg",
+   "rank": "normal",
+   "start": "1958-01-01T00:00:00Z"
+  }
+ ],
+ "Q790": [
+  {
+   "end": null,
+   "file": "Flag of Haiti.svg",
+   "rank": "preferred",
+   "start": "1986-01-01T00:00:00Z"
+  },
+  {
+   "end": "1964-01-01T00:00:00Z",
+   "file": "Flag of Haiti.svg",
+   "rank": "normal",
+   "start": "1859-01-01T00:00:00Z"
+  },
+  {
+   "end": "1986-01-01T00:00:00Z",
+   "file": "Flag of Haiti (1964–1986).svg",
+   "rank": "normal",
+   "start": "1964-01-01T00:00:00Z"
+  }
+ ],
+ "Q792": [
+  {
+   "end": null,
+   "file": "Flag of El Salvador.svg",
+   "rank": "preferred",
+   "start": "1922-01-29T00:00:00Z"
+  },
+  {
+   "end": "1823-08-21T00:00:00Z",
+   "file": "Flag of El Salvador (1822–1865).svg",
+   "rank": "normal",
+   "start": "1822-02-20T00:00:00Z"
+  },
+  {
+   "end": "1824-01-01T00:00:00Z",
+   "file": "Flag of the United Provinces of Central America.svg",
+   "rank": "normal",
+   "start": "1823-08-21T00:00:00Z"
+  },
+  {
+   "end": "1841-01-01T00:00:00Z",
+   "file": "Flag of the Federal Republic of Central America.svg",
+   "rank": "normal",
+   "start": "1824-01-01T00:00:00Z"
+  },
+  {
+   "end": "1865-04-28T00:00:00Z",
+   "file": "Flag of El Salvador (1822–1865).svg",
+   "rank": "normal",
+   "start": "1841-01-01T00:00:00Z"
+  },
+  {
+   "end": "1865-06-01T00:00:00Z",
+   "file": "Flag of El Salvador (April 1865).svg",
+   "rank": "normal",
+   "start": "1865-04-28T00:00:00Z"
+  },
+  {
+   "end": "1869-01-01T00:00:00Z",
+   "file": "Flag of El Salvador (June 1865).svg",
+   "rank": "normal",
+   "start": "1865-06-01T00:00:00Z"
+  },
+  {
+   "end": "1873-01-01T00:00:00Z",
+   "file": "Flag of El Salvador (1869–1873).svg",
+   "rank": "normal",
+   "start": "1869-01-01T00:00:00Z"
+  },
+  {
+   "end": "1875-01-01T00:00:00Z",
+   "file": "Flag of El Salvador (1873–1875).svg",
+   "rank": "normal",
+   "start": "1873-01-01T00:00:00Z"
+  },
+  {
+   "end": "1912-05-17T00:00:00Z",
+   "file": "Flag of El Salvador (1875–1912).svg",
+   "rank": "normal",
+   "start": "1875-01-01T00:00:00Z"
+  },
+  {
+   "end": "1921-09-15T00:00:00Z",
+   "file": "Flag of El Salvador.svg",
+   "rank": "normal",
+   "start": "1912-05-17T00:00:00Z"
+  },
+  {
+   "end": "1922-01-29T00:00:00Z",
+   "file": "Flag of the Federation of Central America (1921–1922).svg",
+   "rank": "normal",
+   "start": "1921-09-09T00:00:00Z"
+  }
+ ],
+ "Q794": [
+  {
+   "end": null,
+   "file": "Flag of Iran.svg",
+   "rank": "preferred",
+   "start": "1980-07-29T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "State flag of Iran (1964–1980).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1980-07-29T00:00:00Z",
+   "file": "First Flag of I.R.Iran.svg",
+   "rank": "normal",
+   "start": "1979-01-01T00:00:00Z"
+  }
+ ],
+ "Q796": [
+  {
+   "end": null,
+   "file": "Flag of Iraq.svg",
+   "rank": "preferred",
+   "start": "2008-01-22T00:00:00Z"
+  },
+  {
+   "end": "1958-07-14T00:00:00Z",
+   "file": "Flag of Iraq (1924–1959).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1963-07-31T00:00:00Z",
+   "file": "Flag of Iraq (1959–1963).svg",
+   "rank": "normal",
+   "start": "1959-01-01T00:00:00Z"
+  },
+  {
+   "end": "1991-01-31T00:00:00Z",
+   "file": "Flag of Iraq (1963–1991).svg",
+   "rank": "normal",
+   "start": "1963-07-31T00:00:00Z"
+  },
+  {
+   "end": "2004-01-01T00:00:00Z",
+   "file": "Flag of Iraq (1991–2004).svg",
+   "rank": "normal",
+   "start": "1991-01-31T00:00:00Z"
+  },
+  {
+   "end": "2008-01-22T00:00:00Z",
+   "file": "Flag of Iraq (2004–2008).svg",
+   "rank": "normal",
+   "start": "2004-01-01T00:00:00Z"
+  }
+ ],
+ "Q800": [
+  {
+   "end": null,
+   "file": "Flag of Costa Rica.svg",
+   "rank": "preferred",
+   "start": "1906-11-27T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Costa Rica (state).svg",
+   "rank": "normal",
+   "start": "1998-05-05T00:00:00Z"
+  },
+  {
+   "end": "1823-06-06T00:00:00Z",
+   "file": "Flag of Costa Rica (1821–1823).svg",
+   "rank": "normal",
+   "start": "1821-09-01T00:00:00Z"
+  },
+  {
+   "end": "1824-03-04T00:00:00Z",
+   "file": "Flag of Costa Rica (1823–1824).svg",
+   "rank": "normal",
+   "start": "1823-06-06T00:00:00Z"
+  },
+  {
+   "end": "1824-11-02T00:00:00Z",
+   "file": "Flag of the United Provinces of Central America.svg",
+   "rank": "normal",
+   "start": "1824-03-04T00:00:00Z"
+  },
+  {
+   "end": "1824-11-22T00:00:00Z",
+   "file": "Flag of Costa Rica (1824).svg",
+   "rank": "normal",
+   "start": "1824-11-02T00:00:00Z"
+  },
+  {
+   "end": "1840-04-21T00:00:00Z",
+   "file": "Flag of Costa Rica (1824–1840).svg",
+   "rank": "normal",
+   "start": "1824-11-22T00:00:00Z"
+  },
+  {
+   "end": "1842-09-01T00:00:00Z",
+   "file": "Flag of Costa Rica (1840–1842).svg",
+   "rank": "normal",
+   "start": "1840-04-21T00:00:00Z"
+  },
+  {
+   "end": "1848-09-29T00:00:00Z",
+   "file": "Flag of Costa Rica (1842–1848).svg",
+   "rank": "normal",
+   "start": "1842-09-01T00:00:00Z"
+  },
+  {
+   "end": "1906-11-27T00:00:00Z",
+   "file": "Flag of Costa Rica (1848–1906).svg",
+   "rank": "normal",
+   "start": "1848-09-29T00:00:00Z"
+  },
+  {
+   "end": "1964-10-21T00:00:00Z",
+   "file": "State flag of Costa Rica (1906–1964).svg",
+   "rank": "normal",
+   "start": "1906-11-27T00:00:00Z"
+  },
+  {
+   "end": "1998-05-05T00:00:00Z",
+   "file": "State flag of Costa Rica (1964–1998).svg",
+   "rank": "normal",
+   "start": "1964-10-21T00:00:00Z"
+  }
+ ],
+ "Q801": [
+  {
+   "end": null,
+   "file": "Flag of Israel.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q804": [
+  {
+   "end": null,
+   "file": "Flag of Panama.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q805": [
+  {
+   "end": null,
+   "file": "Flag of Yemen.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q810": [
+  {
+   "end": null,
+   "file": "Flag of Jordan.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q811": [
+  {
+   "end": null,
+   "file": "Flag of Nicaragua.svg",
+   "rank": "preferred",
+   "start": "1971-08-27T00:00:00Z"
+  },
+  {
+   "end": "1824-01-01T00:00:00Z",
+   "file": "Flag of the United Provinces of Central America.svg",
+   "rank": "normal",
+   "start": "1823-01-01T00:00:00Z"
+  },
+  {
+   "end": "1839-01-01T00:00:00Z",
+   "file": "Flag of the Federal Republic of Central America.svg",
+   "rank": "normal",
+   "start": "1824-01-01T00:00:00Z"
+  },
+  {
+   "end": "1858-01-01T00:00:00Z",
+   "file": "Flag of Nicaragua (1839-1858).svg",
+   "rank": "normal",
+   "start": "1839-01-01T00:00:00Z"
+  },
+  {
+   "end": "1889-01-01T00:00:00Z",
+   "file": "Flag of Nicaragua (1858-1889 and 1893-1896).svg",
+   "rank": "normal",
+   "start": "1858-01-01T00:00:00Z"
+  },
+  {
+   "end": "1893-01-01T00:00:00Z",
+   "file": "Flag of Nicaragua (1889–1893).svg",
+   "rank": "normal",
+   "start": "1889-01-01T00:00:00Z"
+  },
+  {
+   "end": "1896-01-01T00:00:00Z",
+   "file": "Flag of Nicaragua (1858-1889 and 1893-1896).svg",
+   "rank": "normal",
+   "start": "1893-01-01T00:00:00Z"
+  },
+  {
+   "end": "1908-09-05T00:00:00Z",
+   "file": "Flag of Nicaragua (1896–1908).svg",
+   "rank": "normal",
+   "start": "1896-01-01T00:00:00Z"
+  },
+  {
+   "end": "1971-08-27T00:00:00Z",
+   "file": "Flag of Nicaragua (1908–1971).svg",
+   "rank": "normal",
+   "start": "1908-09-05T00:00:00Z"
+  }
+ ],
+ "Q813": [
+  {
+   "end": null,
+   "file": "Flag of Kyrgyzstan.svg",
+   "rank": "preferred",
+   "start": "2023-12-26T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of the Kirghiz Soviet Socialist Republic (1952–1991); Flag of Kyrgyzstan (1991–1992).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "2023-12-26T00:00:00Z",
+   "file": "Flag of Kyrgyzstan (1992–2023).svg",
+   "rank": "normal",
+   "start": "1992-03-03T00:00:00Z"
+  }
+ ],
+ "Q817": [
+  {
+   "end": null,
+   "file": "Flag of Kuwait.svg",
+   "rank": "preferred",
+   "start": "1961-09-07T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Kuwait (1915–1956).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1961-09-07T00:00:00Z",
+   "file": "Maritime Ensign of Kuwait 1956-1961.svg",
+   "rank": "normal",
+   "start": "1956-01-01T00:00:00Z"
+  }
+ ],
+ "Q819": [
+  {
+   "end": null,
+   "file": "Flag of Laos.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q822": [
+  {
+   "end": null,
+   "file": "Flag of Lebanon.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q826": [
+  {
+   "end": null,
+   "file": "Flag of Maldives.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q833": [
+  {
+   "end": null,
+   "file": "Flag of Malaysia.svg",
+   "rank": "preferred",
+   "start": "1963-09-16T00:00:00Z"
+  },
+  {
+   "end": "1963-09-16T00:00:00Z",
+   "file": "Flag of Malaya (1950–1963).svg",
+   "rank": "normal",
+   "start": "1950-05-26T00:00:00Z"
+  }
+ ],
+ "Q836": [
+  {
+   "end": null,
+   "file": "Flag of Myanmar.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q837": [
+  {
+   "end": null,
+   "file": "Flag of Nepal.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q842": [
+  {
+   "end": null,
+   "file": "Flag of Oman (1970–1995).svg",
+   "rank": "deprecated",
+   "start": null
+  },
+  {
+   "end": null,
+   "file": "Flag of Oman.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q842829": [
+  {
+   "end": null,
+   "file": "Flag of Norway.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q843": [
+  {
+   "end": null,
+   "file": "Flag of Pakistan.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q846": [
+  {
+   "end": null,
+   "file": "Flag of Qatar.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q851": [
+  {
+   "end": null,
+   "file": "Flag of Saudi Arabia.svg",
+   "rank": "preferred",
+   "start": "1973-03-15T00:00:00Z"
+  },
+  {
+   "end": "1818-08-01T00:00:00Z",
+   "file": "Flag of the Third Saudi State-01.svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1921-11-01T00:00:00Z",
+   "file": "Flag of the Third Saudi State-01.svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1932-09-01T00:00:00Z",
+   "file": "Flag of Nejd (1921).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1973-03-01T00:00:00Z",
+   "file": "Flag of Saudi Arabia (1938–1973).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q854": [
+  {
+   "end": null,
+   "file": "Flag of Sri Lanka.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q858": [
+  {
+   "end": null,
+   "file": "Flag of Syria (2025-).svg",
+   "rank": "preferred",
+   "start": "2024-12-08T00:00:00Z"
+  },
+  {
+   "end": "1920-07-24T00:00:00Z",
+   "file": "Flag of Kingdom of Syria (1920-03-08 to 1920-07-24).svg",
+   "rank": "normal",
+   "start": "1920-03-08T00:00:00Z"
+  },
+  {
+   "end": "1920-09-01T00:00:00Z",
+   "file": "Flag of the French Mandate of Syria (1920).svg",
+   "rank": "normal",
+   "start": "1920-07-24T00:00:00Z"
+  },
+  {
+   "end": "1932-06-11T00:00:00Z",
+   "file": "Flag of Syria French mandate.svg",
+   "rank": "normal",
+   "start": "1920-06-22T00:00:00Z"
+  },
+  {
+   "end": "1961-09-28T00:00:00Z",
+   "file": "Flag of the United Arab Republic (1958–1971), Flag of Syria (1980–2024).svg",
+   "rank": "deprecated",
+   "start": "1958-02-22T00:00:00Z"
+  },
+  {
+   "end": "1963-03-08T00:00:00Z",
+   "file": "Flag of Syria (1930–1958, 1961–1963).svg",
+   "rank": "normal",
+   "start": "1961-09-28T00:00:00Z"
+  },
+  {
+   "end": "1963-03-08T00:00:00Z",
+   "file": "Flag of Syria (1930–1958, 1961–1963).svg",
+   "rank": "normal",
+   "start": "2011-03-15T00:00:00Z"
+  },
+  {
+   "end": "1972-01-01T00:00:00Z",
+   "file": "Flag of the United Arab Republic (1958–1971), Flag of Syria (1980–2024) (stars variant 1).svg",
+   "rank": "normal",
+   "start": "1963-03-08T00:00:00Z"
+  },
+  {
+   "end": "1980-03-29T00:00:00Z",
+   "file": "Flag of Syria (1972–1980).svg",
+   "rank": "normal",
+   "start": "1972-01-01T00:00:00Z"
+  },
+  {
+   "end": "2024-12-08T00:00:00Z",
+   "file": "Flag of the United Arab Republic (1958–1971), Flag of Syria (1980–2024).svg",
+   "rank": "normal",
+   "start": "1980-03-29T00:00:00Z"
+  }
+ ],
+ "Q863": [
+  {
+   "end": null,
+   "file": "Flag of Tajikistan.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q8646": [
+  {
+   "end": null,
+   "file": "Flag of Hong Kong.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q865": [
+  {
+   "end": null,
+   "file": "Flag of the Republic of China.svg",
+   "rank": "preferred",
+   "start": "1928-12-17T00:00:00Z"
+  },
+  {
+   "end": "1928-12-28T00:00:00Z",
+   "file": "Flag of China (1912–1928).svg",
+   "rank": "normal",
+   "start": "1912-01-10T00:00:00Z"
+  }
+ ],
+ "Q869": [
+  {
+   "end": null,
+   "file": "Flag of Thailand.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q874": [
+  {
+   "end": null,
+   "file": "Flag of Turkmenistan.svg",
+   "rank": "preferred",
+   "start": "2001-01-24T00:00:00Z"
+  },
+  {
+   "end": "1992-02-19T00:00:00Z",
+   "file": "Flag of the Turkmen Soviet Socialist Republic (1974–1991), Flag of Turkmenistan (1991–1992).svg",
+   "rank": "normal",
+   "start": "1925-05-13T00:00:00Z"
+  },
+  {
+   "end": "1997-02-01T00:00:00Z",
+   "file": "Flag of Turkmenistan (1992–1997).svg",
+   "rank": "normal",
+   "start": "1992-02-19T00:00:00Z"
+  },
+  {
+   "end": "2001-01-24T00:00:00Z",
+   "file": "Flag of Turkmenistan (1997–2001).svg",
+   "rank": "normal",
+   "start": "1997-02-01T00:00:00Z"
+  }
+ ],
+ "Q878": [
+  {
+   "end": null,
+   "file": "Flag of the United Arab Emirates.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q881": [
+  {
+   "end": null,
+   "file": "Flag of Vietnam.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q884": [
+  {
+   "end": null,
+   "file": "Flag of South Korea.svg",
+   "rank": "preferred",
+   "start": "2011-05-30T00:00:00Z"
+  },
+  {
+   "end": "1950-01-25T00:00:00Z",
+   "file": "Flag of South Korea (1948–1949).svg",
+   "rank": "normal",
+   "start": "1948-08-15T00:00:00Z"
+  },
+  {
+   "end": "1984-02-21T00:00:00Z",
+   "file": "Flag of South Korea (1949–1984).svg",
+   "rank": "normal",
+   "start": "1950-01-25T00:00:00Z"
+  },
+  {
+   "end": "1997-10-15T00:00:00Z",
+   "file": "Flag of South Korea (1984–1997).svg",
+   "rank": "normal",
+   "start": "1984-02-21T00:00:00Z"
+  },
+  {
+   "end": "2011-05-30T00:00:00Z",
+   "file": "Flag of South Korea (1997–2011).svg",
+   "rank": "normal",
+   "start": "1997-10-15T00:00:00Z"
+  }
+ ],
+ "Q889": [
+  {
+   "end": null,
+   "file": "Flag of the Taliban.svg",
+   "rank": "preferred",
+   "start": "2021-08-15T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Afghanistan (1909–1926).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1738-03-24T00:00:00Z",
+   "file": "Flag of Afghanistan (1880–1901).svg",
+   "rank": "normal",
+   "start": "1709-04-01T00:00:00Z"
+  },
+  {
+   "end": "1862-01-01T00:00:00Z",
+   "file": "Flag of Herat until 1842.svg",
+   "rank": "normal",
+   "start": "1747-01-01T00:00:00Z"
+  },
+  {
+   "end": "1901-01-01T00:00:00Z",
+   "file": "Flag of Afghanistan (1880–1901).svg",
+   "rank": "normal",
+   "start": "1880-01-01T00:00:00Z"
+  },
+  {
+   "end": "1919-02-28T00:00:00Z",
+   "file": "Flag of Afghanistan (1901–1919).svg",
+   "rank": "normal",
+   "start": "1901-10-01T00:00:00Z"
+  },
+  {
+   "end": "1928-01-01T00:00:00Z",
+   "file": "Flag of Afghanistan (1926–1928).svg",
+   "rank": "normal",
+   "start": "1926-06-09T00:00:00Z"
+  },
+  {
+   "end": "1928-07-01T00:00:00Z",
+   "file": "Flag of Afghanistan (1928).svg",
+   "rank": "normal",
+   "start": "1928-06-01T00:00:00Z"
+  },
+  {
+   "end": "1929-01-01T00:00:00Z",
+   "file": "Flag of Afghanistan (1928–1929).svg",
+   "rank": "normal",
+   "start": "1928-01-01T00:00:00Z"
+  },
+  {
+   "end": "1929-10-10T00:00:00Z",
+   "file": "Flag of Afghanistan (1929).svg",
+   "rank": "normal",
+   "start": "1929-01-01T00:00:00Z"
+  },
+  {
+   "end": "1930-03-27T00:00:00Z",
+   "file": "Flag of Afghanistan (1929–1931).svg",
+   "rank": "normal",
+   "start": "1929-10-10T00:00:00Z"
+  },
+  {
+   "end": "1973-07-17T00:00:00Z",
+   "file": "Flag of Afghanistan (1931–1973).svg",
+   "rank": "normal",
+   "start": "1930-03-27T00:00:00Z"
+  },
+  {
+   "end": "1974-05-08T00:00:00Z",
+   "file": "Flag of Afghanistan (1973–1974).svg",
+   "rank": "normal",
+   "start": "1973-07-17T00:00:00Z"
+  },
+  {
+   "end": "1978-10-18T00:00:00Z",
+   "file": "Flag of Afghanistan (1978).svg",
+   "rank": "normal",
+   "start": "1978-04-27T00:00:00Z"
+  },
+  {
+   "end": "1987-11-29T00:00:00Z",
+   "file": "Flag of Afghanistan (1980–1987).svg",
+   "rank": "normal",
+   "start": "1980-04-22T00:00:00Z"
+  },
+  {
+   "end": "1992-12-06T00:00:00Z",
+   "file": "Flag of Afghanistan (1992).svg",
+   "rank": "normal",
+   "start": "1992-04-27T00:00:00Z"
+  },
+  {
+   "end": "1996-09-27T00:00:00Z",
+   "file": "Flag of Afghanistan (1992–2001).svg",
+   "rank": "normal",
+   "start": "1992-12-07T00:00:00Z"
+  },
+  {
+   "end": "1997-10-26T00:00:00Z",
+   "file": "Flag of Taliban (original).svg",
+   "rank": "normal",
+   "start": "1996-09-27T00:00:00Z"
+  },
+  {
+   "end": "2001-11-12T00:00:00Z",
+   "file": "Flag of the Taliban.svg",
+   "rank": "normal",
+   "start": "1997-10-27T00:00:00Z"
+  },
+  {
+   "end": "2002-01-27T00:00:00Z",
+   "file": "Flag of Afghanistan (2001–2002).svg",
+   "rank": "normal",
+   "start": "2001-11-13T00:00:00Z"
+  },
+  {
+   "end": "2002-06-27T00:00:00Z",
+   "file": "Flag of Afghanistan (2002–2004).svg",
+   "rank": "normal",
+   "start": "2002-01-28T00:00:00Z"
+  },
+  {
+   "end": "2004-10-09T00:00:00Z",
+   "file": "Flag of Afghanistan (2002–2004, variant with golden arms).svg",
+   "rank": "normal",
+   "start": "2002-06-27T00:00:00Z"
+  },
+  {
+   "end": "2013-08-19T00:00:00Z",
+   "file": "Flag of Afghanistan (2004–2021, variant).svg",
+   "rank": "normal",
+   "start": "2004-10-09T00:00:00Z"
+  },
+  {
+   "end": "2021-08-15T00:00:00Z",
+   "file": "Flag of Afghanistan (2013–2021).svg",
+   "rank": "normal",
+   "start": "2013-08-19T00:00:00Z"
+  }
+ ],
+ "Q902": [
+  {
+   "end": null,
+   "file": "Flag of Bangladesh.svg",
+   "rank": "preferred",
+   "start": "1972-01-17T00:00:00Z"
+  },
+  {
+   "end": "1972-01-17T00:00:00Z",
+   "file": "Flag of Bangladesh (1971).svg",
+   "rank": "normal",
+   "start": "1971-03-06T00:00:00Z"
+  }
+ ],
+ "Q912": [
+  {
+   "end": null,
+   "file": "Flag of Mali.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q916": [
+  {
+   "end": null,
+   "file": "Flag of Angola.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q917": [
+  {
+   "end": null,
+   "file": "Flag of Bhutan.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q921": [
+  {
+   "end": null,
+   "file": "Flag of Brunei.svg",
+   "rank": "normal",
+   "start": "1959-09-29T00:00:00Z"
+  },
+  {
+   "end": "1959-09-29T00:00:00Z",
+   "file": "Flag of Brunei 1906-1959.svg",
+   "rank": "deprecated",
+   "start": "1906-01-01T00:00:00Z"
+  }
+ ],
+ "Q924": [
+  {
+   "end": null,
+   "file": "Flag of Tanzania.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q928": [
+  {
+   "end": null,
+   "file": "Flag of the Philippines.svg",
+   "rank": "preferred",
+   "start": "1998-01-01T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of the Philippines (1985–1986).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1985-02-24T00:00:00Z",
+   "file": "Flag of the Philippines (navy blue).svg",
+   "rank": "normal",
+   "start": "1936-03-25T00:00:00Z"
+  },
+  {
+   "end": "1998-01-01T00:00:00Z",
+   "file": "Flag of the Philippines (navy blue).svg",
+   "rank": "normal",
+   "start": "1986-07-25T00:00:00Z"
+  }
+ ],
+ "Q929": [
+  {
+   "end": null,
+   "file": "Flag of the Central African Republic.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q945": [
+  {
+   "end": null,
+   "file": "Flag of Togo (3-2).svg",
+   "rank": "preferred",
+   "start": "1960-04-28T00:00:00Z"
+  },
+  {
+   "end": "1958-01-01T00:00:00Z",
+   "file": "Flag of Togo (1957–1958).svg",
+   "rank": "normal",
+   "start": "1957-01-01T00:00:00Z"
+  },
+  {
+   "end": "1960-04-27T00:00:00Z",
+   "file": "Flag of Togo (1958–1960).svg",
+   "rank": "normal",
+   "start": "1958-01-01T00:00:00Z"
+  }
+ ],
+ "Q948": [
+  {
+   "end": null,
+   "file": "Flag of Tunisia.svg",
+   "rank": "preferred",
+   "start": "1999-07-03T00:00:00Z"
+  },
+  {
+   "end": "1999-07-03T00:00:00Z",
+   "file": "Flag of Tunisia (1959–1999).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q953": [
+  {
+   "end": null,
+   "file": "Flag of Zambia.svg",
+   "rank": "preferred",
+   "start": "1996-01-01T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Zambia (1964–1996).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q954": [
+  {
+   "end": null,
+   "file": "Flag of Zimbabwe.svg",
+   "rank": "preferred",
+   "start": "1979-12-12T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Rhodesia (1968–1979).svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q958": [
+  {
+   "end": null,
+   "file": "Flag of South Sudan.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q96": [
+  {
+   "end": null,
+   "file": "Flag of Mexico.svg",
+   "rank": "preferred",
+   "start": "1968-09-16T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Imperial Standard of Mexico (1864-1867).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1823-01-01T00:00:00Z",
+   "file": "Bandera del Primer Imperio Mexicano.svg",
+   "rank": "normal",
+   "start": "1821-01-01T00:00:00Z"
+  },
+  {
+   "end": "1864-01-01T00:00:00Z",
+   "file": "Bandera Histórica de la República Mexicana (1824-1918).svg",
+   "rank": "normal",
+   "start": "1823-01-01T00:00:00Z"
+  },
+  {
+   "end": "1893-01-01T00:00:00Z",
+   "file": "Bandera Histórica de la República Mexicana (1824-1918).svg",
+   "rank": "normal",
+   "start": "1867-01-01T00:00:00Z"
+  },
+  {
+   "end": "1916-01-01T00:00:00Z",
+   "file": "Flag of Mexico (1893–1916).svg",
+   "rank": "normal",
+   "start": "1893-01-01T00:00:00Z"
+  },
+  {
+   "end": "1968-09-16T00:00:00Z",
+   "file": "Flag of Mexico (1934-1968).svg",
+   "rank": "normal",
+   "start": "1934-01-01T00:00:00Z"
+  }
+ ],
+ "Q962": [
+  {
+   "end": null,
+   "file": "Flag of Benin.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q963": [
+  {
+   "end": null,
+   "file": "Flag of Botswana.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q9648": [
+  {
+   "end": null,
+   "file": "Flag of the Falkland Islands.svg",
+   "rank": "preferred",
+   "start": "1999-01-25T00:00:00Z"
+  },
+  {
+   "end": "1925-01-01T00:00:00Z",
+   "file": "Flag of the Falkland Islands (1876–1925).svg",
+   "rank": "normal",
+   "start": "1876-01-01T00:00:00Z"
+  },
+  {
+   "end": "1948-01-01T00:00:00Z",
+   "file": "Flag of the Falkland Islands (1925–1948).svg",
+   "rank": "normal",
+   "start": "1925-01-01T00:00:00Z"
+  },
+  {
+   "end": "1999-01-01T00:00:00Z",
+   "file": "Flag of the Falkland Islands (1948–1999).svg",
+   "rank": "normal",
+   "start": "1948-01-01T00:00:00Z"
+  }
+ ],
+ "Q965": [
+  {
+   "end": null,
+   "file": "Flag of Burkina Faso.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q967": [
+  {
+   "end": null,
+   "file": "Flag of Burundi.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q9676": [
+  {
+   "end": null,
+   "file": "Flag of the Isle of Man.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q970": [
+  {
+   "end": null,
+   "file": "Flag of the Comoros.svg",
+   "rank": "preferred",
+   "start": "2002-01-07T00:00:00Z"
+  },
+  {
+   "end": "2002-01-06T00:00:00Z",
+   "file": "Flag of the Comoros (1996–2001).svg",
+   "rank": "normal",
+   "start": "1996-10-03T00:00:00Z"
+  }
+ ],
+ "Q971": [
+  {
+   "end": null,
+   "file": "Flag of the Republic of the Congo.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q974": [
+  {
+   "end": null,
+   "file": "Flag of the Democratic Republic of the Congo.svg",
+   "rank": "preferred",
+   "start": "2006-02-20T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of the Democratic Republic of the Congo (1997–2006).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1963-01-01T00:00:00Z",
+   "file": "Flag of the Republic of the Congo (Léopoldville) (1960–1963).svg",
+   "rank": "normal",
+   "start": "1960-01-01T00:00:00Z"
+  },
+  {
+   "end": "1966-01-01T00:00:00Z",
+   "file": "Flag of the Republic of the Congo (Léopoldville) (1963–1966).svg",
+   "rank": "normal",
+   "start": "1963-01-01T00:00:00Z"
+  },
+  {
+   "end": "1971-01-01T00:00:00Z",
+   "file": "Flag of the Democratic Republic of the Congo (1966–1971).svg",
+   "rank": "normal",
+   "start": "1966-01-01T00:00:00Z"
+  },
+  {
+   "end": "1997-01-01T00:00:00Z",
+   "file": "Flag of Zaire (1971–1997).svg",
+   "rank": "normal",
+   "start": "1971-01-01T00:00:00Z"
+  }
+ ],
+ "Q977": [
+  {
+   "end": null,
+   "file": "Flag of Djibouti.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ],
+ "Q983": [
+  {
+   "end": null,
+   "file": "Flag of Equatorial Guinea.svg",
+   "rank": "preferred",
+   "start": "1979-08-21T00:00:00Z"
+  },
+  {
+   "end": null,
+   "file": "Flag of Equatorial Guinea (1973–1979).svg",
+   "rank": "normal",
+   "start": null
+  },
+  {
+   "end": "1973-01-01T00:00:00Z",
+   "file": "Flag of Equatorial Guinea (without coat of arms).svg",
+   "rank": "normal",
+   "start": "1968-10-12T00:00:00Z"
+  }
+ ],
+ "Q986": [
+  {
+   "end": null,
+   "file": "Flag of Eritrea.svg",
+   "rank": "normal",
+   "start": null
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+id: '137'
+iso2: MH
+iso3: MHL
+wikidata: Q709
+status: sovereign
+name:
+  en: Marshall Islands, The
+  de: Marshallinseln
+formal_name:
+  en: The Republic of the Marshall Islands
+  de: Republik Marshallinseln
+capitals:
+- name:
+    en: Majuro
+    de: Majuro
+  role: capital
+  wikidata: Q12919
+  lat: 7.0918
+  lon: 171.3802
+borders: []
+regions:
+- Oceania
+- Micronesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Marshall_Islands
+  de: https://de.wikipedia.org/wiki/Marshallinseln

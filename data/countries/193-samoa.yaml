@@ -1,0 +1,26 @@
+id: '193'
+iso2: WS
+iso3: WSM
+wikidata: Q683
+status: sovereign
+name:
+  en: Samoa
+  de: Samoa
+formal_name:
+  en: The Independent State of Samoa
+  de: Unabhängiger Staat Samoa
+capitals:
+- name:
+    en: Apia
+    de: Apia
+  role: capital
+  wikidata: Q36260
+  lat: -13.83333
+  lon: -171.83333
+borders: []
+regions:
+- Oceania
+- Polynesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Samoa
+  de: https://de.wikipedia.org/wiki/Samoa

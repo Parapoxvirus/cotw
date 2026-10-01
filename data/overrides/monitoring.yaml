@@ -1,0 +1,11 @@
+# Rejected deviations of the weekly Wikidata check (docs/MONITORING.md). Keyed by the
+# fingerprint from the issue; a rejected fingerprint is never reported again. A further change
+# of the same value upstream has a new fingerprint and opens a new issue. Every entry needs a
+# reason.
+#
+# rejected:
+#   '0123456789abcdef':
+#     subject: '083'
+#     field: capital Q64 coordinates
+#     reason: the deck keeps the city-centre point
+rejected: {}

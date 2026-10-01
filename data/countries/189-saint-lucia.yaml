@@ -1,0 +1,24 @@
+id: '189'
+iso2: LC
+iso3: LCA
+wikidata: Q760
+status: sovereign
+name:
+  en: Saint Lucia
+  de: St. Lucia
+capitals:
+- name:
+    en: Castries
+    de: Castries
+  role: capital
+  wikidata: Q41699
+  lat: 14.01083
+  lon: -60.98944
+borders: []
+regions:
+- Americas
+- Latin America and the Caribbean
+- Caribbean
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Saint_Lucia
+  de: https://de.wikipedia.org/wiki/St._Lucia

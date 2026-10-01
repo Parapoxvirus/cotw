@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cotw"
+version = "1.0.0"
+description = "Countries of the World (COTW): country database and Anki deck build pipeline"
+readme = "README.md"
+license = "CC0-1.0"
+requires-python = ">=3.11"
+authors = [{ name = "Parapoxvirus" }]
+# genanki (MIT) writes the .apkg; see docs/DECK.md for why genanki and not the anki package.
+dependencies = ["pyyaml>=6.0", "genanki>=0.13"]
+
+[project.optional-dependencies]
+# Network / geometry extras: refreshing the caches and rendering the maps. The committed
+# media and manifests are checked without them; the geometry unit tests need them.
+# shapely >= 2.1 for coverage_simplify (topology-preserving simplification).
+fetch = ["requests>=2.31", "shapely>=2.1", "numpy>=1.24", "pyshp>=2.3"]
+# anki (AGPL-3.0) only for the coexistence import test; never shipped, never imported by the build.
+# Pillow reads the v3 infographic PNGs for the fidelity test of their SVG rebuild (tools/cotw/ui.py).
+dev = ["pytest>=8.0", "anki>=25.2", "pillow>=10"]
+# Optional browser performance/visual verification (tools/globe/benchmark.py).
+browser = ["playwright>=1.51"]
+
+[project.scripts]
+cotw = "cotw.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["tools"]
+
+[tool.pytest.ini_options]
+pythonpath = ["tools"]
+testpaths = ["tests"]
+
+[tool.setuptools.package-data]
+"cotw.deck" = ["*.css"]

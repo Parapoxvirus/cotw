@@ -1,0 +1,30 @@
+id: '101'
+iso2: HU
+iso3: HUN
+wikidata: Q28
+status: sovereign
+name:
+  en: Hungary
+  de: Ungarn
+capitals:
+- name:
+    en: Budapest
+    de: Budapest
+  role: capital
+  wikidata: Q1781
+  lat: 47.49833
+  lon: 19.04083
+borders:
+- '014'
+- '055'
+- '183'
+- '198'
+- '203'
+- '204'
+- '233'
+regions:
+- Europe
+- Eastern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Hungary
+  de: https://de.wikipedia.org/wiki/Ungarn

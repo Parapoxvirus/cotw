@@ -1,0 +1,29 @@
+id: '242'
+iso2: VN
+iso3: VNM
+wikidata: Q881
+status: sovereign
+name:
+  en: Vietnam
+  de: Vietnam
+formal_name:
+  en: The Socialist Republic of Vietnam
+  de: Sozialistische Republik Vietnam
+capitals:
+- name:
+    en: Hanoi
+    de: Hanoi
+  role: capital
+  wikidata: Q1858
+  lat: 21.0245
+  lon: 105.84117
+borders:
+- '038'
+- '045'
+- '121'
+regions:
+- Asia
+- South-eastern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Vietnam
+  de: https://de.wikipedia.org/wiki/Vietnam

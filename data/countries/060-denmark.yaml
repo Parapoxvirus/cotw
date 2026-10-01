@@ -1,0 +1,27 @@
+id: '060'
+iso2: DK
+iso3: DNK
+wikidata: Q35
+status: sovereign
+name:
+  en: Denmark
+  de: Dänemark
+formal_name:
+  en: The Kingdom of Denmark
+  de: Königreich Dänemark
+capitals:
+- name:
+    en: Copenhagen
+    de: Kopenhagen
+  role: capital
+  wikidata: Q1748
+  lat: 55.67611
+  lon: 12.56889
+borders:
+- '083'
+regions:
+- Europe
+- Northern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Denmark
+  de: https://de.wikipedia.org/wiki/Dänemark

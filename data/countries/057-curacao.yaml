@@ -1,0 +1,25 @@
+id: '057'
+iso2: CW
+iso3: CUW
+wikidata: Q25279
+status: dependency
+dependency_of: '155'
+name:
+  en: Curaçao
+  de: Curaçao
+capitals:
+- name:
+    en: Willemstad
+    de: Willemstad
+  role: capital
+  wikidata: Q132679
+  lat: 12.108
+  lon: -68.935
+borders: []
+regions:
+- Americas
+- Latin America and the Caribbean
+- Caribbean
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Curaçao
+  de: https://de.wikipedia.org/wiki/Curaçao

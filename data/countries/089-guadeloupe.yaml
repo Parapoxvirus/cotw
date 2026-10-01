@@ -1,0 +1,25 @@
+id: '089'
+iso2: GP
+iso3: GLP
+wikidata: Q17012
+status: dependency
+dependency_of: '076'
+name:
+  en: Guadeloupe
+  de: Guadeloupe
+capitals:
+- name:
+    en: Basse-Terre
+    de: Basse-Terre
+  role: capital
+  wikidata: Q167024
+  lat: 15.99694
+  lon: -61.73278
+borders: []
+regions:
+- Americas
+- Latin America and the Caribbean
+- Caribbean
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Guadeloupe
+  de: https://de.wikipedia.org/wiki/Guadeloupe

@@ -1,0 +1,41 @@
+id: '246'
+iso2: YE
+iso3: YEM
+wikidata: Q805
+status: sovereign
+name:
+  en: Yemen
+  de: Jemen
+formal_name:
+  en: The Republic of Yemen
+  de: Republik Jemen
+capitals:
+- name:
+    en: Sanaa
+    de: Sanaa
+  label:
+    en: capital
+    de: Hauptstadt
+  role: capital
+  wikidata: Q2471
+  lat: 15.35
+  lon: 44.2
+- name:
+    en: Aden
+    de: Aden
+  label:
+    en: seat of government
+    de: Regierungssitz
+  role: seat_of_government
+  wikidata: Q131694
+  lat: 12.8
+  lon: 45.03333
+borders:
+- '167'
+- '196'
+regions:
+- Asia
+- Western Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Yemen
+  de: https://de.wikipedia.org/wiki/Jemen

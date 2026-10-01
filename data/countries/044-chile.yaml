@@ -1,0 +1,30 @@
+id: '044'
+iso2: CL
+iso3: CHL
+wikidata: Q298
+status: sovereign
+name:
+  en: Chile
+  de: Chile
+formal_name:
+  en: The Republic of Chile
+  de: Republik Chile
+capitals:
+- name:
+    en: Santiago de Chile
+    de: Santiago de Chile
+  role: capital
+  wikidata: Q2887
+  lat: -33.4375
+  lon: -70.65
+borders:
+- '010'
+- '026'
+- '174'
+regions:
+- Americas
+- Latin America and the Caribbean
+- South America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Chile
+  de: https://de.wikipedia.org/wiki/Chile

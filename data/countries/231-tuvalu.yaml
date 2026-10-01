@@ -1,0 +1,23 @@
+id: '231'
+iso2: TV
+iso3: TUV
+wikidata: Q672
+status: sovereign
+name:
+  en: Tuvalu
+  de: Tuvalu
+capitals:
+- name:
+    en: Funafuti
+    de: Funafuti
+  role: capital
+  wikidata: Q34126
+  lat: -8.50478
+  lon: 179.11736
+borders: []
+regions:
+- Oceania
+- Polynesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Tuvalu
+  de: https://de.wikipedia.org/wiki/Tuvalu

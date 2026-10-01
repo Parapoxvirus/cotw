@@ -1,0 +1,27 @@
+id: '140'
+iso2: MU
+iso3: MUS
+wikidata: Q1027
+status: sovereign
+name:
+  en: Mauritius
+  de: Mauritius
+formal_name:
+  en: The Republic of Mauritius
+  de: Republik Mauritius
+capitals:
+- name:
+    en: Port Louis
+    de: Port Louis
+  role: capital
+  wikidata: Q3929
+  lat: -20.16194
+  lon: 57.49889
+borders: []
+regions:
+- Africa
+- Sub-Saharan Africa
+- Eastern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Mauritius
+  de: https://de.wikipedia.org/wiki/Mauritius

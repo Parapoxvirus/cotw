@@ -1,0 +1,24 @@
+id: '019'
+iso2: BB
+iso3: BRB
+wikidata: Q244
+status: sovereign
+name:
+  en: Barbados
+  de: Barbados
+capitals:
+- name:
+    en: Bridgetown
+    de: Bridgetown
+  role: capital
+  wikidata: Q36168
+  lat: 13.0975
+  lon: -59.61667
+borders: []
+regions:
+- Americas
+- Latin America and the Caribbean
+- Caribbean
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Barbados
+  de: https://de.wikipedia.org/wiki/Barbados

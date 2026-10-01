@@ -1,0 +1,31 @@
+id: '218'
+iso2: SY
+iso3: SYR
+wikidata: Q858
+status: sovereign
+name:
+  en: Syria
+  de: Syrien
+formal_name:
+  en: Syrian Arab Republic
+  de: Arabische Republik Syrien
+capitals:
+- name:
+    en: Damascus
+    de: Damaskus
+  role: capital
+  wikidata: Q3766
+  lat: 33.513
+  lon: 36.292
+borders:
+- '106'
+- '109'
+- '114'
+- '123'
+- '228'
+regions:
+- Asia
+- Western Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Syria
+  de: https://de.wikipedia.org/wiki/Syrien

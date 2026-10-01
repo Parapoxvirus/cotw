@@ -1,0 +1,25 @@
+id: '008'
+iso2: AI
+iso3: AIA
+wikidata: Q25228
+status: dependency
+dependency_of: '235'
+name:
+  en: Anguilla
+  de: Anguilla
+capitals:
+- name:
+    en: The Valley
+    de: The Valley
+  role: capital
+  wikidata: Q30994
+  lat: 18.22083
+  lon: -63.05167
+borders: []
+regions:
+- Americas
+- Latin America and the Caribbean
+- Caribbean
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Anguilla
+  de: https://de.wikipedia.org/wiki/Anguilla

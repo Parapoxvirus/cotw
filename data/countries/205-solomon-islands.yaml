@@ -1,0 +1,26 @@
+id: '205'
+iso2: SB
+iso3: SLB
+wikidata: Q685
+status: sovereign
+name:
+  en: Solomon Islands
+  de: Salomonen
+formal_name:
+  en: The Solomon Islands
+  de: Salomoneninseln
+capitals:
+- name:
+    en: Honiara
+    de: Honiara
+  role: capital
+  wikidata: Q40921
+  lat: -9.43333
+  lon: 159.95
+borders: []
+regions:
+- Oceania
+- Melanesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Solomon_Islands
+  de: https://de.wikipedia.org/wiki/Salomonen

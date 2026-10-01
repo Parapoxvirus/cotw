@@ -1,0 +1,30 @@
+id: '065'
+iso2: EG
+iso3: EGY
+wikidata: Q79
+status: sovereign
+name:
+  en: Egypt
+  de: Ägypten
+formal_name:
+  en: The Arab Republic of Egypt
+  de: Arabische Republik Ägypten
+capitals:
+- name:
+    en: Cairo
+    de: Kairo
+  role: capital
+  wikidata: Q85
+  lat: 30.04444
+  lon: 31.23583
+borders:
+- '109'
+- '126'
+- '170'
+- '213'
+regions:
+- Africa
+- Northern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Egypt
+  de: https://de.wikipedia.org/wiki/Ägypten

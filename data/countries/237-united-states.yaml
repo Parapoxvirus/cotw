@@ -1,0 +1,29 @@
+id: '237'
+iso2: US
+iso3: USA
+wikidata: Q30
+status: sovereign
+name:
+  en: United States, The
+  de: Vereinigte Staaten
+formal_name:
+  en: The United States of America
+  de: Vereinigte Staaten von Amerika
+capitals:
+- name:
+    en: Washington, D.C.
+    de: Washington, D.C.
+  role: capital
+  wikidata: Q61
+  lat: 38.895
+  lon: -77.03667
+borders:
+- '040'
+- '056'
+- '142'
+regions:
+- Americas
+- Northern America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/United_States
+  de: https://de.wikipedia.org/wiki/Vereinigte_Staaten

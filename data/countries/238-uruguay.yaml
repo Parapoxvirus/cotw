@@ -1,0 +1,29 @@
+id: '238'
+iso2: UY
+iso3: URY
+wikidata: Q77
+status: sovereign
+name:
+  en: Uruguay
+  de: Uruguay
+formal_name:
+  en: The Oriental Republic of Uruguay
+  de: Republik Östlich des Uruguay
+capitals:
+- name:
+    en: Montevideo
+    de: Montevideo
+  role: capital
+  wikidata: Q1335
+  lat: -34.90592
+  lon: -56.19131
+borders:
+- '010'
+- '031'
+regions:
+- Americas
+- Latin America and the Caribbean
+- South America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Uruguay
+  de: https://de.wikipedia.org/wiki/Uruguay

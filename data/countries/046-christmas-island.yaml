@@ -1,0 +1,27 @@
+id: '046'
+iso2: CX
+iso3: CXR
+wikidata: Q31063
+status: dependency
+dependency_of: '013'
+name:
+  en: Christmas Island
+  de: Weihnachtsinsel
+formal_name:
+  en: Territory of Christmas Island
+  de: Territorium der Weihnachtsinsel
+capitals:
+- name:
+    en: Flying Fish Cove
+    de: Flying Fish Cove
+  role: capital
+  wikidata: Q30980
+  lat: -10.42167
+  lon: 105.67806
+borders: []
+regions:
+- Oceania
+- Australia and New Zealand
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Christmas_Island
+  de: https://de.wikipedia.org/wiki/Weihnachtsinsel_(Australien)

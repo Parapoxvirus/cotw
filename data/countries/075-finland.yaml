@@ -1,0 +1,29 @@
+id: '075'
+iso2: FI
+iso3: FIN
+wikidata: Q33
+status: sovereign
+name:
+  en: Finland
+  de: Finnland
+formal_name:
+  en: The Republic of Finland
+  de: Republik Finnland
+capitals:
+- name:
+    en: Helsinki
+    de: Helsinki
+  role: capital
+  wikidata: Q1757
+  lat: 60.17083
+  lon: 24.9375
+borders:
+- '166'
+- '184'
+- '216'
+regions:
+- Europe
+- Northern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Finland
+  de: https://de.wikipedia.org/wiki/Finnland

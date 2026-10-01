@@ -1,0 +1,32 @@
+id: '103'
+iso2: IN
+iso3: IND
+wikidata: Q668
+status: sovereign
+name:
+  en: India
+  de: Indien
+formal_name:
+  en: The Republic of India
+  de: Republik Indien
+capitals:
+- name:
+    en: New Delhi
+    de: Neu-Delhi
+  role: capital
+  wikidata: Q987
+  lat: 28.61389
+  lon: 77.20889
+borders:
+- '018'
+- '025'
+- '045'
+- '151'
+- '154'
+- '168'
+regions:
+- Asia
+- Southern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/India
+  de: https://de.wikipedia.org/wiki/Indien

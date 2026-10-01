@@ -1,0 +1,24 @@
+id: '088'
+iso2: GD
+iso3: GRD
+wikidata: Q769
+status: sovereign
+name:
+  en: Grenada
+  de: Grenada
+capitals:
+- name:
+    en: St. George’s
+    de: St. George’s
+  role: capital
+  wikidata: Q41547
+  lat: 12.0525
+  lon: -61.75306
+borders: []
+regions:
+- Americas
+- Latin America and the Caribbean
+- Caribbean
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Grenada
+  de: https://de.wikipedia.org/wiki/Grenada

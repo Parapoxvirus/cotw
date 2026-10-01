@@ -1,0 +1,26 @@
+id: '169'
+iso2: PW
+iso3: PLW
+wikidata: Q695
+status: sovereign
+name:
+  en: Palau
+  de: Palau
+formal_name:
+  en: The Republic of Palau
+  de: Republik Palau
+capitals:
+- name:
+    en: Ngerulmud
+    de: Ngerulmud
+  role: capital
+  wikidata: Q515229
+  lat: 7.50056
+  lon: 134.62417
+borders: []
+regions:
+- Oceania
+- Micronesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Palau
+  de: https://de.wikipedia.org/wiki/Palau

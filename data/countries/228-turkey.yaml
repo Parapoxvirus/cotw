@@ -1,0 +1,34 @@
+id: '228'
+iso2: TR
+iso3: TUR
+wikidata: Q43
+status: sovereign
+name:
+  en: Turkey
+  de: Türkei
+formal_name:
+  en: The Republic of Turkey
+  de: Republik Türkei
+capitals:
+- name:
+    en: Ankara
+    de: Ankara
+  role: capital
+  wikidata: Q3640
+  lat: 39.93576
+  lon: 32.83869
+borders:
+- '011'
+- '015'
+- '034'
+- '082'
+- '086'
+- '105'
+- '106'
+- '218'
+regions:
+- Asia
+- Western Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Turkey
+  de: https://de.wikipedia.org/wiki/Türkei

@@ -1,0 +1,27 @@
+id: '194'
+iso2: SM
+iso3: SMR
+wikidata: Q238
+status: sovereign
+name:
+  en: San Marino
+  de: San Marino
+formal_name:
+  en: The Republic of San Marino
+  de: Republik San Marino
+capitals:
+- name:
+    en: San Marino
+    de: San Marino
+  role: capital
+  wikidata: Q1848
+  lat: 43.93201
+  lon: 12.44845
+borders:
+- '110'
+regions:
+- Europe
+- Southern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/San_Marino
+  de: https://de.wikipedia.org/wiki/San_Marino

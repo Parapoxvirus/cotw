@@ -1,0 +1,27 @@
+id: '172'
+iso2: PG
+iso3: PNG
+wikidata: Q691
+status: sovereign
+name:
+  en: Papua New Guinea
+  de: Papua-Neuguinea
+formal_name:
+  en: The Independent State of Papua New Guinea
+  de: Unabhängiger Staat Papua-Neuguinea
+capitals:
+- name:
+    en: Port Moresby
+    de: Port Moresby
+  role: capital
+  wikidata: Q36526
+  lat: -9.47889
+  lon: 147.14944
+borders:
+- '104'
+regions:
+- Oceania
+- Melanesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Papua_New_Guinea
+  de: https://de.wikipedia.org/wiki/Papua-Neuguinea

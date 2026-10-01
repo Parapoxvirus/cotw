@@ -1,0 +1,28 @@
+id: '141'
+iso2: YT
+iso3: MYT
+wikidata: Q17063
+status: dependency
+dependency_of: '076'
+name:
+  en: Mayotte
+  de: Mayotte
+formal_name:
+  en: Department of Mayotte
+  de: Departement Mayotte
+capitals:
+- name:
+    en: Mamoudzou
+    de: Mamoudzou
+  role: capital
+  wikidata: Q132676
+  lat: -12.78139
+  lon: 45.23167
+borders: []
+regions:
+- Africa
+- Sub-Saharan Africa
+- Eastern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Mayotte
+  de: https://de.wikipedia.org/wiki/Mayotte

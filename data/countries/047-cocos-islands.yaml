@@ -1,0 +1,24 @@
+id: '047'
+iso2: CC
+iso3: CCK
+wikidata: Q36004
+status: dependency
+dependency_of: '013'
+name:
+  en: Cocos Islands / Keeling Islands
+  de: Kokosinseln / Keelinginseln
+capitals:
+- name:
+    en: West Island
+    de: West Island
+  role: capital
+  wikidata: Q48675
+  lat: -12.18694
+  lon: 96.82833
+borders: []
+regions:
+- Oceania
+- Australia and New Zealand
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Cocos_(Keeling)_Islands
+  de: https://de.wikipedia.org/wiki/Kokosinseln

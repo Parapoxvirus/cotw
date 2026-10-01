@@ -1,0 +1,25 @@
+id: '138'
+iso2: MQ
+iso3: MTQ
+wikidata: Q17054
+status: dependency
+dependency_of: '076'
+name:
+  en: Martinique
+  de: Martinique
+capitals:
+- name:
+    en: Fort-de-France
+    de: Fort-de-France
+  role: capital
+  wikidata: Q81621
+  lat: 14.6
+  lon: -61.06667
+borders: []
+regions:
+- Americas
+- Latin America and the Caribbean
+- Caribbean
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Martinique
+  de: https://de.wikipedia.org/wiki/Martinique

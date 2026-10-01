@@ -1,0 +1,25 @@
+id: '182'
+iso2: RE
+iso3: REU
+wikidata: Q17070
+status: dependency
+dependency_of: '076'
+name:
+  en: Réunion
+  de: Réunion
+capitals:
+- name:
+    en: Saint-Denis
+    de: Saint-Denis
+  role: capital
+  wikidata: Q47045
+  lat: -20.87889
+  lon: 55.44806
+borders: []
+regions:
+- Africa
+- Sub-Saharan Africa
+- Eastern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Réunion
+  de: https://de.wikipedia.org/wiki/Réunion

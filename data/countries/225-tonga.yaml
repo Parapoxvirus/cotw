@@ -1,0 +1,26 @@
+id: '225'
+iso2: TO
+iso3: TON
+wikidata: Q678
+status: sovereign
+name:
+  en: Tonga
+  de: Tonga
+formal_name:
+  en: The Kingdom of Tonga
+  de: Königreich Tonga
+capitals:
+- name:
+    en: Nukuʻalofa
+    de: Nukuʻalofa
+  role: capital
+  wikidata: Q38834
+  lat: -21.13434
+  lon: -175.20181
+borders: []
+regions:
+- Oceania
+- Polynesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Tonga
+  de: https://de.wikipedia.org/wiki/Tonga

@@ -1,0 +1,31 @@
+id: '185'
+iso2: RW
+iso3: RWA
+wikidata: Q1037
+status: sovereign
+name:
+  en: Rwanda
+  de: Ruanda
+formal_name:
+  en: The Republic of Rwanda
+  de: Republik Ruanda
+capitals:
+- name:
+    en: Kigali
+    de: Kigali
+  role: capital
+  wikidata: Q3859
+  lat: -1.9525
+  lon: 30.115
+borders:
+- '036'
+- '050'
+- '220'
+- '232'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Eastern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Rwanda
+  de: https://de.wikipedia.org/wiki/Ruanda

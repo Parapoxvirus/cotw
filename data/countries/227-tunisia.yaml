@@ -1,0 +1,28 @@
+id: '227'
+iso2: TN
+iso3: TUN
+wikidata: Q948
+status: sovereign
+name:
+  en: Tunisia
+  de: Tunesien
+formal_name:
+  en: The Republic of Tunisia
+  de: Tunesische Republik
+capitals:
+- name:
+    en: Tunis
+    de: Tunis
+  role: capital
+  wikidata: Q3572
+  lat: 36.80083
+  lon: 10.18
+borders:
+- '004'
+- '126'
+regions:
+- Africa
+- Northern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Tunisia
+  de: https://de.wikipedia.org/wiki/Tunesien

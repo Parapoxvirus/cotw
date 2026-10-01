@@ -1,0 +1,24 @@
+id: '190'
+iso2: PM
+iso3: SPM
+wikidata: Q34617
+status: dependency
+dependency_of: '076'
+name:
+  en: Saint Pierre and Miquelon
+  de: Saint-Pierre und Miquelon
+capitals:
+- name:
+    en: Saint-Pierre
+    de: Saint-Pierre
+  role: capital
+  wikidata: Q185678
+  lat: 46.77778
+  lon: -56.17778
+borders: []
+regions:
+- Americas
+- Northern America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Saint_Pierre_and_Miquelon
+  de: https://de.wikipedia.org/wiki/Saint-Pierre_und_Miquelon

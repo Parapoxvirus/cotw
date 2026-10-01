@@ -1,0 +1,48 @@
+id: '220'
+iso2: TZ
+iso3: TZA
+wikidata: Q924
+status: sovereign
+name:
+  en: Tanzania
+  de: Tansania
+formal_name:
+  en: The United Republic of Tanzania
+  de: Vereinigte Republik Tansania
+capitals:
+- name:
+    en: Dodoma
+    de: Dodoma
+  label:
+    en: capital
+    de: Hauptstadt
+  role: capital
+  wikidata: Q3866
+  lat: -6.1835
+  lon: 35.746
+- name:
+    en: Dar es Salaam
+    de: Daressalam
+  label:
+    en: seat of government
+    de: Regierungssitz
+  role: seat_of_government
+  wikidata: Q1960
+  lat: -6.81611
+  lon: 39.28028
+borders:
+- '036'
+- '050'
+- '116'
+- '132'
+- '150'
+- '185'
+- '232'
+- '247'
+regions:
+- Africa
+- Sub-Saharan Africa
+- Eastern Africa
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Tanzania
+  de: https://de.wikipedia.org/wiki/Tansania

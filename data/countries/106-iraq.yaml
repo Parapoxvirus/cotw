@@ -1,0 +1,32 @@
+id: '106'
+iso2: IQ
+iso3: IRQ
+wikidata: Q796
+status: sovereign
+name:
+  en: Iraq
+  de: Irak
+formal_name:
+  en: The Republic of Iraq
+  de: Republik Irak
+capitals:
+- name:
+    en: Baghdad
+    de: Bagdad
+  role: capital
+  wikidata: Q1530
+  lat: 33.31528
+  lon: 44.36611
+borders:
+- '105'
+- '114'
+- '119'
+- '196'
+- '218'
+- '228'
+regions:
+- Asia
+- Western Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Iraq
+  de: https://de.wikipedia.org/wiki/Irak

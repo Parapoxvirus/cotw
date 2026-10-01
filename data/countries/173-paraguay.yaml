@@ -1,0 +1,30 @@
+id: '173'
+iso2: PY
+iso3: PRY
+wikidata: Q733
+status: sovereign
+name:
+  en: Paraguay
+  de: Paraguay
+formal_name:
+  en: The Republic of Paraguay
+  de: Republik Paraguay
+capitals:
+- name:
+    en: Asunción
+    de: Asunción
+  role: capital
+  wikidata: Q2933
+  lat: -25.28
+  lon: -57.63444
+borders:
+- '010'
+- '026'
+- '031'
+regions:
+- Americas
+- Latin America and the Caribbean
+- South America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Paraguay
+  de: https://de.wikipedia.org/wiki/Paraguay

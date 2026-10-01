@@ -1,0 +1,25 @@
+id: '072'
+iso2: FK
+iso3: FLK
+wikidata: Q9648
+status: dependency
+dependency_of: '235'
+name:
+  en: Falkland Islands
+  de: Falklandinseln
+capitals:
+- name:
+    en: Stanley
+    de: Stanley
+  role: capital
+  wikidata: Q12245
+  lat: -51.69386
+  lon: -57.84956
+borders: []
+regions:
+- Americas
+- Latin America and the Caribbean
+- South America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Falkland_Islands
+  de: https://de.wikipedia.org/wiki/Falklandinseln

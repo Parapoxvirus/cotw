@@ -1,0 +1,31 @@
+id: '151'
+iso2: MM
+iso3: MMR
+wikidata: Q836
+status: sovereign
+name:
+  en: Myanmar (Burma)
+  de: Myanmar (Birma, Burma)
+formal_name:
+  en: The Republic of the Union of Myanmar
+  de: Republik der Union Myanmar
+capitals:
+- name:
+    en: Naypyidaw
+    de: Naypyidaw
+  role: capital
+  wikidata: Q37400
+  lat: 19.7475
+  lon: 96.115
+borders:
+- '018'
+- '045'
+- '103'
+- '121'
+- '221'
+regions:
+- Asia
+- South-eastern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Myanmar
+  de: https://de.wikipedia.org/wiki/Myanmar

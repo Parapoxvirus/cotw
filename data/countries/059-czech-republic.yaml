@@ -1,0 +1,30 @@
+id: '059'
+iso2: CZ
+iso3: CZE
+wikidata: Q213
+status: sovereign
+name:
+  en: Czech Republic
+  de: Tschechien
+formal_name:
+  en: The Czech Republic
+  de: Tschechische Republik
+capitals:
+- name:
+    en: Prague
+    de: Prag
+  role: capital
+  wikidata: Q1085
+  lat: 50.0875
+  lon: 14.42139
+borders:
+- '014'
+- '083'
+- '177'
+- '203'
+regions:
+- Europe
+- Eastern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Czech_Republic
+  de: https://de.wikipedia.org/wiki/Tschechien

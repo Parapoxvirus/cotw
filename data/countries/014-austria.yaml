@@ -1,0 +1,34 @@
+id: '014'
+iso2: AT
+iso3: AUT
+wikidata: Q40
+status: sovereign
+name:
+  en: Austria
+  de: Österreich
+formal_name:
+  en: The Republic of Austria
+  de: Republik Österreich
+capitals:
+- name:
+    en: Vienna
+    de: Wien
+  role: capital
+  wikidata: Q1741
+  lat: 48.20833
+  lon: 16.3725
+borders:
+- '059'
+- '083'
+- '101'
+- '110'
+- '127'
+- '203'
+- '204'
+- '217'
+regions:
+- Europe
+- Western Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Austria
+  de: https://de.wikipedia.org/wiki/Österreich

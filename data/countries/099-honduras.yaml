@@ -1,0 +1,30 @@
+id: '099'
+iso2: HN
+iso3: HND
+wikidata: Q783
+status: sovereign
+name:
+  en: Honduras
+  de: Honduras
+formal_name:
+  en: The Republic of Honduras
+  de: Republik Honduras
+capitals:
+- name:
+    en: Tegucigalpa
+    de: Tegucigalpa
+  role: capital
+  wikidata: Q3238
+  lat: 14.10578
+  lon: -87.20471
+borders:
+- '066'
+- '091'
+- '158'
+regions:
+- Americas
+- Latin America and the Caribbean
+- Central America
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Honduras
+  de: https://de.wikipedia.org/wiki/Honduras

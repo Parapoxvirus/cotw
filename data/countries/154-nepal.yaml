@@ -1,0 +1,28 @@
+id: '154'
+iso2: NP
+iso3: NPL
+wikidata: Q837
+status: sovereign
+name:
+  en: Nepal
+  de: Nepal
+formal_name:
+  en: The Federal Democratic Republic of Nepal
+  de: Demokratische Bundesrepublik Nepal
+capitals:
+- name:
+    en: Kathmandu
+    de: Kathmandu
+  role: capital
+  wikidata: Q3037
+  lat: 27.71
+  lon: 85.32
+borders:
+- '045'
+- '103'
+regions:
+- Asia
+- Southern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Nepal
+  de: https://de.wikipedia.org/wiki/Nepal

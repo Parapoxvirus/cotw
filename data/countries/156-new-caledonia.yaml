@@ -1,0 +1,24 @@
+id: '156'
+iso2: NC
+iso3: NCL
+wikidata: Q33788
+status: dependency
+dependency_of: '076'
+name:
+  en: New Caledonia
+  de: Neukaledonien
+capitals:
+- name:
+    en: Nouméa
+    de: Nouméa
+  role: capital
+  wikidata: Q9733
+  lat: -22.26667
+  lon: 166.45
+borders: []
+regions:
+- Oceania
+- Melanesia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/New_Caledonia
+  de: https://de.wikipedia.org/wiki/Neukaledonien

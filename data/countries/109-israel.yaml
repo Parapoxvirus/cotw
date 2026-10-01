@@ -1,0 +1,34 @@
+id: '109'
+iso2: IL
+iso3: ISR
+wikidata: Q801
+status: sovereign
+name:
+  en: Israel
+  de: Israel
+formal_name:
+  en: The State of Israel
+  de: Staat Israel
+capitals:
+- name:
+    en: Jerusalem
+    de: Jerusalem
+  label:
+    en: disputed
+    de: umstritten
+  role: capital
+  wikidata: Q1218
+  lat: 31.77668
+  lon: 35.23416
+borders:
+- '065'
+- '114'
+- '123'
+- '170'
+- '218'
+regions:
+- Asia
+- Western Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Israel
+  de: https://de.wikipedia.org/wiki/Israel

@@ -1,0 +1,4 @@
+# Visual map exceptions only; capital data and card text stay in data/countries/.
+'098':
+  map2_capital_marker: false
+  reason: Vatican City is itself the capital; omit the map-2 marker so it does not cover the tiny state's land. The capital remains in card text.

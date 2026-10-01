@@ -1,0 +1,39 @@
+id: '133'
+iso2: MY
+iso3: MYS
+wikidata: Q833
+status: sovereign
+name:
+  en: Malaysia
+  de: Malaysia
+capitals:
+- name:
+    en: Kuala Lumpur
+    de: Kuala Lumpur
+  label:
+    en: capital
+    de: Hauptstadt
+  role: capital
+  wikidata: Q1865
+  lat: 3.14778
+  lon: 101.69528
+- name:
+    en: Putrajaya
+    de: Putrajaya
+  label:
+    en: seat of government
+    de: Regierungssitz
+  role: seat_of_government
+  wikidata: Q182378
+  lat: 2.93
+  lon: 101.69
+borders:
+- '033'
+- '104'
+- '221'
+regions:
+- Asia
+- South-eastern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Malaysia
+  de: https://de.wikipedia.org/wiki/Malaysia

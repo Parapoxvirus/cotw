@@ -1,0 +1,24 @@
+id: '098'
+iso2: VA
+iso3: VAT
+wikidata: Q237
+status: sovereign
+name:
+  en: Holy See, The / Vatican City State
+  de: Staat Vatikanstadt / Staat der Vatikanstadt
+capitals:
+- name:
+    en: Vatican City
+    de: Vatikanstadt
+  role: capital
+  wikidata: Q237
+  lat: 41.904
+  lon: 12.453
+borders:
+- '110'
+regions:
+- Europe
+- Southern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Vatican_City
+  de: https://de.wikipedia.org/wiki/Vatikanstadt

@@ -1,0 +1,26 @@
+id: '136'
+iso2: MT
+iso3: MLT
+wikidata: Q233
+status: sovereign
+name:
+  en: Malta
+  de: Malta
+formal_name:
+  en: The Republic of Malta
+  de: Republik Malta
+capitals:
+- name:
+    en: Valletta
+    de: Valletta
+  role: capital
+  wikidata: Q23800
+  lat: 35.89778
+  lon: 14.5125
+borders: []
+regions:
+- Europe
+- Southern Europe
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Malta
+  de: https://de.wikipedia.org/wiki/Malta

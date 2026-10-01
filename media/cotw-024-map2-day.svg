@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+<style>.a{fill:#68A3DE}.b{fill:#86B4E6}.c{fill:none;stroke:#B9D4F0;stroke-width:0.9}.d{fill:#DAE6AF;stroke:#2D6399;stroke-width:0.6;stroke-linejoin:round}.e{fill:#A6C295;stroke:#2D6399;stroke-width:0.6;stroke-linejoin:round}.f{fill:#487D29;stroke:#2D6399;stroke-width:0.6;stroke-linejoin:round}.g{fill:none;stroke:#D7263D;stroke-width:4}.h{fill:#FFFFFF;stroke:#1F2328;stroke-width:2.5}.i{fill:none;stroke:#1F2328;stroke-width:9.4;stroke-linecap:round;stroke-linejoin:round}.j{fill:none;stroke:#FFFFFF;stroke-width:4.4;stroke-linecap:round;stroke-linejoin:round}</style>
+<rect class="a" width="1000" height="1000"/>
+<path class="b" d="M-10 -10l1020 0 0 1020-1020 0z"/>
+<path class="c" d="M-10 1010l1020 0 0-1020-1020 0z"/>
+<path class="f" d="M345 650l-33 5-32-4-10-22 11-8 30 8 19-7 12-4 15 14 27 13-9 10zM848 332l-47-11-16 18-21-28-59 52 11 35 36 13 59 22-72 34-65 45-82 62-50 31-32 43-67 63-91 46-87 34-53-2-41-1-54-37-23-58-11-45 33 15-5-30 12-39-18-41 26 10 12-24 16 24 22 23-31 27-10 47-8 14 18 14 63 8 0 13-50-5-4 27 23 32 38 1 49-21 14-29 32-3 58-36 78-47 6-15-54 6-38-16-30-43 11-15 108 17 64-31 37-11 38-43 15 4 61-3 16-24 30-27-27-27-40 16-29 21-7 24-16-4-8-18 19-44 50-36 31-49 55-38 74-63 100 85-27 37-2 36-16-12z"/>
+<circle class="h" cx="443.4" cy="596.8" r="11"/>
+</svg>

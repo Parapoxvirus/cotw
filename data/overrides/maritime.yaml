@@ -1,0 +1,32 @@
+# Manual decisions for Marine Regions polygons (keyed by mrgid). Every entry has a reason.
+#
+# aliases: territory codes that are not COTW entries but fold into one (same fold as the
+#          Natural Earth land in tools/cotw/naturalearth.py).
+# assign:  overlapping claims without a territory code → the de facto administrator
+#          (DECISIONS.md A2), or a zone that belongs to a different COTW entity.
+# exclude: polygons that are not drawn at all.
+aliases:
+  UMI: {to: USA, reason: "US Minor Outlying Islands are folded into the United States (Natural Earth map units Baker, Howland, Jarvis, Johnston, Kingman, Midway, Palmyra, Wake)."}
+  ASC: {to: SHN, reason: "Ascension is part of the entry Saint Helena, Ascension and Tristan da Cunha."}
+  TAA: {to: SHN, reason: "Tristan da Cunha is part of the entry Saint Helena, Ascension and Tristan da Cunha."}
+assign:
+  48945: {to: ATF, reason: "Glorioso Islands: administered by France as part of the French Southern and Antarctic Lands (Scattered Islands)."}
+  48946: {to: ATF, reason: "Tromelin: administered by France as part of the French Southern and Antarctic Lands (Scattered Islands)."}
+  48947: {to: IRN, reason: "Abu Musa and the Tunbs: administered by Iran."}
+  48950: {to: RUS, reason: "Southern Kuril Islands: administered by Russia."}
+  48951: {to: USA, reason: "Navassa Island: administered by the United States."}
+  48954: {to: JPN, reason: "Senkaku Islands: administered by Japan."}
+  48955: {to: KOR, reason: "Liancourt Rocks: administered by South Korea."}
+  26582: {to: EGY, reason: "Halaib Triangle: administered by Egypt."}
+  48997: {to: ESP, reason: "Chafarinas Islands: Spanish plazas de soberanía."}
+  48999: {to: ESP, reason: "Peñón de Vélez de la Gomera: Spanish plaza de soberanía."}
+  49000: {to: ESP, reason: "Melilla: Spanish autonomous city."}
+  49001: {to: ESP, reason: "Alhucemas Islands: Spanish plazas de soberanía."}
+  49002: {to: ESP, reason: "Ceuta: Spanish autonomous city."}
+  62589: {to: IOT, reason: "Chagos Archipelago EEZ: listed as Mauritian in Marine Regions v12; the land is the COTW entity British Indian Ocean Territory (Natural Earth, Wikidata), so its zone goes with it. Revisit once the UK–Mauritius treaty is in force."}
+  62591: {to: IOT, reason: "Chagos Archipelago 12 nm, same as the EEZ."}
+exclude:
+  49003: "Overlapping claim: South China Sea (nine-dash line). Not an EEZ anybody administers; drawing it for China would show a claim, not the de facto situation."
+  48948: "Matthew and Hunter Islands: uninhabited, claimed by France (New Caledonia) and Vanuatu, no settled administration."
+  48956: "Doumeira Islands: disputed between Eritrea and Djibouti, no settled administration."
+  48998: "Perejil Island: uninhabited, status quo agreement of 2002 (neither Spain nor Morocco occupies it)."

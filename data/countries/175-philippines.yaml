@@ -1,0 +1,26 @@
+id: '175'
+iso2: PH
+iso3: PHL
+wikidata: Q928
+status: sovereign
+name:
+  en: Philippines, The
+  de: Philippinen
+formal_name:
+  en: The Republic of the Philippines
+  de: Republik der Philippinen
+capitals:
+- name:
+    en: Manila
+    de: Manila
+  role: capital
+  wikidata: Q1461
+  lat: 14.59583
+  lon: 120.97722
+borders: []
+regions:
+- Asia
+- South-eastern Asia
+wikipedia:
+  en: https://en.wikipedia.org/wiki/Philippines
+  de: https://de.wikipedia.org/wiki/Philippinen
