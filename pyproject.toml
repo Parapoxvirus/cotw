@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cotw"
-version = "1.0.0"
+version = "1.0.1"
 description = "Countries of the World (COTW): country database and Anki deck build pipeline"
 readme = "README.md"
 license = "CC0-1.0"

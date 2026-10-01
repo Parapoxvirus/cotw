@@ -125,8 +125,7 @@ help section.
   swallows the space bar that shows the answer.
 - **Help** per language (EN adapted from v3, DE written in German; it also explains the
   light-blue economic zone and the 12 nm line on the maps), with the AnkiWeb page from
-  `data/deck.yaml` (default: the v3 pages; update after the upload and rebuild) and the
-  contact `info@feldbuch.com`.
+  `data/deck.yaml` and the contact `info@feldbuch.com`.
 - **Night mode follows Anki only:** its `.nightMode` class (desktop, AnkiMobile) or
   `.night_mode` (AnkiDroid, older clients) on the card, body or html. The system color scheme
   is ignored: with Anki set to light and the OS dark, the cards stayed dark in rc1. No

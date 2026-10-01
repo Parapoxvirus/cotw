@@ -1,29 +1,43 @@
 # Countries of the World (COTW)
 
-Build pipeline for the **Countries of the World (COTW)** Anki deck: a single country
-database generates language-specific decks (EN, DE, …) that share one set of
-language-neutral media (flags, maps, globe).
+Anki flashcards for every country and territory of the world: capitals, flags, vector maps
+and an interactive globe, in English and German.
 
-Status: all five steps of [`docs/ROADMAP.md`](docs/ROADMAP.md) are done; the last one, a
-weekly Wikidata change check, keeps the data current ([`docs/MONITORING.md`](docs/MONITORING.md)).
-Design in [`docs/DECISIONS.md`](docs/DECISIONS.md).
+- **248 entries:** 195 sovereign states, 49 dependent territories (Greenland, Puerto Rico,
+  Åland, …) and 4 disputed areas (Kosovo, Palestine, Taiwan, Western Sahara).
+- **Five recommended card types:** country → capital, capital → country, country → flag,
+  flag → country, map → country. **Five extras** in a subdeck you can switch off: country →
+  map, ISO code in both directions, bordering countries in both directions.
+- **Two vector maps per entry:** where the country lies and where its capital is, sharp at
+  any size, with the exclusive economic zone and territorial waters.
+- **An interactive globe** on the back of every card: drag, zoom, and tap a country to see
+  its name.
+- **Full info on the back:** formal name, ISO codes, region, neighbors and a Wikipedia link.
+- **Day and night mode**, following Anki's setting.
+- **Tags by region and status** (`COTW-EN::Europe::Western-Europe`, `COTW-EN::Status::Dependency`,
+  …) for filtered decks, e.g. only Africa.
+- **English and German side by side:** install one package or both; they share the media and
+  never touch each other's cards.
+- **Up to date:** the data comes from Wikidata and is checked for changes every week.
+- **Public domain** ([CC0 1.0](LICENSE)), free to use, share and adapt.
 
-## The decks
+## Screenshots
 
-```bash
-.venv/bin/python -m cotw build-deck      # build/COTW-EN.apkg, build/COTW-DE.apkg, build/deck-preview.html
-.venv/bin/python -m cotw build-deck --only RU,KR,ZA --out build/test   # test packages with a few entries
-```
+| Front | Back with full info | Night mode | Globe |
+|---|---|---|---|
+| <img src="docs/screenshots/en-flag-front-day.png" width="200" alt="Front of a Flag → Country card"> | <img src="docs/screenshots/en-flag-back-full-info-day.png" width="200" alt="Back of the card with full info"> | <img src="docs/screenshots/de-flag-back-full-info-night.png" width="200" alt="Back of the German card in night mode"> | <img src="docs/screenshots/en-globe-day.gif" width="200" alt="Rotating the globe"> |
 
-- **`COTW-EN.apkg`**: deck *Countries of the World*, note type *COTW (EN)*, English only.
-- **`COTW-DE.apkg`**: deck *Länder der Welt*, note type *COTW (DE)*, German only.
+More in [`docs/screenshots/`](docs/screenshots/): every shot in English and German, day and night.
 
-Each has 248 entries × 10 card types (capital, flag, map, ISO code and bordering countries, both
-directions) with two maps and an interactive globe. The five recommended card types sit in
-the main deck, the five extras in the subdeck `…::Extras`; suspend that subdeck's cards in the
-Browser to switch them off. **Installing both** is fine: import one, then the other (any
-order) with *File → Import*. They share the media files and never touch each other's notes,
-so each can be updated later on its own. Details: [`docs/DECK.md`](docs/DECK.md).
+## Install
+
+- **AnkiWeb:** [English](https://ankiweb.net/shared/info/1365662043) · [Deutsch](https://ankiweb.net/shared/info/1416521286)
+- **Or download** `COTW-EN.apkg` / `COTW-DE.apkg` from the
+  [latest release](https://github.com/Parapoxvirus/cotw/releases/latest) and open it in Anki
+  (*File → Import*).
+
+To skip the extras: open the Browser, click the deck *Countries of the World::Extras*
+(*Länder der Welt::Extras*), select all cards and choose *Suspend*.
 
 ## Borders
 
@@ -33,6 +47,23 @@ Crimea, for example, is shown as Russian, not Ukrainian, and the disputed areas 
 (Kashmir, Aksai Chin, Arunachal Pradesh) follow the lines of actual control. Overlapping
 maritime claims follow the administering party too ([`docs/MAPS.md`](docs/MAPS.md)).
 The deck makes no political statement; it follows the supplied data strictly.
+
+## Building the decks
+
+The rest of this page is for development. A single country database generates the
+language-specific decks (EN, DE, …), which share one set of language-neutral media (flags,
+maps, globe). Design in [`docs/DECISIONS.md`](docs/DECISIONS.md); a weekly Wikidata change
+check keeps the data current ([`docs/MONITORING.md`](docs/MONITORING.md)).
+
+```bash
+.venv/bin/python -m cotw build-deck      # build/COTW-EN.apkg, build/COTW-DE.apkg, build/deck-preview.html
+.venv/bin/python -m cotw build-deck --only RU,KR,ZA --out build/test   # test packages with a few entries
+```
+
+- **`COTW-EN.apkg`**: deck *Countries of the World*, note type *COTW (EN)*, English only.
+- **`COTW-DE.apkg`**: deck *Länder der Welt*, note type *COTW (DE)*, German only.
+
+Card types, fields, tags, media and updates: [`docs/DECK.md`](docs/DECK.md).
 
 ## Layout
 
