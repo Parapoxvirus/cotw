@@ -21,15 +21,15 @@ and an interactive globe, in English and German.
 - **Up to date:** the data comes from Wikidata and is checked for changes every week.
 - **Public domain** ([CC0 1.0](LICENSE)), free to use, share and adapt.
 
-## Screenshots (example with flag card)
+## Screenshots
 
-| Front | Back with full info | Night mode | Globe |
-|---|---|---|---|
-| <img src="docs/screenshots/en-flag-front-day.png" width="200" alt="Front of a Flag → Country card"> | <img src="docs/screenshots/en-flag-back-full-info-day.png" width="200" alt="Back of the card with full info"> | <img src="docs/screenshots/de-flag-back-full-info-night.png" width="200" alt="Back of the German card in night mode"> | <img src="docs/screenshots/en-globe-day.gif" width="200" alt="Rotating the globe"> |
-| <img src="docs/screenshots/greece/en-flag-front-day.png" width="200" alt="Front of a Flag → Country card"> | <img src="docs/screenshots/greece/en-flag-back-full-info-day.png" width="200" alt="Back of the card with full info"> | <img src="docs/screenshots/greece/de-flag-back-full-info-night.png" width="200" alt="Back of the German card in night mode"> | <img src="docs/screenshots/greece/de-globe-night.gif" width="200" alt="Rotating the globe in night mode"> |
+| | Front | Back with full info | Night mode | Globe |
+|---|---|---|---|---|
+| Country → capital | <img src="docs/screenshots/switzerland/en-capital-front-day.png" width="200" alt="Front of a Country → Capital card"> | <img src="docs/screenshots/switzerland/en-capital-back-full-info-day.png" width="200" alt="Back of the card with full info"> | <img src="docs/screenshots/switzerland/de-capital-back-full-info-night.png" width="200" alt="Back of the German card in night mode"> | <img src="docs/screenshots/switzerland/en-globe-day.gif" width="200" alt="Rotating the globe"> |
+| Flag → country | <img src="docs/screenshots/greece/en-flag-front-day.png" width="200" alt="Front of a Flag → Country card"> | <img src="docs/screenshots/greece/en-flag-back-full-info-day.png" width="200" alt="Back of the card with full info"> | <img src="docs/screenshots/greece/de-flag-back-full-info-night.png" width="200" alt="Back of the German card in night mode"> | <img src="docs/screenshots/greece/de-globe-night.gif" width="200" alt="Rotating the globe in night mode"> |
 
-Top row Switzerland, bottom row Greece. Every shot in English and German, day and night:
-[`docs/screenshots/`](docs/screenshots/) (Switzerland) and [`docs/screenshots/greece/`](docs/screenshots/greece/).
+Every shot in English and German, day and night, including the Map → Country front:
+[`docs/screenshots/switzerland/`](docs/screenshots/switzerland/) and [`docs/screenshots/greece/`](docs/screenshots/greece/).
 
 ## Install
 
