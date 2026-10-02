@@ -26,8 +26,10 @@ and an interactive globe, in English and German.
 | Front | Back with full info | Night mode | Globe |
 |---|---|---|---|
 | <img src="docs/screenshots/en-flag-front-day.png" width="200" alt="Front of a Flag → Country card"> | <img src="docs/screenshots/en-flag-back-full-info-day.png" width="200" alt="Back of the card with full info"> | <img src="docs/screenshots/de-flag-back-full-info-night.png" width="200" alt="Back of the German card in night mode"> | <img src="docs/screenshots/en-globe-day.gif" width="200" alt="Rotating the globe"> |
+| <img src="docs/screenshots/greece/en-flag-front-day.png" width="200" alt="Front of a Flag → Country card"> | <img src="docs/screenshots/greece/en-flag-back-full-info-day.png" width="200" alt="Back of the card with full info"> | <img src="docs/screenshots/greece/de-flag-back-full-info-night.png" width="200" alt="Back of the German card in night mode"> | <img src="docs/screenshots/greece/de-globe-night.gif" width="200" alt="Rotating the globe in night mode"> |
 
-More in [`docs/screenshots/`](docs/screenshots/): every shot in English and German, day and night.
+Top row Switzerland, bottom row Greece. Every shot in English and German, day and night:
+[`docs/screenshots/`](docs/screenshots/) (Switzerland) and [`docs/screenshots/greece/`](docs/screenshots/greece/).
 
 ## Install
 
