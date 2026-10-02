@@ -123,6 +123,13 @@ help section.
   no element ids, no `setTimeout`, nothing to re-initialize when Anki desktop reuses the
   webview. They are `<span role="button">`, not `<button>`, so a focused button never
   swallows the space bar that shows the answer.
+- **Readable in Anki's template editor** (since 1.0.2): one block element per line, indented
+  by nesting, a comment per section in the package's language (`<!-- Answer -->`,
+  `<!-- Antwort -->`, …). Inline content (a name with its label, a capital, a button) stays on
+  one line, because a line break between inline elements renders as a space; every container
+  that gets line breaks is a flex container, where whitespace renders as nothing. Checked by a
+  pixel diff of all 10 card types (front, help, back with full info) in EN/DE, day/night, for
+  Switzerland and Greenland: identical to the one-line templates of 1.0.1.
 - **Help** per language (EN adapted from v3, DE written in German; it also explains the
   light-blue economic zone and the 12 nm line on the maps), with the AnkiWeb page from
   `data/deck.yaml` and the contact `info@feldbuch.com`.

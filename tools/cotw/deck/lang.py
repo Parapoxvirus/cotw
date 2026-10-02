@@ -133,6 +133,16 @@ LANGS = {
             "country-map": "10 Country → Map",
         },
         "dependency_of": "dependency of {}",
+        # Section comments in the card templates (Anki's template editor).
+        "comments": {
+            "question": "Question",
+            "answer": "Answer",
+            "info_button": "Button: show full info",
+            "info": "Full info, shown by the button above",
+            "buttons": "Buttons",
+            "help": "Help, shown by the Help button",
+            "globe": "Globe",
+        },
         "status_disputed": "status disputed",
         "ui": {
             "show_info": "Show full info",
@@ -222,6 +232,16 @@ the situation on the ground.</p>
             "country-map": "10 Land → Karte",
         },
         "dependency_of": "abhängiges Gebiet von {}",
+        # Abschnitts-Kommentare in den Kartenvorlagen (Vorlagen-Editor von Anki).
+        "comments": {
+            "question": "Frage",
+            "answer": "Antwort",
+            "info_button": "Knopf: alle Infos anzeigen",
+            "info": "Alle Infos, eingeblendet über den Knopf oben",
+            "buttons": "Knöpfe",
+            "help": "Hilfe, eingeblendet über den Hilfe-Knopf",
+            "globe": "Globus",
+        },
         "status_disputed": "Status umstritten",
         "ui": {
             "show_info": "Alle Infos anzeigen",

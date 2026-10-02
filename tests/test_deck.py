@@ -264,9 +264,10 @@ def test_map_front_has_no_text(rendered, by_id):
         if key != "map-country":
             continue
         spec = lang.LANGS[code]
-        help_box = templates._help(spec, names, config)
-        assert help_box in front
-        prompt = front.replace(help_box, "")
+        # The help box sits indented inside the card root: compare with whitespace collapsed.
+        help_box, flat = " ".join(templates._help(spec, names, config).split()), " ".join(front.split())
+        assert help_box in flat
+        prompt = flat.replace(help_box, "")
         assert _visible_text(prompt) == f"? {spec['ui']['help']}", (code, cid)
         assert "data-tooltip" not in front
         assert "wikipedia.org" not in front
@@ -313,6 +314,32 @@ def test_each_package_speaks_its_language(rendered):
             assert (word in text) == (code == "en") or key == "map-country" and word == "Show full info", (code, key, word)
         for word in de_only:
             assert (word in text) == (code == "de"), (code, key, word)
+
+
+def test_templates_are_readable():
+    """Anki's template editor shows the source: one block element per line, indented by nesting."""
+    names = {k: n for k, (n, _) in build.assets().items()}
+    config = build.load_config()
+    blocks = ('<div class="cotw-box', '<div class="cotw-row', '<div class="cotw-icon', '<div class="cotw-content')
+    for code in lang.LANGS:
+        for t in templates.templates(code, names, config):
+            for side in ("qfmt", "afmt"):
+                lines = t[side].split("\n")
+                assert len(lines) > 100, (code, t["name"], side)
+                assert any(line.strip().startswith("<!-- ") for line in lines), (code, t["name"], side)
+                for line in lines:
+                    indent = len(line) - len(line.lstrip(" "))
+                    assert "\t" not in line and indent % 2 == 0, (code, t["name"], side, line)
+                    assert sum(line.count(b) for b in blocks) <= 1, (code, t["name"], side, line)
+                    assert len(line) <= 240, (code, t["name"], side, line)
+                opened = []  # every multi-line div closes at the indentation it opened at
+                for line in lines:
+                    s, indent = line.strip(), len(line) - len(line.lstrip(" "))
+                    if s.startswith("<div") and not s.endswith("</div>"):
+                        opened.append(indent)
+                    elif s == "</div>":
+                        assert opened and opened.pop() == indent, (code, t["name"], side, line)
+                assert not opened, (code, t["name"], side)
 
 
 def test_buttons_without_timers_or_ids(packages, collections):
@@ -389,7 +416,8 @@ def test_icons_and_infographics_exist_once_per_mode(rendered):
     for key in ("infographic", "infographic-filtered"):
         for mode in ("day", "night"):
             assert f'<img class="cotw-infographic cotw-{mode}" src="{names[f"{key}-{mode}"]}">' in front
-    assert f'<img class="cotw-day" src="{names["icon-capital-day"]}"><img class="cotw-night" src="{names["icon-capital-night"]}">' in back
+    icon = f'<img class="cotw-day" src="{names["icon-capital-day"]}">\n'
+    assert re.search(re.escape(icon) + rf' *<img class="cotw-night" src="{re.escape(names["icon-capital-night"])}">', back)
     assert not any(n.endswith(".png") for n in names.values()), "the v3 PNGs left the package"
 
 

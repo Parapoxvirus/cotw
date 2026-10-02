@@ -5,6 +5,13 @@ only EN texts and the DE package only DE texts. Asset file names are passed in (
 content hash, docs/DECK.md), so the templates always point at exactly the files shipped with
 the package that installed them.
 
+The output is meant to be read and edited in Anki's card-template editor: block elements
+(boxes, rows, icon and content cells) go on their own lines, indented by nesting, with a
+comment per section. Inline content (a name with its label, a capital, a button) stays on one
+line, because a line break between inline elements renders as a space. Every container that
+gets line breaks is a flex container (style.css), where whitespace between children renders as
+nothing, so the formatting does not change the layout.
+
 Buttons use inline ``onclick`` handlers that toggle a class on the card root: no ids, no
 ``setTimeout``, nothing left over when Anki desktop reuses the webview for the next card.
 """
@@ -27,34 +34,77 @@ ICONS = {
     "maps": "icon-map",
 }
 TOGGLE = "this.closest('.cotw').classList.toggle('{cls}')"
+INDENT = "  "
 
 
 def _f(lang: dict, key: str) -> str:
     return lang["fields"][key]
 
 
+# --- formatting ---------------------------------------------------------------------------------
+
+
+def _indent(text: str) -> str:
+    return "\n".join(INDENT + line if line.strip() else "" for line in text.split("\n"))
+
+
+def _block(start: str, *children: str) -> str:
+    """``start`` tag, the non-empty ``children`` one level deeper, the end tag on its own line.
+    Without children the element stays on one line."""
+    tag = start[1:].split(None, 1)[0].rstrip(">")
+    body = "\n".join(c for c in children if c)
+    return f"{start}\n{_indent(body)}\n</{tag}>" if body else f"{start}</{tag}>"
+
+
+def _section(field: str, body: str, block: bool = False) -> str:
+    """``{{#field}}…{{/field}}``: on one line around single-line inline ``body``, otherwise
+    (or with ``block``, for block elements) with ``body`` indented on its own lines."""
+    if not block and "\n" not in body:
+        return f"{{{{#{field}}}}}{body}{{{{/{field}}}}}"
+    return f"{{{{#{field}}}}}\n{_indent(body)}\n{{{{/{field}}}}}"
+
+
+def _comment(lang: dict, key: str) -> str:
+    return f"<!-- {lang['comments'][key]} -->"
+
+
+# --- rows -----------------------------------------------------------------------------------------
+
+
 def _icon(assets: dict, key: str) -> str:
     """A row icon in the text color of each mode: one file per mode, CSS shows one."""
-    return "".join(f'<img class="cotw-{mode}" src="{assets[f"{key}-{mode}"]}">' for mode in ("day", "night"))
+    return "\n".join(f'<img class="cotw-{mode}" src="{assets[f"{key}-{mode}"]}">' for mode in ("day", "night"))
 
 
-def _row(icon: str, content: str, cls: str = "") -> str:
-    """``icon`` is the icon cell's HTML (``_icon``)."""
+def _row(icon: str, content: str, cls: str = "", content_cls: str = "") -> str:
+    """``icon`` is the icon cell's HTML (``_icon``, or ``""`` for an empty cell)."""
     extra = f" {cls}" if cls else ""
-    return (
-        f'<div class="cotw-row{extra}"><div class="cotw-icon">{icon}</div>'
-        f'<div class="cotw-content">{content}</div></div>'
-    )
+    content_extra = f" {content_cls}" if content_cls else ""
+    start = f'<div class="cotw-content{content_extra}">'
+    # Block content (a nested div, several lines) gets its own lines, inline content stays inside.
+    block = "\n" in content or content.startswith("<div")
+    cell = _block(start, content) if block else f"{start}{content}</div>"
+    return _block(f'<div class="cotw-row{extra}">', _block('<div class="cotw-icon">', icon), cell)
+
+
+def _title_row(text: str) -> str:
+    return _row("", text, content_cls="cotw-title")
 
 
 def _country(lang: dict) -> str:
     f = lambda k: _f(lang, k)  # noqa: E731
+    label = f("country_label")
     dep = lang["dependency_of"].format("{{" + f("dependency_of") + "}}")
-    return (
+    name = (
         f'<div class="cotw-name">{{{{{f("country")}}}}}'
-        f'{{{{#{f("country_label")}}}}} <span class="cotw-label">{{{{{f("country_label")}}}}}</span>{{{{/{f("country_label")}}}}}</div>'
-        f'{{{{#{f("dependency_of")}}}}}<div class="cotw-label">{dep}</div>{{{{/{f("dependency_of")}}}}}'
-        f'{{{{#{f("status")}}}}}<div class="cotw-label">{{{{{f("status")}}}}}</div>{{{{/{f("status")}}}}}'
+        f'{{{{#{label}}}}} <span class="cotw-label">{{{{{label}}}}}</span>{{{{/{label}}}}}</div>'
+    )
+    return "\n".join(
+        (
+            name,
+            _section(f("dependency_of"), f'<div class="cotw-label">{dep}</div>', block=True),
+            _section(f("status"), f'<div class="cotw-label">{{{{{f("status")}}}}}</div>', block=True),
+        )
     )
 
 
@@ -71,8 +121,8 @@ def _capitals(lang: dict) -> str:
             f'<div class="cotw-capital">{number}{{{{{name}}}}}'
             f'{{{{#{label}}}}} <span class="cotw-label">{{{{{label}}}}}</span>{{{{/{label}}}}}</div>'
         )
-        out.append(line if n == 1 else f"{{{{#{name}}}}}{line}{{{{/{name}}}}}")
-    return "".join(out)
+        out.append(line if n == 1 else _section(name, line, block=True))
+    return "\n".join(out)
 
 
 # Deferred globe packets (docs/GLOBE.md): attribute → asset. Anki ships only media named in a
@@ -98,8 +148,10 @@ def globe_script(assets: dict) -> str:
 
 
 def _maps(lang: dict, globe: bool, tooltip: bool, assets: dict) -> str:
-    maps = "".join(f'<div class="cotw-map">{{{{{_f(lang, k)}}}}}</div>' for k in ("map_1", "map_2"))
-    return maps + (f'<div class="cotw-map">{_globe(lang, tooltip, assets)}</div>' if globe else "")
+    maps = [f'<div class="cotw-map">{{{{{_f(lang, k)}}}}}</div>' for k in ("map_1", "map_2")]
+    if globe:
+        maps.append(_block('<div class="cotw-map">', _globe(lang, tooltip, assets)))
+    return "\n".join(maps)
 
 
 def _content(attr: str, lang: dict, assets: dict, *, tooltip: bool = True, globe: bool = True) -> str:
@@ -126,7 +178,7 @@ def _attr_row(attr: str, lang: dict, assets: dict, cls: str = "", **kw) -> str:
     row = _row(_icon(assets, ICONS[attr]), _content(attr, lang, assets, **kw), cls)
     cond = {"formal": "formal_name", "borders": "borders"}.get(attr)
     if cond:
-        return f"{{{{#{_f(lang, cond)}}}}}{row}{{{{/{_f(lang, cond)}}}}}"
+        return _section(_f(lang, cond), row)
     return row
 
 
@@ -138,9 +190,7 @@ def _infographic(assets: dict, key: str) -> str:
 
 def _help(lang: dict, assets: dict, config: dict) -> str:
     ui = lang["ui"]
-    rows = [
-        f'<div class="cotw-row"><div class="cotw-icon"></div><div class="cotw-content cotw-title">{ui["symbols"]}</div></div>',
-    ]
+    rows = [_title_row(ui["symbols"])]
     for attr, key in (
         ("country", "sym_country"),
         ("formal", "sym_formal"),
@@ -151,9 +201,7 @@ def _help(lang: dict, assets: dict, config: dict) -> str:
         ("maps", "sym_map"),
     ):
         rows.append(_row(_icon(assets, ICONS[attr]), ui[key]))
-    rows.append(
-        f'<div class="cotw-row"><div class="cotw-icon"></div><div class="cotw-content cotw-title">{ui["general"]}</div></div>'
-    )
+    rows.append(_title_row(ui["general"]))
     text = lang["help"].format(
         infographic=_infographic(assets, "infographic"),
         infographic_filtered=_infographic(assets, "infographic-filtered"),
@@ -161,7 +209,7 @@ def _help(lang: dict, assets: dict, config: dict) -> str:
         contact=config["contact"],
     )
     rows.append(_row(_icon(assets, "icon-help"), text.strip(), "cotw-help-text"))
-    return f'<div class="cotw-box cotw-help">{"".join(rows)}</div>'
+    return _block('<div class="cotw-box cotw-help">', *rows)
 
 
 def _help_button(lang: dict) -> str:
@@ -171,26 +219,33 @@ def _help_button(lang: dict) -> str:
     )
 
 
+def _card(lang: dict, *parts: str) -> str:
+    """The card root around ``parts``."""
+    return _block(f'<div class="cotw cotw-{lang["code"]}">', *parts)
+
+
 def front(card: dict, lang: dict, assets: dict, config: dict) -> str:
     """Front: the asked attribute as "?", then the prompt. Nothing that names the entry."""
     asked, shown = card["asked"], card["shown"]
-    box = (
-        _row(_icon(assets, ICONS[asked]), "?", "cotw-ask")
+    box = _block(
+        '<div class="cotw-box">',
+        _row(_icon(assets, ICONS[asked]), "?", "cotw-ask"),
         # The map prompt is the one front with a globe: no tooltip (DECISIONS B8).
-        + _row(_icon(assets, ICONS[shown]), _content(shown, lang, assets, tooltip=False))
+        _row(_icon(assets, ICONS[shown]), _content(shown, lang, assets, tooltip=False)),
     )
-    html = (
-        f'<div class="cotw cotw-{lang["code"]}">'
-        f'<div class="cotw-box">{box}</div>'
-        f'<div class="cotw-buttons">{_help_button(lang)}</div>'
-        f"{_help(lang, assets, config)}"
-        "</div>"
+    html = _card(
+        lang,
+        _comment(lang, "question"),
+        box,
+        _comment(lang, "buttons"),
+        _block('<div class="cotw-buttons">', _help_button(lang)),
+        _comment(lang, "help"),
+        _help(lang, assets, config),
     )
     if shown == "maps":
-        html += globe_script(assets)
+        html += "\n" + _comment(lang, "globe") + "\n" + globe_script(assets)
     if "borders" in (asked, shown):  # no card for entries without land borders
-        b = _f(lang, "borders")
-        html = f"{{{{#{b}}}}}{html}{{{{/{b}}}}}"
+        html = _section(_f(lang, "borders"), html, block=True)
     return html
 
 
@@ -198,11 +253,10 @@ def back(card: dict, lang: dict, assets: dict, config: dict) -> str:
     """Back: answer + prompt, the globe (every back, DECISIONS B8), full info on demand."""
     asked, shown = card["asked"], card["shown"]
     maps_in_answer = "maps" in (asked, shown)
-    answer = _attr_row(asked, lang, assets, "cotw-answer") + _attr_row(shown, lang, assets)
+    answer = [_attr_row(asked, lang, assets, "cotw-answer"), _attr_row(shown, lang, assets)]
     if not maps_in_answer:
-        answer += _row(_icon(assets, ICONS["maps"]), f'<div class="cotw-map">{_globe(lang, True, assets)}</div>')
+        answer.append(_row(_icon(assets, ICONS["maps"]), _block('<div class="cotw-map">', _globe(lang, True, assets))))
     rest = [a for a in ATTRIBUTES if a not in (asked, shown)]
-    info_rows = "".join(_attr_row(a, lang, assets, globe=False) for a in rest)
     ui = lang["ui"]
     info_button = _row(
         _icon(assets, "icon-info"),
@@ -210,19 +264,30 @@ def back(card: dict, lang: dict, assets: dict, config: dict) -> str:
         f'{ui["show_info"]}</span>',
         "cotw-info-toggle",
     )
-    title = f'<div class="cotw-row"><div class="cotw-icon"></div><div class="cotw-content cotw-title">{ui["info_title"]}</div></div>'
     wiki = f'<a class="cotw-button" href="{{{{{_f(lang, "wikipedia")}}}}}" target="_blank" rel="noopener noreferrer">Wikipedia</a>'
-    html = (
-        f'<div class="cotw cotw-{lang["code"]}">'
-        f'<div class="cotw-box">{answer}</div>'
-        f'<div class="cotw-box cotw-info-button-box">{info_button}</div>'
-        f'<div class="cotw-box cotw-info">{title}{info_rows}</div>'
-        f'<div class="cotw-buttons">{wiki}{_help_button(lang)}</div>'
-        f"{_help(lang, assets, config)}"
-        "</div>"
-        + globe_script(assets)
+    return "\n".join(
+        (
+            _card(
+                lang,
+                _comment(lang, "answer"),
+                _block('<div class="cotw-box">', *answer),
+                _comment(lang, "info_button"),
+                _block('<div class="cotw-box cotw-info-button-box">', info_button),
+                _comment(lang, "info"),
+                _block(
+                    '<div class="cotw-box cotw-info">',
+                    _title_row(ui["info_title"]),
+                    *(_attr_row(a, lang, assets, globe=False) for a in rest),
+                ),
+                _comment(lang, "buttons"),
+                _block('<div class="cotw-buttons">', wiki, _help_button(lang)),
+                _comment(lang, "help"),
+                _help(lang, assets, config),
+            ),
+            _comment(lang, "globe"),
+            globe_script(assets),
+        )
     )
-    return html
 
 
 def templates(lang_code: str, assets: dict, config: dict) -> list[dict]:
@@ -236,6 +301,7 @@ def templates(lang_code: str, assets: dict, config: dict) -> list[dict]:
         }
         for c in CARD_TYPES
     ]
+
 
 
 # --- rendering (preview and tests) ------------------------------------------------------------
