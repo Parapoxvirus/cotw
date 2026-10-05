@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Poland
   de: Polen
+  pl: Polska
 formal_name:
   en: The Republic of Poland
   de: Republik Polen
+  pl: Rzeczpospolita Polska
 capitals:
 - name:
     en: Warsaw
     de: Warschau
+    pl: Warszawa
   role: capital
   wikidata: Q270
   lat: 52.23
@@ -31,3 +34,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Poland
   de: https://de.wikipedia.org/wiki/Polen
+  pl: https://pl.wikipedia.org/wiki/Polska

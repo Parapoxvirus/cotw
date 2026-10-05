@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: South Sudan
   de: Südsudan
+  pl: Sudan Południowy
 formal_name:
   en: The Republic of South Sudan
   de: Republik Südsudan
+  pl: Republika Sudanu Południowego
 capitals:
 - name:
     en: Juba
     de: Juba
+    pl: Dżuba
   role: capital
   wikidata: Q1947
   lat: 4.85389
@@ -31,3 +34,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/South_Sudan
   de: https://de.wikipedia.org/wiki/Südsudan
+  pl: https://pl.wikipedia.org/wiki/Sudan_Południowy

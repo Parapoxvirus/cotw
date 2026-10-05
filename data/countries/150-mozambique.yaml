@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Mozambique
   de: Mosambik
+  pl: Mozambik
 formal_name:
   en: The Republic of Mozambique
   de: Republik Mosambik
+  pl: Republika Mozambiku
 capitals:
 - name:
     en: Maputo
     de: Maputo
+    pl: Maputo
   role: capital
   wikidata: Q3889
   lat: -25.96889
@@ -31,3 +34,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Mozambique
   de: https://de.wikipedia.org/wiki/Mosambik
+  pl: https://pl.wikipedia.org/wiki/Mozambik

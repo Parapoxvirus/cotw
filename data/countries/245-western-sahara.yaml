@@ -6,16 +6,20 @@ status: disputed
 name:
   en: Western Sahara / Sahrawi Republic
   de: Westsahara / Demokratische Arabische Republik Sahara
+  pl: Sahara Zachodnia
 formal_name:
   en: Sahrawi Arab Democratic Republic
   de: Arabische Saharauische Demokratische Republik
+  pl: Saharyjska Arabska Republika Demokratyczna
 capitals:
 - name:
     en: El Aaiún
     de: El Aaiún
+    pl: Al-Ujun
   label:
     en: according to constitution
     de: gemäss Verfassung
+    pl: zgodnie z konstytucją
   role: capital
   wikidata: Q47837
   lat: 27.15
@@ -30,3 +34,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Sahrawi_Arab_Democratic_Republic
   de: https://de.wikipedia.org/wiki/Westsahara
+  pl: https://pl.wikipedia.org/wiki/Sahara_Zachodnia

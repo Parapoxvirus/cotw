@@ -7,5 +7,7 @@
 ankiweb:
   en: https://ankiweb.net/shared/info/1365662043
   de: https://ankiweb.net/shared/info/1416521286
+  # PL package is not on AnkiWeb yet; the help link matches EN until a listing exists.
+  pl: https://ankiweb.net/shared/info/1365662043
 contact: info@feldbuch.com
 repository: https://github.com/Parapoxvirus/cotw

@@ -89,6 +89,7 @@ def test_umlauts_survive_round_trip(entries):
     """Real non-ASCII strings must be stored verbatim (no transliteration, no escapes)."""
     by_iso = {e["iso2"]: e for e in entries.values()}
     assert by_iso["AT"]["name"]["de"] == "Österreich"
+    assert by_iso["PL"]["name"]["pl"] == "Polska"
     assert by_iso["CI"]["name"]["en"].startswith("Côte d’Ivoire")
     assert by_iso["CW"]["name"]["en"] == "Curaçao"
     assert by_iso["ST"]["name"]["de"] == "São Tomé und Príncipe"

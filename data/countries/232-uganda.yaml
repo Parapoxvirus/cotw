@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Uganda
   de: Uganda
+  pl: Uganda
 formal_name:
   en: The Republic of Uganda
   de: Republik Uganda
+  pl: Republika Ugandy
 capitals:
 - name:
     en: Kampala
     de: Kampala
+    pl: Kampala
   role: capital
   wikidata: Q3894
   lat: 0.31361
@@ -30,3 +33,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Uganda
   de: https://de.wikipedia.org/wiki/Uganda
+  pl: https://pl.wikipedia.org/wiki/Uganda

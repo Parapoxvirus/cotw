@@ -235,7 +235,7 @@ def test_names_and_centers(by_id, data):
     centers = yaml.safe_load((OVERRIDES / "centers.yaml").read_text(encoding="utf-8"))
     for cid, e in by_id.items():
         m = data["entries"][cid]
-        assert m["name"] == {"en": e["name"]["en"], "de": e["name"]["de"]}
+        assert m["name"] == {"en": e["name"]["en"], "de": e["name"]["de"], "pl": e["name"]["pl"]}
         lon, lat = m["c"]
         assert -180 <= lon <= 180 and -90 <= lat <= 90
         assert 1.0 <= m["z"] <= 2.5
@@ -246,6 +246,7 @@ def test_names_and_centers(by_id, data):
 
 def test_umlauts_survive(data):
     assert data["entries"]["217"]["name"]["de"] == "Schweiz"
+    assert data["entries"]["177"]["name"]["pl"] == "Polska"
     assert any("ä" in m["name"]["de"] or "ö" in m["name"]["de"] or "ü" in m["name"]["de"] for m in data["entries"].values())
 
 

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Zimbabwe
   de: Simbabwe
+  pl: Zimbabwe
 formal_name:
   en: The Republic of Zimbabwe
   de: Republik Simbabwe
+  pl: Republika Zimbabwe
 capitals:
 - name:
     en: Harare
     de: Harare
+    pl: Harare
   role: capital
   wikidata: Q3921
   lat: -17.82917
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Zimbabwe
   de: https://de.wikipedia.org/wiki/Simbabwe
+  pl: https://pl.wikipedia.org/wiki/Zimbabwe

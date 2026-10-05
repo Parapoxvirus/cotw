@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Bahrain
   de: Bahrain
+  pl: Bahrajn
 formal_name:
   en: The Kingdom of Bahrain
   de: Königreich Bahrain
+  pl: Królestwo Bahrajnu
 capitals:
 - name:
     en: Manama
     de: Manama
+    pl: Manama
   role: capital
   wikidata: Q3882
   lat: 26.21667
@@ -24,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Bahrain
   de: https://de.wikipedia.org/wiki/Bahrain
+  pl: https://pl.wikipedia.org/wiki/Bahrajn

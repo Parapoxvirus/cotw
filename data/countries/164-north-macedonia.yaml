@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: North Macedonia
   de: Nordmazedonien
+  pl: Macedonia Północna
 formal_name:
   en: Republic of North Macedonia
   de: Republik Nordmazedonien
+  pl: Republika Macedonii Północnej
 capitals:
 - name:
     en: Skopje
     de: Skopje
+    pl: Skopje
   role: capital
   wikidata: Q384
   lat: 41.99611
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/North_Macedonia
   de: https://de.wikipedia.org/wiki/Nordmazedonien
+  pl: https://pl.wikipedia.org/wiki/Macedonia_Północna

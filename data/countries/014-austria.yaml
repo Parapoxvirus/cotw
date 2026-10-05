@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Austria
   de: Österreich
+  pl: Austria
 formal_name:
   en: The Republic of Austria
   de: Republik Österreich
+  pl: Republika Austrii
 capitals:
 - name:
     en: Vienna
     de: Wien
+    pl: Wiedeń
   role: capital
   wikidata: Q1741
   lat: 48.20833
@@ -32,3 +35,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Austria
   de: https://de.wikipedia.org/wiki/Österreich
+  pl: https://pl.wikipedia.org/wiki/Austria

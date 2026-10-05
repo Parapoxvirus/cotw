@@ -241,11 +241,11 @@ def dump(path: Path, data: dict) -> None:
 
 
 SITELINKS_CACHE = WIKIDATA / "sitelinks.json"
-WIKIS = {"en": "enwiki", "de": "dewiki"}
+WIKIS = {"en": "enwiki", "de": "dewiki", "pl": "plwiki"}
 
 
 def fetch_sitelinks(qids: list[str]) -> dict:
-    """Wikipedia article titles per item and language (``{qid: {"en": title, "de": title}}``)."""
+    """Wikipedia article titles per item and language (``{qid: {lang: title}}``)."""
     import requests
 
     out: dict[str, dict[str, str]] = {}
@@ -281,17 +281,25 @@ def wikipedia_url(lang: str, title: str) -> str:
     return f"https://{lang}.wikipedia.org/wiki/{path}"
 
 
-def wikipedia_links(en_url: str, sitelinks: dict | None) -> dict[str, str]:
-    """``wikipedia`` map of an entry: EN as chosen in the database (normalized), DE from ``dewiki``.
+def wikipedia_links(en_url: str, sitelinks: dict | None, keep: dict[str, str] | None = None) -> dict[str, str]:
+    """``wikipedia`` map: EN as chosen in the database (normalized), other langs from sitelinks.
 
-    No ``de`` key when the item has no German article; the deck then falls back to EN.
+    ``keep`` extra keys (already on the entry) are retained when the cache has no title for
+    that language, so an older sitelinks dump cannot wipe ``wikipedia.pl``. No key when the
+    item has no article and nothing was kept; the deck then falls back to EN.
     """
     from urllib.parse import unquote
 
     prefix = "https://en.wikipedia.org/wiki/"
     out = {"en": wikipedia_url("en", unquote(en_url[len(prefix):])) if en_url.startswith(prefix) else en_url}
-    if sitelinks and sitelinks.get("de"):
-        out["de"] = wikipedia_url("de", sitelinks["de"])
+    if keep:
+        for lang, url in keep.items():
+            if lang != "en":
+                out[lang] = url
+    if sitelinks:
+        for lang in WIKIS:
+            if lang != "en" and sitelinks.get(lang):
+                out[lang] = wikipedia_url(lang, sitelinks[lang])
     return out
 
 

@@ -7,13 +7,16 @@ dependency_of: '235'
 name:
   en: Montserrat
   de: Montserrat
+  pl: Montserrat
 capitals:
 - name:
     en: Plymouth
     de: Plymouth
+    pl: Plymouth
   label:
     en: de jure
     de: de jure
+    pl: de jure
   role: de_jure
   wikidata: Q30990
   lat: 16.70642
@@ -21,9 +24,11 @@ capitals:
 - name:
     en: Brades
     de: Brades
+    pl: Brades
   label:
     en: de facto
     de: de facto
+    pl: de facto
   role: de_facto
   wikidata: Q31006
   lat: 16.79278
@@ -36,3 +41,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Montserrat
   de: https://de.wikipedia.org/wiki/Montserrat
+  pl: https://pl.wikipedia.org/wiki/Montserrat

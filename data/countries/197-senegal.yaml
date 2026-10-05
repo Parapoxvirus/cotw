@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Senegal
   de: Senegal
+  pl: Senegal
 formal_name:
   en: The Republic of Senegal
   de: Republik Senegal
+  pl: Republika Senegalu
 capitals:
 - name:
     en: Dakar
     de: Dakar
+    pl: Dakar
   role: capital
   wikidata: Q3718
   lat: 14.67256
@@ -30,3 +33,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Senegal
   de: https://de.wikipedia.org/wiki/Senegal
+  pl: https://pl.wikipedia.org/wiki/Senegal

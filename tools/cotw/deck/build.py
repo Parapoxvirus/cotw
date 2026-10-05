@@ -23,7 +23,7 @@ import yaml
 
 from .. import ui
 from ..paths import BUILD, DATA, MEDIA, ROOT, UI_ASSETS
-from .lang import CARD_TYPES, DATIVE_DE, FIELD_KEYS, LANGS, REGIONS_DE
+from .lang import CARD_TYPES, DATIVE_DE, DATIVE_PL, FIELD_KEYS, LANGS, REGIONS_DE, REGIONS_PL
 from .templates import globe_script, render, templates
 
 UI = UI_ASSETS
@@ -111,6 +111,8 @@ def display_name(name: str, lang: str) -> str:
         return "the " + first[: -len(", The")]
     if lang == "de":
         return DATIVE_DE.get(first, first)
+    if lang == "pl":
+        return DATIVE_PL.get(first, first)
     return first
 
 
@@ -120,7 +122,12 @@ def tag_segment(text: str) -> str:
 
 def tags(entry: dict, lang: str) -> list[str]:
     spec = LANGS[lang]
-    regions = entry["regions"] if lang == "en" else [REGIONS_DE[r] for r in entry["regions"]]
+    if lang == "en":
+        regions = entry["regions"]
+    elif lang == "de":
+        regions = [REGIONS_DE[r] for r in entry["regions"]]
+    else:
+        regions = [REGIONS_PL[r] for r in entry["regions"]]
     root = spec["tag_root"]
     return [
         "::".join([root, *(tag_segment(r) for r in regions)]),
@@ -226,6 +233,27 @@ jeder Datei steht in {manifest}. Schrift: IBM Plex Sans,
 <a href="https://openfontlicense.org">SIL Open Font License 1.1</a> (mitgeliefert als {font_license}). Symbole:
 <a href="https://phosphoricons.com">Phosphor Icons</a>, Copyright (c) 2023 Phosphor Icons, MIT-Lizenz
 (vollständiger Lizenzhinweis mitgeliefert als {icons_license}).</p>""",
+    "pl": """<p><b>Kraje świata (COTW)</b>: {count} krajów i terytoriów, każde ze stolicą,
+flagą, dwiema mapami, obrotowym globusem, kodami ISO i sąsiadami.</p>
+<p>Dziesięć typów kart: pięć polecanych jest w tej talii, pięć dodatkowych w podtalii
+<i>Extras</i>. Jeśli nie chcesz uczyć Extra, otwórz <i>Przeglądaj</i>, kliknij talię
+<i>Extras</i>, zaznacz wszystkie karty i wybierz <i>Zawieś</i> (tak samo włączysz je z powrotem).</p>
+<p><b>Granice.</b> Mapy i globus rysują granice tak, jak podaje źródło
+<a href="https://www.naturalearthdata.com">Natural Earth</a>, a Natural Earth pokazuje
+granice de facto: kto faktycznie kontroluje obszar. Krym na przykład jest rosyjski,
+nie ukraiński, a sporne tereny w Himalajach idą za liniami kontroli. Talia nie zajmuje
+stanowiska politycznego; trzyma się dostarczonych danych.</p>
+<p><b>Źródła i licencje.</b> Talia, dane i kod: domena publiczna
+(<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.pl">CC0 1.0</a>), Parapoxvirus.
+Dane: <a href="https://www.wikidata.org">Wikidata</a> (CC0). Ląd na mapach i globusie:
+<a href="https://www.naturalearthdata.com">Natural Earth</a> (domena publiczna). Strefy morskie:
+Marine Regions, Flanders Marine Institute (VLIZ),
+<a href="https://creativecommons.org/licenses/by/4.0/deed.pl">CC BY 4.0</a>: {citation} Flagi:
+<a href="https://commons.wikimedia.org">Wikimedia Commons</a>, tylko domena publiczna albo CC0;
+licencja każdego pliku jest w {manifest}. Czcionka: IBM Plex Sans,
+<a href="https://openfontlicense.org">SIL Open Font License 1.1</a> (dołączona jako {font_license}). Ikony:
+<a href="https://phosphoricons.com">Phosphor Icons</a>, Copyright (c) 2023 Phosphor Icons, licencja MIT
+(pełna nota dołączona jako {icons_license}).</p>""",
 }
 EXTRAS_DESCRIPTION = {
     "en": "<p>The five extra card types: country → map, ISO code in both directions, bordering "
@@ -234,6 +262,8 @@ EXTRAS_DESCRIPTION = {
     "de": "<p>Die fünf zusätzlichen Kartentypen: Land → Karte, ISO-Code in beide Richtungen, "
     "Nachbarländer in beide Richtungen. Wenn du sie nicht lernen möchtest, setze alle Karten "
     "dieses Unterdecks in <i>Durchsuchen</i> aus.</p>",
+    "pl": "<p>Pięć dodatkowych typów kart: kraj → mapa, kod ISO w obie strony, sąsiedzi w obie "
+    "strony. Jeśli nie chcesz ich uczyć, zawieś wszystkie karty tej podtalii w <i>Przeglądaj</i>.</p>",
 }
 CITATION = (
     "Flanders Marine Institute (2023). Maritime Boundaries Geodatabase: Maritime Boundaries and "

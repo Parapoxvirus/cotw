@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Canada
   de: Kanada
+  pl: Kanada
 capitals:
 - name:
     en: Ottawa
     de: Ottawa
+    pl: Ottawa
   role: capital
   wikidata: Q1930
   lat: 45.42472
@@ -23,3 +25,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Canada
   de: https://de.wikipedia.org/wiki/Kanada
+  pl: https://pl.wikipedia.org/wiki/Kanada

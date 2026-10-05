@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Monaco
   de: Monaco
+  pl: Monako
 formal_name:
   en: The Principality of Monaco
   de: Fürstentum Monaco
+  pl: Księstwo Monako
 capitals:
 - name:
     en: Monaco
     de: Monaco
+    pl: Monako
   role: capital
   wikidata: Q235
   lat: 43.73111
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Monaco
   de: https://de.wikipedia.org/wiki/Monaco
+  pl: https://pl.wikipedia.org/wiki/Monako

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Lithuania
   de: Litauen
+  pl: Litwa
 formal_name:
   en: The Republic of Lithuania
   de: Republik Litauen
+  pl: Republika Litewska
 capitals:
 - name:
     en: Vilnius
     de: Vilnius / Wilna
+    pl: Wilno
   role: capital
   wikidata: Q216
   lat: 54.68722
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Lithuania
   de: https://de.wikipedia.org/wiki/Litauen
+  pl: https://pl.wikipedia.org/wiki/Litwa

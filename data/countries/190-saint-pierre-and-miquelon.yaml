@@ -7,10 +7,12 @@ dependency_of: '076'
 name:
   en: Saint Pierre and Miquelon
   de: Saint-Pierre und Miquelon
+  pl: Saint-Pierre i Miquelon
 capitals:
 - name:
     en: Saint-Pierre
     de: Saint-Pierre
+    pl: Saint-Pierre
   role: capital
   wikidata: Q185678
   lat: 46.77778
@@ -22,3 +24,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Saint_Pierre_and_Miquelon
   de: https://de.wikipedia.org/wiki/Saint-Pierre_und_Miquelon
+  pl: https://pl.wikipedia.org/wiki/Saint-Pierre_i_Miquelon

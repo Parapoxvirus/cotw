@@ -437,7 +437,7 @@ def payload(entries: dict, land: dict, core: dict, other: list, eez: dict, palet
             "a": area_sr(land.get(e["iso2"], geom)),
             "n": list(e.get("borders", [])),
             "s": specks.get(cid, []),
-            "name": {"en": e["name"]["en"], "de": e["name"]["de"]},
+            "name": {k: e["name"][k] for k in e["name"]},
         }
         if can_highlight(meta[cid]["a"]) and (hulls := zone_hulls(eez.get(e["iso3"], []), lat, lon)):
             meta[cid]["e"] = hulls  # EEZ outlines for the highlight circles
@@ -646,7 +646,7 @@ figure{{margin:0;position:relative}}figcaption{{font-size:.8rem;margin:.2rem 0;c
 <body><div id="bar"><b>COTW globe</b>
 <label><input type="checkbox" id="night"> night</label>
 <label><input type="checkbox" id="tip"> tooltip</label>
-<label>lang <select id="lang"><option>en</option><option>de</option></select></label>
+<label>lang <select id="lang"><option>en</option><option>de</option><option>pl</option></select></label>
 <label>width <select id="w"><option>200</option><option>300</option><option>400</option><option>800</option></select></label>
 </div><div id="grid"></div>
 <script>

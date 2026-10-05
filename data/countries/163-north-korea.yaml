@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: North Korea
   de: Nordkorea
+  pl: Korea Północna
 formal_name:
   en: The Democratic People's Republic of Korea
   de: Demokratische Volksrepublik Korea
+  pl: Koreańska Republika Ludowo-Demokratyczna
 capitals:
 - name:
     en: Pyongyang
     de: Pjöngjang
+    pl: Pjongjang
   role: capital
   wikidata: Q18808
   lat: 39.01667
@@ -27,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/North_Korea
   de: https://de.wikipedia.org/wiki/Nordkorea
+  pl: https://pl.wikipedia.org/wiki/Korea_Północna

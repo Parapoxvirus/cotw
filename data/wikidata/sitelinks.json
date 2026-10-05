@@ -1,993 +1,1241 @@
 {
  "Q1000": {
   "de": "Gabun",
-  "en": "Gabon"
+  "en": "Gabon",
+  "pl": "Gabon"
  },
  "Q1005": {
   "de": "Gambia",
-  "en": "The Gambia"
+  "en": "The Gambia",
+  "pl": "Gambia"
  },
  "Q1006": {
   "de": "Guinea",
-  "en": "Guinea"
+  "en": "Guinea",
+  "pl": "Gwinea"
  },
  "Q1007": {
   "de": "Guinea-Bissau",
-  "en": "Guinea-Bissau"
+  "en": "Guinea-Bissau",
+  "pl": "Gwinea Bissau"
  },
  "Q1008": {
   "de": "Elfenbeinküste",
-  "en": "Ivory Coast"
+  "en": "Ivory Coast",
+  "pl": "Wybrzeże Kości Słoniowej"
  },
  "Q1009": {
   "de": "Kamerun",
-  "en": "Cameroon"
+  "en": "Cameroon",
+  "pl": "Kamerun"
  },
  "Q1011": {
   "de": "Kap Verde",
-  "en": "Cape Verde"
+  "en": "Cape Verde",
+  "pl": "Republika Zielonego Przylądka"
  },
  "Q1013": {
   "de": "Lesotho",
-  "en": "Lesotho"
+  "en": "Lesotho",
+  "pl": "Lesotho"
  },
  "Q1014": {
   "de": "Liberia",
-  "en": "Liberia"
+  "en": "Liberia",
+  "pl": "Liberia"
  },
  "Q1016": {
   "de": "Libyen",
-  "en": "Libya"
+  "en": "Libya",
+  "pl": "Libia"
  },
  "Q1019": {
   "de": "Madagaskar",
-  "en": "Madagascar"
+  "en": "Madagascar",
+  "pl": "Madagaskar"
  },
  "Q1020": {
   "de": "Malawi",
-  "en": "Malawi"
+  "en": "Malawi",
+  "pl": "Malawi"
  },
  "Q1025": {
   "de": "Mauretanien",
-  "en": "Mauritania"
+  "en": "Mauritania",
+  "pl": "Mauretania"
  },
  "Q1027": {
   "de": "Mauritius",
-  "en": "Mauritius"
+  "en": "Mauritius",
+  "pl": "Mauritius"
  },
  "Q1028": {
   "de": "Marokko",
-  "en": "Morocco"
+  "en": "Morocco",
+  "pl": "Maroko"
  },
  "Q1029": {
   "de": "Mosambik",
-  "en": "Mozambique"
+  "en": "Mozambique",
+  "pl": "Mozambik"
  },
  "Q1030": {
   "de": "Namibia",
-  "en": "Namibia"
+  "en": "Namibia",
+  "pl": "Namibia"
  },
  "Q1032": {
   "de": "Niger",
-  "en": "Niger"
+  "en": "Niger",
+  "pl": "Niger"
  },
  "Q1033": {
   "de": "Nigeria",
-  "en": "Nigeria"
+  "en": "Nigeria",
+  "pl": "Nigeria"
  },
  "Q1036": {
   "de": "Uganda",
-  "en": "Uganda"
+  "en": "Uganda",
+  "pl": "Uganda"
  },
  "Q1037": {
   "de": "Ruanda",
-  "en": "Rwanda"
+  "en": "Rwanda",
+  "pl": "Rwanda"
  },
  "Q1039": {
   "de": "São Tomé und Príncipe",
-  "en": "São Tomé and Príncipe"
+  "en": "São Tomé and Príncipe",
+  "pl": "Wyspy Świętego Tomasza i Książęca"
  },
  "Q1041": {
   "de": "Senegal",
-  "en": "Senegal"
+  "en": "Senegal",
+  "pl": "Senegal"
  },
  "Q1042": {
   "de": "Seychellen",
-  "en": "Seychelles"
+  "en": "Seychelles",
+  "pl": "Seszele"
  },
  "Q1044": {
   "de": "Sierra Leone",
-  "en": "Sierra Leone"
+  "en": "Sierra Leone",
+  "pl": "Sierra Leone"
  },
  "Q1045": {
   "de": "Somalia",
-  "en": "Somalia"
+  "en": "Somalia",
+  "pl": "Somalia"
  },
  "Q1049": {
   "de": "Sudan",
-  "en": "Sudan"
+  "en": "Sudan",
+  "pl": "Sudan"
  },
  "Q1050": {
   "de": "Eswatini",
-  "en": "Eswatini"
+  "en": "Eswatini",
+  "pl": "Eswatini"
  },
  "Q114": {
   "de": "Kenia",
-  "en": "Kenya"
+  "en": "Kenya",
+  "pl": "Kenia"
  },
  "Q115": {
   "de": "Äthiopien",
-  "en": "Ethiopia"
+  "en": "Ethiopia",
+  "pl": "Etiopia"
  },
  "Q117": {
   "de": "Ghana",
-  "en": "Ghana"
+  "en": "Ghana",
+  "pl": "Ghana"
  },
  "Q11703": {
   "de": "Amerikanische Jungferninseln",
-  "en": "United States Virgin Islands"
+  "en": "United States Virgin Islands",
+  "pl": "Wyspy Dziewicze Stanów Zjednoczonych"
  },
  "Q1183": {
   "de": "Puerto Rico",
-  "en": "Puerto Rico"
+  "en": "Puerto Rico",
+  "pl": "Portoryko"
  },
  "Q1246": {
   "de": "Kosovo",
-  "en": "Kosovo"
+  "en": "Kosovo",
+  "pl": "Kosowo"
  },
  "Q126125": {
   "de": "Saint-Martin (Gebietskörperschaft)",
-  "en": "Collectivity of Saint Martin"
+  "en": "Collectivity of Saint Martin",
+  "pl": "Saint-Martin"
  },
  "Q129003": {
   "de": "Französische Süd- und Antarktisgebiete",
-  "en": "French Southern and Antarctic Lands"
+  "en": "French Southern and Antarctic Lands",
+  "pl": "Francuskie Terytoria Południowe i Antarktyczne"
  },
  "Q131198": {
   "de": "Heard und McDonaldinseln",
-  "en": "Heard Island and McDonald Islands"
+  "en": "Heard Island and McDonald Islands",
+  "pl": "Wyspy Heard i McDonalda"
  },
  "Q13353": {
   "de": "Montserrat",
-  "en": "Montserrat"
+  "en": "Montserrat",
+  "pl": "Montserrat"
  },
  "Q1410": {
   "de": "Gibraltar",
-  "en": "Gibraltar"
+  "en": "Gibraltar",
+  "pl": "Gibraltar"
  },
  "Q142": {
   "de": "Frankreich",
-  "en": "France"
+  "en": "France",
+  "pl": "Francja"
  },
  "Q145": {
   "de": "Vereinigtes Königreich",
-  "en": "United Kingdom"
+  "en": "United Kingdom",
+  "pl": "Wielka Brytania"
  },
  "Q14773": {
   "de": "Macau",
-  "en": "Macau"
+  "en": "Macau",
+  "pl": "Makau"
  },
  "Q148": {
   "de": "Volksrepublik China",
-  "en": "China"
+  "en": "China",
+  "pl": "Chińska Republika Ludowa"
  },
  "Q155": {
   "de": "Brasilien",
-  "en": "Brazil"
+  "en": "Brazil",
+  "pl": "Brazylia"
  },
  "Q159": {
   "de": "Russland",
-  "en": "Russia"
+  "en": "Russia",
+  "pl": "Rosja"
  },
  "Q16": {
   "de": "Kanada",
-  "en": "Canada"
+  "en": "Canada",
+  "pl": "Kanada"
  },
  "Q16635": {
   "de": "Guam",
-  "en": "Guam"
+  "en": "Guam",
+  "pl": "Guam"
  },
  "Q16641": {
   "de": "Amerikanisch-Samoa",
-  "en": "American Samoa"
+  "en": "American Samoa",
+  "pl": "Samoa Amerykańskie"
  },
  "Q16644": {
   "de": "Nördliche Marianen",
-  "en": "Northern Mariana Islands"
+  "en": "Northern Mariana Islands",
+  "pl": "Mariany Północne"
  },
  "Q17": {
   "de": "Japan",
-  "en": "Japan"
+  "en": "Japan",
+  "pl": "Japonia"
  },
  "Q17012": {
   "de": "Guadeloupe",
-  "en": "Guadeloupe"
+  "en": "Guadeloupe",
+  "pl": "Gwadelupa"
  },
  "Q17054": {
   "de": "Martinique",
-  "en": "Martinique"
+  "en": "Martinique",
+  "pl": "Martynika"
  },
  "Q17063": {
   "de": "Mayotte",
-  "en": "Mayotte"
+  "en": "Mayotte",
+  "pl": "Majotta"
  },
  "Q17070": {
   "de": "Réunion",
-  "en": "Réunion"
+  "en": "Réunion",
+  "pl": "Reunion"
  },
  "Q18221": {
   "de": "Turks- und Caicosinseln",
-  "en": "Turks and Caicos Islands"
+  "en": "Turks and Caicos Islands",
+  "pl": "Turks i Caicos"
  },
  "Q183": {
   "de": "Deutschland",
-  "en": "Germany"
+  "en": "Germany",
+  "pl": "Niemcy"
  },
  "Q184": {
   "de": "Belarus",
-  "en": "Belarus"
+  "en": "Belarus",
+  "pl": "Białoruś"
  },
  "Q189": {
   "de": "Island",
-  "en": "Iceland"
+  "en": "Iceland",
+  "pl": "Islandia"
  },
  "Q191": {
   "de": "Estland",
-  "en": "Estonia"
+  "en": "Estonia",
+  "pl": "Estonia"
  },
  "Q192184": {
   "de": "St. Helena, Ascension und Tristan da Cunha",
-  "en": "Saint Helena, Ascension and Tristan da Cunha"
+  "en": "Saint Helena, Ascension and Tristan da Cunha",
+  "pl": "Wyspa Świętej Heleny, Wyspa Wniebowstąpienia i Tristan da Cunha"
  },
  "Q20": {
   "de": "Norwegen",
-  "en": "Norway"
+  "en": "Norway",
+  "pl": "Norwegia"
  },
  "Q211": {
   "de": "Lettland",
-  "en": "Latvia"
+  "en": "Latvia",
+  "pl": "Łotwa"
  },
  "Q212": {
   "de": "Ukraine",
-  "en": "Ukraine"
+  "en": "Ukraine",
+  "pl": "Ukraina"
  },
  "Q21203": {
   "de": "Aruba",
-  "en": "Aruba"
+  "en": "Aruba",
+  "pl": "Aruba"
  },
  "Q213": {
   "de": "Tschechien",
-  "en": "Czech Republic"
+  "en": "Czech Republic",
+  "pl": "Czechy"
  },
  "Q214": {
   "de": "Slowakei",
-  "en": "Slovakia"
+  "en": "Slovakia",
+  "pl": "Słowacja"
  },
  "Q215": {
   "de": "Slowenien",
-  "en": "Slovenia"
+  "en": "Slovenia",
+  "pl": "Słowenia"
  },
  "Q217": {
   "de": "Republik Moldau",
-  "en": "Moldova"
+  "en": "Moldova",
+  "pl": "Mołdawia"
  },
  "Q218": {
   "de": "Rumänien",
-  "en": "Romania"
+  "en": "Romania",
+  "pl": "Rumunia"
  },
  "Q219": {
   "de": "Bulgarien",
-  "en": "Bulgaria"
+  "en": "Bulgaria",
+  "pl": "Bułgaria"
  },
  "Q219060": {
   "de": "Palästina (Staat)",
-  "en": "Palestine"
+  "en": "Palestine",
+  "pl": "Palestyna (państwo)"
  },
  "Q221": {
   "de": "Nordmazedonien",
-  "en": "North Macedonia"
+  "en": "North Macedonia",
+  "pl": "Macedonia Północna"
  },
  "Q222": {
   "de": "Albanien",
-  "en": "Albania"
+  "en": "Albania",
+  "pl": "Albania"
  },
  "Q223": {
   "de": "Grönland",
-  "en": "Greenland"
+  "en": "Greenland",
+  "pl": "Grenlandia"
  },
  "Q224": {
   "de": "Kroatien",
-  "en": "Croatia"
+  "en": "Croatia",
+  "pl": "Chorwacja"
  },
  "Q225": {
   "de": "Bosnien und Herzegowina",
-  "en": "Bosnia and Herzegovina"
+  "en": "Bosnia and Herzegovina",
+  "pl": "Bośnia i Hercegowina"
  },
  "Q227": {
   "de": "Aserbaidschan",
-  "en": "Azerbaijan"
+  "en": "Azerbaijan",
+  "pl": "Azerbejdżan"
  },
  "Q228": {
   "de": "Andorra",
-  "en": "Andorra"
+  "en": "Andorra",
+  "pl": "Andora"
  },
  "Q229": {
   "de": "Republik Zypern",
-  "en": "Cyprus"
+  "en": "Cyprus",
+  "pl": "Cypr"
  },
  "Q230": {
   "de": "Georgien",
-  "en": "Georgia (country)"
+  "en": "Georgia (country)",
+  "pl": "Gruzja"
  },
  "Q232": {
   "de": "Kasachstan",
-  "en": "Kazakhstan"
+  "en": "Kazakhstan",
+  "pl": "Kazachstan"
  },
  "Q233": {
   "de": "Malta",
-  "en": "Malta"
+  "en": "Malta",
+  "pl": "Malta"
  },
  "Q23408": {
   "de": "Bouvetinsel",
-  "en": "Bouvet Island"
+  "en": "Bouvet Island",
+  "pl": "Wyspa Bouveta"
  },
  "Q235": {
   "de": "Monaco",
-  "en": "Monaco"
+  "en": "Monaco",
+  "pl": "Monako"
  },
  "Q236": {
   "de": "Montenegro",
-  "en": "Montenegro"
+  "en": "Montenegro",
+  "pl": "Czarnogóra"
  },
  "Q23635": {
   "de": "Bermuda",
-  "en": "Bermuda"
+  "en": "Bermuda",
+  "pl": "Bermudy"
  },
  "Q237": {
   "de": "Vatikanstadt",
-  "en": "Vatican City"
+  "en": "Vatican City",
+  "pl": "Watykan"
  },
  "Q238": {
   "de": "San Marino",
-  "en": "San Marino"
+  "en": "San Marino",
+  "pl": "San Marino"
  },
  "Q241": {
   "de": "Kuba",
-  "en": "Cuba"
+  "en": "Cuba",
+  "pl": "Kuba"
  },
  "Q242": {
   "de": "Belize",
-  "en": "Belize"
+  "en": "Belize",
+  "pl": "Belize"
  },
  "Q244": {
   "de": "Barbados",
-  "en": "Barbados"
+  "en": "Barbados",
+  "pl": "Barbados"
  },
  "Q252": {
   "de": "Indonesien",
-  "en": "Indonesia"
+  "en": "Indonesia",
+  "pl": "Indonezja"
  },
  "Q25228": {
   "de": "Anguilla",
-  "en": "Anguilla"
+  "en": "Anguilla",
+  "pl": "Anguilla"
  },
  "Q25230": {
   "de": "Bailiwick of Guernsey",
-  "en": "Bailiwick of Guernsey"
+  "en": "Bailiwick of Guernsey",
+  "pl": "Guernsey"
  },
  "Q25279": {
   "de": "Curaçao",
-  "en": "Curaçao"
+  "en": "Curaçao",
+  "pl": "Curaçao"
  },
  "Q25305": {
   "de": "Britische Jungferninseln",
-  "en": "British Virgin Islands"
+  "en": "British Virgin Islands",
+  "pl": "Brytyjskie Wyspy Dziewicze"
  },
  "Q25362": {
   "de": "Saint-Barthélemy (Insel)",
-  "en": "Saint Barthélemy"
+  "en": "Saint Barthélemy",
+  "pl": "Saint-Barthélemy"
  },
  "Q258": {
   "de": "Südafrika",
-  "en": "South Africa"
+  "en": "South Africa",
+  "pl": "Południowa Afryka"
  },
  "Q262": {
   "de": "Algerien",
-  "en": "Algeria"
+  "en": "Algeria",
+  "pl": "Algieria"
  },
  "Q26273": {
   "de": "Sint Maarten",
-  "en": "Sint Maarten"
+  "en": "Sint Maarten",
+  "pl": "Sint Maarten (terytorium)"
  },
  "Q265": {
   "de": "Usbekistan",
-  "en": "Uzbekistan"
+  "en": "Uzbekistan",
+  "pl": "Uzbekistan"
  },
  "Q26988": {
   "de": "Cookinseln",
-  "en": "Cook Islands"
+  "en": "Cook Islands",
+  "pl": "Wyspy Cooka"
  },
  "Q27": {
   "de": "Irland",
-  "en": "Republic of Ireland"
+  "en": "Republic of Ireland",
+  "pl": "Irlandia"
  },
  "Q27561": {
   "de": "Karibische Niederlande",
-  "en": "Caribbean Netherlands"
+  "en": "Caribbean Netherlands",
+  "pl": "Holandia Karaibska"
  },
  "Q28": {
   "de": "Ungarn",
-  "en": "Hungary"
+  "en": "Hungary",
+  "pl": "Węgry"
  },
  "Q29": {
   "de": "Spanien",
-  "en": "Spain"
+  "en": "Spain",
+  "pl": "Hiszpania"
  },
  "Q298": {
   "de": "Chile",
-  "en": "Chile"
+  "en": "Chile",
+  "pl": "Chile"
  },
  "Q30": {
   "de": "Vereinigte Staaten",
-  "en": "United States"
+  "en": "United States",
+  "pl": "Stany Zjednoczone"
  },
  "Q30971": {
   "de": "Französisch-Polynesien",
-  "en": "French Polynesia"
+  "en": "French Polynesia",
+  "pl": "Polinezja Francuska"
  },
  "Q31": {
   "de": "Belgien",
-  "en": "Belgium"
+  "en": "Belgium",
+  "pl": "Belgia"
  },
  "Q31057": {
   "de": "Norfolkinsel",
-  "en": "Norfolk Island"
+  "en": "Norfolk Island",
+  "pl": "Norfolk (terytorium)"
  },
  "Q31063": {
   "de": "Weihnachtsinsel (Australien)",
-  "en": "Christmas Island"
+  "en": "Christmas Island",
+  "pl": "Wyspa Bożego Narodzenia"
  },
  "Q32": {
   "de": "Luxemburg",
-  "en": "Luxembourg"
+  "en": "Luxembourg",
+  "pl": "Luksemburg"
  },
  "Q33": {
   "de": "Finnland",
-  "en": "Finland"
+  "en": "Finland",
+  "pl": "Finlandia"
  },
  "Q334": {
   "de": "Singapur",
-  "en": "Singapore"
+  "en": "Singapore",
+  "pl": "Singapur"
  },
  "Q33788": {
   "de": "Neukaledonien",
-  "en": "New Caledonia"
+  "en": "New Caledonia",
+  "pl": "Nowa Kaledonia"
  },
  "Q34": {
   "de": "Schweden",
-  "en": "Sweden"
+  "en": "Sweden",
+  "pl": "Szwecja"
  },
  "Q34020": {
   "de": "Niue",
-  "en": "Niue"
+  "en": "Niue",
+  "pl": "Niue"
  },
  "Q34617": {
   "de": "Saint-Pierre und Miquelon",
-  "en": "Saint Pierre and Miquelon"
+  "en": "Saint Pierre and Miquelon",
+  "pl": "Saint-Pierre i Miquelon"
  },
  "Q347": {
   "de": "Liechtenstein",
-  "en": "Liechtenstein"
+  "en": "Liechtenstein",
+  "pl": "Liechtenstein"
  },
  "Q35": {
   "de": "Dänemark",
-  "en": "Denmark"
+  "en": "Denmark",
+  "pl": "Dania"
  },
  "Q35086": {
   "de": "Südgeorgien und die Südlichen Sandwichinseln",
-  "en": "South Georgia and the South Sandwich Islands"
+  "en": "South Georgia and the South Sandwich Islands",
+  "pl": "Georgia Południowa i Sandwich Południowy"
  },
  "Q35555": {
   "de": "Wallis und Futuna",
-  "en": "Wallis and Futuna"
+  "en": "Wallis and Futuna",
+  "pl": "Wallis i Futuna"
  },
  "Q35672": {
   "de": "Pitcairninseln",
-  "en": "Pitcairn Islands"
+  "en": "Pitcairn Islands",
+  "pl": "Pitcairn"
  },
  "Q36": {
   "de": "Polen",
-  "en": "Poland"
+  "en": "Poland",
+  "pl": "Polska"
  },
  "Q36004": {
   "de": "Kokosinseln",
-  "en": "Cocos (Keeling) Islands"
+  "en": "Cocos (Keeling) Islands",
+  "pl": "Wyspy Kokosowe"
  },
  "Q36823": {
   "de": "Tokelau",
-  "en": "Tokelau"
+  "en": "Tokelau",
+  "pl": "Tokelau"
  },
  "Q37": {
   "de": "Litauen",
-  "en": "Lithuania"
+  "en": "Lithuania",
+  "pl": "Litwa"
  },
  "Q3769": {
   "de": "Französisch-Guayana",
-  "en": "French Guiana"
+  "en": "French Guiana",
+  "pl": "Gujana Francuska"
  },
  "Q38": {
   "de": "Italien",
-  "en": "Italy"
+  "en": "Italy",
+  "pl": "Włochy"
  },
  "Q39": {
   "de": "Schweiz",
-  "en": "Switzerland"
+  "en": "Switzerland",
+  "pl": "Szwajcaria"
  },
  "Q398": {
   "de": "Bahrain",
-  "en": "Bahrain"
+  "en": "Bahrain",
+  "pl": "Bahrajn"
  },
  "Q399": {
   "de": "Armenien",
-  "en": "Armenia"
+  "en": "Armenia",
+  "pl": "Armenia"
  },
  "Q40": {
   "de": "Österreich",
-  "en": "Austria"
+  "en": "Austria",
+  "pl": "Austria"
  },
  "Q403": {
   "de": "Serbien",
-  "en": "Serbia"
+  "en": "Serbia",
+  "pl": "Serbia"
  },
  "Q408": {
   "de": "Australien",
-  "en": "Australia"
+  "en": "Australia",
+  "pl": "Australia"
  },
  "Q41": {
   "de": "Griechenland",
-  "en": "Greece"
+  "en": "Greece",
+  "pl": "Grecja"
  },
  "Q414": {
   "de": "Argentinien",
-  "en": "Argentina"
+  "en": "Argentina",
+  "pl": "Argentyna"
  },
  "Q419": {
   "de": "Peru",
-  "en": "Peru"
+  "en": "Peru",
+  "pl": "Peru"
  },
  "Q423": {
   "de": "Nordkorea",
-  "en": "North Korea"
+  "en": "North Korea",
+  "pl": "Korea Północna"
  },
  "Q424": {
   "de": "Kambodscha",
-  "en": "Cambodia"
+  "en": "Cambodia",
+  "pl": "Kambodża"
  },
  "Q43": {
   "de": "Türkei",
-  "en": "Turkey"
+  "en": "Turkey",
+  "pl": "Turcja"
  },
  "Q43448": {
   "de": "Britisches Territorium im Indischen Ozean",
-  "en": "British Indian Ocean Territory"
+  "en": "British Indian Ocean Territory",
+  "pl": "Brytyjskie Terytorium Oceanu Indyjskiego"
  },
  "Q45": {
   "de": "Portugal",
-  "en": "Portugal"
+  "en": "Portugal",
+  "pl": "Portugalia"
  },
  "Q4628": {
   "de": "Färöer",
-  "en": "Faroe Islands"
+  "en": "Faroe Islands",
+  "pl": "Wyspy Owcze"
  },
  "Q55": {
   "de": "Niederlande",
-  "en": "Netherlands"
+  "en": "Netherlands",
+  "pl": "Holandia (Królestwo Niderlandów)"
  },
  "Q5689": {
   "de": "Åland",
-  "en": "Åland"
+  "en": "Åland",
+  "pl": "Wyspy Alandzkie"
  },
  "Q574": {
   "de": "Osttimor",
-  "en": "Timor-Leste"
+  "en": "Timor-Leste",
+  "pl": "Timor Wschodni"
  },
  "Q5785": {
   "de": "Cayman Islands",
-  "en": "Cayman Islands"
+  "en": "Cayman Islands",
+  "pl": "Kajmany (wyspy)"
  },
  "Q6250": {
   "de": "Westsahara",
-  "en": "Western Sahara"
+  "en": "Western Sahara",
+  "pl": "Sahara Zachodnia"
  },
  "Q657": {
   "de": "Tschad",
-  "en": "Chad"
+  "en": "Chad",
+  "pl": "Czad"
  },
  "Q664": {
   "de": "Neuseeland",
-  "en": "New Zealand"
+  "en": "New Zealand",
+  "pl": "Nowa Zelandia"
  },
  "Q668": {
   "de": "Indien",
-  "en": "India"
+  "en": "India",
+  "pl": "Indie"
  },
  "Q672": {
   "de": "Tuvalu",
-  "en": "Tuvalu"
+  "en": "Tuvalu",
+  "pl": "Tuvalu"
  },
  "Q678": {
   "de": "Tonga",
-  "en": "Tonga"
+  "en": "Tonga",
+  "pl": "Tonga"
  },
  "Q683": {
   "de": "Samoa",
-  "en": "Samoa"
+  "en": "Samoa",
+  "pl": "Samoa"
  },
  "Q685": {
   "de": "Salomonen",
-  "en": "Solomon Islands"
+  "en": "Solomon Islands",
+  "pl": "Wyspy Salomona"
  },
  "Q686": {
   "de": "Vanuatu",
-  "en": "Vanuatu"
+  "en": "Vanuatu",
+  "pl": "Vanuatu"
  },
  "Q691": {
   "de": "Papua-Neuguinea",
-  "en": "Papua New Guinea"
+  "en": "Papua New Guinea",
+  "pl": "Papua-Nowa Gwinea"
  },
  "Q695": {
   "de": "Palau",
-  "en": "Palau"
+  "en": "Palau",
+  "pl": "Palau"
  },
  "Q697": {
   "de": "Nauru",
-  "en": "Nauru"
+  "en": "Nauru",
+  "pl": "Nauru"
  },
  "Q702": {
   "de": "Föderierte Staaten von Mikronesien",
-  "en": "Federated States of Micronesia"
+  "en": "Federated States of Micronesia",
+  "pl": "Mikronezja"
  },
  "Q709": {
   "de": "Marshallinseln",
-  "en": "Marshall Islands"
+  "en": "Marshall Islands",
+  "pl": "Wyspy Marshalla"
  },
  "Q710": {
   "de": "Kiribati",
-  "en": "Kiribati"
+  "en": "Kiribati",
+  "pl": "Kiribati"
  },
  "Q711": {
   "de": "Mongolei",
-  "en": "Mongolia"
+  "en": "Mongolia",
+  "pl": "Mongolia"
  },
  "Q712": {
   "de": "Fidschi",
-  "en": "Fiji"
+  "en": "Fiji",
+  "pl": "Fidżi"
  },
  "Q717": {
   "de": "Venezuela",
-  "en": "Venezuela"
+  "en": "Venezuela",
+  "pl": "Wenezuela"
  },
  "Q730": {
   "de": "Suriname",
-  "en": "Suriname"
+  "en": "Suriname",
+  "pl": "Surinam"
  },
  "Q733": {
   "de": "Paraguay",
-  "en": "Paraguay"
+  "en": "Paraguay",
+  "pl": "Paragwaj"
  },
  "Q734": {
   "de": "Guyana",
-  "en": "Guyana"
+  "en": "Guyana",
+  "pl": "Gujana"
  },
  "Q736": {
   "de": "Ecuador",
-  "en": "Ecuador"
+  "en": "Ecuador",
+  "pl": "Ekwador"
  },
  "Q739": {
   "de": "Kolumbien",
-  "en": "Colombia"
+  "en": "Colombia",
+  "pl": "Kolumbia"
  },
  "Q750": {
   "de": "Bolivien",
-  "en": "Bolivia"
+  "en": "Bolivia",
+  "pl": "Boliwia"
  },
  "Q754": {
   "de": "Trinidad und Tobago",
-  "en": "Trinidad and Tobago"
+  "en": "Trinidad and Tobago",
+  "pl": "Trynidad i Tobago"
  },
  "Q757": {
   "de": "St. Vincent und die Grenadinen",
-  "en": "Saint Vincent and the Grenadines"
+  "en": "Saint Vincent and the Grenadines",
+  "pl": "Saint Vincent i Grenadyny"
  },
  "Q760": {
   "de": "St. Lucia",
-  "en": "Saint Lucia"
+  "en": "Saint Lucia",
+  "pl": "Saint Lucia"
  },
  "Q763": {
   "de": "St. Kitts und Nevis",
-  "en": "Saint Kitts and Nevis"
+  "en": "Saint Kitts and Nevis",
+  "pl": "Saint Kitts i Nevis"
  },
  "Q766": {
   "de": "Jamaika",
-  "en": "Jamaica"
+  "en": "Jamaica",
+  "pl": "Jamajka"
  },
  "Q769": {
   "de": "Grenada",
-  "en": "Grenada"
+  "en": "Grenada",
+  "pl": "Grenada"
  },
  "Q77": {
   "de": "Uruguay",
-  "en": "Uruguay"
+  "en": "Uruguay",
+  "pl": "Urugwaj"
  },
  "Q774": {
   "de": "Guatemala",
-  "en": "Guatemala"
+  "en": "Guatemala",
+  "pl": "Gwatemala"
  },
  "Q778": {
   "de": "Bahamas",
-  "en": "The Bahamas"
+  "en": "The Bahamas",
+  "pl": "Bahamy"
  },
  "Q781": {
   "de": "Antigua und Barbuda",
-  "en": "Antigua and Barbuda"
+  "en": "Antigua and Barbuda",
+  "pl": "Antigua i Barbuda"
  },
  "Q783": {
   "de": "Honduras",
-  "en": "Honduras"
+  "en": "Honduras",
+  "pl": "Honduras"
  },
  "Q784": {
   "de": "Dominica",
-  "en": "Dominica"
+  "en": "Dominica",
+  "pl": "Dominika"
  },
  "Q785": {
   "de": "Jersey",
-  "en": "Jersey"
+  "en": "Jersey",
+  "pl": "Jersey"
  },
  "Q786": {
   "de": "Dominikanische Republik",
-  "en": "Dominican Republic"
+  "en": "Dominican Republic",
+  "pl": "Dominikana"
  },
  "Q79": {
   "de": "Ägypten",
-  "en": "Egypt"
+  "en": "Egypt",
+  "pl": "Egipt"
  },
  "Q790": {
   "de": "Haiti",
-  "en": "Haiti"
+  "en": "Haiti",
+  "pl": "Haiti"
  },
  "Q792": {
   "de": "El Salvador",
-  "en": "El Salvador"
+  "en": "El Salvador",
+  "pl": "Salwador"
  },
  "Q794": {
   "de": "Iran",
-  "en": "Iran"
+  "en": "Iran",
+  "pl": "Iran"
  },
  "Q796": {
   "de": "Irak",
-  "en": "Iraq"
+  "en": "Iraq",
+  "pl": "Irak"
  },
  "Q800": {
   "de": "Costa Rica",
-  "en": "Costa Rica"
+  "en": "Costa Rica",
+  "pl": "Kostaryka"
  },
  "Q801": {
   "de": "Israel",
-  "en": "Israel"
+  "en": "Israel",
+  "pl": "Izrael"
  },
  "Q804": {
   "de": "Panama",
-  "en": "Panama"
+  "en": "Panama",
+  "pl": "Panama"
  },
  "Q805": {
   "de": "Jemen",
-  "en": "Yemen"
+  "en": "Yemen",
+  "pl": "Jemen"
  },
  "Q810": {
   "de": "Jordanien",
-  "en": "Jordan"
+  "en": "Jordan",
+  "pl": "Jordania"
  },
  "Q811": {
   "de": "Nicaragua",
-  "en": "Nicaragua"
+  "en": "Nicaragua",
+  "pl": "Nikaragua"
  },
  "Q813": {
   "de": "Kirgisistan",
-  "en": "Kyrgyzstan"
+  "en": "Kyrgyzstan",
+  "pl": "Kirgistan"
  },
  "Q817": {
   "de": "Kuwait",
-  "en": "Kuwait"
+  "en": "Kuwait",
+  "pl": "Kuwejt"
  },
  "Q819": {
   "de": "Laos",
-  "en": "Laos"
+  "en": "Laos",
+  "pl": "Laos"
  },
  "Q822": {
   "de": "Libanon",
-  "en": "Lebanon"
+  "en": "Lebanon",
+  "pl": "Liban"
  },
  "Q826": {
   "de": "Malediven",
-  "en": "Maldives"
+  "en": "Maldives",
+  "pl": "Malediwy"
  },
  "Q833": {
   "de": "Malaysia",
-  "en": "Malaysia"
+  "en": "Malaysia",
+  "pl": "Malezja"
  },
  "Q836": {
   "de": "Myanmar",
-  "en": "Myanmar"
+  "en": "Myanmar",
+  "pl": "Mjanma"
  },
  "Q837": {
   "de": "Nepal",
-  "en": "Nepal"
+  "en": "Nepal",
+  "pl": "Nepal"
  },
  "Q842": {
   "de": "Oman",
-  "en": "Oman"
+  "en": "Oman",
+  "pl": "Oman"
  },
  "Q842829": {
-  "en": "Svalbard and Jan Mayen"
+  "en": "Svalbard and Jan Mayen",
+  "pl": "Svalbard i Jan Mayen"
  },
  "Q843": {
   "de": "Pakistan",
-  "en": "Pakistan"
+  "en": "Pakistan",
+  "pl": "Pakistan"
  },
  "Q846": {
   "de": "Katar",
-  "en": "Qatar"
+  "en": "Qatar",
+  "pl": "Katar"
  },
  "Q851": {
   "de": "Saudi-Arabien",
-  "en": "Saudi Arabia"
+  "en": "Saudi Arabia",
+  "pl": "Arabia Saudyjska"
  },
  "Q854": {
   "de": "Sri Lanka",
-  "en": "Sri Lanka"
+  "en": "Sri Lanka",
+  "pl": "Sri Lanka"
  },
  "Q858": {
   "de": "Syrien",
-  "en": "Syria"
+  "en": "Syria",
+  "pl": "Syria"
  },
  "Q863": {
   "de": "Tadschikistan",
-  "en": "Tajikistan"
+  "en": "Tajikistan",
+  "pl": "Tadżykistan"
  },
  "Q8646": {
   "de": "Hongkong",
-  "en": "Hong Kong"
+  "en": "Hong Kong",
+  "pl": "Hongkong"
  },
  "Q865": {
   "de": "Republik China (Taiwan)",
-  "en": "Taiwan"
+  "en": "Taiwan",
+  "pl": "Republika Chińska"
  },
  "Q869": {
   "de": "Thailand",
-  "en": "Thailand"
+  "en": "Thailand",
+  "pl": "Tajlandia"
  },
  "Q874": {
   "de": "Turkmenistan",
-  "en": "Turkmenistan"
+  "en": "Turkmenistan",
+  "pl": "Turkmenistan"
  },
  "Q878": {
   "de": "Vereinigte Arabische Emirate",
-  "en": "United Arab Emirates"
+  "en": "United Arab Emirates",
+  "pl": "Zjednoczone Emiraty Arabskie"
  },
  "Q881": {
   "de": "Vietnam",
-  "en": "Vietnam"
+  "en": "Vietnam",
+  "pl": "Wietnam"
  },
  "Q884": {
   "de": "Südkorea",
-  "en": "South Korea"
+  "en": "South Korea",
+  "pl": "Korea Południowa"
  },
  "Q889": {
   "de": "Afghanistan",
-  "en": "Afghanistan"
+  "en": "Afghanistan",
+  "pl": "Afganistan"
  },
  "Q902": {
   "de": "Bangladesch",
-  "en": "Bangladesh"
+  "en": "Bangladesh",
+  "pl": "Bangladesz"
  },
  "Q912": {
   "de": "Mali",
-  "en": "Mali"
+  "en": "Mali",
+  "pl": "Mali"
  },
  "Q916": {
   "de": "Angola",
-  "en": "Angola"
+  "en": "Angola",
+  "pl": "Angola"
  },
  "Q917": {
   "de": "Bhutan",
-  "en": "Bhutan"
+  "en": "Bhutan",
+  "pl": "Bhutan"
  },
  "Q921": {
   "de": "Brunei",
-  "en": "Brunei"
+  "en": "Brunei",
+  "pl": "Brunei"
  },
  "Q924": {
   "de": "Tansania",
-  "en": "Tanzania"
+  "en": "Tanzania",
+  "pl": "Tanzania"
  },
  "Q928": {
   "de": "Philippinen",
-  "en": "Philippines"
+  "en": "Philippines",
+  "pl": "Filipiny"
  },
  "Q929": {
   "de": "Zentralafrikanische Republik",
-  "en": "Central African Republic"
+  "en": "Central African Republic",
+  "pl": "Republika Środkowoafrykańska"
  },
  "Q945": {
   "de": "Togo",
-  "en": "Togo"
+  "en": "Togo",
+  "pl": "Togo"
  },
  "Q948": {
   "de": "Tunesien",
-  "en": "Tunisia"
+  "en": "Tunisia",
+  "pl": "Tunezja"
  },
  "Q953": {
   "de": "Sambia",
-  "en": "Zambia"
+  "en": "Zambia",
+  "pl": "Zambia"
  },
  "Q954": {
   "de": "Simbabwe",
-  "en": "Zimbabwe"
+  "en": "Zimbabwe",
+  "pl": "Zimbabwe"
  },
  "Q958": {
   "de": "Südsudan",
-  "en": "South Sudan"
+  "en": "South Sudan",
+  "pl": "Sudan Południowy"
  },
  "Q96": {
   "de": "Mexiko",
-  "en": "Mexico"
+  "en": "Mexico",
+  "pl": "Meksyk"
  },
  "Q962": {
   "de": "Benin",
-  "en": "Benin"
+  "en": "Benin",
+  "pl": "Benin"
  },
  "Q963": {
   "de": "Botswana",
-  "en": "Botswana"
+  "en": "Botswana",
+  "pl": "Botswana"
  },
  "Q9648": {
   "de": "Falklandinseln",
-  "en": "Falkland Islands"
+  "en": "Falkland Islands",
+  "pl": "Falklandy"
  },
  "Q965": {
   "de": "Burkina Faso",
-  "en": "Burkina Faso"
+  "en": "Burkina Faso",
+  "pl": "Burkina Faso"
  },
  "Q967": {
   "de": "Burundi",
-  "en": "Burundi"
+  "en": "Burundi",
+  "pl": "Burundi"
  },
  "Q9676": {
   "de": "Isle of Man",
-  "en": "Isle of Man"
+  "en": "Isle of Man",
+  "pl": "Wyspa Man"
  },
  "Q970": {
   "de": "Komoren",
-  "en": "Comoros"
+  "en": "Comoros",
+  "pl": "Komory"
  },
  "Q971": {
   "de": "Republik Kongo",
-  "en": "Republic of the Congo"
+  "en": "Republic of the Congo",
+  "pl": "Kongo"
  },
  "Q974": {
   "de": "Demokratische Republik Kongo",
-  "en": "Democratic Republic of the Congo"
+  "en": "Democratic Republic of the Congo",
+  "pl": "Demokratyczna Republika Konga"
  },
  "Q977": {
   "de": "Dschibuti",
-  "en": "Djibouti"
+  "en": "Djibouti",
+  "pl": "Dżibuti"
  },
  "Q983": {
   "de": "Äquatorialguinea",
-  "en": "Equatorial Guinea"
+  "en": "Equatorial Guinea",
+  "pl": "Gwinea Równikowa"
  },
  "Q986": {
   "de": "Eritrea",
-  "en": "Eritrea"
+  "en": "Eritrea",
+  "pl": "Erytrea"
  }
 }

@@ -759,7 +759,7 @@ def accept(fp: str, log=print) -> int:
                     cap["lat"], cap["lon"] = round(d.new[0], 5), round(d.new[1], 5)
         elif d.kind == "sitelink":
             lang = d.field.split(".", 1)[1]
-            if lang == "de":
+            if lang != "en":
                 entry["wikipedia"] = wikidata.wikipedia_links(entry["wikipedia"]["en"], live.sitelinks.get(entry["wikidata"]))
             elif d.new:
                 entry["wikipedia"]["en"] = wikidata.wikipedia_url("en", d.new)

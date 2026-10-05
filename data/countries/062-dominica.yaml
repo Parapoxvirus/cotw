@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Dominica
   de: Dominica
+  pl: Dominika
 formal_name:
   en: The Commonwealth of Dominica
   de: Commonwealth Dominica
+  pl: Wspólnota Dominiki
 capitals:
 - name:
     en: Roseau
     de: Roseau
+    pl: Roseau
   role: capital
   wikidata: Q36281
   lat: 15.3
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Dominica
   de: https://de.wikipedia.org/wiki/Dominica
+  pl: https://pl.wikipedia.org/wiki/Dominika

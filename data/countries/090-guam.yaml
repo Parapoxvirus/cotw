@@ -7,10 +7,16 @@ dependency_of: '237'
 name:
   en: Guam
   de: Guam
+  pl: Guam
+formal_name:
+  en: Territory of Guam
+  de: Territorium Guam
+  pl: Terytorium Guamu
 capitals:
 - name:
     en: Hagåtña
     de: Hagåtña
+    pl: Hagåtña
   role: capital
   wikidata: Q30988
   lat: 13.48333
@@ -22,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Guam
   de: https://de.wikipedia.org/wiki/Guam
+  pl: https://pl.wikipedia.org/wiki/Guam

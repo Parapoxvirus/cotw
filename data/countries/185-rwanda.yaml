@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Rwanda
   de: Ruanda
+  pl: Rwanda
 formal_name:
   en: The Republic of Rwanda
   de: Republik Ruanda
+  pl: Republika Rwandy
 capitals:
 - name:
     en: Kigali
     de: Kigali
+    pl: Kigali
   role: capital
   wikidata: Q3859
   lat: -1.9525
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Rwanda
   de: https://de.wikipedia.org/wiki/Ruanda
+  pl: https://pl.wikipedia.org/wiki/Rwanda

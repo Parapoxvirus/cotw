@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Bosnia and Herzegovina
   de: Bosnien und Herzegowina
+  pl: Bośnia i Hercegowina
 capitals:
 - name:
     en: Sarajevo
     de: Sarajevo
+    pl: Sarajewo
   role: capital
   wikidata: Q11194
   lat: 43.85639
@@ -24,3 +26,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina
   de: https://de.wikipedia.org/wiki/Bosnien_und_Herzegowina
+  pl: https://pl.wikipedia.org/wiki/Bośnia_i_Hercegowina

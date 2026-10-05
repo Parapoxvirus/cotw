@@ -14,7 +14,7 @@ dependencies), `tools/cotw/globe.py` (data build).
 
 It writes `media/_cotw-globe.js` and the two packets (committed) and `build/globe-preview.html` (not committed):
 a grid of all globes with day/night, tooltip, language and width toggles. Query parameters
-narrow it down: `?ids=217,184&w=400&night=1&tooltip=1&lang=de`, and
+narrow it down: `?ids=217,184&w=400&night=1&tooltip=1&lang=de` (or `lang=pl`), and
 `&lon=…&lat=…&zoom=…` overrides the view. `night=1` sets Anki's `.nightMode` class (the only
 thing the globe follows). `&debug=1` shows per globe the last frame time, the level of
 detail it drew (`L2` coarsest; `L2→L3` = waiting for a level still being decoded), whether
@@ -32,7 +32,7 @@ the coast stroke was drawn, and the zoom.
 |---|---|
 | `class="cotw-globe"` | Required. Every such element on the card gets a globe. |
 | `data-id` | Required. The COTW ID, i.e. the note field `Locator` (DECISIONS B6). An unknown ID shows a plain globe. |
-| `data-lang` | `en` (default) or `de`: language of the tooltip. |
+| `data-lang` | `en` (default), `de` or `pl`: language of the tooltip. |
 | `data-tooltip` | Present = the back side's tooltip is on (hover with a mouse, tap on touch devices shows the country name and gives that country the quiet `selected` fill). **Absent by default**, and it must stay absent on the front of *Map → Country* (DECISIONS B8): no text at all. `data-tooltip="false"` also switches it off. |
 
 The deck builder supplies content-hashed filenames for **all three** scripts. Each optional
@@ -139,7 +139,7 @@ background shows), `rim` (sphere outline) and `graticule`.
 | Specks | Isolated islands under 0.004 deg² (~50 km²) are dropped, except the largest part of every entry. The dropped islands of an entry survive as points on a 0.5° grid (`s`), used only to place highlight circles (Kiribati, the Maldives). |
 | Topology | Arcs split at junctions, shared borders and enclave/hole rings stored once, quantized on a 0.001° grid (Vatican City stays a polygon), delta-encoded, segments over 1° densified (every level, so the chord error stays sub-pixel wherever a level is drawn). Standard TopoJSON (`type: Topology`, `transform`, `objects`, `arcs`). |
 | Objects | `entries…`: one `MultiPolygon` per entry per level, `id` = COTW ID (never ISO, DECISIONS A1). `other…`: all land without an entry (Antarctica, Bir Tawil, …). `eez`: the entry's own EEZ (Marine Regions, same assignment as the maps), one level, simplified per entry at 0.1° (finer for small zones). Land holes are gone ([`MAPS.md`](MAPS.md)); holes that hold another territory's zone (Saint-Pierre and Miquelon in Canada's) or a high-seas pocket are kept. Before simplifying, the zone is joined with the entry's Natural Earth land parts it touches and the gaps between them (`maps.coast_gaps`, issue #22): Marine Regions draws zones up to its own coastline, so bays and fjords (Svalbard, Norway, the Gulf of Bothnia) showed as dark sea patches in the zone, and simplifying the coastal edge on its own opened thin slivers along every coast (7,239 gaps, 45 deg², before; `tests/test_globe.py` now allows none over 0.01 deg²). The EEZ is drawn under the land, so the joined land never shows. No 12 nm zone (DECISIONS C13). |
-| Per entry | `c` center (lon, lat) by the maps' rule: `data/overrides/centers.yaml`, else the centroid of the largest polygon (without folded units); `z` initial zoom; `a` land area in steradians; `n` neighbors = exactly `borders`; `name.en` / `name.de` for the tooltip; `e` (only entries that can get highlight circles at zoom 1, `globe.can_highlight`) one convex outline per EEZ part, at most 12 lon/lat points with 2 decimals, fused across the antimeridian and scaled so it contains the whole part (`globe.zone_hulls`); 87 entries, 100 outlines, about 16 KB of the bootstrap (issue #25: bootstrap 203,137 → 222,728 bytes). |
+| Per entry | `c` center (lon, lat) by the maps' rule: `data/overrides/centers.yaml`, else the centroid of the largest polygon (without folded units); `z` initial zoom; `a` land area in steradians; `n` neighbors = exactly `borders`; `name.en` / `name.de` / `name.pl` for the tooltip; `e` (only entries that can get highlight circles at zoom 1, `globe.can_highlight`) one convex outline per EEZ part, at most 12 lon/lat points with 2 decimals, fused across the antimeridian and scaled so it contains the whole part (`globe.zone_hulls`); 87 entries, 100 outlines, about 16 KB of the bootstrap (issue #25: bootstrap 203,137 → 222,728 bytes). |
 
 Output is deterministic (sorted iteration, fixed rounding, `sort_keys`, no timestamps):
 the same input gives byte-identical assets. Enforced budgets are **400,000 bytes** for the
@@ -229,7 +229,7 @@ Independent packets remap only their own referenced arcs, keeping shared boundar
   part is not entirely on the visible hemisphere or the circle would exceed 0.45 × side
   (zoomed in). The globe has no 12 nm line, so there is no crossing check.
 - **Tooltip and selection** (opt-in, see above): the name of the entry under the pointer
-  (inside a highlight circle: the card's entry), in `data-lang`, from the embedded EN/DE names.
+  (inside a highlight circle: the card's entry), in `data-lang`, from the embedded names.
   Hit-testing inverts the projection and tests the entries' lon/lat rings of the finest decoded
   level. One selection drives both the tooltip and a quiet fill (`selected` in
   `data/style/palette.yaml`: day `#D5D7A4`, the land fill `#DAE6AF` blended 30 % toward

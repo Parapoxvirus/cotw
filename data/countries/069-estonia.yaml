@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Estonia
   de: Estland
+  pl: Estonia
 formal_name:
   en: The Republic of Estonia
   de: Republik Estland
+  pl: Republika Estońska
 capitals:
 - name:
     en: Tallinn
     de: Tallinn
+    pl: Tallinn
   role: capital
   wikidata: Q1770
   lat: 59.43722
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Estonia
   de: https://de.wikipedia.org/wiki/Estland
+  pl: https://pl.wikipedia.org/wiki/Estonia

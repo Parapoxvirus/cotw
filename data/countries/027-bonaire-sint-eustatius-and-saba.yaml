@@ -7,13 +7,16 @@ dependency_of: '155'
 name:
   en: Bonaire, Sint Eustatius and Saba / Caribbean Netherlands
   de: Bonaire, Sint Eustatius und Saba / Karibische Niederlande
+  pl: Bonaire, Sint Eustatius i Saba / Niderlandy Karaibskie
 capitals:
 - name:
     en: Kralendijk
     de: Kralendijk
+    pl: Kralendijk
   label:
     en: Bonaire
     de: Bonaire
+    pl: Bonaire
   role: capital
   wikidata: Q331584
   lat: 12.15083
@@ -21,9 +24,11 @@ capitals:
 - name:
     en: Oranjestad
     de: Oranjestad
+    pl: Oranjestad
   label:
     en: Sint Eustatius
     de: Sint Eustatius
+    pl: Sint Eustatius
   role: capital
   wikidata: Q217610
   lat: 17.48333
@@ -31,9 +36,11 @@ capitals:
 - name:
     en: The Bottom
     de: The Bottom
+    pl: The Bottom
   label:
     en: Saba
     de: Saba
+    pl: Saba
   role: capital
   wikidata: Q475718
   lat: 17.62611
@@ -46,3 +53,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Caribbean_Netherlands
   de: https://de.wikipedia.org/wiki/Karibische_Niederlande
+  pl: https://pl.wikipedia.org/wiki/Holandia_Karaibska

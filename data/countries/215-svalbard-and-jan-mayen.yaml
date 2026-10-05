@@ -7,10 +7,12 @@ dependency_of: '166'
 name:
   en: Svalbard and Jan Mayen
   de: Svalbard und Jan Mayen
+  pl: Svalbard i Jan Mayen
 capitals:
 - name:
     en: Longyearbyen
     de: Longyearbyen
+    pl: Longyearbyen
   role: capital
   wikidata: Q25923
   lat: 78.21667
@@ -21,3 +23,4 @@ regions:
 - Northern Europe
 wikipedia:
   en: https://en.wikipedia.org/wiki/Svalbard_and_Jan_Mayen
+  pl: https://pl.wikipedia.org/wiki/Svalbard_i_Jan_Mayen

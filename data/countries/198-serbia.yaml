@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Serbia
   de: Serbien
+  pl: Serbia
 formal_name:
   en: The Republic of Serbia
   de: Republik Serbien
+  pl: Republika Serbii
 capitals:
 - name:
     en: Belgrade
     de: Belgrad
+    pl: Belgrad
   role: capital
   wikidata: Q3711
   lat: 44.81778
@@ -32,3 +35,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Serbia
   de: https://de.wikipedia.org/wiki/Serbien
+  pl: https://pl.wikipedia.org/wiki/Serbia

@@ -7,13 +7,16 @@ dependency_of: '235'
 name:
   en: Guernsey
   de: Guernsey
+  pl: Guernsey
 formal_name:
   en: Bailiwick of Guernsey
   de: Vogtei Guernsey
+  pl: Baliwat Guernsey
 capitals:
 - name:
     en: St. Peter Port
     de: St. Peter Port
+    pl: Saint Peter Port
   role: capital
   wikidata: Q174262
   lat: 49.46
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Guernsey
   de: https://de.wikipedia.org/wiki/Bailiwick_of_Guernsey
+  pl: https://pl.wikipedia.org/wiki/Guernsey

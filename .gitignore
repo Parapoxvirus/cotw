@@ -1,4 +1,5 @@
 # Downloaded geodata and other caches: never committed, only derived results are.
+.DS_Store
 .cache/
 __pycache__/
 *.pyc

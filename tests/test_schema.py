@@ -40,6 +40,9 @@ def _entry(**overrides) -> dict:
 
 def test_valid_entry_has_no_problems():
     assert schema.validate_entry(_entry(), Path("001-musterland.yaml")) == []
+    extra = _entry(name={"en": "Musterland", "de": "Musterland", "pl": "Musterland"})
+    extra["wikipedia"]["pl"] = "https://pl.wikipedia.org/wiki/Musterland"
+    assert schema.validate_entry(extra, Path("001-musterland.yaml")) == []
 
 
 @pytest.mark.parametrize(

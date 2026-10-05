@@ -75,6 +75,7 @@ def test_guids_are_stable_and_differ_per_language():
     # Pinned: a changed derivation would duplicate every note in every collection.
     assert build.guid("217", "en") == "C,F0URhk8F"
     assert build.guid("217", "de") == "B+v1yB?A&S"
+    assert build.guid("217", "pl") == "h(XrEiN`8?"
 
 
 def test_guids_in_packages(collections, by_id):
@@ -183,6 +184,10 @@ def test_regions_have_german_names(taxonomy):
     assert {name for path in taxonomy for name in path} <= lang.REGIONS_DE.keys()
 
 
+def test_regions_have_polish_names(taxonomy):
+    assert {name for path in taxonomy for name in path} <= lang.REGIONS_PL.keys()
+
+
 def test_german_texts_use_real_umlauts(collections, by_id):
     col = collections["de"]
     blob = " ".join(flds for (flds,) in col.execute("SELECT flds FROM notes"))
@@ -207,6 +212,9 @@ def test_dependency_and_status_texts(by_id):
     uk_dep = next(e for e in by_id.values() if e.get("dependency_of") == "235")
     assert build.fields(uk_dep, by_id, "en")["dependency_of"] == "the United Kingdom"
     assert build.fields(uk_dep, by_id, "de")["dependency_of"] == "dem Vereinigten Königreich"
+    parents_pl = {by_id[e["dependency_of"]]["name"]["pl"] for e in by_id.values() if e.get("dependency_of")}
+    assert parents_pl == set(lang.DATIVE_PL)
+    assert build.fields(uk_dep, by_id, "pl")["dependency_of"] == "Wielkiej Brytanii"
     xk = build.fields(by_id["118"], by_id, "de")
     assert (xk["status"], xk["dependency_of"]) == ("Status umstritten", "")
 
@@ -214,6 +222,7 @@ def test_dependency_and_status_texts(by_id):
 def test_german_wikipedia_with_english_fallback(by_id):
     assert build.fields(by_id["217"], by_id, "de")["wikipedia"] == "https://de.wikipedia.org/wiki/Schweiz"
     assert build.fields(by_id["217"], by_id, "en")["wikipedia"] == "https://en.wikipedia.org/wiki/Switzerland"
+    assert build.fields(by_id["217"], by_id, "pl")["wikipedia"] == "https://pl.wikipedia.org/wiki/Szwajcaria"
     assert build.fields(by_id["215"], by_id, "de")["wikipedia"].startswith("https://en.wikipedia.org/")
 
 

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Iran
   de: Iran
+  pl: Iran
 formal_name:
   en: The Islamic Republic of Iran
   de: Islamische Republik Iran
+  pl: Islamska Republika Iranu
 capitals:
 - name:
     en: Tehran
     de: Teheran
+    pl: Teheran
   role: capital
   wikidata: Q3616
   lat: 35.68889
@@ -31,3 +34,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Iran
   de: https://de.wikipedia.org/wiki/Iran
+  pl: https://pl.wikipedia.org/wiki/Iran

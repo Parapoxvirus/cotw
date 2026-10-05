@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Iraq
   de: Irak
+  pl: Irak
 formal_name:
   en: The Republic of Iraq
   de: Republik Irak
+  pl: Republika Iraku
 capitals:
 - name:
     en: Baghdad
     de: Bagdad
+    pl: Bagdad
   role: capital
   wikidata: Q1530
   lat: 33.31528
@@ -30,3 +33,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Iraq
   de: https://de.wikipedia.org/wiki/Irak
+  pl: https://pl.wikipedia.org/wiki/Irak

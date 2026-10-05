@@ -6,16 +6,20 @@ status: sovereign
 name:
   en: Bolivia
   de: Bolivien
+  pl: Boliwia
 formal_name:
   en: The Plurinational State of Bolivia
   de: Plurinationaler Staat Bolivien
+  pl: Wielonarodowe Państwo Boliwia
 capitals:
 - name:
     en: Sucre
     de: Sucre
+    pl: Sucre
   label:
     en: capital
     de: Hauptstadt
+    pl: stolica
   role: capital
   wikidata: Q2907
   lat: -19.0475
@@ -23,9 +27,11 @@ capitals:
 - name:
     en: La Paz
     de: La Paz
+    pl: La Paz
   label:
     en: seat of government
     de: Regierungssitz
+    pl: siedziba rządu
   role: seat_of_government
   wikidata: Q1491
   lat: -16.49583
@@ -43,3 +49,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Bolivia
   de: https://de.wikipedia.org/wiki/Bolivien
+  pl: https://pl.wikipedia.org/wiki/Boliwia

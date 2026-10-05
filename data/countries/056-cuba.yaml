@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Cuba
   de: Kuba
+  pl: Kuba
 formal_name:
   en: The Republic of Cuba
   de: Republik Kuba
+  pl: Republika Kuby
 capitals:
 - name:
     en: Havana
     de: Havanna
+    pl: Hawana
   role: capital
   wikidata: Q1563
   lat: 23.13667
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Cuba
   de: https://de.wikipedia.org/wiki/Kuba
+  pl: https://pl.wikipedia.org/wiki/Kuba

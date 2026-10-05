@@ -7,10 +7,16 @@ dependency_of: '235'
 name:
   en: Pitcairn Islands
   de: Pitcairninseln
+  pl: Pitcairn
+formal_name:
+  en: Pitcairn, Henderson, Ducie and Oeno Islands
+  de: Pitcairn-, Henderson-, Ducie- und Oenoinseln
+  pl: Wyspy Pitcairn, Henderson, Ducie i Oeno
 capitals:
 - name:
     en: Adamstown
     de: Adamstown
+    pl: Adamstown
   role: capital
   wikidata: Q48273
   lat: -25.06667
@@ -22,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Pitcairn_Islands
   de: https://de.wikipedia.org/wiki/Pitcairninseln
+  pl: https://pl.wikipedia.org/wiki/Pitcairn

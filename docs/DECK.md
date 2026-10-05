@@ -5,6 +5,7 @@
 ```bash
 .venv/bin/python -m cotw build-deck            # build/COTW-EN.apkg + build/COTW-DE.apkg + build/deck-preview.html
 .venv/bin/python -m cotw build-deck --lang de  # one language only
+.venv/bin/python -m cotw build-deck --lang pl  # Polish package COTW-PL.apkg
 .venv/bin/python -m cotw build-deck --only RU,KR,ZA,CW,CH,VA,SJ,KI,BO,ID --out build/rc2   # test package
 ```
 
@@ -16,15 +17,15 @@ without a code change (AnkiWeb links, contact, public repository URL): `data/dec
 
 ## What is in a package
 
-| | EN | DE |
-|---|---|---|
-| File | `COTW-EN.apkg` | `COTW-DE.apkg` |
-| Main deck | `Countries of the World` | `Länder der Welt` |
-| Subdeck | `Countries of the World::Extras` | `Länder der Welt::Extras` |
-| Note type | `COTW (EN)` | `COTW (DE)` |
-| Notes / cards | 248 / 2318 | 248 / 2318 |
-| Media | 1240 field media (flag + 2 maps × day/night per entry) + 27 template assets | the same files, byte-identical |
-| Size | ≈ 8.5 MB (rc1: 5.6 MB; the night maps add ~2.9 MB) | ≈ 8.5 MB |
+| | EN | DE | PL |
+|---|---|---|---|
+| File | `COTW-EN.apkg` | `COTW-DE.apkg` | `COTW-PL.apkg` |
+| Main deck | `Countries of the World` | `Länder der Welt` | `Kraje świata` |
+| Subdeck | `Countries of the World::Extras` | `Länder der Welt::Extras` | `Kraje świata::Extras` |
+| Note type | `COTW (EN)` | `COTW (DE)` | `COTW (PL)` |
+| Notes / cards | 248 / 2318 | 248 / 2318 | 248 / 2318 |
+| Media | 1240 field media (flag + 2 maps × day/night per entry) + 27 template assets | the same files, byte-identical | the same files, byte-identical |
+| Size | ≈ 8.5 MB (rc1: 5.6 MB; the night maps add ~2.9 MB) | ≈ 8.5 MB | ≈ 8.5 MB |
 
 2318 cards = 248 × 10 minus the two border card types of the 81 entries without land borders
 (their front renders empty, so Anki creates no card).
@@ -32,11 +33,11 @@ without a code change (AnkiWeb links, contact, public repository URL): `data/dec
 ## Identities
 
 Every identity is a fixed constant or a pure derivation, never random, and differs per
-language, so nothing the EN package installs can collide with the DE package.
+language, so nothing the EN, DE and PL packages install can collide.
 
 | What | EN | DE | Rule |
 |---|---|---|---|
-| Note type ID | `1829704095` | `1123558981` | frozen constants in `lang.py` |
+| Note type ID | `1829704095` | `1123558981` | frozen constants in `lang.py` (PL: `1086132728`) |
 | Main deck ID | `1866953617` | `2041372721` | 〃 |
 | Extras deck ID | `1918702087` | `1539901401` | 〃 |
 | Note GUID | `guid_for("cotw", "en", id)` | `guid_for("cotw", "de", id)` | genanki's `guid_for` (SHA-256, base91) of COTW ID + language (DECISIONS 14); Switzerland: `C,F0URhk8F` / `B+v1yB?A&S` (pinned in a test) |
@@ -62,7 +63,7 @@ type or a second copy of every note in every user's collection.
 | `COTW-EN::Status::Sovereign` / `Dependency` / `Disputed` | `COTW-DE::Status::Souverän` / `Abhängiges-Gebiet` / `Umstritten` |
 
 A search for `tag:COTW-EN::Europe` or a filtered deck on it never pulls DE cards. German
-region names live in `lang.REGIONS_DE`; a test checks that every region of the taxonomy has one.
+region names live in `lang.REGIONS_DE`; Polish names in `lang.REGIONS_PL`. A test checks that every region of the taxonomy has one.
 
 ## Fields
 

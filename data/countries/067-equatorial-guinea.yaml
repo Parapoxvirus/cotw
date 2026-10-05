@@ -6,16 +6,20 @@ status: sovereign
 name:
   en: Equatorial Guinea
   de: Äquatorialguinea
+  pl: Gwinea Równikowa
 formal_name:
   en: The Republic of Equatorial Guinea
   de: Republik Äquatorial­guinea
+  pl: Republika Gwinei Równikowej
 capitals:
 - name:
     en: Malabo
     de: Malabo
+    pl: Malabo
   label:
     en: capital
     de: Hauptstadt
+    pl: stolica
   role: capital
   wikidata: Q3818
   lat: 3.75206
@@ -23,9 +27,11 @@ capitals:
 - name:
     en: Ciudad de la Paz
     de: Ciudad de la Paz
+    pl: Ciudad de la Paz
   label:
     en: seat of government, to be made capital at a later point
     de: Regierungssitz, wird später Hauptstadt werden
+    pl: siedziba rządu, w przyszłości stolica
   role: seat_of_government
   wikidata: Q1140136
   lat: 1.59167
@@ -40,3 +46,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Equatorial_Guinea
   de: https://de.wikipedia.org/wiki/Äquatorialguinea
+  pl: https://pl.wikipedia.org/wiki/Gwinea_Równikowa

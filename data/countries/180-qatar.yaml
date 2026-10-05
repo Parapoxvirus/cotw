@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Qatar
   de: Katar
+  pl: Katar
 formal_name:
   en: The State of Qatar
   de: Staat Katar
+  pl: Państwo Katar
 capitals:
 - name:
     en: Doha
     de: Doha
+    pl: Doha
   role: capital
   wikidata: Q3861
   lat: 25.28611
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Qatar
   de: https://de.wikipedia.org/wiki/Katar
+  pl: https://pl.wikipedia.org/wiki/Katar

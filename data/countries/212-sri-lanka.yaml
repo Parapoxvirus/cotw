@@ -6,16 +6,20 @@ status: sovereign
 name:
   en: Sri Lanka
   de: Sri Lanka
+  pl: Sri Lanka
 formal_name:
   en: The Democratic Socialist Republic of Sri Lanka
   de: Demokratische Sozialistische Republik Sri Lanka
+  pl: Demokratyczno-Socjalistyczna Republika Sri Lanki
 capitals:
 - name:
     en: Sri Jayawardenepura
     de: Sri Jayawardenepura
+    pl: Sri Dźajawardanapura Kotte
   label:
     en: capital
     de: Hauptstadt
+    pl: stolica
   role: capital
   wikidata: Q41963
   lat: 6.9
@@ -23,9 +27,11 @@ capitals:
 - name:
     en: Colombo
     de: Colombo
+    pl: Kolombo
   label:
     en: seat of government
     de: Regierungssitz
+    pl: siedziba rządu
   role: seat_of_government
   wikidata: Q35381
   lat: 6.92667
@@ -37,3 +43,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Sri_Lanka
   de: https://de.wikipedia.org/wiki/Sri_Lanka
+  pl: https://pl.wikipedia.org/wiki/Sri_Lanka

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Liechtenstein
   de: Liechtenstein
+  pl: Liechtenstein
 formal_name:
   en: The Principality of Liechtenstein
   de: Fürstentum Liechtenstein
+  pl: Księstwo Liechtensteinu
 capitals:
 - name:
     en: Vaduz
     de: Vaduz
+    pl: Vaduz
   role: capital
   wikidata: Q1844
   lat: 47.14056
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Liechtenstein
   de: https://de.wikipedia.org/wiki/Liechtenstein
+  pl: https://pl.wikipedia.org/wiki/Liechtenstein

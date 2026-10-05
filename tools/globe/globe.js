@@ -898,7 +898,7 @@
   Globe.prototype.configure = function () {
     var id = this.el.getAttribute('data-id');
     id = id ? String(id).trim() : '';
-    this.lang = this.el.getAttribute('data-lang') === 'de' ? 'de' : 'en';
+    this.lang = this.el.getAttribute('data-lang') || 'en';
     this.tooltip = this.el.hasAttribute('data-tooltip') && this.el.getAttribute('data-tooltip') !== 'false';
     if (!this.tooltip) this.select(null);
     if (id !== this.id) {

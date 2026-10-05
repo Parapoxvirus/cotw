@@ -61,18 +61,23 @@ def cmd_fetch_wikipedia(args) -> int:
     if not args.offline:
         wikidata.dump(wikidata.SITELINKS_CACHE, wikidata.fetch_sitelinks([e["wikidata"] for e in entries.values()]))
     sitelinks = wikidata.load_sitelinks()
-    changed, fallback = 0, []
+    extra = [lang for lang in wikidata.WIKIS if lang != "en"]
+    changed, fallback = 0, {lang: [] for lang in extra}
     for path, entry in entries.items():
-        links = wikidata.wikipedia_links(entry["wikipedia"]["en"], sitelinks.get(entry["wikidata"]))
-        if "de" not in links:
-            fallback.append(f"{entry['id']} {entry['name']['en']}")
+        links = wikidata.wikipedia_links(
+            entry["wikipedia"]["en"], sitelinks.get(entry["wikidata"]), keep=entry["wikipedia"]
+        )
+        for lang in extra:
+            if lang not in links:
+                fallback[lang].append(f"{entry['id']} {entry['name']['en']}")
         if links != entry["wikipedia"]:
             entry["wikipedia"] = links
             path.write_text(dump_entry(entry), encoding="utf-8")
             changed += 1
-    for f in fallback:
-        print(f"no dewiki article, deck falls back to EN: {f}")
-    print(f"{changed} entries updated, {len(fallback)} without a German article")
+    for lang, rows in fallback.items():
+        for f in rows:
+            print(f"no {lang}wiki article, deck falls back to EN: {f}")
+    print(f"{changed} entries updated, " + ", ".join(f"{len(fallback[lang])} without {lang}" for lang in extra))
     return 0
 
 
@@ -221,7 +226,7 @@ def main(argv: list[str] | None = None) -> int:
     fw = sub.add_parser("fetch-wikidata", help="refresh data/wikidata/*.json (network)")
     fw.add_argument("--step", choices=["all", "countries", "capitals", "places", "status", "iso-codes"], default="all")
     fw.set_defaults(func=cmd_fetch_wikidata)
-    fwp = sub.add_parser("fetch-wikipedia", help="Wikidata sitelinks → wikipedia.de in data/countries (network)")
+    fwp = sub.add_parser("fetch-wikipedia", help="Wikidata sitelinks → wikipedia.de / wikipedia.pl in data/countries (network)")
     fwp.add_argument("--offline", action="store_true", help="reuse data/wikidata/sitelinks.json")
     fwp.set_defaults(func=cmd_fetch_wikipedia)
     sub.add_parser("fetch-naturalearth", help="download Natural Earth, recompute data/derived/ne-borders.yaml (network)").set_defaults(func=cmd_fetch_naturalearth)
@@ -237,7 +242,7 @@ def main(argv: list[str] | None = None) -> int:
     bu.add_argument("--check", action="store_true", help="compare the infographics with the v3 PNGs, write overlays to build/ (needs shapely + Pillow)")
     bu.set_defaults(func=cmd_build_ui)
     bd = sub.add_parser("build-deck", help="build build/COTW-EN.apkg + COTW-DE.apkg and build/deck-preview.html")
-    bd.add_argument("--lang", choices=["en", "de"], help="one language only (default: both)")
+    bd.add_argument("--lang", choices=["en", "de", "pl"], help="one language only (default: both EN and DE)")
     bd.add_argument("--out", help="output directory (default: build/)")
     bd.add_argument("--only", nargs="+", metavar="ID|ISO2", help="only these entries: COTW IDs or ISO-2 codes, comma- or space-separated (e.g. --only RU,KR,ZA 217)")
     bd.set_defaults(func=cmd_build_deck)

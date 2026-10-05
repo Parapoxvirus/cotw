@@ -7,13 +7,16 @@ dependency_of: '076'
 name:
   en: Wallis and Futuna
   de: Wallis und Futuna
+  pl: Wallis i Futuna
 formal_name:
   en: Territory of the Wallis and Futuna Islands
   de: Territorium der Inseln Wallis und Futuna
+  pl: Terytorium Wysp Wallis i Futuna
 capitals:
 - name:
     en: Mata-Utu
     de: Mata-Utu
+    pl: Mata Utu
   role: capital
   wikidata: Q31002
   lat: -13.2827
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Wallis_and_Futuna
   de: https://de.wikipedia.org/wiki/Wallis_und_Futuna
+  pl: https://pl.wikipedia.org/wiki/Wallis_i_Futuna
