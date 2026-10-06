@@ -19,7 +19,7 @@ capitals:
   label:
     en: capital
     de: Hauptstadt
-    pt: capital
+    pt: oficial
   role: capital
   wikidata: Q1140136
   lat: 1.59167
@@ -31,7 +31,7 @@ capitals:
   label:
     en: seat of government until the move is completed
     de: Regierungssitz bis zum Abschluss des Umzugs
-    pt: sede do governo até a conclusão da mudança
+    pt: sede do governo
   role: seat_of_government
   wikidata: Q3818
   lat: 3.75206

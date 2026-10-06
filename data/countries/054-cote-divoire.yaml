@@ -10,7 +10,7 @@ name:
 formal_name:
   en: The Republic of Côte d’Ivoire
   de: Republik Côte d’Ivoire
-  pt: República da Côte d’Ivoire
+  pt: República da Côte d’Ivoire (Costa do Marfim)
 capitals:
 - name:
     en: Yamoussoukro
@@ -19,7 +19,7 @@ capitals:
   label:
     en: capital
     de: Hauptstadt
-    pt: capital
+    pt: oficial
   role: capital
   wikidata: Q3768
   lat: 6.81611

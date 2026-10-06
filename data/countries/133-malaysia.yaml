@@ -15,7 +15,7 @@ capitals:
   label:
     en: capital
     de: Hauptstadt
-    pt: capital
+    pt: capital oficial
   role: capital
   wikidata: Q1865
   lat: 3.14778
@@ -27,7 +27,7 @@ capitals:
   label:
     en: seat of government
     de: Regierungssitz
-    pt: sede do governo
+    pt: sede administrativa e capital judiciária
   role: seat_of_government
   wikidata: Q182378
   lat: 2.93

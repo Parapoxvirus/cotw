@@ -160,27 +160,23 @@ each row is a candidate for a manual decision (then add an override or edit the 
 ## Portuguese (PT): deviations from the primary source
 
 The Portuguese names follow the *Manual de Redação Oficial e Diplomática do Itamaraty*
-(revision of 23 July 2026, chapter 7.3; `docs/TRANSLATING.md`). Every name, long form and
-capital of the sovereign states was checked against it; these are the deviations.
+(revision of 23 July 2026, chapter 7.3; `docs/TRANSLATING.md`). Every name, long form, capital
+and capital label was checked against it. Where the Manual has a form, the deck uses it, with
+every alternative the Manual lists (*Congo (Kinshasa) / República Democrática do Congo / RDC*,
+*Estados Unidos / EUA*, *Camarões / Cameroun*) and its wording for the capitals' roles
+(*oficial*, *sede do governo*, *capital legislativa e cerimonial*, …). These are the deviations.
 
 | Entry | Field | Manual | COTW | Reason |
 |---|---|---|---|---|
 | AF Afghanistan | formal_name.pt | República Islâmica do Afeganistão | Emirado Islâmico do Afeganistão | Deliberate exception in every language (de facto situation); the Manual's note 1 names the form. |
-| CD Congo, DR | name.pt | o Congo (Kinshasa) *ou* a República Democrática do Congo | República Democrática do Congo | The second form of the Manual: the first one names the capital, which a Country → Capital card asks for. |
-| CG Congo, Republic | name.pt | o Congo (Brazzaville) *ou* a República do Congo | República do Congo | As above. |
-| GN Guinea | name.pt | a Guiné (Conacri) *ou* a República da Guiné | República da Guiné | As above. |
-| AE United Arab Emirates | name.pt | os Emirados Árabes (short form); os Emirados Árabes Unidos (official name) | Emirados Árabes Unidos | The official name; the Manual's note 25 allows it wherever the short form is used. The entry has no long form in EN and DE, so the short form alone would drop the official name from the card. |
-| IL Israel | capital | — (none listed, note 39) | Jerusalém, label “disputada” | As in EN and DE; the spelling is the Manual's (entry *Jerusalém*). |
-| LK Sri Lanka | capitals | Colombo (note 61: Sri Jayawardenepura Kotte, seat of the legislature) | Sri Jayawardenepura Kotte (capital), Colombo (sede do governo) | The same two capitals and roles in every language; spelling of the Manual's note. |
 | TO Tonga | capital | Nuku’alofa | Nukuʻalofa | COTW rule: the ʻokina is a letter, not an apostrophe. |
 | TD Chad | capital | N'Djamena | N’Djamena | COTW rule: typographic apostrophe. |
 | UA Ukraine | capital | Kiev (Kyiv) | Kiev / Kyiv | COTW notation for alternatives. |
-| SZ Eswatini | capital 2 | Lobamba, “capital legislativa e cerimonial” (note 27) | Lobamba, label “sede do governo” | The same role and label in every language. |
-| MY Malaysia | capital 2 | Putrajaya, “sede administrativa e capital judiciária” (note 42) | Putrajaya, label “sede do governo” | The same role and label in every language. |
-| MD Moldova | name_label.pt | — | também: Moldávia | Counterpart of the EN/DE labels. In Brazil *Moldávia* is still in use (IBGE), not outdated; the Manual's note 45 prefers *Moldova*. |
-| YE Yemen | capital 2 | — (only Sanaa listed) | Áden | Not in the Manual; the traditional Portuguese form. |
-| XK Kosovo | formal_name.pt, capital | “a autoproclamada ‘República do Kosovo’”; no capital | República do Kosovo; Pristina | De facto situation, as in EN and DE. |
+| IL Israel | capital | — (none listed, note 39) | Jerusalém, label “disputada” | The entry has this capital in every language; the spelling is the Manual's (entry *Jerusalém*). |
+| LK Sri Lanka | capitals | Colombo; note 61: Colombo seat of the executive and the judiciary, Sri Jayawardenepura Kotte seat of the legislature | Sri Jayawardenepura Kotte (sede do poder legislativo), Colombo (sede dos poderes executivo e judiciário) | The entry has these two capitals, in this order, in every language; names and labels are the wording of the Manual's note. |
+| TZ Tanzania, YE Yemen | capital 2 | — (only Dodoma and Sanaa listed) | Dar es Salaam, Áden, label “sede do governo” | The entries have a second capital in every language. *Dar es Salaam* is the spelling of the Manual's note 63; *Áden* is not in the Manual. |
+| MD Moldova | name_label.pt | — | também: Moldávia | Counterpart of the EN/DE labels; the Manual's note 45: the country is also known as *Moldávia*, *Moldova* is preferred. |
+| XK Kosovo | formal_name.pt, capital | “a autoproclamada ‘República do Kosovo’”; no capital | República do Kosovo; Pristina | The entry has a long form and a capital in every language. |
 | EH Western Sahara | name.pt, formal_name.pt, capital | — | Saara Ocidental / República Saaraui; República Árabe Saaraui Democrática; El Aaiún | Not in the Manual; forms in common Brazilian use, the capital in the local form as in EN and DE. |
 | Territories the Manual does not name | name.pt | — | Åland, Bermudas, Bonaire, Santo Eustáquio e Saba / Países Baixos Caribenhos, Ilha Bouvet, Território Britânico do Oceano Índico, Ilha Christmas, Ilhas Cocos / Ilhas Keeling, Terras Austrais e Antárticas Francesas, Gibraltar, Ilha Heard e Ilhas McDonald, Ilha Norfolk, Ilhas Marianas do Norte, Svalbard e Jan Mayen, Ilhas Virgens Americanas | No Brazilian official list covers them; forms in common Brazilian use (`docs/TRANSLATING.md`, Portuguese, point 3). |
 | Territories | formal_name.pt | — | Ilhas Åland, Território da Ilha Christmas, Bailiado de Guernsey, Bailiado de Jersey, Região Administrativa Especial de Hong Kong / de Macau da República Popular da China, Departamento de Mayotte, Território da Ilha Norfolk, Comunidade das Ilhas Marianas do Norte, Estado Livre Associado de Porto Rico, Território das Ilhas Wallis e Futuna | Not in the Manual; translations of the official long forms, entered because EN and DE have one (an optional name map is complete in every language). |
-

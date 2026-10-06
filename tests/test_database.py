@@ -119,9 +119,9 @@ def test_equatorial_guinea_capital_ciudad_de_la_paz(by_id):
         ("Q1140136", "capital"),
         ("Q3818", "seat_of_government"),
     ]
-    assert caps[0]["label"] == {"en": "capital", "de": "Hauptstadt", "pt": "capital"}
+    assert caps[0]["label"] == {"en": "capital", "de": "Hauptstadt", "pt": "oficial"}
     assert caps[1]["label"] == {
         "en": "seat of government until the move is completed",
         "de": "Regierungssitz bis zum Abschluss des Umzugs",
-        "pt": "sede do governo até a conclusão da mudança",
+        "pt": "sede do governo",
     }

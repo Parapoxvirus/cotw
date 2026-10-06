@@ -19,7 +19,7 @@ capitals:
   label:
     en: capital
     de: Hauptstadt
-    pt: capital
+    pt: sede do poder legislativo
   role: capital
   wikidata: Q41963
   lat: 6.9
@@ -31,7 +31,7 @@ capitals:
   label:
     en: seat of government
     de: Regierungssitz
-    pt: sede do governo
+    pt: sede dos poderes executivo e judiciário
   role: seat_of_government
   wikidata: Q35381
   lat: 6.92667
