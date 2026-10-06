@@ -6,16 +6,20 @@ status: sovereign
 name:
   en: Côte d’Ivoire / Ivory Coast, The
   de: Elfenbeinküste / Côte d’Ivoire
+  pt: Costa do Marfim / Côte d’Ivoire
 formal_name:
   en: The Republic of Côte d’Ivoire
   de: Republik Côte d’Ivoire
+  pt: República da Côte d’Ivoire
 capitals:
 - name:
     en: Yamoussoukro
     de: Yamoussoukro
+    pt: Yamoussoukro
   label:
     en: capital
     de: Hauptstadt
+    pt: capital
   role: capital
   wikidata: Q3768
   lat: 6.81611
@@ -23,9 +27,11 @@ capitals:
 - name:
     en: Abidjan
     de: Abidjan
+    pt: Abidjã
   label:
     en: seat of government
     de: Regierungssitz
+    pt: sede do governo
   role: seat_of_government
   wikidata: Q1515
   lat: 5.33639
@@ -43,3 +49,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Ivory_Coast
   de: https://de.wikipedia.org/wiki/Elfenbeinküste
+  pt: https://pt.wikipedia.org/wiki/Costa_do_Marfim

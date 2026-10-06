@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Algeria
   de: Algerien
+  pt: Argélia
 formal_name:
   en: The People’s Democratic Republic of Algeria
   de: Demokratische Volksrepublik Algerien
+  pt: República Argelina Democrática e Popular
 capitals:
 - name:
     en: Algiers
     de: Algier
+    pt: Argel
   role: capital
   wikidata: Q3561
   lat: 36.77639
@@ -31,3 +34,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Algeria
   de: https://de.wikipedia.org/wiki/Algerien
+  pt: https://pt.wikipedia.org/wiki/Argélia

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Togo
   de: Togo
+  pt: Togo
 formal_name:
   en: The Togolese Republic
   de: Republik Togo
+  pt: República Togolesa
 capitals:
 - name:
     en: Lomé
     de: Lomé
+    pt: Lomé
   role: capital
   wikidata: Q3792
   lat: 6.13
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Togo
   de: https://de.wikipedia.org/wiki/Togo
+  pt: https://pt.wikipedia.org/wiki/Togo

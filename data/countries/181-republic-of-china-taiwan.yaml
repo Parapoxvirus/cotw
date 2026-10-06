@@ -6,10 +6,12 @@ status: disputed
 name:
   en: Republic of China (Taiwan)
   de: Republik China (Taiwan)
+  pt: República da China (Taiwan)
 capitals:
 - name:
     en: Taipei
     de: Taipeh
+    pt: Taipé
   role: capital
   wikidata: Q1867
   lat: 25.0375
@@ -21,3 +23,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Taiwan
   de: https://de.wikipedia.org/wiki/Republik_China_(Taiwan)
+  pt: https://pt.wikipedia.org/wiki/Taiwan

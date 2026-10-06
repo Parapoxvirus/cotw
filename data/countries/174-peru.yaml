@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Peru
   de: Peru
+  pt: Peru
 formal_name:
   en: The Republic of Perú
   de: Republik Peru
+  pt: República do Peru
 capitals:
 - name:
     en: Lima
     de: Lima
+    pt: Lima
   role: capital
   wikidata: Q2868
   lat: -12.06
@@ -30,3 +33,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Peru
   de: https://de.wikipedia.org/wiki/Peru
+  pt: https://pt.wikipedia.org/wiki/Peru

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Bulgaria
   de: Bulgarien
+  pt: Bulgária
 formal_name:
   en: The Republic of Bulgaria
   de: Republik Bulgarien
+  pt: República da Bulgária
 capitals:
 - name:
     en: Sofia
     de: Sofia
+    pt: Sófia
   role: capital
   wikidata: Q472
   lat: 42.69789
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Bulgaria
   de: https://de.wikipedia.org/wiki/Bulgarien
+  pt: https://pt.wikipedia.org/wiki/Bulgária

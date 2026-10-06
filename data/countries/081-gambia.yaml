@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Gambia, The
   de: Gambia
+  pt: Gâmbia
 formal_name:
   en: The Republic of The Gambia
   de: Republik Gambia
+  pt: República da Gâmbia
 capitals:
 - name:
     en: Banjul
     de: Banjul
+    pt: Banjul
   role: capital
   wikidata: Q3726
   lat: 13.45306
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/The_Gambia
   de: https://de.wikipedia.org/wiki/Gambia
+  pt: https://pt.wikipedia.org/wiki/Gâmbia

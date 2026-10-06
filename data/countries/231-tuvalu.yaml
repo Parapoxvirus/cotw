@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Tuvalu
   de: Tuvalu
+  pt: Tuvalu
 capitals:
 - name:
     en: Funafuti
     de: Funafuti
+    pt: Funafuti
   role: capital
   wikidata: Q34126
   lat: -8.50478
@@ -21,3 +23,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Tuvalu
   de: https://de.wikipedia.org/wiki/Tuvalu
+  pt: https://pt.wikipedia.org/wiki/Tuvalu

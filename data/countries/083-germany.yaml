@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Germany
   de: Deutschland
+  pt: Alemanha
 formal_name:
   en: The Federal Republic of Germany
   de: Bundesrepublik Deutschland
+  pt: República Federal da Alemanha
 capitals:
 - name:
     en: Berlin
     de: Berlin
+    pt: Berlim
   role: capital
   wikidata: Q64
   lat: 52.51667
@@ -33,3 +36,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Germany
   de: https://de.wikipedia.org/wiki/Deutschland
+  pt: https://pt.wikipedia.org/wiki/Alemanha

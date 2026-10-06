@@ -7,10 +7,12 @@ dependency_of: '235'
 name:
   en: Anguilla
   de: Anguilla
+  pt: Anguilla
 capitals:
 - name:
     en: The Valley
     de: The Valley
+    pt: The Valley
   role: capital
   wikidata: Q30994
   lat: 18.22083
@@ -23,3 +25,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Anguilla
   de: https://de.wikipedia.org/wiki/Anguilla
+  pt: https://pt.wikipedia.org/wiki/Anguila

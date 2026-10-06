@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Congo, The Republic of the
   de: Kongo, Republik
+  pt: República do Congo
 formal_name:
   en: The Republic of the Congo
   de: Republik Kongo
+  pt: República do Congo
 capitals:
 - name:
     en: Brazzaville
     de: Brazzaville
+    pt: Brazzaville
   role: capital
   wikidata: Q3844
   lat: -4.26944
@@ -30,3 +33,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Republic_of_the_Congo
   de: https://de.wikipedia.org/wiki/Republik_Kongo
+  pt: https://pt.wikipedia.org/wiki/República_do_Congo

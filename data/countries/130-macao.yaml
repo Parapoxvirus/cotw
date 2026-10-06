@@ -7,13 +7,16 @@ dependency_of: '045'
 name:
   en: Macao / Macau
   de: Macau
+  pt: Macau
 formal_name:
   en: Macao Special Administrative Region of the People’s Republic of China
   de: Sonderverwaltungszone Macau der Volksrepublik China
+  pt: Região Administrativa Especial de Macau da República Popular da China
 capitals:
 - name:
     en: Macao
     de: Macau
+    pt: Macau
   role: capital
   wikidata: Q14773
   lat: 22.19
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Macao
   de: https://de.wikipedia.org/wiki/Macau
+  pt: https://pt.wikipedia.org/wiki/Macau

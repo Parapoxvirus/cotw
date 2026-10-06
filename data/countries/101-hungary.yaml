@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Hungary
   de: Ungarn
+  pt: Hungria
 capitals:
 - name:
     en: Budapest
     de: Budapest
+    pt: Budapeste
   role: capital
   wikidata: Q1781
   lat: 47.49833
@@ -28,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Hungary
   de: https://de.wikipedia.org/wiki/Ungarn
+  pt: https://pt.wikipedia.org/wiki/Hungria

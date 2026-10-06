@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Nepal
   de: Nepal
+  pt: Nepal
 formal_name:
   en: The Federal Democratic Republic of Nepal
   de: Demokratische Bundesrepublik Nepal
+  pt: República Democrática Federal do Nepal
 capitals:
 - name:
     en: Kathmandu
     de: Kathmandu
+    pt: Katmandu
   role: capital
   wikidata: Q3037
   lat: 27.71
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Nepal
   de: https://de.wikipedia.org/wiki/Nepal
+  pt: https://pt.wikipedia.org/wiki/Nepal

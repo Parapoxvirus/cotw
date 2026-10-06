@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Mexico
   de: Mexiko
+  pt: México
 formal_name:
   en: The United Mexican States
   de: Vereinigte Mexikanische Staaten
+  pt: Estados Unidos Mexicanos
 capitals:
 - name:
     en: Mexico City
     de: Mexiko-Stadt
+    pt: Cidade do México
   role: capital
   wikidata: Q1489
   lat: 19.35377
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Mexico
   de: https://de.wikipedia.org/wiki/Mexiko
+  pt: https://pt.wikipedia.org/wiki/México

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Mauritius
   de: Mauritius
+  pt: Maurício
 formal_name:
   en: The Republic of Mauritius
   de: Republik Mauritius
+  pt: República de Maurício
 capitals:
 - name:
     en: Port Louis
     de: Port Louis
+    pt: Port Louis
   role: capital
   wikidata: Q3929
   lat: -20.16194
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Mauritius
   de: https://de.wikipedia.org/wiki/Mauritius
+  pt: https://pt.wikipedia.org/wiki/Maurícia

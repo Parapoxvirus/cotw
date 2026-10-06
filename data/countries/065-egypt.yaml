@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Egypt
   de: Ägypten
+  pt: Egito
 formal_name:
   en: The Arab Republic of Egypt
   de: Arabische Republik Ägypten
+  pt: República Árabe do Egito
 capitals:
 - name:
     en: Cairo
     de: Kairo
+    pt: Cairo
   role: capital
   wikidata: Q85
   lat: 30.04444
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Egypt
   de: https://de.wikipedia.org/wiki/Ägypten
+  pt: https://pt.wikipedia.org/wiki/Egito

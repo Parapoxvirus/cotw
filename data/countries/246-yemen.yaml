@@ -6,16 +6,20 @@ status: sovereign
 name:
   en: Yemen
   de: Jemen
+  pt: Iêmen
 formal_name:
   en: The Republic of Yemen
   de: Republik Jemen
+  pt: República do Iêmen
 capitals:
 - name:
     en: Sanaa
     de: Sanaa
+    pt: Sanaa
   label:
     en: capital
     de: Hauptstadt
+    pt: capital
   role: capital
   wikidata: Q2471
   lat: 15.35
@@ -23,9 +27,11 @@ capitals:
 - name:
     en: Aden
     de: Aden
+    pt: Áden
   label:
     en: seat of government
     de: Regierungssitz
+    pt: sede do governo
   role: seat_of_government
   wikidata: Q131694
   lat: 12.8
@@ -39,3 +45,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Yemen
   de: https://de.wikipedia.org/wiki/Jemen
+  pt: https://pt.wikipedia.org/wiki/Iémen

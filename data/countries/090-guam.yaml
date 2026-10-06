@@ -7,10 +7,12 @@ dependency_of: '237'
 name:
   en: Guam
   de: Guam
+  pt: Guam
 capitals:
 - name:
     en: Hagåtña
     de: Hagåtña
+    pt: Hagåtña
   role: capital
   wikidata: Q30988
   lat: 13.48333
@@ -22,3 +24,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Guam
   de: https://de.wikipedia.org/wiki/Guam
+  pt: https://pt.wikipedia.org/wiki/Guam

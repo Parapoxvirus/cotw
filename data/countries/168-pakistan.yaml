@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Pakistan
   de: Pakistan
+  pt: Paquistão
 formal_name:
   en: The Islamic Republic of Pakistan
   de: Islamische Republik Pakistan
+  pt: República Islâmica do Paquistão
 capitals:
 - name:
     en: Islamabad
     de: Islamabad
+    pt: Islamabad
   role: capital
   wikidata: Q1362
   lat: 33.69889
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Pakistan
   de: https://de.wikipedia.org/wiki/Pakistan
+  pt: https://pt.wikipedia.org/wiki/Paquistão

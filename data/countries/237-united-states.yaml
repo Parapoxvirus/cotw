@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: United States, The
   de: Vereinigte Staaten
+  pt: Estados Unidos
 formal_name:
   en: The United States of America
   de: Vereinigte Staaten von Amerika
+  pt: Estados Unidos da América
 capitals:
 - name:
     en: Washington, D.C.
     de: Washington, D.C.
+    pt: Washington
   role: capital
   wikidata: Q61
   lat: 38.895
@@ -27,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/United_States
   de: https://de.wikipedia.org/wiki/Vereinigte_Staaten
+  pt: https://pt.wikipedia.org/wiki/Estados_Unidos

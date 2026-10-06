@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Bahamas, The
   de: Bahamas
+  pt: Bahamas
 formal_name:
   en: The Commonwealth of The Bahamas
   de: Commonwealth der Bahamas
+  pt: Comunidade das Bahamas
 capitals:
 - name:
     en: Nassau
     de: Nassau
+    pt: Nassau
   role: capital
   wikidata: Q2467
   lat: 25.07806
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/The_Bahamas
   de: https://de.wikipedia.org/wiki/Bahamas
+  pt: https://pt.wikipedia.org/wiki/Bahamas

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Comoros, The
   de: Komoren
+  pt: Comores
 formal_name:
   en: The Union of the Comoros
   de: Union der Komoren
+  pt: União das Comores
 capitals:
 - name:
     en: Moroni
     de: Moroni
+    pt: Moroni
   role: capital
   wikidata: Q3901
   lat: -11.70361
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Comoros
   de: https://de.wikipedia.org/wiki/Komoren
+  pt: https://pt.wikipedia.org/wiki/Comores

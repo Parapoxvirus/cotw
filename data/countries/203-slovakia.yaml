@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Slovakia
   de: Slowakei
+  pt: Eslováquia
 formal_name:
   en: The Slovak Republic
   de: Slowakische Republik
+  pt: República Eslovaca
 capitals:
 - name:
     en: Bratislava
     de: Bratislava / Pressburg
+    pt: Bratislava
   role: capital
   wikidata: Q1780
   lat: 48.1517
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Slovakia
   de: https://de.wikipedia.org/wiki/Slowakei
+  pt: https://pt.wikipedia.org/wiki/Eslováquia

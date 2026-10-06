@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Jamaica
   de: Jamaika
+  pt: Jamaica
 capitals:
 - name:
     en: Kingston
     de: Kingston
+    pt: Kingston
   role: capital
   wikidata: Q34692
   lat: 17.97139
@@ -22,3 +24,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Jamaica
   de: https://de.wikipedia.org/wiki/Jamaika
+  pt: https://pt.wikipedia.org/wiki/Jamaica

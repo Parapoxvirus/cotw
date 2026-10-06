@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Trinidad and Tobago
   de: Trinidad und Tobago
+  pt: Trinidad e Tobago
 formal_name:
   en: The Republic of Trinidad and Tobago
   de: Republik Trinidad und Tobago
+  pt: República de Trinidad e Tobago
 capitals:
 - name:
     en: Port of Spain
     de: Port of Spain
+    pt: Port of Spain
   role: capital
   wikidata: Q39178
   lat: 10.66667
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Trinidad_and_Tobago
   de: https://de.wikipedia.org/wiki/Trinidad_und_Tobago
+  pt: https://pt.wikipedia.org/wiki/Trindade_e_Tobago

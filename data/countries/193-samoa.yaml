@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Samoa
   de: Samoa
+  pt: Samoa
 formal_name:
   en: The Independent State of Samoa
   de: Unabhängiger Staat Samoa
+  pt: Estado Independente da Samoa
 capitals:
 - name:
     en: Apia
     de: Apia
+    pt: Apia
   role: capital
   wikidata: Q36260
   lat: -13.83333
@@ -24,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Samoa
   de: https://de.wikipedia.org/wiki/Samoa
+  pt: https://pt.wikipedia.org/wiki/Samoa

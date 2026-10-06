@@ -98,7 +98,8 @@ def test_optional_map_present_needs_every_language(code):
 
 def test_straight_apostrophe_is_rejected():
     e = _entry(formal_name={**_text("The People's Republic of Musterland"), "de": "Volksrepublik Musterland"})
-    assert schema.validate_entry(e) == ["001: formal_name.en: straight apostrophe ' (use ’)"]
+    apostrophe = [f"001: formal_name.{code}: straight apostrophe ' (use ’)" for code in languages.LANGUAGES if code != "de"]
+    assert schema.validate_entry(e) == apostrophe
     capital = dict(_entry()["capitals"][0], name=_text("Nukuʻalofa"), label=_text("Côte d’Ivoire"))
     assert schema.validate_entry(_entry(name=_text("People’s Musterland"), capitals=[capital])) == []
 

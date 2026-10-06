@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Malaysia
   de: Malaysia
+  pt: Malásia
 capitals:
 - name:
     en: Kuala Lumpur
     de: Kuala Lumpur
+    pt: Kuala Lumpur
   label:
     en: capital
     de: Hauptstadt
+    pt: capital
   role: capital
   wikidata: Q1865
   lat: 3.14778
@@ -20,9 +23,11 @@ capitals:
 - name:
     en: Putrajaya
     de: Putrajaya
+    pt: Putrajaya
   label:
     en: seat of government
     de: Regierungssitz
+    pt: sede do governo
   role: seat_of_government
   wikidata: Q182378
   lat: 2.93
@@ -37,3 +42,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Malaysia
   de: https://de.wikipedia.org/wiki/Malaysia
+  pt: https://pt.wikipedia.org/wiki/Malásia

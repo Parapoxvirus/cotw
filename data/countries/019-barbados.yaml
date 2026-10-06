@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Barbados
   de: Barbados
+  pt: Barbados
 capitals:
 - name:
     en: Bridgetown
     de: Bridgetown
+    pt: Bridgetown
   role: capital
   wikidata: Q36168
   lat: 13.0975
@@ -22,3 +24,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Barbados
   de: https://de.wikipedia.org/wiki/Barbados
+  pt: https://pt.wikipedia.org/wiki/Barbados

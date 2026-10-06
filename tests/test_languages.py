@@ -25,16 +25,16 @@ EPOCH = 1_760_000_000
 # The object form of every parent after "dependency of …", per language. A new parent needs a
 # decision in every language module (``object_form``), a new language one for every parent.
 PARENT_FORMS = {
-    "013": {"en": "Australia", "de": "Australien"},
-    "045": {"en": "China", "de": "China"},
-    "060": {"en": "Denmark", "de": "Dänemark"},
-    "075": {"en": "Finland", "de": "Finnland"},
-    "076": {"en": "France", "de": "Frankreich"},
-    "155": {"en": "the Netherlands", "de": "den Niederlanden"},
-    "157": {"en": "New Zealand", "de": "Neuseeland"},
-    "166": {"en": "Norway", "de": "Norwegen"},
-    "235": {"en": "the United Kingdom", "de": "dem Vereinigten Königreich"},
-    "237": {"en": "the United States", "de": "den Vereinigten Staaten"},
+    "013": {"en": "Australia", "de": "Australien", "pt": "da Austrália"},
+    "045": {"en": "China", "de": "China", "pt": "da China"},
+    "060": {"en": "Denmark", "de": "Dänemark", "pt": "da Dinamarca"},
+    "075": {"en": "Finland", "de": "Finnland", "pt": "da Finlândia"},
+    "076": {"en": "France", "de": "Frankreich", "pt": "da França"},
+    "155": {"en": "the Netherlands", "de": "den Niederlanden", "pt": "dos Países Baixos"},
+    "157": {"en": "New Zealand", "de": "Neuseeland", "pt": "da Nova Zelândia"},
+    "166": {"en": "Norway", "de": "Norwegen", "pt": "da Noruega"},
+    "235": {"en": "the United Kingdom", "de": "dem Vereinigten Königreich", "pt": "do Reino Unido"},
+    "237": {"en": "the United States", "de": "den Vereinigten Staaten", "pt": "dos Estados Unidos"},
 }
 HELP_PLACEHOLDERS = {"infographic", "infographic_filtered", "ankiweb", "contact"}
 DESCRIPTION_PLACEHOLDERS = {"count", "citation", "manifest", "font_license", "icons_license"}
@@ -48,7 +48,7 @@ def _placeholders(text: str) -> set[str]:
 
 
 def test_discovery_order():
-    assert languages.LANGUAGES == ("en", "de")  # today; a new module joins in code order
+    assert languages.LANGUAGES == ("en", "de", "pt")  # today; a new module joins in code order
     assert languages.LANGUAGES[0] == languages.BASE
     assert list(languages.LANGUAGES[1:]) == sorted(languages.LANGUAGES[1:])
     assert languages.discover() == languages.REGISTRY
@@ -56,9 +56,10 @@ def test_discovery_order():
 
 def test_ids_are_pinned():
     """Frozen: a changed ID installs a second note type (or deck) next to the old one."""
-    en, de = languages.get("en"), languages.get("de")
+    en, de, pt = languages.get("en"), languages.get("de"), languages.get("pt")
     assert (en.notetype_id, en.deck_id, en.extras_deck_id, en.id_offset) == (1829704095, 1866953617, 1918702087, 0)
     assert (de.notetype_id, de.deck_id, de.extras_deck_id, de.id_offset) == (1123558981, 2041372721, 1539901401, 50_000)
+    assert (pt.notetype_id, pt.deck_id, pt.extras_deck_id, pt.id_offset) == (1189007943, 1982302313, 1202059023, 100_000)
 
 
 @pytest.mark.parametrize("lang", LANGS, ids=languages.LANGUAGES)
@@ -171,7 +172,7 @@ def _with_xx(entry: dict) -> dict:
 
 
 def test_third_language_is_discovered(xx):
-    assert languages.LANGUAGES == ("en", "de", "xx")
+    assert languages.LANGUAGES == ("en", "de", "pt", "xx")
     assert xx.id_offset == 100_000 and xx.notetype_id == languages.derive_id("xx", "notetype")
 
 
@@ -198,7 +199,7 @@ def test_third_language_is_built_by_default(xx, by_id, tmp_path, monkeypatch):
     from cotw.__main__ import main
 
     assert main(["build-deck", "--out", str(tmp_path), "--only", "CH,GL"]) == 0
-    assert sorted(p.name for p in tmp_path.glob("*.apkg")) == ["COTW-DE.apkg", "COTW-EN.apkg", "COTW-XX.apkg"]
+    assert sorted(p.name for p in tmp_path.glob("*.apkg")) == ["COTW-DE.apkg", "COTW-EN.apkg", "COTW-PT.apkg", "COTW-XX.apkg"]
     with zipfile.ZipFile(tmp_path / "COTW-XX.apkg") as z:
         (tmp_path / "xx.anki2").write_bytes(z.read("collection.anki2"))
     col = sqlite3.connect(tmp_path / "xx.anki2")

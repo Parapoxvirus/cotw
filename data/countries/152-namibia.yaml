@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Namibia
   de: Namibia
+  pt: Namíbia
 formal_name:
   en: The Republic of Namibia
   de: Republik Namibia
+  pt: República da Namíbia
 capitals:
 - name:
     en: Windhoek
     de: Windhoek
+    pt: Windhoek
   role: capital
   wikidata: Q3935
   lat: -22.57
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Namibia
   de: https://de.wikipedia.org/wiki/Namibia
+  pt: https://pt.wikipedia.org/wiki/Namíbia

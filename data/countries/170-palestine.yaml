@@ -6,16 +6,20 @@ status: disputed
 name:
   en: Palestine
   de: Palästina
+  pt: Palestina
 formal_name:
   en: State of Palestine
   de: Staat Palästina
+  pt: Estado da Palestina
 capitals:
 - name:
     en: East Jerusalem
     de: Ostjerusalem
+    pt: Jerusalém Oriental
   label:
     en: proclaimed
     de: beansprucht
+    pt: proclamada
   role: proclaimed
   wikidata: Q212938
   lat: 31.78336
@@ -23,9 +27,11 @@ capitals:
 - name:
     en: Ramallah
     de: Ramallah
+    pt: Ramala
   label:
     en: de facto
     de: de facto
+    pt: de facto
   role: de_facto
   wikidata: Q158119
   lat: 31.89694
@@ -40,3 +46,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Palestine
   de: https://de.wikipedia.org/wiki/Palästina_(Staat)
+  pt: https://pt.wikipedia.org/wiki/Estado_da_Palestina

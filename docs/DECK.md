@@ -73,8 +73,8 @@ follow the registry. Copy `en.py` and translate it; then:
 - **IDs:** write `derive_id(code, "notetype")`, `derive_id(code, "deck")` and
   `derive_id(code, "deck-extras")` into the module as constants (computed once, never at build
   time). From the first release on they are frozen.
-- **`id_offset`:** the next free multiple of 50 000 (EN 0, DE 50 000, the next language
-  100 000). A test checks that IDs, offsets, tag roots, note type and deck names are unique.
+- **`id_offset`:** the next free multiple of 50 000 (EN 0, DE 50 000, PT 100 000, the next
+  language 150 000). A test checks that IDs, offsets, tag roots, note type and deck names are unique.
 - **Names:** note type `COTW (<CODE>)`, tag root `COTW-<CODE>`, deck and subdeck in the
   language; `regions` names every M49 region of `data/tags.txt`; `object_form` gives the
   sovereign's form after *dependency of …* (a test pins it for every parent).

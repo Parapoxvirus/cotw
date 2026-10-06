@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Paraguay
   de: Paraguay
+  pt: Paraguai
 formal_name:
   en: The Republic of Paraguay
   de: Republik Paraguay
+  pt: República do Paraguai
 capitals:
 - name:
     en: Asunción
     de: Asunción
+    pt: Assunção
   role: capital
   wikidata: Q2933
   lat: -25.28
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Paraguay
   de: https://de.wikipedia.org/wiki/Paraguay
+  pt: https://pt.wikipedia.org/wiki/Paraguai

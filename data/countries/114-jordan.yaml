@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Jordan
   de: Jordanien
+  pt: Jordânia
 formal_name:
   en: The Hashemite Kingdom of Jordan
   de: Haschemitisches Königreich Jordanien
+  pt: Reino Haxemita da Jordânia
 capitals:
 - name:
     en: Amman
     de: Amman
+    pt: Amã
   role: capital
   wikidata: Q3805
   lat: 31.93098
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Jordan
   de: https://de.wikipedia.org/wiki/Jordanien
+  pt: https://pt.wikipedia.org/wiki/Jordânia

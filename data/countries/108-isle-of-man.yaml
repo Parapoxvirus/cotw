@@ -7,10 +7,12 @@ dependency_of: '235'
 name:
   en: Isle of Man
   de: Isle of Man
+  pt: Ilha de Man
 capitals:
 - name:
     en: Douglas
     de: Douglas
+    pt: Douglas
   role: capital
   wikidata: Q18569
   lat: 54.15
@@ -22,3 +24,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Isle_of_Man
   de: https://de.wikipedia.org/wiki/Isle_of_Man
+  pt: https://pt.wikipedia.org/wiki/Ilha_de_Man

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Sweden
   de: Schweden
+  pt: Suécia
 formal_name:
   en: The Kingdom of Sweden
   de: Königreich Schweden
+  pt: Reino da Suécia
 capitals:
 - name:
     en: Stockholm
     de: Stockholm
+    pt: Estocolmo
   role: capital
   wikidata: Q1754
   lat: 59.32944
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Sweden
   de: https://de.wikipedia.org/wiki/Schweden
+  pt: https://pt.wikipedia.org/wiki/Suécia

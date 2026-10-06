@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Colombia
   de: Kolumbien
+  pt: Colômbia
 formal_name:
   en: The Republic of Colombia
   de: Republik Kolumbien
+  pt: República da Colômbia
 capitals:
 - name:
     en: Bogotá
     de: Bogotá
+    pt: Bogotá
   role: capital
   wikidata: Q2841
   lat: 4.60971
@@ -30,3 +33,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Colombia
   de: https://de.wikipedia.org/wiki/Kolumbien
+  pt: https://pt.wikipedia.org/wiki/Colômbia

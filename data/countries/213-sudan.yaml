@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Sudan, The
   de: Sudan
+  pt: Sudão
 formal_name:
   en: The Republic of the Sudan
   de: Republik Sudan
+  pt: República do Sudão
 capitals:
 - name:
     en: Khartoum
     de: Khartum
+    pt: Cartum
   role: capital
   wikidata: Q1963
   lat: 15.60308
@@ -31,3 +34,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Sudan
   de: https://de.wikipedia.org/wiki/Sudan
+  pt: https://pt.wikipedia.org/wiki/Sudão

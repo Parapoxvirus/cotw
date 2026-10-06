@@ -317,7 +317,7 @@ def globe():
 
 
 def _entry(cid, iso2, iso3, borders):
-    return {"id": cid, "iso2": iso2, "iso3": iso3, "borders": list(borders), "name": {"en": f"Mätzland {cid}", "de": f"Groß-Mätzland {cid}"}}
+    return {"id": cid, "iso2": iso2, "iso3": iso3, "borders": list(borders), "name": {"en": f"Mätzland {cid}", "de": f"Groß-Mätzland {cid}", "pt": f"Mätzlândia {cid}"}}
 
 
 @pytest.fixture(scope="module")

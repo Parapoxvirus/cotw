@@ -7,13 +7,16 @@ dependency_of: '235'
 name:
   en: Jersey
   de: Jersey
+  pt: Jersey
 formal_name:
   en: Bailiwick of Jersey
   de: Vogtei Jersey
+  pt: Bailiado de Jersey
 capitals:
 - name:
     en: Saint Helier
     de: Saint Helier
+    pt: Saint Helier
   role: capital
   wikidata: Q147738
   lat: 49.18583
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Jersey
   de: https://de.wikipedia.org/wiki/Jersey
+  pt: https://pt.wikipedia.org/wiki/Jersey

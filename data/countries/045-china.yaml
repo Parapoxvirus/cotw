@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: China
   de: China
+  pt: China
 formal_name:
   en: The People’s Republic of China
   de: Volksrepublik China
+  pt: República Popular da China
 capitals:
 - name:
     en: Beijing
     de: Peking
+    pt: Pequim
   role: capital
   wikidata: Q956
   lat: 39.90403
@@ -40,3 +43,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/China
   de: https://de.wikipedia.org/wiki/Volksrepublik_China
+  pt: https://pt.wikipedia.org/wiki/China

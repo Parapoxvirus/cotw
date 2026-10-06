@@ -7,10 +7,12 @@ dependency_of: '155'
 name:
   en: Sint Maarten
   de: Sint Maarten
+  pt: Sint Maarten
 capitals:
 - name:
     en: Philipsburg
     de: Philipsburg
+    pt: Philipsburg
   role: capital
   wikidata: Q30958
   lat: 18.02417
@@ -24,3 +26,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Sint_Maarten
   de: https://de.wikipedia.org/wiki/Sint_Maarten
+  pt: https://pt.wikipedia.org/wiki/São_Martinho_(Países_Baixos)

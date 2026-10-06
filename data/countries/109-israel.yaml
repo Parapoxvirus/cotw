@@ -6,16 +6,20 @@ status: sovereign
 name:
   en: Israel
   de: Israel
+  pt: Israel
 formal_name:
   en: The State of Israel
   de: Staat Israel
+  pt: Estado de Israel
 capitals:
 - name:
     en: Jerusalem
     de: Jerusalem
+    pt: Jerusalém
   label:
     en: disputed
     de: umstritten
+    pt: disputada
   role: capital
   wikidata: Q1218
   lat: 31.77668
@@ -32,3 +36,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Israel
   de: https://de.wikipedia.org/wiki/Israel
+  pt: https://pt.wikipedia.org/wiki/Israel

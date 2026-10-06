@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Japan
   de: Japan
+  pt: Japão
 capitals:
 - name:
     en: Tokyo
     de: Tokio / Tokyo
+    pt: Tóquio
   role: capital
   wikidata: Q1490
   lat: 35.68944
@@ -21,3 +23,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Japan
   de: https://de.wikipedia.org/wiki/Japan
+  pt: https://pt.wikipedia.org/wiki/Japão

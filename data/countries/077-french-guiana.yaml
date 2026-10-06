@@ -7,10 +7,12 @@ dependency_of: '076'
 name:
   en: French Guiana
   de: Französisch-Guayana
+  pt: Guiana Francesa
 capitals:
 - name:
     en: Cayenne
     de: Cayenne
+    pt: Caiena
   role: capital
   wikidata: Q44401
   lat: 4.93861
@@ -25,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/French_Guiana
   de: https://de.wikipedia.org/wiki/Französisch-Guayana
+  pt: https://pt.wikipedia.org/wiki/Guiana_Francesa

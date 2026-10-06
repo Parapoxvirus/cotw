@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Ghana
   de: Ghana
+  pt: Gana
 formal_name:
   en: The Republic of Ghana
   de: Republik Ghana
+  pt: República de Gana
 capitals:
 - name:
     en: Accra
     de: Accra
+    pt: Acra
   role: capital
   wikidata: Q3761
   lat: 5.55602
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Ghana
   de: https://de.wikipedia.org/wiki/Ghana
+  pt: https://pt.wikipedia.org/wiki/Gana

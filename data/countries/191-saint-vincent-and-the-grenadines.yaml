@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Saint Vincent and the Grenadines
   de: St. Vincent und die Grenadinen
+  pt: São Vicente e Granadinas
 capitals:
 - name:
     en: Kingstown
     de: Kingstown
+    pt: Kingstown
   role: capital
   wikidata: Q41474
   lat: 13.15527
@@ -22,3 +24,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines
   de: https://de.wikipedia.org/wiki/St._Vincent_und_die_Grenadinen
+  pt: https://pt.wikipedia.org/wiki/São_Vicente_e_Granadinas

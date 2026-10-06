@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: India
   de: Indien
+  pt: Índia
 formal_name:
   en: The Republic of India
   de: Republik Indien
+  pt: República da Índia
 capitals:
 - name:
     en: New Delhi
     de: Neu-Delhi
+    pt: Nova Delhi
   role: capital
   wikidata: Q987
   lat: 28.61389
@@ -30,3 +33,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/India
   de: https://de.wikipedia.org/wiki/Indien
+  pt: https://pt.wikipedia.org/wiki/Índia

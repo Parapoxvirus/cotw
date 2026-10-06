@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Vietnam
   de: Vietnam
+  pt: Vietnã
 formal_name:
   en: The Socialist Republic of Vietnam
   de: Sozialistische Republik Vietnam
+  pt: República Socialista do Vietnã
 capitals:
 - name:
     en: Hanoi
     de: Hanoi
+    pt: Hanói
   role: capital
   wikidata: Q1858
   lat: 21.0245
@@ -27,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Vietnam
   de: https://de.wikipedia.org/wiki/Vietnam
+  pt: https://pt.wikipedia.org/wiki/Vietnã

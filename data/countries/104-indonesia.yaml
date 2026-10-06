@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Indonesia
   de: Indonesien
+  pt: Indonésia
 formal_name:
   en: The Republic of Indonesia
   de: Republik Indonesien
+  pt: República da Indonésia
 capitals:
 - name:
     en: Jakarta
     de: Jakarta
+    pt: Jacarta
   role: capital
   wikidata: Q3630
   lat: -6.17528
@@ -27,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Indonesia
   de: https://de.wikipedia.org/wiki/Indonesien
+  pt: https://pt.wikipedia.org/wiki/Indonésia

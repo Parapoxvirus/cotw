@@ -7,13 +7,16 @@ dependency_of: '013'
 name:
   en: Norfolk Island
   de: Norfolkinsel
+  pt: Ilha Norfolk
 formal_name:
   en: Territory of Norfolk Island
   de: Territorium der Norfolkinsel
+  pt: Território da Ilha Norfolk
 capitals:
 - name:
     en: Kingston
     de: Kingston
+    pt: Kingston
   role: capital
   wikidata: Q30963
   lat: -29.05
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Norfolk_Island
   de: https://de.wikipedia.org/wiki/Norfolkinsel
+  pt: https://pt.wikipedia.org/wiki/Ilha_Norfolque

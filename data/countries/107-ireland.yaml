@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Ireland / Republic of Ireland
   de: Irland / Republik Irland
+  pt: Irlanda
 capitals:
 - name:
     en: Dublin
     de: Dublin
+    pt: Dublin
   role: capital
   wikidata: Q1761
   lat: 53.34972
@@ -22,3 +24,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Republic_of_Ireland
   de: https://de.wikipedia.org/wiki/Irland
+  pt: https://pt.wikipedia.org/wiki/Irlanda

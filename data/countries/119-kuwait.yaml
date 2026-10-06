@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Kuwait
   de: Kuwait
+  pt: Kuwait
 formal_name:
   en: The State of Kuwait
   de: Staat Kuwait
+  pt: Estado do Kuwait
 capitals:
 - name:
     en: Kuwait City
     de: Kuwait-Stadt
+    pt: Cidade do Kuwait
   role: capital
   wikidata: Q35178
   lat: 29.375
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Kuwait
   de: https://de.wikipedia.org/wiki/Kuwait
+  pt: https://pt.wikipedia.org/wiki/Kuwait

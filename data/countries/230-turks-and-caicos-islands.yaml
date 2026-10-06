@@ -7,10 +7,12 @@ dependency_of: '235'
 name:
   en: Turks and Caicos Islands
   de: Turks- und Caicosinseln
+  pt: Ilhas Turks e Caicos
 capitals:
 - name:
     en: Cockburn Town
     de: Cockburn Town
+    pt: Cockburn Town
   role: capital
   wikidata: Q34205
   lat: 21.46028
@@ -23,3 +25,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Turks_and_Caicos_Islands
   de: https://de.wikipedia.org/wiki/Turks-_und_Caicosinseln
+  pt: https://pt.wikipedia.org/wiki/Ilhas_Turcas_e_Caicos

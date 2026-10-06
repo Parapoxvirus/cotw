@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: South Sudan
   de: Südsudan
+  pt: Sudão do Sul
 formal_name:
   en: The Republic of South Sudan
   de: Republik Südsudan
+  pt: República do Sudão do Sul
 capitals:
 - name:
     en: Juba
     de: Juba
+    pt: Juba
   role: capital
   wikidata: Q1947
   lat: 4.85389
@@ -31,3 +34,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/South_Sudan
   de: https://de.wikipedia.org/wiki/Südsudan
+  pt: https://pt.wikipedia.org/wiki/Sudão_do_Sul

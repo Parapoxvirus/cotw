@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Guinea
   de: Guinea
+  pt: Guiné
 formal_name:
   en: The Republic of Guinea
   de: Republik Guinea
+  pt: República da Guiné
 capitals:
 - name:
     en: Conakry
     de: Conakry
+    pt: Conacri
   role: capital
   wikidata: Q3733
   lat: 9.50917
@@ -31,3 +34,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Guinea
   de: https://de.wikipedia.org/wiki/Guinea
+  pt: https://pt.wikipedia.org/wiki/Guiné

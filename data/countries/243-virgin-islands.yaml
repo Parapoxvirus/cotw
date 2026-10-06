@@ -7,10 +7,12 @@ dependency_of: '235'
 name:
   en: Virgin Islands / British Virgin Islands
   de: Britische Jungferninseln
+  pt: Ilhas Virgens Britânicas
 capitals:
 - name:
     en: Road Town
     de: Road Town
+    pt: Road Town
   role: capital
   wikidata: Q179431
   lat: 18.43333
@@ -23,3 +25,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/British_Virgin_Islands
   de: https://de.wikipedia.org/wiki/Britische_Jungferninseln
+  pt: https://pt.wikipedia.org/wiki/Ilhas_Virgens_Britânicas

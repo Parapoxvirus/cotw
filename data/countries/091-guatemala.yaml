@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Guatemala
   de: Guatemala
+  pt: Guatemala
 formal_name:
   en: The Republic of Guatemala
   de: Republik Guatemala
+  pt: República da Guatemala
 capitals:
 - name:
     en: Guatemala City
     de: Guatemala-Stadt
+    pt: Cidade da Guatemala
   role: capital
   wikidata: Q1555
   lat: 14.64167
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Guatemala
   de: https://de.wikipedia.org/wiki/Guatemala
+  pt: https://pt.wikipedia.org/wiki/Guatemala

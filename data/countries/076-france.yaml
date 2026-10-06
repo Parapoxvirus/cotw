@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: France
   de: Frankreich
+  pt: França
 formal_name:
   en: The French Republic
   de: Französische Republik
+  pt: República Francesa
 capitals:
 - name:
     en: Paris
     de: Paris
+    pt: Paris
   role: capital
   wikidata: Q90
   lat: 48.85667
@@ -32,3 +35,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/France
   de: https://de.wikipedia.org/wiki/Frankreich
+  pt: https://pt.wikipedia.org/wiki/França

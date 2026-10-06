@@ -6,16 +6,20 @@ status: sovereign
 name:
   en: Netherlands, The
   de: Niederlande
+  pt: Países Baixos
 formal_name:
   en: The Kingdom of the Netherlands
   de: Königreich der Niederlande
+  pt: Reino dos Países Baixos
 capitals:
 - name:
     en: Amsterdam
     de: Amsterdam
+    pt: Amsterdã
   label:
     en: capital
     de: Hauptstadt
+    pt: capital
   role: capital
   wikidata: Q727
   lat: 52.36667
@@ -23,9 +27,11 @@ capitals:
 - name:
     en: The Hague
     de: Den Haag
+    pt: Haia
   label:
     en: seat of government
     de: Regierungssitz
+    pt: sede do governo
   role: seat_of_government
   wikidata: Q36600
   lat: 52.08
@@ -39,3 +45,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Netherlands
   de: https://de.wikipedia.org/wiki/Niederlande
+  pt: https://pt.wikipedia.org/wiki/Países_Baixos

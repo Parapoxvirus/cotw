@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Afghanistan
   de: Afghanistan
+  pt: Afeganistão
 formal_name:
   en: Islamic Emirate of Afghanistan
   de: Islamisches Emirat Afghanistan
+  pt: Emirado Islâmico do Afeganistão
 capitals:
 - name:
     en: Kabul
     de: Kabul
+    pt: Cabul
   role: capital
   wikidata: Q5838
   lat: 34.53278
@@ -30,3 +33,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Afghanistan
   de: https://de.wikipedia.org/wiki/Afghanistan
+  pt: https://pt.wikipedia.org/wiki/Afeganistão

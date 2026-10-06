@@ -7,13 +7,16 @@ dependency_of: '076'
 name:
   en: Mayotte
   de: Mayotte
+  pt: Mayotte
 formal_name:
   en: Department of Mayotte
   de: Departement Mayotte
+  pt: Departamento de Mayotte
 capitals:
 - name:
     en: Mamoudzou
     de: Mamoudzou
+    pt: Mamoudzou
   role: capital
   wikidata: Q132676
   lat: -12.78139
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Mayotte
   de: https://de.wikipedia.org/wiki/Mayotte
+  pt: https://pt.wikipedia.org/wiki/Mayotte

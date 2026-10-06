@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Ukraine
   de: Ukraine
+  pt: Ucrânia
 capitals:
 - name:
     en: Kyiv
     de: Kiew
+    pt: Kiev / Kyiv
   role: capital
   wikidata: Q1899
   lat: 50.45
@@ -28,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Ukraine
   de: https://de.wikipedia.org/wiki/Ukraine
+  pt: https://pt.wikipedia.org/wiki/Ucrânia

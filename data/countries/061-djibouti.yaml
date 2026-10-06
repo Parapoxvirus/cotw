@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Djibouti
   de: Dschibuti
+  pt: Djibuti
 formal_name:
   en: The Republic of Djibouti
   de: Republik Dschibuti
+  pt: República do Djibuti
 capitals:
 - name:
     en: Djibouti City
     de: Dschibuti-Stadt
+    pt: Djibuti
   role: capital
   wikidata: Q3604
   lat: 11.595
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Djibouti
   de: https://de.wikipedia.org/wiki/Dschibuti
+  pt: https://pt.wikipedia.org/wiki/Djibuti

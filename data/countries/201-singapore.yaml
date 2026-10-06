@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Singapore
   de: Singapur
+  pt: Singapura
 formal_name:
   en: The Republic of Singapore
   de: Republik Singapur
+  pt: República de Singapura
 capitals:
 - name:
     en: Singapore
     de: Singapur
+    pt: Singapura
   role: capital
   wikidata: Q334
   lat: 1.3
@@ -24,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Singapore
   de: https://de.wikipedia.org/wiki/Singapur
+  pt: https://pt.wikipedia.org/wiki/Singapura

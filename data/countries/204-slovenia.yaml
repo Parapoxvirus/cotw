@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Slovenia
   de: Slowenien
+  pt: Eslovênia
 formal_name:
   en: The Republic of Slovenia
   de: Republik Slowenien
+  pt: República da Eslovênia
 capitals:
 - name:
     en: Ljubljana
     de: Ljubljana / Laibach
+    pt: Liubliana
   role: capital
   wikidata: Q437
   lat: 46.05139
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Slovenia
   de: https://de.wikipedia.org/wiki/Slowenien
+  pt: https://pt.wikipedia.org/wiki/Eslovénia

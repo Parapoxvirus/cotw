@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Morocco
   de: Marokko
+  pt: Marrocos
 formal_name:
   en: The Kingdom of Morocco
   de: Königreich Marokko
+  pt: Reino do Marrocos
 capitals:
 - name:
     en: Rabat
     de: Rabat
+    pt: Rabat
   role: capital
   wikidata: Q3551
   lat: 34.02111
@@ -27,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Morocco
   de: https://de.wikipedia.org/wiki/Marokko
+  pt: https://pt.wikipedia.org/wiki/Marrocos

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Latvia
   de: Lettland
+  pt: Letônia
 formal_name:
   en: The Republic of Latvia
   de: Republik Lettland
+  pt: República da Letônia
 capitals:
 - name:
     en: Riga
     de: Riga
+    pt: Riga
   role: capital
   wikidata: Q1773
   lat: 56.9475
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Latvia
   de: https://de.wikipedia.org/wiki/Lettland
+  pt: https://pt.wikipedia.org/wiki/Letónia

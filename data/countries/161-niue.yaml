@@ -7,10 +7,12 @@ dependency_of: '157'
 name:
   en: Niue
   de: Niue
+  pt: Niue
 capitals:
 - name:
     en: Alofi
     de: Alofi
+    pt: Alofi
   role: capital
   wikidata: Q30966
   lat: -19.056
@@ -22,3 +24,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Niue
   de: https://de.wikipedia.org/wiki/Niue
+  pt: https://pt.wikipedia.org/wiki/Niue

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Timor-Leste / East Timor
   de: Timor-Leste / Osttimor
+  pt: Timor-Leste
 formal_name:
   en: The Democratic Republic of Timor-Leste
   de: Demokratische Republik Timor-Leste
+  pt: República Democrática de Timor-Leste
 capitals:
 - name:
     en: Dili
     de: Dili
+    pt: Díli
   role: capital
   wikidata: Q9310
   lat: -8.55361
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Timor-Leste
   de: https://de.wikipedia.org/wiki/Osttimor
+  pt: https://pt.wikipedia.org/wiki/Timor-Leste

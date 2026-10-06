@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Tajikistan
   de: Tadschikistan
+  pt: Tajiquistão
 formal_name:
   en: The Republic of Tajikistan
   de: Republik Tadschikistan
+  pt: República do Tajiquistão
 capitals:
 - name:
     en: Dushanbe
     de: Duschanbe
+    pt: Dushanbe
   role: capital
   wikidata: Q9365
   lat: 38.57306
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Tajikistan
   de: https://de.wikipedia.org/wiki/Tadschikistan
+  pt: https://pt.wikipedia.org/wiki/Tajiquistão

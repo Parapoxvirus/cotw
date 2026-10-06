@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Zambia
   de: Sambia
+  pt: Zâmbia
 formal_name:
   en: The Republic of Zambia
   de: Republik Sambia
+  pt: República da Zâmbia
 capitals:
 - name:
     en: Lusaka
     de: Lusaka
+    pt: Lusaca
   role: capital
   wikidata: Q3881
   lat: -15.41667
@@ -33,3 +36,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Zambia
   de: https://de.wikipedia.org/wiki/Sambia
+  pt: https://pt.wikipedia.org/wiki/Zâmbia

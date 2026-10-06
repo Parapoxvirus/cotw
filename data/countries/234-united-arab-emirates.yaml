@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: United Arab Emirates, The
   de: Vereinigte Arabische Emirate
+  pt: Emirados Árabes Unidos
 capitals:
 - name:
     en: Abu Dhabi
     de: Abu Dhabi
+    pt: Abu Dhabi
   role: capital
   wikidata: Q1519
   lat: 24.45111
@@ -23,3 +25,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/United_Arab_Emirates
   de: https://de.wikipedia.org/wiki/Vereinigte_Arabische_Emirate
+  pt: https://pt.wikipedia.org/wiki/Emirados_Árabes_Unidos

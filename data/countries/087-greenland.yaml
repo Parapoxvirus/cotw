@@ -7,10 +7,12 @@ dependency_of: '060'
 name:
   en: Greenland
   de: Grönland
+  pt: Groenlândia
 capitals:
 - name:
     en: Nuuk
     de: Nuuk
+    pt: Nuuk
   role: capital
   wikidata: Q226
   lat: 64.175
@@ -23,3 +25,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Greenland
   de: https://de.wikipedia.org/wiki/Grönland
+  pt: https://pt.wikipedia.org/wiki/Gronelândia

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: South Korea
   de: Südkorea
+  pt: Coreia do Sul
 formal_name:
   en: The Republic of Korea
   de: Republik Korea
+  pt: República da Coreia
 capitals:
 - name:
     en: Seoul
     de: Seoul
+    pt: Seul
   role: capital
   wikidata: Q8684
   lat: 37.56
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/South_Korea
   de: https://de.wikipedia.org/wiki/Südkorea
+  pt: https://pt.wikipedia.org/wiki/Coreia_do_Sul

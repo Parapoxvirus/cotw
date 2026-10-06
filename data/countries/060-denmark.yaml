@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Denmark
   de: Dänemark
+  pt: Dinamarca
 formal_name:
   en: The Kingdom of Denmark
   de: Königreich Dänemark
+  pt: Reino da Dinamarca
 capitals:
 - name:
     en: Copenhagen
     de: Kopenhagen
+    pt: Copenhague
   role: capital
   wikidata: Q1748
   lat: 55.67611
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Denmark
   de: https://de.wikipedia.org/wiki/Dänemark
+  pt: https://pt.wikipedia.org/wiki/Dinamarca

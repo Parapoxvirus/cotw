@@ -6,16 +6,20 @@ status: sovereign
 name:
   en: Moldova
   de: Moldau / Moldova
+  pt: Moldova
 name_label:
   en: 'outdated: Moldavia'
   de: 'umgangssprachlich veraltet: Moldawien'
+  pt: 'também: Moldávia'
 formal_name:
   en: The Republic of Moldova
   de: Republik Moldau
+  pt: República da Moldova
 capitals:
 - name:
     en: Chișinău
     de: Chișinău
+    pt: Chisinau
   role: capital
   wikidata: Q21197
   lat: 47.02278
@@ -29,3 +33,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Moldova
   de: https://de.wikipedia.org/wiki/Republik_Moldau
+  pt: https://pt.wikipedia.org/wiki/Moldávia

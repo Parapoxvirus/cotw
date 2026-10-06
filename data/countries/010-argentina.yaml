@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Argentina
   de: Argentinien
+  pt: Argentina
 formal_name:
   en: The Argentine Republic
   de: Argentinische Republik
+  pt: República Argentina
 capitals:
 - name:
     en: Buenos Aires
     de: Buenos Aires
+    pt: Buenos Aires
   role: capital
   wikidata: Q1486
   lat: -34.59972
@@ -30,3 +33,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Argentina
   de: https://de.wikipedia.org/wiki/Argentinien
+  pt: https://pt.wikipedia.org/wiki/Argentina

@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Romania
   de: Rumänien
+  pt: Romênia
 capitals:
 - name:
     en: Bucharest
     de: Bukarest
+    pt: Bucareste
   role: capital
   wikidata: Q19660
   lat: 44.41336
@@ -26,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Romania
   de: https://de.wikipedia.org/wiki/Rumänien
+  pt: https://pt.wikipedia.org/wiki/Romênia

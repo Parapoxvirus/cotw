@@ -7,13 +7,16 @@ dependency_of: '045'
 name:
   en: Hong Kong
   de: Hongkong
+  pt: Hong Kong
 formal_name:
   en: Hong Kong Special Administrative Region of the People’s Republic of China
   de: Sonderverwaltungszone Hongkong der Volksrepublik China
+  pt: Região Administrativa Especial de Hong Kong da República Popular da China
 capitals:
 - name:
     en: Hong Kong
     de: Hongkong
+    pt: Hong Kong
   role: capital
   wikidata: Q8646
   lat: 22.27833
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Hong_Kong
   de: https://de.wikipedia.org/wiki/Hongkong
+  pt: https://pt.wikipedia.org/wiki/Hong_Kong

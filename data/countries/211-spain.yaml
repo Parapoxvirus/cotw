@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Spain
   de: Spanien
+  pt: Espanha
 formal_name:
   en: The Kingdom of Spain
   de: Königreich Spanien
+  pt: Reino da Espanha
 capitals:
 - name:
     en: Madrid
     de: Madrid
+    pt: Madri
   role: capital
   wikidata: Q2807
   lat: 40.41694
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Spain
   de: https://de.wikipedia.org/wiki/Spanien
+  pt: https://pt.wikipedia.org/wiki/Espanha

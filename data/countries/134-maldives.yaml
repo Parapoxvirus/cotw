@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Maldives
   de: Malediven
+  pt: Maldivas
 formal_name:
   en: The Republic of Maldives
   de: Republik Malediven
+  pt: República das Maldivas
 capitals:
 - name:
     en: Malé
     de: Malé
+    pt: Malé
   role: capital
   wikidata: Q9347
   lat: 4.175
@@ -24,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Maldives
   de: https://de.wikipedia.org/wiki/Malediven
+  pt: https://pt.wikipedia.org/wiki/Maldivas

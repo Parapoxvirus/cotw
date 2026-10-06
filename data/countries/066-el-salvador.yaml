@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: El Salvador
   de: El Salvador
+  pt: El Salvador
 formal_name:
   en: The Republic of El Salvador
   de: Republik El Salvador
+  pt: República de El Salvador
 capitals:
 - name:
     en: San Salvador
     de: San Salvador
+    pt: São Salvador
   role: capital
   wikidata: Q3110
   lat: 13.6976
@@ -27,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/El_Salvador
   de: https://de.wikipedia.org/wiki/El_Salvador
+  pt: https://pt.wikipedia.org/wiki/El_Salvador

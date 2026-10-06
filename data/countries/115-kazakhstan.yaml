@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Kazakhstan
   de: Kasachstan
+  pt: Cazaquistão
 formal_name:
   en: The Republic of Kazakhstan
   de: Republik Kasachstan
+  pt: República do Cazaquistão
 capitals:
 - name:
     en: Astana
     de: Astana
+    pt: Astana
   role: capital
   wikidata: Q1520
   lat: 51.13333
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Kazakhstan
   de: https://de.wikipedia.org/wiki/Kasachstan
+  pt: https://pt.wikipedia.org/wiki/Cazaquistão

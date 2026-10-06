@@ -44,7 +44,7 @@ wikipedia:
 ## Languages
 
 A *text map* holds one text per language: `{en: …, de: …}`. The languages are the registered
-ones, one module each in `tools/cotw/languages/` (today `en` and `de`, see
+ones, one module each in `tools/cotw/languages/` (today `en`, `de` and `pt`, see
 [`DECK.md`](DECK.md#a-new-language)). `python -m cotw validate` requires every registered
 language where a map is required (`name`, `capitals[].name`), and rejects keys of languages
 that are not registered (in every text map and in `wikipedia`), so a half-added language

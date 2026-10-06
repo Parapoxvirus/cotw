@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Philippines, The
   de: Philippinen
+  pt: Filipinas
 formal_name:
   en: The Republic of the Philippines
   de: Republik der Philippinen
+  pt: República das Filipinas
 capitals:
 - name:
     en: Manila
     de: Manila
+    pt: Manila
   role: capital
   wikidata: Q1461
   lat: 14.59583
@@ -24,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Philippines
   de: https://de.wikipedia.org/wiki/Philippinen
+  pt: https://pt.wikipedia.org/wiki/Filipinas

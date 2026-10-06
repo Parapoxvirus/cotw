@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Belgium
   de: Belgien
+  pt: Bélgica
 formal_name:
   en: The Kingdom of Belgium
   de: Königreich Belgien
+  pt: Reino da Bélgica
 capitals:
 - name:
     en: Brussels
     de: Brüssel
+    pt: Bruxelas
   role: capital
   wikidata: Q239
   lat: 50.84667
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Belgium
   de: https://de.wikipedia.org/wiki/Belgien
+  pt: https://pt.wikipedia.org/wiki/Bélgica

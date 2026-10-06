@@ -6,16 +6,20 @@ status: sovereign
 name:
   en: Tanzania
   de: Tansania
+  pt: Tanzânia
 formal_name:
   en: The United Republic of Tanzania
   de: Vereinigte Republik Tansania
+  pt: República Unida da Tanzânia
 capitals:
 - name:
     en: Dodoma
     de: Dodoma
+    pt: Dodoma
   label:
     en: capital
     de: Hauptstadt
+    pt: capital
   role: capital
   wikidata: Q3866
   lat: -6.1835
@@ -23,9 +27,11 @@ capitals:
 - name:
     en: Dar es Salaam
     de: Daressalam
+    pt: Dar es Salaam
   label:
     en: seat of government
     de: Regierungssitz
+    pt: sede do governo
   role: seat_of_government
   wikidata: Q1960
   lat: -6.81611
@@ -46,3 +52,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Tanzania
   de: https://de.wikipedia.org/wiki/Tansania
+  pt: https://pt.wikipedia.org/wiki/Tanzânia

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Azerbaijan
   de: Aserbaidschan
+  pt: Azerbaijão
 formal_name:
   en: The Republic of Azerbaijan
   de: Republik Aserbaidschan
+  pt: República do Azerbaijão
 capitals:
 - name:
     en: Baku
     de: Baku
+    pt: Baku
   role: capital
   wikidata: Q9248
   lat: 40.36666
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Azerbaijan
   de: https://de.wikipedia.org/wiki/Aserbaidschan
+  pt: https://pt.wikipedia.org/wiki/Azerbaijão

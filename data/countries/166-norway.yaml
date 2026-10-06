@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Norway
   de: Norwegen
+  pt: Noruega
 formal_name:
   en: The Kingdom of Norway
   de: Königreich Norwegen
+  pt: Reino da Noruega
 capitals:
 - name:
     en: Oslo
     de: Oslo
+    pt: Oslo
   role: capital
   wikidata: Q585
   lat: 59.91333
@@ -27,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Norway
   de: https://de.wikipedia.org/wiki/Norwegen
+  pt: https://pt.wikipedia.org/wiki/Noruega

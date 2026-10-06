@@ -7,10 +7,12 @@ dependency_of: '076'
 name:
   en: New Caledonia
   de: Neukaledonien
+  pt: Nova Caledônia
 capitals:
 - name:
     en: Nouméa
     de: Nouméa
+    pt: Nouméa
   role: capital
   wikidata: Q9733
   lat: -22.26667
@@ -22,3 +24,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/New_Caledonia
   de: https://de.wikipedia.org/wiki/Neukaledonien
+  pt: https://pt.wikipedia.org/wiki/Nova_Caledónia

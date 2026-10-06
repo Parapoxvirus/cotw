@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Uruguay
   de: Uruguay
+  pt: Uruguai
 formal_name:
   en: The Oriental Republic of Uruguay
   de: Republik Östlich des Uruguay
+  pt: República Oriental do Uruguai
 capitals:
 - name:
     en: Montevideo
     de: Montevideo
+    pt: Montevidéu
   role: capital
   wikidata: Q1335
   lat: -34.90592
@@ -27,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Uruguay
   de: https://de.wikipedia.org/wiki/Uruguay
+  pt: https://pt.wikipedia.org/wiki/Uruguai

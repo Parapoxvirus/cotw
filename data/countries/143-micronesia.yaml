@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Micronesia
   de: Mikronesien
+  pt: Micronésia
 formal_name:
   en: The Federated States of Micronesia
   de: Föderierte Staaten von Mikronesien
+  pt: Estados Federados da Micronésia
 capitals:
 - name:
     en: Palikir
     de: Palikir
+    pt: Palikir
   role: capital
   wikidata: Q42751
   lat: 6.91778
@@ -24,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Federated_States_of_Micronesia
   de: https://de.wikipedia.org/wiki/Föderierte_Staaten_von_Mikronesien
+  pt: https://pt.wikipedia.org/wiki/Estados_Federados_da_Micronésia

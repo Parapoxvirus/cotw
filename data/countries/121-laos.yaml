@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Laos
   de: Laos
+  pt: Laos
 formal_name:
   en: The Lao People’s Democratic Republic
   de: Demokratische Volksrepublik Laos
+  pt: República Democrática Popular do Laos
 capitals:
 - name:
     en: Vientiane
     de: Vientiane
+    pt: Vientiane
   role: capital
   wikidata: Q9326
   lat: 17.98
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Laos
   de: https://de.wikipedia.org/wiki/Laos
+  pt: https://pt.wikipedia.org/wiki/Laos

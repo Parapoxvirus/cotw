@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Finland
   de: Finnland
+  pt: Finlândia
 formal_name:
   en: The Republic of Finland
   de: Republik Finnland
+  pt: República da Finlândia
 capitals:
 - name:
     en: Helsinki
     de: Helsinki
+    pt: Helsinque
   role: capital
   wikidata: Q1757
   lat: 60.17083
@@ -27,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Finland
   de: https://de.wikipedia.org/wiki/Finnland
+  pt: https://pt.wikipedia.org/wiki/Finlândia

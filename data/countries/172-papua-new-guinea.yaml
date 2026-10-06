@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Papua New Guinea
   de: Papua-Neuguinea
+  pt: Papua Nova Guiné
 formal_name:
   en: The Independent State of Papua New Guinea
   de: Unabhängiger Staat Papua-Neuguinea
+  pt: Estado Independente da Papua Nova Guiné
 capitals:
 - name:
     en: Port Moresby
     de: Port Moresby
+    pt: Port Moresby
   role: capital
   wikidata: Q36526
   lat: -9.47889
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Papua_New_Guinea
   de: https://de.wikipedia.org/wiki/Papua-Neuguinea
+  pt: https://pt.wikipedia.org/wiki/Papua-Nova_Guiné

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Czech Republic
   de: Tschechien
+  pt: República Tcheca / Tchéquia
 formal_name:
   en: The Czech Republic
   de: Tschechische Republik
+  pt: República Tcheca
 capitals:
 - name:
     en: Prague
     de: Prag
+    pt: Praga
   role: capital
   wikidata: Q1085
   lat: 50.0875
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Czech_Republic
   de: https://de.wikipedia.org/wiki/Tschechien
+  pt: https://pt.wikipedia.org/wiki/Chéquia

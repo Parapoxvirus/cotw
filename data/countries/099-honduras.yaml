@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Honduras
   de: Honduras
+  pt: Honduras
 formal_name:
   en: The Republic of Honduras
   de: Republik Honduras
+  pt: República de Honduras
 capitals:
 - name:
     en: Tegucigalpa
     de: Tegucigalpa
+    pt: Tegucigalpa
   role: capital
   wikidata: Q3238
   lat: 14.10578
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Honduras
   de: https://de.wikipedia.org/wiki/Honduras
+  pt: https://pt.wikipedia.org/wiki/Honduras

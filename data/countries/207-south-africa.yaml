@@ -6,16 +6,20 @@ status: sovereign
 name:
   en: South Africa
   de: Südafrika
+  pt: África do Sul
 formal_name:
   en: The Republic of South Africa
   de: Republik Südafrika
+  pt: República da África do Sul
 capitals:
 - name:
     en: Pretoria
     de: Pretoria
+    pt: Pretória
   label:
     en: executive
     de: Exekutive
+    pt: executiva
   role: executive
   wikidata: Q3926
   lat: -25.74639
@@ -23,9 +27,11 @@ capitals:
 - name:
     en: Cape Town
     de: Kapstadt
+    pt: Cidade do Cabo
   label:
     en: legislative
     de: Legislative
+    pt: legislativa
   role: legislative
   wikidata: Q5465
   lat: -33.92528
@@ -33,9 +39,11 @@ capitals:
 - name:
     en: Bloemfontein
     de: Bloemfontein
+    pt: Bloemfontein
   label:
     en: judicial
     de: Judikative
+    pt: judiciária
   role: judicial
   wikidata: Q37701
   lat: -29.1
@@ -54,3 +62,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/South_Africa
   de: https://de.wikipedia.org/wiki/Südafrika
+  pt: https://pt.wikipedia.org/wiki/África_do_Sul

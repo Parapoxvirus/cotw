@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Croatia
   de: Kroatien
+  pt: Croácia
 formal_name:
   en: The Republic of Croatia
   de: Republik Kroatien
+  pt: República da Croácia
 capitals:
 - name:
     en: Zagreb
     de: Zagreb
+    pt: Zagreb
   role: capital
   wikidata: Q1435
   lat: 45.81306
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Croatia
   de: https://de.wikipedia.org/wiki/Kroatien
+  pt: https://pt.wikipedia.org/wiki/Croácia

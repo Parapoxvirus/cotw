@@ -6,13 +6,16 @@ status: disputed
 name:
   en: Kosovo
   de: Kosovo
+  pt: Kosovo
 formal_name:
   en: Republic of Kosovo
   de: Republik Kosovo
+  pt: República do Kosovo
 capitals:
 - name:
     en: Pristina
     de: Pristina
+    pt: Pristina
   role: capital
   wikidata: Q25270
   lat: 42.66667
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Kosovo
   de: https://de.wikipedia.org/wiki/Kosovo
+  pt: https://pt.wikipedia.org/wiki/Kosovo

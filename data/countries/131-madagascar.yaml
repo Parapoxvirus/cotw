@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Madagascar
   de: Madagaskar
+  pt: Madagascar
 formal_name:
   en: The Republic of Madagascar
   de: Republik Madagaskar
+  pt: República de Madagascar
 capitals:
 - name:
     en: Antananarivo
     de: Antananarivo
+    pt: Antananarivo
   role: capital
   wikidata: Q3915
   lat: -18.91
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Madagascar
   de: https://de.wikipedia.org/wiki/Madagaskar
+  pt: https://pt.wikipedia.org/wiki/Madagáscar

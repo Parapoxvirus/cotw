@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Saint Lucia
   de: St. Lucia
+  pt: Santa Lúcia
 capitals:
 - name:
     en: Castries
     de: Castries
+    pt: Castries
   role: capital
   wikidata: Q41699
   lat: 14.01083
@@ -22,3 +24,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Saint_Lucia
   de: https://de.wikipedia.org/wiki/St._Lucia
+  pt: https://pt.wikipedia.org/wiki/Santa_Lúcia

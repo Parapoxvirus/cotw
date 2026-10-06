@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Brunei
   de: Brunei
+  pt: Brunei
 formal_name:
   en: The Nation of Brunei, the Abode of Peace
   de: Brunei Darussalam
+  pt: Brunei Darussalam
 capitals:
 - name:
     en: Bandar Seri Begawan
     de: Bandar Seri Begawan
+    pt: Bandar Seri Begawan
   role: capital
   wikidata: Q9279
   lat: 4.91667
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Brunei
   de: https://de.wikipedia.org/wiki/Brunei
+  pt: https://pt.wikipedia.org/wiki/Brunei

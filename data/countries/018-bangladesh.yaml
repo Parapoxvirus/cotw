@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Bangladesh
   de: Bangladesch
+  pt: Bangladesh
 formal_name:
   en: The People’s Republic of Bangladesh
   de: Volksrepublik Bangladesch
+  pt: República Popular do Bangladesh
 capitals:
 - name:
     en: Dhaka
     de: Dhaka
+    pt: Daca
   role: capital
   wikidata: Q1354
   lat: 23.72889
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Bangladesh
   de: https://de.wikipedia.org/wiki/Bangladesch
+  pt: https://pt.wikipedia.org/wiki/Bangladesh

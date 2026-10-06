@@ -7,10 +7,12 @@ dependency_of: '060'
 name:
   en: Faroe Islands
   de: Färöer
+  pt: Ilhas Féroe
 capitals:
 - name:
     en: Tórshavn
     de: Tórshavn
+    pt: Tórshavn
   role: capital
   wikidata: Q10704
   lat: 62.00981
@@ -22,3 +24,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Faroe_Islands
   de: https://de.wikipedia.org/wiki/Färöer
+  pt: https://pt.wikipedia.org/wiki/Ilhas_Feroe

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Saint Kitts and Nevis
   de: St. Kitts und Nevis
+  pt: São Cristóvão e Névis
 formal_name:
   en: Federation of Saint Christopher and Nevis
   de: Föderation St. Kitts und Nevis
+  pt: Federação de São Cristóvão e Névis
 capitals:
 - name:
     en: Basseterre
     de: Basseterre
+    pt: Basseterre
   role: capital
   wikidata: Q41295
   lat: 17.29833
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis
   de: https://de.wikipedia.org/wiki/St._Kitts_und_Nevis
+  pt: https://pt.wikipedia.org/wiki/São_Cristóvão_e_Neves

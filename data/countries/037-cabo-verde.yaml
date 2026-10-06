@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Cabo Verde
   de: Kap Verde
+  pt: Cabo Verde
 formal_name:
   en: The Republic of Cabo Verde
   de: Republik Cabo Verde
+  pt: República de Cabo Verde
 capitals:
 - name:
     en: Praia
     de: Praia
+    pt: Praia
   role: capital
   wikidata: Q3751
   lat: 14.91772
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Cape_Verde
   de: https://de.wikipedia.org/wiki/Kap_Verde
+  pt: https://pt.wikipedia.org/wiki/Cabo_Verde

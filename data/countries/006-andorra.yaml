@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Andorra
   de: Andorra
+  pt: Andorra
 formal_name:
   en: The Principality of Andorra
   de: Fürstentum Andorra
+  pt: Principado de Andorra
 capitals:
 - name:
     en: Andorra la Vella
     de: Andorra la Vella
+    pt: Andorra la Vella
   role: capital
   wikidata: Q1863
   lat: 42.50722
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Andorra
   de: https://de.wikipedia.org/wiki/Andorra
+  pt: https://pt.wikipedia.org/wiki/Andorra

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Kiribati
   de: Kiribati
+  pt: Kiribati
 formal_name:
   en: The Republic of Kiribati
   de: Republik Kiribati
+  pt: República de Kiribati
 capitals:
 - name:
     en: South Tarawa
     de: South Tarawa
+    pt: Tarawa
   role: capital
   wikidata: Q131233
   lat: 1.33333
@@ -24,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Kiribati
   de: https://de.wikipedia.org/wiki/Kiribati
+  pt: https://pt.wikipedia.org/wiki/Kiribati

@@ -18,7 +18,7 @@ contributions reach the published repository: [`CONTRIBUTING.md`](../CONTRIBUTIN
    - `notetype_id`, `deck_id`, `extras_deck_id`: computed once with
      `derive_id(code, "notetype" | "deck" | "deck-extras")` and written in as constants, frozen
      from the first release on;
-   - `id_offset`: the next free multiple of 50 000 (EN 0, DE 50 000, the next language 100 000);
+   - `id_offset`: the next free multiple of 50 000 (EN 0, DE 50 000, PT 100 000, the next language 150 000);
    - `wiki`: the Wikidata site ID of the language's Wikipedia (`plwiki`);
    - `ankiweb`: optional, `None` until the listing exists (the help then links the EN listing).
 2. **Data:** in every `data/countries/*.yaml`, `name.<code>` and `name.<code>` of every capital
@@ -91,6 +91,33 @@ other official publications (see the source rule below) and written in Swiss spe
    (KSNG, 2nd edition 2019, list of changes as of 23 September 2026): other place names, for
    example capitals missing from the list above.
 
+### Portuguese (PT)
+
+The deck is written in the Brazilian standard (pt-BR: *Irã*, *Polônia*, *Quênia*, *Moscou*;
+European Portuguese writes *Irão*, *Polónia*, *Quénia*, *Moscovo*). The code is `pt`, as the
+registry takes ISO 639-1 codes and the Wikipedia is `ptwiki`.
+
+1. **[Manual de Redação Oficial e Diplomática do Itamaraty](https://www.gov.br/mre/pt-br/arquivos/manual-de-redacao-2026)**
+   (Ministério das Relações Exteriores, revision of 23 July 2026), chapter 7.3, *Lista de
+   topônimos e gentílicos em português*: short form, official name and capital of every state
+   recognized by the UN, "na grafia a ser empregada oficialmente no Brasil", already with
+   Naoero and Ciudad de la Paz. Primary; it decides where the official sources disagree. Its
+   footnotes and entries name part of the dependent territories and further places (Hong Kong,
+   Macau, Taipé, Groenlândia, Ilhas Féroe, the French overseas regions and collectivities,
+   Aruba, Curaçao, Sint Maarten, Porto Rico, the British dependencies and most British
+   overseas territories, ilhas Malvinas, Ramala, Dar es Salaam, …).
+2. **[IBGE Países](https://paises.ibge.gov.br/)** (Instituto Brasileiro de Geografia e
+   Estatística, *online*, data from `servicodados.ibge.gov.br/api/v1/paises`): short names and
+   capitals of the 193 UN member states and the M49 regions in Portuguese. Cross-check only:
+   several of its capitals are in European spelling (*Helsínquia*, *Moscovo*, *Mónaco*) and it
+   still lists Nauru and Malabo.
+3. **Territories and places neither source names** (Åland, Bermudas, Ilha Bouvet, Ilha
+   Christmas, Ilhas Cocos, Gibraltar, Ilha Norfolk, Svalbard e Jan Mayen, Saara Ocidental, …):
+   Brazil has no official list for them. They are written in the form in common Brazilian use,
+   built by the Manual's own rules: *Ilha* / *Ilhas* plus the name, and capitals in the local
+   form, since the Manual adapts only place names with a living Portuguese form. The European
+   Portuguese version of the EU list below is not a source for spelling.
+
 ### Every EU language
 
 **[Interinstitutional Style Guide, Annex A5](https://style-guide.europa.eu/en/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies)**
@@ -136,6 +163,8 @@ Every source considered for COTW, used or not.
 | [Schreibweisungen](https://www.bk.admin.ch/de/schreibweisungen) | Swiss Federal Chancellery | DE | 2nd edition 2013, corrected 2015 | **DE spelling rule** | ss instead of ß (stated in its [Rechtschreibleitfaden](https://www.bk.admin.ch/de/rechtschreibleitfaden), 4th edition 2017) |
 | [Urzędowy wykaz nazw państw i terytoriów niesamodzielnych](https://www.gov.pl/web/ksng/Urzedowy-wykaz-nazw-panstw-i-terytoriow-niesamodzielnych) | KSNG (PL) | PL | 8th edition 2025, updates 1 and 2 (2026) | **PL primary** (decides on disagreement, not a reason to wait) | Includes territories and capitals |
 | [Urzędowy wykaz polskich nazw geograficznych świata](https://www.gov.pl/web/ksng/urzedowy-wykaz-polskich-nazw-geograficznych-swiata2) | KSNG (PL) | PL | 2nd edition 2019, changes as of 23 September 2026 | PL supplement | Other place names, e.g. capitals missing from the list above |
+| [Manual de Redação Oficial e Diplomática do Itamaraty](https://www.gov.br/mre/pt-br/arquivos/manual-de-redacao-2026), ch. 7.3 | Ministério das Relações Exteriores (BR) | PT (pt-BR) | revision of 23 July 2026 | **PT primary** (decides on disagreement, not a reason to wait) | States, official names, capitals; territories only in footnotes |
+| [IBGE Países](https://paises.ibge.gov.br/) | IBGE (BR) | PT (pt-BR) | *online* | PT cross-check; M49 region names | UN member states only; some capitals in European spelling, can lag |
 | [UNTERM](https://unterm.un.org/) | United Nations | AR, ZH, EN, FR, RU, ES | *online* | **EN primary** (UN member states; decides on disagreement, not a reason to wait) | Dependent territories largely missing |
 | [Country names](https://www.gov.uk/government/publications/country-names), [Geographical names index](https://www.gov.uk/government/publications/geographical-names-and-information) | PCGN / FCDO (UK) | EN | 20 July 2026; 15 September 2026 | EN cross-check, territories | British usage; the index covers UK territories only |
 | [Independent States in the World](https://www.state.gov/independent-states-in-the-world/); [Dependencies and Areas of Special Sovereignty](https://www.state.gov/dependencies-and-areas-of-special-sovereignty/) | US Department of State (Office of the Geographer) / BGN | EN | 11 August 2026; 31 March 2026 | EN cross-check, territories | US usage |
@@ -161,6 +190,8 @@ up yet; the language's spelling rules still apply.
 - **German: Swiss spelling, always `ss`, never `ß`** (e.g. "Weissrussland", "Grossherzogtum
   Luxemburg"). Forms taken from German, Austrian or EU sources are written without ß.
 - **Official changes are applied as soon as possible** (source rule above).
+- **Portuguese: Brazilian spelling** (*Irã*, *Letônia*, *Amsterdã*), never the European one,
+  also for forms taken from the EU list.
 - **Capitals have no disambiguating suffix:** "Meksyk", not "Meksyk (miasto)". The card says
   what it asks for.
 - **The typographic apostrophe ’** is used everywhere ("Côte d’Ivoire"); `validate` rejects a

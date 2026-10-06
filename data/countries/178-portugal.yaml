@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Portugal
   de: Portugal
+  pt: Portugal
 formal_name:
   en: The Portuguese Republic
   de: Portugiesische Republik
+  pt: República Portuguesa
 capitals:
 - name:
     en: Lisbon
     de: Lissabon
+    pt: Lisboa
   role: capital
   wikidata: Q597
   lat: 38.70804
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Portugal
   de: https://de.wikipedia.org/wiki/Portugal
+  pt: https://pt.wikipedia.org/wiki/Portugal

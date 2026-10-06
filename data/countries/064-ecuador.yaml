@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Ecuador
   de: Ecuador
+  pt: Equador
 formal_name:
   en: The Republic of Ecuador
   de: Republik Ecuador
+  pt: República do Equador
 capitals:
 - name:
     en: Quito
     de: Quito
+    pt: Quito
   role: capital
   wikidata: Q2900
   lat: -0.22
@@ -27,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Ecuador
   de: https://de.wikipedia.org/wiki/Ecuador
+  pt: https://pt.wikipedia.org/wiki/Equador

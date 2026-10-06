@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Brazil
   de: Brasilien
+  pt: Brasil
 formal_name:
   en: The Federative Republic of Brazil
   de: Föderative Republik Brasilien
+  pt: República Federativa do Brasil
 capitals:
 - name:
     en: Brasília
     de: Brasília
+    pt: Brasília
   role: capital
   wikidata: Q2844
   lat: -15.79389
@@ -35,3 +38,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Brazil
   de: https://de.wikipedia.org/wiki/Brasilien
+  pt: https://pt.wikipedia.org/wiki/Brasil

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Solomon Islands
   de: Salomonen
+  pt: Ilhas Salomão
 formal_name:
   en: The Solomon Islands
   de: Salomoneninseln
+  pt: Ilhas Salomão
 capitals:
 - name:
     en: Honiara
     de: Honiara
+    pt: Honiara
   role: capital
   wikidata: Q40921
   lat: -9.43333
@@ -24,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Solomon_Islands
   de: https://de.wikipedia.org/wiki/Salomonen
+  pt: https://pt.wikipedia.org/wiki/Ilhas_Salomão

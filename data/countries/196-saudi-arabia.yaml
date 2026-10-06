@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Saudi Arabia
   de: Saudi-Arabien
+  pt: Arábia Saudita
 formal_name:
   en: The Kingdom of Saudi Arabia
   de: Königreich Saudi-Arabien
+  pt: Reino da Arábia Saudita
 capitals:
 - name:
     en: Riyadh
     de: Riad
+    pt: Riade
   role: capital
   wikidata: Q3692
   lat: 24.65
@@ -31,3 +34,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Saudi_Arabia
   de: https://de.wikipedia.org/wiki/Saudi-Arabien
+  pt: https://pt.wikipedia.org/wiki/Arábia_Saudita

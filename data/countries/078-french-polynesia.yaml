@@ -7,10 +7,12 @@ dependency_of: '076'
 name:
   en: French Polynesia
   de: Französisch-Polynesien
+  pt: Polinésia Francesa
 capitals:
 - name:
     en: Papeete
     de: Papeete
+    pt: Papeete
   role: capital
   wikidata: Q130800
   lat: -17.53972
@@ -22,3 +24,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/French_Polynesia
   de: https://de.wikipedia.org/wiki/Französisch-Polynesien
+  pt: https://pt.wikipedia.org/wiki/Polinésia_Francesa

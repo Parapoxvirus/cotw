@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Nigeria
   de: Nigeria
+  pt: Nigéria
 formal_name:
   en: The Federal Republic of Nigeria
   de: Bundesrepublik Nigeria
+  pt: República Federal da Nigéria
 capitals:
 - name:
     en: Abuja
     de: Abuja
+    pt: Abuja
   role: capital
   wikidata: Q3787
   lat: 9.05556
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Nigeria
   de: https://de.wikipedia.org/wiki/Nigeria
+  pt: https://pt.wikipedia.org/wiki/Nigéria

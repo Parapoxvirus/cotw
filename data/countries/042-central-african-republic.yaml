@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Central African Republic, The
   de: Zentralafrikanische Republik
+  pt: República Centro-Africana
 capitals:
 - name:
     en: Bangui
     de: Bangui
+    pt: Bangui
   role: capital
   wikidata: Q3832
   lat: 4.37325
@@ -28,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Central_African_Republic
   de: https://de.wikipedia.org/wiki/Zentralafrikanische_Republik
+  pt: https://pt.wikipedia.org/wiki/República_Centro-Africana

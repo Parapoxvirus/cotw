@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Panama
   de: Panama
+  pt: Panamá
 formal_name:
   en: The Republic of Panamá
   de: Republik Panama
+  pt: República do Panamá
 capitals:
 - name:
     en: Panama City
     de: Panama-Stadt
+    pt: Cidade do Panamá
   role: capital
   wikidata: Q3306
   lat: 8.97111
@@ -27,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Panama
   de: https://de.wikipedia.org/wiki/Panama
+  pt: https://pt.wikipedia.org/wiki/Panamá

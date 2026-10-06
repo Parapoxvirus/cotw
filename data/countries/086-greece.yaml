@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Greece
   de: Griechenland
+  pt: Grécia
 formal_name:
   en: The Hellenic Republic
   de: Hellenische Republik
+  pt: República Helênica
 capitals:
 - name:
     en: Athens
     de: Athen
+    pt: Atenas
   role: capital
   wikidata: Q1524
   lat: 37.98417
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Greece
   de: https://de.wikipedia.org/wiki/Griechenland
+  pt: https://pt.wikipedia.org/wiki/Grécia

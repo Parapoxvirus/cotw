@@ -31,6 +31,13 @@ def test_german_articles(by_id):
     assert by_id["014"]["wikipedia"]["de"] == "https://de.wikipedia.org/wiki/Österreich"
 
 
+def test_portuguese_articles(by_id):
+    sitelinks = wikidata.load_sitelinks()
+    assert all("pt" in sitelinks.get(e["wikidata"], {}) for e in by_id.values())  # ptwiki has every entry
+    assert by_id["217"]["wikipedia"]["pt"] == "https://pt.wikipedia.org/wiki/Suíça"
+    assert by_id["031"]["wikipedia"]["pt"] == "https://pt.wikipedia.org/wiki/Brasil"
+
+
 def test_url_style():
     assert wikidata.wikipedia_url("de", "São Tomé und Príncipe") == "https://de.wikipedia.org/wiki/São_Tomé_und_Príncipe"
     assert wikidata.wikipedia_url("en", "What?#&") == "https://en.wikipedia.org/wiki/What%3F%23%26"
@@ -38,9 +45,9 @@ def test_url_style():
 
 def test_validate_checks_the_links_against_the_sitelinks(by_id):
     ch = by_id["217"]
-    sitelinks = {ch["wikidata"]: {"en": "Switzerland", "de": "Schweiz"}}
+    sitelinks = {ch["wikidata"]: {"en": "Switzerland", "de": "Schweiz", "pt": "Suíça"}}
     assert schema.validate_entry(ch, sitelinks=sitelinks) == []
-    moved = {ch["wikidata"]: {"en": "Switzerland", "de": "Schweiz (Land)"}}
+    moved = {ch["wikidata"]: {"en": "Switzerland", "de": "Schweiz (Land)", "pt": "Suíça"}}
     assert any("wikipedia.de must be https://de.wikipedia.org/wiki/Schweiz_(Land)" in p
                for p in schema.validate_entry(ch, sitelinks=moved))
     gone = {ch["wikidata"]: {"en": "Switzerland"}}

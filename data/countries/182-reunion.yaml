@@ -7,10 +7,12 @@ dependency_of: '076'
 name:
   en: Réunion
   de: Réunion
+  pt: Reunião
 capitals:
 - name:
     en: Saint-Denis
     de: Saint-Denis
+    pt: Saint-Denis
   role: capital
   wikidata: Q47045
   lat: -20.87889
@@ -23,3 +25,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Réunion
   de: https://de.wikipedia.org/wiki/Réunion
+  pt: https://pt.wikipedia.org/wiki/Reunião_(departamento)

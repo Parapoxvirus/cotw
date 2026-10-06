@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Bhutan
   de: Bhutan
+  pt: Butão
 formal_name:
   en: The Kingdom of Bhutan
   de: Königreich Bhutan
+  pt: Reino do Butão
 capitals:
 - name:
     en: Thimphu
     de: Thimphu
+    pt: Thimphu
   role: capital
   wikidata: Q9270
   lat: 27.47135
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Bhutan
   de: https://de.wikipedia.org/wiki/Bhutan
+  pt: https://pt.wikipedia.org/wiki/Butão

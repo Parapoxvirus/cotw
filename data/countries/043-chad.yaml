@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Chad
   de: Tschad
+  pt: Chade
 formal_name:
   en: The Republic of Chad
   de: Republik Tschad
+  pt: República do Chade
 capitals:
 - name:
     en: N’Djamena
     de: N’Djamena
+    pt: N’Djamena
   role: capital
   wikidata: Q3659
   lat: 12.11
@@ -31,3 +34,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Chad
   de: https://de.wikipedia.org/wiki/Tschad
+  pt: https://pt.wikipedia.org/wiki/Chade

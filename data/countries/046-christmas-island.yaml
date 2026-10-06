@@ -7,13 +7,16 @@ dependency_of: '013'
 name:
   en: Christmas Island
   de: Weihnachtsinsel
+  pt: Ilha Christmas
 formal_name:
   en: Territory of Christmas Island
   de: Territorium der Weihnachtsinsel
+  pt: Território da Ilha Christmas
 capitals:
 - name:
     en: Flying Fish Cove
     de: Flying Fish Cove
+    pt: Flying Fish Cove
   role: capital
   wikidata: Q30980
   lat: -10.42167
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Christmas_Island
   de: https://de.wikipedia.org/wiki/Weihnachtsinsel_(Australien)
+  pt: https://pt.wikipedia.org/wiki/Ilha_Christmas

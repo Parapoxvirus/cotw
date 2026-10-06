@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Mongolia
   de: Mongolei
+  pt: Mongólia
 formal_name:
   en: The State of Mongolia
   de: Mongolischer Staat
+  pt: Mongólia
 capitals:
 - name:
     en: Ulaanbaatar
     de: Ulaanbaatar
+    pt: Ulan Bator
   role: capital
   wikidata: Q23430
   lat: 47.92136
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Mongolia
   de: https://de.wikipedia.org/wiki/Mongolei
+  pt: https://pt.wikipedia.org/wiki/Mongólia

@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Poland
   de: Polen
+  pt: Polônia
 formal_name:
   en: The Republic of Poland
   de: Republik Polen
+  pt: República da Polônia
 capitals:
 - name:
     en: Warsaw
     de: Warschau
+    pt: Varsóvia
   role: capital
   wikidata: Q270
   lat: 52.23
@@ -31,3 +34,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Poland
   de: https://de.wikipedia.org/wiki/Polen
+  pt: https://pt.wikipedia.org/wiki/Polónia

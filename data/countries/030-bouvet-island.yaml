@@ -7,13 +7,16 @@ dependency_of: '166'
 name:
   en: Bouvet Island
   de: Bouvetinsel
+  pt: Ilha Bouvet
 capitals:
 - name:
     en: Oslo
     de: Oslo
+    pt: Oslo
   label:
     en: uninhabited
     de: unbewohnt
+    pt: desabitada
   role: capital
   wikidata: Q585
   lat: 59.91333
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Bouvet_Island
   de: https://de.wikipedia.org/wiki/Bouvetinsel
+  pt: https://pt.wikipedia.org/wiki/Ilha_Bouvet

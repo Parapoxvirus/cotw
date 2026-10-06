@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Cyprus
   de: Zypern
+  pt: Chipre
 formal_name:
   en: The Republic of Cyprus
   de: Republik Zypern
+  pt: República de Chipre
 capitals:
 - name:
     en: Nicosia
     de: Nikosia
+    pt: Nicósia
   role: capital
   wikidata: Q3856
   lat: 35.1725
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Cyprus
   de: https://de.wikipedia.org/wiki/Republik_Zypern
+  pt: https://pt.wikipedia.org/wiki/Chipre

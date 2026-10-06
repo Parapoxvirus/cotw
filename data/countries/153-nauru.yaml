@@ -6,16 +6,20 @@ status: sovereign
 name:
   en: Naoero
   de: Naoero
+  pt: Naoero
 formal_name:
   en: The Republic of Naoero
   de: Republik Naoero
+  pt: República de Naoero
 capitals:
 - name:
     en: Yaren
     de: Yaren
+    pt: Yaren
   label:
     en: de facto
     de: de facto
+    pt: de facto
   role: de_facto
   wikidata: Q31026
   lat: -0.5477
@@ -27,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Nauru
   de: https://de.wikipedia.org/wiki/Nauru
+  pt: https://pt.wikipedia.org/wiki/Nauru

@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Dominican Republic, The
   de: Dominikanische Republik
+  pt: República Dominicana
 capitals:
 - name:
     en: Santo Domingo
     de: Santo Domingo
+    pt: São Domingos
   role: capital
   wikidata: Q34820
   lat: 18.4625
@@ -23,3 +25,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Dominican_Republic
   de: https://de.wikipedia.org/wiki/Dominikanische_Republik
+  pt: https://pt.wikipedia.org/wiki/República_Dominicana

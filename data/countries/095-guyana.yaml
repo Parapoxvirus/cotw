@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Guyana
   de: Guyana
+  pt: Guiana
 formal_name:
   en: The Co-operative Republic of Guyana
   de: Kooperative Republik Guyana
+  pt: República Cooperativa da Guiana
 capitals:
 - name:
     en: Georgetown
     de: Georgetown
+    pt: Georgetown
   role: capital
   wikidata: Q10717
   lat: 6.80583
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Guyana
   de: https://de.wikipedia.org/wiki/Guyana
+  pt: https://pt.wikipedia.org/wiki/Guiana

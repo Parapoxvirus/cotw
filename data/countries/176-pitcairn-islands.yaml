@@ -7,10 +7,12 @@ dependency_of: '235'
 name:
   en: Pitcairn Islands
   de: Pitcairninseln
+  pt: Ilhas Pitcairn
 capitals:
 - name:
     en: Adamstown
     de: Adamstown
+    pt: Adamstown
   role: capital
   wikidata: Q48273
   lat: -25.06667
@@ -22,3 +24,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Pitcairn_Islands
   de: https://de.wikipedia.org/wiki/Pitcairninseln
+  pt: https://pt.wikipedia.org/wiki/Ilhas_Pitcairn

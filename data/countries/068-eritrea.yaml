@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Eritrea
   de: Eritrea
+  pt: Eritreia
 formal_name:
   en: The State of Eritrea
   de: Staat Eritrea
+  pt: Estado da Eritreia
 capitals:
 - name:
     en: Asmara
     de: Asmara
+    pt: Asmara
   role: capital
   wikidata: Q3642
   lat: 15.33333
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Eritrea
   de: https://de.wikipedia.org/wiki/Eritrea
+  pt: https://pt.wikipedia.org/wiki/Eritreia

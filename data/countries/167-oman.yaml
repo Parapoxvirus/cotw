@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Oman
   de: Oman
+  pt: Omã
 formal_name:
   en: The Sultanate of Oman
   de: Sultanat Oman
+  pt: Sultanato de Omã
 capitals:
 - name:
     en: Muscat
     de: Maskat
+    pt: Mascate
   role: capital
   wikidata: Q3826
   lat: 23.61389
@@ -27,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Oman
   de: https://de.wikipedia.org/wiki/Oman
+  pt: https://pt.wikipedia.org/wiki/Omã

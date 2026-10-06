@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Libya
   de: Libyen
+  pt: Líbia
 formal_name:
   en: The State of Libya
   de: Staat Libyen
+  pt: Estado da Líbia
 capitals:
 - name:
     en: Tripoli
     de: Tripolis
+    pt: Trípoli
   role: capital
   wikidata: Q3579
   lat: 32.8875
@@ -30,3 +33,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Libya
   de: https://de.wikipedia.org/wiki/Libyen
+  pt: https://pt.wikipedia.org/wiki/Líbia

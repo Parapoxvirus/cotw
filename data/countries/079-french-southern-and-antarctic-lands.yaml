@@ -7,13 +7,16 @@ dependency_of: '076'
 name:
   en: French Southern and Antarctic Lands
   de: Französische Süd- und Antarktisgebiete
+  pt: Terras Austrais e Antárticas Francesas
 capitals:
 - name:
     en: Saint Pierre
     de: Saint Pierre
+    pt: Saint-Pierre
   label:
     en: on Réunion
     de: auf Réunion
+    pt: na Reunião
   role: capital
   wikidata: Q249884
   lat: -21.34194
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/French_Southern_and_Antarctic_Lands
   de: https://de.wikipedia.org/wiki/Französische_Süd-_und_Antarktisgebiete
+  pt: https://pt.wikipedia.org/wiki/Terras_Austrais_e_Antárticas_Francesas

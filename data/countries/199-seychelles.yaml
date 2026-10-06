@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Seychelles
   de: Seychellen
+  pt: Seicheles
 formal_name:
   en: The Republic of Seychelles
   de: Republik Seychellen
+  pt: República das Seicheles
 capitals:
 - name:
     en: Victoria
     de: Victoria
+    pt: Victoria
   role: capital
   wikidata: Q3940
   lat: -4.62361
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Seychelles
   de: https://de.wikipedia.org/wiki/Seychellen
+  pt: https://pt.wikipedia.org/wiki/Seicheles

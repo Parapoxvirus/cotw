@@ -7,10 +7,12 @@ dependency_of: '155'
 name:
   en: Aruba
   de: Aruba
+  pt: Aruba
 capitals:
 - name:
     en: Oranjestad
     de: Oranjestad
+    pt: Oranjestad
   role: capital
   wikidata: Q131243
   lat: 12.51861
@@ -23,3 +25,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Aruba
   de: https://de.wikipedia.org/wiki/Aruba
+  pt: https://pt.wikipedia.org/wiki/Aruba

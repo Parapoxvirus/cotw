@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Fiji
   de: Fidschi
+  pt: Fiji
 formal_name:
   en: The Republic of Fiji
   de: Republik Fidschi
+  pt: República de Fiji
 capitals:
 - name:
     en: Suva
     de: Suva
+    pt: Suva
   role: capital
   wikidata: Q38807
   lat: -18.13333
@@ -24,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Fiji
   de: https://de.wikipedia.org/wiki/Fidschi
+  pt: https://pt.wikipedia.org/wiki/Fiji

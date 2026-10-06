@@ -7,13 +7,16 @@ dependency_of: '237'
 name:
   en: Puerto Rico
   de: Puerto Rico
+  pt: Porto Rico
 formal_name:
   en: Commonwealth of Puerto Rico
   de: Freistaat Puerto Rico
+  pt: Estado Livre Associado de Porto Rico
 capitals:
 - name:
     en: San Juan
     de: San Juan
+    pt: San Juan
   role: capital
   wikidata: Q41211
   lat: 18.46528
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Puerto_Rico
   de: https://de.wikipedia.org/wiki/Puerto_Rico
+  pt: https://pt.wikipedia.org/wiki/Porto_Rico

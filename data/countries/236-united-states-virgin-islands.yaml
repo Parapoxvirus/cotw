@@ -7,10 +7,12 @@ dependency_of: '237'
 name:
   en: United States Virgin Islands / Virgin Islands of the United States
   de: Amerikanische Jungferninseln
+  pt: Ilhas Virgens Americanas
 capitals:
 - name:
     en: Charlotte Amalie
     de: Charlotte Amalie
+    pt: Charlotte Amalie
   role: capital
   wikidata: Q51681
   lat: 18.35
@@ -23,3 +25,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/United_States_Virgin_Islands
   de: https://de.wikipedia.org/wiki/Amerikanische_Jungferninseln
+  pt: https://pt.wikipedia.org/wiki/Ilhas_Virgens_Americanas

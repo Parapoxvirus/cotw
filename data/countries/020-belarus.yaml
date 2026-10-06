@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Belarus
   de: Belarus / Weissrussland
+  pt: Belarus
 formal_name:
   en: The Republic of Belarus
   de: Republik Belarus
+  pt: República da Belarus
 capitals:
 - name:
     en: Minsk
     de: Minsk
+    pt: Minsk
   role: capital
   wikidata: Q2280
   lat: 53.90225
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Belarus
   de: https://de.wikipedia.org/wiki/Belarus
+  pt: https://pt.wikipedia.org/wiki/Bielorrússia

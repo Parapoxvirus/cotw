@@ -7,10 +7,12 @@ dependency_of: '076'
 name:
   en: Saint-Martin
   de: Saint-Martin
+  pt: Saint-Martin
 capitals:
 - name:
     en: Marigot
     de: Marigot
+    pt: Marigot
   role: capital
   wikidata: Q200605
   lat: 18.06667
@@ -24,3 +26,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Saint_Martin_(island)
   de: https://de.wikipedia.org/wiki/Saint-Martin_(Gebietskörperschaft)
+  pt: https://pt.wikipedia.org/wiki/São_Martinho_(França)

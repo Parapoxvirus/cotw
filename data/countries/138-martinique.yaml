@@ -7,10 +7,12 @@ dependency_of: '076'
 name:
   en: Martinique
   de: Martinique
+  pt: Martinica
 capitals:
 - name:
     en: Fort-de-France
     de: Fort-de-France
+    pt: Fort-de-France
   role: capital
   wikidata: Q81621
   lat: 14.6
@@ -23,3 +25,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Martinique
   de: https://de.wikipedia.org/wiki/Martinique
+  pt: https://pt.wikipedia.org/wiki/Martinica

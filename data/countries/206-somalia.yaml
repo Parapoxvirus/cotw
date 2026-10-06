@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Somalia
   de: Somalia
+  pt: Somália
 formal_name:
   en: The Federal Republic of Somalia
   de: Bundesrepublik Somalia
+  pt: República Federal da Somália
 capitals:
 - name:
     en: Mogadishu
     de: Mogadischu
+    pt: Mogadíscio
   role: capital
   wikidata: Q2449
   lat: 2.03917
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Somalia
   de: https://de.wikipedia.org/wiki/Somalia
+  pt: https://pt.wikipedia.org/wiki/Somália

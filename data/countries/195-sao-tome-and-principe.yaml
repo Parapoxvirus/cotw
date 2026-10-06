@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Sao Tome and Principe
   de: São Tomé und Príncipe
+  pt: São Tomé e Príncipe
 formal_name:
   en: The Democratic Republic of São Tomé and Príncipe
   de: Demokratische Republik São Tomé und Príncipe
+  pt: República Democrática de São Tomé e Príncipe
 capitals:
 - name:
     en: São Tomé
     de: São Tomé
+    pt: São Tomé
   role: capital
   wikidata: Q3932
   lat: 0.3375
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe
   de: https://de.wikipedia.org/wiki/São_Tomé_und_Príncipe
+  pt: https://pt.wikipedia.org/wiki/São_Tomé_e_Príncipe

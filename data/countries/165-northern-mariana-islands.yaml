@@ -7,13 +7,16 @@ dependency_of: '237'
 name:
   en: Northern Mariana Islands
   de: Nördliche Marianen
+  pt: Ilhas Marianas do Norte
 formal_name:
   en: Commonwealth of the Northern Mariana Islands
   de: Commonwealth der Nördlichen Marianen
+  pt: Comunidade das Ilhas Marianas do Norte
 capitals:
 - name:
     en: Saipan
     de: Saipan
+    pt: Saipan
   role: capital
   wikidata: Q49755159
   lat: 15.21233
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Northern_Mariana_Islands
   de: https://de.wikipedia.org/wiki/Nördliche_Marianen
+  pt: https://pt.wikipedia.org/wiki/Ilhas_Marianas_Setentrionais

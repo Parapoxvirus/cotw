@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Georgia
   de: Georgien
+  pt: Geórgia
 capitals:
 - name:
     en: Tbilisi
     de: Tiflis
+    pt: Tbilisi
   role: capital
   wikidata: Q994
   lat: 41.7225
@@ -25,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Georgia_(country)
   de: https://de.wikipedia.org/wiki/Georgien
+  pt: https://pt.wikipedia.org/wiki/Geórgia

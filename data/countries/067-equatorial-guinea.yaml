@@ -6,16 +6,20 @@ status: sovereign
 name:
   en: Equatorial Guinea
   de: Äquatorialguinea
+  pt: Guiné Equatorial
 formal_name:
   en: The Republic of Equatorial Guinea
   de: Republik Äquatorial­guinea
+  pt: República da Guiné Equatorial
 capitals:
 - name:
     en: Ciudad de la Paz
     de: Ciudad de la Paz
+    pt: Ciudad de la Paz
   label:
     en: capital
     de: Hauptstadt
+    pt: capital
   role: capital
   wikidata: Q1140136
   lat: 1.59167
@@ -23,9 +27,11 @@ capitals:
 - name:
     en: Malabo
     de: Malabo
+    pt: Malabo
   label:
     en: seat of government until the move is completed
     de: Regierungssitz bis zum Abschluss des Umzugs
+    pt: sede do governo até a conclusão da mudança
   role: seat_of_government
   wikidata: Q3818
   lat: 3.75206
@@ -40,3 +46,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Equatorial_Guinea
   de: https://de.wikipedia.org/wiki/Äquatorialguinea
+  pt: https://pt.wikipedia.org/wiki/Guiné_Equatorial

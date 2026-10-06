@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Liberia
   de: Liberia
+  pt: Libéria
 formal_name:
   en: The Republic of Liberia
   de: Republik Liberia
+  pt: República da Libéria
 capitals:
 - name:
     en: Monrovia
     de: Monrovia
+    pt: Monróvia
   role: capital
   wikidata: Q3748
   lat: 6.31056
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Liberia
   de: https://de.wikipedia.org/wiki/Liberia
+  pt: https://pt.wikipedia.org/wiki/Libéria

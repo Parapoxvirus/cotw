@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Venezuela
   de: Venezuela
+  pt: Venezuela
 formal_name:
   en: The Bolivarian Republic of Venezuela
   de: Bolivarische Republik Venezuela
+  pt: República Bolivariana da Venezuela
 capitals:
 - name:
     en: Caracas
     de: Caracas
+    pt: Caracas
   role: capital
   wikidata: Q1533
   lat: 10.50611
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Venezuela
   de: https://de.wikipedia.org/wiki/Venezuela
+  pt: https://pt.wikipedia.org/wiki/Venezuela

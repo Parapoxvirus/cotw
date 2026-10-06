@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Costa Rica
   de: Costa Rica
+  pt: Costa Rica
 formal_name:
   en: The Republic of Costa Rica
   de: Republik Costa Rica
+  pt: República da Costa Rica
 capitals:
 - name:
     en: San José
     de: San José
+    pt: São José
   role: capital
   wikidata: Q3070
   lat: 9.93274
@@ -27,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Costa_Rica
   de: https://de.wikipedia.org/wiki/Costa_Rica
+  pt: https://pt.wikipedia.org/wiki/Costa_Rica

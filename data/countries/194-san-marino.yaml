@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: San Marino
   de: San Marino
+  pt: San Marino
 formal_name:
   en: The Republic of San Marino
   de: Republik San Marino
+  pt: República de San Marino
 capitals:
 - name:
     en: San Marino
     de: San Marino
+    pt: San Marino
   role: capital
   wikidata: Q1848
   lat: 43.93201
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/San_Marino
   de: https://de.wikipedia.org/wiki/San_Marino
+  pt: https://pt.wikipedia.org/wiki/San_Marino

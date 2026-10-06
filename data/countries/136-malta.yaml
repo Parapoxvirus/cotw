@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Malta
   de: Malta
+  pt: Malta
 formal_name:
   en: The Republic of Malta
   de: Republik Malta
+  pt: República de Malta
 capitals:
 - name:
     en: Valletta
     de: Valletta
+    pt: Valletta
   role: capital
   wikidata: Q23800
   lat: 35.89778
@@ -24,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Malta
   de: https://de.wikipedia.org/wiki/Malta
+  pt: https://pt.wikipedia.org/wiki/Malta

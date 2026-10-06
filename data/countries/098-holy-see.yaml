@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Holy See, The / Vatican City State
   de: Staat Vatikanstadt / Staat der Vatikanstadt
+  pt: Vaticano / Santa Sé
 capitals:
 - name:
     en: Vatican City
     de: Vatikanstadt
+    pt: Cidade do Vaticano
   role: capital
   wikidata: Q237
   lat: 41.904
@@ -22,3 +24,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Vatican_City
   de: https://de.wikipedia.org/wiki/Vatikanstadt
+  pt: https://pt.wikipedia.org/wiki/Vaticano

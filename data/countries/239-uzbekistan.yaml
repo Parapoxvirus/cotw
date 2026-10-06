@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Uzbekistan
   de: Usbekistan
+  pt: Uzbequistão
 formal_name:
   en: The Republic of Uzbekistan
   de: Republik Usbekistan
+  pt: República do Uzbequistão
 capitals:
 - name:
     en: Tashkent
     de: Taschkent
+    pt: Tashkent
   role: capital
   wikidata: Q269
   lat: 41.31111
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Uzbekistan
   de: https://de.wikipedia.org/wiki/Usbekistan
+  pt: https://pt.wikipedia.org/wiki/Usbequistão

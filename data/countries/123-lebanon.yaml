@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Lebanon
   de: Libanon
+  pt: Líbano
 formal_name:
   en: The Lebanese Republic
   de: Libanesische Republik
+  pt: República Libanesa
 capitals:
 - name:
     en: Beirut
     de: Beirut
+    pt: Beirute
   role: capital
   wikidata: Q3820
   lat: 33.88694
@@ -26,3 +29,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Lebanon
   de: https://de.wikipedia.org/wiki/Libanon
+  pt: https://pt.wikipedia.org/wiki/Líbano

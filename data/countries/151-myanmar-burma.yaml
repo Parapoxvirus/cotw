@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Myanmar (Burma)
   de: Myanmar (Birma, Burma)
+  pt: Myanmar (Birmânia)
 formal_name:
   en: The Republic of the Union of Myanmar
   de: Republik der Union Myanmar
+  pt: República da União de Myanmar
 capitals:
 - name:
     en: Naypyidaw
     de: Naypyidaw
+    pt: Nay Pyi Taw
   role: capital
   wikidata: Q37400
   lat: 19.7475
@@ -29,3 +32,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Myanmar
   de: https://de.wikipedia.org/wiki/Myanmar
+  pt: https://pt.wikipedia.org/wiki/Myanmar

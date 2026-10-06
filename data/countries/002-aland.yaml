@@ -7,13 +7,16 @@ dependency_of: '075'
 name:
   en: Åland
   de: Åland
+  pt: Åland
 formal_name:
   en: Åland Islands
   de: Åland Inseln
+  pt: Ilhas Åland
 capitals:
 - name:
     en: Mariehamn
     de: Mariehamn
+    pt: Mariehamn
   role: capital
   wikidata: Q48329
   lat: 60.09861
@@ -25,3 +28,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Åland
   de: https://de.wikipedia.org/wiki/Åland
+  pt: https://pt.wikipedia.org/wiki/Ilhas_Åland

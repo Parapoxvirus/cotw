@@ -6,10 +6,12 @@ status: sovereign
 name:
   en: Turkmenistan
   de: Turkmenistan
+  pt: Turcomenistão
 capitals:
 - name:
     en: Ashgabat
     de: Aschgabad
+    pt: Ashgabat
   role: capital
   wikidata: Q23438
   lat: 37.95
@@ -25,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Turkmenistan
   de: https://de.wikipedia.org/wiki/Turkmenistan
+  pt: https://pt.wikipedia.org/wiki/Turquemenistão

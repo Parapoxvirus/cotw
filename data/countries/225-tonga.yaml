@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Tonga
   de: Tonga
+  pt: Tonga
 formal_name:
   en: The Kingdom of Tonga
   de: Königreich Tonga
+  pt: Reino de Tonga
 capitals:
 - name:
     en: Nukuʻalofa
     de: Nukuʻalofa
+    pt: Nukuʻalofa
   role: capital
   wikidata: Q38834
   lat: -21.13434
@@ -24,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Tonga
   de: https://de.wikipedia.org/wiki/Tonga
+  pt: https://pt.wikipedia.org/wiki/Tonga

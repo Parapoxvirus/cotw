@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Gabon
   de: Gabun
+  pt: Gabão
 formal_name:
   en: The Gabonese Republic
   de: Gabunische Republik
+  pt: República Gabonesa
 capitals:
 - name:
     en: Libreville
     de: Libreville
+    pt: Libreville
   role: capital
   wikidata: Q3825
   lat: 0.40778
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Gabon
   de: https://de.wikipedia.org/wiki/Gabun
+  pt: https://pt.wikipedia.org/wiki/Gabão

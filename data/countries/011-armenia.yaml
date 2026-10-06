@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Armenia
   de: Armenien
+  pt: Armênia
 formal_name:
   en: The Republic of Armenia
   de: Republik Armenien
+  pt: República da Armênia
 capitals:
 - name:
     en: Yerevan
     de: Jerewan
+    pt: Ierevan
   role: capital
   wikidata: Q1953
   lat: 40.18139
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Armenia
   de: https://de.wikipedia.org/wiki/Armenien
+  pt: https://pt.wikipedia.org/wiki/Arménia

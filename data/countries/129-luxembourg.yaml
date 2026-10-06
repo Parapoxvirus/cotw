@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Luxembourg
   de: Luxemburg
+  pt: Luxemburgo
 formal_name:
   en: The Grand Duchy of Luxembourg
   de: Grossherzogtum Luxemburg
+  pt: Grão-Ducado de Luxemburgo
 capitals:
 - name:
     en: Luxembourg
     de: Luxemburg
+    pt: Luxemburgo
   role: capital
   wikidata: Q1842
   lat: 49.61139
@@ -27,3 +30,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Luxembourg
   de: https://de.wikipedia.org/wiki/Luxemburg
+  pt: https://pt.wikipedia.org/wiki/Luxemburgo

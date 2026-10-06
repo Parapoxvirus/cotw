@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Malawi
   de: Malawi
+  pt: Malawi
 formal_name:
   en: The Republic of Malawi
   de: Republik Malawi
+  pt: República do Malawi
 capitals:
 - name:
     en: Lilongwe
     de: Lilongwe
+    pt: Lilongwe
   role: capital
   wikidata: Q3876
   lat: -13.98639
@@ -28,3 +31,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Malawi
   de: https://de.wikipedia.org/wiki/Malawi
+  pt: https://pt.wikipedia.org/wiki/Malawi

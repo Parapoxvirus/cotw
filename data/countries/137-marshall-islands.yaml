@@ -6,13 +6,16 @@ status: sovereign
 name:
   en: Marshall Islands, The
   de: Marshallinseln
+  pt: Ilhas Marshall
 formal_name:
   en: The Republic of the Marshall Islands
   de: Republik Marshallinseln
+  pt: República das Ilhas Marshall
 capitals:
 - name:
     en: Majuro
     de: Majuro
+    pt: Majuro
   role: capital
   wikidata: Q12919
   lat: 7.0918
@@ -24,3 +27,4 @@ regions:
 wikipedia:
   en: https://en.wikipedia.org/wiki/Marshall_Islands
   de: https://de.wikipedia.org/wiki/Marshallinseln
+  pt: https://pt.wikipedia.org/wiki/Ilhas_Marshall
