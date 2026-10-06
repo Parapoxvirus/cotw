@@ -115,8 +115,15 @@ registry takes ISO 639-1 codes and the Wikipedia is `ptwiki`.
    Christmas, Ilhas Cocos, Gibraltar, Ilha Norfolk, Svalbard e Jan Mayen, Saara Ocidental, …):
    Brazil has no official list for them. They are written in the form in common Brazilian use,
    built by the Manual's own rules: *Ilha* / *Ilhas* plus the name, and capitals in the local
-   form, since the Manual adapts only place names with a living Portuguese form. The European
-   Portuguese version of the EU list below is not a source for spelling.
+   form, since the Manual adapts only place names with a living Portuguese form. The Portuguese
+   version of the EU list below (PDF built 2 October 2026) was used as a cross-check of the
+   wording, not of the spelling: it is European Portuguese and adapts far more names than
+   Brazilian usage does (*Alanda*, *Ilhas Caimão*, *Monserrate*, *Ilha do Natal*, *São Dinis*,
+   *Saipã*). It has the same form for Bermudas, Gibraltar, Ilha Bouvet, Ilha Heard e Ilhas
+   McDonald, Ilha Norfolk, Ilhas Marianas do Norte, Svalbard e Jan Mayen, Terras Austrais e
+   Antárticas Francesas, Território Britânico do Oceano Índico and Ilhas Virgens Americanas,
+   and the same long forms for Guernsey, Jersey, Hong Kong, Macau, Ilha Norfolk, Ilhas Marianas
+   do Norte, Porto Rico and Wallis e Futuna (apart from its own spelling of the names).
 
 ### Every EU language
 
