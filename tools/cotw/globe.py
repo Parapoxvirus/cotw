@@ -25,7 +25,7 @@ import shapely
 from shapely.geometry import MultiPolygon, Polygon
 from shapely.ops import unary_union
 
-from . import geometry, maps
+from . import geometry, languages, maps
 from .paths import BUILD, MEDIA, ROOT
 
 SOURCE_JS = ROOT / "tools" / "globe" / "globe.js"
@@ -437,7 +437,7 @@ def payload(entries: dict, land: dict, core: dict, other: list, eez: dict, palet
             "a": area_sr(land.get(e["iso2"], geom)),
             "n": list(e.get("borders", [])),
             "s": specks.get(cid, []),
-            "name": {"en": e["name"]["en"], "de": e["name"]["de"]},
+            "name": {code: e["name"][code] for code in languages.LANGUAGES},
         }
         if can_highlight(meta[cid]["a"]) and (hulls := zone_hulls(eez.get(e["iso3"], []), lat, lon)):
             meta[cid]["e"] = hulls  # EEZ outlines for the highlight circles
@@ -632,7 +632,7 @@ def write_preview(entries: dict, media: Path = MEDIA, build_dir: Path = BUILD) -
     of detail and whether the coast stroke was drawn."""
     build_dir.mkdir(parents=True, exist_ok=True)
     rel = Path("..") / media.name / FILE_NAME
-    names = {cid: f"{cid} {e['name']['en']} ({e['iso2']})" for cid, e in sorted(entries.items())}
+    names = {cid: f"{cid} {e['name'][languages.BASE]} ({e['iso2']})" for cid, e in sorted(entries.items())}
     doc = f"""<!doctype html><html><head><meta charset="utf-8"><title>COTW globe preview</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
@@ -646,7 +646,7 @@ figure{{margin:0;position:relative}}figcaption{{font-size:.8rem;margin:.2rem 0;c
 <body><div id="bar"><b>COTW globe</b>
 <label><input type="checkbox" id="night"> night</label>
 <label><input type="checkbox" id="tip"> tooltip</label>
-<label>lang <select id="lang"><option>en</option><option>de</option></select></label>
+<label>lang <select id="lang">{"".join(f"<option>{code}</option>" for code in languages.LANGUAGES)}</select></label>
 <label>width <select id="w"><option>200</option><option>300</option><option>400</option><option>800</option></select></label>
 </div><div id="grid"></div>
 <script>
@@ -657,7 +657,7 @@ var grid = document.getElementById('grid');
 document.getElementById('w').value = q.get('w') || '300';
 document.getElementById('night').checked = q.get('night') === '1';
 document.getElementById('tip').checked = q.get('tooltip') === '1';
-document.getElementById('lang').value = q.get('lang') || 'en';
+document.getElementById('lang').value = q.get('lang') || '{languages.BASE}';
 function build() {{
   grid.innerHTML = '';
   var w = document.getElementById('w').value + 'px';

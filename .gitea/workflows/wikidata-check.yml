@@ -1,20 +1,25 @@
 name: Wikidata check
 
 # Weekly change monitoring (docs/MONITORING.md): compares the committed Wikidata/Commons
-# caches with the live state and opens one `wikidata` issue per deviation. Nothing is applied.
+# caches with the live state and opens one `wikidata` issue per deviation, or one Paperclip
+# task when the PAPERCLIP_* variables are configured. Nothing is applied.
 on:
   schedule:
     - cron: "17 4 * * 1"  # Monday 04:17 UTC
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "Only print the would-be issues"
+        description: "Only print the would-be issues/tasks"
         type: boolean
         default: true
+      import_issues:
+        description: "Instead of the check: seed the Paperclip state from the existing Gitea issues (with dry_run: preview only)"
+        type: boolean
+        default: false
 
 permissions:
-  contents: read
-  issues: write
+  contents: write  # Paperclip sink: the state file on the cotw-monitor-state branch
+  issues: write    # Gitea issue sink (default) and the one-time import
 
 jobs:
   check:
@@ -33,12 +38,26 @@ jobs:
           .venv/bin/pip install -q -e ".[fetch]"
       - name: Check Wikidata and Commons
         env:
-          # Built-in Actions token; a repo secret COTW_MONITOR_TOKEN (issue read/write) takes
-          # precedence if the built-in token lacks the permission (docs/MONITORING.md).
+          # Built-in Actions token; a repo secret COTW_MONITOR_TOKEN takes precedence if the
+          # built-in token lacks a permission (issues, or contents for the state branch).
           COTW_MONITOR_TOKEN: ${{ secrets.COTW_MONITOR_TOKEN || github.token }}
+          # Paperclip sink: active only when URL, key, company and project are all set.
+          PAPERCLIP_API_URL: ${{ vars.PAPERCLIP_API_URL }}
+          PAPERCLIP_API_KEY: ${{ secrets.PAPERCLIP_TASK_KEY }}
+          PAPERCLIP_COMPANY_ID: ${{ vars.PAPERCLIP_COMPANY_ID }}
+          PAPERCLIP_PROJECT_ID: ${{ vars.PAPERCLIP_PROJECT_ID }}
+          PAPERCLIP_ASSIGNEE_AGENT_ID: ${{ vars.PAPERCLIP_ASSIGNEE_AGENT_ID }}
+          COTW_MONITOR_STATE_BRANCH: ${{ vars.COTW_MONITOR_STATE_BRANCH }}
           DRY_RUN: ${{ github.event.inputs.dry_run }}
+          IMPORT_ISSUES: ${{ github.event.inputs.import_issues }}
         run: |
-          if [ "$DRY_RUN" = "true" ]; then
+          if [ "$IMPORT_ISSUES" = "true" ]; then
+            if [ "$DRY_RUN" = "true" ]; then
+              .venv/bin/python -m cotw import-monitor-issues
+            else
+              .venv/bin/python -m cotw import-monitor-issues --apply
+            fi
+          elif [ "$DRY_RUN" = "true" ]; then
             .venv/bin/python -m cotw check-wikidata --dry-run
           else
             .venv/bin/python -m cotw check-wikidata

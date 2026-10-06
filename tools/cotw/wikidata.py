@@ -3,6 +3,9 @@
 ``fetch_all`` talks to the SPARQL endpoint and writes JSON caches under ``data/wikidata/``.
 The caches are committed, so the import and the tests never need the network; refresh them
 with ``python -m cotw fetch-wikidata``.
+
+Labels and Wikipedia sitelinks are fetched for every registered language (``cotw.languages``),
+as ``label_<code>`` in the cache records.
 """
 
 from __future__ import annotations
@@ -12,6 +15,7 @@ import os
 import time
 from pathlib import Path
 
+from . import languages
 from .paths import WIKIDATA
 
 SPARQL_URL = "https://query.wikidata.org/sparql"
@@ -71,6 +75,14 @@ def _point(wkt: str | None) -> tuple[float, float] | None:
     return float(lat), float(lon)
 
 
+def _label_vars() -> str:
+    return " ".join(f"?{code}" for code in languages.LANGUAGES)
+
+
+def _label_optionals(codes) -> str:
+    return "\n".join(f'          OPTIONAL {{ ?item rdfs:label ?{c} FILTER(LANG(?{c}) = "{c}") }}' for c in codes)
+
+
 def _chunks(items: list[str], size: int):
     for i in range(0, len(items), size):
         yield items[i : i + size]
@@ -82,20 +94,18 @@ def fetch_countries(iso2_codes: list[str]) -> dict:
     for chunk in _chunks(sorted(iso2_codes), 25):
         values = " ".join(f'"{c}"' for c in chunk)
         query = f"""
-        SELECT ?iso ?item ?iso3 ?en ?de WHERE {{
+        SELECT ?iso ?item ?iso3 {_label_vars()} WHERE {{
           VALUES ?iso {{ {values} }}
           ?item wdt:P297 ?iso .
           OPTIONAL {{ ?item wdt:P298 ?iso3 }}
-          OPTIONAL {{ ?item rdfs:label ?en FILTER(LANG(?en) = "en") }}
-          OPTIONAL {{ ?item rdfs:label ?de FILTER(LANG(?de) = "de") }}
+{_label_optionals(languages.LANGUAGES)}
         }}"""
         for b in _sparql(query):
             iso = _val(b, "iso")
             rec = {
                 "qid": _qid(_val(b, "item")),
                 "iso3": _val(b, "iso3"),
-                "label_en": _val(b, "en"),
-                "label_de": _val(b, "de"),
+                **{f"label_{code}": _val(b, code) for code in languages.LANGUAGES},
             }
             bucket = out.setdefault(iso, [])
             # Several optional values may multiply rows; keep one record per QID, first wins.
@@ -123,8 +133,7 @@ def fetch_capitals(qids: list[str]) -> dict:
             part_qid = _qid(_val(b, "part")) if _val(b, "part") else None
             rec = {
                 "qid": _qid(_val(b, "cap")),
-                "label_en": None,
-                "label_de": None,
+                **{f"label_{code}": None for code in languages.LANGUAGES},
                 "coord": _point(_val(b, "coord")),
                 "rank": _qid(_val(b, "rank")).lower().replace("rank", ""),
                 "start": _val(b, "start"),
@@ -139,53 +148,64 @@ def fetch_capitals(qids: list[str]) -> dict:
     labels = fetch_labels(sorted({r["qid"] for recs in result.values() for r in recs}))
     for recs in result.values():
         for r in recs:
-            r["label_en"], r["label_de"] = labels.get(r["qid"], (None, None))
+            for code, label in labels.get(r["qid"], {}).items():
+                r[f"label_{code}"] = label
     return result
 
 
-def fetch_labels(qids: list[str]) -> dict[str, tuple[str | None, str | None]]:
-    """EN/DE labels via the label service (cheap even for hundreds of items)."""
-    out: dict[str, tuple[str | None, str | None]] = {}
+def fetch_labels(qids: list[str]) -> dict[str, dict[str, str | None]]:
+    """Labels in every registered language via the label service (cheap even for hundreds of
+    items): ``{qid: {code: label or None}}``."""
+    base, others = languages.BASE, [c for c in languages.LANGUAGES if c != languages.BASE]
+    out: dict[str, dict[str, str | None]] = {}
     for chunk in _chunks(qids, 150):
         values = " ".join(f"wd:{q}" for q in chunk)
         query = f"""
-        SELECT ?item ?en ?de WHERE {{
+        SELECT ?item {_label_vars()} WHERE {{
           VALUES ?item {{ {values} }}
-          SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". ?item rdfs:label ?en }}
-          OPTIONAL {{ ?item rdfs:label ?de FILTER(LANG(?de) = "de") }}
+          SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{base}". ?item rdfs:label ?{base} }}
+{_label_optionals(others)}
         }}"""
         for b in _sparql(query):
             q = _qid(_val(b, "item"))
-            en = _val(b, "en")
-            if en == q:  # label service falls back to the QID when no EN label exists
-                en = None
-            out[q] = (en, _val(b, "de"))
-    missing = [q for q in qids if out.get(q, (None, None))[0] is None]
+            labels = {code: _val(b, code) for code in languages.LANGUAGES}
+            if labels[base] == q:  # label service falls back to the QID when no base label exists
+                labels[base] = None
+            out[q] = labels
+    missing = [q for q in qids if (out.get(q) or {}).get(base) is None]
     if missing:  # second opinion from the entity API (WDQS may lag behind edits)
         out.update(fetch_labels_api(missing))
     return out
 
 
-def fetch_labels_api(qids: list[str]) -> dict[str, tuple[str | None, str | None]]:
+def fetch_labels_api(qids: list[str]) -> dict[str, dict[str, str | None]]:
     import requests
 
     out = {}
     for chunk in _chunks(qids, 50):
         resp = requests.get(
             "https://www.wikidata.org/w/api.php",
-            params={"action": "wbgetentities", "ids": "|".join(chunk), "props": "labels", "languages": "en|de", "format": "json"},
+            params={
+                "action": "wbgetentities",
+                "ids": "|".join(chunk),
+                "props": "labels",
+                "languages": "|".join(languages.LANGUAGES),
+                "format": "json",
+            },
             headers={"User-Agent": USER_AGENT},
             timeout=60,
         )
         resp.raise_for_status()
         for q, ent in resp.json().get("entities", {}).items():
             labels = ent.get("labels", {})
-            out[q] = (labels.get("en", {}).get("value"), labels.get("de", {}).get("value"))
+            out[q] = {code: labels.get(code, {}).get("value") for code in languages.LANGUAGES}
     return out
 
 
 def fetch_places(labels: list[str]) -> dict:
-    """Fallback lookup for capitals not linked via P36: items by exact EN label with coordinates."""
+    """Fallback lookup for capitals not linked via P36: items by exact EN label with coordinates.
+
+    The records carry the labels of the other languages (``label_<code>``); EN is the key."""
     out: dict[str, list[dict]] = {}
     for chunk in _chunks(sorted(set(labels)), 25):
         values = " ".join(json.dumps(l) + "@en" for l in chunk)
@@ -200,7 +220,7 @@ def fetch_places(labels: list[str]) -> dict:
             label = _val(b, "label")
             rec = {
                 "qid": _qid(_val(b, "item")),
-                "label_de": None,
+                **{f"label_{code}": None for code in languages.LANGUAGES if code != languages.BASE},
                 "coord": _point(_val(b, "coord")),
                 "country": _qid(_val(b, "country")),
             }
@@ -211,7 +231,9 @@ def fetch_places(labels: list[str]) -> dict:
     labels = fetch_labels(sorted({r["qid"] for recs in result.values() for r in recs}))
     for recs in result.values():
         for r in recs:
-            r["label_de"] = labels.get(r["qid"], (None, None))[1]
+            for code, label in labels.get(r["qid"], {}).items():
+                if code != languages.BASE:
+                    r[f"label_{code}"] = label
     return result
 
 
@@ -241,11 +263,16 @@ def dump(path: Path, data: dict) -> None:
 
 
 SITELINKS_CACHE = WIKIDATA / "sitelinks.json"
-WIKIS = {"en": "enwiki", "de": "dewiki"}
+
+
+def wikis() -> dict[str, str]:
+    """Language code → Wikidata site ID of its Wikipedia, in registry order (``{"en": "enwiki", …}``)."""
+    return {code: languages.get(code).wiki for code in languages.LANGUAGES}
 
 
 def fetch_sitelinks(qids: list[str]) -> dict:
     """Wikipedia article titles per item and language (``{qid: {"en": title, "de": title}}``)."""
+    sites = wikis()
     import requests
 
     out: dict[str, dict[str, str]] = {}
@@ -256,7 +283,7 @@ def fetch_sitelinks(qids: list[str]) -> dict:
                 "action": "wbgetentities",
                 "ids": "|".join(chunk),
                 "props": "sitelinks",
-                "sitefilter": "|".join(WIKIS.values()),
+                "sitefilter": "|".join(sites.values()),
                 "format": "json",
             },
             headers={"User-Agent": USER_AGENT},
@@ -265,7 +292,7 @@ def fetch_sitelinks(qids: list[str]) -> dict:
         resp.raise_for_status()
         for q, ent in resp.json().get("entities", {}).items():
             links = ent.get("sitelinks", {})
-            out[q] = {lang: links[site]["title"] for lang, site in WIKIS.items() if site in links}
+            out[q] = {lang: links[site]["title"] for lang, site in sites.items() if site in links}
     return dict(sorted(out.items(), key=lambda kv: int(kv[0][1:])))
 
 
@@ -282,16 +309,20 @@ def wikipedia_url(lang: str, title: str) -> str:
 
 
 def wikipedia_links(en_url: str, sitelinks: dict | None) -> dict[str, str]:
-    """``wikipedia`` map of an entry: EN as chosen in the database (normalized), DE from ``dewiki``.
+    """``wikipedia`` map of an entry: EN as chosen in the database (normalized), every other
+    registered language from its sitelink (``dewiki``, …).
 
-    No ``de`` key when the item has no German article; the deck then falls back to EN.
+    No key for a language whose Wikipedia has no article on the item; the deck then falls back
+    to EN.
     """
     from urllib.parse import unquote
 
-    prefix = "https://en.wikipedia.org/wiki/"
-    out = {"en": wikipedia_url("en", unquote(en_url[len(prefix):])) if en_url.startswith(prefix) else en_url}
-    if sitelinks and sitelinks.get("de"):
-        out["de"] = wikipedia_url("de", sitelinks["de"])
+    base = languages.BASE
+    prefix = f"https://{base}.wikipedia.org/wiki/"
+    out = {base: wikipedia_url(base, unquote(en_url[len(prefix):])) if en_url.startswith(prefix) else en_url}
+    for code in languages.LANGUAGES:
+        if code != base and sitelinks and sitelinks.get(code):
+            out[code] = wikipedia_url(code, sitelinks[code])
     return out
 
 

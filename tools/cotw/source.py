@@ -3,6 +3,7 @@
 The CSV is the read-only input of the one-time import. Everything the pipeline needs is
 read here once, cleaned (stray whitespace, typos in the header) and returned as plain
 dataclasses; the Flag/Map/Globe/Borders/Tags columns are Excel formulas and are ignored.
+The source has EN and DE columns only, hence the fixed ``*_en`` / ``*_de`` fields.
 """
 
 from __future__ import annotations

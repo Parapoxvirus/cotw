@@ -1,7 +1,7 @@
-"""Coexistence proof: both packages imported into a real Anki collection (the ``anki`` package).
+"""Coexistence proof: all packages imported into a real Anki collection (the ``anki`` package).
 
-EN and DE must install side by side in any order, and each must be updatable on its own
-(docs/DECK.md). The version-skew case is simulated: a later EN build with a changed field
+The packages of every registered language must install side by side in any order, and each
+must be updatable on its own (docs/DECK.md). The version-skew case is simulated: a later EN build with a changed field
 medium (a map), a changed template asset (the globe) and a changed capital, imported while
 the older DE package stays installed.
 """
@@ -21,6 +21,7 @@ anki_collection = pytest.importorskip("anki.collection")
 
 from anki.import_export_pb2 import ImportAnkiPackageOptions  # noqa: E402
 
+from cotw import languages  # noqa: E402
 from cotw.deck import build, lang  # noqa: E402
 from cotw.paths import MEDIA  # noqa: E402
 
@@ -33,7 +34,7 @@ CHANGED_MAP = "cotw-217-map1-day.svg"
 def releases(tmp_path_factory) -> dict[str, dict[str, Path]]:
     root = tmp_path_factory.mktemp("releases")
     entries, by_id = build.load_entries()
-    v1 = {b.lang: b.path for b in (build.build_package(c, entries, by_id, root / "v1", EPOCH_V1) for c in ("en", "de"))}
+    v1 = {c: build.build_package(c, entries, by_id, root / "v1", EPOCH_V1).path for c in languages.LANGUAGES}
 
     media = root / "media-v2"
     shutil.copytree(MEDIA, media)
@@ -44,10 +45,10 @@ def releases(tmp_path_factory) -> dict[str, dict[str, Path]]:
         name = build.ASSET_SOURCES[key].name
         (media / name).write_text((media / name).read_text(encoding="utf-8") + "\n// v2\n", encoding="utf-8")
     by_id2 = copy.deepcopy(by_id)
-    by_id2["217"]["capitals"][0]["name"] = {"en": "Bern (v2)", "de": "Bern (v2)"}
+    by_id2["217"]["capitals"][0]["name"] = dict.fromkeys(languages.LANGUAGES, "Bern (v2)")
     v2 = {
         c: build.build_package(c, list(by_id2.values()), by_id2, root / "v2", EPOCH_V2, media_dir=media).path
-        for c in ("en", "de")
+        for c in languages.LANGUAGES
     }
     return {"v1": v1, "v2": v2}
 
@@ -76,22 +77,19 @@ def _template_assets(nt: dict) -> set[str]:
 
 
 def _assert_consistent(col) -> None:
-    """Two note types, the expected decks, no duplicates, every referenced file present."""
+    """One note type per language, the expected decks, no duplicates, every referenced file present."""
     nts = _cotw_notetypes(col)
-    assert set(nts) == {"COTW (EN)", "COTW (DE)"}
-    assert {nts["COTW (EN)"]["id"], nts["COTW (DE)"]["id"]} == {
-        lang.LANGS["en"]["notetype_id"],
-        lang.LANGS["de"]["notetype_id"],
-    }
+    specs = [languages.get(code) for code in languages.LANGUAGES]
+    assert set(nts) == {spec.notetype for spec in specs}
+    assert {spec.notetype: spec.notetype_id for spec in specs} == {name: nt["id"] for name, nt in nts.items()}
     decks = {d.name for d in col.decks.all_names_and_ids()}
-    for code in ("en", "de"):
-        assert {lang.LANGS[code]["deck"], lang.LANGS[code]["extras"]} <= decks
-        nids = col.find_notes(f'"note:{lang.LANGS[code]["notetype"]}"')
+    for spec in specs:
+        assert {spec.deck, spec.extras} <= decks
+        nids = col.find_notes(f'"note:{spec.notetype}"')
         assert len(nids) == 248
         assert len({col.get_note(n).guid for n in nids}) == 248
-        country = lang.LANGS[code]["fields"]["country"]
-        assert len({col.get_note(n)[country] for n in nids}) == 248
-    assert col.note_count() == 2 * 248
+        assert len({col.get_note(n)[spec.fields["country"]] for n in nids}) == 248
+    assert col.note_count() == len(specs) * 248
     media_dir = Path(col.media.dir())
     for nt in nts.values():
         missing = {a for a in _template_assets(nt) if not (media_dir / a).exists()}
@@ -100,7 +98,7 @@ def _assert_consistent(col) -> None:
     assert list(check.missing) == []
 
 
-@pytest.mark.parametrize("order", [("en", "de"), ("de", "en")])
+@pytest.mark.parametrize("order", [languages.LANGUAGES, languages.LANGUAGES[::-1]])
 def test_both_packages_side_by_side(col, releases, order):
     for code in order:
         log = _import(col, releases["v1"][code])
@@ -111,24 +109,25 @@ def test_both_packages_side_by_side(col, releases, order):
     assert len(files) == 248 * 5 + len(build.ASSET_SOURCES)
     assert not [f for f in files if re.search(r"-[0-9a-f]{40}\.", f)]
     for code in order:
-        deck = col.decks.id_for_name(lang.LANGS[code]["deck"])
-        extras = col.decks.id_for_name(lang.LANGS[code]["extras"])
-        in_main = col.find_cards(f'"deck:{lang.LANGS[code]["deck"]}" -"deck:{lang.LANGS[code]["extras"]}"')
-        in_extras = col.find_cards(f'"deck:{lang.LANGS[code]["extras"]}"')
+        spec = languages.get(code)
+        deck = col.decks.id_for_name(spec.deck)
+        extras = col.decks.id_for_name(spec.extras)
+        in_main = col.find_cards(f'"deck:{spec.deck}" -"deck:{spec.extras}"')
+        in_extras = col.find_cards(f'"deck:{spec.extras}"')
         assert len(in_main) == 5 * 248 and deck and extras
         assert {col.get_card(c).ord for c in in_extras} == {i for i, c in enumerate(lang.CARD_TYPES) if c["extra"]}
 
 
 def test_reimport_changes_nothing(col, releases):
-    for code in ("en", "de", "en", "de"):
+    for code in languages.LANGUAGES * 2:
         _import(col, releases["v1"][code])
     _assert_consistent(col)
     assert len(os.listdir(col.media.dir())) == 248 * 5 + len(build.ASSET_SOURCES)
 
 
 def test_updating_one_language_leaves_the_other_intact(col, releases):
-    _import(col, releases["v1"]["en"])
-    _import(col, releases["v1"]["de"])
+    for code in languages.LANGUAGES:
+        _import(col, releases["v1"][code])
     media_dir = Path(col.media.dir())
     old_map = (media_dir / CHANGED_MAP).read_bytes()
     old_de_assets = _template_assets(_cotw_notetypes(col)["COTW (DE)"])
@@ -156,9 +155,11 @@ def test_updating_one_language_leaves_the_other_intact(col, releases):
     assert _template_assets(nts["COTW (DE)"]) == old_de_assets
     assert list(col.media.check().unused) == []
 
-    # DE catches up later: both now share the one new map file; the old one is left over and
-    # reported as unused by Check Media (a field medium, so Anki may clean it up).
-    _import(col, releases["v2"]["de"])
+    # The others catch up later: all now share the one new map file; the old one is left over
+    # and reported as unused by Check Media (a field medium, so Anki may clean it up).
+    for code in languages.LANGUAGES:
+        if code != "en":
+            _import(col, releases["v2"][code])
     _assert_consistent(col)
     ch_de = col.get_note(col.find_notes('"note:COTW (DE)" "Land:Schweiz"')[0])
     assert re.search(r'src="([^"]+)"', ch_de["Karte 1"]).group(1) == new_src

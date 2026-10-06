@@ -11,25 +11,25 @@ formal_name:
   de: Republik Äquatorial­guinea
 capitals:
 - name:
-    en: Malabo
-    de: Malabo
+    en: Ciudad de la Paz
+    de: Ciudad de la Paz
   label:
     en: capital
     de: Hauptstadt
   role: capital
-  wikidata: Q3818
-  lat: 3.75206
-  lon: 8.7737
-- name:
-    en: Ciudad de la Paz
-    de: Ciudad de la Paz
-  label:
-    en: seat of government, to be made capital at a later point
-    de: Regierungssitz, wird später Hauptstadt werden
-  role: seat_of_government
   wikidata: Q1140136
   lat: 1.59167
   lon: 10.82222
+- name:
+    en: Malabo
+    de: Malabo
+  label:
+    en: seat of government until the move is completed
+    de: Regierungssitz bis zum Abschluss des Umzugs
+  role: seat_of_government
+  wikidata: Q3818
+  lat: 3.75206
+  lon: 8.7737
 borders:
 - '039'
 - '080'

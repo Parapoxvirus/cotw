@@ -1,0 +1,28 @@
+[#- Front: the asked attribute as "?", then the prompt. Nothing that names the entry. #]
+[% import 'macros.html' as m with context %]
+[% set card %]
+<div class="cotw cotw-[[ code ]]">
+  <!-- [[ comments.question ]] -->
+  <div class="cotw-box">
+[# The map prompt is the one front with a globe: no tooltip (DECISIONS B8). #]
+    [[ m.row(icons[asked], '?', 'cotw-ask') | trim | indent(4) ]]
+    [[ m.row(icons[shown], m.content(shown, tooltip=False)) | trim | indent(4) ]]
+  </div>
+  <!-- [[ comments.buttons ]] -->
+  [[ m.buttons(wikipedia=False) | trim | indent(2) ]]
+  <!-- [[ comments.help ]] -->
+  [[ m.help() | trim | indent(2) ]]
+</div>
+[% if shown == 'maps' %]
+<!-- [[ comments.globe ]] -->
+[[ globe_script ]]
+[% endif %]
+[% endset %]
+[#- No card for entries without land borders. #]
+[% if 'borders' in (asked, shown) %]
+{{#borders}}
+  [[ card | trim | indent(2) ]]
+{{/borders}}
+[% else %]
+[[ card ]]
+[% endif %]

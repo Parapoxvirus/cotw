@@ -1,0 +1,139 @@
+[#
+  Parts shared by front.html and back.html.
+
+  Jinja runs with [[ ]] / [% %] / [# #] delimiters, so Anki's {{...}} stays literal. Fields are
+  written by key ({{country}}, {{#status}}...{{/status}}); templates.py maps each key to the
+  field name of the package's language after rendering.
+
+  Whitespace: a line break renders as a space only between inline content. Breaks therefore go
+  between flex items (row, icon, content, buttons) and between blocks; inline runs such as the
+  name with its label stay on one line, or break only where a space is already rendered.
+#]
+
+[% macro icon(key) %]
+<div class="cotw-icon">
+  <img class="cotw-day" src="[[ assets[key ~ '-day'] ]]"><img class="cotw-night" src="[[ assets[key ~ '-night'] ]]">
+</div>
+[% endmacro %]
+
+[#- A row: icon cell and content cell. Text-only content stays on the content line. #]
+[% macro row(key, content, cls='') %]
+<div class="cotw-row[[ ' ' ~ cls if cls ]]">
+  [[ icon(key) | indent(2) ]]
+[% if '<' in content %]
+  <div class="cotw-content">
+    [[ content | trim | indent(4) ]]
+  </div>
+[% else %]
+  <div class="cotw-content">[[ content | trim ]]</div>
+[% endif %]
+</div>
+[% endmacro %]
+
+[% macro title_row(text) %]
+<div class="cotw-row">
+  <div class="cotw-icon"></div>
+  <div class="cotw-content cotw-title">[[ text ]]</div>
+</div>
+[% endmacro %]
+
+[% macro country() %]
+<div class="cotw-name">{{country}}{{#country_label}} <span class="cotw-label">{{country_label}}</span>{{/country_label}}</div>
+{{#dependency_of}}
+  <div class="cotw-label">[[ dependency_of ]]</div>
+{{/dependency_of}}
+{{#status}}
+  <div class="cotw-label">{{status}}</div>
+{{/status}}
+[% endmacro %]
+
+[#- "1." only when there is a second capital. The label's leading space is the line break. #]
+[% macro capitals() %]
+<div class="cotw-capital">
+  {{#capital_2}}<span class="cotw-label">1.</span> {{/capital_2}}{{capital_1}}
+  {{#capital_1_label}}<span class="cotw-label">{{capital_1_label}}</span>{{/capital_1_label}}
+</div>
+[% for n in (2, 3) %]
+{{#capital_[[ n ]]}}
+  <div class="cotw-capital">
+    <span class="cotw-label">[[ n ]].</span> {{capital_[[ n ]]}}
+    {{#capital_[[ n ]]_label}}<span class="cotw-label">{{capital_[[ n ]]_label}}</span>{{/capital_[[ n ]]_label}}
+  </div>
+{{/capital_[[ n ]]}}
+[% endfor %]
+[% endmacro %]
+
+[% macro globe(tooltip) %]
+<div class="cotw-globe" data-id="{{locator}}" data-lang="[[ code ]]"[[ ' data-tooltip' if tooltip ]][[ globe_parts ]]></div>
+[% endmacro %]
+
+[% macro globe_map(tooltip) %]
+<div class="cotw-map">
+  [[ globe(tooltip) | trim ]]
+</div>
+[% endmacro %]
+
+[% macro maps(tooltip, with_globe) %]
+<div class="cotw-map">{{map_1}}</div>
+<div class="cotw-map">{{map_2}}</div>
+[% if with_globe %]
+[[ globe_map(tooltip) ]]
+[% endif %]
+[% endmacro %]
+
+[#- The content cell of an attribute row (docs/DECK.md, "full info" order in templates.py). #]
+[% macro content(attr, tooltip=True, with_globe=True) %]
+[% if attr == 'country' %]
+[[ country() ]]
+[% elif attr == 'formal' %]
+{{formal_name}}
+[% elif attr == 'capital' %]
+[[ capitals() ]]
+[% elif attr == 'iso' %]
+{{iso2}} · {{iso3}}
+[% elif attr == 'flag' %]
+<div class="cotw-flag">{{flag}}</div>
+[% elif attr == 'borders' %]
+<div class="cotw-neighbors">{{borders}}</div>
+[% elif attr == 'maps' %]
+[[ maps(tooltip, with_globe) ]]
+[% else %]
+[[ fail('unknown attribute ' ~ attr) ]]
+[% endif %]
+[% endmacro %]
+
+[#- One attribute row; optional attributes vanish entirely when their field is empty. #]
+[% macro attr_row(attr, cls='', tooltip=True, with_globe=True) %]
+[% set html = row(icons[attr], content(attr, tooltip, with_globe), cls) %]
+[% if attr == 'formal' %]
+{{#formal_name}}
+  [[ html | trim | indent(2) ]]
+{{/formal_name}}
+[% elif attr == 'borders' %]
+{{#borders}}
+  [[ html | trim | indent(2) ]]
+{{/borders}}
+[% else %]
+[[ html ]]
+[% endif %]
+[% endmacro %]
+
+[% macro buttons(wikipedia) %]
+<div class="cotw-buttons">
+[% if wikipedia %]
+  <a class="cotw-button" href="{{wikipedia}}" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+[% endif %]
+  <span class="cotw-button" role="button" onclick="this.closest('.cotw').classList.toggle('cotw-show-help')">[[ ui.help ]]</span>
+</div>
+[% endmacro %]
+
+[% macro help() %]
+<div class="cotw-box cotw-help">
+  [[ title_row(ui.symbols) | trim | indent(2) ]]
+[% for attr, key in symbols %]
+  [[ row(icons[attr], ui[key]) | trim | indent(2) ]]
+[% endfor %]
+  [[ title_row(ui.general) | trim | indent(2) ]]
+  [[ row('icon-help', help_text, 'cotw-help-text') | trim | indent(2) ]]
+</div>
+[% endmacro %]

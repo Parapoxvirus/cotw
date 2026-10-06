@@ -1,4 +1,4 @@
-"""Build the EN and DE ``.apkg`` packages from the database (roadmap step 4, docs/DECK.md).
+"""Build one ``.apkg`` package per registered language from the database (roadmap step 4, docs/DECK.md).
 
 genanki writes the collection; this module adds what it lacks: cards placed per card type
 (main deck vs. ``::Extras``), fixed timestamps and IDs, and a byte-reproducible zip.
@@ -21,9 +21,9 @@ from pathlib import Path
 
 import yaml
 
-from .. import ui
+from .. import languages, ui
 from ..paths import BUILD, DATA, MEDIA, ROOT, UI_ASSETS
-from .lang import CARD_TYPES, DATIVE_DE, FIELD_KEYS, LANGS, REGIONS_DE
+from .lang import CARD_TYPES, FIELD_KEYS
 from .templates import globe_script, render, templates
 
 UI = UI_ASSETS
@@ -105,13 +105,9 @@ def _esc(text: str) -> str:
 
 
 def display_name(name: str, lang: str) -> str:
-    """A name inside a sentence: first alternative, ``United States, The`` → ``the United States``."""
-    first = name.split(" / ")[0]
-    if lang == "en" and first.endswith(", The"):
-        return "the " + first[: -len(", The")]
-    if lang == "de":
-        return DATIVE_DE.get(first, first)
-    return first
+    """A name inside a sentence: the first alternative in the language's object form
+    (``United States, The`` → ``the United States``, ``Niederlande`` → ``den Niederlanden``)."""
+    return languages.get(lang).object_form(name.split(" / ")[0])
 
 
 def tag_segment(text: str) -> str:
@@ -119,18 +115,17 @@ def tag_segment(text: str) -> str:
 
 
 def tags(entry: dict, lang: str) -> list[str]:
-    spec = LANGS[lang]
-    regions = entry["regions"] if lang == "en" else [REGIONS_DE[r] for r in entry["regions"]]
-    root = spec["tag_root"]
+    spec = languages.get(lang)
+    root = spec.tag_root
     return [
-        "::".join([root, *(tag_segment(r) for r in regions)]),
-        f"{root}::Status::{spec['status_tags'][entry['status']]}",
+        "::".join([root, *(tag_segment(spec.regions[r]) for r in entry["regions"])]),
+        f"{root}::Status::{spec.status_tags[entry['status']]}",
     ]
 
 
 def fields(entry: dict, by_id: dict[str, dict], lang: str) -> dict[str, str]:
     """Field values by key (``lang.FIELD_KEYS``). Text is HTML-escaped; media become ``<img>``."""
-    spec = LANGS[lang]
+    spec = languages.get(lang)
     cid = entry["id"]
     out = dict.fromkeys(FIELD_KEYS, "")
     out["country"] = _esc(entry["name"][lang])
@@ -151,11 +146,11 @@ def fields(entry: dict, by_id: dict[str, dict], lang: str) -> dict[str, str]:
         for b in neighbors
     )
     wiki = entry["wikipedia"]
-    out["wikipedia"] = wiki.get(lang) or wiki["en"]
+    out["wikipedia"] = wiki.get(lang) or wiki[languages.BASE]
     if entry.get("dependency_of"):
         out["dependency_of"] = _esc(display_name(by_id[entry["dependency_of"]]["name"][lang], lang))
     if entry["status"] == "disputed":
-        out["status"] = _esc(spec["status_disputed"])
+        out["status"] = _esc(spec.status_disputed)
     return out
 
 
@@ -175,66 +170,12 @@ def guid(cid: str, lang: str) -> str:
 
 def card_fields(entry: dict, by_id: dict, lang: str) -> dict[str, str]:
     """Field values by the language's field *names* (what the templates reference)."""
-    names = LANGS[lang]["fields"]
+    names = languages.get(lang).fields
     return {names[k]: v for k, v in fields(entry, by_id, lang).items()}
 
 
 # --- deck description ---------------------------------------------------------------------------
 
-DESCRIPTION = {
-    "en": """<p><b>Countries of the World (COTW)</b>: {count} countries and territories, each with
-capital, flag, two maps, an interactive globe, ISO codes and bordering countries.</p>
-<p>Ten card types: the five recommended ones are in this deck, the five extras in the subdeck
-<i>Extras</i>. To switch the extras off, open the Browser, click the <i>Extras</i> deck, select all
-cards and choose <i>Suspend</i> (again to switch them back on).</p>
-<p><b>Borders.</b> The maps and the globe draw borders as their source,
-<a href="https://www.naturalearthdata.com">Natural Earth</a>, supplies them, and Natural Earth maps
-de facto borders: who actually controls an area. Crimea, for example, is shown as Russian, not
-Ukrainian, and the disputed areas in the Himalayas follow the lines of actual control. The deck
-makes no political statement; it follows the supplied data strictly.</p>
-<p><b>Sources and licenses.</b> Deck, data and code: public domain
-(<a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>), Parapoxvirus. Data:
-<a href="https://www.wikidata.org">Wikidata</a> (CC0). Land on the maps and the globe:
-<a href="https://www.naturalearthdata.com">Natural Earth</a> (public domain). Maritime zones:
-Marine Regions, Flanders Marine Institute (VLIZ),
-<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: {citation} Flags:
-<a href="https://commons.wikimedia.org">Wikimedia Commons</a>, public domain or CC0 only; the license
-of every file is listed in {manifest}. Font: IBM Plex Sans,
-<a href="https://openfontlicense.org">SIL Open Font License 1.1</a> (shipped as {font_license}). Icons:
-<a href="https://phosphoricons.com">Phosphor Icons</a>, Copyright (c) 2023 Phosphor Icons, MIT License (full
-notice shipped as {icons_license}).</p>""",
-    "de": """<p><b>Länder der Welt (COTW)</b>: {count} Länder und Gebiete, jeweils mit Hauptstadt,
-Flagge, zwei Karten, einem drehbaren Globus, ISO-Codes und Nachbarländern.</p>
-<p>Zehn Kartentypen: Die fünf empfohlenen liegen in diesem Deck, die fünf Extras im Unterdeck
-<i>Extras</i>. Wenn du die Extras nicht lernen möchtest, öffne <i>Durchsuchen</i>, klicke auf das
-Deck <i>Extras</i>, markiere alle Karten und wähle <i>Aussetzen</i> (genauso schaltest du sie wieder
-ein).</p>
-<p><b>Grenzen.</b> Karten und Globus zeigen die Grenzen so, wie die Kartenquelle
-<a href="https://www.naturalearthdata.com">Natural Earth</a> sie liefert, und Natural Earth bildet
-De-facto-Grenzen ab: wer ein Gebiet tatsächlich kontrolliert. Die Krim etwa erscheint als russisch,
-nicht als ukrainisch, und die umstrittenen Gebiete im Himalaya folgen den tatsächlichen
-Kontrolllinien. Das Deck macht keine politische Aussage, sondern richtet sich strikt nach dem
-gelieferten Material.</p>
-<p><b>Quellen und Lizenzen.</b> Deck, Daten und Code: gemeinfrei
-(<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0</a>), Parapoxvirus.
-Daten: <a href="https://www.wikidata.org">Wikidata</a> (CC0). Land auf Karten und Globus:
-<a href="https://www.naturalearthdata.com">Natural Earth</a> (gemeinfrei). Meereszonen: Marine
-Regions, Flanders Marine Institute (VLIZ),
-<a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a>: {citation} Flaggen:
-<a href="https://commons.wikimedia.org">Wikimedia Commons</a>, nur gemeinfrei oder CC0; die Lizenz
-jeder Datei steht in {manifest}. Schrift: IBM Plex Sans,
-<a href="https://openfontlicense.org">SIL Open Font License 1.1</a> (mitgeliefert als {font_license}). Symbole:
-<a href="https://phosphoricons.com">Phosphor Icons</a>, Copyright (c) 2023 Phosphor Icons, MIT-Lizenz
-(vollständiger Lizenzhinweis mitgeliefert als {icons_license}).</p>""",
-}
-EXTRAS_DESCRIPTION = {
-    "en": "<p>The five extra card types: country → map, ISO code in both directions, bordering "
-    "countries in both directions. Suspend all cards of this subdeck in the Browser to switch "
-    "them off.</p>",
-    "de": "<p>Die fünf zusätzlichen Kartentypen: Land → Karte, ISO-Code in beide Richtungen, "
-    "Nachbarländer in beide Richtungen. Wenn du sie nicht lernen möchtest, setze alle Karten "
-    "dieses Unterdecks in <i>Durchsuchen</i> aus.</p>",
-}
 CITATION = (
     "Flanders Marine Institute (2023). Maritime Boundaries Geodatabase: Maritime Boundaries and "
     "Exclusive Economic Zones (200NM), version 12, and Territorial Seas (12NM), version 4. "
@@ -248,12 +189,11 @@ MANIFEST_PATH = "data/derived/flags.yaml"
 def description(lang: str, count: int, config: dict, asset_names: dict[str, str]) -> str:
     repo = (config.get("repository") or "").rstrip("/")
     manifest = f'<a href="{repo}/blob/main/{MANIFEST_PATH}">{MANIFEST_PATH}</a>' if repo else f"<code>{MANIFEST_PATH}</code>"
-    return " ".join(
-        DESCRIPTION[lang]
-        .format(count=count, citation=CITATION, manifest=manifest, font_license=asset_names["font-license"],
-                icons_license=asset_names["icons-license"])
-        .split()
+    text = languages.get(lang).description.format(
+        count=count, citation=CITATION, manifest=manifest, font_license=asset_names["font-license"],
+        icons_license=asset_names["icons-license"],
     )
+    return " ".join(text.split())
 
 
 # --- package ------------------------------------------------------------------------------------
@@ -275,11 +215,11 @@ def css(asset_names: dict[str, str]) -> str:
 def model(lang: str, asset_names: dict[str, str], config: dict):
     import genanki
 
-    spec = LANGS[lang]
+    spec = languages.get(lang)
     return genanki.Model(
-        spec["notetype_id"],
-        spec["notetype"],
-        fields=[{"name": spec["fields"][k], "font": "Arial"} for k in FIELD_KEYS],
+        spec.notetype_id,
+        spec.notetype,
+        fields=[{"name": spec.fields[k], "font": "Arial"} for k in FIELD_KEYS],
         templates=templates(lang, asset_names, config),
         css=css(asset_names),
         sort_field_index=0,
@@ -327,12 +267,12 @@ def build_package(
     import genanki
 
     config = config or load_config()
-    spec = LANGS[lang]
+    spec = languages.get(lang)
     table = assets(media_dir)
     asset_names = {k: name for k, (name, _) in table.items()}
     mdl = model(lang, asset_names, config)
-    deck = genanki.Deck(spec["deck_id"], spec["deck"], description(lang, len(entries), config, asset_names))
-    extras = genanki.Deck(spec["extras_deck_id"], spec["extras"], EXTRAS_DESCRIPTION[lang])
+    deck = genanki.Deck(spec.deck_id, spec.deck, description(lang, len(entries), config, asset_names))
+    extras = genanki.Deck(spec.extras_deck_id, spec.extras, spec.extras_description)
     for position, e in enumerate(sorted(entries, key=lambda x: x["id"])):
         values = fields(e, by_id, lang)
         note = genanki.Note(
@@ -354,12 +294,12 @@ def build_package(
         db = Path(tmp) / "collection.anki2"
         conn = sqlite3.connect(db)
         cur = conn.cursor()
-        ids = iter(range(epoch * 1000 + spec["id_offset"], epoch * 1000 + spec["id_offset"] + 10**6))
+        ids = iter(range(epoch * 1000 + spec.id_offset, epoch * 1000 + spec.id_offset + 10**6))
         genanki.Package([deck, extras]).write_to_db(cur, epoch, ids)
         extra_ords = [i for i, c in enumerate(CARD_TYPES) if c["extra"]]
         cur.execute(
             f"UPDATE cards SET did = ? WHERE ord IN ({','.join('?' * len(extra_ords))})",
-            (spec["extras_deck_id"], *extra_ords),
+            (spec.extras_deck_id, *extra_ords),
         )
         _fix_collection(cur, epoch)
         conn.commit()
@@ -443,7 +383,7 @@ def write_preview(out_dir: Path = BUILD, ids: tuple[str, ...] = PREVIEW_IDS) -> 
         shutil.copyfile(path, media_dir / path.name)
 
     cards = []
-    for lang in LANGS:
+    for lang in languages.LANGUAGES:
         tmpls = templates(lang, names, config)
         for cid in ids:
             values = card_fields(by_id[cid], by_id, lang)
@@ -457,7 +397,7 @@ def write_preview(out_dir: Path = BUILD, ids: tuple[str, ...] = PREVIEW_IDS) -> 
                         night = " nightMode night_mode" if mode == "night" else ""
                         cards.append(
                             f'<figure data-lang="{lang}" data-id="{cid}" data-side="{side}" data-mode="{mode}" '
-                            f'data-type="{n:02d}"><figcaption>{lang.upper()} · {html.escape(by_id[cid]["name"]["en"])} · '
+                            f'data-type="{n:02d}"><figcaption>{lang.upper()} · {html.escape(by_id[cid]["name"][languages.BASE])} · '
                             f'{html.escape(t["name"])} · {side} · {mode}</figcaption>'
                             f'<div class="card{night}">{body}</div></figure>'
                         )

@@ -71,9 +71,9 @@ def icon_file(name: str, mode: str) -> str:
 # --- infographic layout ----------------------------------------------------------------------
 #
 # Measured on the 1848 × 1713 v3 PNGs (issue #12): the original was built from the same
-# Phosphor icons at one scale, 1.285 (the center square is Phosphor's square, our country
-# icon), on a grid of 330 px rows; offsets were fit to maximize the line-mask IoU and then
-# rounded to that grid (the left map sits 5 px higher in the PNG and here too). The braces
+# Phosphor icons at one scale, 1.285 (the center square is Phosphor's square, the COTW
+# country icon), on a grid of 330 px rows; offsets were fit to maximize the line-mask IoU and
+# then rounded to that grid (the left map sits 5 px higher in the PNG and here too). The braces
 # are cubic Béziers whose control points were fit the same way. Column "left" is the prompt
 # side (X → Country), "right" the answer side (Country → X).
 

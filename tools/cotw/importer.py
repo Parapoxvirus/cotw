@@ -4,6 +4,9 @@ Also writes ``docs/data-changes.md``, the list of every deviation from the sprea
 After the import the YAML files are the database; the importer stays re-runnable (it is
 deterministic) but is not part of the normal workflow. The v3 spreadsheet itself is not in
 the repository; ``python -m cotw import-v3 <csv>`` takes the export as an argument.
+
+The importer stays EN/DE on purpose: it reads the historical two-language v3 source. Further
+languages are added to the YAML database directly (``cotw.languages``, docs/DECK.md).
 """
 
 from __future__ import annotations

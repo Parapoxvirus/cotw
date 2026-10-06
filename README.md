@@ -58,14 +58,17 @@ maps, globe). Design in [`docs/DECISIONS.md`](docs/DECISIONS.md); a weekly Wikid
 check keeps the data current ([`docs/MONITORING.md`](docs/MONITORING.md)).
 
 ```bash
-.venv/bin/python -m cotw build-deck      # build/COTW-EN.apkg, build/COTW-DE.apkg, build/deck-preview.html
+.venv/bin/python -m cotw build-deck      # build/COTW-<LANG>.apkg per registered language, build/deck-preview.html
 .venv/bin/python -m cotw build-deck --only RU,KR,ZA --out build/test   # test packages with a few entries
 ```
 
 - **`COTW-EN.apkg`**: deck *Countries of the World*, note type *COTW (EN)*, English only.
 - **`COTW-DE.apkg`**: deck *Länder der Welt*, note type *COTW (DE)*, German only.
 
-Card types, fields, tags, media and updates: [`docs/DECK.md`](docs/DECK.md).
+Every registered language gets its package: one module per language in
+`tools/cotw/languages/` holds its identities and texts, and `python -m cotw validate` requires
+its names for every entry. Card types, fields, tags, media, updates and how to add a language:
+[`docs/DECK.md`](docs/DECK.md).
 
 ## Layout
 
@@ -80,8 +83,10 @@ Card types, fields, tags, media and updates: [`docs/DECK.md`](docs/DECK.md).
 | `docs/data-changes.md` | Every deviation from the v3 spreadsheet |
 | `tools/cotw/` | Python tooling (`python -m cotw --help`) |
 | `tools/globe/` | The globe renderer (plain JS), built into `media/_cotw-globe.js` |
+| `tools/cotw/languages/` | One module per deck language: IDs, names, UI and help texts, region names, AnkiWeb link |
 | `tools/cotw/deck/` | The deck build: note types, card templates, CSS, package writer ([`docs/DECK.md`](docs/DECK.md)) |
-| `data/deck.yaml` | Deck settings: AnkiWeb links, contact, public repository URL |
+| `tools/compare_packages.py` | Compares two builds of the packages (output unchanged by a code change?) |
+| `data/deck.yaml` | Deck settings: contact, public repository URL |
 | `assets/ui/` | Font (IBM Plex Sans, OFL), Phosphor icons (MIT) and the help infographics the deck ships, with their license files |
 | `data/tags.txt` | The UN M49 region hierarchy for the `regions` field |
 
@@ -110,10 +115,12 @@ Change monitoring ([`docs/MONITORING.md`](docs/MONITORING.md)):
 ```bash
 .venv/bin/python -m cotw check-wikidata --dry-run    # caches vs. live Wikidata/Commons (network), writes nothing
 .venv/bin/python -m cotw accept-wikidata <fingerprint>   # accept one reported change into the caches
+.venv/bin/python -m cotw import-monitor-issues [--apply] # once, when switching to Paperclip tasks
 ```
 
 The scheduled workflow `.gitea/workflows/wikidata-check.yml` runs the check every Monday and
-opens one `wikidata` issue per change.
+opens one `wikidata` issue per change, or one Paperclip task when the `PAPERCLIP_*` variables
+are set.
 
 Map rendering rules (projection, windows, highlight circles, maritime-zone assignment)
 are documented in [`docs/MAPS.md`](docs/MAPS.md); the globe and its template contract in
@@ -135,6 +142,12 @@ domain / CC0 only, per file in `data/derived/flags.yaml`), and maritime zones fr
 > https://doi.org/10.14284/633
 
 Details in [`docs/ATTRIBUTION.md`](docs/ATTRIBUTION.md).
+
+## Contributing
+
+Corrections and new languages are welcome. How pull requests reach the main COTW repository
+and are credited: [`CONTRIBUTING.md`](CONTRIBUTING.md). Adding a language, the naming sources
+per language and the spelling rules: [`docs/TRANSLATING.md`](docs/TRANSLATING.md).
 
 ## License
 

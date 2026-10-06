@@ -5,7 +5,7 @@ from __future__ import annotations
 from collections import Counter
 
 from cotw import ids as ids_mod
-from cotw import schema
+from cotw import schema, wikidata
 
 
 def test_entry_count(entries):
@@ -13,9 +13,10 @@ def test_entry_count(entries):
 
 
 def test_every_entry_matches_schema(entries, exceptions):
+    sitelinks = wikidata.load_sitelinks()
     problems = []
     for path, entry in entries.items():
-        problems += schema.validate_entry(entry, path, exceptions)
+        problems += schema.validate_entry(entry, path, exceptions, sitelinks)
     assert problems == []
 
 
@@ -98,3 +99,28 @@ def test_umlauts_survive_round_trip(entries):
             text = path.read_text(encoding="utf-8")
             assert e["name"]["de"] in text and e["name"]["en"] in text
             assert "\\u" not in text
+
+
+def test_naoero_renamed_codes_kept(by_id):
+    """Nauru became the Republic of Naoero (2026-06-26); ISO NR/NRU, id and slug stay."""
+    nr = by_id["153"]
+    assert nr["name"] == {"en": "Naoero", "de": "Naoero"}
+    assert nr["formal_name"] == {"en": "The Republic of Naoero", "de": "Republik Naoero"}
+    assert (nr["iso2"], nr["iso3"], nr["wikidata"]) == ("NR", "NRU", "Q697")
+    assert ids_mod.load()["153"]["slug"] == "nauru"
+    assert [c["name"]["en"] for c in nr["capitals"]] == ["Yaren"]
+
+
+def test_equatorial_guinea_capital_ciudad_de_la_paz(by_id):
+    """Decreto Ley 1/2026 made Ciudad de la Paz the capital; Malabo stays seat of
+    government while the ministries move. Capital 1 is what "Country → Capital" asks."""
+    caps = by_id["067"]["capitals"]
+    assert [(c["wikidata"], c["role"]) for c in caps] == [
+        ("Q1140136", "capital"),
+        ("Q3818", "seat_of_government"),
+    ]
+    assert caps[0]["label"] == {"en": "capital", "de": "Hauptstadt"}
+    assert caps[1]["label"] == {
+        "en": "seat of government until the move is completed",
+        "de": "Regierungssitz bis zum Abschluss des Umzugs",
+    }

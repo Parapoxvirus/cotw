@@ -2,8 +2,8 @@
 
 ``python -m cotw check-wikidata`` fetches everything the database took from Wikidata and
 Commons with the same fetchers that built the caches, diffs it against the committed caches
-(the last accepted snapshot, not the YAML database) and opens one Gitea issue per deviation.
-Nothing is applied: ``python -m cotw accept-wikidata <fingerprint>`` accepts one deviation,
+(the last accepted snapshot, not the YAML database) and opens one Gitea issue per deviation
+(or one Paperclip task, see ``monitor_paperclip``). Nothing is applied: ``python -m cotw accept-wikidata <fingerprint>`` accepts one deviation,
 an entry in ``data/overrides/monitoring.yaml`` rejects it. Rules: ``docs/MONITORING.md``.
 
 Every network read happens before the first write, so a failed fetch fails the run without
@@ -27,7 +27,7 @@ from typing import Any
 
 import yaml
 
-from . import flags, wikidata
+from . import flags, languages, wikidata
 from .paths import COUNTRIES, OVERRIDES
 
 # Vandalism damping: a value whose item (or Commons file) changed less than this long ago is
@@ -50,7 +50,7 @@ WIKIDATA_API = "https://www.wikidata.org/w/api.php"
 class Snapshot:
     """Everything compared, in the shape of the caches. ``commons`` is keyed by file name."""
 
-    countries: dict  # iso2 → [{qid, iso3, label_en, label_de}]  (countries.json)
+    countries: dict  # iso2 → [{qid, iso3, label_<code> per language}]  (countries.json)
     iso_codes: dict  # code → [qid]                              (iso-codes.json)
     capitals: dict  # country qid → [P36 records]                (capitals.json)
     coords: dict  # capital qid → [lat, lon]                   (capitals.json + places.json)
@@ -274,8 +274,8 @@ def diff(entries: dict, base: Snapshot, live: Snapshot, overrides: dict | None =
                 patches=[("status", q)],
             ))
 
-        # EN/DE Wikipedia sitelinks.
-        for lang, site in wikidata.WIKIS.items():
+        # Wikipedia sitelinks, one per registered language.
+        for lang, site in wikidata.wikis().items():
             old, new = base.sitelinks.get(q, {}).get(lang), live.sitelinks.get(q, {}).get(lang)
             if old != new and q in live.sitelinks:
                 out.append(Deviation(
@@ -572,6 +572,14 @@ def render_summary(overflow: list[Deviation], cap: int) -> tuple[str, str]:
     return f"Wikidata check: {len(overflow)} more deviations waiting", "\n".join(lines)
 
 
+class GiteaError(RuntimeError):
+    """A Gitea API call failed; ``code`` is the HTTP status."""
+
+    def __init__(self, message: str, code: int):
+        super().__init__(message)
+        self.code = code
+
+
 class Gitea:
     """The few Gitea API calls the monitor needs. The token is sent, never printed."""
 
@@ -591,7 +599,7 @@ class Gitea:
                 return json.loads(resp.read().decode("utf-8") or "null")
         except urllib.error.HTTPError as exc:
             hint = " (token lacks the permission: see docs/MONITORING.md, Token)" if exc.code in (401, 403) else ""
-            raise RuntimeError(f"Gitea {method} {path}: HTTP {exc.code}{hint} {exc.read().decode('utf-8', 'replace')[:300]}") from None
+            raise GiteaError(f"Gitea {method} {path}: HTTP {exc.code}{hint} {exc.read().decode('utf-8', 'replace')[:300]}", exc.code) from None
 
     def repository(self) -> dict:
         return self._req("GET", f"/repos/{self.repo}")
@@ -617,6 +625,35 @@ class Gitea:
 
     def edit_issue(self, number: int, **fields) -> dict:
         return self._req("PATCH", f"/repos/{self.repo}/issues/{number}", body=fields)
+
+    # State branch of the Paperclip sink (tools/cotw/monitor_state.py).
+
+    def branch(self, name: str) -> dict | None:
+        try:
+            return self._req("GET", f"/repos/{self.repo}/branches/{urllib.parse.quote(name, safe='')}")
+        except GiteaError as exc:
+            if exc.code == 404:
+                return None
+            raise
+
+    def create_branch(self, name: str, source: str) -> dict:
+        return self._req("POST", f"/repos/{self.repo}/branches", body={"new_branch_name": name, "old_branch_name": source})
+
+    def file(self, path: str, ref: str) -> dict | None:
+        """``{content (base64), sha, …}`` of one file on ``ref``, ``None`` if it does not exist."""
+        try:
+            return self._req("GET", f"/repos/{self.repo}/contents/{path}", {"ref": ref})
+        except GiteaError as exc:
+            if exc.code == 404:
+                return None
+            raise
+
+    def write_file(self, path: str, branch: str, content_b64: str, message: str, sha: str | None = None) -> dict:
+        """Create the file (``sha`` None) or replace the revision ``sha`` of it."""
+        body = {"content": content_b64, "message": message, "branch": branch}
+        if sha is None:
+            return self._req("POST", f"/repos/{self.repo}/contents/{path}", body=body)
+        return self._req("PUT", f"/repos/{self.repo}/contents/{path}", body=body | {"sha": sha})
 
 
 def known_fingerprints(issues: list[dict]) -> set[str]:
@@ -681,6 +718,11 @@ def gitea_config(url: str | None, repo: str | None) -> tuple[str | None, str | N
 
 def check(dry_run: bool, max_issues: int, url: str | None = None, repo: str | None = None, log=print) -> int:
     url, repo, token = gitea_config(url, repo)
+    from . import monitor_paperclip
+
+    cfg = monitor_paperclip.config()
+    if cfg is not None:  # all PAPERCLIP_* set: tasks instead of issues
+        return monitor_paperclip.check(cfg, dry_run, max_issues, url, repo, token, collect, Gitea, log)
     if not dry_run and not (url and repo and token):
         log("no Gitea URL/repository/COTW_MONITOR_TOKEN: dry run")
         dry_run = True
@@ -705,6 +747,17 @@ def check(dry_run: bool, max_issues: int, url: str | None = None, repo: str | No
     result = file_issues(devs, client, max_issues, log)
     log(f"{result['filed']} filed, {result['known']} filed before, {result['overflow']} in the summary")
     return 0
+
+
+def import_issues(apply: bool, url: str | None = None, repo: str | None = None, log=print) -> int:
+    """Seed the Paperclip sink's state with the fingerprints of the existing Gitea issues."""
+    from . import monitor_paperclip
+
+    url, repo, token = gitea_config(url, repo)
+    if not (url and repo and token):
+        log("import-monitor-issues needs the Gitea URL, repository and COTW_MONITOR_TOKEN")
+        return 1
+    return monitor_paperclip.import_issues(Gitea(url, repo, token), apply, log)
 
 
 def accept(fp: str, log=print) -> int:
@@ -758,11 +811,11 @@ def accept(fp: str, log=print) -> int:
                 if cap.get("wikidata") == d.item:
                     cap["lat"], cap["lon"] = round(d.new[0], 5), round(d.new[1], 5)
         elif d.kind == "sitelink":
-            lang = d.field.split(".", 1)[1]
-            if lang == "de":
-                entry["wikipedia"] = wikidata.wikipedia_links(entry["wikipedia"]["en"], live.sitelinks.get(entry["wikidata"]))
+            lang, base = d.field.split(".", 1)[1], languages.BASE
+            if lang != base:
+                entry["wikipedia"] = wikidata.wikipedia_links(entry["wikipedia"][base], live.sitelinks.get(entry["wikidata"]))
             elif d.new:
-                entry["wikipedia"]["en"] = wikidata.wikipedia_url("en", d.new)
+                entry["wikipedia"][base] = wikidata.wikipedia_url(base, d.new)
         path.write_text(dump_entry(entry), encoding="utf-8")
         log(f"updated {path.relative_to(path.parents[2])}")
     log("next:")

@@ -3,6 +3,10 @@
 ``validate_entry`` checks one file in isolation, ``validate_all`` the cross-entry rules
 (unique IDs/codes, symmetric borders, dependency targets). Both return a list of problems;
 the tests and ``python -m cotw validate`` assert that it is empty.
+
+The required languages are the registered ones (``cotw.languages``): every text map needs each
+of them, and no other. An optional map (``name_label``, ``formal_name``, ``capitals[].label``) is
+either absent or complete. Texts use the typographic apostrophe ’, never a straight ``'``.
 """
 
 from __future__ import annotations
@@ -12,7 +16,9 @@ from pathlib import Path
 
 import yaml
 
+from . import languages
 from .paths import COUNTRIES
+from .wikidata import wikipedia_url
 
 STATUSES = ("sovereign", "dependency", "disputed")
 ROLES = (
@@ -25,7 +31,6 @@ ROLES = (
     "de_facto",
     "proclaimed",
 )
-LANGUAGES = ("en", "de")  # required languages; more may be added per entry
 FIELD_ORDER = (
     "id",
     "iso2",
@@ -64,17 +69,25 @@ def _check_text_map(value, where: str, problems: list[str], required: bool = Tru
     if not isinstance(value, dict):
         problems.append(f"{where}: must be a mapping of language → text")
         return
-    for lang in LANGUAGES:
-        if required and not value.get(lang):
-            problems.append(f"{where}.{lang}: missing")
+    for lang in languages.LANGUAGES:
+        if (required or value) and not value.get(lang):
+            problems.append(f"{where}.{lang}: missing" + ("" if required else " (present in other languages)"))
     for lang, text in value.items():
-        if not isinstance(text, str) or not text.strip():
+        if lang not in languages.LANGUAGES:
+            problems.append(f"{where}.{lang}: not a registered language {languages.LANGUAGES}")
+        elif not isinstance(text, str) or not text.strip():
             problems.append(f"{where}.{lang}: must be a non-empty string")
         elif text != text.strip():
             problems.append(f"{where}.{lang}: leading/trailing whitespace")
+        elif "'" in text:
+            problems.append(f"{where}.{lang}: straight apostrophe ' (use ’)")
 
 
-def validate_entry(entry: dict, path: Path | None = None, exceptions: dict | None = None) -> list[str]:
+def validate_entry(
+    entry: dict, path: Path | None = None, exceptions: dict | None = None, sitelinks: dict | None = None
+) -> list[str]:
+    """``sitelinks`` (``data/wikidata/sitelinks.json``): when given, every non-base language's
+    ``wikipedia`` link must be the item's article in that language, and absent without one."""
     problems: list[str] = []
     name = path.name if path else entry.get("id", "?")
     exceptions = exceptions or {}
@@ -164,14 +177,26 @@ def validate_entry(entry: dict, path: Path | None = None, exceptions: dict | Non
         problems.append(f"{name}: regions must be a non-empty list of names (outermost first)")
 
     wiki = entry.get("wikipedia")
-    if not isinstance(wiki, dict) or not str(wiki.get("en", "")).startswith("https://en.wikipedia.org/wiki/"):
-        problems.append(f"{name}: wikipedia.en must be an en.wikipedia.org URL")
+    base = languages.BASE
+    if not isinstance(wiki, dict) or not str(wiki.get(base, "")).startswith(f"https://{base}.wikipedia.org/wiki/"):
+        problems.append(f"{name}: wikipedia.{base} must be a URL on {base}.wikipedia.org")
     elif isinstance(wiki, dict):
         for lang, url in wiki.items():
-            if not isinstance(url, str) or not url.startswith(f"https://{lang}.wikipedia.org/wiki/"):
+            if lang not in languages.LANGUAGES:
+                problems.append(f"{name}: wikipedia.{lang}: not a registered language {languages.LANGUAGES}")
+            elif not isinstance(url, str) or not url.startswith(f"https://{lang}.wikipedia.org/wiki/"):
                 problems.append(f"{name}: wikipedia.{lang} must be a {lang}.wikipedia.org URL")
             elif any(ch.isspace() for ch in url):
                 problems.append(f"{name}: wikipedia.{lang} contains whitespace")
+        if sitelinks is not None:
+            titles = sitelinks.get(entry.get("wikidata"), {})
+            for lang in languages.LANGUAGES:
+                if lang == base:
+                    continue  # chosen in the database, not taken from the sitelinks
+                if lang in titles and wiki.get(lang) != wikipedia_url(lang, titles[lang]):
+                    problems.append(f"{name}: wikipedia.{lang} must be {wikipedia_url(lang, titles[lang])} (sitelinks.json)")
+                elif lang not in titles and lang in wiki:
+                    problems.append(f"{name}: wikipedia.{lang} without a sitelink in sitelinks.json (the deck falls back to {base})")
     return problems
 
 

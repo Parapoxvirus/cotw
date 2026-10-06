@@ -97,7 +97,7 @@ def compute_adjacency(grouped: dict[str, list]) -> dict[str, list[str]]:
     from shapely import STRtree
     from shapely.ops import unary_union
 
-    geoms = {iso: unary_union([u["geom"] for u in us]).buffer(0) for iso, us in grouped.items()}
+    geoms = {iso: unary_union([u["geom"] for u in parts]).buffer(0) for iso, parts in grouped.items()}
     isos = sorted(geoms)
     tree = STRtree([geoms[i] for i in isos])
     adjacency: dict[str, set[str]] = {i: set() for i in isos}
@@ -123,7 +123,7 @@ def build(iso2_codes: set[str], cache: Path = CACHE) -> dict:
     return {
         "source": f"Natural Earth {NE_NAME} v{version} ({NE_URL}), public domain",
         "units": {
-            iso: sorted(u["name"] for u in us) for iso, us in sorted(grouped.items())
+            iso: sorted(u["name"] for u in parts) for iso, parts in sorted(grouped.items())
         },
         "folded": {k: {"into": v[0], "reason": v[1]} for k, v in sorted(FOLD_UNITS.items())},
         "ignored": sorted(f"{u['name']} ({u['gu_a3']})" for u in ignored),

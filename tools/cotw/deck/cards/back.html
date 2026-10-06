@@ -1,0 +1,31 @@
+[#- Back: answer + prompt, the globe (every back, DECISIONS B8), full info on demand. #]
+[% import 'macros.html' as m with context %]
+[% set info_button %]
+<span class="cotw-info-button" role="button" onclick="this.closest('.cotw').classList.toggle('cotw-show-info')">[[ ui.show_info ]]</span>
+[% endset %]
+<div class="cotw cotw-[[ code ]]">
+  <!-- [[ comments.answer ]] -->
+  <div class="cotw-box">
+    [[ m.attr_row(asked, 'cotw-answer') | trim | indent(4) ]]
+    [[ m.attr_row(shown) | trim | indent(4) ]]
+[% if 'maps' not in (asked, shown) %]
+    [[ m.row(icons['maps'], m.globe_map(True)) | trim | indent(4) ]]
+[% endif %]
+  </div>
+  <!-- [[ comments.info ]] -->
+  <div class="cotw-box cotw-info-button-box">
+    [[ m.row('icon-info', info_button, 'cotw-info-toggle') | trim | indent(4) ]]
+  </div>
+  <div class="cotw-box cotw-info">
+    [[ m.title_row(ui.info_title) | trim | indent(4) ]]
+[% for attr in rest %]
+    [[ m.attr_row(attr, with_globe=False) | trim | indent(4) ]]
+[% endfor %]
+  </div>
+  <!-- [[ comments.buttons ]] -->
+  [[ m.buttons(wikipedia=True) | trim | indent(2) ]]
+  <!-- [[ comments.help ]] -->
+  [[ m.help() | trim | indent(2) ]]
+</div>
+<!-- [[ comments.globe ]] -->
+[[ globe_script ]]

@@ -7,9 +7,13 @@ from pathlib import Path
 import pytest
 import yaml
 
-from cotw import schema
+from cotw import languages, schema
 from cotw.importer import dump_entry
 from cotw.source import slugify, sort_key
+
+
+def _text(text: str) -> dict:
+    return dict.fromkeys(languages.LANGUAGES, text)
 
 
 def _entry(**overrides) -> dict:
@@ -19,11 +23,11 @@ def _entry(**overrides) -> dict:
         "iso3": "XAA",
         "wikidata": "Q1",
         "status": "sovereign",
-        "name": {"en": "Musterland", "de": "Musterland"},
-        "formal_name": {"en": "Republic of Musterland", "de": "Republik Musterland"},
+        "name": _text("Musterland"),
+        "formal_name": {**_text("Republic of Musterland"), "de": "Republik Musterland"},
         "capitals": [
             {
-                "name": {"en": "Musterhausen", "de": "Musterhausen"},
+                "name": _text("Musterhausen"),
                 "role": "capital",
                 "wikidata": "Q2",
                 "lat": 47.5,
@@ -57,6 +61,10 @@ def test_valid_entry_has_no_problems():
         ({"wikipedia": {"en": "http://example.com"}}, "wikipedia"),
         ({"wikipedia": {"en": "https://en.wikipedia.org/wiki/Musterland", "de": "https://en.wikipedia.org/wiki/Musterland"}}, "wikipedia.de"),
         ({"wikipedia": {"en": "https://en.wikipedia.org/wiki/Muster land"}}, "whitespace"),
+        ({"name": {**_text("Musterland"), "xx": "Musterland"}}, "name.xx: not a registered language"),
+        ({"formal_name": {"xx": "Musterland"}}, "formal_name.xx: not a registered language"),
+        ({"wikipedia": {"en": "https://en.wikipedia.org/wiki/Musterland", "xx": "https://xx.wikipedia.org/wiki/M"}},
+         "wikipedia.xx: not a registered language"),
     ],
 )
 def test_invalid_entries(override, fragment):
@@ -64,13 +72,43 @@ def test_invalid_entries(override, fragment):
     assert any(fragment in p for p in problems), problems
 
 
+@pytest.mark.parametrize("code", languages.LANGUAGES)
+def test_every_registered_language_is_required(code):
+    name = {k: v for k, v in _text("Musterland").items() if k != code}
+    capital = dict(_entry()["capitals"][0], name={k: v for k, v in _text("Musterhausen").items() if k != code})
+    problems = schema.validate_entry(_entry(name=name, capitals=[capital]), Path("001-musterland.yaml"))
+    assert f"001-musterland.yaml: name.{code}: missing" in problems
+    assert f"001-musterland.yaml: capitals[0].name.{code}: missing" in problems
+
+
+
+@pytest.mark.parametrize("code", languages.LANGUAGES)
+def test_optional_map_present_needs_every_language(code):
+    """``name_label``, ``formal_name`` and ``capitals[].label``: absent, or in every language."""
+    partial = {k: v for k, v in _text("note").items() if k != code}
+    capital = dict(_entry()["capitals"][0], label=partial)
+    problems = schema.validate_entry(_entry(name_label=partial, formal_name=partial, capitals=[capital]))
+    for where in ("name_label", "formal_name", "capitals[0].label"):
+        assert f"001: {where}.{code}: missing (present in other languages)" in problems
+    complete = dict(_entry()["capitals"][0], label=_text("note"))
+    assert schema.validate_entry(_entry(name_label=_text("note"), capitals=[complete])) == []
+    no_formal = {k: v for k, v in _entry().items() if k != "formal_name"}
+    assert schema.validate_entry(no_formal) == []
+
+
+def test_straight_apostrophe_is_rejected():
+    e = _entry(formal_name={**_text("The People's Republic of Musterland"), "de": "Volksrepublik Musterland"})
+    assert schema.validate_entry(e) == ["001: formal_name.en: straight apostrophe ' (use ’)"]
+    capital = dict(_entry()["capitals"][0], name=_text("Nukuʻalofa"), label=_text("Côte d’Ivoire"))
+    assert schema.validate_entry(_entry(name=_text("People’s Musterland"), capitals=[capital])) == []
+
 def test_dependency_needs_parent():
     problems = schema.validate_entry(_entry(status="dependency"), Path("001-musterland.yaml"))
     assert any("dependency_of" in p for p in problems)
 
 
 def test_capital_without_coordinates_needs_exception():
-    cap = {"name": {"en": "Nirgendwo", "de": "Nirgendwo"}, "role": "capital", "wikidata": "Q3"}
+    cap = {"name": _text("Nirgendwo"), "role": "capital", "wikidata": "Q3"}
     e = _entry(capitals=[cap])
     assert any("coordinates" in p for p in schema.validate_entry(e))
     assert schema.validate_entry(e, exceptions={"no_capital_coordinates": {"001": "test"}}) == []

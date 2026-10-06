@@ -695,6 +695,24 @@ test('mouse hover is coalesced into one frame and selects tooltip + fill togethe
   assert.equal(g.tip.style.display, 'none');
 });
 
+test('the tooltip speaks data-lang as given, English for a language without names', () => {
+  const r = backReviewer(), g = r.globe();
+  const hover = lang => {
+    g.el.attrs['data-lang'] = lang;
+    g.configure();
+    g.handlers.pointermove(mouse(r, g, NORTH_KOREA)); r.frame();
+    const text = g.tip.textContent;
+    g.handlers.pointerleave({ pointerType: 'mouse' }); r.frame();
+    return text;
+  };
+  assert.equal(hover('de'), 'Nordkorea');
+  assert.equal(hover('en'), 'North Korea');
+  assert.equal(r.world().meta[NORTH_KOREA].name.xx, undefined);
+  assert.equal(hover('xx'), 'North Korea', 'no names in that language: the English ones');
+  r.world().meta[NORTH_KOREA].name.xx = 'Nordkorea (xx)';  // a newly registered language
+  assert.equal(hover('xx'), 'Nordkorea (xx)');
+});
+
 test('the entry under the pointer shows its tooltip but keeps its own green', () => {
   const r = backReviewer(), g = r.globe();
   const fills = r.fills.length;

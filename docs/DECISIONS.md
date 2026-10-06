@@ -24,6 +24,20 @@ Agreed 2026-09-24. Spelling throughout the project (code, fields, docs, deck tex
    (US spelling, fixed typos, one scheme per language note type). No population, area, languages, currency.
    Neighbor list errors in the spreadsheet (B1–B14) are fixed from official data.
 
+Added 2026-10-05, numbered after the last decision so existing references stay valid
+(sources and rules per language: [`TRANSLATING.md`](TRANSLATING.md)):
+
+17. **German: Swiss spelling, ss never ß.** The German deck writes `ss`, never `ß`
+    ("Weissrussland", "Grossherzogtum Luxemburg"), following the Swiss Federal Chancellery's
+    *Schreibweisungen*. Forms taken from German, Austrian or EU sources are written without ß.
+    The EDA *Liste der Staatenbezeichnungen* is the primary DE naming source; the lists of the
+    Auswärtiges Amt and the StAGN are cross-checks only.
+18. **Official changes are applied as soon as possible.** The primary source of a language
+    decides only where official sources disagree; it is not a reason to wait. If it has not
+    caught up with a change yet, COTW follows the current official publications (other
+    national name lists, UN/UNTERM, government decrees). The language's spelling rules still
+    apply.
+
 ## B · Globe in Anki
 
 6. One shared renderer `_cotw-globe.js` with an embedded world map at L2, the coarsest level
@@ -101,9 +115,9 @@ undone later. Deleting card types instead would force a full sync and can't be u
     Proven by an import test with the `anki` package. Details: [`DECK.md`](DECK.md).
     **No backward compatibility** with the old deck (clean break). Note GUIDs are derived
     deterministically from COTW ID + language, so they stay stable across all future builds.
-15. **Change monitoring:** a weekly scheduled job on our own Gitea runner compares the
-    database with Wikidata and opens an issue for each deviation. Nothing is applied
-    without approval.
+15. **Change monitoring:** a weekly scheduled Gitea Actions job
+    (`.gitea/workflows/wikidata-check.yml`) compares the database with Wikidata and opens an
+    issue for each deviation. Nothing is applied without approval.
 16. **Publishing:** development on Gitea for now, GitHub later. Deck, data and code: public domain (CC0),
     except the Marine Regions geometry (CC BY 4.0, attribution required).
 

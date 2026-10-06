@@ -1,20 +1,32 @@
 # Deck build
 
-`python -m cotw build-deck` builds one Anki package per language from the database:
+`python -m cotw build-deck` builds one Anki package per registered language from the database:
 
 ```bash
-.venv/bin/python -m cotw build-deck            # build/COTW-EN.apkg + build/COTW-DE.apkg + build/deck-preview.html
+.venv/bin/python -m cotw build-deck            # build/COTW-<LANG>.apkg for every language (today EN, DE) + build/deck-preview.html
 .venv/bin/python -m cotw build-deck --lang de  # one language only
 .venv/bin/python -m cotw build-deck --only RU,KR,ZA,CW,CH,VA,SJ,KI,BO,ID --out build/rc2   # test package
 ```
 
-Both packages are designed to be installed **side by side in the same collection**, in any
-order, and each can be updated on its own later (DECISIONS 14). There is no combined EN+DE
-package any more. Code: `tools/cotw/deck/` (`lang.py` identities and texts, `templates.py`
-card templates, `style.css`, `build.py` package writer and preview). Settings that change
-without a code change (AnkiWeb links, contact, public repository URL): `data/deck.yaml`.
+The packages are designed to be installed **side by side in the same collection**, in any
+order, and each can be updated on its own later (DECISIONS 14). There is no combined
+multi-language package any more. Code: `tools/cotw/languages/` (one module per language:
+identities, names, UI and help texts, region names, the AnkiWeb link), `tools/cotw/deck/`
+(`lang.py` the language-neutral field keys and card types, `cards/` the card templates as
+Jinja2 sources rendered by `templates.py`, `style.css`, `build.py` package writer and preview).
+Settings that change without a code change (contact, public repository URL): `data/deck.yaml`.
+
+The card templates are what users see in Anki's card-template editor, so the sources in
+`cards/` are written as the indented, commented HTML they render to. Jinja runs with `[[ ]]` /
+`[% %]` delimiters, so Anki's `{{Field}}` syntax stays literal. Fields are written by key
+(`{{country}}`) and become the language's field names after rendering. A line break renders as
+a space only between inline content, so breaks go between flex items and blocks. Inline runs
+(name + label, the day/night icon pair) stay on one line. To check a template change,
+pixel-diff the deck preview (`deck-preview.html`) before and after it.
 
 ## What is in a package
+
+One package per registered language; EN and DE as the examples:
 
 | | EN | DE |
 |---|---|---|
@@ -32,24 +44,50 @@ without a code change (AnkiWeb links, contact, public repository URL): `data/dec
 ## Identities
 
 Every identity is a fixed constant or a pure derivation, never random, and differs per
-language, so nothing the EN package installs can collide with the DE package.
+language, so nothing one language's package installs can collide with another's.
 
 | What | EN | DE | Rule |
 |---|---|---|---|
-| Note type ID | `1829704095` | `1123558981` | frozen constants in `lang.py` |
+| Note type ID | `1829704095` | `1123558981` | frozen constants in `languages/<code>.py` |
 | Main deck ID | `1866953617` | `2041372721` | 〃 |
 | Extras deck ID | `1918702087` | `1539901401` | 〃 |
 | Note GUID | `guid_for("cotw", "en", id)` | `guid_for("cotw", "de", id)` | genanki's `guid_for` (SHA-256, base91) of COTW ID + language (DECISIONS 14); Switzerland: `C,F0URhk8F` / `B+v1yB?A&S` (pinned in a test) |
 | Card template names | `01 Country → Capital` … | `01 Land → Hauptstadt` … | see below |
 | Tags | `COTW-EN::…` | `COTW-DE::…` | one root per language |
 | CSS | one stylesheet per note type | the same stylesheet | Anki applies CSS per note type; every class carries the `cotw-` prefix, the root also `cotw-en` / `cotw-de` |
-| Note / card row IDs | build time × 1000 + 0 … | build time × 1000 + 50 000 … | Anki re-keys colliding row IDs anyway; matching uses the GUID |
+| Note / card row IDs | build time × 1000 + 0 … | build time × 1000 + 50 000 … | `id_offset`: build time × 1000 + offset; Anki re-keys colliding row IDs anyway, matching uses the GUID |
 
 The constants were derived once as
 `(int.from_bytes(sha256(f"cotw:{lang}:{kind}").digest()[:4], "big") >> 1) | 1 << 30` for
-`kind` = `notetype`, `deck`, `deck-extras`; a test recomputes them. **Never change them**:
-Anki matches note types by ID and notes by GUID, so a new value would install a second note
-type or a second copy of every note in every user's collection.
+`kind` = `notetype`, `deck`, `deck-extras` (`languages.derive_id`); a test recomputes them.
+**Never change them**: Anki matches note types by ID and notes by GUID, so a new value would
+install a second note type or a second copy of every note in every user's collection.
+
+### A new language
+
+A language is one module, `tools/cotw/languages/<code>.py` (ISO 639-1 code), exporting
+`LANGUAGE`; the registry finds it without a list to maintain. The base language `en` comes
+first, the others follow by code, and every command, the build order and the globe's names
+follow the registry. Copy `en.py` and translate it; then:
+
+- **IDs:** write `derive_id(code, "notetype")`, `derive_id(code, "deck")` and
+  `derive_id(code, "deck-extras")` into the module as constants (computed once, never at build
+  time). From the first release on they are frozen.
+- **`id_offset`:** the next free multiple of 50 000 (EN 0, DE 50 000, the next language
+  100 000). A test checks that IDs, offsets, tag roots, note type and deck names are unique.
+- **Names:** note type `COTW (<CODE>)`, tag root `COTW-<CODE>`, deck and subdeck in the
+  language; `regions` names every M49 region of `data/tags.txt`; `object_form` gives the
+  sovereign's form after *dependency of …* (a test pins it for every parent).
+- **`ankiweb`:** the language's AnkiWeb listing, once it exists; until then (`None`) the help
+  links the EN listing.
+- **Data:** `name.<code>` for every entry and every capital (`python -m cotw validate`
+  requires them), `wikipedia.<code>` from the sitelinks (`python -m cotw fetch-wikipedia`).
+
+`build-deck` then builds `COTW-<CODE>.apkg` as well. To show that a code change leaves the
+existing packages untouched, build before and after with the same `SOURCE_DATE_EPOCH` and
+compare: `python tools/compare_packages.py build/before build/after` (package hash, zip
+members, media, notes, note types, decks, cards; `--normalize-assets` when a template asset
+changed on purpose).
 
 ### Tags
 
@@ -61,8 +99,9 @@ type or a second copy of every note in every user's collection.
 | `COTW-EN::Africa::Sub-Saharan-Africa::Southern-Africa` | `COTW-DE::Afrika::Subsahara-Afrika::Südliches-Afrika` |
 | `COTW-EN::Status::Sovereign` / `Dependency` / `Disputed` | `COTW-DE::Status::Souverän` / `Abhängiges-Gebiet` / `Umstritten` |
 
-A search for `tag:COTW-EN::Europe` or a filtered deck on it never pulls DE cards. German
-region names live in `lang.REGIONS_DE`; a test checks that every region of the taxonomy has one.
+A search for `tag:COTW-EN::Europe` or a filtered deck on it never pulls DE cards. The region
+names of each language live in its module (`regions`); a test checks that every region of the
+taxonomy has one in every language.
 
 ## Fields
 
@@ -82,8 +121,8 @@ sort field.
 | 13, 14 | Map 1, Map 2 | Karte 1, Karte 2 | Map 1, Map 2 | both files of the map: `<img class="cotw-day" src="cotw-<id>-map1-day.svg"><img class="cotw-night" src="cotw-<id>-map1-night.svg">`, the same for map 2 (see *Night mode*) |
 | 15 | Locator | Locator | Globe | the COTW ID ([`GLOBE.md`](GLOBE.md)) |
 | 16 | Borders | Nachbarländer | Borders | neighbors in that language, sorted by name, each with its flag (v3: flag + ISO code) |
-| 17 | Wikipedia | Wikipedia | EN Wiki URL | `wikipedia.<lang>`; DE falls back to EN where no German article exists (only Svalbard and Jan Mayen) |
-| 18 | Dependency Of | Abhängig von | (EN/DE Country Label) | the sovereign as it reads in *dependency of …* / *abhängiges Gebiet von …*: `the United Kingdom`, `dem Vereinigten Königreich` (`lang.DATIVE_DE`); empty unless `status: dependency` |
+| 17 | Wikipedia | Wikipedia | EN Wiki URL | `wikipedia.<lang>`; falls back to EN where the language's Wikipedia has no article (DE: only Svalbard and Jan Mayen) |
+| 18 | Dependency Of | Abhängig von | (EN/DE Country Label) | the sovereign as it reads in *dependency of …* / *abhängiges Gebiet von …*: `the United Kingdom`, `dem Vereinigten Königreich` (`object_form` of the language); empty unless `status: dependency` |
 | 19 | Status | Status | (tag only) | `status disputed` / `Status umstritten` for disputed entries, else empty |
 
 Fields 18 and 19 are rendered under the name via conditionals (DECISIONS A2), e.g.
@@ -131,8 +170,9 @@ help section.
   pixel diff of all 10 card types (front, help, back with full info) in EN/DE, day/night, for
   Switzerland and Greenland: identical to the one-line templates of 1.0.1.
 - **Help** per language (EN adapted from v3, DE written in German; it also explains the
-  light-blue economic zone and the 12 nm line on the maps), with the AnkiWeb page from
-  `data/deck.yaml` and the contact `info@feldbuch.com`.
+  light-blue economic zone and the 12 nm line on the maps), with the language's AnkiWeb page
+  (`ankiweb` in its module, the EN page while it has none) and the contact `info@feldbuch.com`
+  from `data/deck.yaml`.
 - **Night mode follows Anki only:** its `.nightMode` class (desktop, AnkiMobile) or
   `.night_mode` (AnkiDroid, older clients) on the card, body or html. The system color scheme
   is ignored: with Anki set to light and the OS dark, the cards stayed dark in rc1. No
@@ -171,9 +211,9 @@ The v3 infographics (`assets/ui/_cotw-ui-infographic.png`, `…-filtered.png`, 1
 had an opaque beige background and black lines that vanished in night mode, and their design
 file no longer exists. They are rebuilt as SVG (`tools/cotw/ui.py`), *generated*, from:
 
-- the five Phosphor icons we ship (`assets/ui/`: bank = capital, flag, map, hash = ISO,
-  squares-four = borders) and the center square (Phosphor's square = our country icon), their
-  path data verbatim, all at one scale (1.285) on the PNG's 330 px row grid;
+- the five Phosphor icons COTW ships (`assets/ui/`: bank = capital, flag, map, hash = ISO,
+  squares-four = borders) and the center square (Phosphor's square = the COTW country icon),
+  their path data verbatim, all at one scale (1.285) on the PNG's 330 px row grid;
 - two curly braces as stroked cubic Béziers (20 px, round caps).
 
 Scale, offsets and the braces' control points were fitted to the PNGs by maximizing the
@@ -189,7 +229,7 @@ grays the extras exactly as the PNG does: ISO code and bordering countries in bo
 and the map in the right column (*Country → Map*); the left map (*Map → Country*) is a
 recommended card type and stays dark. The PNGs are no longer shipped.
 
-`<hash8>` is the first 8 hex digits of the file's SHA-256. Both packages of one build carry the
+`<hash8>` is the first 8 hex digits of the file's SHA-256. All packages of one build carry the
 same files under the same names, so Anki stores them once (tested).
 
 ### Version skew: updating one package only
@@ -214,8 +254,8 @@ So:
   both decks share it again; the original file is then unused and *Check Media* offers to
   delete it. Nothing breaks at any step.
 
-`tests/test_deck_import.py` proves all of this with the real `anki` package: both import
-orders, a repeated import, and a simulated later EN release (changed map, changed globe,
+`tests/test_deck_import.py` proves all of this with the real `anki` package for every
+registered language: both import orders, a repeated import, and a simulated later EN release (changed map, changed globe,
 changed capital) imported next to the old DE package and then followed by the DE update.
 
 Two rules follow for later releases:
@@ -249,9 +289,9 @@ gives a byte-identical `.apkg` (tested); across machines a different zlib or SQL
 ## Why genanki
 
 [genanki](https://github.com/kerrickstaley/genanki) (MIT) writes the package without an Anki
-installation and lets us set every ID, GUID and timestamp. The `anki` package (AGPL-3.0) is
-the reference implementation but creates IDs and timestamps from the clock and brings a
-large binary; it is used only as a test dependency to prove the import (`dev` extra), never
+installation and lets the build set every ID, GUID and timestamp. The `anki` package
+(AGPL-3.0) is the reference implementation but creates IDs and timestamps from the clock and
+brings a large binary; it is used only as a test dependency to prove the import (`dev` extra), never
 shipped and never imported by the build. genanki lacks three things the build adds:
 per-card-type deck placement (a SQL update after writing), pinned collection timestamps and a
 deterministic zip.
@@ -260,7 +300,7 @@ deterministic zip.
 
 `build/deck-preview.html` renders every card type, front and back, day and night, for
 Switzerland, Greenland (dependency), South Africa and Bolivia (several capitals) and Vatican
-City, in both languages, with the real CSS, media and globe. It uses the same template
+City, in every registered language, with the real CSS, media and globe. It uses the same template
 renderer as the tests. Query parameters narrow it down:
 `?lang=de&ids=217&side=back&mode=night&types=01,05&open=info,help&w=380`. Serve the `build/`
 directory over HTTP (`python3 -m http.server -d build`) so the globe script loads.

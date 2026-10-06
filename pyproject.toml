@@ -4,14 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cotw"
-version = "1.0.2"
+version = "1.0.3"
 description = "Countries of the World (COTW): country database and Anki deck build pipeline"
 readme = "README.md"
 license = "CC0-1.0"
 requires-python = ">=3.11"
 authors = [{ name = "Parapoxvirus" }]
 # genanki (MIT) writes the .apkg; see docs/DECK.md for why genanki and not the anki package.
-dependencies = ["pyyaml>=6.0", "genanki>=0.13"]
+# Jinja2 (BSD-3-Clause) renders the card templates from tools/cotw/deck/cards/.
+dependencies = ["pyyaml>=6.0", "genanki>=0.13", "jinja2>=3.1"]
 
 [project.optional-dependencies]
 # Network / geometry extras: refreshing the caches and rendering the maps. The committed
@@ -35,4 +36,4 @@ pythonpath = ["tools"]
 testpaths = ["tests"]
 
 [tool.setuptools.package-data]
-"cotw.deck" = ["*.css"]
+"cotw.deck" = ["*.css", "cards/*.html"]

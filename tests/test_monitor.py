@@ -19,6 +19,13 @@ SHA_OLD = "a" * 40
 SHA_NEW = "b" * 40
 
 
+@pytest.fixture(autouse=True)
+def gitea_sink(monkeypatch):
+    """These tests cover the default sink: Gitea issues, no Paperclip settings."""
+    for name in ("PAPERCLIP_API_URL", "PAPERCLIP_API_KEY", "PAPERCLIP_COMPANY_ID", "PAPERCLIP_PROJECT_ID"):
+        monkeypatch.delenv(name, raising=False)
+
+
 def _entry(cid, iso2, iso3, qid, name_en, name_de, capital, cap_qid, lat, lon, de_title):
     return {
         "id": cid, "iso2": iso2, "iso3": iso3, "wikidata": qid, "status": "sovereign",

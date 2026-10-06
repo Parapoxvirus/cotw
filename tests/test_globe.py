@@ -11,6 +11,7 @@ import re
 import pytest
 import yaml
 
+from cotw import languages
 from cotw.paths import DERIVED, MEDIA, OVERRIDES, ROOT, STYLE
 
 SCRIPT = MEDIA / "_cotw-globe.js"
@@ -235,7 +236,7 @@ def test_names_and_centers(by_id, data):
     centers = yaml.safe_load((OVERRIDES / "centers.yaml").read_text(encoding="utf-8"))
     for cid, e in by_id.items():
         m = data["entries"][cid]
-        assert m["name"] == {"en": e["name"]["en"], "de": e["name"]["de"]}
+        assert m["name"] == {code: e["name"][code] for code in languages.LANGUAGES}
         lon, lat = m["c"]
         assert -180 <= lon <= 180 and -90 <= lat <= 90
         assert 1.0 <= m["z"] <= 2.5
@@ -266,7 +267,7 @@ def test_eez_hulls_for_entries_that_can_get_circles(by_id, bootstrap):
 
 def _js_number(name: str) -> float:
     m = re.search(rf"var {name} = ([\d./ e]+);", SOURCE.read_text(encoding="utf-8"))
-    return float(eval(m.group(1)))  # a literal or a quotient of literals from our own source
+    return float(eval(m.group(1)))  # a literal or a quotient of literals from the COTW globe source
 
 
 def test_palette_matches_palette_yaml(data):

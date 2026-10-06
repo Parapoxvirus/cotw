@@ -11,14 +11,15 @@ from .paths import COUNTRIES, OVERRIDES, REGION_TAGS, ROOT
 def cmd_validate(_args) -> int:
     import yaml
 
-    from . import schema
+    from . import schema, wikidata
 
     entries = schema.load_all(COUNTRIES)
     exc_file = OVERRIDES / "exceptions.yaml"
     exceptions = yaml.safe_load(exc_file.read_text(encoding="utf-8")) if exc_file.exists() else {}
+    sitelinks = wikidata.load_sitelinks() if wikidata.SITELINKS_CACHE.exists() else None
     problems = []
     for path, entry in entries.items():
-        problems += schema.validate_entry(entry, path, exceptions)
+        problems += schema.validate_entry(entry, path, exceptions, sitelinks)
     problems += schema.validate_all(entries, schema.load_regions_taxonomy(REGION_TAGS))
     for p in problems:
         print(p)
@@ -54,25 +55,27 @@ def cmd_fetch_wikidata(args) -> int:
 
 
 def cmd_fetch_wikipedia(args) -> int:
-    from . import schema, wikidata
+    from . import languages, schema, wikidata
     from .importer import dump_entry
 
+    base = languages.BASE
     entries = schema.load_all(COUNTRIES)
     if not args.offline:
         wikidata.dump(wikidata.SITELINKS_CACHE, wikidata.fetch_sitelinks([e["wikidata"] for e in entries.values()]))
     sitelinks = wikidata.load_sitelinks()
     changed, fallback = 0, []
     for path, entry in entries.items():
-        links = wikidata.wikipedia_links(entry["wikipedia"]["en"], sitelinks.get(entry["wikidata"]))
-        if "de" not in links:
-            fallback.append(f"{entry['id']} {entry['name']['en']}")
+        links = wikidata.wikipedia_links(entry["wikipedia"][base], sitelinks.get(entry["wikidata"]))
+        for code in languages.LANGUAGES:
+            if code not in links:
+                fallback.append((code, f"{entry['id']} {entry['name'][base]}"))
         if links != entry["wikipedia"]:
             entry["wikipedia"] = links
             path.write_text(dump_entry(entry), encoding="utf-8")
             changed += 1
-    for f in fallback:
-        print(f"no dewiki article, deck falls back to EN: {f}")
-    print(f"{changed} entries updated, {len(fallback)} without a German article")
+    for code, f in fallback:
+        print(f"no {languages.get(code).wiki} article, deck falls back to {base.upper()}: {f}")
+    print(f"{changed} entries updated, {len(fallback)} missing articles")
     return 0
 
 
@@ -169,9 +172,10 @@ def cmd_build_ui(args) -> int:
 def cmd_build_deck(args) -> int:
     from pathlib import Path
 
+    from . import languages
     from .deck import build
 
-    langs = [args.lang] if args.lang else ["en", "de"]
+    langs = [args.lang] if args.lang else list(languages.LANGUAGES)
     out = Path(args.out) if args.out else build.BUILD
     try:
         built = build.build(langs, out, only=args.only)
@@ -199,6 +203,12 @@ def cmd_check_wikidata(args) -> int:
     return monitor.check(args.dry_run, args.max_issues, args.gitea_url, args.repo)
 
 
+def cmd_import_monitor_issues(args) -> int:
+    from . import monitor
+
+    return monitor.import_issues(args.apply, args.gitea_url, args.repo)
+
+
 def cmd_accept_wikidata(args) -> int:
     from . import monitor
 
@@ -215,13 +225,15 @@ def cmd_import(args) -> int:
 
 
 def main(argv: list[str] | None = None) -> int:
+    from . import languages
+
     parser = argparse.ArgumentParser(prog="cotw", description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("validate", help="check data/countries against the schema").set_defaults(func=cmd_validate)
     fw = sub.add_parser("fetch-wikidata", help="refresh data/wikidata/*.json (network)")
     fw.add_argument("--step", choices=["all", "countries", "capitals", "places", "status", "iso-codes"], default="all")
     fw.set_defaults(func=cmd_fetch_wikidata)
-    fwp = sub.add_parser("fetch-wikipedia", help="Wikidata sitelinks → wikipedia.de in data/countries (network)")
+    fwp = sub.add_parser("fetch-wikipedia", help="Wikidata sitelinks → wikipedia.<lang> in data/countries (network)")
     fwp.add_argument("--offline", action="store_true", help="reuse data/wikidata/sitelinks.json")
     fwp.set_defaults(func=cmd_fetch_wikipedia)
     sub.add_parser("fetch-naturalearth", help="download Natural Earth, recompute data/derived/ne-borders.yaml (network)").set_defaults(func=cmd_fetch_naturalearth)
@@ -236,17 +248,22 @@ def main(argv: list[str] | None = None) -> int:
     bu = sub.add_parser("build-ui", help="write media/ui/ (row icons and infographics per mode, from assets/ui)")
     bu.add_argument("--check", action="store_true", help="compare the infographics with the v3 PNGs, write overlays to build/ (needs shapely + Pillow)")
     bu.set_defaults(func=cmd_build_ui)
-    bd = sub.add_parser("build-deck", help="build build/COTW-EN.apkg + COTW-DE.apkg and build/deck-preview.html")
-    bd.add_argument("--lang", choices=["en", "de"], help="one language only (default: both)")
+    bd = sub.add_parser("build-deck", help="build build/COTW-<LANG>.apkg per registered language and build/deck-preview.html")
+    bd.add_argument("--lang", choices=languages.LANGUAGES, help="one language only (default: every registered language)")
     bd.add_argument("--out", help="output directory (default: build/)")
     bd.add_argument("--only", nargs="+", metavar="ID|ISO2", help="only these entries: COTW IDs or ISO-2 codes, comma- or space-separated (e.g. --only RU,KR,ZA 217)")
     bd.set_defaults(func=cmd_build_deck)
-    cw = sub.add_parser("check-wikidata", help="compare the caches with live Wikidata/Commons, one issue per change (network)")
+    cw = sub.add_parser("check-wikidata", help="compare the caches with live Wikidata/Commons, one issue (or Paperclip task) per change (network)")
     cw.add_argument("--dry-run", action="store_true", help="print the would-be issues, write nothing (default without COTW_MONITOR_TOKEN)")
     cw.add_argument("--max-issues", type=int, default=20, help="new issues per run; the rest go into one summary issue (default 20)")
     cw.add_argument("--gitea-url", help="Gitea base URL (default: $GITHUB_SERVER_URL)")
     cw.add_argument("--repo", help="owner/name (default: $GITHUB_REPOSITORY)")
     cw.set_defaults(func=cmd_check_wikidata)
+    im = sub.add_parser("import-monitor-issues", help="seed the Paperclip sink's state branch with the fingerprints of the existing Gitea issues (network)")
+    im.add_argument("--apply", action="store_true", help="write the state (default: dry run)")
+    im.add_argument("--gitea-url", help="Gitea base URL (default: $GITHUB_SERVER_URL)")
+    im.add_argument("--repo", help="owner/name (default: $GITHUB_REPOSITORY)")
+    im.set_defaults(func=cmd_import_monitor_issues)
     aw = sub.add_parser("accept-wikidata", help="accept one deviation found by check-wikidata: update its cache keys (network)")
     aw.add_argument("fingerprint")
     aw.set_defaults(func=cmd_accept_wikidata)

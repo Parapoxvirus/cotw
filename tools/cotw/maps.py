@@ -142,11 +142,11 @@ class World:
         iso2 = {e["iso2"] for e in entries.values()}
         units = naturalearth._load_units(naturalearth.download())
         grouped, ignored = naturalearth.assign_units(units, iso2)
-        land = {iso: unary_union([u["geom"] for u in us]).buffer(0) for iso, us in grouped.items()}
+        land = {iso: unary_union([u["geom"] for u in parts]).buffer(0) for iso, parts in grouped.items()}
         core = {}
-        for iso, us in grouped.items():
-            own = [u["geom"] for u in us if u["gu_a3"] not in naturalearth.FOLD_UNITS]
-            if own and len(own) < len(us):
+        for iso, parts in grouped.items():
+            own = [u["geom"] for u in parts if u["gu_a3"] not in naturalearth.FOLD_UNITS]
+            if own and len(own) < len(parts):
                 core[iso] = unary_union(own).buffer(0)
         other = [u["geom"].buffer(0) for u in ignored]
         polys = [p for u in units for p in geometry.polygons(u["geom"])]

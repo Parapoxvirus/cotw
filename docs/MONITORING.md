@@ -2,8 +2,9 @@
 
 Step 5 of the [roadmap](ROADMAP.md), decisions **15** and **E · Flags** in
 [`DECISIONS.md`](DECISIONS.md): a weekly job compares what the database took from Wikidata and
-Wikimedia Commons with the live state and opens **one Gitea issue per change**. Nothing is
-applied automatically; every issue is accepted or rejected by hand.
+Wikimedia Commons with the live state and opens **one Gitea issue per change** (or one task in a
+Paperclip project, see [Paperclip sink](#paperclip-sink)). Nothing is applied automatically;
+every issue is accepted or rejected by hand.
 
 ## How it runs
 
@@ -17,8 +18,8 @@ applied automatically; every issue is accepted or rejected by hand.
   .venv/bin/python -m cotw check-wikidata --dry-run
   ```
 
-- All reads (Wikidata, Commons, the damping look-ups, the existing issues) happen before the
-  first write. A network failure fails the job and opens no issue.
+- All reads (Wikidata, Commons, the damping look-ups, the existing issues or the Paperclip
+  state) happen before the first write. A network failure fails the job and opens no issue.
 - Wikimedia etiquette: the requests carry the `User-Agent` from `COTW_USER_AGENT` (default
   `cotw-build/1.0 (https://github.com/Parapoxvirus/cotw)`, as for the flags), queries are
   batched (25–150 items per SPARQL query, 50 per API call), and 429/5xx answers are retried with
@@ -96,7 +97,71 @@ shows only the permissions the token has on the repository.
 If the built-in token may not create issues (the run fails with HTTP 401/403), create the
 secret: a Gitea access token of an account with write access to this repository, scopes
 **`write:issue`** and **`read:repository`**, stored as repository secret
-`COTW_MONITOR_TOKEN` (*Settings → Actions → Secrets*).
+`COTW_MONITOR_TOKEN` (*Settings → Actions → Secrets*). With the Paperclip sink the token also
+writes the state branch: the workflow requests `permissions: contents: write`, and a secret
+needs **`write:repository`** instead of `read:repository`.
+
+## Paperclip sink
+
+Instead of Gitea issues the monitor can create **tasks in a Paperclip
+project**. It is selected when all four of these are set; otherwise nothing changes:
+
+| Variable | Workflow source | Meaning |
+|---|---|---|
+| `PAPERCLIP_API_URL` | `vars.PAPERCLIP_API_URL` | API base, ending in `/api` (e.g. `https://paperclip.example.com/api`) |
+| `PAPERCLIP_API_KEY` | `secrets.PAPERCLIP_TASK_KEY` | key sent as `Authorization: Bearer …`, never printed |
+| `PAPERCLIP_COMPANY_ID` | `vars.PAPERCLIP_COMPANY_ID` | company the tasks are created in |
+| `PAPERCLIP_PROJECT_ID` | `vars.PAPERCLIP_PROJECT_ID` | project the tasks are created in |
+| `PAPERCLIP_ASSIGNEE_AGENT_ID` | `vars.PAPERCLIP_ASSIGNEE_AGENT_ID` | optional: agent the tasks are assigned to |
+| `COTW_MONITOR_STATE_BRANCH` | `vars.COTW_MONITOR_STATE_BRANCH` | optional: state branch (default `cotw-monitor-state`) |
+
+Each task has the title and description an issue would have (fingerprint marker included) and
+starts as `todo`. The key only needs to **create tasks and read the tasks it created**; a
+restricted task bridge key that cannot list, update or comment is enough.
+
+**State branch.** Such a key cannot search the project for a fingerprint, so the monitor keeps
+what it filed in `cotw-monitor-state.json` on the branch `cotw-monitor-state` of this
+repository, read and written with the Gitea contents API and `COTW_MONITOR_TOKEN`. The branch is
+created from the default branch on the first write; nobody merges it.
+
+```json
+{"version": 1,
+ "filed":   {"<fingerprint>": {"task_id": "…", "identifier": "ABC-12", "title": "…", "filed_at": "…"}},
+ "decided": {"<fingerprint>": {"source": "paperclip-done:ABC-12", "decided_at": "…"}},
+ "summary": {"task_id": "…", "identifier": "ABC-13"}}
+```
+
+Every run:
+
+1. reads the state and the status of every `filed` task. **Done or cancelled** (or another
+   terminal status, or deleted) moves the fingerprint to `decided`: like a closed issue, it is
+   never filed again. Accept or reject the change as below, then close or cancel the task;
+2. files tasks for deviations whose fingerprint is neither filed nor decided, at most
+   `--max-issues`, non-free flags first;
+3. puts the rest into one summary task. The key cannot update a task, so the summary is filed
+   once and left alone; when it is closed and deviations are still waiting, the next run files a
+   new one;
+4. writes the state in one commit, also when creating a task failed halfway, so a created task
+   is never filed twice.
+
+A dry run reads the state and the task statuses and writes nothing. Without
+`COTW_MONITOR_TOKEN` (or repository/URL) there is no state, so it is always a dry run.
+
+### Switching from issues to tasks
+
+Issues filed before the switch must not come back as tasks. Once, before the first real run
+with the Paperclip sink, seed the state with every fingerprint found in the repository's issues:
+closed ones as `gitea-closed:<number>`, open ones as `gitea-open:<number>` (migrate those by
+hand). Both count as decided. The import is idempotent and a dry run without `--apply`:
+
+```bash
+.venv/bin/python -m cotw import-monitor-issues          # preview
+.venv/bin/python -m cotw import-monitor-issues --apply  # write the state branch
+```
+
+It needs `GITHUB_SERVER_URL`/`GITHUB_REPOSITORY` (or `--gitea-url`/`--repo`) and
+`COTW_MONITOR_TOKEN`. In CI: run the workflow by hand with `import_issues` on (and `dry_run`
+off to write).
 
 ## Accept a change
 

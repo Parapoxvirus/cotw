@@ -32,7 +32,7 @@ the coast stroke was drawn, and the zoom.
 |---|---|
 | `class="cotw-globe"` | Required. Every such element on the card gets a globe. |
 | `data-id` | Required. The COTW ID, i.e. the note field `Locator` (DECISIONS B6). An unknown ID shows a plain globe. |
-| `data-lang` | `en` (default) or `de`: language of the tooltip. |
+| `data-lang` | Language code of the tooltip, as given (`en`, `de`, any registered language); default `en`. A language without names in the globe data shows the English ones. |
 | `data-tooltip` | Present = the back side's tooltip is on (hover with a mouse, tap on touch devices shows the country name and gives that country the quiet `selected` fill). **Absent by default**, and it must stay absent on the front of *Map → Country* (DECISIONS B8): no text at all. `data-tooltip="false"` also switches it off. |
 
 The deck builder supplies content-hashed filenames for **all three** scripts. Each optional
@@ -229,7 +229,7 @@ Independent packets remap only their own referenced arcs, keeping shared boundar
   part is not entirely on the visible hemisphere or the circle would exceed 0.45 × side
   (zoomed in). The globe has no 12 nm line, so there is no crossing check.
 - **Tooltip and selection** (opt-in, see above): the name of the entry under the pointer
-  (inside a highlight circle: the card's entry), in `data-lang`, from the embedded EN/DE names.
+  (inside a highlight circle: the card's entry), in `data-lang`, from the embedded names of every registered language (English where one is missing).
   Hit-testing inverts the projection and tests the entries' lon/lat rings of the finest decoded
   level. One selection drives both the tooltip and a quiet fill (`selected` in
   `data/style/palette.yaml`: day `#D5D7A4`, the land fill `#DAE6AF` blended 30 % toward

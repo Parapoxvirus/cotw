@@ -1,11 +1,10 @@
 # Deck settings that may change without a code change (docs/DECK.md).
 #
-# ankiweb:    the AnkiWeb page linked from each package's help section.
 # contact:    address in the help section (DECISIONS E).
 # repository: the public source repository (DECISIONS 16). Once set, the deck description
 #             links the flag license manifest there; until then it names the file.
-ankiweb:
-  en: https://ankiweb.net/shared/info/1365662043
-  de: https://ankiweb.net/shared/info/1416521286
+#
+# The AnkiWeb page linked from each package's help section is set per language
+# (``ankiweb`` in tools/cotw/languages/<code>.py).
 contact: info@feldbuch.com
 repository: https://github.com/Parapoxvirus/cotw
