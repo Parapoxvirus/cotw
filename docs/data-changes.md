@@ -168,12 +168,8 @@ capital of the sovereign states was checked against it; these are the deviations
 | AF Afghanistan | formal_name.pt | República Islâmica do Afeganistão | Emirado Islâmico do Afeganistão | Deliberate exception in every language (de facto situation); the Manual's note 1 names the form. |
 | CD Congo, DR | name.pt | o Congo (Kinshasa) *ou* a República Democrática do Congo | República Democrática do Congo | The second form of the Manual: the first one names the capital, which a Country → Capital card asks for. |
 | CG Congo, Republic | name.pt | o Congo (Brazzaville) *ou* a República do Congo | República do Congo | As above. |
-| GN Guinea | name.pt | a Guiné (Conacri) *ou* a República da Guiné | Guiné | As above; the Manual's note 34 allows “a Guiné” as the short form. |
-| AE United Arab Emirates | name.pt | os Emirados Árabes | Emirados Árabes Unidos | The Manual's note 25 allows the full name wherever the short form is used; it is the form of IBGE and of common use. |
-| US United States | name.pt | os Estados Unidos *ou* os EUA | Estados Unidos | The abbreviation is not a name to learn. |
-| MM Myanmar | name.pt | Myanmar | Myanmar (Birmânia) | The former name in brackets as in EN and DE. |
-| VA Holy See | name.pt | o Vaticano | Vaticano / Santa Sé | As in EN and DE; the Manual's note 69: the two names are used as synonyms. |
-| TW Taiwan | name.pt | Taiwan (China) | República da China (Taiwan) | De facto situation, as in EN and DE. |
+| GN Guinea | name.pt | a Guiné (Conacri) *ou* a República da Guiné | República da Guiné | As above. |
+| AE United Arab Emirates | name.pt | os Emirados Árabes (short form); os Emirados Árabes Unidos (official name) | Emirados Árabes Unidos | The official name; the Manual's note 25 allows it wherever the short form is used. The entry has no long form in EN and DE, so the short form alone would drop the official name from the card. |
 | IL Israel | capital | — (none listed, note 39) | Jerusalém, label “disputada” | As in EN and DE; the spelling is the Manual's (entry *Jerusalém*). |
 | LK Sri Lanka | capitals | Colombo (note 61: Sri Jayawardenepura Kotte, seat of the legislature) | Sri Jayawardenepura Kotte (capital), Colombo (sede do governo) | The same two capitals and roles in every language; spelling of the Manual's note. |
 | TO Tonga | capital | Nuku’alofa | Nukuʻalofa | COTW rule: the ʻokina is a letter, not an apostrophe. |
@@ -185,7 +181,6 @@ capital of the sovereign states was checked against it; these are the deviations
 | YE Yemen | capital 2 | — (only Sanaa listed) | Áden | Not in the Manual; the traditional Portuguese form. |
 | XK Kosovo | formal_name.pt, capital | “a autoproclamada ‘República do Kosovo’”; no capital | República do Kosovo; Pristina | De facto situation, as in EN and DE. |
 | EH Western Sahara | name.pt, formal_name.pt, capital | — | Saara Ocidental / República Saaraui; República Árabe Saaraui Democrática; El Aaiún | Not in the Manual; forms in common Brazilian use, the capital in the local form as in EN and DE. |
-| FK Falkland Islands | name.pt | ilhas Malvinas (note 6) | Ilhas Malvinas / Ilhas Falkland | The Manual's form first; the second is the name the other languages teach. |
 | Territories the Manual does not name | name.pt | — | Åland, Bermudas, Bonaire, Santo Eustáquio e Saba / Países Baixos Caribenhos, Ilha Bouvet, Território Britânico do Oceano Índico, Ilha Christmas, Ilhas Cocos / Ilhas Keeling, Terras Austrais e Antárticas Francesas, Gibraltar, Ilha Heard e Ilhas McDonald, Ilha Norfolk, Ilhas Marianas do Norte, Svalbard e Jan Mayen, Ilhas Virgens Americanas | No Brazilian official list covers them; forms in common Brazilian use (`docs/TRANSLATING.md`, Portuguese, point 3). |
 | Territories | formal_name.pt | — | Ilhas Åland, Território da Ilha Christmas, Bailiado de Guernsey, Bailiado de Jersey, Região Administrativa Especial de Hong Kong / de Macau da República Popular da China, Departamento de Mayotte, Território da Ilha Norfolk, Comunidade das Ilhas Marianas do Norte, Estado Livre Associado de Porto Rico, Território das Ilhas Wallis e Futuna | Not in the Manual; translations of the official long forms, entered because EN and DE have one (an optional name map is complete in every language). |
 
