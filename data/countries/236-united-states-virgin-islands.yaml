@@ -5,12 +5,16 @@ wikidata: Q11703
 status: dependency
 dependency_of: '237'
 name:
-  en: United States Virgin Islands / Virgin Islands of the United States
-  de: Amerikanische Jungferninseln
+  en-US: United States Virgin Islands / Virgin Islands of the United States
+  de-CH: Amerikanische Jungferninseln
+  pl-PL: Wyspy Dziewicze Stanów Zjednoczonych
+  pt-BR: Ilhas Virgens (Estados Unidos)
 capitals:
 - name:
-    en: Charlotte Amalie
-    de: Charlotte Amalie
+    en-US: Charlotte Amalie
+    de-CH: Charlotte Amalie
+    pl-PL: Charlotte Amalie
+    pt-BR: Charlotte Amalie
   role: capital
   wikidata: Q51681
   lat: 18.35
@@ -21,5 +25,7 @@ regions:
 - Latin America and the Caribbean
 - Caribbean
 wikipedia:
-  en: https://en.wikipedia.org/wiki/United_States_Virgin_Islands
-  de: https://de.wikipedia.org/wiki/Amerikanische_Jungferninseln
+  en-US: https://en.wikipedia.org/wiki/United_States_Virgin_Islands
+  de-CH: https://de.wikipedia.org/wiki/Amerikanische_Jungferninseln
+  pl-PL: https://pl.wikipedia.org/wiki/Wyspy_Dziewicze_Stanów_Zjednoczonych
+  pt-BR: https://pt.wikipedia.org/wiki/Ilhas_Virgens_Americanas

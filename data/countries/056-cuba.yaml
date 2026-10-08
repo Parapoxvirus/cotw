@@ -4,15 +4,21 @@ iso3: CUB
 wikidata: Q241
 status: sovereign
 name:
-  en: Cuba
-  de: Kuba
+  en-US: Cuba
+  de-CH: Kuba
+  pl-PL: Kuba
+  pt-BR: Cuba
 formal_name:
-  en: The Republic of Cuba
-  de: Republik Kuba
+  en-US: The Republic of Cuba
+  de-CH: Republik Kuba
+  pl-PL: Republika Kuby
+  pt-BR: República de Cuba
 capitals:
 - name:
-    en: Havana
-    de: Havanna
+    en-US: Havana
+    de-CH: Havanna
+    pl-PL: Hawana
+    pt-BR: Havana
   role: capital
   wikidata: Q1563
   lat: 23.13667
@@ -24,5 +30,7 @@ regions:
 - Latin America and the Caribbean
 - Caribbean
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Cuba
-  de: https://de.wikipedia.org/wiki/Kuba
+  en-US: https://en.wikipedia.org/wiki/Cuba
+  de-CH: https://de.wikipedia.org/wiki/Kuba
+  pl-PL: https://pl.wikipedia.org/wiki/Kuba
+  pt-BR: https://pt.wikipedia.org/wiki/Cuba

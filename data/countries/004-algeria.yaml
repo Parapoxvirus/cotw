@@ -4,15 +4,21 @@ iso3: DZA
 wikidata: Q262
 status: sovereign
 name:
-  en: Algeria
-  de: Algerien
+  en-US: Algeria
+  de-CH: Algerien
+  pl-PL: Algieria
+  pt-BR: Argélia
 formal_name:
-  en: The People’s Democratic Republic of Algeria
-  de: Demokratische Volksrepublik Algerien
+  en-US: The People’s Democratic Republic of Algeria
+  de-CH: Demokratische Volksrepublik Algerien
+  pl-PL: Algierska Republika Ludowo-Demokratyczna
+  pt-BR: República Argelina Democrática e Popular
 capitals:
 - name:
-    en: Algiers
-    de: Algier
+    en-US: Algiers
+    de-CH: Algier
+    pl-PL: Algier
+    pt-BR: Argel
   role: capital
   wikidata: Q3561
   lat: 36.77639
@@ -29,5 +35,7 @@ regions:
 - Africa
 - Northern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Algeria
-  de: https://de.wikipedia.org/wiki/Algerien
+  en-US: https://en.wikipedia.org/wiki/Algeria
+  de-CH: https://de.wikipedia.org/wiki/Algerien
+  pl-PL: https://pl.wikipedia.org/wiki/Algieria
+  pt-BR: https://pt.wikipedia.org/wiki/Argélia

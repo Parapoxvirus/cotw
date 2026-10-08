@@ -4,15 +4,21 @@ iso3: SOM
 wikidata: Q1045
 status: sovereign
 name:
-  en: Somalia
-  de: Somalia
+  en-US: Somalia
+  de-CH: Somalia
+  pl-PL: Somalia
+  pt-BR: Somália
 formal_name:
-  en: The Federal Republic of Somalia
-  de: Bundesrepublik Somalia
+  en-US: The Federal Republic of Somalia
+  de-CH: Bundesrepublik Somalia
+  pl-PL: Federalna Republika Somalii
+  pt-BR: República Federal da Somália
 capitals:
 - name:
-    en: Mogadishu
-    de: Mogadischu
+    en-US: Mogadishu
+    de-CH: Mogadischu
+    pl-PL: Mogadiszu
+    pt-BR: Mogadíscio
   role: capital
   wikidata: Q2449
   lat: 2.03917
@@ -26,5 +32,7 @@ regions:
 - Sub-Saharan Africa
 - Eastern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Somalia
-  de: https://de.wikipedia.org/wiki/Somalia
+  en-US: https://en.wikipedia.org/wiki/Somalia
+  de-CH: https://de.wikipedia.org/wiki/Somalia
+  pl-PL: https://pl.wikipedia.org/wiki/Somalia
+  pt-BR: https://pt.wikipedia.org/wiki/Somália

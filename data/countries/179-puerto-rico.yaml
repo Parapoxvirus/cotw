@@ -5,15 +5,20 @@ wikidata: Q1183
 status: dependency
 dependency_of: '237'
 name:
-  en: Puerto Rico
-  de: Puerto Rico
+  en-US: Puerto Rico
+  de-CH: Puerto Rico
+  pl-PL: Portoryko
+  pt-BR: Porto Rico
 formal_name:
-  en: Commonwealth of Puerto Rico
-  de: Freistaat Puerto Rico
+  en-US: Commonwealth of Puerto Rico
+  de-CH: Freistaat Puerto Rico
+  pl-PL: Wolne Stowarzyszone Państwo Portoryko
 capitals:
 - name:
-    en: San Juan
-    de: San Juan
+    en-US: San Juan
+    de-CH: San Juan
+    pl-PL: San Juan
+    pt-BR: San Juan
   role: capital
   wikidata: Q41211
   lat: 18.46528
@@ -24,5 +29,7 @@ regions:
 - Latin America and the Caribbean
 - Caribbean
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Puerto_Rico
-  de: https://de.wikipedia.org/wiki/Puerto_Rico
+  en-US: https://en.wikipedia.org/wiki/Puerto_Rico
+  de-CH: https://de.wikipedia.org/wiki/Puerto_Rico
+  pl-PL: https://pl.wikipedia.org/wiki/Portoryko
+  pt-BR: https://pt.wikipedia.org/wiki/Porto_Rico

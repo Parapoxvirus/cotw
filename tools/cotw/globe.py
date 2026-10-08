@@ -445,7 +445,8 @@ def payload(entries: dict, land: dict, core: dict, other: list, eez: dict, palet
     colors = {
         mode: {**{k: palette[mode][k] for k in keys_needed}, **palette["globe"][mode]} for mode in ("day", "night")
     }
-    return {"topology": topology, "lod": lod, "entries": meta, "palette": colors}
+    # ``base``: the tooltip's fallback for a locale without names in ``entries[*].name``.
+    return {"topology": topology, "lod": lod, "entries": meta, "palette": colors, "base": languages.BASE}
 
 
 def render(data: dict, source: str | None = None) -> str:

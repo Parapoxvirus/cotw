@@ -13,6 +13,15 @@ The workflow [`.gitea/workflows/publish.yml`](../.gitea/workflows/publish.yml) (
 
 If GitHub's `main` already has the same tree, no new commit is created (step 2 is then a no-op).
 
+The release assets are the packages of `python -m cotw build-deck`, one per registered locale:
+`COTW-EN-US.apkg`, `COTW-DE-CH.apkg`, `COTW-PL-PL.apkg` and `COTW-PT-BR.apkg` (up to v1.0.x
+`COTW-EN.apkg` and `COTW-DE.apkg`). The
+workflow copies whatever assets the Gitea release has; the README's download line names them.
+The notes of the first release with the locale names tell users what changes on update: the
+tag roots (`COTW-EN-US::` instead of `COTW-EN::`, filtered decks and saved searches need the
+new root), the note type names and the file names; notes and review history are kept
+([`DECK.md`](DECK.md#tags)).
+
 ## Inputs
 
 | Input | Default | Meaning |

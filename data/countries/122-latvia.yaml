@@ -4,15 +4,21 @@ iso3: LVA
 wikidata: Q211
 status: sovereign
 name:
-  en: Latvia
-  de: Lettland
+  en-US: Latvia
+  de-CH: Lettland
+  pl-PL: Łotwa
+  pt-BR: Letônia
 formal_name:
-  en: The Republic of Latvia
-  de: Republik Lettland
+  en-US: The Republic of Latvia
+  de-CH: Republik Lettland
+  pl-PL: Republika Łotewska
+  pt-BR: República da Letônia
 capitals:
 - name:
-    en: Riga
-    de: Riga
+    en-US: Riga
+    de-CH: Riga
+    pl-PL: Ryga
+    pt-BR: Riga
   role: capital
   wikidata: Q1773
   lat: 56.9475
@@ -26,5 +32,7 @@ regions:
 - Europe
 - Northern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Latvia
-  de: https://de.wikipedia.org/wiki/Lettland
+  en-US: https://en.wikipedia.org/wiki/Latvia
+  de-CH: https://de.wikipedia.org/wiki/Lettland
+  pl-PL: https://pl.wikipedia.org/wiki/Łotwa
+  pt-BR: https://pt.wikipedia.org/wiki/Letónia

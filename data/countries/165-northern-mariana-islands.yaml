@@ -5,15 +5,20 @@ wikidata: Q16644
 status: dependency
 dependency_of: '237'
 name:
-  en: Northern Mariana Islands
-  de: Nördliche Marianen
+  en-US: Northern Mariana Islands
+  de-CH: Nördliche Marianen
+  pl-PL: Mariany Północne
+  pt-BR: Ilhas Marianas do Norte
 formal_name:
-  en: Commonwealth of the Northern Mariana Islands
-  de: Commonwealth der Nördlichen Marianen
+  en-US: Commonwealth of the Northern Mariana Islands
+  de-CH: Commonwealth der Nördlichen Marianen
+  pl-PL: Wspólnota Marianów Północnych
 capitals:
 - name:
-    en: Saipan
-    de: Saipan
+    en-US: Saipan
+    de-CH: Saipan
+    pl-PL: Saipan
+    pt-BR: Saipan
   role: capital
   wikidata: Q49755159
   lat: 15.21233
@@ -23,5 +28,7 @@ regions:
 - Oceania
 - Micronesia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Northern_Mariana_Islands
-  de: https://de.wikipedia.org/wiki/Nördliche_Marianen
+  en-US: https://en.wikipedia.org/wiki/Northern_Mariana_Islands
+  de-CH: https://de.wikipedia.org/wiki/Nördliche_Marianen
+  pl-PL: https://pl.wikipedia.org/wiki/Mariany_Północne
+  pt-BR: https://pt.wikipedia.org/wiki/Ilhas_Marianas_Setentrionais

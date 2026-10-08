@@ -4,15 +4,21 @@ iso3: BEL
 wikidata: Q31
 status: sovereign
 name:
-  en: Belgium
-  de: Belgien
+  en-US: Belgium
+  de-CH: Belgien
+  pl-PL: Belgia
+  pt-BR: Bélgica
 formal_name:
-  en: The Kingdom of Belgium
-  de: Königreich Belgien
+  en-US: The Kingdom of Belgium
+  de-CH: Königreich Belgien
+  pl-PL: Królestwo Belgii
+  pt-BR: Reino da Bélgica
 capitals:
 - name:
-    en: Brussels
-    de: Brüssel
+    en-US: Brussels
+    de-CH: Brüssel
+    pl-PL: Bruksela
+    pt-BR: Bruxelas
   role: capital
   wikidata: Q239
   lat: 50.84667
@@ -26,5 +32,7 @@ regions:
 - Europe
 - Western Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Belgium
-  de: https://de.wikipedia.org/wiki/Belgien
+  en-US: https://en.wikipedia.org/wiki/Belgium
+  de-CH: https://de.wikipedia.org/wiki/Belgien
+  pl-PL: https://pl.wikipedia.org/wiki/Belgia
+  pt-BR: https://pt.wikipedia.org/wiki/Bélgica

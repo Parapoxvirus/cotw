@@ -1,4 +1,5 @@
-"""English: the base language (the database's reference names, the fallback for the others)."""
+"""English (United States): the base language (the database's reference names, the fallback for
+the others)."""
 
 from __future__ import annotations
 
@@ -11,16 +12,18 @@ def object_form(name: str) -> str:
 
 
 LANGUAGE = Language(
-    code="en",
-    wiki="enwiki",
+    code="en-US",
+    # Legacy identity: v1.0.x was published with the code "en", before locales had a region. The
+    # note GUIDs and the IDs below derive from it; changing it would duplicate every note.
+    identity="en",
     notetype_id=1829704095,
     deck_id=1866953617,
     extras_deck_id=1918702087,
     id_offset=0,
-    notetype="COTW (EN)",
+    notetype="COTW (EN-US)",
     deck="Countries of the World",
     extras="Countries of the World::Extras",
-    tag_root="COTW-EN",
+    tag_root="COTW-EN-US",
     status_tags={
         "sovereign": "Sovereign",
         "dependency": "Dependency",
@@ -112,10 +115,14 @@ economic zones and territorial waters are complete. Some disputed islands are mi
 shown as neutral land that belongs to no country. The deck is about learning the countries of the
 world, not every last detail. If you want to know more, the Wikipedia link on the back takes you
 further.</p>
-<p><b>Help and contact:</b> More about the deck: <a href="{ankiweb}">AnkiWeb page</a>. Can't find
-your answer there? Email me at <a href="mailto:{contact}">{contact}</a>. Please also write if you
-spot an error or a card that needs updating. This deck does not intend to be political: disputed
-areas follow the situation on the ground.</p>
+<p><b>Borders:</b> The maps and globe use borders supplied by
+<a href="https://www.naturalearthdata.com">Natural Earth</a>, which provides de facto borders:
+who actually controls an area. Disputed areas therefore follow the lines of actual control. The
+deck makes no political statement; it follows the supplied data strictly. Do not comment on or
+file issues regarding disputed areas.</p>
+<p><b>Help and contact:</b> For more information about COTW or to get in touch, visit the
+<a href="{repository}">GitHub repository</a>. Please report errors or outdated cards in
+<a href="{issues}">GitHub Issues</a>.</p>
 """,
     description="""<p><b>Countries of the World (COTW)</b>: {count} countries and territories, each with
 capital, flag, two maps, an interactive globe, ISO codes and bordering countries.</p>
@@ -127,6 +134,8 @@ cards and choose <i>Suspend</i> (again to switch them back on).</p>
 de facto borders: who actually controls an area. Crimea, for example, is shown as Russian, not
 Ukrainian, and the disputed areas in the Himalayas follow the lines of actual control. The deck
 makes no political statement; it follows the supplied data strictly.</p>
+<p>Report errors in <a href="{issues}">GitHub Issues</a>. For more information about COTW or to get
+in touch, visit the <a href="{repository}">GitHub repository</a>.</p>
 <p><b>Sources and licenses.</b> Deck, data and code: public domain
 (<a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>), Parapoxvirus. Data:
 <a href="https://www.wikidata.org">Wikidata</a> (CC0). Land on the maps and the globe:
@@ -175,5 +184,4 @@ notice shipped as {icons_license}).</p>""",
         "Polynesia": "Polynesia",
     },
     object_form=object_form,
-    ankiweb="https://ankiweb.net/shared/info/1365662043",
 )

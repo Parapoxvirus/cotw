@@ -6,7 +6,9 @@
     11.0516449
    ],
    "country": "Q183",
-   "label_de": "Mönchberg",
+   "label_de-CH": "Mönchberg",
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q138937331"
   }
  ],
@@ -17,7 +19,9 @@
     -115.875555555
    ],
    "country": "Q30",
-   "label_de": "Bagdad",
+   "label_de-CH": "Bagdad",
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q139063"
   },
   {
@@ -26,7 +30,9 @@
     -97.15
    ],
    "country": "Q96",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q543904"
   },
   {
@@ -35,7 +41,9 @@
     17.31638889
    ],
    "country": "Q36",
-   "label_de": "Bagdad",
+   "label_de-CH": "Bagdad",
+   "label_pl-PL": "Bagdad",
+   "label_pt-BR": null,
    "qid": "Q799859"
   },
   {
@@ -44,7 +52,9 @@
     -113.175
    ],
    "country": "Q30",
-   "label_de": "Bagdad",
+   "label_de-CH": "Bagdad",
+   "label_pl-PL": "Bagdad",
+   "label_pt-BR": "Bagdad",
    "qid": "Q799863"
   },
   {
@@ -53,7 +63,9 @@
     -87.035555555
    ],
    "country": "Q30",
-   "label_de": "Bagdad",
+   "label_de-CH": "Bagdad",
+   "label_pl-PL": "Bagdad",
+   "label_pt-BR": "Bagdad",
    "qid": "Q799865"
   },
   {
@@ -62,7 +74,9 @@
     147.217
    ],
    "country": "Q408",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": "Bagdad (Australia)",
+   "label_pt-BR": null,
    "qid": "Q2879005"
   },
   {
@@ -71,7 +85,9 @@
     -85.0578
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q3248608"
   },
   {
@@ -80,7 +96,9 @@
     -121.5797
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q4841505"
   },
   {
@@ -89,7 +107,9 @@
     -78.92
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q4841506"
   },
   {
@@ -98,7 +118,9 @@
     -77.4233
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q4841507"
   },
   {
@@ -107,7 +129,9 @@
     -88.7036
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q4841508"
   },
   {
@@ -116,7 +140,9 @@
     2.17043611
    ],
    "country": "Q29",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q6117073"
   },
   {
@@ -125,7 +151,9 @@
     -65.85
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q28550677"
   },
   {
@@ -134,7 +162,9 @@
     1.4547
    ],
    "country": "Q1032",
-   "label_de": "Bagdad",
+   "label_de-CH": "Bagdad",
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q126002042"
   }
  ],
@@ -145,7 +175,9 @@
     149.126944444
    ],
    "country": "Q408",
-   "label_de": "Canberra",
+   "label_de-CH": "Canberra",
+   "label_pl-PL": "Canberra",
+   "label_pt-BR": "Camberra",
    "qid": "Q3114"
   },
   {
@@ -154,7 +186,9 @@
     149.089
    ],
    "country": "Q408",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": "Okręg wyborczy Canberra",
+   "label_pt-BR": null,
    "qid": "Q2973482"
   },
   {
@@ -163,7 +197,9 @@
     5.1198
    ],
    "country": "Q55",
-   "label_de": "Canberra",
+   "label_de-CH": "Canberra",
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q18982642"
   },
   {
@@ -172,7 +208,9 @@
     148.996944444
    ],
    "country": "Q408",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q29020412"
   },
   {
@@ -181,7 +219,9 @@
     149.1311
    ],
    "country": "Q408",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q56284269"
   },
   {
@@ -190,7 +230,9 @@
     103.809406089
    ],
    "country": "Q334",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q138711593"
   }
  ],
@@ -201,7 +243,9 @@
     -170.69
    ],
    "country": "Q30",
-   "label_de": "Fagatogo",
+   "label_de-CH": "Fagatogo",
+   "label_pl-PL": "Fagatogo",
+   "label_pt-BR": "Fagatogo",
    "qid": "Q1257213"
   }
  ],
@@ -212,7 +256,9 @@
     -171.219
    ],
    "country": "Q664",
-   "label_de": "Fakaofo",
+   "label_de-CH": "Fakaofo",
+   "label_pl-PL": "Fakaofo",
+   "label_pt-BR": "Fakaofo",
    "qid": "Q650847"
   },
   {
@@ -221,7 +267,9 @@
     -171.264616
    ],
    "country": "Q664",
-   "label_de": "Fakaofo",
+   "label_de-CH": "Fakaofo",
+   "label_pl-PL": "Fakaofo (osada)",
+   "label_pt-BR": null,
    "qid": "Q2140263"
   }
  ],
@@ -232,7 +280,9 @@
     114.158611111
    ],
    "country": "Q148",
-   "label_de": "Hongkong",
+   "label_de-CH": "Hongkong",
+   "label_pl-PL": "Hongkong",
+   "label_pt-BR": "Hong Kong",
    "qid": "Q8646"
   },
   {
@@ -241,7 +291,9 @@
     -82.536111111
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q115261778"
   }
  ],
@@ -252,7 +304,9 @@
     64.32416667
    ],
    "country": "Q232",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q16663294"
   },
   {
@@ -261,7 +315,9 @@
     -1.834292725
    ],
    "country": "Q145",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q103911832"
   }
  ],
@@ -272,7 +328,9 @@
     -68.276666666
    ],
    "country": "Q55",
-   "label_de": "Kralendijk",
+   "label_de-CH": "Kralendijk",
+   "label_pl-PL": "Kralendijk",
+   "label_pt-BR": "Kralendijk",
    "qid": "Q331584"
   }
  ],
@@ -283,7 +341,9 @@
     -0.1275
    ],
    "country": "Q145",
-   "label_de": "London",
+   "label_de-CH": "London",
+   "label_pl-PL": "Londyn",
+   "label_pt-BR": "Londres",
    "qid": "Q84"
   },
   {
@@ -292,7 +352,9 @@
     -93.2367
    ],
    "country": "Q30",
-   "label_de": "London",
+   "label_de-CH": "London",
+   "label_pl-PL": "London",
+   "label_pt-BR": "London",
    "qid": "Q79348"
   },
   {
@@ -301,7 +363,9 @@
     -81.2497
    ],
    "country": "Q16",
-   "label_de": "London",
+   "label_de-CH": "London",
+   "label_pl-PL": "London",
+   "label_pt-BR": "London",
    "qid": "Q92561"
   },
   {
@@ -310,7 +374,9 @@
     -119.44222
    ],
    "country": "Q30",
-   "label_de": "London",
+   "label_de-CH": "London",
+   "label_pl-PL": "London",
+   "label_pt-BR": "London",
    "qid": "Q586353"
   },
   {
@@ -319,7 +385,9 @@
     -83.445041
    ],
    "country": "Q30",
-   "label_de": "London",
+   "label_de-CH": "London",
+   "label_pl-PL": "London",
+   "label_pt-BR": "London",
    "qid": "Q1001456"
   },
   {
@@ -328,7 +396,9 @@
     -157.475
    ],
    "country": "Q710",
-   "label_de": "London",
+   "label_de-CH": "London",
+   "label_pl-PL": "London",
+   "label_pt-BR": "London",
    "qid": "Q2477346"
   },
   {
@@ -337,7 +407,9 @@
     -84.0842
    ],
    "country": "Q30",
-   "label_de": "London",
+   "label_de-CH": "London",
+   "label_pl-PL": "London",
+   "label_pt-BR": "London",
    "qid": "Q3061911"
   },
   {
@@ -346,7 +418,9 @@
     5.0985
    ],
    "country": "Q142",
-   "label_de": "London",
+   "label_de-CH": "London",
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q6669727"
   },
   {
@@ -355,7 +429,9 @@
     -81.3686
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q6669736"
   },
   {
@@ -364,7 +440,9 @@
     -89.0128
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q6669738"
   },
   {
@@ -373,7 +451,9 @@
     20.463161
    ],
    "country": "Q403",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q6669759"
   },
   {
@@ -382,7 +462,9 @@
     18.06094444
    ],
    "country": "Q34",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q10429750"
   },
   {
@@ -391,7 +473,9 @@
     -99.5764
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q14710970"
   },
   {
@@ -400,7 +484,9 @@
     -93.06277778
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q20657974"
   },
   {
@@ -409,7 +495,9 @@
     -85.92027778
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q22059065"
   },
   {
@@ -418,7 +506,9 @@
     -91.56972222
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q22073611"
   },
   {
@@ -427,7 +517,9 @@
     -0.083333333
    ],
    "country": "Q145",
-   "label_de": "London",
+   "label_de-CH": "London",
+   "label_pl-PL": null,
+   "label_pt-BR": "Londres",
    "qid": "Q23939248"
   },
   {
@@ -436,7 +528,9 @@
     124.709119694
    ],
    "country": "Q252",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": "London",
    "qid": "Q25201358"
   },
   {
@@ -445,7 +539,9 @@
     -81.23444444
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q28163686"
   },
   {
@@ -454,7 +550,9 @@
     -81.2
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q61042482"
   },
   {
@@ -463,7 +561,9 @@
     -2.680750173
    ],
    "country": "Q145",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q103900608"
   },
   {
@@ -472,7 +572,9 @@
     9.78934
    ],
    "country": "Q983",
-   "label_de": "London, Äquatorialguinea",
+   "label_de-CH": "London, Äquatorialguinea",
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q106582185"
   },
   {
@@ -481,7 +583,9 @@
     -81.298611111
    ],
    "country": "Q16",
-   "label_de": "London Township (Ontario)",
+   "label_de-CH": "London Township (Ontario)",
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q115262072"
   },
   {
@@ -490,7 +594,9 @@
     -4.40381
    ],
    "country": "Q145",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q115712275"
   },
   {
@@ -499,7 +605,9 @@
     -81.3706
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q116696849"
   }
  ],
@@ -510,7 +618,9 @@
     15.633333333
    ],
    "country": "Q20",
-   "label_de": "Longyearbyen",
+   "label_de-CH": "Longyearbyen",
+   "label_pl-PL": "Longyearbyen",
+   "label_pt-BR": "Longyearbyen",
    "qid": "Q25923"
   }
  ],
@@ -521,7 +631,9 @@
     -70.035833333
    ],
    "country": "Q21203",
-   "label_de": "Oranjestad",
+   "label_de-CH": "Oranjestad",
+   "label_pl-PL": "Oranjestad",
+   "label_pt-BR": "Oranjestad",
    "qid": "Q131243"
   },
   {
@@ -530,7 +642,9 @@
     -62.983333333
    ],
    "country": "Q55",
-   "label_de": "Oranjestad",
+   "label_de-CH": "Oranjestad",
+   "label_pl-PL": "Oranjestad",
+   "label_pt-BR": "Oranjestad",
    "qid": "Q217610"
   }
  ],
@@ -541,7 +655,9 @@
     -97.131388888
    ],
    "country": "Q30",
-   "label_de": "Oslo",
+   "label_de-CH": "Oslo",
+   "label_pl-PL": "Oslo",
+   "label_pt-BR": null,
    "qid": "Q888491"
   },
   {
@@ -550,7 +666,9 @@
     -80.383333333
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q1794768"
   },
   {
@@ -559,7 +677,9 @@
     -0.055575
    ],
    "country": "Q145",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q16896934"
   },
   {
@@ -568,7 +688,9 @@
     -92.7386
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q19321913"
   },
   {
@@ -577,7 +699,9 @@
     4.5098
    ],
    "country": "Q55",
-   "label_de": "Oslo",
+   "label_de-CH": "Oslo",
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q19397868"
   },
   {
@@ -586,7 +710,9 @@
     10.74609
    ],
    "country": "Q20",
-   "label_de": "Oslo",
+   "label_de-CH": "Oslo",
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q49755148"
   },
   {
@@ -595,7 +721,9 @@
     -0.30165597
    ],
    "country": "Q145",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q103905540"
   }
  ],
@@ -606,7 +734,9 @@
     57.53823
    ],
    "country": "Q1027",
-   "label_de": "Saint-Pierre",
+   "label_de-CH": "Saint-Pierre",
+   "label_pl-PL": "Saint-Pierre",
+   "label_pt-BR": "Saint Pierre (Maurícia)",
    "qid": "Q1154985"
   },
   {
@@ -615,7 +745,9 @@
     -3.57745867
    ],
    "country": "Q145",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q103780078"
   },
   {
@@ -624,7 +756,9 @@
     4.83291
    ],
    "country": "Q142",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q108537084"
   },
   {
@@ -633,7 +767,9 @@
     -1.80073
    ],
    "country": "Q142",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q108628216"
   },
   {
@@ -642,7 +778,9 @@
     103.8537
    ],
    "country": "Q334",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q111915493"
   }
  ],
@@ -653,7 +791,9 @@
     -89.7990001
    ],
    "country": "Q30",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q122560315"
   }
  ],
@@ -664,7 +804,9 @@
     -63.249166666
    ],
    "country": "Q55",
-   "label_de": "The Bottom",
+   "label_de-CH": "The Bottom",
+   "label_pl-PL": "The Bottom",
+   "label_pt-BR": "The Bottom",
    "qid": "Q475718"
   },
   {
@@ -673,7 +815,9 @@
     -53.82029
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q22481946"
   },
   {
@@ -682,7 +826,9 @@
     -53.8202778
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q111670275"
   },
   {
@@ -691,7 +837,9 @@
     -54.226111111
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q111670276"
   },
   {
@@ -700,7 +848,9 @@
     -53.550555555
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q111670277"
   },
   {
@@ -709,7 +859,9 @@
     -53.669722222
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q111670278"
   },
   {
@@ -718,7 +870,9 @@
     -55.901388888
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q111909935"
   },
   {
@@ -727,7 +881,9 @@
     -58.601666666
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q111909936"
   },
   {
@@ -736,7 +892,9 @@
     -53.961111111
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q111909937"
   },
   {
@@ -745,7 +903,9 @@
     -53.940833333
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q111909938"
   },
   {
@@ -754,7 +914,9 @@
     -53.7725
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q111909939"
   },
   {
@@ -763,7 +925,9 @@
     -57.919444444
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q111909940"
   },
   {
@@ -772,7 +936,9 @@
     -56.81
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q111909941"
   },
   {
@@ -781,7 +947,9 @@
     -56.626111111
    ],
    "country": "Q16",
-   "label_de": null,
+   "label_de-CH": null,
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q111909942"
   }
  ]

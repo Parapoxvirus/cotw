@@ -4,15 +4,21 @@ iso3: STP
 wikidata: Q1039
 status: sovereign
 name:
-  en: Sao Tome and Principe
-  de: São Tomé und Príncipe
+  en-US: Sao Tome and Principe
+  de-CH: São Tomé und Príncipe
+  pl-PL: Wyspy Świętego Tomasza i Książęca
+  pt-BR: São Tomé e Príncipe
 formal_name:
-  en: The Democratic Republic of São Tomé and Príncipe
-  de: Demokratische Republik São Tomé und Príncipe
+  en-US: The Democratic Republic of São Tomé and Príncipe
+  de-CH: Demokratische Republik São Tomé und Príncipe
+  pl-PL: Demokratyczna Republika Wysp Świętego Tomasza i Książęcej
+  pt-BR: República Democrática de São Tomé e Príncipe
 capitals:
 - name:
-    en: São Tomé
-    de: São Tomé
+    en-US: São Tomé
+    de-CH: São Tomé
+    pl-PL: São Tomé
+    pt-BR: São Tomé
   role: capital
   wikidata: Q3932
   lat: 0.3375
@@ -23,5 +29,7 @@ regions:
 - Sub-Saharan Africa
 - Middle Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe
-  de: https://de.wikipedia.org/wiki/São_Tomé_und_Príncipe
+  en-US: https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe
+  de-CH: https://de.wikipedia.org/wiki/São_Tomé_und_Príncipe
+  pl-PL: https://pl.wikipedia.org/wiki/Wyspy_Świętego_Tomasza_i_Książęca
+  pt-BR: https://pt.wikipedia.org/wiki/São_Tomé_e_Príncipe

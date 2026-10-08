@@ -4,15 +4,21 @@ iso3: SSD
 wikidata: Q958
 status: sovereign
 name:
-  en: South Sudan
-  de: Südsudan
+  en-US: South Sudan
+  de-CH: Südsudan
+  pl-PL: Sudan Południowy
+  pt-BR: Sudão do Sul
 formal_name:
-  en: The Republic of South Sudan
-  de: Republik Südsudan
+  en-US: The Republic of South Sudan
+  de-CH: Republik Südsudan
+  pl-PL: Republika Sudanu Południowego
+  pt-BR: República do Sudão do Sul
 capitals:
 - name:
-    en: Juba
-    de: Juba
+    en-US: Juba
+    de-CH: Juba
+    pl-PL: Dżuba
+    pt-BR: Juba
   role: capital
   wikidata: Q1947
   lat: 4.85389
@@ -29,5 +35,7 @@ regions:
 - Sub-Saharan Africa
 - Eastern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/South_Sudan
-  de: https://de.wikipedia.org/wiki/Südsudan
+  en-US: https://en.wikipedia.org/wiki/South_Sudan
+  de-CH: https://de.wikipedia.org/wiki/Südsudan
+  pl-PL: https://pl.wikipedia.org/wiki/Sudan_Południowy
+  pt-BR: https://pt.wikipedia.org/wiki/Sudão_do_Sul

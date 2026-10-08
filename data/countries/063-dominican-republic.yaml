@@ -4,12 +4,18 @@ iso3: DOM
 wikidata: Q786
 status: sovereign
 name:
-  en: Dominican Republic, The
-  de: Dominikanische Republik
+  en-US: Dominican Republic, The
+  de-CH: Dominikanische Republik
+  pl-PL: Dominikana
+  pt-BR: República Dominicana
+formal_name:
+  pl-PL: Republika Dominikańska
 capitals:
 - name:
-    en: Santo Domingo
-    de: Santo Domingo
+    en-US: Santo Domingo
+    de-CH: Santo Domingo
+    pl-PL: Santo Domingo
+    pt-BR: São Domingos
   role: capital
   wikidata: Q34820
   lat: 18.4625
@@ -21,5 +27,7 @@ regions:
 - Latin America and the Caribbean
 - Caribbean
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Dominican_Republic
-  de: https://de.wikipedia.org/wiki/Dominikanische_Republik
+  en-US: https://en.wikipedia.org/wiki/Dominican_Republic
+  de-CH: https://de.wikipedia.org/wiki/Dominikanische_Republik
+  pl-PL: https://pl.wikipedia.org/wiki/Dominikana
+  pt-BR: https://pt.wikipedia.org/wiki/República_Dominicana

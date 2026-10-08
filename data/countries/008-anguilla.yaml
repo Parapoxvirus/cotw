@@ -5,12 +5,16 @@ wikidata: Q25228
 status: dependency
 dependency_of: '235'
 name:
-  en: Anguilla
-  de: Anguilla
+  en-US: Anguilla
+  de-CH: Anguilla
+  pl-PL: Anguilla
+  pt-BR: Anguilla
 capitals:
 - name:
-    en: The Valley
-    de: The Valley
+    en-US: The Valley
+    de-CH: The Valley
+    pl-PL: The Valley
+    pt-BR: The Valley
   role: capital
   wikidata: Q30994
   lat: 18.22083
@@ -21,5 +25,7 @@ regions:
 - Latin America and the Caribbean
 - Caribbean
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Anguilla
-  de: https://de.wikipedia.org/wiki/Anguilla
+  en-US: https://en.wikipedia.org/wiki/Anguilla
+  de-CH: https://de.wikipedia.org/wiki/Anguilla
+  pl-PL: https://pl.wikipedia.org/wiki/Anguilla
+  pt-BR: https://pt.wikipedia.org/wiki/Anguila

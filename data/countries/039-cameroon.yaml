@@ -4,15 +4,21 @@ iso3: CMR
 wikidata: Q1009
 status: sovereign
 name:
-  en: Cameroon
-  de: Kamerun
+  en-US: Cameroon
+  de-CH: Kamerun
+  pl-PL: Kamerun
+  pt-BR: Camarões / Cameroun
 formal_name:
-  en: The Republic of Cameroon
-  de: Republik Kamerun
+  en-US: The Republic of Cameroon
+  de-CH: Republik Kamerun
+  pl-PL: Republika Kamerunu
+  pt-BR: República dos Camarões / República do Cameroun
 capitals:
 - name:
-    en: Yaoundé
-    de: Yaoundé / Jaunde
+    en-US: Yaoundé
+    de-CH: Yaoundé / Jaunde
+    pl-PL: Jaunde
+    pt-BR: Iaundê
   role: capital
   wikidata: Q3808
   lat: 3.85778
@@ -29,5 +35,7 @@ regions:
 - Sub-Saharan Africa
 - Middle Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Cameroon
-  de: https://de.wikipedia.org/wiki/Kamerun
+  en-US: https://en.wikipedia.org/wiki/Cameroon
+  de-CH: https://de.wikipedia.org/wiki/Kamerun
+  pl-PL: https://pl.wikipedia.org/wiki/Kamerun
+  pt-BR: https://pt.wikipedia.org/wiki/Camarões

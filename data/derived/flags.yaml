@@ -1993,12 +1993,13 @@
   sha1: e2e3fdf94580baf1b6c46f93703ddc24e17ed00e
 '246':
   bytes: 180
-  file: Flag of Yemen.svg
+  file: Flag of Yemen (Pantone colors).svg
   license: Public domain
   license_template: pd
-  page: https://commons.wikimedia.org/wiki/File:Flag_of_Yemen.svg
-  selection: only current normal-rank statement
-  sha1: 71e5a98c556e943dab98773790d874677fed80ad
+  page: https://commons.wikimedia.org/wiki/File:Flag_of_Yemen_(Pantone_colors).svg
+  selection: 'override: Wikidata''s P41 file is CC BY-SA 4.0 on Commons; this rendering of the same flag (Pantone colours)
+    is public domain.'
+  sha1: 8d26458ef9715483f346234858508933de41222e
 '247':
   bytes: 5235
   file: Flag of Zambia.svg

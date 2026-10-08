@@ -4,15 +4,21 @@ iso3: SVN
 wikidata: Q215
 status: sovereign
 name:
-  en: Slovenia
-  de: Slowenien
+  en-US: Slovenia
+  de-CH: Slowenien
+  pl-PL: Słowenia
+  pt-BR: Eslovênia
 formal_name:
-  en: The Republic of Slovenia
-  de: Republik Slowenien
+  en-US: The Republic of Slovenia
+  de-CH: Republik Slowenien
+  pl-PL: Republika Słowenii
+  pt-BR: República da Eslovênia
 capitals:
 - name:
-    en: Ljubljana
-    de: Ljubljana / Laibach
+    en-US: Ljubljana
+    de-CH: Ljubljana / Laibach
+    pl-PL: Lublana
+    pt-BR: Liubliana
   role: capital
   wikidata: Q437
   lat: 46.05139
@@ -26,5 +32,7 @@ regions:
 - Europe
 - Southern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Slovenia
-  de: https://de.wikipedia.org/wiki/Slowenien
+  en-US: https://en.wikipedia.org/wiki/Slovenia
+  de-CH: https://de.wikipedia.org/wiki/Slowenien
+  pl-PL: https://pl.wikipedia.org/wiki/Słowenia
+  pt-BR: https://pt.wikipedia.org/wiki/Eslovénia

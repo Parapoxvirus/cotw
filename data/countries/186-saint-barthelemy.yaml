@@ -5,12 +5,16 @@ wikidata: Q25362
 status: dependency
 dependency_of: '076'
 name:
-  en: Saint Barthélemy
-  de: Sankt Bartholomäus
+  en-US: Saint Barthélemy
+  de-CH: Sankt Bartholomäus
+  pl-PL: Saint-Barthélemy
+  pt-BR: São Bartolomeu
 capitals:
 - name:
-    en: Gustavia
-    de: Gustavia
+    en-US: Gustavia
+    de-CH: Gustavia
+    pl-PL: Gustavia
+    pt-BR: Gustavia
   role: capital
   wikidata: Q34112
   lat: 17.89861
@@ -21,5 +25,7 @@ regions:
 - Latin America and the Caribbean
 - Caribbean
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Saint_Barthélemy
-  de: https://de.wikipedia.org/wiki/Saint-Barthélemy_(Insel)
+  en-US: https://en.wikipedia.org/wiki/Saint_Barthélemy
+  de-CH: https://de.wikipedia.org/wiki/Saint-Barthélemy_(Insel)
+  pl-PL: https://pl.wikipedia.org/wiki/Saint-Barthélemy
+  pt-BR: https://pt.wikipedia.org/wiki/São_Bartolomeu_(coletividade)

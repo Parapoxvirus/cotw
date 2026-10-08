@@ -3,7 +3,8 @@
 ``python -m cotw check-wikidata`` fetches everything the database took from Wikidata and
 Commons with the same fetchers that built the caches, diffs it against the committed caches
 (the last accepted snapshot, not the YAML database) and opens one Gitea issue per deviation
-(or one Paperclip task, see ``monitor_paperclip``). Nothing is applied: ``python -m cotw accept-wikidata <fingerprint>`` accepts one deviation,
+(or one Paperclip task, see ``monitor_paperclip``). With the Paperclip sink's state it also
+watches the Wikidata names and the official naming sources (``monitor_watch``). Nothing is applied: ``python -m cotw accept-wikidata <fingerprint>`` accepts one deviation,
 an entry in ``data/overrides/monitoring.yaml`` rejects it. Rules: ``docs/MONITORING.md``.
 
 Every network read happens before the first write, so a failed fetch fails the run without
@@ -118,7 +119,7 @@ class Deviation:
     field: str  # stable field key (part of the fingerprint)
     old: Any
     new: Any  # machine value (part of the fingerprint)
-    kind: str  # iso3 | code-lost | code-shared | code-new | capitals | coord | status | sitelink | flag-file | flag-revision | flag-license
+    kind: str  # iso3 | code-lost | code-shared | code-new | capitals | coord | status | sitelink | flag-file | flag-revision | flag-license | names | edition | source-unreachable
     item: str  # Wikidata QID or "File:<name>" whose history the damping looks at
     prop: str  # "P36", "P297", "P576|P582", "sitelinks/dewiki", "file", …
     entries: list[str] = field(default_factory=list)  # affected COTW ids
@@ -129,6 +130,8 @@ class Deviation:
     impact: str = ""
     patches: list[tuple[str, str]] = field(default_factory=list)  # (cache attribute, key) updated on accept
     alert: bool = False  # a flag that is no longer free: must stand out
+    changes: list[str] = field(default_factory=list)  # names/edition: one line per changed value
+    reminder: str = ""  # names/edition: how to check the change against the official sources
 
     @property
     def fingerprint(self) -> str:
@@ -161,7 +164,7 @@ def _history(q: str) -> tuple[str, str]:
 
 
 def _name(entry: dict) -> str:
-    return f"{entry['id']} {entry['name']['en']}"
+    return f"{entry['id']} {entry['name'][languages.BASE]}"
 
 
 def km(a, b) -> float:
@@ -176,8 +179,8 @@ def _labels(*snapshots: Snapshot) -> dict[str, str]:
     for snap in snapshots:
         for recs in snap.capitals.values():
             for r in recs:
-                if r.get("label_en"):
-                    out.setdefault(r["qid"], r["label_en"])
+                if r.get(f"label_{languages.BASE}"):
+                    out.setdefault(r["qid"], r[f"label_{languages.BASE}"])
     return out
 
 
@@ -239,14 +242,14 @@ def diff(entries: dict, base: Snapshot, live: Snapshot, overrides: dict | None =
                     links=[_wd(q), _history(q)],
                     impact="Capital cards and fields, capital markers on map 2 (`build-maps "
                     f"{cid}`), if the database follows. Database: "
-                    + ", ".join(f"{c['name']['en']} ({c.get('wikidata')})" for c in e["capitals"]) + ".",
+                    + ", ".join(f"{c['name'][languages.BASE]} ({c.get('wikidata')})" for c in e["capitals"]) + ".",
                     patches=[("capitals", q)],
                 ))
 
         # Capital coordinates (P625) of the capitals the database uses.
         for cap in e["capitals"]:
             cq = cap.get("wikidata")
-            ov = (cap_ov.get(e["iso2"]) or {}).get(cap["name"]["en"]) or {}
+            ov = (cap_ov.get(e["iso2"]) or {}).get(cap["name"][languages.BASE]) or {}
             if not cq or ov.get("lat") is not None or cq not in base.coords:
                 continue  # coordinates fixed by an override, or never taken from Wikidata
             old, new = base.coords[cq], live.coords.get(cq)
@@ -256,10 +259,10 @@ def diff(entries: dict, base: Snapshot, live: Snapshot, overrides: dict | None =
             moved = f" (moved {km(old, new):.1f} km)" if new else ""
             out.append(Deviation(
                 cid, f"capital {cq} coordinates", [round(old[0], 4), round(old[1], 4)], new_v, "coord", cq, "P625", [cid],
-                title=f"{name}: coordinates of {cap['name']['en']} changed",
+                title=f"{name}: coordinates of {cap['name'][languages.BASE]} changed",
                 new_text=(f"{new_v[0]}, {new_v[1]}{moved}" if new_v else "no coordinates"),
                 links=[_wd(cq), _history(cq)],
-                impact=f"Capital marker on map 2 (`build-maps {cid}`); `lat`/`lon` of {cap['name']['en']} in the database.",
+                impact=f"Capital marker on map 2 (`build-maps {cid}`); `lat`/`lon` of {cap['name'][languages.BASE]} in the database.",
                 patches=[("coords", cq)],
             ))
 
@@ -441,11 +444,14 @@ def entity_at(qid: str, before: datetime | None, get=_get_json) -> dict | None:
 
 
 def entity_part(entity: dict | None, prop: str):
-    """The part of an item a deviation depends on: claims of one or more properties, or a sitelink."""
+    """The part of an item a deviation depends on: claims of one or more properties, a sitelink,
+    or a label (``labels/<code>``)."""
     if entity is None:
         return None
     if prop.startswith("sitelinks/"):
         return (entity.get("sitelinks") or {}).get(prop.split("/", 1)[1], {}).get("title")
+    if prop.startswith("labels/"):
+        return (entity.get("labels") or {}).get(prop.split("/", 1)[1], {}).get("value")
     claims = entity.get("claims") or {}
     return {p: claims.get(p, []) for p in prop.split("|")}
 
@@ -472,26 +478,34 @@ def damp(devs: list[Deviation], now: datetime, get=_get_json) -> tuple[list[Devi
     ``DAMPING``: the item was edited in the window *and* the relevant claims/sitelink differ
     between the last revision before the window and now. Commons files are damped when the page
     or file changed in the window. Damped deviations come back on the next run."""
+    hot = recent([(d.item, d.prop) for d in devs], now, get)
+    kept = [d for d in devs if (d.item, d.prop) not in hot]
+    return kept, [d for d in devs if (d.item, d.prop) in hot]
+
+
+def recent(parts: list[tuple[str, str]], now: datetime, get=_get_json) -> set[tuple[str, str]]:
+    """The ``(item, prop)`` pairs that changed within ``DAMPING`` (the rule of ``damp``)."""
     cutoff = now - DAMPING
-    items = sorted({d.item for d in devs if not d.item.startswith("File:")})
-    files = sorted({d.item.removeprefix("File:") for d in devs if d.item.startswith("File:")})
+    items = sorted({i for i, _ in parts if not i.startswith("File:")})
+    files = sorted({i.removeprefix("File:") for i, _ in parts if i.startswith("File:")})
     modified = wikidata_modified(items, get) if items else {}
     touched = commons_touched(files, get) if files else {}
     before: dict[str, dict | None] = {}
     current: dict[str, dict | None] = {}
-    kept, damped = [], []
-    for d in devs:
-        if d.item.startswith("File:"):
-            recent = touched.get(d.item.removeprefix("File:"), cutoff) > cutoff
-        elif modified.get(d.item, cutoff) <= cutoff:
-            recent = False
+    out = set()
+    for item, prop in parts:
+        if item.startswith("File:"):
+            hot = touched.get(item.removeprefix("File:"), cutoff) > cutoff
+        elif modified.get(item, cutoff) <= cutoff:
+            hot = False
         else:
-            if d.item not in before:
-                before[d.item] = entity_at(d.item, cutoff, get)
-                current[d.item] = entity_at(d.item, None, get)
-            recent = entity_part(before[d.item], d.prop) != entity_part(current[d.item], d.prop)
-        (damped if recent else kept).append(d)
-    return kept, damped
+            if item not in before:
+                before[item] = entity_at(item, cutoff, get)
+                current[item] = entity_at(item, None, get)
+            hot = entity_part(before[item], prop) != entity_part(current[item], prop)
+        if hot:
+            out.add((item, prop))
+    return out
 
 
 # --- issues -------------------------------------------------------------------------------------
@@ -512,8 +526,30 @@ def accept_steps(d: Deviation) -> list[str]:
         "flag-file": [f"python -m cotw accept-wikidata {fp}  # updates data/wikidata/flags.json", "python -m cotw fetch-flags --offline-wikidata"],
         "flag-revision": ["python -m cotw fetch-flags --offline-wikidata"],
         "flag-license": ["python -m cotw fetch-flags --offline-wikidata  # fails for a non-free license until an override decides"],
-    }[d.kind]
+    }.get(d.kind)
+    if steps is None:  # names, edition, source-unreachable: nothing to accept, the baseline moves when filed
+        return CHECK_STEPS[d.kind]
     return steps + ["python -m cotw validate", "python -m pytest  # includes the EN/DE coexistence import test", "python -m cotw build-deck"]
+
+
+# Names and naming sources (monitor_watch): no cache to accept; a person checks the official
+# sources and edits the database by hand.
+_EDIT_STEPS = [
+    "if an official source has the change: edit `name.<code>`, `formal_name` or `capitals[].name.<code>` in `data/countries/*.yaml`",
+    "deviating from the language's primary source: add a row with the reason to `docs/data-changes.md`",
+    "python -m cotw validate",
+    "python -m pytest",
+    "python -m cotw build-deck",
+    "nothing official yet: close this task as done; the baseline has moved, the same change is not reported again",
+]
+CHECK_STEPS = {
+    "names": ["compare every changed value with the official list for its language (docs/TRANSLATING.md, Naming sources)", *_EDIT_STEPS],
+    "edition": ["open the source and find what changed (new edition, update document, changed rows)", "check every affected entry and capital against it", *_EDIT_STEPS],
+    "source-unreachable": [
+        "open the URL; if the source moved, update the link in docs/TRANSLATING.md and the record in tools/cotw/monitor_sources.py",
+        "close this task as done; the source is checked again on the next run",
+    ],
+}
 
 
 def _safe(text: str) -> str:
@@ -522,6 +558,8 @@ def _safe(text: str) -> str:
 
 
 def render_issue(d: Deviation) -> tuple[str, str]:
+    if d.kind in CHECK_STEPS:
+        return d.title, _render_check(d)
     subject = ", ".join(d.entries) or d.subject
     lines = []
     if d.alert:
@@ -555,6 +593,35 @@ def render_issue(d: Deviation) -> tuple[str, str]:
         f"<!-- cotw-monitor fingerprint={d.fingerprint} -->",
     ]
     return d.title, "\n".join(lines)
+
+
+def _render_check(d: Deviation) -> str:
+    """Body of a names/edition/source-unreachable finding: what changed, the reminder, the steps."""
+    lines = [
+        f"**Entry:** {', '.join(d.entries) or d.subject}",
+        f"**Field:** {d.field}",
+        "",
+        "**Changes:**",
+        *(f"- {_safe(c)}" for c in d.changes),
+        "",
+        "**Links:** " + " · ".join(f"[{label}]({url})" for label, url in d.links),
+        "",
+    ]
+    if d.impact:
+        lines += [f"**What it can change in the deck:** {d.impact}", ""]
+    if d.reminder:
+        lines += [f"> {line}" if line else ">" for line in d.reminder.split("\n")] + [""]
+    lines += [
+        "**Check:**",
+        *(f"{i}. {step}" for i, step in enumerate(accept_steps(d), 1)),
+        "",
+        "Nothing was applied. `accept-wikidata` does not apply to this finding (there is no cache to accept).",
+        "",
+        "Found by the weekly Wikidata check (`python -m cotw check-wikidata`, docs/MONITORING.md).",
+        "",
+        f"<!-- cotw-monitor fingerprint={d.fingerprint} -->",
+    ]
+    return "\n".join(lines)
 
 
 def render_summary(overflow: list[Deviation], cap: int) -> tuple[str, str]:
@@ -707,7 +774,14 @@ def collect(now: datetime | None = None, log=print) -> tuple[list[Deviation], di
     devs, damped = damp(devs, now)
     for d in damped:
         log(f"damped (changed < {DAMPING.total_seconds() / 3600:.0f} h ago, next run): {d.title}")
-    return order(devs), {"rejected": len(rejected), "damped": len(damped), "live": live}
+
+    def watch(state, log=log):
+        """Names and naming sources against the baselines in ``state`` (network, monitor_watch)."""
+        from . import monitor_watch
+
+        return monitor_watch.run(state, entries, now, log)
+
+    return order(devs), {"rejected": len(rejected), "damped": len(damped), "live": live, "watch": watch}
 
 
 def gitea_config(url: str | None, repo: str | None) -> tuple[str | None, str | None, str | None]:
@@ -716,10 +790,12 @@ def gitea_config(url: str | None, repo: str | None) -> tuple[str | None, str | N
     return url, repo, os.environ.get("COTW_MONITOR_TOKEN") or None
 
 
-def check(dry_run: bool, max_issues: int, url: str | None = None, repo: str | None = None, log=print) -> int:
+def check(dry_run: bool, max_issues: int, url: str | None = None, repo: str | None = None, log=print, state_file: str | None = None) -> int:
     url, repo, token = gitea_config(url, repo)
     from . import monitor_paperclip
 
+    if state_file:  # local test harness: always a dry run, the baseline lives in a local file
+        return monitor_paperclip.check_local(state_file, max_issues, collect, log)
     cfg = monitor_paperclip.config()
     if cfg is not None:  # all PAPERCLIP_* set: tasks instead of issues
         return monitor_paperclip.check(cfg, dry_run, max_issues, url, repo, token, collect, Gitea, log)
@@ -734,6 +810,7 @@ def check(dry_run: bool, max_issues: int, url: str | None = None, repo: str | No
         log("token permissions on the repository: " + ", ".join(f"{k}={v}" for k, v in sorted(perms.items())))
         known = known_fingerprints(client.issues())
     log(f"{len(devs)} deviations ({report['rejected']} rejected via overrides, {report['damped']} damped)")
+    log("names and naming sources: not checked with the Gitea issue sink (they need the Paperclip sink's state branch, docs/MONITORING.md)")
     if dry_run:
         fresh = [d for d in devs if d.fingerprint not in known]
         for i, d in enumerate(fresh):
@@ -769,7 +846,8 @@ def accept(fp: str, log=print) -> int:
     devs, report = collect(log=lambda *_: None)
     d = next((x for x in devs if x.fingerprint == fp), None)
     if d is None:
-        log(f"{fp}: not a current deviation (accepted already, rejected, damped, or the value changed again)")
+        log(f"{fp}: not a current deviation (accepted already, rejected, damped, or the value changed again)."
+            " Name and naming-source findings have nothing to accept: follow the steps in their task.")
         return 1
     live: Snapshot = report["live"]
     files = {

@@ -4,15 +4,21 @@ iso3: VEN
 wikidata: Q717
 status: sovereign
 name:
-  en: Venezuela
-  de: Venezuela
+  en-US: Venezuela
+  de-CH: Venezuela
+  pl-PL: Wenezuela
+  pt-BR: Venezuela
 formal_name:
-  en: The Bolivarian Republic of Venezuela
-  de: Bolivarische Republik Venezuela
+  en-US: The Bolivarian Republic of Venezuela
+  de-CH: Bolivarische Republik Venezuela
+  pl-PL: Boliwariańska Republika Wenezueli
+  pt-BR: República Bolivariana da Venezuela
 capitals:
 - name:
-    en: Caracas
-    de: Caracas
+    en-US: Caracas
+    de-CH: Caracas
+    pl-PL: Caracas
+    pt-BR: Caracas
   role: capital
   wikidata: Q1533
   lat: 10.50611
@@ -26,5 +32,7 @@ regions:
 - Latin America and the Caribbean
 - South America
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Venezuela
-  de: https://de.wikipedia.org/wiki/Venezuela
+  en-US: https://en.wikipedia.org/wiki/Venezuela
+  de-CH: https://de.wikipedia.org/wiki/Venezuela
+  pl-PL: https://pl.wikipedia.org/wiki/Wenezuela
+  pt-BR: https://pt.wikipedia.org/wiki/Venezuela

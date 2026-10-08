@@ -4,15 +4,21 @@ iso3: KHM
 wikidata: Q424
 status: sovereign
 name:
-  en: Cambodia
-  de: Kambodscha
+  en-US: Cambodia
+  de-CH: Kambodscha
+  pl-PL: Kambodża
+  pt-BR: Camboja
 formal_name:
-  en: The Kingdom of Cambodia
-  de: Königreich Kambodscha
+  en-US: The Kingdom of Cambodia
+  de-CH: Königreich Kambodscha
+  pl-PL: Królestwo Kambodży
+  pt-BR: Reino do Camboja
 capitals:
 - name:
-    en: Phnom Penh
-    de: Phnom Penh
+    en-US: Phnom Penh
+    de-CH: Phnom Penh
+    pl-PL: Phnom Penh
+    pt-BR: Phnom Penh
   role: capital
   wikidata: Q1850
   lat: 11.56958
@@ -25,5 +31,7 @@ regions:
 - Asia
 - South-eastern Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Cambodia
-  de: https://de.wikipedia.org/wiki/Kambodscha
+  en-US: https://en.wikipedia.org/wiki/Cambodia
+  de-CH: https://de.wikipedia.org/wiki/Kambodscha
+  pl-PL: https://pl.wikipedia.org/wiki/Kambodża
+  pt-BR: https://pt.wikipedia.org/wiki/Camboja

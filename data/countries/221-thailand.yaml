@@ -4,15 +4,21 @@ iso3: THA
 wikidata: Q869
 status: sovereign
 name:
-  en: Thailand
-  de: Thailand
+  en-US: Thailand
+  de-CH: Thailand
+  pl-PL: Tajlandia
+  pt-BR: Tailândia
 formal_name:
-  en: The Kingdom of Thailand
-  de: Königreich Thailand
+  en-US: The Kingdom of Thailand
+  de-CH: Königreich Thailand
+  pl-PL: Królestwo Tajlandii
+  pt-BR: Reino da Tailândia
 capitals:
 - name:
-    en: Bangkok
-    de: Bangkok
+    en-US: Bangkok
+    de-CH: Bangkok
+    pl-PL: Bangkok
+    pt-BR: Bangkok
   role: capital
   wikidata: Q1861
   lat: 13.75
@@ -26,5 +32,7 @@ regions:
 - Asia
 - South-eastern Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Thailand
-  de: https://de.wikipedia.org/wiki/Thailand
+  en-US: https://en.wikipedia.org/wiki/Thailand
+  de-CH: https://de.wikipedia.org/wiki/Thailand
+  pl-PL: https://pl.wikipedia.org/wiki/Tajlandia
+  pt-BR: https://pt.wikipedia.org/wiki/Tailândia

@@ -4,12 +4,16 @@ iso3: LCA
 wikidata: Q760
 status: sovereign
 name:
-  en: Saint Lucia
-  de: St. Lucia
+  en-US: Saint Lucia
+  de-CH: St. Lucia
+  pl-PL: Saint Lucia
+  pt-BR: Santa Lúcia
 capitals:
 - name:
-    en: Castries
-    de: Castries
+    en-US: Castries
+    de-CH: Castries
+    pl-PL: Castries
+    pt-BR: Castries
   role: capital
   wikidata: Q41699
   lat: 14.01083
@@ -20,5 +24,7 @@ regions:
 - Latin America and the Caribbean
 - Caribbean
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Saint_Lucia
-  de: https://de.wikipedia.org/wiki/St._Lucia
+  en-US: https://en.wikipedia.org/wiki/Saint_Lucia
+  de-CH: https://de.wikipedia.org/wiki/St._Lucia
+  pl-PL: https://pl.wikipedia.org/wiki/Saint_Lucia
+  pt-BR: https://pt.wikipedia.org/wiki/Santa_Lúcia

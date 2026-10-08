@@ -4,12 +4,16 @@ iso3: IRL
 wikidata: Q27
 status: sovereign
 name:
-  en: Ireland / Republic of Ireland
-  de: Irland / Republik Irland
+  en-US: Ireland / Republic of Ireland
+  de-CH: Irland / Republik Irland
+  pl-PL: Irlandia
+  pt-BR: Irlanda
 capitals:
 - name:
-    en: Dublin
-    de: Dublin
+    en-US: Dublin
+    de-CH: Dublin
+    pl-PL: Dublin
+    pt-BR: Dublin
   role: capital
   wikidata: Q1761
   lat: 53.34972
@@ -20,5 +24,7 @@ regions:
 - Europe
 - Northern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Republic_of_Ireland
-  de: https://de.wikipedia.org/wiki/Irland
+  en-US: https://en.wikipedia.org/wiki/Republic_of_Ireland
+  de-CH: https://de.wikipedia.org/wiki/Irland
+  pl-PL: https://pl.wikipedia.org/wiki/Irlandia
+  pt-BR: https://pt.wikipedia.org/wiki/Irlanda

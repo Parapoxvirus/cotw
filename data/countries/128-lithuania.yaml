@@ -4,15 +4,21 @@ iso3: LTU
 wikidata: Q37
 status: sovereign
 name:
-  en: Lithuania
-  de: Litauen
+  en-US: Lithuania
+  de-CH: Litauen
+  pl-PL: Litwa
+  pt-BR: Lituânia
 formal_name:
-  en: The Republic of Lithuania
-  de: Republik Litauen
+  en-US: The Republic of Lithuania
+  de-CH: Republik Litauen
+  pl-PL: Republika Litewska
+  pt-BR: República da Lituânia
 capitals:
 - name:
-    en: Vilnius
-    de: Vilnius / Wilna
+    en-US: Vilnius
+    de-CH: Vilnius / Wilna
+    pl-PL: Wilno
+    pt-BR: Vilnius
   role: capital
   wikidata: Q216
   lat: 54.68722
@@ -26,5 +32,7 @@ regions:
 - Europe
 - Northern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Lithuania
-  de: https://de.wikipedia.org/wiki/Litauen
+  en-US: https://en.wikipedia.org/wiki/Lithuania
+  de-CH: https://de.wikipedia.org/wiki/Litauen
+  pl-PL: https://pl.wikipedia.org/wiki/Litwa
+  pt-BR: https://pt.wikipedia.org/wiki/Lituânia

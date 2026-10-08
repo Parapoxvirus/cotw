@@ -4,15 +4,21 @@ iso3: GHA
 wikidata: Q117
 status: sovereign
 name:
-  en: Ghana
-  de: Ghana
+  en-US: Ghana
+  de-CH: Ghana
+  pl-PL: Ghana
+  pt-BR: Gana
 formal_name:
-  en: The Republic of Ghana
-  de: Republik Ghana
+  en-US: The Republic of Ghana
+  de-CH: Republik Ghana
+  pl-PL: Republika Ghany
+  pt-BR: República de Gana
 capitals:
 - name:
-    en: Accra
-    de: Accra
+    en-US: Accra
+    de-CH: Accra
+    pl-PL: Akra
+    pt-BR: Acra
   role: capital
   wikidata: Q3761
   lat: 5.55602
@@ -26,5 +32,7 @@ regions:
 - Sub-Saharan Africa
 - Western Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Ghana
-  de: https://de.wikipedia.org/wiki/Ghana
+  en-US: https://en.wikipedia.org/wiki/Ghana
+  de-CH: https://de.wikipedia.org/wiki/Ghana
+  pl-PL: https://pl.wikipedia.org/wiki/Ghana
+  pt-BR: https://pt.wikipedia.org/wiki/Gana

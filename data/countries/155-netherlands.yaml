@@ -4,28 +4,40 @@ iso3: NLD
 wikidata: Q55
 status: sovereign
 name:
-  en: Netherlands, The
-  de: Niederlande
+  en-US: Netherlands, The
+  de-CH: Niederlande
+  pl-PL: Holandia
+  pt-BR: Países Baixos
 formal_name:
-  en: The Kingdom of the Netherlands
-  de: Königreich der Niederlande
+  en-US: The Kingdom of the Netherlands
+  de-CH: Königreich der Niederlande
+  pl-PL: Królestwo Niderlandów
+  pt-BR: Reino dos Países Baixos
 capitals:
 - name:
-    en: Amsterdam
-    de: Amsterdam
+    en-US: Amsterdam
+    de-CH: Amsterdam
+    pl-PL: Amsterdam
+    pt-BR: Amsterdã
   label:
-    en: capital
-    de: Hauptstadt
+    en-US: capital
+    de-CH: Hauptstadt
+    pl-PL: stolica
+    pt-BR: capital
   role: capital
   wikidata: Q727
   lat: 52.36667
   lon: 4.88333
 - name:
-    en: The Hague
-    de: Den Haag
+    en-US: The Hague
+    de-CH: Den Haag
+    pl-PL: Haga
+    pt-BR: Haia
   label:
-    en: seat of government
-    de: Regierungssitz
+    en-US: seat of government
+    de-CH: Regierungssitz
+    pl-PL: siedziba rządu
+    pt-BR: sede do governo
   role: seat_of_government
   wikidata: Q36600
   lat: 52.08
@@ -37,5 +49,7 @@ regions:
 - Europe
 - Western Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Netherlands
-  de: https://de.wikipedia.org/wiki/Niederlande
+  en-US: https://en.wikipedia.org/wiki/Netherlands
+  de-CH: https://de.wikipedia.org/wiki/Niederlande
+  pl-PL: https://pl.wikipedia.org/wiki/Holandia_(Królestwo_Niderlandów)
+  pt-BR: https://pt.wikipedia.org/wiki/Países_Baixos

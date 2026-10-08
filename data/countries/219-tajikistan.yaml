@@ -4,15 +4,21 @@ iso3: TJK
 wikidata: Q863
 status: sovereign
 name:
-  en: Tajikistan
-  de: Tadschikistan
+  en-US: Tajikistan
+  de-CH: Tadschikistan
+  pl-PL: Tadżykistan
+  pt-BR: Tajiquistão
 formal_name:
-  en: The Republic of Tajikistan
-  de: Republik Tadschikistan
+  en-US: The Republic of Tajikistan
+  de-CH: Republik Tadschikistan
+  pl-PL: Republika Tadżykistanu
+  pt-BR: República do Tajiquistão
 capitals:
 - name:
-    en: Dushanbe
-    de: Duschanbe
+    en-US: Dushanbe
+    de-CH: Duschanbe
+    pl-PL: Duszanbe
+    pt-BR: Dushanbe
   role: capital
   wikidata: Q9365
   lat: 38.57306
@@ -26,5 +32,7 @@ regions:
 - Asia
 - Central Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Tajikistan
-  de: https://de.wikipedia.org/wiki/Tadschikistan
+  en-US: https://en.wikipedia.org/wiki/Tajikistan
+  de-CH: https://de.wikipedia.org/wiki/Tadschikistan
+  pl-PL: https://pl.wikipedia.org/wiki/Tadżykistan
+  pt-BR: https://pt.wikipedia.org/wiki/Tajiquistão

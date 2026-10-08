@@ -114,8 +114,8 @@ def _fake_env(tmp_path: Path, licenses: dict[str, str]):
 
 
 ENTRIES = {
-    "001": {"id": "001", "wikidata": "Q1", "name": {"en": "Mätzlingen"}},
-    "002": {"id": "002", "wikidata": "Q2", "name": {"en": "Groß-Übersee"}, "dependency_of": "001"},
+    "001": {"id": "001", "wikidata": "Q1", "name": {"en-US": "Mätzlingen"}},
+    "002": {"id": "002", "wikidata": "Q2", "name": {"en-US": "Groß-Übersee"}, "dependency_of": "001"},
 }
 
 

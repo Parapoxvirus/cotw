@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
 COUNTRIES = DATA / "countries"
 IDS_FILE = DATA / "ids.yaml"
+LOCALES_FILE = DATA / "locales.yaml"  # wanted languages and their sources
 WIKIDATA = DATA / "wikidata"
 DERIVED = DATA / "derived"
 OVERRIDES = DATA / "overrides"

@@ -5,15 +5,20 @@ wikidata: Q31057
 status: dependency
 dependency_of: '013'
 name:
-  en: Norfolk Island
-  de: Norfolkinsel
+  en-US: Norfolk Island
+  de-CH: Norfolkinsel
+  pl-PL: Norfolk
+  pt-BR: Ilhas Norfolk
 formal_name:
-  en: Territory of Norfolk Island
-  de: Territorium der Norfolkinsel
+  en-US: Territory of Norfolk Island
+  de-CH: Territorium der Norfolkinsel
+  pl-PL: Terytorium Wyspy Norfolk
 capitals:
 - name:
-    en: Kingston
-    de: Kingston
+    en-US: Kingston
+    de-CH: Kingston
+    pl-PL: Kingston
+    pt-BR: Kingston
   role: capital
   wikidata: Q30963
   lat: -29.05
@@ -23,5 +28,7 @@ regions:
 - Oceania
 - Australia and New Zealand
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Norfolk_Island
-  de: https://de.wikipedia.org/wiki/Norfolkinsel
+  en-US: https://en.wikipedia.org/wiki/Norfolk_Island
+  de-CH: https://de.wikipedia.org/wiki/Norfolkinsel
+  pl-PL: https://pl.wikipedia.org/wiki/Norfolk_(terytorium)
+  pt-BR: https://pt.wikipedia.org/wiki/Ilha_Norfolque

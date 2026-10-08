@@ -1,0 +1,42 @@
+{
+ "base_path": "/government/publications/country-names",
+ "title": "Country names",
+ "public_updated_at": "2026-07-20T16:44:20+01:00",
+ "updated_at": "2026-08-14T17:42:33+01:00",
+ "first_published_at": "2014-07-01T00:00:00+01:00",
+ "details": {
+  "attachments": [
+   {
+    "id": "9424440",
+    "title": "Country names: The Permanent Committee on Geographical Names for British official use",
+    "url": "/government/publications/country-names/country-names-the-permanent-committee-on-geographical-names-for-british-official-use",
+    "content_type": null,
+    "attachment_type": "html"
+   },
+   {
+    "id": "9424441",
+    "title": "Country names: The Permanent Committee on Geographical Names for British official use",
+    "url": "https://assets.publishing.service.gov.uk/media/6a5a434a24d4d0ad06d946cf/Country_names_-_The_Permanent_Committee_on_Geographical_Names_for_British_official_use.csv",
+    "content_type": "text/csv",
+    "attachment_type": "file"
+   },
+   {
+    "id": "9424442",
+    "title": "Timeline of country name changes in HMG use: 1919 to present",
+    "url": "/government/publications/country-names/timeline-of-country-name-changes-in-hmg-use-1919-to-present",
+    "content_type": null,
+    "attachment_type": "html"
+   }
+  ],
+  "change_history": [
+   {
+    "note": "Updated 'Country names: The Permanent Committee on Geographical Names for British official use' and 'Timeline of country name changes in HMG use: 1919 to present'.",
+    "public_timestamp": "2026-07-20T15:44:20Z"
+   },
+   {
+    "note": "Updated: 2006 and 2020 entries for Nepal in 'Timeline of country name changes in HMG use: 1919 to present'.",
+    "public_timestamp": "2026-04-20T13:55:28Z"
+   }
+  ]
+ }
+}

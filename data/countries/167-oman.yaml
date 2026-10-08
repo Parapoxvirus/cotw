@@ -4,15 +4,21 @@ iso3: OMN
 wikidata: Q842
 status: sovereign
 name:
-  en: Oman
-  de: Oman
+  en-US: Oman
+  de-CH: Oman
+  pl-PL: Oman
+  pt-BR: Omã
 formal_name:
-  en: The Sultanate of Oman
-  de: Sultanat Oman
+  en-US: The Sultanate of Oman
+  de-CH: Sultanat Oman
+  pl-PL: Sułtanat Omanu
+  pt-BR: Sultanato de Omã
 capitals:
 - name:
-    en: Muscat
-    de: Maskat
+    en-US: Muscat
+    de-CH: Maskat
+    pl-PL: Maskat
+    pt-BR: Mascate
   role: capital
   wikidata: Q3826
   lat: 23.61389
@@ -25,5 +31,7 @@ regions:
 - Asia
 - Western Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Oman
-  de: https://de.wikipedia.org/wiki/Oman
+  en-US: https://en.wikipedia.org/wiki/Oman
+  de-CH: https://de.wikipedia.org/wiki/Oman
+  pl-PL: https://pl.wikipedia.org/wiki/Oman
+  pt-BR: https://pt.wikipedia.org/wiki/Omã

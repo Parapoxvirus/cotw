@@ -5,15 +5,19 @@ wikidata: Q5689
 status: dependency
 dependency_of: '075'
 name:
-  en: Åland
-  de: Åland
+  en-US: Åland
+  de-CH: Åland
+  pl-PL: Wyspy Alandzkie
+  pt-BR: Ilhas Aland
 formal_name:
-  en: Åland Islands
-  de: Åland Inseln
+  en-US: Åland Islands
+  de-CH: Ålandinseln
 capitals:
 - name:
-    en: Mariehamn
-    de: Mariehamn
+    en-US: Mariehamn
+    de-CH: Mariehamn
+    pl-PL: Maarianhamina
+    pt-BR: Mariehamn
   role: capital
   wikidata: Q48329
   lat: 60.09861
@@ -23,5 +27,7 @@ regions:
 - Europe
 - Northern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Åland
-  de: https://de.wikipedia.org/wiki/Åland
+  en-US: https://en.wikipedia.org/wiki/Åland
+  de-CH: https://de.wikipedia.org/wiki/Åland
+  pl-PL: https://pl.wikipedia.org/wiki/Wyspy_Alandzkie
+  pt-BR: https://pt.wikipedia.org/wiki/Ilhas_Åland

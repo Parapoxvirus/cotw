@@ -24,7 +24,7 @@ def _entry(**overrides) -> dict:
         "wikidata": "Q1",
         "status": "sovereign",
         "name": _text("Musterland"),
-        "formal_name": {**_text("Republic of Musterland"), "de": "Republik Musterland"},
+        "formal_name": {**_text("Republic of Musterland"), "de-CH": "Republik Musterland"},
         "capitals": [
             {
                 "name": _text("Musterhausen"),
@@ -36,7 +36,7 @@ def _entry(**overrides) -> dict:
         ],
         "borders": [],
         "regions": ["Europe", "Western Europe"],
-        "wikipedia": {"en": "https://en.wikipedia.org/wiki/Musterland"},
+        "wikipedia": {"en-US": "https://en.wikipedia.org/wiki/Musterland"},
     }
     base.update(overrides)
     return {k: base[k] for k in schema.FIELD_ORDER if k in base}
@@ -53,17 +53,17 @@ def test_valid_entry_has_no_problems():
         ({"iso2": "xa"}, "iso2"),
         ({"status": "country"}, "status"),
         ({"dependency_of": "002"}, "dependency_of only"),
-        ({"name": {"en": "Only English"}}, "name.de"),
+        ({"name": {"en-US": "Only English"}}, "name.de-CH"),
         ({"capitals": []}, "non-empty"),
         ({"borders": ["002", "001"]}, "sorted"),
         ({"borders": ["001"]}, "itself"),
         ({"regions": []}, "regions"),
-        ({"wikipedia": {"en": "http://example.com"}}, "wikipedia"),
-        ({"wikipedia": {"en": "https://en.wikipedia.org/wiki/Musterland", "de": "https://en.wikipedia.org/wiki/Musterland"}}, "wikipedia.de"),
-        ({"wikipedia": {"en": "https://en.wikipedia.org/wiki/Muster land"}}, "whitespace"),
+        ({"wikipedia": {"en-US": "http://example.com"}}, "wikipedia"),
+        ({"wikipedia": {"en-US": "https://en.wikipedia.org/wiki/Musterland", "de-CH": "https://en.wikipedia.org/wiki/Musterland"}}, "wikipedia.de-CH"),
+        ({"wikipedia": {"en-US": "https://en.wikipedia.org/wiki/Muster land"}}, "whitespace"),
         ({"name": {**_text("Musterland"), "xx": "Musterland"}}, "name.xx: not a registered language"),
         ({"formal_name": {"xx": "Musterland"}}, "formal_name.xx: not a registered language"),
-        ({"wikipedia": {"en": "https://en.wikipedia.org/wiki/Musterland", "xx": "https://xx.wikipedia.org/wiki/M"}},
+        ({"wikipedia": {"en-US": "https://en.wikipedia.org/wiki/Musterland", "xx": "https://xx.wikipedia.org/wiki/M"}},
          "wikipedia.xx: not a registered language"),
     ],
 )
@@ -83,12 +83,12 @@ def test_every_registered_language_is_required(code):
 
 
 @pytest.mark.parametrize("code", languages.LANGUAGES)
-def test_optional_map_present_needs_every_language(code):
-    """``name_label``, ``formal_name`` and ``capitals[].label``: absent, or in every language."""
+def test_shared_optional_map_present_needs_every_language(code):
+    """``name_label`` and ``capitals[].label`` carry shared content: absent, or in every language."""
     partial = {k: v for k, v in _text("note").items() if k != code}
     capital = dict(_entry()["capitals"][0], label=partial)
-    problems = schema.validate_entry(_entry(name_label=partial, formal_name=partial, capitals=[capital]))
-    for where in ("name_label", "formal_name", "capitals[0].label"):
+    problems = schema.validate_entry(_entry(name_label=partial, capitals=[capital]))
+    for where in ("name_label", "capitals[0].label"):
         assert f"001: {where}.{code}: missing (present in other languages)" in problems
     complete = dict(_entry()["capitals"][0], label=_text("note"))
     assert schema.validate_entry(_entry(name_label=_text("note"), capitals=[complete])) == []
@@ -96,9 +96,46 @@ def test_optional_map_present_needs_every_language(code):
     assert schema.validate_entry(no_formal) == []
 
 
+@pytest.mark.parametrize("code", languages.LANGUAGES)
+def test_formal_name_is_optional_per_locale(code):
+    """A locale without a sourced formal name is left out; the others stay (docs/SCHEMA.md)."""
+    sparse = {k: v for k, v in _entry()["formal_name"].items() if k != code}
+    assert schema.validate_entry(_entry(formal_name=sparse)) == []
+    assert schema.validate_entry(_entry(formal_name={code: "Republik Musterland"})) == []
+
+
+@pytest.mark.parametrize(
+    "formal_name, problem",
+    [
+        ({}, "001: formal_name: empty (omit the field instead)"),
+        ({"en-US": "Musterland", "xx": "Musterland"}, "001: formal_name.xx: not a registered language"),
+        ({"de-CH": ""}, "001: formal_name.de-CH: must be a non-empty string"),
+        ({"de-CH": None}, "001: formal_name.de-CH: must be a non-empty string"),
+        ({"de-CH": 42}, "001: formal_name.de-CH: must be a non-empty string"),
+        ({"de-CH": "   "}, "001: formal_name.de-CH: must be a non-empty string"),
+        ({"de-CH": " Republik Musterland"}, "001: formal_name.de-CH: leading/trailing whitespace"),
+        ({"en-US": "The People's Republic"}, "001: formal_name.en-US: straight apostrophe ' (use ’)"),
+        (["Republik Musterland"], "001: formal_name: must be a mapping of language → text"),
+    ],
+)
+def test_supplied_formal_name_is_still_checked(formal_name, problem):
+    problems = schema.validate_entry(_entry(formal_name=formal_name))
+    assert len(problems) == 1 and problems[0].startswith(problem), problems
+
+
+def test_required_names_stay_complete_next_to_a_sparse_formal_name():
+    sparse = {"en-US": "Republic of Musterland"}
+    problems = schema.validate_entry(_entry(formal_name=sparse, name={"en-US": "Musterland"}))
+    assert problems == [f"001: name.{code}: missing" for code in languages.LANGUAGES if code != "en-US"]
+
+
 def test_straight_apostrophe_is_rejected():
-    e = _entry(formal_name={**_text("The People's Republic of Musterland"), "de": "Volksrepublik Musterland"})
-    assert schema.validate_entry(e) == ["001: formal_name.en: straight apostrophe ' (use ’)"]
+    e = _entry(formal_name={**_text("The People's Republic of Musterland"), "de-CH": "Volksrepublik Musterland"})
+    assert schema.validate_entry(e) == [
+        f"001: formal_name.{code}: straight apostrophe ' (use ’)"
+        for code in languages.LANGUAGES
+        if code != "de-CH"
+    ]
     capital = dict(_entry()["capitals"][0], name=_text("Nukuʻalofa"), label=_text("Côte d’Ivoire"))
     assert schema.validate_entry(_entry(name=_text("People’s Musterland"), capitals=[capital])) == []
 
@@ -128,7 +165,7 @@ def test_cross_rules_detect_asymmetric_borders_and_bad_parent():
 
 
 def test_umlaut_round_trip(tmp_path):
-    e = _entry(name={"en": "Austria", "de": "Österreich"}, formal_name={"en": "Côte d’Ivoire", "de": "Großherzogtum Müsterlingen"})
+    e = _entry(name={"en-US": "Austria", "de-CH": "Österreich"}, formal_name={"en-US": "Côte d’Ivoire", "de-CH": "Großherzogtum Müsterlingen"})
     text = dump_entry(e)
     assert "Österreich" in text and "Côte d’Ivoire" in text and "Großherzogtum" in text
     path = tmp_path / "001-austria.yaml"

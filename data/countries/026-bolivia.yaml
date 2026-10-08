@@ -4,28 +4,40 @@ iso3: BOL
 wikidata: Q750
 status: sovereign
 name:
-  en: Bolivia
-  de: Bolivien
+  en-US: Bolivia
+  de-CH: Bolivien
+  pl-PL: Boliwia
+  pt-BR: Bolívia
 formal_name:
-  en: The Plurinational State of Bolivia
-  de: Plurinationaler Staat Bolivien
+  en-US: The Plurinational State of Bolivia
+  de-CH: Plurinationaler Staat Bolivien
+  pl-PL: Wielonarodowe Państwo Boliwia
+  pt-BR: Estado Plurinacional da Bolívia
 capitals:
 - name:
-    en: Sucre
-    de: Sucre
+    en-US: Sucre
+    de-CH: Sucre
+    pl-PL: Sucre
+    pt-BR: Sucre
   label:
-    en: capital
-    de: Hauptstadt
+    en-US: capital
+    de-CH: Hauptstadt
+    pl-PL: stolica
+    pt-BR: capital
   role: capital
   wikidata: Q2907
   lat: -19.0475
   lon: -65.26
 - name:
-    en: La Paz
-    de: La Paz
+    en-US: La Paz
+    de-CH: La Paz
+    pl-PL: La Paz
+    pt-BR: La Paz
   label:
-    en: seat of government
-    de: Regierungssitz
+    en-US: seat of government
+    de-CH: Regierungssitz
+    pl-PL: siedziba rządu
+    pt-BR: sede do governo
   role: seat_of_government
   wikidata: Q1491
   lat: -16.49583
@@ -41,5 +53,7 @@ regions:
 - Latin America and the Caribbean
 - South America
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Bolivia
-  de: https://de.wikipedia.org/wiki/Bolivien
+  en-US: https://en.wikipedia.org/wiki/Bolivia
+  de-CH: https://de.wikipedia.org/wiki/Bolivien
+  pl-PL: https://pl.wikipedia.org/wiki/Boliwia
+  pt-BR: https://pt.wikipedia.org/wiki/Bolívia

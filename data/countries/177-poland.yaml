@@ -4,15 +4,21 @@ iso3: POL
 wikidata: Q36
 status: sovereign
 name:
-  en: Poland
-  de: Polen
+  en-US: Poland
+  de-CH: Polen
+  pl-PL: Polska
+  pt-BR: Polônia
 formal_name:
-  en: The Republic of Poland
-  de: Republik Polen
+  en-US: The Republic of Poland
+  de-CH: Republik Polen
+  pl-PL: Rzeczpospolita Polska
+  pt-BR: República da Polônia
 capitals:
 - name:
-    en: Warsaw
-    de: Warschau
+    en-US: Warsaw
+    de-CH: Warschau
+    pl-PL: Warszawa
+    pt-BR: Varsóvia
   role: capital
   wikidata: Q270
   lat: 52.23
@@ -29,5 +35,7 @@ regions:
 - Europe
 - Eastern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Poland
-  de: https://de.wikipedia.org/wiki/Polen
+  en-US: https://en.wikipedia.org/wiki/Poland
+  de-CH: https://de.wikipedia.org/wiki/Polen
+  pl-PL: https://pl.wikipedia.org/wiki/Polska
+  pt-BR: https://pt.wikipedia.org/wiki/Polónia

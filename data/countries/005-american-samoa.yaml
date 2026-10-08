@@ -5,25 +5,37 @@ wikidata: Q16641
 status: dependency
 dependency_of: '237'
 name:
-  en: American Samoa
-  de: Amerikanisch-Samoa
+  en-US: American Samoa
+  de-CH: Amerikanisch-Samoa
+  pl-PL: Samoa Amerykańskie
+  pt-BR: Samoa Americana
+formal_name:
+  pl-PL: Terytorium Samoa Amerykańskiego
 capitals:
 - name:
-    en: Pago Pago
-    de: Pago Pago
+    en-US: Pago Pago
+    de-CH: Pago Pago
+    pl-PL: Pago Pago
+    pt-BR: Pago Pago
   label:
-    en: capital
-    de: Hauptstadt
+    en-US: capital
+    de-CH: Hauptstadt
+    pl-PL: stolica
+    pt-BR: capital
   role: capital
   wikidata: Q51678
   lat: -14.27944
   lon: -170.70056
 - name:
-    en: Fagatogo
-    de: Fagatogo
+    en-US: Fagatogo
+    de-CH: Fagatogo
+    pl-PL: Fagatogo
+    pt-BR: Fagatogo
   label:
-    en: seat of government
-    de: Regierungssitz
+    en-US: seat of government
+    de-CH: Regierungssitz
+    pl-PL: siedziba rządu
+    pt-BR: sede do governo
   role: seat_of_government
   wikidata: Q1257213
   lat: -14.2825
@@ -33,5 +45,7 @@ regions:
 - Oceania
 - Polynesia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/American_Samoa
-  de: https://de.wikipedia.org/wiki/Amerikanisch-Samoa
+  en-US: https://en.wikipedia.org/wiki/American_Samoa
+  de-CH: https://de.wikipedia.org/wiki/Amerikanisch-Samoa
+  pl-PL: https://pl.wikipedia.org/wiki/Samoa_Amerykańskie
+  pt-BR: https://pt.wikipedia.org/wiki/Samoa_Americana

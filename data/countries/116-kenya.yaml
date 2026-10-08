@@ -4,15 +4,21 @@ iso3: KEN
 wikidata: Q114
 status: sovereign
 name:
-  en: Kenya
-  de: Kenia
+  en-US: Kenya
+  de-CH: Kenia
+  pl-PL: Kenia
+  pt-BR: Quênia
 formal_name:
-  en: The Republic of Kenya
-  de: Republik Kenia
+  en-US: The Republic of Kenya
+  de-CH: Republik Kenia
+  pl-PL: Republika Kenii
+  pt-BR: República do Quênia
 capitals:
 - name:
-    en: Nairobi
-    de: Nairobi
+    en-US: Nairobi
+    de-CH: Nairobi
+    pl-PL: Nairobi
+    pt-BR: Nairóbi
   role: capital
   wikidata: Q3870
   lat: -1.28639
@@ -28,5 +34,7 @@ regions:
 - Sub-Saharan Africa
 - Eastern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Kenya
-  de: https://de.wikipedia.org/wiki/Kenia
+  en-US: https://en.wikipedia.org/wiki/Kenya
+  de-CH: https://de.wikipedia.org/wiki/Kenia
+  pl-PL: https://pl.wikipedia.org/wiki/Kenia
+  pt-BR: https://pt.wikipedia.org/wiki/Quénia

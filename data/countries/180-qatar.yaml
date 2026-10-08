@@ -4,15 +4,21 @@ iso3: QAT
 wikidata: Q846
 status: sovereign
 name:
-  en: Qatar
-  de: Katar
+  en-US: Qatar
+  de-CH: Katar
+  pl-PL: Katar
+  pt-BR: Catar
 formal_name:
-  en: The State of Qatar
-  de: Staat Katar
+  en-US: The State of Qatar
+  de-CH: Staat Katar
+  pl-PL: Państwo Katar
+  pt-BR: Estado do Catar
 capitals:
 - name:
-    en: Doha
-    de: Doha
+    en-US: Doha
+    de-CH: Doha
+    pl-PL: Doha
+    pt-BR: Doha
   role: capital
   wikidata: Q3861
   lat: 25.28611
@@ -23,5 +29,7 @@ regions:
 - Asia
 - Western Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Qatar
-  de: https://de.wikipedia.org/wiki/Katar
+  en-US: https://en.wikipedia.org/wiki/Qatar
+  de-CH: https://de.wikipedia.org/wiki/Katar
+  pl-PL: https://pl.wikipedia.org/wiki/Katar
+  pt-BR: https://pt.wikipedia.org/wiki/Catar

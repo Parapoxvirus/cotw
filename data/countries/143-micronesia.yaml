@@ -4,15 +4,21 @@ iso3: FSM
 wikidata: Q702
 status: sovereign
 name:
-  en: Micronesia
-  de: Mikronesien
+  en-US: Micronesia
+  de-CH: Mikronesien
+  pl-PL: Mikronezja
+  pt-BR: Micronésia
 formal_name:
-  en: The Federated States of Micronesia
-  de: Föderierte Staaten von Mikronesien
+  en-US: The Federated States of Micronesia
+  de-CH: Föderierte Staaten von Mikronesien
+  pl-PL: Sfederowane Stany Mikronezji
+  pt-BR: Estados Federados da Micronésia
 capitals:
 - name:
-    en: Palikir
-    de: Palikir
+    en-US: Palikir
+    de-CH: Palikir
+    pl-PL: Palikir
+    pt-BR: Palikir
   role: capital
   wikidata: Q42751
   lat: 6.91778
@@ -22,5 +28,7 @@ regions:
 - Oceania
 - Micronesia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Federated_States_of_Micronesia
-  de: https://de.wikipedia.org/wiki/Föderierte_Staaten_von_Mikronesien
+  en-US: https://en.wikipedia.org/wiki/Federated_States_of_Micronesia
+  de-CH: https://de.wikipedia.org/wiki/Föderierte_Staaten_von_Mikronesien
+  pl-PL: https://pl.wikipedia.org/wiki/Mikronezja
+  pt-BR: https://pt.wikipedia.org/wiki/Estados_Federados_da_Micronésia

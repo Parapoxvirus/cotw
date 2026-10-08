@@ -4,15 +4,21 @@ iso3: ECU
 wikidata: Q736
 status: sovereign
 name:
-  en: Ecuador
-  de: Ecuador
+  en-US: Ecuador
+  de-CH: Ecuador
+  pl-PL: Ekwador
+  pt-BR: Equador
 formal_name:
-  en: The Republic of Ecuador
-  de: Republik Ecuador
+  en-US: The Republic of Ecuador
+  de-CH: Republik Ecuador
+  pl-PL: Republika Ekwadoru
+  pt-BR: República do Equador
 capitals:
 - name:
-    en: Quito
-    de: Quito
+    en-US: Quito
+    de-CH: Quito
+    pl-PL: Quito
+    pt-BR: Quito
   role: capital
   wikidata: Q2900
   lat: -0.22
@@ -25,5 +31,7 @@ regions:
 - Latin America and the Caribbean
 - South America
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Ecuador
-  de: https://de.wikipedia.org/wiki/Ecuador
+  en-US: https://en.wikipedia.org/wiki/Ecuador
+  de-CH: https://de.wikipedia.org/wiki/Ecuador
+  pl-PL: https://pl.wikipedia.org/wiki/Ekwador
+  pt-BR: https://pt.wikipedia.org/wiki/Equador

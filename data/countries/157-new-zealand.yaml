@@ -4,12 +4,16 @@ iso3: NZL
 wikidata: Q664
 status: sovereign
 name:
-  en: New Zealand
-  de: Neuseeland
+  en-US: New Zealand
+  de-CH: Neuseeland
+  pl-PL: Nowa Zelandia
+  pt-BR: Nova Zelândia
 capitals:
 - name:
-    en: Wellington
-    de: Wellington
+    en-US: Wellington
+    de-CH: Wellington
+    pl-PL: Wellington
+    pt-BR: Wellington
   role: capital
   wikidata: Q23661
   lat: -41.28889
@@ -19,5 +23,7 @@ regions:
 - Oceania
 - Australia and New Zealand
 wikipedia:
-  en: https://en.wikipedia.org/wiki/New_Zealand
-  de: https://de.wikipedia.org/wiki/Neuseeland
+  en-US: https://en.wikipedia.org/wiki/New_Zealand
+  de-CH: https://de.wikipedia.org/wiki/Neuseeland
+  pl-PL: https://pl.wikipedia.org/wiki/Nowa_Zelandia
+  pt-BR: https://pt.wikipedia.org/wiki/Nova_Zelândia

@@ -4,15 +4,21 @@ iso3: GNB
 wikidata: Q1007
 status: sovereign
 name:
-  en: Guinea-Bissau
-  de: Guinea-Bissau
+  en-US: Guinea-Bissau
+  de-CH: Guinea-Bissau
+  pl-PL: Gwinea Bissau
+  pt-BR: Guiné-Bissau
 formal_name:
-  en: The Republic of Guinea-Bissau
-  de: Republik Guinea-Bissau
+  en-US: The Republic of Guinea-Bissau
+  de-CH: Republik Guinea-Bissau
+  pl-PL: Republika Gwinei Bissau
+  pt-BR: República da Guiné-Bissau
 capitals:
 - name:
-    en: Bissau
-    de: Bissau
+    en-US: Bissau
+    de-CH: Bissau
+    pl-PL: Bissau
+    pt-BR: Bissau
   role: capital
   wikidata: Q3739
   lat: 11.86
@@ -25,5 +31,7 @@ regions:
 - Sub-Saharan Africa
 - Western Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Guinea-Bissau
-  de: https://de.wikipedia.org/wiki/Guinea-Bissau
+  en-US: https://en.wikipedia.org/wiki/Guinea-Bissau
+  de-CH: https://de.wikipedia.org/wiki/Guinea-Bissau
+  pl-PL: https://pl.wikipedia.org/wiki/Gwinea_Bissau
+  pt-BR: https://pt.wikipedia.org/wiki/Guiné-Bissau

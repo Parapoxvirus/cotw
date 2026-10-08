@@ -25,7 +25,7 @@ from shapely import STRtree
 from shapely.geometry import MultiPolygon, Polygon
 from shapely.ops import unary_union
 
-from . import geometry, marineregions, naturalearth
+from . import geometry, languages, marineregions, naturalearth
 from .paths import BUILD, MEDIA, OVERRIDES, STYLE
 
 PALETTE_FILE = STYLE / "palette.yaml"
@@ -640,7 +640,7 @@ def build(entries: dict, ids: list[str] | None = None, media: Path = MEDIA, worl
                 target.write_text(svg, encoding="utf-8")
                 sizes[target.name] = len(svg.encode("utf-8"))
             (media / file_name(cid, kind)).unlink(missing_ok=True)  # pre-rc2 single file
-        log(f"{cid} {entry['name']['en']}: map1 {sizes[file_name(cid, 'map1', 'day')] // 1024} KB, map2 {sizes[file_name(cid, 'map2', 'day')] // 1024} KB")
+        log(f"{cid} {entry['name'][languages.BASE]}: map1 {sizes[file_name(cid, 'map1', 'day')] // 1024} KB, map2 {sizes[file_name(cid, 'map2', 'day')] // 1024} KB")
     return sizes
 
 
@@ -651,7 +651,7 @@ def write_preview(entries: dict, media: Path = MEDIA, build_dir: Path = BUILD) -
     rel = Path("..") / media.name
     rows = []
     for cid, e in sorted(entries.items()):
-        name = html.escape(f"{cid} {e['name']['en']} ({e['iso2']})")
+        name = html.escape(f"{cid} {e['name'][languages.BASE]} ({e['iso2']})")
         cells = "".join(
             f'<figure><img data-src="{rel}/cotw-{cid}-{k}{"" if k == "flag" else "-@@"}.svg" loading="lazy" alt="">'
             f"<figcaption>{k}</figcaption></figure>"

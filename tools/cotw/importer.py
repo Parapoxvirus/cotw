@@ -5,8 +5,10 @@ After the import the YAML files are the database; the importer stays re-runnable
 deterministic) but is not part of the normal workflow. The v3 spreadsheet itself is not in
 the repository; ``python -m cotw import-v3 <csv>`` takes the export as an argument.
 
-The importer stays EN/DE on purpose: it reads the historical two-language v3 source. Further
-languages are added to the YAML database directly (``cotw.languages``, docs/DECK.md).
+The importer stays EN/DE on purpose: it reads the historical two-language v3 source, whose EN
+and DE columns are the locales ``en-US`` and ``de-CH`` of the database. Further languages are
+added to the YAML database directly (``cotw.languages``, docs/DECK.md). The field names in
+``docs/data-changes.md`` (``name.en``) keep the spreadsheet's column languages.
 """
 
 from __future__ import annotations
@@ -24,6 +26,9 @@ from .paths import COUNTRIES, DOCS, OVERRIDES
 from .source import SourceCapital, SourceEntry, parse_source
 
 CHANGES_FILE = DOCS / "data-changes.md"
+# The locales of the spreadsheet's EN and DE columns, and their labels in the Wikidata caches.
+EN, DE = "en-US", "de-CH"
+LABEL_EN, LABEL_DE = f"label_{EN}", f"label_{DE}"
 
 # Spreadsheet capital labels (EN) that encode a role. Anything else is a free-text note.
 LABEL_ROLES = {
@@ -77,12 +82,12 @@ def _norm(s: str | None) -> str:
 
 
 def _text(en: str, de: str) -> dict:
-    return {"en": en, "de": de}
+    return {EN: en, DE: de}
 
 
 def _text_opt(en: str, de: str) -> dict | None:
     """Optional text map: empty languages are omitted, ``None`` when nothing is left."""
-    out = {k: v for k, v in (("en", en), ("de", de)) if v}
+    out = {k: v for k, v in ((EN, en), (DE, de)) if v}
     return out or None
 
 
@@ -128,11 +133,11 @@ def match_capital(name_en: str, candidates: list[dict]) -> dict | None:
     wants = [_norm(alt) for alt in name_en.split(" / ")]  # Ouagadougou / Wagadugu
     for want in wants:
         for r in candidates:
-            if r["label_en"] and _norm(r["label_en"]) == want:
+            if r[LABEL_EN] and _norm(r[LABEL_EN]) == want:
                 return r
     for want in wants:
         for r in candidates:  # Yaren → Yaren District, Sri Jayawardenepura → … Kotte
-            have = _norm(r["label_en"])
+            have = _norm(r[LABEL_EN])
             if have and (have.startswith(want + " ") or want.startswith(have + " ")):
                 return r
     return None
@@ -192,11 +197,11 @@ def build_entry(
     if wd:
         alts = {_norm(a) for a in re.split(r" / ", e.name_en)} | {_norm(e.name_en)}
         alts |= {_norm(re.sub(r", The$", "", a)) for a in list(alts)}
-        if wd["label_en"] and _norm(wd["label_en"]) not in alts:
-            report.check(e, "name.en", e.name_en, wd["label_en"], f"Wikidata {qid} label")
+        if wd[LABEL_EN] and _norm(wd[LABEL_EN]) not in alts:
+            report.check(e, "name.en", e.name_en, wd[LABEL_EN], f"Wikidata {qid} label")
         alts_de = {_norm(a) for a in re.split(r" / ", e.name_de)}
-        if wd["label_de"] and _norm(wd["label_de"]) not in alts_de:
-            report.check(e, "name.de", e.name_de, wd["label_de"], f"Wikidata {qid} label")
+        if wd[LABEL_DE] and _norm(wd[LABEL_DE]) not in alts_de:
+            report.check(e, "name.de", e.name_de, wd[LABEL_DE], f"Wikidata {qid} label")
         if wd["iso3"] and wd["iso3"] != e.iso3:
             report.check(e, "iso3", e.iso3, wd["iso3"], f"Wikidata {qid} P298")
 
@@ -213,8 +218,8 @@ def build_entry(
     for cap in e.capitals:
         rename = renames.get(e.iso2, {}).get(cap.name_en)
         if rename:
-            report.change(e, f"capital {cap.name_en}: name.en", cap.name_en, rename["en"], rename["reason"].strip())
-            cap = SourceCapital(rename["en"], cap.name_de, cap.label_en, cap.label_de)
+            report.change(e, f"capital {cap.name_en}: name.en", cap.name_en, rename[EN], rename["reason"].strip())
+            cap = SourceCapital(rename[EN], cap.name_de, cap.label_en, cap.label_de)
         role, label = _capital_role(cap, e, report)
         rec = match_capital(cap.name_en, wd_current) or match_capital(cap.name_en, wd_capitals.get(qid, []))
         cap_qid, coord, src = None, None, None
@@ -245,11 +250,11 @@ def build_entry(
         capitals.append(item)
         if rec and rec["end"]:
             report.check(e, f"capital {cap.name_en}: status", role, f"ended {rec['end'][:10]}", f"Wikidata {qid} P36 end time (P582)")
-        if rec and rec["label_en"] and _norm(rec["label_en"]) != _norm(cap.name_en):
-            report.check(e, f"capital {cap.name_en}: name.en", cap.name_en, rec["label_en"], f"Wikidata {cap_qid} label")
-        if rec and rec["label_de"] and _norm(rec["label_de"]) != _norm(cap.name_de):
-            report.check(e, f"capital {cap.name_en}: name.de", cap.name_de, rec["label_de"], f"Wikidata {cap_qid} label")
-    extra = [r["label_en"] or r["qid"] for r in wd_current if r["qid"] not in matched_qids]
+        if rec and rec[LABEL_EN] and _norm(rec[LABEL_EN]) != _norm(cap.name_en):
+            report.check(e, f"capital {cap.name_en}: name.en", cap.name_en, rec[LABEL_EN], f"Wikidata {cap_qid} label")
+        if rec and rec[LABEL_DE] and _norm(rec[LABEL_DE]) != _norm(cap.name_de):
+            report.check(e, f"capital {cap.name_en}: name.de", cap.name_de, rec[LABEL_DE], f"Wikidata {cap_qid} label")
+    extra = [r[LABEL_EN] or r["qid"] for r in wd_current if r["qid"] not in matched_qids]
     if extra:
         report.check(e, "capitals", [c.name_en for c in e.capitals], extra, f"Wikidata {qid} P36 lists additionally")
     if not e.capitals:
@@ -276,15 +281,15 @@ def build_entry(
         out["name_label"] = _text_opt(label_en, label_de)
     formal = {}
     if e.formal_en:
-        formal["en"] = e.formal_en
+        formal[EN] = e.formal_en
     if e.formal_de:
-        formal["de"] = e.formal_de
+        formal[DE] = e.formal_de
     if formal:
         out["formal_name"] = formal
     out["capitals"] = capitals
     out["borders"] = sorted(id_of[b] for b in borders)
     out["regions"] = list(e.regions)
-    out["wikipedia"] = {"en": e.wikipedia_en}
+    out["wikipedia"] = {EN: e.wikipedia_en}
     return out
 
 
@@ -340,6 +345,10 @@ def write_changes(report: Report, ne: dict, border_overrides: dict, path: Path =
         "",
         "Generated by `python -m cotw import-v3`. Every deviation of `data/countries/` from",
         "the v3 spreadsheet (`cotw v3.csv`), with its source. Do not edit by hand.",
+        "",
+        "The languages `en` and `de` in the rows below (`name.en`, `formal_name.{en,de}`, …) are the",
+        "codes from before the deck languages became locales: `en` means `en-US`, `de` means `de-CH`",
+        "(`name.en-US`, `formal_name.de-CH`). The rows are kept as written.",
         "",
         "## Systematic changes",
         "",
@@ -431,7 +440,7 @@ def run(source_csv: Path) -> None:
         )
     sitelinks = wikidata.load_sitelinks()
     for cid, entry in built.items():
-        entry["wikipedia"] = wikidata.wikipedia_links(entry["wikipedia"]["en"], sitelinks.get(entry["wikidata"]))
+        entry["wikipedia"] = wikidata.wikipedia_links(entry["wikipedia"][EN], sitelinks.get(entry["wikidata"]))
     write_entries(dict(sorted(built.items())), ledger)
     write_changes(report, ne, border_overrides)
     print(f"wrote {len(built)} entries, {len(report.changes)} changes, {len(report.checks)} checks")

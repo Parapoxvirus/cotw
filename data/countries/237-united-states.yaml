@@ -4,15 +4,21 @@ iso3: USA
 wikidata: Q30
 status: sovereign
 name:
-  en: United States, The
-  de: Vereinigte Staaten
+  en-US: United States, The
+  de-CH: Vereinigte Staaten
+  pl-PL: Stany Zjednoczone
+  pt-BR: Estados Unidos / EUA
 formal_name:
-  en: The United States of America
-  de: Vereinigte Staaten von Amerika
+  en-US: The United States of America
+  de-CH: Vereinigte Staaten von Amerika
+  pl-PL: Stany Zjednoczone Ameryki
+  pt-BR: Estados Unidos da América
 capitals:
 - name:
-    en: Washington, D.C.
-    de: Washington, D.C.
+    en-US: Washington, D.C.
+    de-CH: Washington, D.C.
+    pl-PL: Waszyngton
+    pt-BR: Washington
   role: capital
   wikidata: Q61
   lat: 38.895
@@ -25,5 +31,7 @@ regions:
 - Americas
 - Northern America
 wikipedia:
-  en: https://en.wikipedia.org/wiki/United_States
-  de: https://de.wikipedia.org/wiki/Vereinigte_Staaten
+  en-US: https://en.wikipedia.org/wiki/United_States
+  de-CH: https://de.wikipedia.org/wiki/Vereinigte_Staaten
+  pl-PL: https://pl.wikipedia.org/wiki/Stany_Zjednoczone
+  pt-BR: https://pt.wikipedia.org/wiki/Estados_Unidos

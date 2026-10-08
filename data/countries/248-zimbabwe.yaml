@@ -4,15 +4,21 @@ iso3: ZWE
 wikidata: Q954
 status: sovereign
 name:
-  en: Zimbabwe
-  de: Simbabwe
+  en-US: Zimbabwe
+  de-CH: Simbabwe
+  pl-PL: Zimbabwe
+  pt-BR: Zimbábue
 formal_name:
-  en: The Republic of Zimbabwe
-  de: Republik Simbabwe
+  en-US: The Republic of Zimbabwe
+  de-CH: Republik Simbabwe
+  pl-PL: Republika Zimbabwe
+  pt-BR: República do Zimbábue
 capitals:
 - name:
-    en: Harare
-    de: Harare
+    en-US: Harare
+    de-CH: Harare
+    pl-PL: Harare
+    pt-BR: Harare
   role: capital
   wikidata: Q3921
   lat: -17.82917
@@ -27,5 +33,7 @@ regions:
 - Sub-Saharan Africa
 - Eastern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Zimbabwe
-  de: https://de.wikipedia.org/wiki/Simbabwe
+  en-US: https://en.wikipedia.org/wiki/Zimbabwe
+  de-CH: https://de.wikipedia.org/wiki/Simbabwe
+  pl-PL: https://pl.wikipedia.org/wiki/Zimbabwe
+  pt-BR: https://pt.wikipedia.org/wiki/Zimbabwe

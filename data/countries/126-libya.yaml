@@ -4,15 +4,21 @@ iso3: LBY
 wikidata: Q1016
 status: sovereign
 name:
-  en: Libya
-  de: Libyen
+  en-US: Libya
+  de-CH: Libyen
+  pl-PL: Libia
+  pt-BR: Líbia
 formal_name:
-  en: The State of Libya
-  de: Staat Libyen
+  en-US: The State of Libya
+  de-CH: Staat Libyen
+  pl-PL: Państwo Libia
+  pt-BR: Estado da Líbia
 capitals:
 - name:
-    en: Tripoli
-    de: Tripolis
+    en-US: Tripoli
+    de-CH: Tripolis
+    pl-PL: Trypolis
+    pt-BR: Trípoli
   role: capital
   wikidata: Q3579
   lat: 32.8875
@@ -28,5 +34,7 @@ regions:
 - Africa
 - Northern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Libya
-  de: https://de.wikipedia.org/wiki/Libyen
+  en-US: https://en.wikipedia.org/wiki/Libya
+  de-CH: https://de.wikipedia.org/wiki/Libyen
+  pl-PL: https://pl.wikipedia.org/wiki/Libia
+  pt-BR: https://pt.wikipedia.org/wiki/Líbia

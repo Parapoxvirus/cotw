@@ -5,15 +5,20 @@ wikidata: Q35555
 status: dependency
 dependency_of: '076'
 name:
-  en: Wallis and Futuna
-  de: Wallis und Futuna
+  en-US: Wallis and Futuna
+  de-CH: Wallis und Futuna
+  pl-PL: Wallis i Futuna
+  pt-BR: Wallis e Futuna
 formal_name:
-  en: Territory of the Wallis and Futuna Islands
-  de: Territorium der Inseln Wallis und Futuna
+  en-US: Territory of the Wallis and Futuna Islands
+  de-CH: Territorium der Inseln Wallis und Futuna
+  pl-PL: Terytorium Wysp Wallis i Futuna
 capitals:
 - name:
-    en: Mata-Utu
-    de: Mata-Utu
+    en-US: Mata-Utu
+    de-CH: Mata-Utu
+    pl-PL: Mata Utu
+    pt-BR: Mata-Utu
   role: capital
   wikidata: Q31002
   lat: -13.2827
@@ -24,5 +29,7 @@ regions:
 - Sub-Saharan Africa
 - Eastern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Wallis_and_Futuna
-  de: https://de.wikipedia.org/wiki/Wallis_und_Futuna
+  en-US: https://en.wikipedia.org/wiki/Wallis_and_Futuna
+  de-CH: https://de.wikipedia.org/wiki/Wallis_und_Futuna
+  pl-PL: https://pl.wikipedia.org/wiki/Wallis_i_Futuna
+  pt-BR: https://pt.wikipedia.org/wiki/Wallis_e_Futuna

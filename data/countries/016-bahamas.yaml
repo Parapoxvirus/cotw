@@ -4,15 +4,21 @@ iso3: BHS
 wikidata: Q778
 status: sovereign
 name:
-  en: Bahamas, The
-  de: Bahamas
+  en-US: Bahamas, The
+  de-CH: Bahamas
+  pl-PL: Bahamy
+  pt-BR: Bahamas
 formal_name:
-  en: The Commonwealth of The Bahamas
-  de: Commonwealth der Bahamas
+  en-US: The Commonwealth of The Bahamas
+  de-CH: Commonwealth der Bahamas
+  pl-PL: Wspólnota Bahamów
+  pt-BR: Comunidade das Bahamas
 capitals:
 - name:
-    en: Nassau
-    de: Nassau
+    en-US: Nassau
+    de-CH: Nassau
+    pl-PL: Nassau
+    pt-BR: Nassau
   role: capital
   wikidata: Q2467
   lat: 25.07806
@@ -23,5 +29,7 @@ regions:
 - Latin America and the Caribbean
 - Caribbean
 wikipedia:
-  en: https://en.wikipedia.org/wiki/The_Bahamas
-  de: https://de.wikipedia.org/wiki/Bahamas
+  en-US: https://en.wikipedia.org/wiki/The_Bahamas
+  de-CH: https://de.wikipedia.org/wiki/Bahamas
+  pl-PL: https://pl.wikipedia.org/wiki/Bahamy
+  pt-BR: https://pt.wikipedia.org/wiki/Bahamas

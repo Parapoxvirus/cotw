@@ -4,15 +4,21 @@ iso3: LBR
 wikidata: Q1014
 status: sovereign
 name:
-  en: Liberia
-  de: Liberia
+  en-US: Liberia
+  de-CH: Liberia
+  pl-PL: Liberia
+  pt-BR: Libéria
 formal_name:
-  en: The Republic of Liberia
-  de: Republik Liberia
+  en-US: The Republic of Liberia
+  de-CH: Republik Liberia
+  pl-PL: Republika Liberii
+  pt-BR: República da Libéria
 capitals:
 - name:
-    en: Monrovia
-    de: Monrovia
+    en-US: Monrovia
+    de-CH: Monrovia
+    pl-PL: Monrovia
+    pt-BR: Monróvia
   role: capital
   wikidata: Q3748
   lat: 6.31056
@@ -26,5 +32,7 @@ regions:
 - Sub-Saharan Africa
 - Western Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Liberia
-  de: https://de.wikipedia.org/wiki/Liberia
+  en-US: https://en.wikipedia.org/wiki/Liberia
+  de-CH: https://de.wikipedia.org/wiki/Liberia
+  pl-PL: https://pl.wikipedia.org/wiki/Liberia
+  pt-BR: https://pt.wikipedia.org/wiki/Libéria

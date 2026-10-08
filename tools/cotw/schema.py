@@ -4,9 +4,18 @@
 (unique IDs/codes, symmetric borders, dependency targets). Both return a list of problems;
 the tests and ``python -m cotw validate`` assert that it is empty.
 
-The required languages are the registered ones (``cotw.languages``): every text map needs each
-of them, and no other. An optional map (``name_label``, ``formal_name``, ``capitals[].label``) is
-either absent or complete. Texts use the typographic apostrophe ’, never a straight ``'``.
+The languages are the registered locales (``cotw.languages``, keyed by the full tag ``de-CH``);
+a text map never has another key. Three kinds of text map:
+
+- required (``name``, ``capitals[].name``): every registered locale;
+- optional and shared (``name_label``, ``capitals[].label``): absent, or in every registered
+  locale, because they translate the same content;
+- optional per locale (``formal_name``): any registered locales, each only where a sourced
+  formal name exists (docs/TRANSLATING.md). An absent locale shows no formal name and never
+  falls back to another language.
+
+Every text that is present is checked the same way: a non-empty string without surrounding
+whitespace, with the typographic apostrophe ’, never a straight ``'``.
 """
 
 from __future__ import annotations
@@ -16,7 +25,7 @@ from pathlib import Path
 
 import yaml
 
-from . import languages
+from . import languages, locales
 from .paths import COUNTRIES
 from .wikidata import wikipedia_url
 
@@ -61,7 +70,11 @@ def load_all(directory: Path = COUNTRIES) -> dict[Path, dict]:
     return {p: load_entry(p) for p in sorted(directory.glob("*.yaml"))}
 
 
-def _check_text_map(value, where: str, problems: list[str], required: bool = True) -> None:
+def _check_text_map(
+    value, where: str, problems: list[str], required: bool = True, per_locale: bool = False
+) -> None:
+    """``required``: the map and every locale. Otherwise the map may be absent; when present it
+    needs every locale, unless ``per_locale`` (``formal_name``), where each locale is optional."""
     if value is None:
         if required:
             problems.append(f"{where}: missing")
@@ -69,9 +82,13 @@ def _check_text_map(value, where: str, problems: list[str], required: bool = Tru
     if not isinstance(value, dict):
         problems.append(f"{where}: must be a mapping of language → text")
         return
-    for lang in languages.LANGUAGES:
-        if (required or value) and not value.get(lang):
-            problems.append(f"{where}.{lang}: missing" + ("" if required else " (present in other languages)"))
+    if per_locale:
+        if not value:
+            problems.append(f"{where}: empty (omit the field instead)")
+    else:
+        for lang in languages.LANGUAGES:
+            if (required or value) and not value.get(lang):
+                problems.append(f"{where}.{lang}: missing" + ("" if required else " (present in other languages)"))
     for lang, text in value.items():
         if lang not in languages.LANGUAGES:
             problems.append(f"{where}.{lang}: not a registered language {languages.LANGUAGES}")
@@ -127,7 +144,7 @@ def validate_entry(
 
     _check_text_map(entry.get("name"), f"{name}: name", problems)
     _check_text_map(entry.get("name_label"), f"{name}: name_label", problems, required=False)
-    _check_text_map(entry.get("formal_name"), f"{name}: formal_name", problems, required=False)
+    _check_text_map(entry.get("formal_name"), f"{name}: formal_name", problems, required=False, per_locale=True)
 
     capitals = entry.get("capitals")
     if not isinstance(capitals, list) or not capitals:
@@ -178,14 +195,14 @@ def validate_entry(
 
     wiki = entry.get("wikipedia")
     base = languages.BASE
-    if not isinstance(wiki, dict) or not str(wiki.get(base, "")).startswith(f"https://{base}.wikipedia.org/wiki/"):
-        problems.append(f"{name}: wikipedia.{base} must be a URL on {base}.wikipedia.org")
+    if not isinstance(wiki, dict) or not str(wiki.get(base, "")).startswith(locales.get(base).wikipedia):
+        problems.append(f"{name}: wikipedia.{base} must be a URL under {locales.get(base).wikipedia}")
     elif isinstance(wiki, dict):
         for lang, url in wiki.items():
             if lang not in languages.LANGUAGES:
                 problems.append(f"{name}: wikipedia.{lang}: not a registered language {languages.LANGUAGES}")
-            elif not isinstance(url, str) or not url.startswith(f"https://{lang}.wikipedia.org/wiki/"):
-                problems.append(f"{name}: wikipedia.{lang} must be a {lang}.wikipedia.org URL")
+            elif not isinstance(url, str) or not url.startswith(locales.get(lang).wikipedia):
+                problems.append(f"{name}: wikipedia.{lang} must be a URL under {locales.get(lang).wikipedia}")
             elif any(ch.isspace() for ch in url):
                 problems.append(f"{name}: wikipedia.{lang} contains whitespace")
         if sitelinks is not None:

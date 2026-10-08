@@ -4,15 +4,21 @@ iso3: SVK
 wikidata: Q214
 status: sovereign
 name:
-  en: Slovakia
-  de: Slowakei
+  en-US: Slovakia
+  de-CH: Slowakei
+  pl-PL: Słowacja
+  pt-BR: Eslováquia
 formal_name:
-  en: The Slovak Republic
-  de: Slowakische Republik
+  en-US: The Slovak Republic
+  de-CH: Slowakische Republik
+  pl-PL: Republika Słowacka
+  pt-BR: República Eslovaca
 capitals:
 - name:
-    en: Bratislava
-    de: Bratislava / Pressburg
+    en-US: Bratislava
+    de-CH: Bratislava / Pressburg
+    pl-PL: Bratysława
+    pt-BR: Bratislava
   role: capital
   wikidata: Q1780
   lat: 48.1517
@@ -27,5 +33,7 @@ regions:
 - Europe
 - Eastern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Slovakia
-  de: https://de.wikipedia.org/wiki/Slowakei
+  en-US: https://en.wikipedia.org/wiki/Slovakia
+  de-CH: https://de.wikipedia.org/wiki/Slowakei
+  pl-PL: https://pl.wikipedia.org/wiki/Słowacja
+  pt-BR: https://pt.wikipedia.org/wiki/Eslováquia

@@ -2,1990 +2,2488 @@
  "AD": [
   {
    "iso3": "AND",
-   "label_de": "Andorra",
-   "label_en": "Andorra",
+   "label_de-CH": "Andorra",
+   "label_en-US": "Andorra",
+   "label_pl-PL": "Andora",
+   "label_pt-BR": "Andorra",
    "qid": "Q228"
   }
  ],
  "AE": [
   {
    "iso3": "ARE",
-   "label_de": "Vereinigte Arabische Emirate",
-   "label_en": "United Arab Emirates",
+   "label_de-CH": "Vereinigte Arabische Emirate",
+   "label_en-US": "United Arab Emirates",
+   "label_pl-PL": "Zjednoczone Emiraty Arabskie",
+   "label_pt-BR": "Emirados Árabes Unidos",
    "qid": "Q878"
   }
  ],
  "AF": [
   {
    "iso3": "AFG",
-   "label_de": "Afghanistan",
-   "label_en": "Afghanistan",
+   "label_de-CH": "Afghanistan",
+   "label_en-US": "Afghanistan",
+   "label_pl-PL": "Afganistan",
+   "label_pt-BR": "Afeganistão",
    "qid": "Q889"
   }
  ],
  "AG": [
   {
    "iso3": "ATG",
-   "label_de": "Antigua und Barbuda",
-   "label_en": "Antigua and Barbuda",
+   "label_de-CH": "Antigua und Barbuda",
+   "label_en-US": "Antigua and Barbuda",
+   "label_pl-PL": "Antigua i Barbuda",
+   "label_pt-BR": "Antígua e Barbuda",
    "qid": "Q781"
   }
  ],
  "AI": [
   {
    "iso3": "AIA",
-   "label_de": "Anguilla",
-   "label_en": "Anguilla",
+   "label_de-CH": "Anguilla",
+   "label_en-US": "Anguilla",
+   "label_pl-PL": "Anguilla",
+   "label_pt-BR": "Anguilla",
    "qid": "Q25228"
   }
  ],
  "AL": [
   {
    "iso3": "ALB",
-   "label_de": "Albanien",
-   "label_en": "Albania",
+   "label_de-CH": "Albanien",
+   "label_en-US": "Albania",
+   "label_pl-PL": "Albania",
+   "label_pt-BR": "Albânia",
    "qid": "Q222"
   }
  ],
  "AM": [
   {
    "iso3": "ARM",
-   "label_de": "Armenien",
-   "label_en": "Armenia",
+   "label_de-CH": "Armenien",
+   "label_en-US": "Armenia",
+   "label_pl-PL": "Armenia",
+   "label_pt-BR": "Armênia",
    "qid": "Q399"
   }
  ],
  "AO": [
   {
    "iso3": "AGO",
-   "label_de": "Angola",
-   "label_en": "Angola",
+   "label_de-CH": "Angola",
+   "label_en-US": "Angola",
+   "label_pl-PL": "Angola",
+   "label_pt-BR": "Angola",
    "qid": "Q916"
   }
  ],
  "AR": [
   {
    "iso3": "ARG",
-   "label_de": "Argentinien",
-   "label_en": "Argentina",
+   "label_de-CH": "Argentinien",
+   "label_en-US": "Argentina",
+   "label_pl-PL": "Argentyna",
+   "label_pt-BR": "Argentina",
    "qid": "Q414"
   }
  ],
  "AS": [
   {
    "iso3": "ASM",
-   "label_de": "Amerikanisch-Samoa",
-   "label_en": "American Samoa",
+   "label_de-CH": "Amerikanisch-Samoa",
+   "label_en-US": "American Samoa",
+   "label_pl-PL": "Samoa Amerykańskie",
+   "label_pt-BR": "Samoa Americana",
    "qid": "Q16641"
   }
  ],
  "AT": [
   {
    "iso3": "AUT",
-   "label_de": "Österreich",
-   "label_en": "Austria",
+   "label_de-CH": "Österreich",
+   "label_en-US": "Austria",
+   "label_pl-PL": "Austria",
+   "label_pt-BR": "Áustria",
    "qid": "Q40"
   }
  ],
  "AU": [
   {
    "iso3": "AUS",
-   "label_de": "Australien",
-   "label_en": "Australia",
+   "label_de-CH": "Australien",
+   "label_en-US": "Australia",
+   "label_pl-PL": "Australia",
+   "label_pt-BR": "Austrália",
    "qid": "Q408"
   }
  ],
  "AW": [
   {
    "iso3": "ABW",
-   "label_de": "Aruba",
-   "label_en": "Aruba",
+   "label_de-CH": "Aruba",
+   "label_en-US": "Aruba",
+   "label_pl-PL": "Aruba",
+   "label_pt-BR": "Aruba",
    "qid": "Q21203"
   }
  ],
  "AX": [
   {
    "iso3": "ALA",
-   "label_de": "Åland",
-   "label_en": "Åland",
+   "label_de-CH": "Åland",
+   "label_en-US": "Åland",
+   "label_pl-PL": "Wyspy Alandzkie",
+   "label_pt-BR": "Åland",
    "qid": "Q5689"
   }
  ],
  "AZ": [
   {
    "iso3": "AZE",
-   "label_de": "Aserbaidschan",
-   "label_en": "Azerbaijan",
+   "label_de-CH": "Aserbaidschan",
+   "label_en-US": "Azerbaijan",
+   "label_pl-PL": "Azerbejdżan",
+   "label_pt-BR": "Azerbaijão",
    "qid": "Q227"
   }
  ],
  "BA": [
   {
    "iso3": "BIH",
-   "label_de": "Bosnien und Herzegowina",
-   "label_en": "Bosnia and Herzegovina",
+   "label_de-CH": "Bosnien und Herzegowina",
+   "label_en-US": "Bosnia and Herzegovina",
+   "label_pl-PL": "Bośnia i Hercegowina",
+   "label_pt-BR": "Bósnia e Herzegovina",
    "qid": "Q225"
   }
  ],
  "BB": [
   {
    "iso3": "BRB",
-   "label_de": "Barbados",
-   "label_en": "Barbados",
+   "label_de-CH": "Barbados",
+   "label_en-US": "Barbados",
+   "label_pl-PL": "Barbados",
+   "label_pt-BR": "Barbados",
    "qid": "Q244"
   }
  ],
  "BD": [
   {
    "iso3": "BGD",
-   "label_de": "Bangladesch",
-   "label_en": "Bangladesh",
+   "label_de-CH": "Bangladesch",
+   "label_en-US": "Bangladesh",
+   "label_pl-PL": "Bangladesz",
+   "label_pt-BR": "Bangladesh",
    "qid": "Q902"
   }
  ],
  "BE": [
   {
    "iso3": "BEL",
-   "label_de": "Belgien",
-   "label_en": "Belgium",
+   "label_de-CH": "Belgien",
+   "label_en-US": "Belgium",
+   "label_pl-PL": "Belgia",
+   "label_pt-BR": "Bélgica",
    "qid": "Q31"
   }
  ],
  "BF": [
   {
    "iso3": "BFA",
-   "label_de": "Burkina Faso",
-   "label_en": "Burkina Faso",
+   "label_de-CH": "Burkina Faso",
+   "label_en-US": "Burkina Faso",
+   "label_pl-PL": "Burkina Faso",
+   "label_pt-BR": "Burquina Fasso",
    "qid": "Q965"
   }
  ],
  "BG": [
   {
    "iso3": "BGR",
-   "label_de": "Bulgarien",
-   "label_en": "Bulgaria",
+   "label_de-CH": "Bulgarien",
+   "label_en-US": "Bulgaria",
+   "label_pl-PL": "Bułgaria",
+   "label_pt-BR": "Bulgária",
    "qid": "Q219"
   }
  ],
  "BH": [
   {
    "iso3": "BHR",
-   "label_de": "Bahrain",
-   "label_en": "Bahrain",
+   "label_de-CH": "Bahrain",
+   "label_en-US": "Bahrain",
+   "label_pl-PL": "Bahrajn",
+   "label_pt-BR": "Barém",
    "qid": "Q398"
   }
  ],
  "BI": [
   {
    "iso3": "BDI",
-   "label_de": "Burundi",
-   "label_en": "Burundi",
+   "label_de-CH": "Burundi",
+   "label_en-US": "Burundi",
+   "label_pl-PL": "Burundi",
+   "label_pt-BR": "Burundi",
    "qid": "Q967"
   }
  ],
  "BJ": [
   {
    "iso3": "BEN",
-   "label_de": "Benin",
-   "label_en": "Benin",
+   "label_de-CH": "Benin",
+   "label_en-US": "Benin",
+   "label_pl-PL": "Benin",
+   "label_pt-BR": "Benim",
    "qid": "Q962"
   }
  ],
  "BL": [
   {
    "iso3": "BLM",
-   "label_de": "Saint-Barthélemy",
-   "label_en": "Saint Barthélemy",
+   "label_de-CH": "Saint-Barthélemy",
+   "label_en-US": "Saint Barthélemy",
+   "label_pl-PL": "Saint-Barthélemy",
+   "label_pt-BR": "São Bartolomeu",
    "qid": "Q25362"
   }
  ],
  "BM": [
   {
    "iso3": "BMU",
-   "label_de": "Bermuda",
-   "label_en": "Bermuda",
+   "label_de-CH": "Bermuda",
+   "label_en-US": "Bermuda",
+   "label_pl-PL": "Bermudy",
+   "label_pt-BR": "Bermudas",
    "qid": "Q23635"
   }
  ],
  "BN": [
   {
    "iso3": "BRN",
-   "label_de": "Brunei",
-   "label_en": "Brunei",
+   "label_de-CH": "Brunei",
+   "label_en-US": "Brunei",
+   "label_pl-PL": "Brunei",
+   "label_pt-BR": "Brunei",
    "qid": "Q921"
   }
  ],
  "BO": [
   {
    "iso3": "BOL",
-   "label_de": "Bolivien",
-   "label_en": "Bolivia",
+   "label_de-CH": "Bolivien",
+   "label_en-US": "Bolivia",
+   "label_pl-PL": "Boliwia",
+   "label_pt-BR": "Bolívia",
    "qid": "Q750"
   }
  ],
  "BQ": [
   {
    "iso3": "BES",
-   "label_de": "Karibische Niederlande",
-   "label_en": "Caribbean Netherlands",
+   "label_de-CH": "Karibische Niederlande",
+   "label_en-US": "Caribbean Netherlands",
+   "label_pl-PL": "Niderlandy Karaibskie",
+   "label_pt-BR": "Países Baixos Caribenhos",
    "qid": "Q27561"
   }
  ],
  "BR": [
   {
    "iso3": "BRA",
-   "label_de": "Brasilien",
-   "label_en": "Brazil",
+   "label_de-CH": "Brasilien",
+   "label_en-US": "Brazil",
+   "label_pl-PL": "Brazylia",
+   "label_pt-BR": "Brasil",
    "qid": "Q155"
   }
  ],
  "BS": [
   {
    "iso3": "BHS",
-   "label_de": "Bahamas",
-   "label_en": "The Bahamas",
+   "label_de-CH": "Bahamas",
+   "label_en-US": "The Bahamas",
+   "label_pl-PL": "Bahamy",
+   "label_pt-BR": "Bahamas",
    "qid": "Q778"
   }
  ],
  "BT": [
   {
    "iso3": "BTN",
-   "label_de": "Bhutan",
-   "label_en": "Bhutan",
+   "label_de-CH": "Bhutan",
+   "label_en-US": "Bhutan",
+   "label_pl-PL": "Bhutan",
+   "label_pt-BR": "Butão",
    "qid": "Q917"
   }
  ],
  "BV": [
   {
    "iso3": "BVT",
-   "label_de": "Bouvetinsel",
-   "label_en": "Bouvet Island",
+   "label_de-CH": "Bouvetinsel",
+   "label_en-US": "Bouvet Island",
+   "label_pl-PL": "Wyspa Bouveta",
+   "label_pt-BR": "Ilha Bouvet",
    "qid": "Q23408"
   }
  ],
  "BW": [
   {
    "iso3": "BWA",
-   "label_de": "Botswana",
-   "label_en": "Botswana",
+   "label_de-CH": "Botswana",
+   "label_en-US": "Botswana",
+   "label_pl-PL": "Botswana",
+   "label_pt-BR": "Botswana",
    "qid": "Q963"
   }
  ],
  "BY": [
   {
    "iso3": "BLR",
-   "label_de": "Belarus",
-   "label_en": "Belarus",
+   "label_de-CH": "Belarus",
+   "label_en-US": "Belarus",
+   "label_pl-PL": "Białoruś",
+   "label_pt-BR": "Belarus",
    "qid": "Q184"
   }
  ],
  "BZ": [
   {
    "iso3": "BLZ",
-   "label_de": "Belize",
-   "label_en": "Belize",
+   "label_de-CH": "Belize",
+   "label_en-US": "Belize",
+   "label_pl-PL": "Belize",
+   "label_pt-BR": "Belize",
    "qid": "Q242"
   }
  ],
  "CA": [
   {
    "iso3": "CAN",
-   "label_de": "Kanada",
-   "label_en": "Canada",
+   "label_de-CH": "Kanada",
+   "label_en-US": "Canada",
+   "label_pl-PL": "Kanada",
+   "label_pt-BR": "Canadá",
    "qid": "Q16"
   }
  ],
  "CC": [
   {
    "iso3": "CCK",
-   "label_de": "Kokosinseln",
-   "label_en": "Cocos (Keeling) Islands",
+   "label_de-CH": "Kokosinseln",
+   "label_en-US": "Cocos (Keeling) Islands",
+   "label_pl-PL": "Wyspy Kokosowe",
+   "label_pt-BR": "Ilhas Cocos",
    "qid": "Q36004"
   }
  ],
  "CD": [
   {
    "iso3": "COD",
-   "label_de": "Demokratische Republik Kongo",
-   "label_en": "Democratic Republic of the Congo",
+   "label_de-CH": "Demokratische Republik Kongo",
+   "label_en-US": "Democratic Republic of the Congo",
+   "label_pl-PL": "Demokratyczna Republika Konga",
+   "label_pt-BR": "República Democrática do Congo",
    "qid": "Q974"
   }
  ],
  "CF": [
   {
    "iso3": "CAF",
-   "label_de": "Zentralafrikanische Republik",
-   "label_en": "Central African Republic",
+   "label_de-CH": "Zentralafrikanische Republik",
+   "label_en-US": "Central African Republic",
+   "label_pl-PL": "Republika Środkowoafrykańska",
+   "label_pt-BR": "República Centro-Africana",
    "qid": "Q929"
   }
  ],
  "CG": [
   {
    "iso3": "COG",
-   "label_de": "Republik Kongo",
-   "label_en": "Republic of the Congo",
+   "label_de-CH": "Republik Kongo",
+   "label_en-US": "Republic of the Congo",
+   "label_pl-PL": "Kongo",
+   "label_pt-BR": "República do Congo",
    "qid": "Q971"
   }
  ],
  "CH": [
   {
    "iso3": "CHE",
-   "label_de": "Schweiz",
-   "label_en": "Switzerland",
+   "label_de-CH": "Schweiz",
+   "label_en-US": "Switzerland",
+   "label_pl-PL": "Szwajcaria",
+   "label_pt-BR": "Suíça",
    "qid": "Q39"
   }
  ],
  "CI": [
   {
    "iso3": "CIV",
-   "label_de": "Elfenbeinküste",
-   "label_en": "Ivory Coast",
+   "label_de-CH": "Elfenbeinküste",
+   "label_en-US": "Ivory Coast",
+   "label_pl-PL": "Wybrzeże Kości Słoniowej",
+   "label_pt-BR": "Costa do Marfim",
    "qid": "Q1008"
   }
  ],
  "CK": [
   {
    "iso3": "COK",
-   "label_de": "Cookinseln",
-   "label_en": "Cook Islands",
+   "label_de-CH": "Cookinseln",
+   "label_en-US": "Cook Islands",
+   "label_pl-PL": "Wyspy Cooka",
+   "label_pt-BR": "ilhas Cook",
    "qid": "Q26988"
   }
  ],
  "CL": [
   {
    "iso3": "CHL",
-   "label_de": "Chile",
-   "label_en": "Chile",
+   "label_de-CH": "Chile",
+   "label_en-US": "Chile",
+   "label_pl-PL": "Chile",
+   "label_pt-BR": "Chile",
    "qid": "Q298"
   }
  ],
  "CM": [
   {
    "iso3": "CMR",
-   "label_de": "Kamerun",
-   "label_en": "Cameroon",
+   "label_de-CH": "Kamerun",
+   "label_en-US": "Cameroon",
+   "label_pl-PL": "Kamerun",
+   "label_pt-BR": "Camarões",
    "qid": "Q1009"
   }
  ],
  "CN": [
   {
    "iso3": "CHN",
-   "label_de": "Volksrepublik China",
-   "label_en": "People's Republic of China",
+   "label_de-CH": "Volksrepublik China",
+   "label_en-US": "People's Republic of China",
+   "label_pl-PL": "Chińska Republika Ludowa",
+   "label_pt-BR": "República Popular da China",
    "qid": "Q148"
   }
  ],
  "CO": [
   {
    "iso3": "COL",
-   "label_de": "Kolumbien",
-   "label_en": "Colombia",
+   "label_de-CH": "Kolumbien",
+   "label_en-US": "Colombia",
+   "label_pl-PL": "Kolumbia",
+   "label_pt-BR": "Colômbia",
    "qid": "Q739"
   }
  ],
  "CR": [
   {
    "iso3": "CRI",
-   "label_de": "Costa Rica",
-   "label_en": "Costa Rica",
+   "label_de-CH": "Costa Rica",
+   "label_en-US": "Costa Rica",
+   "label_pl-PL": "Kostaryka",
+   "label_pt-BR": "Costa Rica",
    "qid": "Q800"
   }
  ],
  "CU": [
   {
    "iso3": "CUB",
-   "label_de": "Kuba",
-   "label_en": "Cuba",
+   "label_de-CH": "Kuba",
+   "label_en-US": "Cuba",
+   "label_pl-PL": "Kuba",
+   "label_pt-BR": "Cuba",
    "qid": "Q241"
   }
  ],
  "CV": [
   {
    "iso3": "CPV",
-   "label_de": "Kap Verde",
-   "label_en": "Cape Verde",
+   "label_de-CH": "Kap Verde",
+   "label_en-US": "Cape Verde",
+   "label_pl-PL": "Republika Zielonego Przylądka",
+   "label_pt-BR": "Cabo Verde",
    "qid": "Q1011"
   }
  ],
  "CW": [
   {
    "iso3": "CUW",
-   "label_de": "Curaçao",
-   "label_en": "Curaçao",
+   "label_de-CH": "Curaçao",
+   "label_en-US": "Curaçao",
+   "label_pl-PL": "Curaçao",
+   "label_pt-BR": "Curaçau",
    "qid": "Q25279"
   }
  ],
  "CX": [
   {
    "iso3": "CXR",
-   "label_de": "Weihnachtsinsel",
-   "label_en": "Christmas Island",
+   "label_de-CH": "Weihnachtsinsel",
+   "label_en-US": "Christmas Island",
+   "label_pl-PL": "Wyspa Bożego Narodzenia",
+   "label_pt-BR": "Ilha Christmas",
    "qid": "Q31063"
   }
  ],
  "CY": [
   {
    "iso3": "CYP",
-   "label_de": "Zypern",
-   "label_en": "Cyprus",
+   "label_de-CH": "Zypern",
+   "label_en-US": "Cyprus",
+   "label_pl-PL": "Cypr",
+   "label_pt-BR": "Chipre",
    "qid": "Q229"
   },
   {
    "iso3": null,
-   "label_de": "Zypern",
-   "label_en": "Cyprus",
+   "label_de-CH": "Zypern",
+   "label_en-US": "Cyprus",
+   "label_pl-PL": "Cypr",
+   "label_pt-BR": "Chipre",
    "qid": "Q644636"
   }
  ],
  "CZ": [
   {
    "iso3": "CZE",
-   "label_de": "Tschechien",
-   "label_en": "Czech Republic",
+   "label_de-CH": "Tschechien",
+   "label_en-US": "Czech Republic",
+   "label_pl-PL": "Czechy",
+   "label_pt-BR": "Tchéquia",
    "qid": "Q213"
   }
  ],
  "DE": [
   {
    "iso3": "DEU",
-   "label_de": "Deutschland",
-   "label_en": "Germany",
+   "label_de-CH": "Deutschland",
+   "label_en-US": "Germany",
+   "label_pl-PL": "Niemcy",
+   "label_pt-BR": "Alemanha",
    "qid": "Q183"
   }
  ],
  "DJ": [
   {
    "iso3": "DJI",
-   "label_de": "Dschibuti",
-   "label_en": "Djibouti",
+   "label_de-CH": "Dschibuti",
+   "label_en-US": "Djibouti",
+   "label_pl-PL": "Dżibuti",
+   "label_pt-BR": "Djibuti",
    "qid": "Q977"
   }
  ],
  "DK": [
   {
    "iso3": "DNK",
-   "label_de": "Dänemark",
-   "label_en": "Denmark",
+   "label_de-CH": "Dänemark",
+   "label_en-US": "Denmark",
+   "label_pl-PL": "Dania",
+   "label_pt-BR": "Dinamarca",
    "qid": "Q35"
   }
  ],
  "DM": [
   {
    "iso3": "DMA",
-   "label_de": "Dominica",
-   "label_en": "Dominica",
+   "label_de-CH": "Dominica",
+   "label_en-US": "Dominica",
+   "label_pl-PL": "Dominika",
+   "label_pt-BR": "Dominica",
    "qid": "Q784"
   }
  ],
  "DO": [
   {
    "iso3": "DOM",
-   "label_de": "Dominikanische Republik",
-   "label_en": "Dominican Republic",
+   "label_de-CH": "Dominikanische Republik",
+   "label_en-US": "Dominican Republic",
+   "label_pl-PL": "Dominikana",
+   "label_pt-BR": "República Dominicana",
    "qid": "Q786"
   }
  ],
  "DZ": [
   {
    "iso3": "DZA",
-   "label_de": "Algerien",
-   "label_en": "Algeria",
+   "label_de-CH": "Algerien",
+   "label_en-US": "Algeria",
+   "label_pl-PL": "Algieria",
+   "label_pt-BR": "Argélia",
    "qid": "Q262"
   }
  ],
  "EC": [
   {
    "iso3": "ECU",
-   "label_de": "Ecuador",
-   "label_en": "Ecuador",
+   "label_de-CH": "Ecuador",
+   "label_en-US": "Ecuador",
+   "label_pl-PL": "Ekwador",
+   "label_pt-BR": "Equador",
    "qid": "Q736"
   }
  ],
  "EE": [
   {
    "iso3": "EST",
-   "label_de": "Estland",
-   "label_en": "Estonia",
+   "label_de-CH": "Estland",
+   "label_en-US": "Estonia",
+   "label_pl-PL": "Estonia",
+   "label_pt-BR": "Estônia",
    "qid": "Q191"
   }
  ],
  "EG": [
   {
    "iso3": "EGY",
-   "label_de": "Ägypten",
-   "label_en": "Egypt",
+   "label_de-CH": "Ägypten",
+   "label_en-US": "Egypt",
+   "label_pl-PL": "Egipt",
+   "label_pt-BR": "Egito",
    "qid": "Q79"
   }
  ],
  "EH": [
   {
    "iso3": "ESH",
-   "label_de": "Westsahara",
-   "label_en": "Western Sahara",
+   "label_de-CH": "Westsahara",
+   "label_en-US": "Western Sahara",
+   "label_pl-PL": "Sahara Zachodnia",
+   "label_pt-BR": "Saara Ocidental",
    "qid": "Q6250"
   }
  ],
  "ER": [
   {
    "iso3": "ERI",
-   "label_de": "Eritrea",
-   "label_en": "Eritrea",
+   "label_de-CH": "Eritrea",
+   "label_en-US": "Eritrea",
+   "label_pl-PL": "Erytrea",
+   "label_pt-BR": "Eritreia",
    "qid": "Q986"
   }
  ],
  "ES": [
   {
    "iso3": "ESP",
-   "label_de": "Spanien",
-   "label_en": "Spain",
+   "label_de-CH": "Spanien",
+   "label_en-US": "Spain",
+   "label_pl-PL": "Hiszpania",
+   "label_pt-BR": "Espanha",
    "qid": "Q29"
   }
  ],
  "ET": [
   {
    "iso3": "ETH",
-   "label_de": "Äthiopien",
-   "label_en": "Ethiopia",
+   "label_de-CH": "Äthiopien",
+   "label_en-US": "Ethiopia",
+   "label_pl-PL": "Etiopia",
+   "label_pt-BR": "Etiópia",
    "qid": "Q115"
   }
  ],
  "FI": [
   {
    "iso3": "FIN",
-   "label_de": "Finnland",
-   "label_en": "Finland",
+   "label_de-CH": "Finnland",
+   "label_en-US": "Finland",
+   "label_pl-PL": "Finlandia",
+   "label_pt-BR": "Finlândia",
    "qid": "Q33"
   }
  ],
  "FJ": [
   {
    "iso3": "FJI",
-   "label_de": "Fidschi",
-   "label_en": "Fiji",
+   "label_de-CH": "Fidschi",
+   "label_en-US": "Fiji",
+   "label_pl-PL": "Fidżi",
+   "label_pt-BR": "Fiji",
    "qid": "Q712"
   }
  ],
  "FK": [
   {
    "iso3": "FLK",
-   "label_de": "Falklandinseln",
-   "label_en": "Falkland Islands",
+   "label_de-CH": "Falklandinseln",
+   "label_en-US": "Falkland Islands",
+   "label_pl-PL": "Falklandy",
+   "label_pt-BR": "Ilhas Malvinas",
    "qid": "Q9648"
   }
  ],
  "FM": [
   {
    "iso3": "FSM",
-   "label_de": "Föderierte Staaten von Mikronesien",
-   "label_en": "Federated States of Micronesia",
+   "label_de-CH": "Föderierte Staaten von Mikronesien",
+   "label_en-US": "Federated States of Micronesia",
+   "label_pl-PL": "Mikronezja",
+   "label_pt-BR": "Micronésia",
    "qid": "Q702"
   }
  ],
  "FO": [
   {
    "iso3": "FRO",
-   "label_de": "Färöer",
-   "label_en": "Faroe Islands",
+   "label_de-CH": "Färöer",
+   "label_en-US": "Faroe Islands",
+   "label_pl-PL": "Wyspy Owcze",
+   "label_pt-BR": "Ilhas Feroe",
    "qid": "Q4628"
   }
  ],
  "FR": [
   {
    "iso3": "FRA",
-   "label_de": "Frankreich",
-   "label_en": "France",
+   "label_de-CH": "Frankreich",
+   "label_en-US": "France",
+   "label_pl-PL": "Francja",
+   "label_pt-BR": "França",
    "qid": "Q142"
   }
  ],
  "GA": [
   {
    "iso3": "GAB",
-   "label_de": "Gabun",
-   "label_en": "Gabon",
+   "label_de-CH": "Gabun",
+   "label_en-US": "Gabon",
+   "label_pl-PL": "Gabon",
+   "label_pt-BR": "Gabão",
    "qid": "Q1000"
   }
  ],
  "GB": [
   {
    "iso3": "GBR",
-   "label_de": "Vereinigtes Königreich",
-   "label_en": "United Kingdom",
+   "label_de-CH": "Vereinigtes Königreich",
+   "label_en-US": "United Kingdom",
+   "label_pl-PL": "Wielka Brytania",
+   "label_pt-BR": "Reino Unido",
    "qid": "Q145"
   }
  ],
  "GD": [
   {
    "iso3": "GRD",
-   "label_de": "Grenada",
-   "label_en": "Grenada",
+   "label_de-CH": "Grenada",
+   "label_en-US": "Grenada",
+   "label_pl-PL": "Grenada",
+   "label_pt-BR": "Granada",
    "qid": "Q769"
   }
  ],
  "GE": [
   {
    "iso3": "GEO",
-   "label_de": "Georgien",
-   "label_en": "Georgia",
+   "label_de-CH": "Georgien",
+   "label_en-US": "Georgia",
+   "label_pl-PL": "Gruzja",
+   "label_pt-BR": "Geórgia",
    "qid": "Q230"
   }
  ],
  "GF": [
   {
    "iso3": "GUF",
-   "label_de": "Französisch-Guayana",
-   "label_en": "French Guiana",
+   "label_de-CH": "Französisch-Guayana",
+   "label_en-US": "French Guiana",
+   "label_pl-PL": "Gujana Francuska",
+   "label_pt-BR": "Guiana Francesa",
    "qid": "Q3769"
   }
  ],
  "GG": [
   {
    "iso3": "GGY",
-   "label_de": "Guernsey",
-   "label_en": "Guernsey",
+   "label_de-CH": "Guernsey",
+   "label_en-US": "Guernsey",
+   "label_pl-PL": "Guernsey",
+   "label_pt-BR": "Guernsey",
    "qid": "Q25230"
   }
  ],
  "GH": [
   {
    "iso3": "GHA",
-   "label_de": "Ghana",
-   "label_en": "Ghana",
+   "label_de-CH": "Ghana",
+   "label_en-US": "Ghana",
+   "label_pl-PL": "Ghana",
+   "label_pt-BR": "Gana",
    "qid": "Q117"
   }
  ],
  "GI": [
   {
    "iso3": "GIB",
-   "label_de": "Gibraltar",
-   "label_en": "Gibraltar",
+   "label_de-CH": "Gibraltar",
+   "label_en-US": "Gibraltar",
+   "label_pl-PL": "Gibraltar",
+   "label_pt-BR": "Gibraltar",
    "qid": "Q1410"
   }
  ],
  "GL": [
   {
    "iso3": "GRL",
-   "label_de": "Grönland",
-   "label_en": "Greenland",
+   "label_de-CH": "Grönland",
+   "label_en-US": "Greenland",
+   "label_pl-PL": "Grenlandia",
+   "label_pt-BR": "Groelândia",
    "qid": "Q223"
   }
  ],
  "GM": [
   {
    "iso3": "GMB",
-   "label_de": "Gambia",
-   "label_en": "The Gambia",
+   "label_de-CH": "Gambia",
+   "label_en-US": "The Gambia",
+   "label_pl-PL": "Gambia",
+   "label_pt-BR": "Gâmbia",
    "qid": "Q1005"
   }
  ],
  "GN": [
   {
    "iso3": "GIN",
-   "label_de": "Guinea",
-   "label_en": "Guinea",
+   "label_de-CH": "Guinea",
+   "label_en-US": "Guinea",
+   "label_pl-PL": "Gwinea",
+   "label_pt-BR": "Guiné",
    "qid": "Q1006"
   }
  ],
  "GP": [
   {
    "iso3": "GLP",
-   "label_de": "Guadeloupe",
-   "label_en": "Guadeloupe",
+   "label_de-CH": "Guadeloupe",
+   "label_en-US": "Guadeloupe",
+   "label_pl-PL": "Gwadelupa",
+   "label_pt-BR": "Guadalupe",
    "qid": "Q17012"
   }
  ],
  "GQ": [
   {
    "iso3": "GNQ",
-   "label_de": "Äquatorialguinea",
-   "label_en": "Equatorial Guinea",
+   "label_de-CH": "Äquatorialguinea",
+   "label_en-US": "Equatorial Guinea",
+   "label_pl-PL": "Gwinea Równikowa",
+   "label_pt-BR": "Guiné Equatorial",
    "qid": "Q983"
   }
  ],
  "GR": [
   {
    "iso3": "GRC",
-   "label_de": "Griechenland",
-   "label_en": "Greece",
+   "label_de-CH": "Griechenland",
+   "label_en-US": "Greece",
+   "label_pl-PL": "Grecja",
+   "label_pt-BR": "Grécia",
    "qid": "Q41"
   }
  ],
  "GS": [
   {
    "iso3": "SGS",
-   "label_de": "Südgeorgien und die Südlichen Sandwichinseln",
-   "label_en": "South Georgia and the South Sandwich Islands",
+   "label_de-CH": "Südgeorgien und die Südlichen Sandwichinseln",
+   "label_en-US": "South Georgia and the South Sandwich Islands",
+   "label_pl-PL": "Georgia Południowa i Sandwich Południowy",
+   "label_pt-BR": "ilhas Geórgia do Sul e Sandwich do Sul",
    "qid": "Q35086"
   }
  ],
  "GT": [
   {
    "iso3": "GTM",
-   "label_de": "Guatemala",
-   "label_en": "Guatemala",
+   "label_de-CH": "Guatemala",
+   "label_en-US": "Guatemala",
+   "label_pl-PL": "Gwatemala",
+   "label_pt-BR": "Guatemala",
    "qid": "Q774"
   }
  ],
  "GU": [
   {
    "iso3": "GUM",
-   "label_de": "Guam",
-   "label_en": "Guam",
+   "label_de-CH": "Guam",
+   "label_en-US": "Guam",
+   "label_pl-PL": "Guam",
+   "label_pt-BR": "Guam",
    "qid": "Q16635"
   }
  ],
  "GW": [
   {
    "iso3": "GNB",
-   "label_de": "Guinea-Bissau",
-   "label_en": "Guinea-Bissau",
+   "label_de-CH": "Guinea-Bissau",
+   "label_en-US": "Guinea-Bissau",
+   "label_pl-PL": "Gwinea Bissau",
+   "label_pt-BR": "Guiné-Bissau",
    "qid": "Q1007"
   }
  ],
  "GY": [
   {
    "iso3": "GUY",
-   "label_de": "Guyana",
-   "label_en": "Guyana",
+   "label_de-CH": "Guyana",
+   "label_en-US": "Guyana",
+   "label_pl-PL": "Gujana",
+   "label_pt-BR": "Guiana",
    "qid": "Q734"
   }
  ],
  "HK": [
   {
    "iso3": "HKG",
-   "label_de": "Hongkong",
-   "label_en": "Hong Kong",
+   "label_de-CH": "Hongkong",
+   "label_en-US": "Hong Kong",
+   "label_pl-PL": "Hongkong",
+   "label_pt-BR": "Hong Kong",
    "qid": "Q8646"
   }
  ],
  "HM": [
   {
    "iso3": "HMD",
-   "label_de": "Heard und McDonaldinseln",
-   "label_en": "Heard Island and McDonald Islands",
+   "label_de-CH": "Heard und McDonaldinseln",
+   "label_en-US": "Heard Island and McDonald Islands",
+   "label_pl-PL": "Wyspy Heard i McDonalda",
+   "label_pt-BR": "Ilha Heard e Ilhas McDonald",
    "qid": "Q131198"
   }
  ],
  "HN": [
   {
    "iso3": "HND",
-   "label_de": "Honduras",
-   "label_en": "Honduras",
+   "label_de-CH": "Honduras",
+   "label_en-US": "Honduras",
+   "label_pl-PL": "Honduras",
+   "label_pt-BR": "Honduras",
    "qid": "Q783"
   }
  ],
  "HR": [
   {
    "iso3": "HRV",
-   "label_de": "Kroatien",
-   "label_en": "Croatia",
+   "label_de-CH": "Kroatien",
+   "label_en-US": "Croatia",
+   "label_pl-PL": "Chorwacja",
+   "label_pt-BR": "Croácia",
    "qid": "Q224"
   }
  ],
  "HT": [
   {
    "iso3": "HTI",
-   "label_de": "Haiti",
-   "label_en": "Haiti",
+   "label_de-CH": "Haiti",
+   "label_en-US": "Haiti",
+   "label_pl-PL": "Haiti",
+   "label_pt-BR": "Haiti",
    "qid": "Q790"
   }
  ],
  "HU": [
   {
    "iso3": "HUN",
-   "label_de": "Ungarn",
-   "label_en": "Hungary",
+   "label_de-CH": "Ungarn",
+   "label_en-US": "Hungary",
+   "label_pl-PL": "Węgry",
+   "label_pt-BR": "Hungria",
    "qid": "Q28"
   }
  ],
  "ID": [
   {
    "iso3": "IDN",
-   "label_de": "Indonesien",
-   "label_en": "Indonesia",
+   "label_de-CH": "Indonesien",
+   "label_en-US": "Indonesia",
+   "label_pl-PL": "Indonezja",
+   "label_pt-BR": "Indonésia",
    "qid": "Q252"
   }
  ],
  "IE": [
   {
    "iso3": "IRL",
-   "label_de": "Irland",
-   "label_en": "Ireland",
+   "label_de-CH": "Irland",
+   "label_en-US": "Ireland",
+   "label_pl-PL": "Irlandia",
+   "label_pt-BR": "República da Irlanda",
    "qid": "Q27"
   }
  ],
  "IL": [
   {
    "iso3": "ISR",
-   "label_de": "Israel",
-   "label_en": "Israel",
+   "label_de-CH": "Israel",
+   "label_en-US": "Israel",
+   "label_pl-PL": "Izrael",
+   "label_pt-BR": "Israel",
    "qid": "Q801"
   }
  ],
  "IM": [
   {
    "iso3": "IMN",
-   "label_de": "Isle of Man",
-   "label_en": "Isle of Man",
+   "label_de-CH": "Isle of Man",
+   "label_en-US": "Isle of Man",
+   "label_pl-PL": "Wyspa Man",
+   "label_pt-BR": "Ilha de Man",
    "qid": "Q9676"
   }
  ],
  "IN": [
   {
    "iso3": "IND",
-   "label_de": "Indien",
-   "label_en": "India",
+   "label_de-CH": "Indien",
+   "label_en-US": "India",
+   "label_pl-PL": "Indie",
+   "label_pt-BR": "Índia",
    "qid": "Q668"
   }
  ],
  "IO": [
   {
    "iso3": "IOT",
-   "label_de": "Britisches Territorium im Indischen Ozean",
-   "label_en": "British Indian Ocean Territory",
+   "label_de-CH": "Britisches Territorium im Indischen Ozean",
+   "label_en-US": "British Indian Ocean Territory",
+   "label_pl-PL": "Brytyjskie Terytorium Oceanu Indyjskiego",
+   "label_pt-BR": "Território Britânico do Oceano Índico",
    "qid": "Q43448"
   }
  ],
  "IQ": [
   {
    "iso3": "IRQ",
-   "label_de": "Irak",
-   "label_en": "Iraq",
+   "label_de-CH": "Irak",
+   "label_en-US": "Iraq",
+   "label_pl-PL": "Irak",
+   "label_pt-BR": "Iraque",
    "qid": "Q796"
   }
  ],
  "IR": [
   {
    "iso3": "IRN",
-   "label_de": "Iran",
-   "label_en": "Iran",
+   "label_de-CH": "Iran",
+   "label_en-US": "Iran",
+   "label_pl-PL": "Iran",
+   "label_pt-BR": "Irã",
    "qid": "Q794"
   }
  ],
  "IS": [
   {
    "iso3": "ISL",
-   "label_de": "Island",
-   "label_en": "Iceland",
+   "label_de-CH": "Island",
+   "label_en-US": "Iceland",
+   "label_pl-PL": "Islandia",
+   "label_pt-BR": "Islândia",
    "qid": "Q189"
   }
  ],
  "IT": [
   {
    "iso3": "ITA",
-   "label_de": "Italien",
-   "label_en": "Italy",
+   "label_de-CH": "Italien",
+   "label_en-US": "Italy",
+   "label_pl-PL": "Włochy",
+   "label_pt-BR": "Itália",
    "qid": "Q38"
   }
  ],
  "JE": [
   {
    "iso3": "JEY",
-   "label_de": null,
-   "label_en": "Jersey",
+   "label_de-CH": null,
+   "label_en-US": "Jersey",
+   "label_pl-PL": null,
+   "label_pt-BR": null,
    "qid": "Q785"
   }
  ],
  "JM": [
   {
    "iso3": "JAM",
-   "label_de": "Jamaika",
-   "label_en": "Jamaica",
+   "label_de-CH": "Jamaika",
+   "label_en-US": "Jamaica",
+   "label_pl-PL": "Jamajka",
+   "label_pt-BR": "Jamaica",
    "qid": "Q766"
   }
  ],
  "JO": [
   {
    "iso3": "JOR",
-   "label_de": "Jordanien",
-   "label_en": "Jordan",
+   "label_de-CH": "Jordanien",
+   "label_en-US": "Jordan",
+   "label_pl-PL": "Jordania",
+   "label_pt-BR": "Jordânia",
    "qid": "Q810"
   }
  ],
  "JP": [
   {
    "iso3": "JPN",
-   "label_de": "Japan",
-   "label_en": "Japan",
+   "label_de-CH": "Japan",
+   "label_en-US": "Japan",
+   "label_pl-PL": "Japonia",
+   "label_pt-BR": "Japão",
    "qid": "Q17"
   }
  ],
  "KE": [
   {
    "iso3": "KEN",
-   "label_de": "Kenia",
-   "label_en": "Kenya",
+   "label_de-CH": "Kenia",
+   "label_en-US": "Kenya",
+   "label_pl-PL": "Kenia",
+   "label_pt-BR": "Quênia",
    "qid": "Q114"
   }
  ],
  "KG": [
   {
    "iso3": "KGZ",
-   "label_de": "Kirgisistan",
-   "label_en": "Kyrgyzstan",
+   "label_de-CH": "Kirgisistan",
+   "label_en-US": "Kyrgyzstan",
+   "label_pl-PL": "Kirgistan",
+   "label_pt-BR": "Quirguistão",
    "qid": "Q813"
   }
  ],
  "KH": [
   {
    "iso3": "KHM",
-   "label_de": "Kambodscha",
-   "label_en": "Cambodia",
+   "label_de-CH": "Kambodscha",
+   "label_en-US": "Cambodia",
+   "label_pl-PL": "Kambodża",
+   "label_pt-BR": "Camboja",
    "qid": "Q424"
   }
  ],
  "KI": [
   {
    "iso3": "KIR",
-   "label_de": "Kiribati",
-   "label_en": "Kiribati",
+   "label_de-CH": "Kiribati",
+   "label_en-US": "Kiribati",
+   "label_pl-PL": "Kiribati",
+   "label_pt-BR": "Quiribáti",
    "qid": "Q710"
   }
  ],
  "KM": [
   {
    "iso3": "COM",
-   "label_de": "Komoren",
-   "label_en": "Comoros",
+   "label_de-CH": "Komoren",
+   "label_en-US": "Comoros",
+   "label_pl-PL": "Komory",
+   "label_pt-BR": "Comores",
    "qid": "Q970"
   }
  ],
  "KN": [
   {
    "iso3": "KNA",
-   "label_de": "St. Kitts und Nevis",
-   "label_en": "Saint Kitts and Nevis",
+   "label_de-CH": "St. Kitts und Nevis",
+   "label_en-US": "Saint Kitts and Nevis",
+   "label_pl-PL": "Saint Kitts i Nevis",
+   "label_pt-BR": "São Cristóvão e Neves",
    "qid": "Q763"
   }
  ],
  "KP": [
   {
    "iso3": "PRK",
-   "label_de": "Nordkorea",
-   "label_en": "North Korea",
+   "label_de-CH": "Nordkorea",
+   "label_en-US": "North Korea",
+   "label_pl-PL": "Korea Północna",
+   "label_pt-BR": "Coreia do Norte",
    "qid": "Q423"
   }
  ],
  "KR": [
   {
    "iso3": "KOR",
-   "label_de": "Südkorea",
-   "label_en": "South Korea",
+   "label_de-CH": "Südkorea",
+   "label_en-US": "South Korea",
+   "label_pl-PL": "Korea Południowa",
+   "label_pt-BR": "Coreia do Sul",
    "qid": "Q884"
   }
  ],
  "KW": [
   {
    "iso3": "KWT",
-   "label_de": "Kuwait",
-   "label_en": "Kuwait",
+   "label_de-CH": "Kuwait",
+   "label_en-US": "Kuwait",
+   "label_pl-PL": "Kuwejt",
+   "label_pt-BR": "Kuwait",
    "qid": "Q817"
   }
  ],
  "KY": [
   {
    "iso3": "CYM",
-   "label_de": "Cayman Islands",
-   "label_en": "Cayman Islands",
+   "label_de-CH": "Cayman Islands",
+   "label_en-US": "Cayman Islands",
+   "label_pl-PL": "Kajmany",
+   "label_pt-BR": "Ilhas Caimã",
    "qid": "Q5785"
   }
  ],
  "KZ": [
   {
    "iso3": "KAZ",
-   "label_de": "Kasachstan",
-   "label_en": "Kazakhstan",
+   "label_de-CH": "Kasachstan",
+   "label_en-US": "Kazakhstan",
+   "label_pl-PL": "Kazachstan",
+   "label_pt-BR": "Cazaquistão",
    "qid": "Q232"
   }
  ],
  "LA": [
   {
    "iso3": "LAO",
-   "label_de": "Laos",
-   "label_en": "Laos",
+   "label_de-CH": "Laos",
+   "label_en-US": "Laos",
+   "label_pl-PL": "Laos",
+   "label_pt-BR": "Laos",
    "qid": "Q819"
   }
  ],
  "LB": [
   {
    "iso3": "LBN",
-   "label_de": "Libanon",
-   "label_en": "Lebanon",
+   "label_de-CH": "Libanon",
+   "label_en-US": "Lebanon",
+   "label_pl-PL": "Liban",
+   "label_pt-BR": "Líbano",
    "qid": "Q822"
   }
  ],
  "LC": [
   {
    "iso3": "LCA",
-   "label_de": "St. Lucia",
-   "label_en": "Saint Lucia",
+   "label_de-CH": "St. Lucia",
+   "label_en-US": "Saint Lucia",
+   "label_pl-PL": "Saint Lucia",
+   "label_pt-BR": "Santa Lúcia",
    "qid": "Q760"
   }
  ],
  "LI": [
   {
    "iso3": "LIE",
-   "label_de": "Liechtenstein",
-   "label_en": "Liechtenstein",
+   "label_de-CH": "Liechtenstein",
+   "label_en-US": "Liechtenstein",
+   "label_pl-PL": "Liechtenstein",
+   "label_pt-BR": "Liechtenstein",
    "qid": "Q347"
   }
  ],
  "LK": [
   {
    "iso3": "LKA",
-   "label_de": "Sri Lanka",
-   "label_en": "Sri Lanka",
+   "label_de-CH": "Sri Lanka",
+   "label_en-US": "Sri Lanka",
+   "label_pl-PL": "Sri Lanka",
+   "label_pt-BR": "Sri Lanka",
    "qid": "Q854"
   }
  ],
  "LR": [
   {
    "iso3": "LBR",
-   "label_de": "Liberia",
-   "label_en": "Liberia",
+   "label_de-CH": "Liberia",
+   "label_en-US": "Liberia",
+   "label_pl-PL": "Liberia",
+   "label_pt-BR": "Libéria",
    "qid": "Q1014"
   }
  ],
  "LS": [
   {
    "iso3": "LSO",
-   "label_de": "Lesotho",
-   "label_en": "Lesotho",
+   "label_de-CH": "Lesotho",
+   "label_en-US": "Lesotho",
+   "label_pl-PL": "Lesotho",
+   "label_pt-BR": "Lesoto",
    "qid": "Q1013"
   }
  ],
  "LT": [
   {
    "iso3": "LTU",
-   "label_de": "Litauen",
-   "label_en": "Lithuania",
+   "label_de-CH": "Litauen",
+   "label_en-US": "Lithuania",
+   "label_pl-PL": "Litwa",
+   "label_pt-BR": "Lituânia",
    "qid": "Q37"
   }
  ],
  "LU": [
   {
    "iso3": "LUX",
-   "label_de": "Luxemburg",
-   "label_en": "Luxembourg",
+   "label_de-CH": "Luxemburg",
+   "label_en-US": "Luxembourg",
+   "label_pl-PL": "Luksemburg",
+   "label_pt-BR": "Luxemburgo",
    "qid": "Q32"
   }
  ],
  "LV": [
   {
    "iso3": "LVA",
-   "label_de": "Lettland",
-   "label_en": "Latvia",
+   "label_de-CH": "Lettland",
+   "label_en-US": "Latvia",
+   "label_pl-PL": "Łotwa",
+   "label_pt-BR": "Letônia",
    "qid": "Q211"
   }
  ],
  "LY": [
   {
    "iso3": "LBY",
-   "label_de": "Libyen",
-   "label_en": "Libya",
+   "label_de-CH": "Libyen",
+   "label_en-US": "Libya",
+   "label_pl-PL": "Libia",
+   "label_pt-BR": "Líbia",
    "qid": "Q1016"
   }
  ],
  "MA": [
   {
    "iso3": "MAR",
-   "label_de": "Marokko",
-   "label_en": "Morocco",
+   "label_de-CH": "Marokko",
+   "label_en-US": "Morocco",
+   "label_pl-PL": "Maroko",
+   "label_pt-BR": "Marrocos",
    "qid": "Q1028"
   }
  ],
  "MC": [
   {
    "iso3": "MCO",
-   "label_de": "Monaco",
-   "label_en": "Monaco",
+   "label_de-CH": "Monaco",
+   "label_en-US": "Monaco",
+   "label_pl-PL": "Monako",
+   "label_pt-BR": "Mônaco",
    "qid": "Q235"
   }
  ],
  "MD": [
   {
    "iso3": "MDA",
-   "label_de": "Moldau",
-   "label_en": "Moldova",
+   "label_de-CH": "Moldau",
+   "label_en-US": "Moldova",
+   "label_pl-PL": "Mołdawia",
+   "label_pt-BR": "Moldávia",
    "qid": "Q217"
   }
  ],
  "ME": [
   {
    "iso3": "MNE",
-   "label_de": "Montenegro",
-   "label_en": "Montenegro",
+   "label_de-CH": "Montenegro",
+   "label_en-US": "Montenegro",
+   "label_pl-PL": "Czarnogóra",
+   "label_pt-BR": "Montenegro",
    "qid": "Q236"
   }
  ],
  "MF": [
   {
    "iso3": "MAF",
-   "label_de": "Saint-Martin",
-   "label_en": "Saint-Martin",
+   "label_de-CH": "Saint-Martin",
+   "label_en-US": "Saint-Martin",
+   "label_pl-PL": "Saint-Martin",
+   "label_pt-BR": "São Martinho",
    "qid": "Q126125"
   }
  ],
  "MG": [
   {
    "iso3": "MDG",
-   "label_de": "Madagaskar",
-   "label_en": "Madagascar",
+   "label_de-CH": "Madagaskar",
+   "label_en-US": "Madagascar",
+   "label_pl-PL": "Madagaskar",
+   "label_pt-BR": "Madagascar",
    "qid": "Q1019"
   }
  ],
  "MH": [
   {
    "iso3": "MHL",
-   "label_de": "Marshallinseln",
-   "label_en": "Marshall Islands",
+   "label_de-CH": "Marshallinseln",
+   "label_en-US": "Marshall Islands",
+   "label_pl-PL": "Wyspy Marshalla",
+   "label_pt-BR": "Ilhas Marshall",
    "qid": "Q709"
   }
  ],
  "MK": [
   {
    "iso3": "MKD",
-   "label_de": "Nordmazedonien",
-   "label_en": "North Macedonia",
+   "label_de-CH": "Nordmazedonien",
+   "label_en-US": "North Macedonia",
+   "label_pl-PL": "Macedonia Północna",
+   "label_pt-BR": "Macedônia do Norte",
    "qid": "Q221"
   }
  ],
  "ML": [
   {
    "iso3": "MLI",
-   "label_de": "Mali",
-   "label_en": "Mali",
+   "label_de-CH": "Mali",
+   "label_en-US": "Mali",
+   "label_pl-PL": "Mali",
+   "label_pt-BR": "Mali",
    "qid": "Q912"
   }
  ],
  "MM": [
   {
    "iso3": "MMR",
-   "label_de": "Myanmar",
-   "label_en": "Myanmar",
+   "label_de-CH": "Myanmar",
+   "label_en-US": "Myanmar",
+   "label_pl-PL": "Mjanma",
+   "label_pt-BR": "Birmânia",
    "qid": "Q836"
   }
  ],
  "MN": [
   {
    "iso3": "MNG",
-   "label_de": "Mongolei",
-   "label_en": "Mongolia",
+   "label_de-CH": "Mongolei",
+   "label_en-US": "Mongolia",
+   "label_pl-PL": "Mongolia",
+   "label_pt-BR": "Mongólia",
    "qid": "Q711"
   }
  ],
  "MO": [
   {
    "iso3": "MAC",
-   "label_de": "Macau",
-   "label_en": "Macau",
+   "label_de-CH": "Macau",
+   "label_en-US": "Macau",
+   "label_pl-PL": "Makau",
+   "label_pt-BR": "Macau",
    "qid": "Q14773"
   }
  ],
  "MP": [
   {
    "iso3": "MNP",
-   "label_de": "Nördliche Marianen",
-   "label_en": "Northern Mariana Islands",
+   "label_de-CH": "Nördliche Marianen",
+   "label_en-US": "Northern Mariana Islands",
+   "label_pl-PL": "Mariany Północne",
+   "label_pt-BR": "Marianas Setentrionais",
    "qid": "Q16644"
   }
  ],
  "MQ": [
   {
    "iso3": "MTQ",
-   "label_de": "Martinique",
-   "label_en": "Martinique",
+   "label_de-CH": "Martinique",
+   "label_en-US": "Martinique",
+   "label_pl-PL": "Martynika",
+   "label_pt-BR": "Martinica",
    "qid": "Q17054"
   }
  ],
  "MR": [
   {
    "iso3": "MRT",
-   "label_de": "Mauretanien",
-   "label_en": "Mauritania",
+   "label_de-CH": "Mauretanien",
+   "label_en-US": "Mauritania",
+   "label_pl-PL": "Mauretania",
+   "label_pt-BR": "Mauritânia",
    "qid": "Q1025"
   }
  ],
  "MS": [
   {
    "iso3": "MSR",
-   "label_de": "Montserrat",
-   "label_en": "Montserrat",
+   "label_de-CH": "Montserrat",
+   "label_en-US": "Montserrat",
+   "label_pl-PL": "Montserrat",
+   "label_pt-BR": "Montserrat",
    "qid": "Q13353"
   }
  ],
  "MT": [
   {
    "iso3": "MLT",
-   "label_de": "Malta",
-   "label_en": "Malta",
+   "label_de-CH": "Malta",
+   "label_en-US": "Malta",
+   "label_pl-PL": "Malta",
+   "label_pt-BR": "Malta",
    "qid": "Q233"
   }
  ],
  "MU": [
   {
    "iso3": "MUS",
-   "label_de": "Mauritius",
-   "label_en": "Mauritius",
+   "label_de-CH": "Mauritius",
+   "label_en-US": "Mauritius",
+   "label_pl-PL": "Mauritius",
+   "label_pt-BR": "Maurício",
    "qid": "Q1027"
   }
  ],
  "MV": [
   {
    "iso3": "MDV",
-   "label_de": "Malediven",
-   "label_en": "Maldives",
+   "label_de-CH": "Malediven",
+   "label_en-US": "Maldives",
+   "label_pl-PL": "Malediwy",
+   "label_pt-BR": "Maldivas",
    "qid": "Q826"
   }
  ],
  "MW": [
   {
    "iso3": "MWI",
-   "label_de": "Malawi",
-   "label_en": "Malawi",
+   "label_de-CH": "Malawi",
+   "label_en-US": "Malawi",
+   "label_pl-PL": "Malawi",
+   "label_pt-BR": "Malawi",
    "qid": "Q1020"
   }
  ],
  "MX": [
   {
    "iso3": "MEX",
-   "label_de": "Mexiko",
-   "label_en": "Mexico",
+   "label_de-CH": "Mexiko",
+   "label_en-US": "Mexico",
+   "label_pl-PL": "Meksyk",
+   "label_pt-BR": "México",
    "qid": "Q96"
   }
  ],
  "MY": [
   {
    "iso3": "MYS",
-   "label_de": "Malaysia",
-   "label_en": "Malaysia",
+   "label_de-CH": "Malaysia",
+   "label_en-US": "Malaysia",
+   "label_pl-PL": "Malezja",
+   "label_pt-BR": "Malásia",
    "qid": "Q833"
   }
  ],
  "MZ": [
   {
    "iso3": "MOZ",
-   "label_de": "Mosambik",
-   "label_en": "Mozambique",
+   "label_de-CH": "Mosambik",
+   "label_en-US": "Mozambique",
+   "label_pl-PL": "Mozambik",
+   "label_pt-BR": "Moçambique",
    "qid": "Q1029"
   }
  ],
  "NA": [
   {
    "iso3": "NAM",
-   "label_de": "Namibia",
-   "label_en": "Namibia",
+   "label_de-CH": "Namibia",
+   "label_en-US": "Namibia",
+   "label_pl-PL": "Namibia",
+   "label_pt-BR": "Namíbia",
    "qid": "Q1030"
   }
  ],
  "NC": [
   {
    "iso3": "NCL",
-   "label_de": "Neukaledonien",
-   "label_en": "New Caledonia",
+   "label_de-CH": "Neukaledonien",
+   "label_en-US": "New Caledonia",
+   "label_pl-PL": "Nowa Kaledonia",
+   "label_pt-BR": "Nova Caledônia",
    "qid": "Q33788"
   }
  ],
  "NE": [
   {
    "iso3": "NER",
-   "label_de": "Niger",
-   "label_en": "Niger",
+   "label_de-CH": "Niger",
+   "label_en-US": "Niger",
+   "label_pl-PL": "Niger",
+   "label_pt-BR": "Níger",
    "qid": "Q1032"
   }
  ],
  "NF": [
   {
    "iso3": "NFK",
-   "label_de": "Norfolkinsel",
-   "label_en": "Norfolk Island",
+   "label_de-CH": "Norfolkinsel",
+   "label_en-US": "Norfolk Island",
+   "label_pl-PL": "Norfolk",
+   "label_pt-BR": "Ilha Norfolk",
    "qid": "Q31057"
   }
  ],
  "NG": [
   {
    "iso3": "NGA",
-   "label_de": "Nigeria",
-   "label_en": "Nigeria",
+   "label_de-CH": "Nigeria",
+   "label_en-US": "Nigeria",
+   "label_pl-PL": "Nigeria",
+   "label_pt-BR": "Nigéria",
    "qid": "Q1033"
   }
  ],
  "NI": [
   {
    "iso3": "NIC",
-   "label_de": "Nicaragua",
-   "label_en": "Nicaragua",
+   "label_de-CH": "Nicaragua",
+   "label_en-US": "Nicaragua",
+   "label_pl-PL": "Nikaragua",
+   "label_pt-BR": "Nicarágua",
    "qid": "Q811"
   }
  ],
  "NL": [
   {
    "iso3": "NLD",
-   "label_de": "Königreich der Niederlande",
-   "label_en": "Kingdom of the Netherlands",
+   "label_de-CH": "Königreich der Niederlande",
+   "label_en-US": "Kingdom of the Netherlands",
+   "label_pl-PL": "Królestwo Niderlandów",
+   "label_pt-BR": "Reino dos Países Baixos",
    "qid": "Q29999"
   }
  ],
  "NO": [
   {
    "iso3": "NOR",
-   "label_de": "Norwegen",
-   "label_en": "Norway",
+   "label_de-CH": "Norwegen",
+   "label_en-US": "Norway",
+   "label_pl-PL": "Norwegia",
+   "label_pt-BR": "Noruega",
    "qid": "Q20"
   }
  ],
  "NP": [
   {
    "iso3": "NPL",
-   "label_de": "Nepal",
-   "label_en": "Nepal",
+   "label_de-CH": "Nepal",
+   "label_en-US": "Nepal",
+   "label_pl-PL": "Nepal",
+   "label_pt-BR": "Nepal",
    "qid": "Q837"
   }
  ],
  "NR": [
   {
    "iso3": "NRU",
-   "label_de": "Naoero",
-   "label_en": "Nauru",
+   "label_de-CH": "Naoero",
+   "label_en-US": "Nauru",
+   "label_pl-PL": "Nauru",
+   "label_pt-BR": "Nauru",
    "qid": "Q697"
   }
  ],
  "NU": [
   {
    "iso3": "NIU",
-   "label_de": "Niue",
-   "label_en": "Niue",
+   "label_de-CH": "Niue",
+   "label_en-US": "Niue",
+   "label_pl-PL": "Niue",
+   "label_pt-BR": "Niue",
    "qid": "Q34020"
   }
  ],
  "NZ": [
   {
    "iso3": "NZL",
-   "label_de": "Neuseeland",
-   "label_en": "New Zealand",
+   "label_de-CH": "Neuseeland",
+   "label_en-US": "New Zealand",
+   "label_pl-PL": "Nowa Zelandia",
+   "label_pt-BR": "Nova Zelândia",
    "qid": "Q664"
   }
  ],
  "OM": [
   {
    "iso3": "OMN",
-   "label_de": "Oman",
-   "label_en": "Oman",
+   "label_de-CH": "Oman",
+   "label_en-US": "Oman",
+   "label_pl-PL": "Oman",
+   "label_pt-BR": "Omã",
    "qid": "Q842"
   }
  ],
  "PA": [
   {
    "iso3": "PAN",
-   "label_de": "Panama",
-   "label_en": "Panama",
+   "label_de-CH": "Panama",
+   "label_en-US": "Panama",
+   "label_pl-PL": "Panama",
+   "label_pt-BR": "Panamá",
    "qid": "Q804"
   }
  ],
  "PE": [
   {
    "iso3": "PER",
-   "label_de": "Peru",
-   "label_en": "Peru",
+   "label_de-CH": "Peru",
+   "label_en-US": "Peru",
+   "label_pl-PL": "Peru",
+   "label_pt-BR": "Peru",
    "qid": "Q419"
   }
  ],
  "PF": [
   {
    "iso3": "PYF",
-   "label_de": "Französisch-Polynesien",
-   "label_en": "French Polynesia",
+   "label_de-CH": "Französisch-Polynesien",
+   "label_en-US": "French Polynesia",
+   "label_pl-PL": "Polinezja Francuska",
+   "label_pt-BR": "Polinésia Francesa",
    "qid": "Q30971"
   }
  ],
  "PG": [
   {
    "iso3": "PNG",
-   "label_de": "Papua-Neuguinea",
-   "label_en": "Papua New Guinea",
+   "label_de-CH": "Papua-Neuguinea",
+   "label_en-US": "Papua New Guinea",
+   "label_pl-PL": "Papua-Nowa Gwinea",
+   "label_pt-BR": "Papua-Nova Guiné",
    "qid": "Q691"
   }
  ],
  "PH": [
   {
    "iso3": "PHL",
-   "label_de": "Philippinen",
-   "label_en": "Philippines",
+   "label_de-CH": "Philippinen",
+   "label_en-US": "Philippines",
+   "label_pl-PL": "Filipiny",
+   "label_pt-BR": "Filipinas",
    "qid": "Q928"
   }
  ],
  "PK": [
   {
    "iso3": "PAK",
-   "label_de": "Pakistan",
-   "label_en": "Pakistan",
+   "label_de-CH": "Pakistan",
+   "label_en-US": "Pakistan",
+   "label_pl-PL": "Pakistan",
+   "label_pt-BR": "Paquistão",
    "qid": "Q843"
   }
  ],
  "PL": [
   {
    "iso3": "POL",
-   "label_de": "Polen",
-   "label_en": "Poland",
+   "label_de-CH": "Polen",
+   "label_en-US": "Poland",
+   "label_pl-PL": "Polska",
+   "label_pt-BR": "Polônia",
    "qid": "Q36"
   }
  ],
  "PM": [
   {
    "iso3": "SPM",
-   "label_de": "Saint-Pierre und Miquelon",
-   "label_en": "Saint Pierre and Miquelon",
+   "label_de-CH": "Saint-Pierre und Miquelon",
+   "label_en-US": "Saint Pierre and Miquelon",
+   "label_pl-PL": "Saint-Pierre i Miquelon",
+   "label_pt-BR": "Saint-Pierre e Miquelon",
    "qid": "Q34617"
   }
  ],
  "PN": [
   {
    "iso3": "PCN",
-   "label_de": "Pitcairninseln",
-   "label_en": "Pitcairn Islands",
+   "label_de-CH": "Pitcairninseln",
+   "label_en-US": "Pitcairn Islands",
+   "label_pl-PL": "Pitcairn",
+   "label_pt-BR": "Ilhas Pitcairn",
    "qid": "Q35672"
   }
  ],
  "PR": [
   {
    "iso3": "PRI",
-   "label_de": "Puerto Rico",
-   "label_en": "Puerto Rico",
+   "label_de-CH": "Puerto Rico",
+   "label_en-US": "Puerto Rico",
+   "label_pl-PL": "Portoryko",
+   "label_pt-BR": "Porto Rico",
    "qid": "Q1183"
   }
  ],
  "PS": [
   {
    "iso3": "PSE",
-   "label_de": "Palästina",
-   "label_en": "Palestine",
+   "label_de-CH": "Palästina",
+   "label_en-US": "Palestine",
+   "label_pl-PL": "Państwo Palestyna",
+   "label_pt-BR": "Estado da Palestina",
    "qid": "Q219060"
   }
  ],
  "PT": [
   {
    "iso3": "PRT",
-   "label_de": "Portugal",
-   "label_en": "Portugal",
+   "label_de-CH": "Portugal",
+   "label_en-US": "Portugal",
+   "label_pl-PL": "Portugalia",
+   "label_pt-BR": "Portugal",
    "qid": "Q45"
   }
  ],
  "PW": [
   {
    "iso3": "PLW",
-   "label_de": "Palau",
-   "label_en": "Palau",
+   "label_de-CH": "Palau",
+   "label_en-US": "Palau",
+   "label_pl-PL": "Palau",
+   "label_pt-BR": "Palau",
    "qid": "Q695"
   }
  ],
  "PY": [
   {
    "iso3": "PRY",
-   "label_de": "Paraguay",
-   "label_en": "Paraguay",
+   "label_de-CH": "Paraguay",
+   "label_en-US": "Paraguay",
+   "label_pl-PL": "Paragwaj",
+   "label_pt-BR": "Paraguai",
    "qid": "Q733"
   }
  ],
  "QA": [
   {
    "iso3": "QAT",
-   "label_de": "Katar",
-   "label_en": "Qatar",
+   "label_de-CH": "Katar",
+   "label_en-US": "Qatar",
+   "label_pl-PL": "Katar",
+   "label_pt-BR": "Catar",
    "qid": "Q846"
   }
  ],
  "RE": [
   {
    "iso3": "REU",
-   "label_de": "Réunion",
-   "label_en": "Réunion",
+   "label_de-CH": "Réunion",
+   "label_en-US": "Réunion",
+   "label_pl-PL": "Reunion",
+   "label_pt-BR": "Reunião",
    "qid": "Q17070"
   }
  ],
  "RO": [
   {
    "iso3": "ROU",
-   "label_de": "Rumänien",
-   "label_en": "Romania",
+   "label_de-CH": "Rumänien",
+   "label_en-US": "Romania",
+   "label_pl-PL": "Rumunia",
+   "label_pt-BR": "Romênia",
    "qid": "Q218"
   }
  ],
  "RS": [
   {
    "iso3": "SRB",
-   "label_de": "Serbien",
-   "label_en": "Serbia",
+   "label_de-CH": "Serbien",
+   "label_en-US": "Serbia",
+   "label_pl-PL": "Serbia",
+   "label_pt-BR": "Sérvia",
    "qid": "Q403"
   }
  ],
  "RU": [
   {
    "iso3": "RUS",
-   "label_de": "Russland",
-   "label_en": "Russia",
+   "label_de-CH": "Russland",
+   "label_en-US": "Russia",
+   "label_pl-PL": "Rosja",
+   "label_pt-BR": "Rússia",
    "qid": "Q159"
   }
  ],
  "RW": [
   {
    "iso3": "RWA",
-   "label_de": "Ruanda",
-   "label_en": "Rwanda",
+   "label_de-CH": "Ruanda",
+   "label_en-US": "Rwanda",
+   "label_pl-PL": "Rwanda",
+   "label_pt-BR": "Ruanda",
    "qid": "Q1037"
   }
  ],
  "SA": [
   {
    "iso3": "SAU",
-   "label_de": "Saudi-Arabien",
-   "label_en": "Saudi Arabia",
+   "label_de-CH": "Saudi-Arabien",
+   "label_en-US": "Saudi Arabia",
+   "label_pl-PL": "Arabia Saudyjska",
+   "label_pt-BR": "Arábia Saudita",
    "qid": "Q851"
   }
  ],
  "SB": [
   {
    "iso3": "SLB",
-   "label_de": "Salomonen",
-   "label_en": "Solomon Islands",
+   "label_de-CH": "Salomonen",
+   "label_en-US": "Solomon Islands",
+   "label_pl-PL": "Wyspy Salomona",
+   "label_pt-BR": "Ilhas Salomão",
    "qid": "Q685"
   }
  ],
  "SC": [
   {
    "iso3": "SYC",
-   "label_de": "Seychellen",
-   "label_en": "Seychelles",
+   "label_de-CH": "Seychellen",
+   "label_en-US": "Seychelles",
+   "label_pl-PL": "Seszele",
+   "label_pt-BR": "Seicheles",
    "qid": "Q1042"
   }
  ],
  "SD": [
   {
    "iso3": "SDN",
-   "label_de": "Sudan",
-   "label_en": "Sudan",
+   "label_de-CH": "Sudan",
+   "label_en-US": "Sudan",
+   "label_pl-PL": "Sudan",
+   "label_pt-BR": "Sudão",
    "qid": "Q1049"
   }
  ],
  "SE": [
   {
    "iso3": "SWE",
-   "label_de": "Schweden",
-   "label_en": "Sweden",
+   "label_de-CH": "Schweden",
+   "label_en-US": "Sweden",
+   "label_pl-PL": "Szwecja",
+   "label_pt-BR": "Suécia",
    "qid": "Q34"
   }
  ],
  "SG": [
   {
    "iso3": "SGP",
-   "label_de": "Singapur",
-   "label_en": "Singapore",
+   "label_de-CH": "Singapur",
+   "label_en-US": "Singapore",
+   "label_pl-PL": "Singapur",
+   "label_pt-BR": "Singapura",
    "qid": "Q334"
   }
  ],
  "SH": [
   {
    "iso3": "SHN",
-   "label_de": "St. Helena, Ascension und Tristan da Cunha",
-   "label_en": "Saint Helena, Ascension and Tristan da Cunha",
+   "label_de-CH": "St. Helena, Ascension und Tristan da Cunha",
+   "label_en-US": "Saint Helena, Ascension and Tristan da Cunha",
+   "label_pl-PL": "Wyspa Świętej Heleny, Wyspa Wniebowstąpienia i Tristan da Cunha",
+   "label_pt-BR": "Santa Helena, Ascensão e Tristão da Cunha",
    "qid": "Q192184"
   }
  ],
  "SI": [
   {
    "iso3": "SVN",
-   "label_de": "Slowenien",
-   "label_en": "Slovenia",
+   "label_de-CH": "Slowenien",
+   "label_en-US": "Slovenia",
+   "label_pl-PL": "Słowenia",
+   "label_pt-BR": "Eslovênia",
    "qid": "Q215"
   }
  ],
  "SJ": [
   {
    "iso3": "SJM",
-   "label_de": "Svalbard und Jan Mayen",
-   "label_en": "Svalbard and Jan Mayen",
+   "label_de-CH": "Svalbard und Jan Mayen",
+   "label_en-US": "Svalbard and Jan Mayen",
+   "label_pl-PL": "Svalbard i Jan Mayen",
+   "label_pt-BR": "Svalbard e Jan Mayen",
    "qid": "Q842829"
   }
  ],
  "SK": [
   {
    "iso3": "SVK",
-   "label_de": "Slowakei",
-   "label_en": "Slovakia",
+   "label_de-CH": "Slowakei",
+   "label_en-US": "Slovakia",
+   "label_pl-PL": "Słowacja",
+   "label_pt-BR": "Eslováquia",
    "qid": "Q214"
   }
  ],
  "SL": [
   {
    "iso3": "SLE",
-   "label_de": "Sierra Leone",
-   "label_en": "Sierra Leone",
+   "label_de-CH": "Sierra Leone",
+   "label_en-US": "Sierra Leone",
+   "label_pl-PL": "Sierra Leone",
+   "label_pt-BR": "Serra Leoa",
    "qid": "Q1044"
   }
  ],
  "SM": [
   {
    "iso3": "SMR",
-   "label_de": "San Marino",
-   "label_en": "San Marino",
+   "label_de-CH": "San Marino",
+   "label_en-US": "San Marino",
+   "label_pl-PL": "San Marino",
+   "label_pt-BR": "San Marino",
    "qid": "Q238"
   }
  ],
  "SN": [
   {
    "iso3": "SEN",
-   "label_de": "Senegal",
-   "label_en": "Senegal",
+   "label_de-CH": "Senegal",
+   "label_en-US": "Senegal",
+   "label_pl-PL": "Senegal",
+   "label_pt-BR": "Senegal",
    "qid": "Q1041"
   }
  ],
  "SO": [
   {
    "iso3": "SOM",
-   "label_de": "Somalia",
-   "label_en": "Somalia",
+   "label_de-CH": "Somalia",
+   "label_en-US": "Somalia",
+   "label_pl-PL": "Somalia",
+   "label_pt-BR": "Somália",
    "qid": "Q1045"
   }
  ],
  "SR": [
   {
    "iso3": "SUR",
-   "label_de": "Suriname",
-   "label_en": "Suriname",
+   "label_de-CH": "Suriname",
+   "label_en-US": "Suriname",
+   "label_pl-PL": "Surinam",
+   "label_pt-BR": "Suriname",
    "qid": "Q730"
   }
  ],
  "SS": [
   {
    "iso3": "SSD",
-   "label_de": "Südsudan",
-   "label_en": "South Sudan",
+   "label_de-CH": "Südsudan",
+   "label_en-US": "South Sudan",
+   "label_pl-PL": "Sudan Południowy",
+   "label_pt-BR": "Sudão do Sul",
    "qid": "Q958"
   }
  ],
  "ST": [
   {
    "iso3": "STP",
-   "label_de": "São Tomé und Príncipe",
-   "label_en": "São Tomé and Príncipe",
+   "label_de-CH": "São Tomé und Príncipe",
+   "label_en-US": "São Tomé and Príncipe",
+   "label_pl-PL": "Wyspy Świętego Tomasza i Książęca",
+   "label_pt-BR": "São Tomé e Príncipe",
    "qid": "Q1039"
   }
  ],
  "SV": [
   {
    "iso3": "SLV",
-   "label_de": "El Salvador",
-   "label_en": "El Salvador",
+   "label_de-CH": "El Salvador",
+   "label_en-US": "El Salvador",
+   "label_pl-PL": "Salwador",
+   "label_pt-BR": "El Salvador",
    "qid": "Q792"
   }
  ],
  "SX": [
   {
    "iso3": "SXM",
-   "label_de": "Sint Maarten",
-   "label_en": "Sint Maarten",
+   "label_de-CH": "Sint Maarten",
+   "label_en-US": "Sint Maarten",
+   "label_pl-PL": "Sint Maarten",
+   "label_pt-BR": "São Martinho",
    "qid": "Q26273"
   }
  ],
  "SY": [
   {
    "iso3": "SYR",
-   "label_de": "Syrien",
-   "label_en": "Syria",
+   "label_de-CH": "Syrien",
+   "label_en-US": "Syria",
+   "label_pl-PL": "Syria",
+   "label_pt-BR": "Síria",
    "qid": "Q858"
   }
  ],
  "SZ": [
   {
    "iso3": "SWZ",
-   "label_de": "Eswatini",
-   "label_en": "Eswatini",
+   "label_de-CH": "Eswatini",
+   "label_en-US": "Eswatini",
+   "label_pl-PL": "Eswatini",
+   "label_pt-BR": "Essuatíni",
    "qid": "Q1050"
   }
  ],
  "TC": [
   {
    "iso3": "TCA",
-   "label_de": "Turks- und Caicosinseln",
-   "label_en": "Turks and Caicos Islands",
+   "label_de-CH": "Turks- und Caicosinseln",
+   "label_en-US": "Turks and Caicos Islands",
+   "label_pl-PL": "Turks i Caicos",
+   "label_pt-BR": "Turks e Caicos",
    "qid": "Q18221"
   }
  ],
  "TD": [
   {
    "iso3": "TCD",
-   "label_de": "Tschad",
-   "label_en": "Chad",
+   "label_de-CH": "Tschad",
+   "label_en-US": "Chad",
+   "label_pl-PL": "Czad",
+   "label_pt-BR": "Chade",
    "qid": "Q657"
   }
  ],
  "TF": [
   {
    "iso3": "ATF",
-   "label_de": "Französische Süd- und Antarktisgebiete",
-   "label_en": "French Southern and Antarctic Lands",
+   "label_de-CH": "Französische Süd- und Antarktisgebiete",
+   "label_en-US": "French Southern and Antarctic Lands",
+   "label_pl-PL": "Francuskie Terytoria Południowe i Antarktyczne",
+   "label_pt-BR": "Terras Austrais e Antárticas Francesas",
    "qid": "Q129003"
   }
  ],
  "TG": [
   {
    "iso3": "TGO",
-   "label_de": "Togo",
-   "label_en": "Togo",
+   "label_de-CH": "Togo",
+   "label_en-US": "Togo",
+   "label_pl-PL": "Togo",
+   "label_pt-BR": "Togo",
    "qid": "Q945"
   }
  ],
  "TH": [
   {
    "iso3": "THA",
-   "label_de": "Thailand",
-   "label_en": "Thailand",
+   "label_de-CH": "Thailand",
+   "label_en-US": "Thailand",
+   "label_pl-PL": "Tajlandia",
+   "label_pt-BR": "Tailândia",
    "qid": "Q869"
   }
  ],
  "TJ": [
   {
    "iso3": "TJK",
-   "label_de": "Tadschikistan",
-   "label_en": "Tajikistan",
+   "label_de-CH": "Tadschikistan",
+   "label_en-US": "Tajikistan",
+   "label_pl-PL": "Tadżykistan",
+   "label_pt-BR": "Tajiquistão",
    "qid": "Q863"
   }
  ],
  "TK": [
   {
    "iso3": "TKL",
-   "label_de": "Tokelau",
-   "label_en": "Tokelau",
+   "label_de-CH": "Tokelau",
+   "label_en-US": "Tokelau",
+   "label_pl-PL": "Tokelau",
+   "label_pt-BR": "Tokelau",
    "qid": "Q36823"
   }
  ],
  "TL": [
   {
    "iso3": "TLS",
-   "label_de": "Osttimor",
-   "label_en": "Timor-Leste",
+   "label_de-CH": "Osttimor",
+   "label_en-US": "Timor-Leste",
+   "label_pl-PL": "Timor Wschodni",
+   "label_pt-BR": "Timor-Leste",
    "qid": "Q574"
   }
  ],
  "TM": [
   {
    "iso3": "TKM",
-   "label_de": "Turkmenistan",
-   "label_en": "Turkmenistan",
+   "label_de-CH": "Turkmenistan",
+   "label_en-US": "Turkmenistan",
+   "label_pl-PL": "Turkmenistan",
+   "label_pt-BR": "Turquemenistão",
    "qid": "Q874"
   }
  ],
  "TN": [
   {
    "iso3": "TUN",
-   "label_de": "Tunesien",
-   "label_en": "Tunisia",
+   "label_de-CH": "Tunesien",
+   "label_en-US": "Tunisia",
+   "label_pl-PL": "Tunezja",
+   "label_pt-BR": "Tunísia",
    "qid": "Q948"
   }
  ],
  "TO": [
   {
    "iso3": "TON",
-   "label_de": "Tonga",
-   "label_en": "Tonga",
+   "label_de-CH": "Tonga",
+   "label_en-US": "Tonga",
+   "label_pl-PL": "Tonga",
+   "label_pt-BR": "Tonga",
    "qid": "Q678"
   }
  ],
  "TR": [
   {
    "iso3": "TUR",
-   "label_de": "Türkei",
-   "label_en": "Turkey",
+   "label_de-CH": "Türkei",
+   "label_en-US": "Turkey",
+   "label_pl-PL": "Turcja",
+   "label_pt-BR": "Turquia",
    "qid": "Q43"
   }
  ],
  "TT": [
   {
    "iso3": "TTO",
-   "label_de": "Trinidad und Tobago",
-   "label_en": "Trinidad and Tobago",
+   "label_de-CH": "Trinidad und Tobago",
+   "label_en-US": "Trinidad and Tobago",
+   "label_pl-PL": "Trynidad i Tobago",
+   "label_pt-BR": "Trindade e Tobago",
    "qid": "Q754"
   }
  ],
  "TV": [
   {
    "iso3": "TUV",
-   "label_de": "Tuvalu",
-   "label_en": "Tuvalu",
+   "label_de-CH": "Tuvalu",
+   "label_en-US": "Tuvalu",
+   "label_pl-PL": "Tuvalu",
+   "label_pt-BR": "Tuvalu",
    "qid": "Q672"
   }
  ],
  "TW": [
   {
    "iso3": "TWN",
-   "label_de": "Taiwan",
-   "label_en": "Taiwan",
+   "label_de-CH": "Taiwan",
+   "label_en-US": "Taiwan",
+   "label_pl-PL": "Republika Chińska",
+   "label_pt-BR": "Taiwan",
    "qid": "Q865"
   }
  ],
  "TZ": [
   {
    "iso3": "TZA",
-   "label_de": "Tansania",
-   "label_en": "Tanzania",
+   "label_de-CH": "Tansania",
+   "label_en-US": "Tanzania",
+   "label_pl-PL": "Tanzania",
+   "label_pt-BR": "Tanzânia",
    "qid": "Q924"
   }
  ],
  "UA": [
   {
    "iso3": "UKR",
-   "label_de": "Ukraine",
-   "label_en": "Ukraine",
+   "label_de-CH": "Ukraine",
+   "label_en-US": "Ukraine",
+   "label_pl-PL": "Ukraina",
+   "label_pt-BR": "Ucrânia",
    "qid": "Q212"
   }
  ],
  "UG": [
   {
    "iso3": "UGA",
-   "label_de": "Uganda",
-   "label_en": "Uganda",
+   "label_de-CH": "Uganda",
+   "label_en-US": "Uganda",
+   "label_pl-PL": "Uganda",
+   "label_pt-BR": "Uganda",
    "qid": "Q1036"
   }
  ],
  "US": [
   {
    "iso3": "USA",
-   "label_de": "Vereinigte Staaten",
-   "label_en": "United States",
+   "label_de-CH": "Vereinigte Staaten",
+   "label_en-US": "United States",
+   "label_pl-PL": "Stany Zjednoczone",
+   "label_pt-BR": "Estados Unidos",
    "qid": "Q30"
   }
  ],
  "UY": [
   {
    "iso3": "URY",
-   "label_de": "Uruguay",
-   "label_en": "Uruguay",
+   "label_de-CH": "Uruguay",
+   "label_en-US": "Uruguay",
+   "label_pl-PL": "Urugwaj",
+   "label_pt-BR": "Uruguai",
    "qid": "Q77"
   }
  ],
  "UZ": [
   {
    "iso3": "UZB",
-   "label_de": "Usbekistan",
-   "label_en": "Uzbekistan",
+   "label_de-CH": "Usbekistan",
+   "label_en-US": "Uzbekistan",
+   "label_pl-PL": "Uzbekistan",
+   "label_pt-BR": "Uzbequistão",
    "qid": "Q265"
   }
  ],
  "VA": [
   {
    "iso3": "VAT",
-   "label_de": "Vatikanstadt",
-   "label_en": "Vatican City",
+   "label_de-CH": "Vatikanstadt",
+   "label_en-US": "Vatican City",
+   "label_pl-PL": "Watykan",
+   "label_pt-BR": "Vaticano",
    "qid": "Q237"
   }
  ],
  "VC": [
   {
    "iso3": "VCT",
-   "label_de": "St. Vincent und die Grenadinen",
-   "label_en": "Saint Vincent and the Grenadines",
+   "label_de-CH": "St. Vincent und die Grenadinen",
+   "label_en-US": "Saint Vincent and the Grenadines",
+   "label_pl-PL": "Saint Vincent i Grenadyny",
+   "label_pt-BR": "São Vicente e Granadinas",
    "qid": "Q757"
   }
  ],
  "VE": [
   {
    "iso3": "VEN",
-   "label_de": "Venezuela",
-   "label_en": "Venezuela",
+   "label_de-CH": "Venezuela",
+   "label_en-US": "Venezuela",
+   "label_pl-PL": "Wenezuela",
+   "label_pt-BR": "Venezuela",
    "qid": "Q717"
   }
  ],
  "VG": [
   {
    "iso3": "VGB",
-   "label_de": "Britische Jungferninseln",
-   "label_en": "British Virgin Islands",
+   "label_de-CH": "Britische Jungferninseln",
+   "label_en-US": "British Virgin Islands",
+   "label_pl-PL": "Brytyjskie Wyspy Dziewicze",
+   "label_pt-BR": "Ilhas Virgens Britânicas",
    "qid": "Q25305"
   }
  ],
  "VI": [
   {
    "iso3": "VIR",
-   "label_de": "Amerikanische Jungferninseln",
-   "label_en": "United States Virgin Islands",
+   "label_de-CH": "Amerikanische Jungferninseln",
+   "label_en-US": "United States Virgin Islands",
+   "label_pl-PL": "Wyspy Dziewicze Stanów Zjednoczonych",
+   "label_pt-BR": "Ilhas Virgens Americanas",
    "qid": "Q11703"
   }
  ],
  "VN": [
   {
    "iso3": "VNM",
-   "label_de": "Vietnam",
-   "label_en": "Vietnam",
+   "label_de-CH": "Vietnam",
+   "label_en-US": "Vietnam",
+   "label_pl-PL": "Wietnam",
+   "label_pt-BR": "Vietnã",
    "qid": "Q881"
   }
  ],
  "VU": [
   {
    "iso3": "VUT",
-   "label_de": "Vanuatu",
-   "label_en": "Vanuatu",
+   "label_de-CH": "Vanuatu",
+   "label_en-US": "Vanuatu",
+   "label_pl-PL": "Vanuatu",
+   "label_pt-BR": "Vanuatu",
    "qid": "Q686"
   }
  ],
  "WF": [
   {
    "iso3": "WLF",
-   "label_de": "Wallis und Futuna",
-   "label_en": "Wallis and Futuna",
+   "label_de-CH": "Wallis und Futuna",
+   "label_en-US": "Wallis and Futuna",
+   "label_pl-PL": "Wallis i Futuna",
+   "label_pt-BR": "Wallis e Futuna",
    "qid": "Q35555"
   }
  ],
  "WS": [
   {
    "iso3": "WSM",
-   "label_de": "Samoa",
-   "label_en": "Samoa",
+   "label_de-CH": "Samoa",
+   "label_en-US": "Samoa",
+   "label_pl-PL": "Samoa",
+   "label_pt-BR": "Samoa",
    "qid": "Q683"
   }
  ],
  "XK": [
   {
    "iso3": "XKS",
-   "label_de": "Kosovo",
-   "label_en": "Kosovo",
+   "label_de-CH": "Kosovo",
+   "label_en-US": "Kosovo",
+   "label_pl-PL": "Kosowo",
+   "label_pt-BR": "Kosovo",
    "qid": "Q1246"
   }
  ],
  "YE": [
   {
    "iso3": "YEM",
-   "label_de": "Jemen",
-   "label_en": "Yemen",
+   "label_de-CH": "Jemen",
+   "label_en-US": "Yemen",
+   "label_pl-PL": "Jemen",
+   "label_pt-BR": "Iêmen",
    "qid": "Q805"
   }
  ],
  "YT": [
   {
    "iso3": "MYT",
-   "label_de": "Mayotte",
-   "label_en": "Mayotte",
+   "label_de-CH": "Mayotte",
+   "label_en-US": "Mayotte",
+   "label_pl-PL": "Majotta",
+   "label_pt-BR": "Mayotte",
    "qid": "Q17063"
   }
  ],
  "ZA": [
   {
    "iso3": "ZAF",
-   "label_de": "Südafrika",
-   "label_en": "South Africa",
+   "label_de-CH": "Südafrika",
+   "label_en-US": "South Africa",
+   "label_pl-PL": "Południowa Afryka",
+   "label_pt-BR": "África do Sul",
    "qid": "Q258"
   }
  ],
  "ZM": [
   {
    "iso3": "ZMB",
-   "label_de": "Sambia",
-   "label_en": "Zambia",
+   "label_de-CH": "Sambia",
+   "label_en-US": "Zambia",
+   "label_pl-PL": "Zambia",
+   "label_pt-BR": "Zâmbia",
    "qid": "Q953"
   }
  ],
  "ZW": [
   {
    "iso3": "ZWE",
-   "label_de": "Simbabwe",
-   "label_en": "Zimbabwe",
+   "label_de-CH": "Simbabwe",
+   "label_en-US": "Zimbabwe",
+   "label_pl-PL": "Zimbabwe",
+   "label_pt-BR": "Zimbábue",
    "qid": "Q954"
   }
  ]

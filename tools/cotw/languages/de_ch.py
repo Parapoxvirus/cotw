@@ -1,4 +1,4 @@
-"""German."""
+"""German (Switzerland): Swiss spelling (ss), names after the EDA list."""
 
 from __future__ import annotations
 
@@ -18,16 +18,18 @@ def object_form(name: str) -> str:
 
 
 LANGUAGE = Language(
-    code="de",
-    wiki="dewiki",
+    code="de-CH",
+    # Legacy identity: v1.0.x was published with the code "de", before locales had a region. The
+    # note GUIDs and the IDs below derive from it; changing it would duplicate every note.
+    identity="de",
     notetype_id=1123558981,
     deck_id=2041372721,
     extras_deck_id=1539901401,
     id_offset=50_000,
-    notetype="COTW (DE)",
+    notetype="COTW (DE-CH)",
     deck="Länder der Welt",
     extras="Länder der Welt::Extras",
-    tag_root="COTW-DE",
+    tag_root="COTW-DE-CH",
     status_tags={
         "sovereign": "Souverän",
         "dependency": "Abhängiges-Gebiet",
@@ -119,10 +121,15 @@ Wirtschaftszonen und Hoheitsgewässer sind aber vollständig. Auch umstrittene I
 oder sind neutral dargestellt, also ohne Zuordnung zu einem Land. Das Deck soll dir die Länder der
 Welt beibringen, nicht jedes kleinste Detail. Wenn du es genauer wissen möchtest, hilft dir der
 Wikipedia-Link auf der Rückseite weiter.</p>
-<p><b>Hilfe und Kontakt:</b> Mehr zum Deck steht auf der <a href="{ankiweb}">AnkiWeb-Seite</a>.
-Keine Antwort gefunden? Schreib mir an <a href="mailto:{contact}">{contact}</a>, gerne auch, wenn
-dir ein Fehler auffällt oder eine Karte veraltet ist. Das Deck bezieht keine politische Position:
-Umstrittene Gebiete sind so erfasst, wie die Lage vor Ort tatsächlich ist.</p>
+<p><b>Grenzen:</b> Karten und Globus verwenden die von
+<a href="https://www.naturalearthdata.com">Natural Earth</a> bereitgestellten Grenzen. Natural
+Earth bildet De-facto-Grenzen ab: wer ein Gebiet tatsächlich kontrolliert. Umstrittene Gebiete
+folgen deshalb den tatsächlichen Kontrolllinien. Das Deck macht keine politische Aussage, sondern
+richtet sich strikt nach den gelieferten Daten. Bitte kommentiere umstrittene Gebiete nicht und
+erstelle keine Issues dazu.</p>
+<p><b>Hilfe und Kontakt:</b> Mehr Informationen zu COTW und Kontaktmöglichkeiten findest du im
+<a href="{repository}">GitHub-Repository</a>. Fehler oder veraltete Karten kannst du in den
+<a href="{issues}">GitHub-Issues</a> melden.</p>
 """,
     description="""<p><b>Länder der Welt (COTW)</b>: {count} Länder und Gebiete, jeweils mit Hauptstadt,
 Flagge, zwei Karten, einem drehbaren Globus, ISO-Codes und Nachbarländern.</p>
@@ -136,6 +143,8 @@ De-facto-Grenzen ab: wer ein Gebiet tatsächlich kontrolliert. Die Krim etwa ers
 nicht als ukrainisch, und die umstrittenen Gebiete im Himalaya folgen den tatsächlichen
 Kontrolllinien. Das Deck macht keine politische Aussage, sondern richtet sich strikt nach dem
 gelieferten Material.</p>
+<p>Fehler kannst du in den <a href="{issues}">GitHub-Issues</a> melden. Mehr Informationen zu COTW
+und Kontaktmöglichkeiten findest du im <a href="{repository}">GitHub-Repository</a>.</p>
 <p><b>Quellen und Lizenzen.</b> Deck, Daten und Code: gemeinfrei
 (<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0</a>), Parapoxvirus.
 Daten: <a href="https://www.wikidata.org">Wikidata</a> (CC0). Land auf Karten und Globus:
@@ -184,5 +193,4 @@ jeder Datei steht in {manifest}. Schrift: IBM Plex Sans,
         "Polynesia": "Polynesien",
     },
     object_form=object_form,
-    ankiweb="https://ankiweb.net/shared/info/1416521286",
 )

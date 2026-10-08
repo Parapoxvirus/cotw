@@ -13,8 +13,10 @@ Agreed 2026-09-24. Spelling throughout the project (code, fields, docs, deck tex
    conditional (`{{#…}}`). Disputed areas: de facto situation.
 3. **Dependencies are separate entities.** Neighbors are computed per entity, so
    France does *not* border Suriname (French Guiana does).
-4. **Capitals come from official sources** (Wikidata), corrections to the spreadsheet
-   are allowed. Multiple capitals: the role (official capital, seat of government, …) stays in
+4. **Capitals come from official evidence; Wikidata is a helper**, not the authority.
+   Constitutional and legal decisions and the verified current location of state functions
+   decide the shared locations, order and roles; corrections to the spreadsheet are allowed.
+   Multiple capitals: the role (official capital, seat of government, …) stays in
    the card text (the capital's label); map 2 only shows position and number. Every capital
    gets the same marker: a white circle with an anthracite outline, identical in day and
    night mode. Entries with several capitals get the white digit 1 / 2 / 3 with an outside
@@ -37,6 +39,22 @@ Added 2026-10-05, numbered after the last decision so existing references stay v
     caught up with a change yet, COTW follows the current official publications (other
     national name lists, UN/UNTERM, government decrees). The language's spelling rules still
     apply.
+
+Added 2026-10-07 (approved naming and factual-content policy):
+
+19. **Names are local; facts are shared.** Each locale's official naming authorities decide
+    country and city short names, formal names and spelling. Status, represented entities,
+    locations, roles, order and granularity are shared facts based on relevant constitutional,
+    legal and verified de facto evidence; a translating country's recognition policy does not
+    override them. Labels translate the same shared role. Source roles and the fallback order
+    are recorded in [`TRANSLATING.md`](TRANSLATING.md); Wikipedia and Wikidata are helpers,
+    never naming authorities. A sourced `formal_name` is optional per locale: an omitted locale
+    renders no formal-name row and never falls back to another language. Required names and
+    shared labels remain complete. Deck and subdeck names, including *Extras*, are translated
+    naturally. Official alternatives that do not reveal a capital are preferred consistently
+    where available; none are invented. The deliberate Islamic Emirate, Majuro, Funafuti and
+    Saipan choices remain explicit exceptions rather than consequences uniquely selected by
+    this general rule.
 
 ## B · Globe in Anki
 
@@ -92,7 +110,10 @@ undone later. Deleting card types instead would force a full sync and can't be u
 
 ## E · Deck build
 
-- Contact address in the help section stays `info@feldbuch.com`.
+- Help and deck descriptions use the public repository for information and contact, and its
+  issue tracker for error reports. Both links come from `data/deck.yaml.repository`.
+- **Distribution (2026-10-07):** AnkiWeb has one English listing. Every locale ships as an
+  `.apkg` release asset; no additional locale-specific listings are created.
 - **Flags come straight from Wikimedia Commons**: Wikidata `P41` (flag image) → Commons SVG.
   The license is read per file from the Commons API. Public domain / CC0 passes, anything
   else fails the build and needs a manual decision. The v3 flags (hampusborgos/country-flags,
@@ -108,17 +129,28 @@ undone later. Deleting card types instead would force a full sync and can't be u
     **There is no combined EN+DE package** (agreed 2026-09-25). Instead the EN and DE packages
     install side by side in the same collection without any conflict, in any order, and each
     can be updated on its own later: separate deck IDs and names, note type IDs and names,
-    card-template names, note GUIDs, tag roots (`COTW-EN::` / `COTW-DE::`) and `cotw-`-scoped
+    card-template names, note GUIDs, tag roots (`COTW-EN-US::` / `COTW-DE-CH::`) and `cotw-`-scoped
     CSS, all fixed constants or derivations. Media is shared (identical file names and bytes)
     and therefore stored only once; template assets carry a content hash in their name so an
     update of one package can never overwrite a file the other package's templates still use.
     Proven by an import test with the `anki` package. Details: [`DECK.md`](DECK.md).
     **No backward compatibility** with the old deck (clean break). Note GUIDs are derived
-    deterministically from COTW ID + language, so they stay stable across all future builds.
+    deterministically from COTW ID + the language's frozen identity, so they stay stable across
+    all future builds (decision 17).
 15. **Change monitoring:** a weekly scheduled Gitea Actions job
     (`.gitea/workflows/wikidata-check.yml`) compares the database with Wikidata and opens an
     issue for each deviation. Nothing is applied without approval.
 16. **Publishing:** development on Gitea for now, GitHub later. Deck, data and code: public domain (CC0),
     except the Marine Regions geometry (CC BY 4.0, attribution required).
+17. **A language is a full BCP 47 locale** (`en-US`, `de-CH`, `pt-BR`): the language and the
+    region whose spelling and official names it follows, so regional variants (`de-CH` next to
+    a future `de-DE`, `pt-BR` next to `pt-PT`) can coexist. The locale code is the key of the
+    names in the data, the package file (`COTW-DE-CH.apkg`), the tag root (`COTW-DE-CH::`) and
+    the note type name (`COTW (DE-CH)`); deck names stay as they are. Its sources (Wikipedia,
+    Wikidata label languages in fallback order) come from the curated list
+    `data/locales.yaml`, which also bounds the possible locales. The GUIDs and IDs hang on a
+    separate, frozen **identity**: the code for every new locale, `en` and `de` for the two
+    locales published before (v1.0.x), so updating keeps every note and its review history.
+    No two locales share an identity.
 
 ## Open

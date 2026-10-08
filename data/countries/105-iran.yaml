@@ -4,15 +4,21 @@ iso3: IRN
 wikidata: Q794
 status: sovereign
 name:
-  en: Iran
-  de: Iran
+  en-US: Iran
+  de-CH: Iran
+  pl-PL: Iran
+  pt-BR: Irã
 formal_name:
-  en: The Islamic Republic of Iran
-  de: Islamische Republik Iran
+  en-US: The Islamic Republic of Iran
+  de-CH: Islamische Republik Iran
+  pl-PL: Islamska Republika Iranu
+  pt-BR: República Islâmica do Irã
 capitals:
 - name:
-    en: Tehran
-    de: Teheran
+    en-US: Tehran
+    de-CH: Teheran
+    pl-PL: Teheran
+    pt-BR: Teerã
   role: capital
   wikidata: Q3616
   lat: 35.68889
@@ -29,5 +35,7 @@ regions:
 - Asia
 - Southern Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Iran
-  de: https://de.wikipedia.org/wiki/Iran
+  en-US: https://en.wikipedia.org/wiki/Iran
+  de-CH: https://de.wikipedia.org/wiki/Iran
+  pl-PL: https://pl.wikipedia.org/wiki/Iran
+  pt-BR: https://pt.wikipedia.org/wiki/Irã

@@ -4,12 +4,16 @@ iso3: HUN
 wikidata: Q28
 status: sovereign
 name:
-  en: Hungary
-  de: Ungarn
+  en-US: Hungary
+  de-CH: Ungarn
+  pl-PL: Węgry
+  pt-BR: Hungria
 capitals:
 - name:
-    en: Budapest
-    de: Budapest
+    en-US: Budapest
+    de-CH: Budapest
+    pl-PL: Budapeszt
+    pt-BR: Budapeste
   role: capital
   wikidata: Q1781
   lat: 47.49833
@@ -26,5 +30,7 @@ regions:
 - Europe
 - Eastern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Hungary
-  de: https://de.wikipedia.org/wiki/Ungarn
+  en-US: https://en.wikipedia.org/wiki/Hungary
+  de-CH: https://de.wikipedia.org/wiki/Ungarn
+  pl-PL: https://pl.wikipedia.org/wiki/Węgry
+  pt-BR: https://pt.wikipedia.org/wiki/Hungria

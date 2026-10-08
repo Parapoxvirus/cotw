@@ -4,15 +4,21 @@ iso3: TCD
 wikidata: Q657
 status: sovereign
 name:
-  en: Chad
-  de: Tschad
+  en-US: Chad
+  de-CH: Tschad
+  pl-PL: Czad
+  pt-BR: Chade
 formal_name:
-  en: The Republic of Chad
-  de: Republik Tschad
+  en-US: The Republic of Chad
+  de-CH: Republik Tschad
+  pl-PL: Republika Czadu
+  pt-BR: República do Chade
 capitals:
 - name:
-    en: N’Djamena
-    de: N’Djamena
+    en-US: N’Djamena
+    de-CH: N’Djamena
+    pl-PL: Ndżamena
+    pt-BR: N’Djamena
   role: capital
   wikidata: Q3659
   lat: 12.11
@@ -29,5 +35,7 @@ regions:
 - Sub-Saharan Africa
 - Middle Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Chad
-  de: https://de.wikipedia.org/wiki/Tschad
+  en-US: https://en.wikipedia.org/wiki/Chad
+  de-CH: https://de.wikipedia.org/wiki/Tschad
+  pl-PL: https://pl.wikipedia.org/wiki/Czad
+  pt-BR: https://pt.wikipedia.org/wiki/Chade

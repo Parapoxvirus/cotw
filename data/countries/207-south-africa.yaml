@@ -4,38 +4,54 @@ iso3: ZAF
 wikidata: Q258
 status: sovereign
 name:
-  en: South Africa
-  de: Südafrika
+  en-US: South Africa
+  de-CH: Südafrika
+  pl-PL: Południowa Afryka / RPA
+  pt-BR: África do Sul
 formal_name:
-  en: The Republic of South Africa
-  de: Republik Südafrika
+  en-US: The Republic of South Africa
+  de-CH: Republik Südafrika
+  pl-PL: Republika Południowej Afryki
+  pt-BR: República da África do Sul
 capitals:
 - name:
-    en: Pretoria
-    de: Pretoria
+    en-US: Pretoria
+    de-CH: Pretoria
+    pl-PL: Pretoria
+    pt-BR: Pretória
   label:
-    en: executive
-    de: Exekutive
+    en-US: executive
+    de-CH: Exekutive
+    pl-PL: władza wykonawcza
+    pt-BR: executiva
   role: executive
   wikidata: Q3926
   lat: -25.74639
   lon: 28.18806
 - name:
-    en: Cape Town
-    de: Kapstadt
+    en-US: Cape Town
+    de-CH: Kapstadt
+    pl-PL: Kapsztad
+    pt-BR: Cidade do Cabo
   label:
-    en: legislative
-    de: Legislative
+    en-US: legislative
+    de-CH: Legislative
+    pl-PL: władza ustawodawcza
+    pt-BR: legislativa
   role: legislative
   wikidata: Q5465
   lat: -33.92528
   lon: 18.42389
 - name:
-    en: Bloemfontein
-    de: Bloemfontein
+    en-US: Bloemfontein
+    de-CH: Bloemfontein
+    pl-PL: Bloemfontein
+    pt-BR: Bloemfontein
   label:
-    en: judicial
-    de: Judikative
+    en-US: judicial
+    de-CH: Judikative
+    pl-PL: władza sądownicza
+    pt-BR: judiciária
   role: judicial
   wikidata: Q37701
   lat: -29.1
@@ -52,5 +68,7 @@ regions:
 - Sub-Saharan Africa
 - Southern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/South_Africa
-  de: https://de.wikipedia.org/wiki/Südafrika
+  en-US: https://en.wikipedia.org/wiki/South_Africa
+  de-CH: https://de.wikipedia.org/wiki/Südafrika
+  pl-PL: https://pl.wikipedia.org/wiki/Południowa_Afryka
+  pt-BR: https://pt.wikipedia.org/wiki/África_do_Sul

@@ -4,15 +4,21 @@ iso3: FRA
 wikidata: Q142
 status: sovereign
 name:
-  en: France
-  de: Frankreich
+  en-US: France
+  de-CH: Frankreich
+  pl-PL: Francja
+  pt-BR: França
 formal_name:
-  en: The French Republic
-  de: Französische Republik
+  en-US: The French Republic
+  de-CH: Französische Republik
+  pl-PL: Republika Francuska
+  pt-BR: República Francesa
 capitals:
 - name:
-    en: Paris
-    de: Paris
+    en-US: Paris
+    de-CH: Paris
+    pl-PL: Paryż
+    pt-BR: Paris
   role: capital
   wikidata: Q90
   lat: 48.85667
@@ -30,5 +36,7 @@ regions:
 - Europe
 - Western Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/France
-  de: https://de.wikipedia.org/wiki/Frankreich
+  en-US: https://en.wikipedia.org/wiki/France
+  de-CH: https://de.wikipedia.org/wiki/Frankreich
+  pl-PL: https://pl.wikipedia.org/wiki/Francja
+  pt-BR: https://pt.wikipedia.org/wiki/França

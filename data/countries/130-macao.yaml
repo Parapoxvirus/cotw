@@ -5,15 +5,20 @@ wikidata: Q14773
 status: dependency
 dependency_of: '045'
 name:
-  en: Macao / Macau
-  de: Macau
+  en-US: Macao / Macau
+  de-CH: Macau
+  pl-PL: Makau
+  pt-BR: Macau
 formal_name:
-  en: Macao Special Administrative Region of the People’s Republic of China
-  de: Sonderverwaltungszone Macau der Volksrepublik China
+  en-US: Macao Special Administrative Region of the People’s Republic of China
+  de-CH: Sonderverwaltungsregion Macau der Volksrepublik China
+  pl-PL: Specjalny Region Administracyjny Makau
 capitals:
 - name:
-    en: Macao
-    de: Macau
+    en-US: Macao
+    de-CH: Macau
+    pl-PL: Makau
+    pt-BR: Macau
   role: capital
   wikidata: Q14773
   lat: 22.19
@@ -24,5 +29,7 @@ regions:
 - Asia
 - Eastern Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Macao
-  de: https://de.wikipedia.org/wiki/Macau
+  en-US: https://en.wikipedia.org/wiki/Macao
+  de-CH: https://de.wikipedia.org/wiki/Macau
+  pl-PL: https://pl.wikipedia.org/wiki/Makau
+  pt-BR: https://pt.wikipedia.org/wiki/Macau

@@ -4,15 +4,21 @@ iso3: BTN
 wikidata: Q917
 status: sovereign
 name:
-  en: Bhutan
-  de: Bhutan
+  en-US: Bhutan
+  de-CH: Bhutan
+  pl-PL: Bhutan
+  pt-BR: Butão
 formal_name:
-  en: The Kingdom of Bhutan
-  de: Königreich Bhutan
+  en-US: The Kingdom of Bhutan
+  de-CH: Königreich Bhutan
+  pl-PL: Królestwo Bhutanu
+  pt-BR: Reino do Butão
 capitals:
 - name:
-    en: Thimphu
-    de: Thimphu
+    en-US: Thimphu
+    de-CH: Thimphu
+    pl-PL: Thimphu
+    pt-BR: Thimphu
   role: capital
   wikidata: Q9270
   lat: 27.47135
@@ -24,5 +30,7 @@ regions:
 - Asia
 - Southern Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Bhutan
-  de: https://de.wikipedia.org/wiki/Bhutan
+  en-US: https://en.wikipedia.org/wiki/Bhutan
+  de-CH: https://de.wikipedia.org/wiki/Bhutan
+  pl-PL: https://pl.wikipedia.org/wiki/Bhutan
+  pt-BR: https://pt.wikipedia.org/wiki/Butão

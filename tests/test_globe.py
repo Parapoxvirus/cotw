@@ -246,8 +246,8 @@ def test_names_and_centers(by_id, data):
 
 
 def test_umlauts_survive(data):
-    assert data["entries"]["217"]["name"]["de"] == "Schweiz"
-    assert any("ä" in m["name"]["de"] or "ö" in m["name"]["de"] or "ü" in m["name"]["de"] for m in data["entries"].values())
+    assert data["entries"]["217"]["name"]["de-CH"] == "Schweiz"
+    assert any("ä" in m["name"]["de-CH"] or "ö" in m["name"]["de-CH"] or "ü" in m["name"]["de-CH"] for m in data["entries"].values())
 
 
 def test_eez_hulls_for_entries_that_can_get_circles(by_id, bootstrap):
@@ -317,7 +317,18 @@ def globe():
 
 
 def _entry(cid, iso2, iso3, borders):
-    return {"id": cid, "iso2": iso2, "iso3": iso3, "borders": list(borders), "name": {"en": f"Mätzland {cid}", "de": f"Groß-Mätzland {cid}"}}
+    return {
+        "id": cid,
+        "iso2": iso2,
+        "iso3": iso3,
+        "borders": list(borders),
+        "name": {
+            "en-US": f"Mätzland {cid}",
+            "de-CH": f"Groß-Mätzland {cid}",
+            "pl-PL": f"Mätzlandia {cid}",
+            "pt-BR": f"Mätzlândia {cid}",
+        },
+    }
 
 
 @pytest.fixture(scope="module")

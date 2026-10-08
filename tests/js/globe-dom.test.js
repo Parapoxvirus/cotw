@@ -38,7 +38,7 @@ function reviewer({ tooltip = false } = {}) {
     };
   }
   const tip = tooltip ? { 'data-tooltip': '' } : {};
-  let card = element('div', { 'data-id': '209', 'data-lang': 'de', ...hashed, ...tip });
+  let card = element('div', { 'data-id': '209', 'data-lang': 'de-CH', ...hashed, ...tip });
   const head = element('head');
   const document = {
     head, readyState: 'complete',
@@ -89,7 +89,7 @@ function reviewer({ tooltip = false } = {}) {
         drain(idle); drain(tasks); drain(frames);
       }
     },
-    replace(id, attrs = {}) { card = element('div', { 'data-id': id, 'data-lang': 'de', ...attrs }); }
+    replace(id, attrs = {}) { card = element('div', { 'data-id': id, 'data-lang': 'de-CH', ...attrs }); }
   };
 }
 
@@ -695,7 +695,7 @@ test('mouse hover is coalesced into one frame and selects tooltip + fill togethe
   assert.equal(g.tip.style.display, 'none');
 });
 
-test('the tooltip speaks data-lang as given, English for a language without names', () => {
+test('the tooltip speaks data-lang as given, the base locale for a locale without names', () => {
   const r = backReviewer(), g = r.globe();
   const hover = lang => {
     g.el.attrs['data-lang'] = lang;
@@ -705,12 +705,15 @@ test('the tooltip speaks data-lang as given, English for a language without name
     g.handlers.pointerleave({ pointerType: 'mouse' }); r.frame();
     return text;
   };
-  assert.equal(hover('de'), 'Nordkorea');
-  assert.equal(hover('en'), 'North Korea');
-  assert.equal(r.world().meta[NORTH_KOREA].name.xx, undefined);
-  assert.equal(hover('xx'), 'North Korea', 'no names in that language: the English ones');
-  r.world().meta[NORTH_KOREA].name.xx = 'Nordkorea (xx)';  // a newly registered language
-  assert.equal(hover('xx'), 'Nordkorea (xx)');
+  assert.equal(r.world().base, 'en-US');
+  assert.equal(hover('de-CH'), 'Nordkorea');
+  assert.equal(hover('en-US'), 'North Korea');
+  assert.equal(hover('de'), 'North Korea', 'the code as given: a bare language is not a locale');
+  assert.equal(hover(''), 'North Korea', 'no data-lang: the base locale');
+  assert.equal(r.world().meta[NORTH_KOREA].name['xx-XX'], undefined);
+  assert.equal(hover('xx-XX'), 'North Korea', 'no names in that locale: the base locale’s');
+  r.world().meta[NORTH_KOREA].name['xx-XX'] = 'Nordkorea (xx)';  // a newly registered locale
+  assert.equal(hover('xx-XX'), 'Nordkorea (xx)');
 });
 
 test('the entry under the pointer shows its tooltip but keeps its own green', () => {

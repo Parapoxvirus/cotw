@@ -20,6 +20,7 @@ import threading
 
 from playwright.sync_api import sync_playwright
 
+from cotw import languages
 from cotw.deck import build
 from cotw.deck.templates import globe_script, render, templates
 from cotw.paths import BUILD
@@ -46,10 +47,10 @@ def fixtures(out):
     entries, by_id = build.load_entries()
     for source in build.field_media(entries):
         shutil.copyfile(source, media / source.name)
-    tmpls = templates("en", names, build.load_config())
+    tmpls = templates(languages.BASE, names, build.load_config())
     cards = {}
     for cid, index in (("209", 3), ("117", 2), ("098", 9)):
-        cards[cid] = render(tmpls[index]["afmt"], build.card_fields(by_id[cid], by_id, "en")).replace(globe_script(names), "")
+        cards[cid] = render(tmpls[index]["afmt"], build.card_fields(by_id[cid], by_id, languages.BASE)).replace(globe_script(names), "")
     # The real card shell, CSS, images and font; only the container width is fixed.
     (out / "index.html").write_text(
         '<!doctype html><meta charset="utf-8"><base href="media/">'

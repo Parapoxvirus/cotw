@@ -4,32 +4,46 @@ iso3: SWZ
 wikidata: Q1050
 status: sovereign
 name:
-  en: Eswatini
-  de: Eswatini
+  en-US: Eswatini
+  de-CH: Eswatini
+  pl-PL: Eswatini
+  pt-BR: Essuatíni
 name_label:
-  en: formerly Swaziland
-  de: ehemals Swasiland
+  en-US: formerly Swaziland
+  de-CH: ehemals Swasiland
+  pl-PL: dawniej Suazi
+  pt-BR: antiga Suazilândia
 formal_name:
-  en: The Kingdom of Eswatini
-  de: Königreich Eswatini
+  en-US: The Kingdom of Eswatini
+  de-CH: Königreich Eswatini
+  pl-PL: Królestwo Eswatini
+  pt-BR: Reino de Essuatíni
 capitals:
 - name:
-    en: Mbabane
-    de: Mbabane
+    en-US: Mbabane
+    de-CH: Mbabane
+    pl-PL: Mbabane
+    pt-BR: Mbabane
   label:
-    en: capital
-    de: Hauptstadt
+    en-US: capital
+    de-CH: Hauptstadt
+    pl-PL: stolica
+    pt-BR: capital
   role: capital
   wikidata: Q3904
   lat: -26.31667
   lon: 31.13333
 - name:
-    en: Lobamba
-    de: Lobamba
+    en-US: Lobamba
+    de-CH: Lobamba
+    pl-PL: Lobamba
+    pt-BR: Lobamba
   label:
-    en: seat of government
-    de: Regierungssitz
-  role: seat_of_government
+    en-US: legislative
+    de-CH: Legislative
+    pl-PL: ustawodawcza
+    pt-BR: legislativa
+  role: legislative
   wikidata: Q101418
   lat: -26.44648
   lon: 31.20641
@@ -41,5 +55,7 @@ regions:
 - Sub-Saharan Africa
 - Southern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Eswatini
-  de: https://de.wikipedia.org/wiki/Eswatini
+  en-US: https://en.wikipedia.org/wiki/Eswatini
+  de-CH: https://de.wikipedia.org/wiki/Eswatini
+  pl-PL: https://pl.wikipedia.org/wiki/Eswatini
+  pt-BR: https://pt.wikipedia.org/wiki/Essuatíni

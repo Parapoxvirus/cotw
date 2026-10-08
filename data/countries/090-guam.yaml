@@ -5,12 +5,18 @@ wikidata: Q16635
 status: dependency
 dependency_of: '237'
 name:
-  en: Guam
-  de: Guam
+  en-US: Guam
+  de-CH: Guam
+  pl-PL: Guam
+  pt-BR: Guam
+formal_name:
+  pl-PL: Terytorium Guamu
 capitals:
 - name:
-    en: Hagåtña
-    de: Hagåtña
+    en-US: Hagåtña
+    de-CH: Hagåtña
+    pl-PL: Hagåtña
+    pt-BR: Hagåtña
   role: capital
   wikidata: Q30988
   lat: 13.48333
@@ -20,5 +26,7 @@ regions:
 - Oceania
 - Micronesia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Guam
-  de: https://de.wikipedia.org/wiki/Guam
+  en-US: https://en.wikipedia.org/wiki/Guam
+  de-CH: https://de.wikipedia.org/wiki/Guam
+  pl-PL: https://pl.wikipedia.org/wiki/Guam
+  pt-BR: https://pt.wikipedia.org/wiki/Guam

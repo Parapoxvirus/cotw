@@ -162,10 +162,10 @@ def map_field(cid: str, kind: str) -> str:
 
 
 def guid(cid: str, lang: str) -> str:
-    """DECISIONS 14: derived from COTW ID + language only, stable across all builds."""
+    """DECISIONS 14: derived from COTW ID + frozen language identity, stable across locale renames."""
     import genanki
 
-    return genanki.guid_for("cotw", lang, cid)
+    return genanki.guid_for("cotw", languages.get(lang).identity, cid)
 
 
 def card_fields(entry: dict, by_id: dict, lang: str) -> dict[str, str]:
@@ -187,11 +187,11 @@ MANIFEST_PATH = "data/derived/flags.yaml"
 
 
 def description(lang: str, count: int, config: dict, asset_names: dict[str, str]) -> str:
-    repo = (config.get("repository") or "").rstrip("/")
-    manifest = f'<a href="{repo}/blob/main/{MANIFEST_PATH}">{MANIFEST_PATH}</a>' if repo else f"<code>{MANIFEST_PATH}</code>"
+    repository = config["repository"].rstrip("/")
+    manifest = f'<a href="{repository}/blob/main/{MANIFEST_PATH}">{MANIFEST_PATH}</a>'
     text = languages.get(lang).description.format(
-        count=count, citation=CITATION, manifest=manifest, font_license=asset_names["font-license"],
-        icons_license=asset_names["icons-license"],
+        count=count, repository=repository, issues=f"{repository}/issues", citation=CITATION,
+        manifest=manifest, font_license=asset_names["font-license"], icons_license=asset_names["icons-license"],
     )
     return " ".join(text.split())
 
@@ -368,7 +368,7 @@ PREVIEW_MEDIA = "deck-media"
 def write_preview(out_dir: Path = BUILD, ids: tuple[str, ...] = PREVIEW_IDS) -> Path:
     """``build/deck-preview.html``: every card type, front and back, day and night, per language.
 
-    Query parameters narrow it down: ``?lang=de&ids=217&side=back&mode=night&types=01,05``,
+    Query parameters narrow it down: ``?lang=de-CH&ids=217&side=back&mode=night&types=01,05``,
     ``&open=info,help`` expands the full info / help sections.
     """
     entries, by_id = load_entries()

@@ -4,15 +4,21 @@ iso3: GRC
 wikidata: Q41
 status: sovereign
 name:
-  en: Greece
-  de: Griechenland
+  en-US: Greece
+  de-CH: Griechenland
+  pl-PL: Grecja
+  pt-BR: Grécia
 formal_name:
-  en: The Hellenic Republic
-  de: Hellenische Republik
+  en-US: The Hellenic Republic
+  de-CH: Hellenische Republik
+  pl-PL: Republika Grecka
+  pt-BR: República Helênica
 capitals:
 - name:
-    en: Athens
-    de: Athen
+    en-US: Athens
+    de-CH: Athen
+    pl-PL: Ateny
+    pt-BR: Atenas
   role: capital
   wikidata: Q1524
   lat: 37.98417
@@ -26,5 +32,7 @@ regions:
 - Europe
 - Southern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Greece
-  de: https://de.wikipedia.org/wiki/Griechenland
+  en-US: https://en.wikipedia.org/wiki/Greece
+  de-CH: https://de.wikipedia.org/wiki/Griechenland
+  pl-PL: https://pl.wikipedia.org/wiki/Grecja
+  pt-BR: https://pt.wikipedia.org/wiki/Grécia

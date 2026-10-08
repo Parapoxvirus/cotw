@@ -4,15 +4,21 @@ iso3: NOR
 wikidata: Q20
 status: sovereign
 name:
-  en: Norway
-  de: Norwegen
+  en-US: Norway
+  de-CH: Norwegen
+  pl-PL: Norwegia
+  pt-BR: Noruega
 formal_name:
-  en: The Kingdom of Norway
-  de: Königreich Norwegen
+  en-US: The Kingdom of Norway
+  de-CH: Königreich Norwegen
+  pl-PL: Królestwo Norwegii
+  pt-BR: Reino da Noruega
 capitals:
 - name:
-    en: Oslo
-    de: Oslo
+    en-US: Oslo
+    de-CH: Oslo
+    pl-PL: Oslo
+    pt-BR: Oslo
   role: capital
   wikidata: Q585
   lat: 59.91333
@@ -25,5 +31,7 @@ regions:
 - Europe
 - Northern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Norway
-  de: https://de.wikipedia.org/wiki/Norwegen
+  en-US: https://en.wikipedia.org/wiki/Norway
+  de-CH: https://de.wikipedia.org/wiki/Norwegen
+  pl-PL: https://pl.wikipedia.org/wiki/Norwegia
+  pt-BR: https://pt.wikipedia.org/wiki/Noruega

@@ -105,12 +105,12 @@ def _fields(html: str, lang: Language) -> str:
 
 
 def _context(lang: Language, assets: dict, config: dict) -> dict:
+    repository = config["repository"].rstrip("/")
     help_text = lang.help.format(
         infographic=_infographic(assets, "infographic"),
         infographic_filtered=_infographic(assets, "infographic-filtered"),
-        # A language without its own AnkiWeb listing yet links the base language's.
-        ankiweb=lang.ankiweb or languages.get(languages.BASE).ankiweb,
-        contact=config["contact"],
+        repository=repository,
+        issues=f"{repository}/issues",
     )
     return {
         "code": lang.code,

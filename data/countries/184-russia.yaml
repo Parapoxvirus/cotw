@@ -4,15 +4,21 @@ iso3: RUS
 wikidata: Q159
 status: sovereign
 name:
-  en: Russia
-  de: Russland
+  en-US: Russia
+  de-CH: Russland
+  pl-PL: Rosja
+  pt-BR: Rússia
 formal_name:
-  en: The Russian Federation
-  de: Russische Föderation
+  en-US: The Russian Federation
+  de-CH: Russische Föderation
+  pl-PL: Federacja Rosyjska
+  pt-BR: Federação da Rússia
 capitals:
 - name:
-    en: Moscow
-    de: Moskau
+    en-US: Moscow
+    de-CH: Moskau
+    pl-PL: Moskwa
+    pt-BR: Moscou
   role: capital
   wikidata: Q649
   lat: 55.75056
@@ -36,5 +42,7 @@ regions:
 - Europe
 - Eastern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Russia
-  de: https://de.wikipedia.org/wiki/Russland
+  en-US: https://en.wikipedia.org/wiki/Russia
+  de-CH: https://de.wikipedia.org/wiki/Russland
+  pl-PL: https://pl.wikipedia.org/wiki/Rosja
+  pt-BR: https://pt.wikipedia.org/wiki/Rússia

@@ -4,18 +4,26 @@ iso3: MDA
 wikidata: Q217
 status: sovereign
 name:
-  en: Moldova
-  de: Moldau / Moldova
+  en-US: Moldova
+  de-CH: Moldau / Moldova
+  pl-PL: Mołdawia
+  pt-BR: Moldova
 name_label:
-  en: 'outdated: Moldavia'
-  de: 'umgangssprachlich veraltet: Moldawien'
+  en-US: 'outdated: Moldavia'
+  de-CH: 'umgangssprachlich veraltet: Moldawien'
+  pl-PL: 'dawniej po angielsku: Moldavia'
+  pt-BR: 'também: Moldávia'
 formal_name:
-  en: The Republic of Moldova
-  de: Republik Moldau
+  en-US: The Republic of Moldova
+  de-CH: Republik Moldau
+  pl-PL: Republika Mołdawii
+  pt-BR: República da Moldova
 capitals:
 - name:
-    en: Chișinău
-    de: Chișinău
+    en-US: Chișinău
+    de-CH: Chișinău
+    pl-PL: Kiszyniów
+    pt-BR: Chisinau
   role: capital
   wikidata: Q21197
   lat: 47.02278
@@ -27,5 +35,7 @@ regions:
 - Europe
 - Eastern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Moldova
-  de: https://de.wikipedia.org/wiki/Republik_Moldau
+  en-US: https://en.wikipedia.org/wiki/Moldova
+  de-CH: https://de.wikipedia.org/wiki/Republik_Moldau
+  pl-PL: https://pl.wikipedia.org/wiki/Mołdawia
+  pt-BR: https://pt.wikipedia.org/wiki/Moldávia

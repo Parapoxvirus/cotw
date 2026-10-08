@@ -4,15 +4,21 @@ iso3: COL
 wikidata: Q739
 status: sovereign
 name:
-  en: Colombia
-  de: Kolumbien
+  en-US: Colombia
+  de-CH: Kolumbien
+  pl-PL: Kolumbia
+  pt-BR: Colômbia
 formal_name:
-  en: The Republic of Colombia
-  de: Republik Kolumbien
+  en-US: The Republic of Colombia
+  de-CH: Republik Kolumbien
+  pl-PL: Republika Kolumbii
+  pt-BR: República da Colômbia
 capitals:
 - name:
-    en: Bogotá
-    de: Bogotá
+    en-US: Bogotá
+    de-CH: Bogotá
+    pl-PL: Bogota
+    pt-BR: Bogotá
   role: capital
   wikidata: Q2841
   lat: 4.60971
@@ -28,5 +34,7 @@ regions:
 - Latin America and the Caribbean
 - South America
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Colombia
-  de: https://de.wikipedia.org/wiki/Kolumbien
+  en-US: https://en.wikipedia.org/wiki/Colombia
+  de-CH: https://de.wikipedia.org/wiki/Kolumbien
+  pl-PL: https://pl.wikipedia.org/wiki/Kolumbia
+  pt-BR: https://pt.wikipedia.org/wiki/Colômbia

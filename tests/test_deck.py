@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import dataclasses
 import hashlib
 import json
 import re
@@ -58,6 +57,39 @@ def _notetype(col: sqlite3.Connection) -> dict:
 # Derivation and uniqueness of the IDs and names of every language: tests/test_languages.py.
 
 
+def test_published_identities_match_golden_fixture(collections):
+    """The identity fixture is append-only: append new entries, never change existing rows.
+
+    Read every GUID and ID from the built .apkg collections, independently of the
+    current GUID derivation. Locale refactors change only the identity lookup below.
+    """
+    fixture = json.loads((Path(__file__).parent / "fixtures" / "identities.json").read_text())
+    hint = "Append new identities/entries to the fixture; never change or remove existing rows."
+    observed = {}
+    for code, col in collections.items():
+        spec = languages.get(code)
+        identity = spec.identity
+        nt = _notetype(col)
+        locator = [field["name"] for field in nt["flds"]].index(spec.fields["locator"])
+        rows = col.execute("SELECT guid, flds FROM notes").fetchall()
+        guids = {fields.split("\x1f")[locator]: guid for guid, fields in rows}
+        assert len(guids) == len(rows), f"{identity}: duplicate COTW IDs in package"
+        decks = {d["name"]: d["id"] for d in json.loads(col.execute("SELECT decks FROM col").fetchone()[0]).values()}
+        observed[identity] = {
+            "notetype_id": int(nt["id"]),
+            "deck_id": decks[spec.deck],
+            "extras_deck_id": decks[spec.extras],
+            "id_offset": col.execute("SELECT min(id) FROM notes").fetchone()[0] - EPOCH * 1000,
+            "note_guids": guids,
+        }
+        assert {mid for (mid,) in col.execute("SELECT DISTINCT mid FROM notes")} == {int(nt["id"])}, hint
+        assert {did for (did,) in col.execute("SELECT DISTINCT did FROM cards")} == {
+            decks[spec.deck], decks[spec.extras]
+        }, hint
+    assert len(observed) == len(collections), "Published identities must be unique"
+    assert observed == fixture, hint
+
+
 def test_package_ids_in_the_collection(collections):
     for code, col in collections.items():
         spec = languages.get(code)
@@ -71,25 +103,77 @@ def test_package_ids_in_the_collection(collections):
 
 def test_guids_are_stable_and_differ_per_language():
     # Pinned: a changed derivation would duplicate every note in every collection.
-    assert build.guid("217", "en") == "C,F0URhk8F"
-    assert build.guid("217", "de") == "B+v1yB?A&S"
+    assert build.guid("217", "en-US") == "C,F0URhk8F"
+    assert build.guid("217", "de-CH") == "B+v1yB?A&S"
+    assert build.guid("217", "pl-PL") == "r`Zh{w}T?!"
 
 
 def test_renamed_entry_keeps_its_guid():
     """Renaming 153 (Nauru → Naoero) keeps the GUID: it hangs on the id alone, progress stays."""
-    assert build.guid("153", "en") == "L1#_L{AY0a"
-    assert build.guid("153", "de") == "D5js<BPzmK"
+    assert build.guid("153", "en-US") == "L1#_L{AY0a"
+    assert build.guid("153", "de-CH") == "D5js<BPzmK"
 
 
 def test_ham74_fields(by_id):
-    for code in ("en", "de"):
+    for code in ("en-US", "de-CH"):
         gq = build.fields(by_id["067"], by_id, code)
         assert (gq["capital_1"], gq["capital_2"]) == ("Ciudad de la Paz", "Malabo")
         nr = build.fields(by_id["153"], by_id, code)
         assert nr["country"] == "Naoero"
-    assert build.fields(by_id["067"], by_id, "de")["capital_2_label"] == "Regierungssitz bis zum Abschluss des Umzugs"
-    assert build.fields(by_id["153"], by_id, "de")["formal_name"] == "Republik Naoero"
-    assert build.fields(by_id["153"], by_id, "en")["wikipedia"] == "https://en.wikipedia.org/wiki/Nauru"
+    assert build.fields(by_id["067"], by_id, "de-CH")["capital_2_label"] == "Regierungssitz bis zum Abschluss des Umzugs"
+    assert build.fields(by_id["153"], by_id, "de-CH")["formal_name"] == "Republik Naoero"
+    assert build.fields(by_id["153"], by_id, "en-US")["wikipedia"] == "https://en.wikipedia.org/wiki/Nauru"
+
+
+def test_shared_corrections_fields(by_id):
+    """DE formal names from the official German lists, Eswatini's Lobamba as the
+    legislature; Hong Kong and Macao keep their own administrative locations."""
+    de = {cid: build.fields(by_id[cid], by_id, "de-CH") for cid in ("002", "070", "100", "130")}
+    assert de["002"]["formal_name"] == "Ålandinseln"
+    assert de["100"]["formal_name"] == "Sonderverwaltungsregion Hongkong der Volksrepublik China"
+    assert de["130"]["formal_name"] == "Sonderverwaltungsregion Macau der Volksrepublik China"
+    assert (de["100"]["capital_1"], de["130"]["capital_1"]) == ("Hongkong", "Macau")
+    assert (de["070"]["capital_2"], de["070"]["capital_2_label"]) == ("Lobamba", "Legislative")
+    en = build.fields(by_id["070"], by_id, "en-US")
+    assert (en["capital_1_label"], en["capital_2_label"]) == ("capital", "legislative")
+
+
+def test_portuguese_approved_names_and_shared_facts(by_id):
+    """The adopted contributor data follows the settled pt-BR naming choices and translates
+    the shared post-correction capital facts instead of restoring older classifications."""
+    names = {cid: by_id[cid]["name"]["pt-BR"] for cid in ("050", "051", "093", "100", "130", "181")}
+    assert names == {
+        "050": "República Democrática do Congo / RDC",
+        "051": "República do Congo",
+        "093": "República da Guiné",
+        "100": "Hong Kong",
+        "130": "Macau",
+        "181": "República da China (Taiwan)",
+    }
+    assert by_id["151"]["name"]["pt-BR"] == "Myanmar"
+    assert by_id["098"]["name"]["pt-BR"] == "Vaticano"
+    assert by_id["072"]["name"]["pt-BR"] == "Ilhas Malvinas"
+    assert by_id["070"]["capitals"][1]["role"] == "legislative"
+    assert by_id["070"]["capitals"][1]["label"]["pt-BR"] == "legislativa"
+
+
+def test_formal_name_absent_in_one_locale_renders_no_row_and_no_fallback(by_id):
+    """A locale without a sourced formal name shows no formal-name row; the other locale's
+    formal name is never shown instead (docs/SCHEMA.md)."""
+    names = {k: n for k, (n, _) in build.assets().items()}
+    config = build.load_config()
+    entry = dict(by_id["217"], formal_name={"en-US": by_id["217"]["formal_name"]["en-US"]})
+    icon = "_cotw-ui-longform-day-"  # the formal-name row's icon
+    for code in languages.LANGUAGES:
+        values = build.card_fields(entry, by_id, code)
+        back = templates.render(templates.templates(code, names, config)[0]["afmt"], values)
+        info, sep, _help = back.partition('<div class="cotw-box cotw-help">')  # the help lists every icon
+        assert sep
+        if code == "en-US":
+            assert "Swiss Confederation" in info and icon in info
+        else:
+            assert values[languages.get(code).fields["formal_name"]] == ""
+            assert "Swiss Confederation" not in back and icon not in info, code
 
 
 def test_guids_in_packages(collections, by_id):
@@ -160,7 +244,7 @@ def test_template_assets_carry_a_content_hash(tmp_path):
 
 
 def test_field_media_keeps_its_name(collections):
-    for (flds,) in collections["en"].execute("SELECT flds FROM notes"):
+    for (flds,) in collections["en-US"].execute("SELECT flds FROM notes"):
         for src in re.findall(r'src="([^"]+)"', flds):
             assert re.fullmatch(r"cotw-\d{3}-(flag|map[12]-(day|night))\.svg", src)
 
@@ -183,8 +267,8 @@ def test_sort_field_is_the_country(collections, by_id):
         assert _notetype(col)["sortf"] == 0
         sfld = {s for (s,) in col.execute("SELECT sfld FROM notes")}
         assert by_id["217"]["name"][code] in sfld, code
-    assert "Switzerland" in {s for (s,) in collections["en"].execute("SELECT sfld FROM notes")}
-    assert "Schweiz" in {s for (s,) in collections["de"].execute("SELECT sfld FROM notes")}
+    assert "Switzerland" in {s for (s,) in collections["en-US"].execute("SELECT sfld FROM notes")}
+    assert "Schweiz" in {s for (s,) in collections["de-CH"].execute("SELECT sfld FROM notes")}
 
 
 def test_tags_per_language(collections):
@@ -192,14 +276,14 @@ def test_tags_per_language(collections):
         root = languages.get(code).tag_root + "::"
         for (t,) in col.execute("SELECT tags FROM notes"):
             assert t.split() and all(tag.startswith(root) for tag in t.split()), t
-    de = {tag for (t,) in collections["de"].execute("SELECT tags FROM notes") for tag in t.split()}
-    assert "COTW-DE::Europa::Westeuropa" in de
-    assert "COTW-DE::Afrika::Subsahara-Afrika::Südliches-Afrika" in de
-    assert "COTW-DE::Status::Abhängiges-Gebiet" in de
+    de = {tag for (t,) in collections["de-CH"].execute("SELECT tags FROM notes") for tag in t.split()}
+    assert "COTW-DE-CH::Europa::Westeuropa" in de
+    assert "COTW-DE-CH::Afrika::Subsahara-Afrika::Südliches-Afrika" in de
+    assert "COTW-DE-CH::Status::Abhängiges-Gebiet" in de
 
 
 def test_german_texts_use_real_umlauts(collections, by_id):
-    col = collections["de"]
+    col = collections["de-CH"]
     blob = " ".join(flds for (flds,) in col.execute("SELECT flds FROM notes"))
     blob += json.dumps(json.loads(col.execute("SELECT decks FROM col").fetchone()[0]), ensure_ascii=False)
     blob += json.dumps(_notetype(col), ensure_ascii=False)
@@ -210,24 +294,24 @@ def test_german_texts_use_real_umlauts(collections, by_id):
 
 
 def test_dependency_and_status_texts(by_id):
-    gl = build.fields(by_id["087"], by_id, "en")
+    gl = build.fields(by_id["087"], by_id, "en-US")
     assert (gl["dependency_of"], gl["status"]) == ("Denmark", "")
-    assert build.fields(by_id["001"], by_id, "de")["dependency_of"] == ""
+    assert build.fields(by_id["001"], by_id, "de-CH")["dependency_of"] == ""
     uk_dep = next(e for e in by_id.values() if e.get("dependency_of") == "235")
-    assert build.fields(uk_dep, by_id, "en")["dependency_of"] == "the United Kingdom"
-    assert build.fields(uk_dep, by_id, "de")["dependency_of"] == "dem Vereinigten Königreich"
-    xk = build.fields(by_id["118"], by_id, "de")
+    assert build.fields(uk_dep, by_id, "en-US")["dependency_of"] == "the United Kingdom"
+    assert build.fields(uk_dep, by_id, "de-CH")["dependency_of"] == "dem Vereinigten Königreich"
+    xk = build.fields(by_id["118"], by_id, "de-CH")
     assert (xk["status"], xk["dependency_of"]) == ("Status umstritten", "")
 
 
 def test_german_wikipedia_with_english_fallback(by_id):
-    assert build.fields(by_id["217"], by_id, "de")["wikipedia"] == "https://de.wikipedia.org/wiki/Schweiz"
-    assert build.fields(by_id["217"], by_id, "en")["wikipedia"] == "https://en.wikipedia.org/wiki/Switzerland"
-    assert build.fields(by_id["215"], by_id, "de")["wikipedia"].startswith("https://en.wikipedia.org/")
+    assert build.fields(by_id["217"], by_id, "de-CH")["wikipedia"] == "https://de.wikipedia.org/wiki/Schweiz"
+    assert build.fields(by_id["217"], by_id, "en-US")["wikipedia"] == "https://en.wikipedia.org/wiki/Switzerland"
+    assert build.fields(by_id["215"], by_id, "de-CH")["wikipedia"].startswith("https://en.wikipedia.org/")
 
 
 def test_borders_list_neighbor_names_with_flags(by_id):
-    de = build.fields(by_id["217"], by_id, "de")["borders"]
+    de = build.fields(by_id["217"], by_id, "de-CH")["borders"]
     names = re.findall(r"<img[^>]*>([^<]+)</span>", de)
     assert names == ["Deutschland", "Frankreich", "Italien", "Liechtenstein", "Österreich"]
     assert 'src="cotw-014-flag.svg"' in de
@@ -319,9 +403,9 @@ def test_each_package_speaks_its_language(rendered):
             continue
         text = front + back
         for word in en_only:
-            assert (word in text) == (code == "en") or key == "map-country" and word == "Show full info", (code, key, word)
+            assert (word in text) == (code == "en-US") or key == "map-country" and word == "Show full info", (code, key, word)
         for word in de_only:
-            assert (word in text) == (code == "de"), (code, key, word)
+            assert (word in text) == (code == "de-CH"), (code, key, word)
 
 
 def test_templates_are_readable():
@@ -359,18 +443,32 @@ def test_buttons_without_timers_or_ids(packages, collections):
                 assert "onclick=\"this.closest('.cotw')" in t[side]
 
 
-def test_ankiweb_links_come_from_the_language(rendered):
-    en, de = languages.get("en"), languages.get("de")
-    front, _ = rendered["de", "217", "country-capital"]
-    assert de.ankiweb in front and en.ankiweb not in front
-    assert "mailto:info@feldbuch.com" in front
-
-
-def test_a_language_without_ankiweb_listing_links_the_base_one():
-    names = {k: n for k, (n, _) in build.assets().items()}
-    unlisted = dataclasses.replace(languages.get("de"), ankiweb=None)
-    help_box = templates._help(unlisted, names, build.load_config())
-    assert languages.get(languages.BASE).ankiweb in help_box
+def test_github_links_replace_email_and_ankiweb(rendered, collections):
+    repository = build.load_config()["repository"].rstrip("/")
+    issues = f"{repository}/issues"
+    forbidden = ("mailto:", "info@feldbuch.com", "ankiweb.net")
+    neutrality = {
+        "en-US": "The deck makes no political statement",
+        "de-CH": "Das Deck macht keine politische Aussage",
+        "pl-PL": "Talia nie zajmuje stanowiska politycznego",
+        "pt-BR": "O baralho não faz nenhuma declaração política",
+    }
+    border_warning = {
+        "en-US": "Do not comment on or file issues regarding disputed areas.",
+        "de-CH": "Bitte kommentiere umstrittene Gebiete nicht und erstelle keine Issues dazu.",
+        "pl-PL": "Nie komentuj ani nie zgłaszaj problemów dotyczących spornych obszarów.",
+        "pt-BR": "Não comente nem relate problemas relacionados a áreas disputadas.",
+    }
+    for code, col in collections.items():
+        front, _ = rendered[code, "217", "country-capital"]
+        decks = json.loads(col.execute("SELECT decks FROM col").fetchone()[0])
+        description = next(d["desc"] for d in decks.values() if d["name"] == languages.get(code).deck)
+        for text in (front, description):
+            assert repository in text and issues in text, code
+            assert not any(value in text.lower() for value in forbidden), code
+        flat_front = " ".join(front.split())
+        assert 'href="https://www.naturalearthdata.com">Natural Earth</a>' in flat_front
+        assert neutrality[code] in flat_front and border_warning[code] in flat_front
 
 
 def test_ui_icons_have_the_text_color_of_their_mode():
@@ -416,7 +514,7 @@ def test_css_switches_day_and_night_images_by_anki_class():
 
 def test_both_map_files_are_in_the_field(by_id):
     for cid, e in by_id.items():
-        values = build.fields(e, by_id, "en")
+        values = build.fields(e, by_id, "en-US")
         for key, kind in (("map_1", "map1"), ("map_2", "map2")):
             assert values[key] == (
                 f'<img class="cotw-day" src="cotw-{cid}-{kind}-day.svg">'
@@ -427,7 +525,7 @@ def test_both_map_files_are_in_the_field(by_id):
 
 def test_icons_and_infographics_exist_once_per_mode(rendered):
     names = {k: n for k, (n, _) in build.assets().items()}
-    front, back = rendered["en", "217", "country-capital"]
+    front, back = rendered["en-US", "217", "country-capital"]
     for key in ("infographic", "infographic-filtered"):
         for mode in ("day", "night"):
             assert f'<img class="cotw-infographic cotw-{mode}" src="{names[f"{key}-{mode}"]}">' in front
@@ -505,7 +603,7 @@ def test_field_keys_are_mapped_to_field_names():
                 used = {m[1] for m in re.findall(r"\{\{([#^/]?)([^}]+)\}\}", t[side])}
                 assert used <= fields, (code, t["name"], used - fields)
     with pytest.raises(KeyError, match="nope"):
-        templates._fields("{{#nope}}", languages.get("en"))
+        templates._fields("{{#nope}}", languages.get("en-US"))
 
 
 def test_renderer():
@@ -566,37 +664,41 @@ def test_subset_keeps_ids_guids_and_neighbors(subset, packages, by_id, tmp_path)
 
 def test_help_explains_the_maritime_zones():
     """Issue #22: the help says what the light-blue area and the light line in the sea mean."""
-    en, de = (" ".join(languages.get(code).help.split()) for code in ("en", "de"))
+    en, de = (" ".join(languages.get(code).help.split()) for code in ("en-US", "de-CH"))
     assert "exclusive economic zone" in en and "200 nautical" in en and "12 nautical miles" in en
     assert "The globe shows only the economic zone." in en
     assert "Wirtschaftszone" in de and "200 Seemeilen" in de and "Hoheitsgewässer" in de
     assert "Der Globus zeigt nur die Wirtschaftszone." in de
     # The EEZ paragraph follows the maps/globe paragraph.
-    assert en.index("Map 1 shows") < en.index("light-blue area") < en.index("More about the deck")
-    assert de.index("Karte 1 zeigt") < de.index("hellblaue Fläche") < de.index("Mehr zum Deck")
+    assert en.index("Map 1 shows") < en.index("light-blue area") < en.index("For more information")
+    assert de.index("Karte 1 zeigt") < de.index("hellblaue Fläche") < de.index("Mehr Informationen")
     assert "ß" not in de
 
 
 def test_help_is_split_into_chapters():
     """The help has bold inline chapter headings, in this order; small islands are explained."""
     chapters = {
-        "en": ("Card types:", "Maps and globe:", "Territorial waters and economic zones:", "Small islands:",
-               "Help and contact:"),
-        "de": ("Kartentypen:", "Karten und Globus:", "Hoheitsgewässer und Wirtschaftszonen:", "Kleine Inseln:",
-               "Hilfe und Kontakt:"),
+        "en-US": ("Card types:", "Maps and globe:", "Territorial waters and economic zones:", "Small islands:",
+               "Borders:", "Help and contact:"),
+        "de-CH": ("Kartentypen:", "Karten und Globus:", "Hoheitsgewässer und Wirtschaftszonen:", "Kleine Inseln:",
+               "Grenzen:", "Hilfe und Kontakt:"),
+        "pl-PL": ("Typy kart:", "Mapy i globus:", "Wody terytorialne i strefy ekonomiczne:", "Małe wyspy:",
+               "Granice:", "Pomoc i kontakt:"),
+        "pt-BR": ("Tipos de cartão:", "Mapas e globo:", "Mar territorial e zonas econômicas:", "Ilhas pequenas:",
+               "Fronteiras:", "Ajuda e contato:"),
     }
     for code, heads in chapters.items():
         text = " ".join(languages.get(code).help.split())
         pos = [text.index(f"<p><b>{h}</b> ") for h in heads]
         assert pos == sorted(pos), code
-    en, de = (" ".join(languages.get(code).help.split()) for code in ("en", "de"))
+    en, de = (" ".join(languages.get(code).help.split()) for code in ("en-US", "de-CH"))
     assert "economic zones and territorial waters are complete" in en and "disputed islands" in en
     assert "Wirtschaftszonen und Hoheitsgewässer sind aber vollständig" in de and "umstrittene Inseln" in de
 
 
 def test_german_texts_address_the_learner_as_du():
     """Deck descriptions and help speak to the learner directly, never impersonally."""
-    de = languages.get("de")
+    de = languages.get("de-CH")
     for text in (de.description, de.extras_description, de.help):
         flat = " ".join(text.split())
         assert not re.search(r"\b(Wer|man)\b", flat), flat

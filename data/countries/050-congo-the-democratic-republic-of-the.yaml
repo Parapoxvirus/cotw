@@ -4,15 +4,21 @@ iso3: COD
 wikidata: Q974
 status: sovereign
 name:
-  en: Congo, The Democratic Republic of the
-  de: Kongo, Demokratische Republik
+  en-US: Congo, The Democratic Republic of the
+  de-CH: Kongo, Demokratische Republik
+  pl-PL: Demokratyczna Republika Konga
+  pt-BR: República Democrática do Congo / RDC
 formal_name:
-  en: The Democratic Republic of the Congo
-  de: Demokratische Republik Kongo
+  en-US: The Democratic Republic of the Congo
+  de-CH: Demokratische Republik Kongo
+  pl-PL: Demokratyczna Republika Konga
+  pt-BR: República Democrática do Congo
 capitals:
 - name:
-    en: Kinshasa
-    de: Kinshasa
+    en-US: Kinshasa
+    de-CH: Kinshasa
+    pl-PL: Kinszasa
+    pt-BR: Kinshasa
   role: capital
   wikidata: Q3838
   lat: -4.32194
@@ -32,5 +38,7 @@ regions:
 - Sub-Saharan Africa
 - Middle Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo
-  de: https://de.wikipedia.org/wiki/Demokratische_Republik_Kongo
+  en-US: https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo
+  de-CH: https://de.wikipedia.org/wiki/Demokratische_Republik_Kongo
+  pl-PL: https://pl.wikipedia.org/wiki/Demokratyczna_Republika_Konga
+  pt-BR: https://pt.wikipedia.org/wiki/República_Democrática_do_Congo

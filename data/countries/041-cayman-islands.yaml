@@ -5,12 +5,16 @@ wikidata: Q5785
 status: dependency
 dependency_of: '235'
 name:
-  en: Cayman Islands
-  de: Kaimaninseln
+  en-US: Cayman Islands
+  de-CH: Kaimaninseln
+  pl-PL: Kajmany
+  pt-BR: Ilhas Cayman
 capitals:
 - name:
-    en: George Town
-    de: George Town
+    en-US: George Town
+    de-CH: George Town
+    pl-PL: George Town
+    pt-BR: George Town
   role: capital
   wikidata: Q172996
   lat: 19.29639
@@ -21,5 +25,7 @@ regions:
 - Latin America and the Caribbean
 - Caribbean
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Cayman_Islands
-  de: https://de.wikipedia.org/wiki/Cayman_Islands
+  en-US: https://en.wikipedia.org/wiki/Cayman_Islands
+  de-CH: https://de.wikipedia.org/wiki/Cayman_Islands
+  pl-PL: https://pl.wikipedia.org/wiki/Kajmany_(wyspy)
+  pt-BR: https://pt.wikipedia.org/wiki/Ilhas_Cayman

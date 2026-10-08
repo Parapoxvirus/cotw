@@ -4,12 +4,18 @@ iso3: VAT
 wikidata: Q237
 status: sovereign
 name:
-  en: Holy See, The / Vatican City State
-  de: Staat Vatikanstadt / Staat der Vatikanstadt
+  en-US: Holy See, The / Vatican City State
+  de-CH: Staat Vatikanstadt / Staat der Vatikanstadt
+  pl-PL: Watykan / Stolica Apostolska
+  pt-BR: Vaticano
+formal_name:
+  pl-PL: Państwo Watykańskie
 capitals:
 - name:
-    en: Vatican City
-    de: Vatikanstadt
+    en-US: Vatican City
+    de-CH: Vatikanstadt
+    pl-PL: Watykan
+    pt-BR: Cidade do Vaticano
   role: capital
   wikidata: Q237
   lat: 41.904
@@ -20,5 +26,7 @@ regions:
 - Europe
 - Southern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Vatican_City
-  de: https://de.wikipedia.org/wiki/Vatikanstadt
+  en-US: https://en.wikipedia.org/wiki/Vatican_City
+  de-CH: https://de.wikipedia.org/wiki/Vatikanstadt
+  pl-PL: https://pl.wikipedia.org/wiki/Watykan
+  pt-BR: https://pt.wikipedia.org/wiki/Vaticano

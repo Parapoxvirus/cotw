@@ -11,7 +11,7 @@ from .paths import COUNTRIES, OVERRIDES, REGION_TAGS, ROOT
 def cmd_validate(_args) -> int:
     import yaml
 
-    from . import schema, wikidata
+    from . import locales, schema, wikidata
 
     entries = schema.load_all(COUNTRIES)
     exc_file = OVERRIDES / "exceptions.yaml"
@@ -21,14 +21,16 @@ def cmd_validate(_args) -> int:
     for path, entry in entries.items():
         problems += schema.validate_entry(entry, path, exceptions, sitelinks)
     problems += schema.validate_all(entries, schema.load_regions_taxonomy(REGION_TAGS))
+    raw_locales = locales.read()
+    problems += locales.problems(raw_locales)
     for p in problems:
         print(p)
-    print(f"{len(entries)} entries, {len(problems)} problems")
+    print(f"{len(entries)} entries, {len(raw_locales or [])} locales, {len(problems)} problems")
     return 1 if problems else 0
 
 
 def cmd_fetch_wikidata(args) -> int:
-    from . import importer, schema, wikidata
+    from . import importer, languages, schema, wikidata
 
     entries = sorted(schema.load_all(COUNTRIES).values(), key=lambda e: e["id"])
     if args.step in ("all", "countries"):
@@ -40,10 +42,10 @@ def cmd_fetch_wikidata(args) -> int:
     if args.step in ("all", "places"):
         # Label lookup only for capitals P36 does not cover (Oslo for Bouvet Island, …).
         labels = [
-            c["name"]["en"]
+            c["name"][languages.BASE]
             for e in entries
             for c in e["capitals"]
-            if not importer.match_capital(c["name"]["en"], capitals.get(e["wikidata"], []))
+            if not importer.match_capital(c["name"][languages.BASE], capitals.get(e["wikidata"], []))
         ]
         wikidata.dump(wikidata.PLACES_CACHE, wikidata.fetch_places(labels))
     if args.step in ("all", "status"):
@@ -55,7 +57,7 @@ def cmd_fetch_wikidata(args) -> int:
 
 
 def cmd_fetch_wikipedia(args) -> int:
-    from . import languages, schema, wikidata
+    from . import languages, locales, schema, wikidata
     from .importer import dump_entry
 
     base = languages.BASE
@@ -74,7 +76,7 @@ def cmd_fetch_wikipedia(args) -> int:
             path.write_text(dump_entry(entry), encoding="utf-8")
             changed += 1
     for code, f in fallback:
-        print(f"no {languages.get(code).wiki} article, deck falls back to {base.upper()}: {f}")
+        print(f"no {locales.get(code).wiki} article, deck falls back to {base.upper()}: {f}")
     print(f"{changed} entries updated, {len(fallback)} missing articles")
     return 0
 
@@ -200,7 +202,7 @@ def cmd_preview(_args) -> int:
 def cmd_check_wikidata(args) -> int:
     from . import monitor
 
-    return monitor.check(args.dry_run, args.max_issues, args.gitea_url, args.repo)
+    return monitor.check(args.dry_run, args.max_issues, args.gitea_url, args.repo, state_file=args.state_file)
 
 
 def cmd_import_monitor_issues(args) -> int:
@@ -233,7 +235,7 @@ def main(argv: list[str] | None = None) -> int:
     fw = sub.add_parser("fetch-wikidata", help="refresh data/wikidata/*.json (network)")
     fw.add_argument("--step", choices=["all", "countries", "capitals", "places", "status", "iso-codes"], default="all")
     fw.set_defaults(func=cmd_fetch_wikidata)
-    fwp = sub.add_parser("fetch-wikipedia", help="Wikidata sitelinks → wikipedia.<lang> in data/countries (network)")
+    fwp = sub.add_parser("fetch-wikipedia", help="Wikidata sitelinks → wikipedia.<locale> in data/countries (network)")
     fwp.add_argument("--offline", action="store_true", help="reuse data/wikidata/sitelinks.json")
     fwp.set_defaults(func=cmd_fetch_wikipedia)
     sub.add_parser("fetch-naturalearth", help="download Natural Earth, recompute data/derived/ne-borders.yaml (network)").set_defaults(func=cmd_fetch_naturalearth)
@@ -248,8 +250,8 @@ def main(argv: list[str] | None = None) -> int:
     bu = sub.add_parser("build-ui", help="write media/ui/ (row icons and infographics per mode, from assets/ui)")
     bu.add_argument("--check", action="store_true", help="compare the infographics with the v3 PNGs, write overlays to build/ (needs shapely + Pillow)")
     bu.set_defaults(func=cmd_build_ui)
-    bd = sub.add_parser("build-deck", help="build build/COTW-<LANG>.apkg per registered language and build/deck-preview.html")
-    bd.add_argument("--lang", choices=languages.LANGUAGES, help="one language only (default: every registered language)")
+    bd = sub.add_parser("build-deck", help="build build/COTW-<LOCALE>.apkg per registered locale (COTW-DE-CH.apkg) and build/deck-preview.html")
+    bd.add_argument("--lang", choices=languages.LANGUAGES, help="one locale only, e.g. de-CH (default: every registered locale)")
     bd.add_argument("--out", help="output directory (default: build/)")
     bd.add_argument("--only", nargs="+", metavar="ID|ISO2", help="only these entries: COTW IDs or ISO-2 codes, comma- or space-separated (e.g. --only RU,KR,ZA 217)")
     bd.set_defaults(func=cmd_build_deck)
@@ -258,6 +260,8 @@ def main(argv: list[str] | None = None) -> int:
     cw.add_argument("--max-issues", type=int, default=20, help="new issues per run; the rest go into one summary issue (default 20)")
     cw.add_argument("--gitea-url", help="Gitea base URL (default: $GITHUB_SERVER_URL)")
     cw.add_argument("--repo", help="owner/name (default: $GITHUB_REPOSITORY)")
+    cw.add_argument("--state-file", metavar="PATH", help="dry run against a local state file instead of the state branch; "
+                    "writes the seeded name/source baseline to it (docs/MONITORING.md)")
     cw.set_defaults(func=cmd_check_wikidata)
     im = sub.add_parser("import-monitor-issues", help="seed the Paperclip sink's state branch with the fingerprints of the existing Gitea issues (network)")
     im.add_argument("--apply", action="store_true", help="write the state (default: dry run)")

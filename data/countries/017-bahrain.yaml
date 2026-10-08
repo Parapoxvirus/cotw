@@ -4,15 +4,20 @@ iso3: BHR
 wikidata: Q398
 status: sovereign
 name:
-  en: Bahrain
-  de: Bahrain
+  en-US: Bahrain
+  de-CH: Bahrain
+  pl-PL: Bahrajn
+  pt-BR: Bahrein
 formal_name:
-  en: The Kingdom of Bahrain
-  de: Königreich Bahrain
+  en-US: The Kingdom of Bahrain
+  de-CH: Königreich Bahrain
+  pl-PL: Królestwo Bahrajnu
 capitals:
 - name:
-    en: Manama
-    de: Manama
+    en-US: Manama
+    de-CH: Manama
+    pl-PL: Manama
+    pt-BR: Manama
   role: capital
   wikidata: Q3882
   lat: 26.21667
@@ -22,5 +27,7 @@ regions:
 - Asia
 - Western Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Bahrain
-  de: https://de.wikipedia.org/wiki/Bahrain
+  en-US: https://en.wikipedia.org/wiki/Bahrain
+  de-CH: https://de.wikipedia.org/wiki/Bahrain
+  pl-PL: https://pl.wikipedia.org/wiki/Bahrajn
+  pt-BR: https://pt.wikipedia.org/wiki/Bahrein

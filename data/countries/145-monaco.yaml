@@ -4,15 +4,21 @@ iso3: MCO
 wikidata: Q235
 status: sovereign
 name:
-  en: Monaco
-  de: Monaco
+  en-US: Monaco
+  de-CH: Monaco
+  pl-PL: Monako
+  pt-BR: Mônaco
 formal_name:
-  en: The Principality of Monaco
-  de: Fürstentum Monaco
+  en-US: The Principality of Monaco
+  de-CH: Fürstentum Monaco
+  pl-PL: Księstwo Monako
+  pt-BR: Principado de Mônaco
 capitals:
 - name:
-    en: Monaco
-    de: Monaco
+    en-US: Monaco
+    de-CH: Monaco
+    pl-PL: Monako
+    pt-BR: Mônaco
   role: capital
   wikidata: Q235
   lat: 43.73111
@@ -23,5 +29,7 @@ regions:
 - Europe
 - Western Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Monaco
-  de: https://de.wikipedia.org/wiki/Monaco
+  en-US: https://en.wikipedia.org/wiki/Monaco
+  de-CH: https://de.wikipedia.org/wiki/Monaco
+  pl-PL: https://pl.wikipedia.org/wiki/Monako
+  pt-BR: https://pt.wikipedia.org/wiki/Mónaco

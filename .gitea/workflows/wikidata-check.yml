@@ -2,7 +2,8 @@ name: Wikidata check
 
 # Weekly change monitoring (docs/MONITORING.md): compares the committed Wikidata/Commons
 # caches with the live state and opens one `wikidata` issue per deviation, or one Paperclip
-# task when the PAPERCLIP_* variables are configured. Nothing is applied.
+# task when the PAPERCLIP_* variables are configured (which also watches names and the
+# official naming sources). Nothing is applied.
 on:
   schedule:
     - cron: "17 4 * * 1"  # Monday 04:17 UTC
@@ -48,6 +49,8 @@ jobs:
           PAPERCLIP_PROJECT_ID: ${{ vars.PAPERCLIP_PROJECT_ID }}
           PAPERCLIP_ASSIGNEE_AGENT_ID: ${{ vars.PAPERCLIP_ASSIGNEE_AGENT_ID }}
           COTW_MONITOR_STATE_BRANCH: ${{ vars.COTW_MONITOR_STATE_BRANCH }}
+          # Optional: issue the digest task asks to comment on when a run filed tasks.
+          COTW_MONITOR_NOTIFY_ISSUE: ${{ vars.COTW_MONITOR_NOTIFY_ISSUE }}
           DRY_RUN: ${{ github.event.inputs.dry_run }}
           IMPORT_ISSUES: ${{ github.event.inputs.import_issues }}
         run: |

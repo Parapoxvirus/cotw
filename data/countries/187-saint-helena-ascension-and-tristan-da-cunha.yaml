@@ -5,12 +5,16 @@ wikidata: Q192184
 status: dependency
 dependency_of: '235'
 name:
-  en: Saint Helena, Ascension and Tristan da Cunha
-  de: Saint Helena, Ascension and Tristan da Cunha
+  en-US: Saint Helena, Ascension and Tristan da Cunha
+  de-CH: Saint Helena, Ascension and Tristan da Cunha
+  pl-PL: Wyspa Świętej Heleny, Wyspa Wniebowstąpienia i Tristan da Cunha
+  pt-BR: Santa Helena
 capitals:
 - name:
-    en: Jamestown
-    de: Jamestown
+    en-US: Jamestown
+    de-CH: Jamestown
+    pl-PL: Jamestown
+    pt-BR: Jamestown
   role: capital
   wikidata: Q30970
   lat: -15.92514
@@ -21,5 +25,7 @@ regions:
 - Sub-Saharan Africa
 - Western Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Saint_Helena,_Ascension_and_Tristan_da_Cunha
-  de: https://de.wikipedia.org/wiki/St._Helena,_Ascension_und_Tristan_da_Cunha
+  en-US: https://en.wikipedia.org/wiki/Saint_Helena,_Ascension_and_Tristan_da_Cunha
+  de-CH: https://de.wikipedia.org/wiki/St._Helena,_Ascension_und_Tristan_da_Cunha
+  pl-PL: https://pl.wikipedia.org/wiki/Wyspa_Świętej_Heleny,_Wyspa_Wniebowstąpienia_i_Tristan_da_Cunha
+  pt-BR: https://pt.wikipedia.org/wiki/Santa_Helena,_Ascensão_e_Tristão_da_Cunha

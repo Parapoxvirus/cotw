@@ -5,12 +5,18 @@ wikidata: Q36004
 status: dependency
 dependency_of: '013'
 name:
-  en: Cocos Islands / Keeling Islands
-  de: Kokosinseln / Keelinginseln
+  en-US: Cocos Islands / Keeling Islands
+  de-CH: Kokosinseln / Keelinginseln
+  pl-PL: Wyspy Kokosowe / Wyspy Keelinga
+  pt-BR: Ilhas Cocos
+formal_name:
+  pl-PL: Terytorium Wysp Kokosowych (Keelinga)
 capitals:
 - name:
-    en: West Island
-    de: West Island
+    en-US: West Island
+    de-CH: West Island
+    pl-PL: West Island
+    pt-BR: West Island
   role: capital
   wikidata: Q48675
   lat: -12.18694
@@ -20,5 +26,7 @@ regions:
 - Oceania
 - Australia and New Zealand
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Cocos_(Keeling)_Islands
-  de: https://de.wikipedia.org/wiki/Kokosinseln
+  en-US: https://en.wikipedia.org/wiki/Cocos_(Keeling)_Islands
+  de-CH: https://de.wikipedia.org/wiki/Kokosinseln
+  pl-PL: https://pl.wikipedia.org/wiki/Wyspy_Kokosowe
+  pt-BR: https://pt.wikipedia.org/wiki/Ilhas_Cocos_(Keeling)

@@ -2,31 +2,31 @@
 # spreadsheet. Every entry carries a reason.
 #
 # renames: the spreadsheet's EN name is wrong (German spelling or outdated); the corrected
-#          EN name is used for the entry and for the Wikidata match.
+#          EN name (`en-US`) is used for the entry and for the Wikidata match.
 renames:
   AM:
     Yerewan:
-      en: Yerevan
+      en-US: Yerevan
       reason: German spelling in the EN column; EN is Yerevan (Wikidata Q1913 label).
   DJ:
     Dschibuti City:
-      en: Djibouti City
+      en-US: Djibouti City
       reason: German spelling in the EN column; EN is Djibouti (City) (Wikidata Q3604 label "Djibouti").
   ET:
     Addis Abeba:
-      en: Addis Ababa
+      en-US: Addis Ababa
       reason: German spelling in the EN column; EN is Addis Ababa (Wikidata Q3624 label).
   IR:
     Teheran:
-      en: Tehran
+      en-US: Tehran
       reason: German spelling in the EN column; EN is Tehran (Wikidata Q3616 label).
   IQ:
     Bagdad:
-      en: Baghdad
+      en-US: Baghdad
       reason: German spelling in the EN column; EN is Baghdad (Wikidata Q1530 label).
   UA:
     Kiev:
-      en: Kyiv
+      en-US: Kyiv
       reason: Kyiv is the official romanization (since 2018) and the Wikidata EN label (Q1899).
 #
 # capitals: Wikidata item (and P625 coordinates) when neither P36 nor an exact-label lookup

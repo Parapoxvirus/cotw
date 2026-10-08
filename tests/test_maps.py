@@ -55,10 +55,10 @@ def test_window_rules():
 
 def _entry(cid, iso2, iso3, borders, capitals=()):
     return {
-        "id": cid, "iso2": iso2, "iso3": iso3, "name": {"en": f"Mätzlingen {cid}"},
+        "id": cid, "iso2": iso2, "iso3": iso3, "name": {"en-US": f"Mätzlingen {cid}"},
         "borders": list(borders),
         "capitals": [
-            {"name": {"en": "Groß-Stadt"}, "role": role, "lat": lat, "lon": lon} for role, lat, lon in capitals
+            {"name": {"en-US": "Groß-Stadt"}, "role": role, "lat": lat, "lon": lon} for role, lat, lon in capitals
         ],
     }
 
@@ -131,7 +131,7 @@ def test_documented_marker_override_does_not_change_capital_data(world_and_entri
     overrides = maps.load_map_overrides()
     assert overrides["098"]["map2_capital_marker"] is False
     assert overrides["098"]["reason"]
-    assert by_id["098"]["capitals"][0]["name"]["en"] == "Vatican City"
+    assert by_id["098"]["capitals"][0]["name"]["en-US"] == "Vatican City"
     # Apply the same setting to a synthetic entry: it hides only markers and numbers.
     entry = entries["001"]
     normal = maps.plan(entry, "map2", world.land["AA"], {}, {})
@@ -158,7 +158,7 @@ def test_capital_numbers_follow_field_order(world_and_entries):
     markers = maps.capital_markers(e, spec.projection, spec.radius_km, spec.offset)
     assert [n for n, _, _ in markers] == [1, 2]
     # A capital that is not drawn keeps the numbers of the others (field order).
-    far = dict(e, capitals=[{"name": {"en": "Groß-Fern"}, "role": "capital", "lat": -60.0, "lon": -120.0}] + e["capitals"])
+    far = dict(e, capitals=[{"name": {"en-US": "Groß-Fern"}, "role": "capital", "lat": -60.0, "lon": -120.0}] + e["capitals"])
     assert [n for n, _, _ in maps.capital_markers(far, spec.projection, spec.radius_km, spec.offset)] == [2, 3]
 
 

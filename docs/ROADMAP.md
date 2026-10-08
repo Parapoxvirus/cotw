@@ -9,7 +9,7 @@ Each step is one Gitea issue and one PR. The next step starts after the previous
 3. **Globe**: `_cotw-globe.js` with an embedded simplified TopoJSON, canvas rendering,
    night mode, and no tooltip on the front side ([`GLOBE.md`](GLOBE.md)); the note field
    `Globe` becomes `Locator`.
-4. **Deck build**: one `.apkg` per language (EN, DE), 10 card types, the 5 extras in the
+4. **Deck build**: one `.apkg` per locale (en-US, de-CH, pl-PL, pt-BR), 10 card types, the 5 extras in the
    `::Extras` subdeck, shared media, deterministic GUIDs.
 5. **Change monitoring** (done): a weekly scheduled Gitea Action compares the data with
    Wikidata and Commons and opens an issue for every deviation ([`MONITORING.md`](MONITORING.md)).

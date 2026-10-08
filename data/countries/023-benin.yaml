@@ -4,28 +4,40 @@ iso3: BEN
 wikidata: Q962
 status: sovereign
 name:
-  en: Benin
-  de: Benin
+  en-US: Benin
+  de-CH: Benin
+  pl-PL: Benin
+  pt-BR: Benim
 formal_name:
-  en: The Republic of Benin
-  de: Republik Benin
+  en-US: The Republic of Benin
+  de-CH: Republik Benin
+  pl-PL: Republika Beninu
+  pt-BR: República do Benim
 capitals:
 - name:
-    en: Porto-Novo
-    de: Porto-Novo
+    en-US: Porto-Novo
+    de-CH: Porto-Novo
+    pl-PL: Porto-Novo
+    pt-BR: Porto Novo
   label:
-    en: capital
-    de: Hauptstadt
+    en-US: capital
+    de-CH: Hauptstadt
+    pl-PL: stolica
+    pt-BR: capital
   role: capital
   wikidata: Q3799
   lat: 6.48333
   lon: 2.61667
 - name:
-    en: Cotonou
-    de: Cotonou
+    en-US: Cotonou
+    de-CH: Cotonou
+    pl-PL: Kotonu
+    pt-BR: Cotonou
   label:
-    en: seat of government
-    de: Regierungssitz
+    en-US: seat of government
+    de-CH: Regierungssitz
+    pl-PL: siedziba rządu
+    pt-BR: sede do governo
   role: seat_of_government
   wikidata: Q43595
   lat: 6.36667
@@ -40,5 +52,7 @@ regions:
 - Sub-Saharan Africa
 - Western Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Benin
-  de: https://de.wikipedia.org/wiki/Benin
+  en-US: https://en.wikipedia.org/wiki/Benin
+  de-CH: https://de.wikipedia.org/wiki/Benin
+  pl-PL: https://pl.wikipedia.org/wiki/Benin
+  pt-BR: https://pt.wikipedia.org/wiki/Benim

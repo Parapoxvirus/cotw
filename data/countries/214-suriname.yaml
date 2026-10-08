@@ -4,15 +4,21 @@ iso3: SUR
 wikidata: Q730
 status: sovereign
 name:
-  en: Suriname
-  de: Suriname
+  en-US: Suriname
+  de-CH: Suriname
+  pl-PL: Surinam
+  pt-BR: Suriname
 formal_name:
-  en: The Republic of Suriname
-  de: Republik Suriname
+  en-US: The Republic of Suriname
+  de-CH: Republik Suriname
+  pl-PL: Republika Surinamu
+  pt-BR: República do Suriname
 capitals:
 - name:
-    en: Paramaribo
-    de: Paramaribo
+    en-US: Paramaribo
+    de-CH: Paramaribo
+    pl-PL: Paramaribo
+    pt-BR: Paramaribo
   role: capital
   wikidata: Q3001
   lat: 5.86667
@@ -26,5 +32,7 @@ regions:
 - Latin America and the Caribbean
 - South America
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Suriname
-  de: https://de.wikipedia.org/wiki/Suriname
+  en-US: https://en.wikipedia.org/wiki/Suriname
+  de-CH: https://de.wikipedia.org/wiki/Suriname
+  pl-PL: https://pl.wikipedia.org/wiki/Surinam
+  pt-BR: https://pt.wikipedia.org/wiki/Suriname

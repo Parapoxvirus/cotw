@@ -1,7 +1,10 @@
 # Contributing to COTW
 
 Corrections, new languages and code are welcome: open an issue or a pull request on GitHub.
-For a name or a capital, cite the official source it comes from.
+For a name or a capital, cite the official source it comes from and state whether it supports
+locale-specific spelling or a shared factual choice. The naming/factual-content policy, source
+roles, fallback order and provenance rules for deliberately absent formal names are in
+[`docs/TRANSLATING.md`](docs/TRANSLATING.md).
 
 ## How a pull request is taken over
 
@@ -18,8 +21,11 @@ Details of the publication: [`docs/PUBLISHING.md`](docs/PUBLISHING.md).
 
 ## Translations
 
-A new language is one module plus the names in the data. The checklist, the naming sources per
-language and the rules every language follows: [`docs/TRANSLATING.md`](docs/TRANSLATING.md).
+A new language is a BCP 47 locale (`fr-FR`): one module, the names in the data and the locale's
+entry in [`data/locales.yaml`](data/locales.yaml), nothing else. The checklist, the naming
+sources per language and the rules every language follows:
+[`docs/TRANSLATING.md`](docs/TRANSLATING.md). The wanted languages and their sources:
+[`data/locales.yaml`](data/locales.yaml).
 
 ## Before opening a pull request
 
@@ -27,6 +33,7 @@ language and the rules every language follows: [`docs/TRANSLATING.md`](docs/TRAN
 python3 -m venv .venv && .venv/bin/pip install -e ".[dev,fetch]"
 .venv/bin/python -m cotw validate
 .venv/bin/python -m pytest
+node --test tests/js/*.test.js
 ```
 
 ## License

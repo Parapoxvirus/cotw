@@ -5,15 +5,21 @@ wikidata: Q23408
 status: dependency
 dependency_of: '166'
 name:
-  en: Bouvet Island
-  de: Bouvetinsel
+  en-US: Bouvet Island
+  de-CH: Bouvetinsel
+  pl-PL: Wyspa Bouveta
+  pt-BR: Ilha Bouvet (Território da Noruega)
 capitals:
 - name:
-    en: Oslo
-    de: Oslo
+    en-US: Oslo
+    de-CH: Oslo
+    pl-PL: Oslo
+    pt-BR: Oslo
   label:
-    en: uninhabited
-    de: unbewohnt
+    en-US: uninhabited
+    de-CH: unbewohnt
+    pl-PL: niezamieszkane
+    pt-BR: desabitada
   role: capital
   wikidata: Q585
   lat: 59.91333
@@ -24,5 +30,7 @@ regions:
 - Latin America and the Caribbean
 - South America
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Bouvet_Island
-  de: https://de.wikipedia.org/wiki/Bouvetinsel
+  en-US: https://en.wikipedia.org/wiki/Bouvet_Island
+  de-CH: https://de.wikipedia.org/wiki/Bouvetinsel
+  pl-PL: https://pl.wikipedia.org/wiki/Wyspa_Bouveta
+  pt-BR: https://pt.wikipedia.org/wiki/Ilha_Bouvet

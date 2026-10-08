@@ -4,15 +4,21 @@ iso3: PRY
 wikidata: Q733
 status: sovereign
 name:
-  en: Paraguay
-  de: Paraguay
+  en-US: Paraguay
+  de-CH: Paraguay
+  pl-PL: Paragwaj
+  pt-BR: Paraguai
 formal_name:
-  en: The Republic of Paraguay
-  de: Republik Paraguay
+  en-US: The Republic of Paraguay
+  de-CH: Republik Paraguay
+  pl-PL: Republika Paragwaju
+  pt-BR: República do Paraguai
 capitals:
 - name:
-    en: Asunción
-    de: Asunción
+    en-US: Asunción
+    de-CH: Asunción
+    pl-PL: Asunción
+    pt-BR: Assunção
   role: capital
   wikidata: Q2933
   lat: -25.28
@@ -26,5 +32,7 @@ regions:
 - Latin America and the Caribbean
 - South America
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Paraguay
-  de: https://de.wikipedia.org/wiki/Paraguay
+  en-US: https://en.wikipedia.org/wiki/Paraguay
+  de-CH: https://de.wikipedia.org/wiki/Paraguay
+  pl-PL: https://pl.wikipedia.org/wiki/Paragwaj
+  pt-BR: https://pt.wikipedia.org/wiki/Paraguai

@@ -29,9 +29,9 @@ def gitea_sink(monkeypatch):
 def _entry(cid, iso2, iso3, qid, name_en, name_de, capital, cap_qid, lat, lon, de_title):
     return {
         "id": cid, "iso2": iso2, "iso3": iso3, "wikidata": qid, "status": "sovereign",
-        "name": {"en": name_en, "de": name_de},
-        "capitals": [{"name": {"en": capital, "de": capital}, "role": "capital", "wikidata": cap_qid, "lat": lat, "lon": lon}],
-        "wikipedia": {"en": f"https://en.wikipedia.org/wiki/{name_en}", "de": f"https://de.wikipedia.org/wiki/{de_title}"},
+        "name": {"en-US": name_en, "de-CH": name_de},
+        "capitals": [{"name": {"en-US": capital, "de-CH": capital}, "role": "capital", "wikidata": cap_qid, "lat": lat, "lon": lon}],
+        "wikipedia": {"en-US": f"https://en.wikipedia.org/wiki/{name_en}", "de-CH": f"https://de.wikipedia.org/wiki/{de_title}"},
     }
 
 
@@ -42,21 +42,21 @@ ENTRIES = {
 
 
 def _cap(qid, label, coord, rank="ontology#normal", end=None, role=None):
-    return {"qid": qid, "label_en": label, "label_de": label, "coord": coord, "rank": rank, "start": None, "end": end,
+    return {"qid": qid, "label_en-US": label, "label_de-CH": label, "coord": coord, "rank": rank, "start": None, "end": end,
             "role": None, "role_qid": role}
 
 
 def _snapshot() -> Snapshot:
     return Snapshot(
         countries={
-            "DE": [{"qid": "Q183", "iso3": "DEU", "label_en": "Germany", "label_de": "Deutschland"}],
-            "CH": [{"qid": "Q39", "iso3": "CHE", "label_en": "Switzerland", "label_de": "Schweiz"}],
+            "DE": [{"qid": "Q183", "iso3": "DEU", "label_en-US": "Germany", "label_de-CH": "Deutschland"}],
+            "CH": [{"qid": "Q39", "iso3": "CHE", "label_en-US": "Switzerland", "label_de-CH": "Schweiz"}],
         },
         iso_codes={"DE": ["Q183"], "CH": ["Q39"], "XK": ["Q1246"]},
         capitals={"Q183": [_cap("Q64", "Berlin", [52.51667, 13.38333])], "Q39": [_cap("Q70", "Bern", [46.94809, 7.44744])]},
         coords={"Q64": [52.51667, 13.38333], "Q70": [46.94809, 7.44744]},
         status={},
-        sitelinks={"Q183": {"en": "Germany", "de": "Deutschland"}, "Q39": {"en": "Switzerland", "de": "Schweiz"}},
+        sitelinks={"Q183": {"en-US": "Germany", "de-CH": "Deutschland"}, "Q39": {"en-US": "Switzerland", "de-CH": "Schweiz"}},
         p41={
             "Q183": [{"file": "Flag of Germany.svg", "rank": "normal", "start": None, "end": None}],
             "Q39": [{"file": "Flag of Switzerland.svg", "rank": "preferred", "start": None, "end": None}],
@@ -122,7 +122,7 @@ def test_capital_set_and_role_changes():
     assert one(run_diff(deprecated), "capitals").new == []
 
     def label_only(live):  # labels were never taken from Wikidata: no deviation
-        live.capitals["Q39"][0]["label_en"] = "Berne"
+        live.capitals["Q39"][0]["label_en-US"] = "Berne"
 
     assert run_diff(label_only) == []
 
@@ -161,16 +161,16 @@ def test_status_change():
 
 def test_sitelinks_en_and_de():
     def m(live):
-        live.sitelinks["Q183"] = {"en": "Germany", "de": "Bundesrepublik Deutschland"}
+        live.sitelinks["Q183"] = {"en-US": "Germany", "de-CH": "Bundesrepublik Deutschland"}
 
     d = one(run_diff(m), "sitelink")
-    assert (d.field, d.old, d.new, d.prop) == ("wikipedia.de", "Deutschland", "Bundesrepublik Deutschland", "sitelinks/dewiki")
+    assert (d.field, d.old, d.new, d.prop) == ("wikipedia.de-CH", "Deutschland", "Bundesrepublik Deutschland", "sitelinks/dewiki")
 
     def removed(live):
-        live.sitelinks["Q39"] = {"de": "Schweiz"}
+        live.sitelinks["Q39"] = {"de-CH": "Schweiz"}
 
     d = one(run_diff(removed), "sitelink")
-    assert (d.field, d.new) == ("wikipedia.en", None)
+    assert (d.field, d.new) == ("wikipedia.en-US", None)
 
 
 def test_flag_p41_change_and_override():
@@ -552,12 +552,12 @@ def test_accept_dewiki_sitelink(monkeypatch, sandbox):
     wd, entry_path = sandbox
     base = monitor.load_baseline()
     live = copy.deepcopy(base)
-    live.sitelinks["Q183"] = {**live.sitelinks["Q183"], "de": "Bundesrepublik Deutschland"}
+    live.sitelinks["Q183"] = {**live.sitelinks["Q183"], "de-CH": "Bundesrepublik Deutschland"}
     d = one(monitor.diff({"083": yaml.safe_load(entry_path.read_text(encoding="utf-8"))}, base, live, NO_OVERRIDES, {}), "sitelink")
     _accept_with(monkeypatch, d, live)
-    assert json.loads((wd / "sitelinks.json").read_text(encoding="utf-8"))["Q183"]["de"] == "Bundesrepublik Deutschland"
+    assert json.loads((wd / "sitelinks.json").read_text(encoding="utf-8"))["Q183"]["de-CH"] == "Bundesrepublik Deutschland"
     entry = yaml.safe_load(entry_path.read_text(encoding="utf-8"))
-    assert entry["wikipedia"]["de"] == "https://de.wikipedia.org/wiki/Bundesrepublik_Deutschland"
+    assert entry["wikipedia"]["de-CH"] == "https://de.wikipedia.org/wiki/Bundesrepublik_Deutschland"
 
 
 def test_accept_unknown_fingerprint_fails(monkeypatch):

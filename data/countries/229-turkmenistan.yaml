@@ -4,12 +4,16 @@ iso3: TKM
 wikidata: Q874
 status: sovereign
 name:
-  en: Turkmenistan
-  de: Turkmenistan
+  en-US: Turkmenistan
+  de-CH: Turkmenistan
+  pl-PL: Turkmenistan
+  pt-BR: Turcomenistão
 capitals:
 - name:
-    en: Ashgabat
-    de: Aschgabad
+    en-US: Ashgabat
+    de-CH: Aschgabad
+    pl-PL: Aszchabad
+    pt-BR: Ashgabat
   role: capital
   wikidata: Q23438
   lat: 37.95
@@ -23,5 +27,7 @@ regions:
 - Asia
 - Central Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Turkmenistan
-  de: https://de.wikipedia.org/wiki/Turkmenistan
+  en-US: https://en.wikipedia.org/wiki/Turkmenistan
+  de-CH: https://de.wikipedia.org/wiki/Turkmenistan
+  pl-PL: https://pl.wikipedia.org/wiki/Turkmenistan
+  pt-BR: https://pt.wikipedia.org/wiki/Turquemenistão

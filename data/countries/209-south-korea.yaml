@@ -4,15 +4,21 @@ iso3: KOR
 wikidata: Q884
 status: sovereign
 name:
-  en: South Korea
-  de: Südkorea
+  en-US: South Korea
+  de-CH: Südkorea
+  pl-PL: Korea Południowa
+  pt-BR: Coreia do Sul
 formal_name:
-  en: The Republic of Korea
-  de: Republik Korea
+  en-US: The Republic of Korea
+  de-CH: Republik Korea
+  pl-PL: Republika Korei
+  pt-BR: República da Coreia
 capitals:
 - name:
-    en: Seoul
-    de: Seoul
+    en-US: Seoul
+    de-CH: Seoul
+    pl-PL: Seul
+    pt-BR: Seul
   role: capital
   wikidata: Q8684
   lat: 37.56
@@ -23,5 +29,7 @@ regions:
 - Asia
 - Eastern Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/South_Korea
-  de: https://de.wikipedia.org/wiki/Südkorea
+  en-US: https://en.wikipedia.org/wiki/South_Korea
+  de-CH: https://de.wikipedia.org/wiki/Südkorea
+  pl-PL: https://pl.wikipedia.org/wiki/Korea_Południowa
+  pt-BR: https://pt.wikipedia.org/wiki/Coreia_do_Sul

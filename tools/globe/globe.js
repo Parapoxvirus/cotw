@@ -8,7 +8,7 @@
  * and _cotw-globe-detail.js (fine land). Template contract and
  * rendering rules: docs/GLOBE.md. Plain ES2017, no dependencies, no network.
  *
- *   <div class="cotw-globe" data-id="{{Locator}}" data-lang="de" data-tooltip></div>
+ *   <div class="cotw-globe" data-id="{{Locator}}" data-lang="de-CH" data-tooltip></div>
  *   <script src="_cotw-globe.js"></script>
  */
 (function (root) {
@@ -419,6 +419,7 @@
       graticule: graticule(),
       meta: data.entries,
       palette: data.palette,
+      base: data.base, // the base locale: the tooltip's fallback names
       arcs: arcs,
       readyAt: {}, // first time each level (L2, L3) / zone (EEZ:<id>) was prepared, for measurements
       installDetail: function (packet) {
@@ -898,8 +899,9 @@
   Globe.prototype.configure = function () {
     var id = this.el.getAttribute('data-id');
     id = id ? String(id).trim() : '';
-    // The tooltip shows m.name[lang], falling back to English for a language without names.
-    this.lang = this.el.getAttribute('data-lang') || 'en';
+    // The tooltip shows m.name[lang], falling back to the base locale (data.base) for a locale
+    // without names.
+    this.lang = this.el.getAttribute('data-lang') || '';
     this.tooltip = this.el.hasAttribute('data-tooltip') && this.el.getAttribute('data-tooltip') !== 'false';
     if (!this.tooltip) this.select(null);
     if (id !== this.id) {
@@ -1536,7 +1538,7 @@
     this.anchor = id ? hit.ll : null;
     if (id) {
       var m = getWorld().meta[id], colors = this.tipColors || ['#FFFFFF', '#222222'];
-      this.tip.textContent = m.name[this.lang] || m.name.en;
+      this.tip.textContent = m.name[this.lang] || m.name[getWorld().base];
       this.tip.style.background = colors[0];
       this.tip.style.color = colors[1];
     }

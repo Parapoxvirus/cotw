@@ -27,6 +27,7 @@ from pathlib import Path
 
 import yaml
 
+from . import languages
 from .paths import CACHE, DERIVED, MEDIA, OVERRIDES, WIKIDATA
 from .wikidata import USER_AGENT, _chunks, _qid, _sparql, _val, dump, _load
 
@@ -258,7 +259,7 @@ def build(entries: dict, p41: dict, overrides: dict, imageinfo_fn=fetch_imageinf
             continue
         file, reason = select_file(p41.get(entry["wikidata"], []))
         if file is None:
-            problems.append(f"{cid} {entry['name']['en']}: {reason} (add data/overrides/flags.yaml entry)")
+            problems.append(f"{cid} {entry['name'][languages.BASE]}: {reason} (add data/overrides/flags.yaml entry)")
             continue
         chosen[cid] = {"file": file, "selection": reason}
 
@@ -270,7 +271,7 @@ def build(entries: dict, p41: dict, overrides: dict, imageinfo_fn=fetch_imageinf
         file = chosen[cid]["file"]
         meta = info.get(file)
         if not meta or meta.get("missing"):
-            problems.append(f"{cid} {entry['name']['en']}: Commons file not found: {file}")
+            problems.append(f"{cid} {entry['name'][languages.BASE]}: Commons file not found: {file}")
             continue
         ov = overrides.get(cid) or {}
         lic = meta["license"]
@@ -287,7 +288,7 @@ def build(entries: dict, p41: dict, overrides: dict, imageinfo_fn=fetch_imageinf
                 record["license_override"] = ov["reason"]
             else:
                 problems.append(
-                    f"{cid} {entry['name']['en']}: license {lic!r} for {meta['title']} is not public domain/CC0 "
+                    f"{cid} {entry['name'][languages.BASE]}: license {lic!r} for {meta['title']} is not public domain/CC0 "
                     f"(add an override with file, license and reason)"
                 )
                 continue
@@ -298,7 +299,7 @@ def build(entries: dict, p41: dict, overrides: dict, imageinfo_fn=fetch_imageinf
         parent = entries[cid].get("dependency_of")
         if parent and parent in manifest and manifest[parent]["sha1"] == record["sha1"]:
             record["shared_with"] = parent
-            record["note"] = f"uses the flag of {entries[parent]['name']['en']} (Wikidata P41 points to the same file)"
+            record["note"] = f"uses the flag of {entries[parent]['name'][languages.BASE]} (Wikidata P41 points to the same file)"
 
     if problems:
         return manifest, problems

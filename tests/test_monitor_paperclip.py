@@ -27,7 +27,7 @@ PAPERCLIP_ENV = {
 
 @pytest.fixture(autouse=True)
 def clean_env(monkeypatch):
-    for name in (*PAPERCLIP_ENV, "PAPERCLIP_ASSIGNEE_AGENT_ID", "COTW_MONITOR_STATE_BRANCH", "COTW_MONITOR_TOKEN"):
+    for name in (*PAPERCLIP_ENV, "PAPERCLIP_ASSIGNEE_AGENT_ID", "COTW_MONITOR_STATE_BRANCH", "COTW_MONITOR_TOKEN", "COTW_MONITOR_NOTIFY_ISSUE"):
         monkeypatch.delenv(name, raising=False)
 
 
@@ -177,7 +177,7 @@ def test_state_roundtrip_creates_branch_then_updates_with_sha():
     assert store.writes[2][0] == "put" and len(store.writes) == 3
     data = store.state()
     assert data == {
-        "version": 1, "filed": {}, "summary": None,
+        "version": 2, "filed": {}, "summary": None, "names": {}, "sources": {},
         "decided": {"0123456789abcdef": {"source": "paperclip-done:COTW-1", "decided_at": "2026-10-12T04:17:00Z"}},
     }
 
@@ -191,7 +191,14 @@ def test_state_branch_from_env(monkeypatch):
 
 def test_state_rejects_unknown_version():
     with pytest.raises(RuntimeError):
-        monitor_state.parse('{"version": 2}')
+        monitor_state.parse('{"version": 3}')
+
+
+def test_state_v1_migrates_to_v2():
+    v1 = {"version": 1, "filed": {}, "summary": None, "decided": {"0123456789abcdef": {"source": "x", "decided_at": "y"}}}
+    state = monitor_state.parse(json.dumps(v1))
+    assert state.names == {} and state.sources == {} and state.known() == {"0123456789abcdef"}
+    assert state.to_json()["version"] == 2
 
 
 # --- filing -------------------------------------------------------------------------------------
@@ -415,6 +422,6 @@ def test_workflow_passes_paperclip_settings():
     assert wf["permissions"] == {"contents": "write", "issues": "write"}
     env = next(s for s in next(iter(wf["jobs"].values()))["steps"] if "env" in s)["env"]
     assert env["PAPERCLIP_API_KEY"] == "${{ secrets.PAPERCLIP_TASK_KEY }}"
-    for name in ("PAPERCLIP_API_URL", "PAPERCLIP_COMPANY_ID", "PAPERCLIP_PROJECT_ID", "PAPERCLIP_ASSIGNEE_AGENT_ID"):
+    for name in ("PAPERCLIP_API_URL", "PAPERCLIP_COMPANY_ID", "PAPERCLIP_PROJECT_ID", "PAPERCLIP_ASSIGNEE_AGENT_ID", "COTW_MONITOR_NOTIFY_ISSUE"):
         assert env[name] == "${{ vars.%s }}" % name
     assert "github.token" in env["COTW_MONITOR_TOKEN"]

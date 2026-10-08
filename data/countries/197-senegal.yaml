@@ -4,15 +4,21 @@ iso3: SEN
 wikidata: Q1041
 status: sovereign
 name:
-  en: Senegal
-  de: Senegal
+  en-US: Senegal
+  de-CH: Senegal
+  pl-PL: Senegal
+  pt-BR: Senegal
 formal_name:
-  en: The Republic of Senegal
-  de: Republik Senegal
+  en-US: The Republic of Senegal
+  de-CH: Republik Senegal
+  pl-PL: Republika Senegalu
+  pt-BR: República do Senegal
 capitals:
 - name:
-    en: Dakar
-    de: Dakar
+    en-US: Dakar
+    de-CH: Dakar
+    pl-PL: Dakar
+    pt-BR: Dacar
   role: capital
   wikidata: Q3718
   lat: 14.67256
@@ -28,5 +34,7 @@ regions:
 - Sub-Saharan Africa
 - Western Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Senegal
-  de: https://de.wikipedia.org/wiki/Senegal
+  en-US: https://en.wikipedia.org/wiki/Senegal
+  de-CH: https://de.wikipedia.org/wiki/Senegal
+  pl-PL: https://pl.wikipedia.org/wiki/Senegal
+  pt-BR: https://pt.wikipedia.org/wiki/Senegal

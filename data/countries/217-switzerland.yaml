@@ -4,18 +4,26 @@ iso3: CHE
 wikidata: Q39
 status: sovereign
 name:
-  en: Switzerland
-  de: Schweiz
+  en-US: Switzerland
+  de-CH: Schweiz
+  pl-PL: Szwajcaria
+  pt-BR: Suíça
 formal_name:
-  en: The Swiss Confederation
-  de: Schweizerische Eidgenossenschaft
+  en-US: The Swiss Confederation
+  de-CH: Schweizerische Eidgenossenschaft
+  pl-PL: Konfederacja Szwajcarska
+  pt-BR: Confederação Suíça
 capitals:
 - name:
-    en: Bern
-    de: Bern
+    en-US: Bern
+    de-CH: Bern
+    pl-PL: Berno
+    pt-BR: Berna
   label:
-    en: seat of government
-    de: Regierungssitz
+    en-US: seat of government
+    de-CH: Regierungssitz
+    pl-PL: siedziba rządu
+    pt-BR: sede do governo
   role: seat_of_government
   wikidata: Q70
   lat: 46.94798
@@ -30,5 +38,7 @@ regions:
 - Europe
 - Western Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Switzerland
-  de: https://de.wikipedia.org/wiki/Schweiz
+  en-US: https://en.wikipedia.org/wiki/Switzerland
+  de-CH: https://de.wikipedia.org/wiki/Schweiz
+  pl-PL: https://pl.wikipedia.org/wiki/Szwajcaria
+  pt-BR: https://pt.wikipedia.org/wiki/Suíça

@@ -5,12 +5,16 @@ wikidata: Q35086
 status: dependency
 dependency_of: '235'
 name:
-  en: South Georgia and the South Sandwich Islands
-  de: Südgeorgien und die Südlichen Sandwichinseln
+  en-US: South Georgia and the South Sandwich Islands
+  de-CH: Südgeorgien und die Südlichen Sandwichinseln
+  pl-PL: Georgia Południowa i Sandwich Południowy
+  pt-BR: Ilhas Geórgia do Sul e Sandwich do Sul
 capitals:
 - name:
-    en: King Edward Point
-    de: King Edward Point
+    en-US: King Edward Point
+    de-CH: King Edward Point
+    pl-PL: King Edward Point
+    pt-BR: King Edward Point
   role: capital
   wikidata: Q393878
   lat: -54.28329
@@ -21,5 +25,7 @@ regions:
 - Latin America and the Caribbean
 - South America
 wikipedia:
-  en: https://en.wikipedia.org/wiki/South_Georgia_and_the_South_Sandwich_Islands
-  de: https://de.wikipedia.org/wiki/Südgeorgien_und_die_Südlichen_Sandwichinseln
+  en-US: https://en.wikipedia.org/wiki/South_Georgia_and_the_South_Sandwich_Islands
+  de-CH: https://de.wikipedia.org/wiki/Südgeorgien_und_die_Südlichen_Sandwichinseln
+  pl-PL: https://pl.wikipedia.org/wiki/Georgia_Południowa_i_Sandwich_Południowy
+  pt-BR: https://pt.wikipedia.org/wiki/Ilhas_Geórgia_do_Sul_e_Sandwich_do_Sul

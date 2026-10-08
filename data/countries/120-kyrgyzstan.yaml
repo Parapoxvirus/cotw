@@ -4,15 +4,21 @@ iso3: KGZ
 wikidata: Q813
 status: sovereign
 name:
-  en: Kyrgyzstan
-  de: Kirgisistan
+  en-US: Kyrgyzstan
+  de-CH: Kirgisistan
+  pl-PL: Kirgistan
+  pt-BR: Quirguistão
 formal_name:
-  en: The Kyrgyz Republic
-  de: Kirgisische Republik
+  en-US: The Kyrgyz Republic
+  de-CH: Kirgisische Republik
+  pl-PL: Republika Kirgiska
+  pt-BR: República Quirguiz
 capitals:
 - name:
-    en: Bishkek
-    de: Bischkek
+    en-US: Bishkek
+    de-CH: Bischkek
+    pl-PL: Biszkek
+    pt-BR: Bishkek
   role: capital
   wikidata: Q9361
   lat: 42.86667
@@ -26,5 +32,7 @@ regions:
 - Asia
 - Central Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Kyrgyzstan
-  de: https://de.wikipedia.org/wiki/Kirgisistan
+  en-US: https://en.wikipedia.org/wiki/Kyrgyzstan
+  de-CH: https://de.wikipedia.org/wiki/Kirgisistan
+  pl-PL: https://pl.wikipedia.org/wiki/Kirgistan
+  pt-BR: https://pt.wikipedia.org/wiki/Quirguistão

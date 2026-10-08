@@ -1,0 +1,572 @@
+# Wanted languages and their sources.
+#
+# The curated list of locales COTW may be translated into, with the sources every locale reads
+# from: its Wikipedia and its Wikidata label languages. It is the single source for both; a
+# locale is added here before its module (docs/TRANSLATING.md). An entry here is a wish, not a
+# published deck. Loaded and checked by tools/cotw/locales.py (`python -m cotw validate`).
+#
+# Fields:
+#   tag            BCP 47 language tag in canonical case (`pt-BR`), unique.
+#   endonym        The locale's name in its own language, as a standalone label. The region or
+#                  script is added in parentheses only when the list has another locale of the
+#                  same language.
+#   english        The same name in English.
+#   wiki           Wikidata site ID of the locale's Wikipedia (`ptwiki`).
+#   wikipedia      Article URL prefix, `https://…/`; the article title is appended. A script
+#                  variant pins the Wikipedia's variant path (`/zh-hant/`, `/sr-el/`).
+#   wikidata       Wikidata label languages in fallback order: the first one with a label wins.
+#                  A fallback never crosses scripts.
+#   naming_source  Optional: the official list the country and capital names follow (title,
+#                  publisher, url). Where it is not known yet, it is left out.
+#
+# Shape: `language(-Script)?-REGION`. The region is an ISO 3166-1 alpha-2 code or a UN M49
+# area code (`es-419`). A script subtag only where the language is written in more than one
+# script (`zh-Hans-CN`, `sr-Latn-RS`). A pan-regional standard language takes the CLDR region
+# (`ar-001`). A deviation from these rules gets a comment at its entry.
+#
+# Naming sources: EN, DE and PL as in docs/TRANSLATING.md; the other EU languages the
+# Interinstitutional Style Guide, Annex A5, in that language; Arabic, Chinese and Russian UNTERM.
+#
+# Sorted by tag.
+
+# Modern Standard Arabic is not tied to one country: the CLDR region 001 (World).
+- tag: ar-001
+  endonym: العربية
+  english: Arabic
+  wiki: arwiki
+  wikipedia: https://ar.wikipedia.org/wiki/
+  wikidata: [ar]
+  naming_source:
+    title: UNTERM (United Nations Terminology Database)
+    publisher: United Nations
+    url: https://unterm.un.org/
+
+- tag: bg-BG
+  endonym: Български
+  english: Bulgarian
+  wiki: bgwiki
+  wikipedia: https://bg.wikipedia.org/wiki/
+  wikidata: [bg]
+  naming_source:
+    title: Приложение A5 – Списък на страните, териториите и паричните единици (Междуинституционално ръководство за изготвяне на публикациите)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/bg/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: bs-BA
+  endonym: Bosanski
+  english: Bosnian
+  wiki: bswiki
+  wikipedia: https://bs.wikipedia.org/wiki/
+  wikidata: [bs]
+
+- tag: ca-ES
+  endonym: Català
+  english: Catalan
+  wiki: cawiki
+  wikipedia: https://ca.wikipedia.org/wiki/
+  wikidata: [ca]
+
+- tag: cs-CZ
+  endonym: Čeština
+  english: Czech
+  wiki: cswiki
+  wikipedia: https://cs.wikipedia.org/wiki/
+  wikidata: [cs]
+  naming_source:
+    title: Příloha A5 – Seznam jednotlivých zemí, území a měn (Pravidla pro jednotnou úpravu dokumentů)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/cs/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: da-DK
+  endonym: Dansk
+  english: Danish
+  wiki: dawiki
+  wikipedia: https://da.wikipedia.org/wiki/
+  wikidata: [da]
+  naming_source:
+    title: Bilag A5 – Fortegnelse over stater, områder og valutaer (Vejledningen i Udformning af EU-publikationer)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/da/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: de-CH
+  endonym: Deutsch (Schweiz)
+  english: German (Switzerland)
+  wiki: dewiki
+  wikipedia: https://de.wikipedia.org/wiki/
+  wikidata: [de-ch, de]
+  naming_source:
+    title: Liste der Staatenbezeichnungen
+    publisher: Swiss Federal Department of Foreign Affairs (EDA)
+    url: https://www.eda.admin.ch/dam/de/sd-web/viWGvPDY5NYo/liste-etats_DE.pdf
+
+- tag: de-DE
+  endonym: Deutsch (Deutschland)
+  english: German (Germany)
+  wiki: dewiki
+  wikipedia: https://de.wikipedia.org/wiki/
+  wikidata: [de]
+  naming_source:
+    title: Verzeichnis der Staatennamen für den amtlichen Gebrauch in der Bundesrepublik Deutschland
+    publisher: German Federal Foreign Office (Auswärtiges Amt)
+    url: https://www.auswaertiges-amt.de/de/service/terminologie/215252-215252
+
+- tag: el-GR
+  endonym: Ελληνικά
+  english: Greek
+  wiki: elwiki
+  wikipedia: https://el.wikipedia.org/wiki/
+  wikidata: [el]
+  naming_source:
+    title: Παράρτημα A5 – Κατάλογος χωρών, εδαφών και νομισμάτων (Διοργανικό εγχειρίδιο σύνταξης κειμένων)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/el/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: en-GB
+  endonym: English (United Kingdom)
+  english: English (United Kingdom)
+  wiki: enwiki
+  wikipedia: https://en.wikipedia.org/wiki/
+  wikidata: [en-gb, en]
+  naming_source:
+    title: Country names
+    publisher: Permanent Committee on Geographical Names (PCGN)
+    url: https://www.gov.uk/government/publications/country-names
+
+- tag: en-US
+  endonym: English (United States)
+  english: English (United States)
+  wiki: enwiki
+  wikipedia: https://en.wikipedia.org/wiki/
+  wikidata: [en]
+  naming_source:
+    title: UNTERM (United Nations Terminology Database)
+    publisher: United Nations
+    url: https://unterm.un.org/
+
+# Latin American Spanish: the UN M49 area 419 (Latin America and the Caribbean).
+- tag: es-419
+  endonym: Español (Latinoamérica)
+  english: Spanish (Latin America)
+  wiki: eswiki
+  wikipedia: https://es.wikipedia.org/wiki/
+  wikidata: [es-419, es]
+
+- tag: es-ES
+  endonym: Español (España)
+  english: Spanish (Spain)
+  wiki: eswiki
+  wikipedia: https://es.wikipedia.org/wiki/
+  wikidata: [es]
+  naming_source:
+    title: Anexo A5 – Lista de Estados, territorios y monedas (Libro de estilo interinstitucional)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/es/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: et-EE
+  endonym: Eesti
+  english: Estonian
+  wiki: etwiki
+  wikipedia: https://et.wikipedia.org/wiki/
+  wikidata: [et]
+  naming_source:
+    title: Lisa A5. Riikide, territooriumite ja vääringute nimistu (Institutsioonidevaheline stiilijuhend)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/et/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: eu-ES
+  endonym: Euskara
+  english: Basque
+  wiki: euwiki
+  wikipedia: https://eu.wikipedia.org/wiki/
+  wikidata: [eu]
+
+- tag: fa-IR
+  endonym: فارسی
+  english: Persian
+  wiki: fawiki
+  wikipedia: https://fa.wikipedia.org/wiki/
+  wikidata: [fa]
+
+- tag: fi-FI
+  endonym: Suomi
+  english: Finnish
+  wiki: fiwiki
+  wikipedia: https://fi.wikipedia.org/wiki/
+  wikidata: [fi]
+  naming_source:
+    title: Liite A5 – Valtioiden, alueiden ja rahayksiköiden luettelo (Toimielinten yhteiset tekstinlaadinnan ohjeet)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/fi/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+# Wikidata has no fr-ca label language; Canadian French falls back to fr directly.
+- tag: fr-CA
+  endonym: Français (Canada)
+  english: French (Canada)
+  wiki: frwiki
+  wikipedia: https://fr.wikipedia.org/wiki/
+  wikidata: [fr]
+
+- tag: fr-FR
+  endonym: Français (France)
+  english: French (France)
+  wiki: frwiki
+  wikipedia: https://fr.wikipedia.org/wiki/
+  wikidata: [fr]
+  naming_source:
+    title: Annexe A5 – Liste des États, territoires et monnaies (Code de rédaction interinstitutionnel)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/fr/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: ga-IE
+  endonym: Gaeilge
+  english: Irish
+  wiki: gawiki
+  wikipedia: https://ga.wikipedia.org/wiki/
+  wikidata: [ga]
+  naming_source:
+    title: Iarscríbhinn A5 – Liosta tíortha, críoch agus airgeadraí (An Treoir Stíle Idirinstitiúideach)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/ga/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: he-IL
+  endonym: עברית
+  english: Hebrew
+  wiki: hewiki
+  wikipedia: https://he.wikipedia.org/wiki/
+  wikidata: [he]
+
+- tag: hi-IN
+  endonym: हिन्दी
+  english: Hindi
+  wiki: hiwiki
+  wikipedia: https://hi.wikipedia.org/wiki/
+  wikidata: [hi]
+
+- tag: hr-HR
+  endonym: Hrvatski
+  english: Croatian
+  wiki: hrwiki
+  wikipedia: https://hr.wikipedia.org/wiki/
+  wikidata: [hr]
+  naming_source:
+    title: Prilog A5. Popis zemalja, područja i valuta (Međuinstitucijski stilski priručnik)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/hr/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: hu-HU
+  endonym: Magyar
+  english: Hungarian
+  wiki: huwiki
+  wikipedia: https://hu.wikipedia.org/wiki/
+  wikidata: [hu]
+  naming_source:
+    title: A5. melléklet – Országok, területek és pénznemek jegyzéke (Intézményközi kiadványszerkesztési útmutató)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/hu/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: hy-AM
+  endonym: Հայերեն
+  english: Armenian
+  wiki: hywiki
+  wikipedia: https://hy.wikipedia.org/wiki/
+  wikidata: [hy]
+
+- tag: id-ID
+  endonym: Bahasa Indonesia
+  english: Indonesian
+  wiki: idwiki
+  wikipedia: https://id.wikipedia.org/wiki/
+  wikidata: [id]
+
+- tag: is-IS
+  endonym: Íslenska
+  english: Icelandic
+  wiki: iswiki
+  wikipedia: https://is.wikipedia.org/wiki/
+  wikidata: [is]
+
+- tag: it-IT
+  endonym: Italiano
+  english: Italian
+  wiki: itwiki
+  wikipedia: https://it.wikipedia.org/wiki/
+  wikidata: [it]
+  naming_source:
+    title: Allegato A5 – Elenco degli Stati, dei territori e delle monete (Manuale interistituzionale di convenzioni redazionali)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/it/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: ja-JP
+  endonym: 日本語
+  english: Japanese
+  wiki: jawiki
+  wikipedia: https://ja.wikipedia.org/wiki/
+  wikidata: [ja]
+
+- tag: ka-GE
+  endonym: ქართული
+  english: Georgian
+  wiki: kawiki
+  wikipedia: https://ka.wikipedia.org/wiki/
+  wikidata: [ka]
+
+- tag: ko-KR
+  endonym: 한국어
+  english: Korean
+  wiki: kowiki
+  wikipedia: https://ko.wikipedia.org/wiki/
+  wikidata: [ko]
+
+- tag: lb-LU
+  endonym: Lëtzebuergesch
+  english: Luxembourgish
+  wiki: lbwiki
+  wikipedia: https://lb.wikipedia.org/wiki/
+  wikidata: [lb]
+
+- tag: lt-LT
+  endonym: Lietuvių
+  english: Lithuanian
+  wiki: ltwiki
+  wikipedia: https://lt.wikipedia.org/wiki/
+  wikidata: [lt]
+  naming_source:
+    title: A5 priedas – Šalių, teritorijų ir valiutų sąrašas (Institucijų leidinių rengimo vadovas)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/lt/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: lv-LV
+  endonym: Latviešu
+  english: Latvian
+  wiki: lvwiki
+  wikipedia: https://lv.wikipedia.org/wiki/
+  wikidata: [lv]
+  naming_source:
+    title: A5. pielikums – Valstu, teritoriju un valūtu saraksts (Iestāžu publikāciju noformēšanas rokasgrāmata)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/lv/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: mk-MK
+  endonym: Македонски
+  english: Macedonian
+  wiki: mkwiki
+  wikipedia: https://mk.wikipedia.org/wiki/
+  wikidata: [mk]
+
+- tag: ms-MY
+  endonym: Bahasa Melayu
+  english: Malay
+  wiki: mswiki
+  wikipedia: https://ms.wikipedia.org/wiki/
+  wikidata: [ms]
+
+- tag: mt-MT
+  endonym: Malti
+  english: Maltese
+  wiki: mtwiki
+  wikipedia: https://mt.wikipedia.org/wiki/
+  wikidata: [mt]
+  naming_source:
+    title: Anness A5 – Il-lista tal-pajjiżi, it-territorji u l-muniti (Il-Gwida tal-Istil Interistituzzjonali)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/mt/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+# The Bokmål Wikipedia is no.wikipedia.org (site ID nowiki); its Wikidata labels are nb.
+- tag: nb-NO
+  endonym: Norsk bokmål
+  english: Norwegian Bokmål
+  wiki: nowiki
+  wikipedia: https://no.wikipedia.org/wiki/
+  wikidata: [nb]
+
+- tag: nl-NL
+  endonym: Nederlands
+  english: Dutch
+  wiki: nlwiki
+  wikipedia: https://nl.wikipedia.org/wiki/
+  wikidata: [nl]
+  naming_source:
+    title: Bijlage A5 – Landenlijst, gebieden en munteenheden (Interinstitutionele schrijfwijzer)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/nl/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: nn-NO
+  endonym: Norsk nynorsk
+  english: Norwegian Nynorsk
+  wiki: nnwiki
+  wikipedia: https://nn.wikipedia.org/wiki/
+  wikidata: [nn]
+
+- tag: pl-PL
+  endonym: Polski
+  english: Polish
+  wiki: plwiki
+  wikipedia: https://pl.wikipedia.org/wiki/
+  wikidata: [pl]
+  naming_source:
+    title: Urzędowy wykaz nazw państw i terytoriów niesamodzielnych
+    publisher: Commission on Standardization of Geographical Names Outside the Republic of Poland (KSNG)
+    url: https://www.gov.pl/web/ksng/Urzedowy-wykaz-nazw-panstw-i-terytoriow-niesamodzielnych
+
+- tag: pt-BR
+  endonym: Português (Brasil)
+  english: Portuguese (Brazil)
+  wiki: ptwiki
+  wikipedia: https://pt.wikipedia.org/wiki/
+  wikidata: [pt-br, pt]
+  naming_source:
+    title: Manual de redação oficial e diplomática do Itamaraty
+    publisher: Ministério das Relações Exteriores do Brasil
+    url: https://www.gov.br/mre/pt-br/arquivos/manual-de-redacao
+
+- tag: pt-PT
+  endonym: Português (Portugal)
+  english: Portuguese (Portugal)
+  wiki: ptwiki
+  wikipedia: https://pt.wikipedia.org/wiki/
+  wikidata: [pt]
+  naming_source:
+    title: Anexo A5 – Lista dos Estados, territórios e moedas (Código de Redação Interinstitucional)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/pt/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: rm-CH
+  endonym: Rumantsch
+  english: Romansh
+  wiki: rmwiki
+  wikipedia: https://rm.wikipedia.org/wiki/
+  wikidata: [rm]
+
+- tag: ro-RO
+  endonym: Română
+  english: Romanian
+  wiki: rowiki
+  wikipedia: https://ro.wikipedia.org/wiki/
+  wikidata: [ro]
+  naming_source:
+    title: Anexa A5 – Lista țărilor, a teritoriilor și a monedelor (Ghid de redactare interinstituțional)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/ro/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: ru-RU
+  endonym: Русский
+  english: Russian
+  wiki: ruwiki
+  wikipedia: https://ru.wikipedia.org/wiki/
+  wikidata: [ru]
+  naming_source:
+    title: UNTERM (United Nations Terminology Database)
+    publisher: United Nations
+    url: https://unterm.un.org/
+
+- tag: sk-SK
+  endonym: Slovenčina
+  english: Slovak
+  wiki: skwiki
+  wikipedia: https://sk.wikipedia.org/wiki/
+  wikidata: [sk]
+  naming_source:
+    title: Príloha A5 – Zoznam krajín, území a mien (Medziinštitucionálna príručka úpravy dokumentov)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/sk/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: sl-SI
+  endonym: Slovenščina
+  english: Slovenian
+  wiki: slwiki
+  wikipedia: https://sl.wikipedia.org/wiki/
+  wikidata: [sl]
+  naming_source:
+    title: Priloga A5 – Seznam držav, ozemelj in valut (Medinstitucionalni slogovni priročnik)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/sl/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: sq-AL
+  endonym: Shqip
+  english: Albanian
+  wiki: sqwiki
+  wikipedia: https://sq.wikipedia.org/wiki/
+  wikidata: [sq]
+
+# One Serbian Wikipedia in both scripts: the variant path pins the script (sr-ec Cyrillic,
+# sr-el Latin). Wikidata's plain sr labels are Cyrillic, so only the Cyrillic locale falls
+# back to them.
+- tag: sr-Cyrl-RS
+  endonym: Српски (ћирилица)
+  english: Serbian (Cyrillic)
+  wiki: srwiki
+  wikipedia: https://sr.wikipedia.org/sr-ec/
+  wikidata: [sr-ec, sr]
+
+- tag: sr-Latn-RS
+  endonym: Srpski (latinica)
+  english: Serbian (Latin)
+  wiki: srwiki
+  wikipedia: https://sr.wikipedia.org/sr-el/
+  wikidata: [sr-el]
+
+- tag: sv-SE
+  endonym: Svenska
+  english: Swedish
+  wiki: svwiki
+  wikipedia: https://sv.wikipedia.org/wiki/
+  wikidata: [sv]
+  naming_source:
+    title: Bilaga A5 – Länder, territorier och valutor (Interinstitutionella publikationshandboken)
+    publisher: Publications Office of the European Union
+    url: https://style-guide.europa.eu/sv/content/-/isg/topic?identifier=annex-a5-list-countries-territories-currencies
+
+- tag: sw-TZ
+  endonym: Kiswahili
+  english: Swahili
+  wiki: swwiki
+  wikipedia: https://sw.wikipedia.org/wiki/
+  wikidata: [sw]
+
+- tag: th-TH
+  endonym: ไทย
+  english: Thai
+  wiki: thwiki
+  wikipedia: https://th.wikipedia.org/wiki/
+  wikidata: [th]
+
+- tag: tr-TR
+  endonym: Türkçe
+  english: Turkish
+  wiki: trwiki
+  wikipedia: https://tr.wikipedia.org/wiki/
+  wikidata: [tr]
+
+- tag: uk-UA
+  endonym: Українська
+  english: Ukrainian
+  wiki: ukwiki
+  wikipedia: https://uk.wikipedia.org/wiki/
+  wikidata: [uk]
+
+- tag: vi-VN
+  endonym: Tiếng Việt
+  english: Vietnamese
+  wiki: viwiki
+  wikipedia: https://vi.wikipedia.org/wiki/
+  wikidata: [vi]
+
+# One Chinese Wikipedia in both scripts: the variant path pins the script. Wikidata's plain
+# zh labels mix scripts, so neither locale falls back to them.
+- tag: zh-Hans-CN
+  endonym: 中文（简体）
+  english: Chinese (Simplified)
+  wiki: zhwiki
+  wikipedia: https://zh.wikipedia.org/zh-hans/
+  wikidata: [zh-cn, zh-hans]
+  naming_source:
+    title: UNTERM (United Nations Terminology Database)
+    publisher: United Nations
+    url: https://unterm.un.org/
+
+- tag: zh-Hant-TW
+  endonym: 中文（繁體）
+  english: Chinese (Traditional)
+  wiki: zhwiki
+  wikipedia: https://zh.wikipedia.org/zh-hant/
+  wikidata: [zh-tw, zh-hant]

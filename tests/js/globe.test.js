@@ -433,7 +433,7 @@ test('Switzerland: center and neighbors hit-test to the right entries on every l
     assert.ok(inside('217', 7.45, 46.95), `level ${i}: Bern`);
     assert.ok(!inside('217', 11.58, 48.14), `level ${i}: Munich`);
   }
-  assert.equal(built.data().entries['217'].name.de, 'Schweiz');
+  assert.equal(built.data().entries['217'].name['de-CH'], 'Schweiz');
 });
 
 test('tooltip placement: above the anchor, below when there is no room, clamped at all four edges', () => {

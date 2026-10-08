@@ -5,15 +5,19 @@ wikidata: Q17063
 status: dependency
 dependency_of: '076'
 name:
-  en: Mayotte
-  de: Mayotte
+  en-US: Mayotte
+  de-CH: Mayotte
+  pl-PL: Majotta
+  pt-BR: Mayotte
 formal_name:
-  en: Department of Mayotte
-  de: Departement Mayotte
+  en-US: Department of Mayotte
+  de-CH: Departement Mayotte
 capitals:
 - name:
-    en: Mamoudzou
-    de: Mamoudzou
+    en-US: Mamoudzou
+    de-CH: Mamoudzou
+    pl-PL: Mamoudzou
+    pt-BR: Mamoudzou
   role: capital
   wikidata: Q132676
   lat: -12.78139
@@ -24,5 +28,7 @@ regions:
 - Sub-Saharan Africa
 - Eastern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Mayotte
-  de: https://de.wikipedia.org/wiki/Mayotte
+  en-US: https://en.wikipedia.org/wiki/Mayotte
+  de-CH: https://de.wikipedia.org/wiki/Mayotte
+  pl-PL: https://pl.wikipedia.org/wiki/Majotta
+  pt-BR: https://pt.wikipedia.org/wiki/Mayotte

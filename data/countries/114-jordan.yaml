@@ -4,15 +4,21 @@ iso3: JOR
 wikidata: Q810
 status: sovereign
 name:
-  en: Jordan
-  de: Jordanien
+  en-US: Jordan
+  de-CH: Jordanien
+  pl-PL: Jordania
+  pt-BR: Jordânia
 formal_name:
-  en: The Hashemite Kingdom of Jordan
-  de: Haschemitisches Königreich Jordanien
+  en-US: The Hashemite Kingdom of Jordan
+  de-CH: Haschemitisches Königreich Jordanien
+  pl-PL: Jordańskie Królestwo Haszymidzkie
+  pt-BR: Reino Haxemita da Jordânia
 capitals:
 - name:
-    en: Amman
-    de: Amman
+    en-US: Amman
+    de-CH: Amman
+    pl-PL: Amman
+    pt-BR: Amã
   role: capital
   wikidata: Q3805
   lat: 31.93098
@@ -27,5 +33,7 @@ regions:
 - Asia
 - Western Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Jordan
-  de: https://de.wikipedia.org/wiki/Jordanien
+  en-US: https://en.wikipedia.org/wiki/Jordan
+  de-CH: https://de.wikipedia.org/wiki/Jordanien
+  pl-PL: https://pl.wikipedia.org/wiki/Jordania
+  pt-BR: https://pt.wikipedia.org/wiki/Jordânia

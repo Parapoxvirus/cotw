@@ -4,15 +4,21 @@ iso3: DNK
 wikidata: Q35
 status: sovereign
 name:
-  en: Denmark
-  de: Dänemark
+  en-US: Denmark
+  de-CH: Dänemark
+  pl-PL: Dania
+  pt-BR: Dinamarca
 formal_name:
-  en: The Kingdom of Denmark
-  de: Königreich Dänemark
+  en-US: The Kingdom of Denmark
+  de-CH: Königreich Dänemark
+  pl-PL: Królestwo Danii
+  pt-BR: Reino da Dinamarca
 capitals:
 - name:
-    en: Copenhagen
-    de: Kopenhagen
+    en-US: Copenhagen
+    de-CH: Kopenhagen
+    pl-PL: Kopenhaga
+    pt-BR: Copenhague
   role: capital
   wikidata: Q1748
   lat: 55.67611
@@ -23,5 +29,7 @@ regions:
 - Europe
 - Northern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Denmark
-  de: https://de.wikipedia.org/wiki/Dänemark
+  en-US: https://en.wikipedia.org/wiki/Denmark
+  de-CH: https://de.wikipedia.org/wiki/Dänemark
+  pl-PL: https://pl.wikipedia.org/wiki/Dania
+  pt-BR: https://pt.wikipedia.org/wiki/Dinamarca

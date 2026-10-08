@@ -4,15 +4,21 @@ iso3: GIN
 wikidata: Q1006
 status: sovereign
 name:
-  en: Guinea
-  de: Guinea
+  en-US: Guinea
+  de-CH: Guinea
+  pl-PL: Gwinea
+  pt-BR: República da Guiné
 formal_name:
-  en: The Republic of Guinea
-  de: Republik Guinea
+  en-US: The Republic of Guinea
+  de-CH: Republik Guinea
+  pl-PL: Republika Gwinei
+  pt-BR: República da Guiné
 capitals:
 - name:
-    en: Conakry
-    de: Conakry
+    en-US: Conakry
+    de-CH: Conakry
+    pl-PL: Konakry
+    pt-BR: Conacri
   role: capital
   wikidata: Q3733
   lat: 9.50917
@@ -29,5 +35,7 @@ regions:
 - Sub-Saharan Africa
 - Western Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Guinea
-  de: https://de.wikipedia.org/wiki/Guinea
+  en-US: https://en.wikipedia.org/wiki/Guinea
+  de-CH: https://de.wikipedia.org/wiki/Guinea
+  pl-PL: https://pl.wikipedia.org/wiki/Gwinea
+  pt-BR: https://pt.wikipedia.org/wiki/Guiné

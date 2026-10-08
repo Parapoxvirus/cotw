@@ -4,28 +4,40 @@ iso3: CIV
 wikidata: Q1008
 status: sovereign
 name:
-  en: Côte d’Ivoire / Ivory Coast, The
-  de: Elfenbeinküste / Côte d’Ivoire
+  en-US: Côte d’Ivoire / Ivory Coast, The
+  de-CH: Elfenbeinküste / Côte d’Ivoire
+  pl-PL: Wybrzeże Kości Słoniowej
+  pt-BR: Costa do Marfim / Côte d’Ivoire
 formal_name:
-  en: The Republic of Côte d’Ivoire
-  de: Republik Côte d’Ivoire
+  en-US: The Republic of Côte d’Ivoire
+  de-CH: Republik Côte d’Ivoire
+  pl-PL: Republika Wybrzeża Kości Słoniowej
+  pt-BR: República da Côte d’Ivoire (Costa do Marfim)
 capitals:
 - name:
-    en: Yamoussoukro
-    de: Yamoussoukro
+    en-US: Yamoussoukro
+    de-CH: Yamoussoukro
+    pl-PL: Jamusukro
+    pt-BR: Yamoussoukro
   label:
-    en: capital
-    de: Hauptstadt
+    en-US: capital
+    de-CH: Hauptstadt
+    pl-PL: stolica
+    pt-BR: capital
   role: capital
   wikidata: Q3768
   lat: 6.81611
   lon: -5.27417
 - name:
-    en: Abidjan
-    de: Abidjan
+    en-US: Abidjan
+    de-CH: Abidjan
+    pl-PL: Abidżan
+    pt-BR: Abidjã
   label:
-    en: seat of government
-    de: Regierungssitz
+    en-US: seat of government
+    de-CH: Regierungssitz
+    pl-PL: siedziba rządu
+    pt-BR: sede do governo
   role: seat_of_government
   wikidata: Q1515
   lat: 5.33639
@@ -41,5 +53,7 @@ regions:
 - Sub-Saharan Africa
 - Western Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Ivory_Coast
-  de: https://de.wikipedia.org/wiki/Elfenbeinküste
+  en-US: https://en.wikipedia.org/wiki/Ivory_Coast
+  de-CH: https://de.wikipedia.org/wiki/Elfenbeinküste
+  pl-PL: https://pl.wikipedia.org/wiki/Wybrzeże_Kości_Słoniowej
+  pt-BR: https://pt.wikipedia.org/wiki/Costa_do_Marfim

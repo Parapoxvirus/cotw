@@ -4,15 +4,21 @@ iso3: EGY
 wikidata: Q79
 status: sovereign
 name:
-  en: Egypt
-  de: Ägypten
+  en-US: Egypt
+  de-CH: Ägypten
+  pl-PL: Egipt
+  pt-BR: Egito
 formal_name:
-  en: The Arab Republic of Egypt
-  de: Arabische Republik Ägypten
+  en-US: The Arab Republic of Egypt
+  de-CH: Arabische Republik Ägypten
+  pl-PL: Arabska Republika Egiptu
+  pt-BR: República Árabe do Egito
 capitals:
 - name:
-    en: Cairo
-    de: Kairo
+    en-US: Cairo
+    de-CH: Kairo
+    pl-PL: Kair
+    pt-BR: Cairo
   role: capital
   wikidata: Q85
   lat: 30.04444
@@ -26,5 +32,7 @@ regions:
 - Africa
 - Northern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Egypt
-  de: https://de.wikipedia.org/wiki/Ägypten
+  en-US: https://en.wikipedia.org/wiki/Egypt
+  de-CH: https://de.wikipedia.org/wiki/Ägypten
+  pl-PL: https://pl.wikipedia.org/wiki/Egipt
+  pt-BR: https://pt.wikipedia.org/wiki/Egito

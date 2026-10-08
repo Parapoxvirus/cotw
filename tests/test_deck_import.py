@@ -4,11 +4,19 @@ The packages of every registered language must install side by side in any order
 must be updatable on its own (docs/DECK.md). The version-skew case is simulated: a later EN build with a changed field
 medium (a map), a changed template asset (the globe) and a changed capital, imported while
 the older DE package stays installed.
+
+The upgrade from the packages published before the locale codes (``COTW-EN.apkg``,
+``COTW-DE.apkg``: code ``en``/``de``, note types ``COTW (EN)``/``COTW (DE)``, tags ``COTW-EN::``/
+``COTW-DE::``) to the locale packages keeps every note, its note type and its review history.
+Those packages are rebuilt here from the frozen identities with the old public names
+(``LEGACY``); ``COTW_LEGACY_PACKAGES=<dir>`` runs the same test against real ones (a build of
+the last commit before the locale codes, or the published release assets).
 """
 
 from __future__ import annotations
 
 import copy
+import dataclasses
 import os
 import re
 import shutil
@@ -28,6 +36,14 @@ from cotw.paths import MEDIA  # noqa: E402
 EPOCH_V1 = 1_760_000_000
 EPOCH_V2 = EPOCH_V1 + 86_400 * 365  # a year later
 CHANGED_MAP = "cotw-217-map1-day.svg"
+EN, DE = languages.get("en-US"), languages.get("de-CH")
+
+# What the packages before the locale codes (v1.0.x) shipped per locale: the code (CSS class,
+# data-lang, file name), the note type name and the tag root. Identities and IDs are the same.
+LEGACY = {
+    "en-US": ("en", "COTW (EN)", "COTW-EN"),
+    "de-CH": ("de", "COTW (DE)", "COTW-DE"),
+}
 
 
 @pytest.fixture(scope="module")
@@ -130,39 +146,157 @@ def test_updating_one_language_leaves_the_other_intact(col, releases):
         _import(col, releases["v1"][code])
     media_dir = Path(col.media.dir())
     old_map = (media_dir / CHANGED_MAP).read_bytes()
-    old_de_assets = _template_assets(_cotw_notetypes(col)["COTW (DE)"])
+    old_de_assets = _template_assets(_cotw_notetypes(col)[DE.notetype])
 
-    log = _import(col, releases["v2"]["en"])
+    log = _import(col, releases["v2"][EN.code])
     assert len(log.updated) == 248 and not log.new
     _assert_consistent(col)
     nts = _cotw_notetypes(col)
 
     # EN moved on: new capital, new globe, its map under a new name with the new content.
-    ch_en = col.get_note(col.find_notes('"note:COTW (EN)" "Country:Switzerland"')[0])
+    ch_en = col.get_note(col.find_notes(f'"note:{EN.notetype}" "Country:Switzerland"')[0])
     assert ch_en["Capital 1"] == "Bern (v2)"
     new_src = re.search(r'src="([^"]+)"', ch_en["Map 1"]).group(1)
     assert new_src != CHANGED_MAP and b"v2" in (media_dir / new_src).read_bytes()
-    en_globe = {a for a in _template_assets(nts["COTW (EN)"]) if a.startswith("_cotw-globe-")}
+    en_globe = {a for a in _template_assets(nts[EN.notetype]) if a.startswith("_cotw-globe-")}
     assert en_globe and not en_globe & old_de_assets
     assert len(en_globe) == 3  # bootstrap and its matching deferred packets coexist independently
 
     # DE is untouched: old capital, old map bytes, old globe still there and referenced.
-    ch_de = col.get_note(col.find_notes('"note:COTW (DE)" "Land:Schweiz"')[0])
+    ch_de = col.get_note(col.find_notes(f'"note:{DE.notetype}" "Land:Schweiz"')[0])
     assert ch_de["Hauptstadt 1"] == "Bern"
     assert ch_de["Karte 1"] == build.map_field("217", "map1")  # both files, the old day map
     assert f'src="{CHANGED_MAP}"' in ch_de["Karte 1"]
     assert (media_dir / CHANGED_MAP).read_bytes() == old_map
-    assert _template_assets(nts["COTW (DE)"]) == old_de_assets
+    assert _template_assets(nts[DE.notetype]) == old_de_assets
     assert list(col.media.check().unused) == []
 
     # The others catch up later: all now share the one new map file; the old one is left over
     # and reported as unused by Check Media (a field medium, so Anki may clean it up).
     for code in languages.LANGUAGES:
-        if code != "en":
+        if code != EN.code:
             _import(col, releases["v2"][code])
     _assert_consistent(col)
-    ch_de = col.get_note(col.find_notes('"note:COTW (DE)" "Land:Schweiz"')[0])
+    ch_de = col.get_note(col.find_notes(f'"note:{DE.notetype}" "Land:Schweiz"')[0])
     assert re.search(r'src="([^"]+)"', ch_de["Karte 1"]).group(1) == new_src
     assert "cotw-217-map1-night.svg" in ch_de["Karte 1"]  # the unchanged night map keeps its name
     assert list(col.media.check().unused) == [CHANGED_MAP]
-    assert _template_assets(_cotw_notetypes(col)["COTW (DE)"]) == _template_assets(_cotw_notetypes(col)["COTW (EN)"])
+    assert _template_assets(_cotw_notetypes(col)[DE.notetype]) == _template_assets(_cotw_notetypes(col)[EN.notetype])
+
+
+# --- upgrade from the packages before the locale codes ----------------------------------------------
+
+
+def _legacy_entries(by_id: dict) -> dict:
+    """The entries with every locale's texts also under its old code (``de`` next to ``de-CH``)."""
+    out = copy.deepcopy(by_id)
+    for e in out.values():
+        maps = [e["name"], e.get("name_label"), e.get("formal_name"), e["wikipedia"]]
+        for texts in maps + [t for c in e["capitals"] for t in (c["name"], c.get("label"))]:
+            for code, (old, _, _) in LEGACY.items():
+                if texts and code in texts:
+                    texts[old] = texts[code]
+    return out
+
+
+@pytest.fixture(scope="module")
+def legacy(tmp_path_factory) -> dict[str, Path]:
+    """Per locale the package before the locale codes: real ones from ``COTW_LEGACY_PACKAGES``,
+    else rebuilt from the registry with the old code, note type name and tag root."""
+    real = os.environ.get("COTW_LEGACY_PACKAGES")
+    if real:
+        return {code: Path(real) / f"COTW-{old.upper()}.apkg" for code, (old, _, _) in LEGACY.items()}
+    root = tmp_path_factory.mktemp("legacy")
+    _, by_id = build.load_entries()
+    old_by_id = _legacy_entries(by_id)
+    out = {}
+    with pytest.MonkeyPatch.context() as mp:
+        for code, (old, notetype, tag_root) in LEGACY.items():
+            mp.setitem(languages.REGISTRY, old, dataclasses.replace(languages.get(code), code=old, notetype=notetype, tag_root=tag_root))
+        for code, (old, _, _) in LEGACY.items():
+            out[code] = build.build_package(old, list(old_by_id.values()), old_by_id, root, EPOCH_V1).path
+    assert sorted(p.name for p in out.values()) == ["COTW-DE.apkg", "COTW-EN.apkg"]
+    return out
+
+
+def _review(col, spec, n: int) -> None:
+    """Answer the first ``n`` new cards of the language's main deck: real review history."""
+    col.decks.select(col.decks.id_for_name(spec.deck))
+    for _ in range(n):
+        card = col.sched.getCard()
+        assert card is not None
+        col.sched.answerCard(card, 3)
+
+
+def _tag_roots(col) -> set[str]:
+    return {t.split("::", 1)[0] for t in col.tags.all() if t.startswith("COTW-")}
+
+
+def _filtered_deck(col, name: str, search: str) -> int:
+    deck = col.sched.get_or_create_filtered_deck(deck_id=0)
+    deck.name = name
+    del deck.config.search_terms[1:]  # no second filter
+    deck.config.search_terms[0].search = search
+    deck.config.search_terms[0].limit = 1000
+    return col.sched.add_or_update_filtered_deck(deck).id
+
+
+def test_upgrade_from_the_packages_before_the_locale_codes(col, legacy, releases):
+    for code in LEGACY:
+        log = _import(col, legacy[code])
+        assert len(log.new) == 248
+    old_names = {old_nt: languages.get(code).notetype_id for code, (_, old_nt, _) in LEGACY.items()}
+    assert {name: nt["id"] for name, nt in _cotw_notetypes(col).items()} == old_names
+    assert _tag_roots(col) == {root for _, _, root in LEGACY.values()}
+    for spec in (EN, DE):
+        _review(col, spec, 5)
+    # A filtered deck on the old tag root, built before the upgrade.
+    europe = _filtered_deck(col, "Europe", f'"tag:{LEGACY[EN.code][2]}::Europe::*"')
+    in_europe = set(col.find_cards(f"did:{europe}"))
+    assert len(in_europe) > 100
+    notes = {n: col.get_note(n).guid for n in col.find_notes("")}
+    cards = {c: (card.ivl, card.due, card.type, card.queue) for c in col.find_cards("") for card in [col.get_card(c)]}
+    revlog = col.db.all("SELECT id, cid, ease, ivl, type FROM revlog ORDER BY id")
+    assert len(revlog) == 10
+
+    # A later release of the locale packages (the release after the rename is always newer).
+    for code in LEGACY:
+        log = _import(col, releases["v2"][code])
+        assert not log.new and not log.conflicting and len(log.updated) == 248, code
+
+    # Same notes (GUIDs and note ids), same cards with their scheduling, the history kept.
+    assert {n: col.get_note(n).guid for n in col.find_notes("")} == notes
+    assert {c: (card.ivl, card.due, card.type, card.queue) for c in col.find_cards("") for card in [col.get_card(c)]} == cards
+    assert col.db.all("SELECT id, cid, ease, ivl, type FROM revlog ORDER BY id") == revlog
+    # Locales first published after the legacy packages install as their own notes.
+    for code in languages.LANGUAGES:
+        if code in LEGACY:
+            continue
+        log = _import(col, releases["v2"][code])
+        assert len(log.new) == 248 and not log.conflicting, code
+    # No second note type: the same IDs, now under the new names.
+    _assert_consistent(col)
+    assert {name: nt["id"] for name, nt in _cotw_notetypes(col).items()} == {
+        languages.get(code).notetype: languages.get(code).notetype_id for code in languages.LANGUAGES
+    }
+    # Observed tag behaviour (docs/DECK.md, Tags): the import replaces a note's tags with the
+    # package's. The old roots tag no note any more, their names stay in the tag list (unused)
+    # until Check Database or "Clear Unused Tags".
+    for code, (_, _, old_root) in LEGACY.items():
+        spec = languages.get(code)
+        assert col.find_notes(f'"tag:{old_root}::*"') == []
+        assert len(col.find_notes(f'"tag:{spec.tag_root}::*"')) == 248
+        assert all(t.startswith(spec.tag_root + "::") for n in col.find_notes(f'"note:{spec.notetype}"') for t in col.get_note(n).tags)
+    current_roots = {languages.get(code).tag_root for code in languages.LANGUAGES}
+    assert _tag_roots(col) == {root for _, _, root in LEGACY.values()} | current_roots
+    col.tags.clear_unused_tags()
+    assert _tag_roots(col) == current_roots
+    # The filtered deck keeps its cards until it is rebuilt; then its old search finds nothing,
+    # and the new root finds the same cards again.
+    assert set(col.find_cards(f"did:{europe}")) == in_europe
+    assert col.sched.rebuild_filtered_deck(europe).count == 0
+    deck = col.sched.get_or_create_filtered_deck(deck_id=europe)
+    deck.config.search_terms[0].search = f'"tag:{EN.tag_root}::Europe::*"'
+    col.sched.add_or_update_filtered_deck(deck)
+    assert set(col.find_cards(f"did:{europe}")) == in_europe
+    assert col.db.all("SELECT id, cid, ease, ivl, type FROM revlog ORDER BY id") == revlog

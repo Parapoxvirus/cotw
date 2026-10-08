@@ -4,15 +4,21 @@ iso3: MLI
 wikidata: Q912
 status: sovereign
 name:
-  en: Mali
-  de: Mali
+  en-US: Mali
+  de-CH: Mali
+  pl-PL: Mali
+  pt-BR: Mali
 formal_name:
-  en: The Republic of Mali
-  de: Republik Mali
+  en-US: The Republic of Mali
+  de-CH: Republik Mali
+  pl-PL: Republika Mali
+  pt-BR: República do Mali
 capitals:
 - name:
-    en: Bamako
-    de: Bamako
+    en-US: Bamako
+    de-CH: Bamako
+    pl-PL: Bamako
+    pt-BR: Bamako
   role: capital
   wikidata: Q3703
   lat: 12.64583
@@ -30,5 +36,7 @@ regions:
 - Sub-Saharan Africa
 - Western Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Mali
-  de: https://de.wikipedia.org/wiki/Mali
+  en-US: https://en.wikipedia.org/wiki/Mali
+  de-CH: https://de.wikipedia.org/wiki/Mali
+  pl-PL: https://pl.wikipedia.org/wiki/Mali
+  pt-BR: https://pt.wikipedia.org/wiki/Mali

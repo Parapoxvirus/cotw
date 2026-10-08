@@ -4,15 +4,21 @@ iso3: BGR
 wikidata: Q219
 status: sovereign
 name:
-  en: Bulgaria
-  de: Bulgarien
+  en-US: Bulgaria
+  de-CH: Bulgarien
+  pl-PL: Bułgaria
+  pt-BR: Bulgária
 formal_name:
-  en: The Republic of Bulgaria
-  de: Republik Bulgarien
+  en-US: The Republic of Bulgaria
+  de-CH: Republik Bulgarien
+  pl-PL: Republika Bułgarii
+  pt-BR: República da Bulgária
 capitals:
 - name:
-    en: Sofia
-    de: Sofia
+    en-US: Sofia
+    de-CH: Sofia
+    pl-PL: Sofia
+    pt-BR: Sófia
   role: capital
   wikidata: Q472
   lat: 42.69789
@@ -27,5 +33,7 @@ regions:
 - Europe
 - Eastern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Bulgaria
-  de: https://de.wikipedia.org/wiki/Bulgarien
+  en-US: https://en.wikipedia.org/wiki/Bulgaria
+  de-CH: https://de.wikipedia.org/wiki/Bulgarien
+  pl-PL: https://pl.wikipedia.org/wiki/Bułgaria
+  pt-BR: https://pt.wikipedia.org/wiki/Bulgária

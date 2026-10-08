@@ -4,15 +4,21 @@ iso3: ARM
 wikidata: Q399
 status: sovereign
 name:
-  en: Armenia
-  de: Armenien
+  en-US: Armenia
+  de-CH: Armenien
+  pl-PL: Armenia
+  pt-BR: Armênia
 formal_name:
-  en: The Republic of Armenia
-  de: Republik Armenien
+  en-US: The Republic of Armenia
+  de-CH: Republik Armenien
+  pl-PL: Republika Armenii
+  pt-BR: República da Armênia
 capitals:
 - name:
-    en: Yerevan
-    de: Jerewan
+    en-US: Yerevan
+    de-CH: Jerewan
+    pl-PL: Erywań
+    pt-BR: Ierevan
   role: capital
   wikidata: Q1953
   lat: 40.18139
@@ -26,5 +32,7 @@ regions:
 - Asia
 - Western Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Armenia
-  de: https://de.wikipedia.org/wiki/Armenien
+  en-US: https://en.wikipedia.org/wiki/Armenia
+  de-CH: https://de.wikipedia.org/wiki/Armenien
+  pl-PL: https://pl.wikipedia.org/wiki/Armenia
+  pt-BR: https://pt.wikipedia.org/wiki/Arménia

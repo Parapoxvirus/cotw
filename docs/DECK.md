@@ -1,20 +1,23 @@
 # Deck build
 
-`python -m cotw build-deck` builds one Anki package per registered language from the database:
+`python -m cotw build-deck` builds one Anki package per registered language from the database.
+A language is a full BCP 47 locale (`en-US`, `de-CH`): its code names the package, the tag root
+and the note type.
 
 ```bash
-.venv/bin/python -m cotw build-deck            # build/COTW-<LANG>.apkg for every language (today EN, DE) + build/deck-preview.html
-.venv/bin/python -m cotw build-deck --lang de  # one language only
+.venv/bin/python -m cotw build-deck               # build/COTW-<LOCALE>.apkg for every locale (today en-US, de-CH, pl-PL, pt-BR) + build/deck-preview.html
+.venv/bin/python -m cotw build-deck --lang de-CH  # one locale only
 .venv/bin/python -m cotw build-deck --only RU,KR,ZA,CW,CH,VA,SJ,KI,BO,ID --out build/rc2   # test package
 ```
 
 The packages are designed to be installed **side by side in the same collection**, in any
 order, and each can be updated on its own later (DECISIONS 14). There is no combined
-multi-language package any more. Code: `tools/cotw/languages/` (one module per language:
-identities, names, UI and help texts, region names, the AnkiWeb link), `tools/cotw/deck/`
+multi-language package any more. Code: `tools/cotw/languages/` (one module per locale:
+identities, names, UI and help texts, region names), `tools/cotw/deck/`
 (`lang.py` the language-neutral field keys and card types, `cards/` the card templates as
 Jinja2 sources rendered by `templates.py`, `style.css`, `build.py` package writer and preview).
-Settings that change without a code change (contact, public repository URL): `data/deck.yaml`.
+The public repository URL used for information, contact and error reports can change without a
+code change in `data/deck.yaml`.
 
 The card templates are what users see in Anki's card-template editor, so the sources in
 `cards/` are written as the indented, commented HTML they render to. Jinja runs with `[[ ]]` /
@@ -26,17 +29,17 @@ pixel-diff the deck preview (`deck-preview.html`) before and after it.
 
 ## What is in a package
 
-One package per registered language; EN and DE as the examples:
+One package per registered locale:
 
-| | EN | DE |
-|---|---|---|
-| File | `COTW-EN.apkg` | `COTW-DE.apkg` |
-| Main deck | `Countries of the World` | `Länder der Welt` |
-| Subdeck | `Countries of the World::Extras` | `Länder der Welt::Extras` |
-| Note type | `COTW (EN)` | `COTW (DE)` |
-| Notes / cards | 248 / 2318 | 248 / 2318 |
-| Media | 1240 field media (flag + 2 maps × day/night per entry) + 27 template assets | the same files, byte-identical |
-| Size | ≈ 8.5 MB (rc1: 5.6 MB; the night maps add ~2.9 MB) | ≈ 8.5 MB |
+| | en-US | de-CH | pl-PL | pt-BR |
+|---|---|---|---|---|
+| File | `COTW-EN-US.apkg` | `COTW-DE-CH.apkg` | `COTW-PL-PL.apkg` | `COTW-PT-BR.apkg` |
+| Main deck | `Countries of the World` | `Länder der Welt` | `Kraje świata` | `Países do Mundo` |
+| Subdeck | `Countries of the World::Extras` | `Länder der Welt::Extras` | `Kraje świata::Dodatkowe` | `Países do Mundo::Extras` |
+| Note type | `COTW (EN-US)` | `COTW (DE-CH)` | `COTW (PL-PL)` | `COTW (PT-BR)` |
+| Notes / cards | 248 / 2318 | 248 / 2318 | 248 / 2318 | 248 / 2318 |
+| Media | 1240 field media (flag + 2 maps × day/night per entry) + 27 template assets | the same files, byte-identical | the same files, byte-identical | the same files, byte-identical |
+| Size | ≈ 8.5 MB (rc1: 5.6 MB; the night maps add ~2.9 MB) | ≈ 8.5 MB | ≈ 8.5 MB | ≈ 8.5 MB |
 
 2318 cards = 248 × 10 minus the two border card types of the 81 entries without land borders
 (their front renders empty, so Anki creates no card).
@@ -46,62 +49,112 @@ One package per registered language; EN and DE as the examples:
 Every identity is a fixed constant or a pure derivation, never random, and differs per
 language, so nothing one language's package installs can collide with another's.
 
-| What | EN | DE | Rule |
-|---|---|---|---|
-| Note type ID | `1829704095` | `1123558981` | frozen constants in `languages/<code>.py` |
-| Main deck ID | `1866953617` | `2041372721` | 〃 |
-| Extras deck ID | `1918702087` | `1539901401` | 〃 |
-| Note GUID | `guid_for("cotw", "en", id)` | `guid_for("cotw", "de", id)` | genanki's `guid_for` (SHA-256, base91) of COTW ID + language (DECISIONS 14); Switzerland: `C,F0URhk8F` / `B+v1yB?A&S` (pinned in a test) |
-| Card template names | `01 Country → Capital` … | `01 Land → Hauptstadt` … | see below |
-| Tags | `COTW-EN::…` | `COTW-DE::…` | one root per language |
-| CSS | one stylesheet per note type | the same stylesheet | Anki applies CSS per note type; every class carries the `cotw-` prefix, the root also `cotw-en` / `cotw-de` |
-| Note / card row IDs | build time × 1000 + 0 … | build time × 1000 + 50 000 … | `id_offset`: build time × 1000 + offset; Anki re-keys colliding row IDs anyway, matching uses the GUID |
+| What | en-US | de-CH | pl-PL | pt-BR | Rule |
+|---|---|---|---|---|---|
+| Identity | `en` | `de` | `pl-PL` | `pt-BR` | `identity` in the module: the frozen input of the GUIDs and IDs below. The locale's code for every new locale; en-US and de-CH keep the codes they were published with before locales had a region (v1.0.x) |
+| Note type ID | `1829704095` | `1123558981` | `2128848329` | `1906050354` | frozen constants in `languages/<module>.py` |
+| Main deck ID | `1866953617` | `2041372721` | `2050014339` | `2081751341` | 〃 |
+| Extras deck ID | `1918702087` | `1539901401` | `1596502066` | `1425183924` | 〃 |
+| Note GUID | `guid_for("cotw", "en", id)` | `guid_for("cotw", "de", id)` | `guid_for("cotw", "pl-PL", id)` | `guid_for("cotw", "pt-BR", id)` | genanki's `guid_for` (SHA-256, base91) of COTW ID + identity (DECISIONS 14) |
+| Card template names | `01 Country → Capital` … | `01 Land → Hauptstadt` … | `01 Kraj → Stolica` … | `01 País → Capital` … | see below |
+| Tags | `COTW-EN-US::…` | `COTW-DE-CH::…` | `COTW-PL-PL::…` | `COTW-PT-BR::…` | one root per locale |
+| CSS | one stylesheet per note type | the same stylesheet | the same stylesheet | the same stylesheet | Anki applies CSS per note type; every class carries the `cotw-` prefix, and the root carries the locale code |
+| Note / card row IDs | build time × 1000 + 0 … | build time × 1000 + 50 000 … | build time × 1000 + 100 000 … | build time × 1000 + 150 000 … | `id_offset`: build time × 1000 + offset; Anki re-keys colliding row IDs anyway, matching uses the GUID |
 
 The constants were derived once as
-`(int.from_bytes(sha256(f"cotw:{lang}:{kind}").digest()[:4], "big") >> 1) | 1 << 30` for
+`(int.from_bytes(sha256(f"cotw:{identity}:{kind}").digest()[:4], "big") >> 1) | 1 << 30` for
 `kind` = `notetype`, `deck`, `deck-extras` (`languages.derive_id`); a test recomputes them.
-**Never change them**: Anki matches note types by ID and notes by GUID, so a new value would
-install a second note type or a second copy of every note in every user's collection.
+**Never change them, nor the identity**: Anki matches note types by ID and notes by GUID, so a
+new value would install a second note type or a second copy of every note in every user's
+collection. The names are not identities: the note type names, tag roots and package files
+changed from `COTW (EN)`, `COTW-EN::`, `COTW-EN.apkg` (v1.0.x) to the locale codes, and an
+update keeps every note, its cards and its review history (`tests/test_deck_import.py`; see
+*Tags* below for what changes for the user).
+
+The golden fixture [`tests/fixtures/identities.json`](../tests/fixtures/identities.json)
+freezes the full COTW ID → note GUID map and the notetype, deck, extras-deck IDs and
+row-ID offset for each published identity (`en`, `de`, `pl-PL` and `pt-BR`). The en/de rows were
+generated from a `main` build and cross-checked against the published v1.0.3 packages; new
+identity rows are appended from verified release-candidate builds. The regression
+test reads every identity from the SQLite collection inside each built `.apkg` and
+compares the full maps, including missing or extra entries.
+
+**The fixture is append-only.** Append a new entry when adding a country or published
+identity; never change or remove an existing row. Do not regenerate the fixture to
+make a failing test pass. A locale-code refactor changes the test's module-to-identity
+lookup, never these frozen values.
 
 ### A new language
 
-A language is one module, `tools/cotw/languages/<code>.py` (ISO 639-1 code), exporting
-`LANGUAGE`; the registry finds it without a list to maintain. The base language `en` comes
-first, the others follow by code, and every command, the build order and the globe's names
-follow the registry. Copy `en.py` and translate it; then:
+A language is a BCP 47 locale (`pl-PL`, `pt-BR`) and takes three things, nothing else:
 
-- **IDs:** write `derive_id(code, "notetype")`, `derive_id(code, "deck")` and
-  `derive_id(code, "deck-extras")` into the module as constants (computed once, never at build
-  time). From the first release on they are frozen.
-- **`id_offset`:** the next free multiple of 50 000 (EN 0, DE 50 000, the next language
-  100 000). A test checks that IDs, offsets, tag roots, note type and deck names are unique.
-- **Names:** note type `COTW (<CODE>)`, tag root `COTW-<CODE>`, deck and subdeck in the
-  language; `regions` names every M49 region of `data/tags.txt`; `object_form` gives the
-  sovereign's form after *dependency of …* (a test pins it for every parent).
-- **`ankiweb`:** the language's AnkiWeb listing, once it exists; until then (`None`) the help
-  links the EN listing.
-- **Data:** `name.<code>` for every entry and every capital (`python -m cotw validate`
-  requires them), `wikipedia.<code>` from the sitelinks (`python -m cotw fetch-wikipedia`).
+1. **Its entry in [`data/locales.yaml`](../data/locales.yaml)** (if it is not listed yet): the
+   tag in canonical case, its Wikipedia (`wiki` site ID, `wikipedia` article URL prefix) and its
+   Wikidata label languages in fallback order (`wikidata: [pt-br, pt]`). The sources come from
+   here: the Wikipedia links, the sitelinks, the Wikidata labels in the caches (the first value
+   along the chain) and the names monitor. The registry rejects a module whose code is not
+   listed.
+2. **One module**, `tools/cotw/languages/<module>.py`, exporting `LANGUAGE`. The file name is
+   the code in lower case with `_` for `-` (`pt-BR` → `pt_br.py`); the registry rejects any
+   other name and finds the module without a list to maintain. The base locale `en-US` comes
+   first, the others follow by code, and every command, the build order and the globe's names
+   follow the registry. Copy `en_us.py` and translate it, or derive a variant from a sister
+   module with `dataclasses.replace(sister.LANGUAGE, code=…, identity=…, notetype_id=…, …)`
+   (its own IDs, names and deck names; texts that differ overridden); then:
+   - **`code` and `identity`:** the tag (`"pt-BR"`), and `identity` the same value. Only en-US
+     and de-CH keep a legacy identity (`en`, `de`); a test requires `identity == code` for
+     every other locale and unique identities, so no locale ever reuses another's GUIDs.
+   - **IDs:** write `derive_id(identity, "notetype")`, `derive_id(identity, "deck")` and
+     `derive_id(identity, "deck-extras")` into the module as constants (computed once, never at
+     build time). From the first release on they are frozen.
+   - **`id_offset`:** the next free multiple of 50 000 (en-US 0, de-CH 50 000, pl-PL 100 000,
+     pt-BR 150 000; the next locale is 200 000). A test checks that identities, IDs, offsets,
+     tag roots, note type and deck names are unique: a sister locale (`de-DE` next to `de-CH`)
+     needs its own deck name.
+   - **Names:** note type `COTW (<CODE>)`, tag root `COTW-<CODE>` (`COTW (PT-BR)`,
+     `COTW-PT-BR`), deck and subdeck in the language; `regions` names every M49 region of
+     `data/tags.txt`; `object_form` gives the sovereign's form after *dependency of …* (a test
+     pins it for every parent).
+   - **Help and description links:** translate the link text, but keep the `{repository}` and
+     `{issues}` placeholders. Both are derived from `data/deck.yaml.repository`.
+3. **The names in the data:** `name.<code>` for every entry and every capital
+   (`python -m cotw validate` requires them, and the optional maps wherever the others have
+   them), `wikipedia.<code>` from the sitelinks (`python -m cotw fetch-wikipedia`), the
+   Wikidata caches with `python -m cotw fetch-wikidata`. The checklist for the names and their
+   sources: [`TRANSLATING.md`](TRANSLATING.md#adding-a-language-checklist).
 
-`build-deck` then builds `COTW-<CODE>.apkg` as well. To show that a code change leaves the
-existing packages untouched, build before and after with the same `SOURCE_DATE_EPOCH` and
-compare: `python tools/compare_packages.py build/before build/after` (package hash, zip
+`tests/test_languages.py` registers a test locale `xx-XX` exactly this way (module, list entry,
+names) and shows that validation and the build pick it up.
+
+`build-deck` then builds `COTW-<CODE>.apkg` as well (for example `COTW-FR-FR.apkg`). To show that a
+code change leaves the existing packages untouched, build before and after with the same
+`SOURCE_DATE_EPOCH` and compare: `python tools/compare_packages.py build/before build/after` (package hash, zip
 members, media, notes, note types, decks, cards; `--normalize-assets` when a template asset
-changed on purpose).
+changed on purpose, `--pair OLD=NEW` for a renamed package such as
+`--pair COTW-EN.apkg=COTW-EN-US.apkg`). A differing table is detailed by its key: the columns
+that differ and the distinct replacements.
 
 ### Tags
 
 `<root>::<M49 region path>` plus `<root>::Status::<status>`, spaces as `-`:
 
-| EN | DE |
+| en-US | de-CH |
 |---|---|
-| `COTW-EN::Europe::Western-Europe` | `COTW-DE::Europa::Westeuropa` |
-| `COTW-EN::Africa::Sub-Saharan-Africa::Southern-Africa` | `COTW-DE::Afrika::Subsahara-Afrika::Südliches-Afrika` |
-| `COTW-EN::Status::Sovereign` / `Dependency` / `Disputed` | `COTW-DE::Status::Souverän` / `Abhängiges-Gebiet` / `Umstritten` |
+| `COTW-EN-US::Europe::Western-Europe` | `COTW-DE-CH::Europa::Westeuropa` |
+| `COTW-EN-US::Africa::Sub-Saharan-Africa::Southern-Africa` | `COTW-DE-CH::Afrika::Subsahara-Afrika::Südliches-Afrika` |
+| `COTW-EN-US::Status::Sovereign` / `Dependency` / `Disputed` | `COTW-DE-CH::Status::Souverän` / `Abhängiges-Gebiet` / `Umstritten` |
 
-A search for `tag:COTW-EN::Europe` or a filtered deck on it never pulls DE cards. The region
-names of each language live in its module (`regions`); a test checks that every region of the
-taxonomy has one in every language.
+A search for `tag:COTW-EN-US::Europe` or a filtered deck on it never pulls DE-CH cards. The
+region names of each language live in its module (`regions`); a test checks that every region
+of the taxonomy has one in every language.
+
+Up to v1.0.x the roots were `COTW-EN::` and `COTW-DE::`. Updating to a package with the locale
+roots replaces each note's tags with the new ones (Anki's import of a newer note; observed and
+asserted in `tests/test_deck_import.py`): no note keeps an old tag, so a saved search or a
+filtered deck on `COTW-EN::…`/`COTW-DE::…` finds nothing any more. A filtered deck keeps its
+cards until it is rebuilt; its search needs the new root (`COTW-EN-US::…`, `COTW-DE-CH::…`).
+The old tag names stay in the browser's tag list, unused, until *Check Database* or *Clear
+Unused Tags*. Notes, cards, scheduling and review history are kept.
 
 ## Fields
 
@@ -121,7 +174,7 @@ sort field.
 | 13, 14 | Map 1, Map 2 | Karte 1, Karte 2 | Map 1, Map 2 | both files of the map: `<img class="cotw-day" src="cotw-<id>-map1-day.svg"><img class="cotw-night" src="cotw-<id>-map1-night.svg">`, the same for map 2 (see *Night mode*) |
 | 15 | Locator | Locator | Globe | the COTW ID ([`GLOBE.md`](GLOBE.md)) |
 | 16 | Borders | Nachbarländer | Borders | neighbors in that language, sorted by name, each with its flag (v3: flag + ISO code) |
-| 17 | Wikipedia | Wikipedia | EN Wiki URL | `wikipedia.<lang>`; falls back to EN where the language's Wikipedia has no article (DE: only Svalbard and Jan Mayen) |
+| 17 | Wikipedia | Wikipedia | EN Wiki URL | `wikipedia.<locale>`; falls back to the base locale's (en-US) where the locale's Wikipedia has no article (de-CH: only Svalbard and Jan Mayen) |
 | 18 | Dependency Of | Abhängig von | (EN/DE Country Label) | the sovereign as it reads in *dependency of …* / *abhängiges Gebiet von …*: `the United Kingdom`, `dem Vereinigten Königreich` (`object_form` of the language); empty unless `status: dependency` |
 | 19 | Status | Status | (tag only) | `status disputed` / `Status umstritten` for disputed entries, else empty |
 
@@ -170,9 +223,9 @@ help section.
   pixel diff of all 10 card types (front, help, back with full info) in EN/DE, day/night, for
   Switzerland and Greenland: identical to the one-line templates of 1.0.1.
 - **Help** per language (EN adapted from v3, DE written in German; it also explains the
-  light-blue economic zone and the 12 nm line on the maps), with the language's AnkiWeb page
-  (`ankiweb` in its module, the EN page while it has none) and the contact `info@feldbuch.com`
-  from `data/deck.yaml`.
+  light-blue economic zone and the 12 nm line on the maps), with repository-based information
+  and contact plus its issue tracker for error reports. The links come from
+  `data/deck.yaml.repository`.
 - **Night mode follows Anki only:** its `.nightMode` class (desktop, AnkiMobile) or
   `.night_mode` (AnkiDroid, older clients) on the card, body or html. The system color scheme
   is ignored: with Anki set to light and the OS dark, the cards stayed dark in rc1. No
@@ -256,7 +309,11 @@ So:
 
 `tests/test_deck_import.py` proves all of this with the real `anki` package for every
 registered language: both import orders, a repeated import, and a simulated later EN release (changed map, changed globe,
-changed capital) imported next to the old DE package and then followed by the DE update.
+changed capital) imported next to the old DE package and then followed by the DE update. It
+also updates the packages from before the locale codes (`COTW-EN.apkg`, `COTW-DE.apkg`, with
+review history and a filtered deck on the old tags) to the locale packages: no duplicate note,
+no second note type, the review history and the scheduling unchanged (see *Tags*).
+`COTW_LEGACY_PACKAGES=<dir>` runs it against real old packages instead of the rebuilt ones.
 
 Two rules follow for later releases:
 
@@ -302,5 +359,5 @@ deterministic zip.
 Switzerland, Greenland (dependency), South Africa and Bolivia (several capitals) and Vatican
 City, in every registered language, with the real CSS, media and globe. It uses the same template
 renderer as the tests. Query parameters narrow it down:
-`?lang=de&ids=217&side=back&mode=night&types=01,05&open=info,help&w=380`. Serve the `build/`
+`?lang=de-CH&ids=217&side=back&mode=night&types=01,05&open=info,help&w=380`. Serve the `build/`
 directory over HTTP (`python3 -m http.server -d build`) so the globe script loads.

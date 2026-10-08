@@ -4,15 +4,21 @@ iso3: UGA
 wikidata: Q1036
 status: sovereign
 name:
-  en: Uganda
-  de: Uganda
+  en-US: Uganda
+  de-CH: Uganda
+  pl-PL: Uganda
+  pt-BR: Uganda
 formal_name:
-  en: The Republic of Uganda
-  de: Republik Uganda
+  en-US: The Republic of Uganda
+  de-CH: Republik Uganda
+  pl-PL: Republika Ugandy
+  pt-BR: República de Uganda
 capitals:
 - name:
-    en: Kampala
-    de: Kampala
+    en-US: Kampala
+    de-CH: Kampala
+    pl-PL: Kampala
+    pt-BR: Kampala
   role: capital
   wikidata: Q3894
   lat: 0.31361
@@ -28,5 +34,7 @@ regions:
 - Sub-Saharan Africa
 - Eastern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Uganda
-  de: https://de.wikipedia.org/wiki/Uganda
+  en-US: https://en.wikipedia.org/wiki/Uganda
+  de-CH: https://de.wikipedia.org/wiki/Uganda
+  pl-PL: https://pl.wikipedia.org/wiki/Uganda
+  pt-BR: https://pt.wikipedia.org/wiki/Uganda

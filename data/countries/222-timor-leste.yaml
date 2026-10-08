@@ -4,15 +4,21 @@ iso3: TLS
 wikidata: Q574
 status: sovereign
 name:
-  en: Timor-Leste / East Timor
-  de: Timor-Leste / Osttimor
+  en-US: Timor-Leste / East Timor
+  de-CH: Timor-Leste / Osttimor
+  pl-PL: Timor Wschodni
+  pt-BR: Timor-Leste
 formal_name:
-  en: The Democratic Republic of Timor-Leste
-  de: Demokratische Republik Timor-Leste
+  en-US: The Democratic Republic of Timor-Leste
+  de-CH: Demokratische Republik Timor-Leste
+  pl-PL: Demokratyczna Republika Timoru Wschodniego
+  pt-BR: República Democrática de Timor-Leste
 capitals:
 - name:
-    en: Dili
-    de: Dili
+    en-US: Dili
+    de-CH: Dili
+    pl-PL: Dili
+    pt-BR: Díli
   role: capital
   wikidata: Q9310
   lat: -8.55361
@@ -23,5 +29,7 @@ regions:
 - Asia
 - South-eastern Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Timor-Leste
-  de: https://de.wikipedia.org/wiki/Osttimor
+  en-US: https://en.wikipedia.org/wiki/Timor-Leste
+  de-CH: https://de.wikipedia.org/wiki/Osttimor
+  pl-PL: https://pl.wikipedia.org/wiki/Timor_Wschodni
+  pt-BR: https://pt.wikipedia.org/wiki/Timor-Leste

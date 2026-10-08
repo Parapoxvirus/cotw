@@ -5,12 +5,16 @@ wikidata: Q23635
 status: dependency
 dependency_of: '235'
 name:
-  en: Bermuda
-  de: Bermuda
+  en-US: Bermuda
+  de-CH: Bermuda
+  pl-PL: Bermudy
+  pt-BR: Bermudas
 capitals:
 - name:
-    en: Hamilton
-    de: Hamilton
+    en-US: Hamilton
+    de-CH: Hamilton
+    pl-PL: Hamilton
+    pt-BR: Hamilton
   role: capital
   wikidata: Q30985
   lat: 32.295
@@ -20,5 +24,7 @@ regions:
 - Americas
 - Northern America
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Bermuda
-  de: https://de.wikipedia.org/wiki/Bermuda
+  en-US: https://en.wikipedia.org/wiki/Bermuda
+  de-CH: https://de.wikipedia.org/wiki/Bermuda
+  pl-PL: https://pl.wikipedia.org/wiki/Bermudy
+  pt-BR: https://pt.wikipedia.org/wiki/Bermudas

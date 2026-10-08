@@ -5,12 +5,16 @@ wikidata: Q17070
 status: dependency
 dependency_of: '076'
 name:
-  en: Réunion
-  de: Réunion
+  en-US: Réunion
+  de-CH: Réunion
+  pl-PL: Reunion
+  pt-BR: Reunião
 capitals:
 - name:
-    en: Saint-Denis
-    de: Saint-Denis
+    en-US: Saint-Denis
+    de-CH: Saint-Denis
+    pl-PL: Saint-Denis
+    pt-BR: Saint-Denis
   role: capital
   wikidata: Q47045
   lat: -20.87889
@@ -21,5 +25,7 @@ regions:
 - Sub-Saharan Africa
 - Eastern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Réunion
-  de: https://de.wikipedia.org/wiki/Réunion
+  en-US: https://en.wikipedia.org/wiki/Réunion
+  de-CH: https://de.wikipedia.org/wiki/Réunion
+  pl-PL: https://pl.wikipedia.org/wiki/Reunion
+  pt-BR: https://pt.wikipedia.org/wiki/Reunião_(departamento)

@@ -4,15 +4,21 @@ iso3: BDI
 wikidata: Q967
 status: sovereign
 name:
-  en: Burundi
-  de: Burundi
+  en-US: Burundi
+  de-CH: Burundi
+  pl-PL: Burundi
+  pt-BR: Burundi
 formal_name:
-  en: The Republic of Burundi
-  de: Republik Burundi
+  en-US: The Republic of Burundi
+  de-CH: Republik Burundi
+  pl-PL: Republika Burundi
+  pt-BR: República do Burundi
 capitals:
 - name:
-    en: Gitega
-    de: Gitega
+    en-US: Gitega
+    de-CH: Gitega
+    pl-PL: Gitega
+    pt-BR: Gitega
   role: capital
   wikidata: Q167551
   lat: -3.42833
@@ -26,5 +32,7 @@ regions:
 - Sub-Saharan Africa
 - Eastern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Burundi
-  de: https://de.wikipedia.org/wiki/Burundi
+  en-US: https://en.wikipedia.org/wiki/Burundi
+  de-CH: https://de.wikipedia.org/wiki/Burundi
+  pl-PL: https://pl.wikipedia.org/wiki/Burundi
+  pt-BR: https://pt.wikipedia.org/wiki/Burundi

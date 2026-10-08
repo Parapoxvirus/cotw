@@ -4,15 +4,21 @@ iso3: DMA
 wikidata: Q784
 status: sovereign
 name:
-  en: Dominica
-  de: Dominica
+  en-US: Dominica
+  de-CH: Dominica
+  pl-PL: Dominika
+  pt-BR: Dominica
 formal_name:
-  en: The Commonwealth of Dominica
-  de: Commonwealth Dominica
+  en-US: The Commonwealth of Dominica
+  de-CH: Commonwealth Dominica
+  pl-PL: Wspólnota Dominiki
+  pt-BR: Comunidade da Dominica
 capitals:
 - name:
-    en: Roseau
-    de: Roseau
+    en-US: Roseau
+    de-CH: Roseau
+    pl-PL: Roseau
+    pt-BR: Roseau
   role: capital
   wikidata: Q36281
   lat: 15.3
@@ -23,5 +29,7 @@ regions:
 - Latin America and the Caribbean
 - Caribbean
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Dominica
-  de: https://de.wikipedia.org/wiki/Dominica
+  en-US: https://en.wikipedia.org/wiki/Dominica
+  de-CH: https://de.wikipedia.org/wiki/Dominica
+  pl-PL: https://pl.wikipedia.org/wiki/Dominika
+  pt-BR: https://pt.wikipedia.org/wiki/Dominica

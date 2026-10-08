@@ -4,15 +4,21 @@ iso3: TTO
 wikidata: Q754
 status: sovereign
 name:
-  en: Trinidad and Tobago
-  de: Trinidad und Tobago
+  en-US: Trinidad and Tobago
+  de-CH: Trinidad und Tobago
+  pl-PL: Trynidad i Tobago
+  pt-BR: Trinidad e Tobago
 formal_name:
-  en: The Republic of Trinidad and Tobago
-  de: Republik Trinidad und Tobago
+  en-US: The Republic of Trinidad and Tobago
+  de-CH: Republik Trinidad und Tobago
+  pl-PL: Republika Trynidadu i Tobago
+  pt-BR: República de Trinidad e Tobago
 capitals:
 - name:
-    en: Port of Spain
-    de: Port of Spain
+    en-US: Port of Spain
+    de-CH: Port of Spain
+    pl-PL: Port-of-Spain
+    pt-BR: Port of Spain
   role: capital
   wikidata: Q39178
   lat: 10.66667
@@ -23,5 +29,7 @@ regions:
 - Latin America and the Caribbean
 - Caribbean
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Trinidad_and_Tobago
-  de: https://de.wikipedia.org/wiki/Trinidad_und_Tobago
+  en-US: https://en.wikipedia.org/wiki/Trinidad_and_Tobago
+  de-CH: https://de.wikipedia.org/wiki/Trinidad_und_Tobago
+  pl-PL: https://pl.wikipedia.org/wiki/Trynidad_i_Tobago
+  pt-BR: https://pt.wikipedia.org/wiki/Trindade_e_Tobago

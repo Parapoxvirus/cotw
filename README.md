@@ -1,7 +1,7 @@
 # Countries of the World (COTW)
 
 Anki flashcards for every country and territory of the world: capitals, flags, vector maps
-and an interactive globe, in English and German.
+and an interactive globe, in English, German, Polish and Brazilian Portuguese.
 
 - **248 entries:** 195 sovereign states, 49 dependent territories (Greenland, Puerto Rico,
   Åland, …) and 4 disputed areas (Kosovo, Palestine, Taiwan, Western Sahara).
@@ -14,10 +14,10 @@ and an interactive globe, in English and German.
   its name.
 - **Full info on the back:** formal name, ISO codes, region, neighbors and a Wikipedia link.
 - **Day and night mode**, following Anki's setting.
-- **Tags by region and status** (`COTW-EN::Europe::Western-Europe`, `COTW-EN::Status::Dependency`,
-  …) for filtered decks, e.g. only Africa.
-- **English and German side by side:** install one package or both; they share the media and
-  never touch each other's cards.
+- **Tags by region and status** (`COTW-EN-US::Europe::Western-Europe`,
+  `COTW-EN-US::Status::Dependency`, …) for filtered decks, e.g. only Africa.
+- **English, German, Polish and Brazilian Portuguese side by side:** install one package or
+  several; they share the media and never touch each other's cards.
 - **Up to date:** the data comes from Wikidata and is checked for changes every week.
 - **Public domain** ([CC0 1.0](LICENSE)), free to use, share and adapt.
 
@@ -33,13 +33,18 @@ Every shot in English and German, day and night, including the Map → Country f
 
 ## Install
 
-- **AnkiWeb:** [English](https://ankiweb.net/shared/info/1365662043) · [Deutsch](https://ankiweb.net/shared/info/1416521286)
-- **Or download** `COTW-EN.apkg` / `COTW-DE.apkg` from the
-  [latest release](https://github.com/Parapoxvirus/cotw/releases/latest) and open it in Anki
-  (*File → Import*).
+- **AnkiWeb:** [English](https://ankiweb.net/shared/info/1365662043) only. All other locales
+  are available as `.apkg` files from the release page.
+- **Or download** `COTW-EN-US.apkg` / `COTW-DE-CH.apkg` / `COTW-PL-PL.apkg` /
+  `COTW-PT-BR.apkg` (up to v1.0.x
+  `COTW-EN.apkg` / `COTW-DE.apkg`) from the [latest release](https://github.com/Parapoxvirus/cotw/releases/latest)
+  and open it in Anki (*File → Import*). Updating from v1.0.x keeps your notes and review
+  history; the tags start with `COTW-EN-US::` / `COTW-DE-CH::` instead of `COTW-EN::` /
+  `COTW-DE::`, so filtered decks and saved searches on the old tags need the new ones.
 
 To skip the extras: open the Browser, click the deck *Countries of the World::Extras*
-(*Länder der Welt::Extras*), select all cards and choose *Suspend*.
+(*Länder der Welt::Extras*, *Kraje świata::Dodatkowe*, *Países do Mundo::Extras*), select all
+cards and choose *Suspend*.
 
 ## Borders
 
@@ -53,21 +58,26 @@ The deck makes no political statement; it follows the supplied data strictly.
 ## Building the decks
 
 The rest of this page is for development. A single country database generates the
-language-specific decks (EN, DE, …), which share one set of language-neutral media (flags,
+language-specific decks (en-US, de-CH, …), which share one set of language-neutral media (flags,
 maps, globe). Design in [`docs/DECISIONS.md`](docs/DECISIONS.md); a weekly Wikidata change
 check keeps the data current ([`docs/MONITORING.md`](docs/MONITORING.md)).
 
 ```bash
-.venv/bin/python -m cotw build-deck      # build/COTW-<LANG>.apkg per registered language, build/deck-preview.html
+.venv/bin/python -m cotw build-deck      # build/COTW-<LOCALE>.apkg per registered locale, build/deck-preview.html
 .venv/bin/python -m cotw build-deck --only RU,KR,ZA --out build/test   # test packages with a few entries
 ```
 
-- **`COTW-EN.apkg`**: deck *Countries of the World*, note type *COTW (EN)*, English only.
-- **`COTW-DE.apkg`**: deck *Länder der Welt*, note type *COTW (DE)*, German only.
+- **`COTW-EN-US.apkg`**: deck *Countries of the World*, note type *COTW (EN-US)*, English only.
+- **`COTW-DE-CH.apkg`**: deck *Länder der Welt*, note type *COTW (DE-CH)*, German (Swiss
+  spelling) only.
+- **`COTW-PL-PL.apkg`**: deck *Kraje świata*, note type *COTW (PL-PL)*, Polish only.
+- **`COTW-PT-BR.apkg`**: deck *Países do Mundo*, note type *COTW (PT-BR)*, Brazilian
+  Portuguese only.
 
-Every registered language gets its package: one module per language in
-`tools/cotw/languages/` holds its identities and texts, and `python -m cotw validate` requires
-its names for every entry. Card types, fields, tags, media, updates and how to add a language:
+Every registered language gets its package. A language is a BCP 47 locale (`de-CH`): one
+module per locale in `tools/cotw/languages/` holds its identities and texts, its sources are
+its entry in `data/locales.yaml`, and `python -m cotw validate` requires its names for every
+entry. Card types, fields, tags, media, updates and how to add a language:
 [`docs/DECK.md`](docs/DECK.md).
 
 ## Layout
@@ -83,12 +93,13 @@ its names for every entry. Card types, fields, tags, media, updates and how to a
 | `docs/data-changes.md` | Every deviation from the v3 spreadsheet |
 | `tools/cotw/` | Python tooling (`python -m cotw --help`) |
 | `tools/globe/` | The globe renderer (plain JS), built into `media/_cotw-globe.js` |
-| `tools/cotw/languages/` | One module per deck language: IDs, names, UI and help texts, region names, AnkiWeb link |
+| `tools/cotw/languages/` | One module per deck locale (`en_us.py`, `de_ch.py`, `pl_pl.py`, `pt_br.py`): identity, IDs, names, UI and help texts, region names |
 | `tools/cotw/deck/` | The deck build: note types, card templates, CSS, package writer ([`docs/DECK.md`](docs/DECK.md)) |
 | `tools/compare_packages.py` | Compares two builds of the packages (output unchanged by a code change?) |
-| `data/deck.yaml` | Deck settings: contact, public repository URL |
+| `data/deck.yaml` | Deck setting: public repository URL for information, contact and error reports |
 | `assets/ui/` | Font (IBM Plex Sans, OFL), Phosphor icons (MIT) and the help infographics the deck ships, with their license files |
 | `data/tags.txt` | The UN M49 region hierarchy for the `regions` field |
+| `data/locales.yaml` | Wanted languages and their sources: Wikipedia, Wikidata label languages, naming source ([`docs/TRANSLATING.md`](docs/TRANSLATING.md)) |
 
 ## Development
 
@@ -148,6 +159,7 @@ Details in [`docs/ATTRIBUTION.md`](docs/ATTRIBUTION.md).
 Corrections and new languages are welcome. How pull requests reach the main COTW repository
 and are credited: [`CONTRIBUTING.md`](CONTRIBUTING.md). Adding a language, the naming sources
 per language and the spelling rules: [`docs/TRANSLATING.md`](docs/TRANSLATING.md).
+For more information or contact, use this repository; report errors through its issue tracker.
 
 ## License
 

@@ -4,15 +4,21 @@ iso3: MOZ
 wikidata: Q1029
 status: sovereign
 name:
-  en: Mozambique
-  de: Mosambik
+  en-US: Mozambique
+  de-CH: Mosambik
+  pl-PL: Mozambik
+  pt-BR: Moçambique
 formal_name:
-  en: The Republic of Mozambique
-  de: Republik Mosambik
+  en-US: The Republic of Mozambique
+  de-CH: Republik Mosambik
+  pl-PL: Republika Mozambiku
+  pt-BR: República de Moçambique
 capitals:
 - name:
-    en: Maputo
-    de: Maputo
+    en-US: Maputo
+    de-CH: Maputo
+    pl-PL: Maputo
+    pt-BR: Maputo
   role: capital
   wikidata: Q3889
   lat: -25.96889
@@ -29,5 +35,7 @@ regions:
 - Sub-Saharan Africa
 - Eastern Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Mozambique
-  de: https://de.wikipedia.org/wiki/Mosambik
+  en-US: https://en.wikipedia.org/wiki/Mozambique
+  de-CH: https://de.wikipedia.org/wiki/Mosambik
+  pl-PL: https://pl.wikipedia.org/wiki/Mozambik
+  pt-BR: https://pt.wikipedia.org/wiki/Moçambique

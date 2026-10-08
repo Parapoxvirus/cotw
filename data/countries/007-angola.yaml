@@ -4,15 +4,21 @@ iso3: AGO
 wikidata: Q916
 status: sovereign
 name:
-  en: Angola
-  de: Angola
+  en-US: Angola
+  de-CH: Angola
+  pl-PL: Angola
+  pt-BR: Angola
 formal_name:
-  en: The Republic of Angola
-  de: Republik Angola
+  en-US: The Republic of Angola
+  de-CH: Republik Angola
+  pl-PL: Republika Angoli
+  pt-BR: República de Angola
 capitals:
 - name:
-    en: Luanda
-    de: Luanda
+    en-US: Luanda
+    de-CH: Luanda
+    pl-PL: Luanda
+    pt-BR: Luanda
   role: capital
   wikidata: Q3897
   lat: -8.83833
@@ -27,5 +33,7 @@ regions:
 - Sub-Saharan Africa
 - Middle Africa
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Angola
-  de: https://de.wikipedia.org/wiki/Angola
+  en-US: https://en.wikipedia.org/wiki/Angola
+  de-CH: https://de.wikipedia.org/wiki/Angola
+  pl-PL: https://pl.wikipedia.org/wiki/Angola
+  pt-BR: https://pt.wikipedia.org/wiki/Angola

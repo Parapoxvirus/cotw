@@ -4,15 +4,21 @@ iso3: MMR
 wikidata: Q836
 status: sovereign
 name:
-  en: Myanmar (Burma)
-  de: Myanmar (Birma, Burma)
+  en-US: Myanmar (Burma)
+  de-CH: Myanmar (Birma, Burma)
+  pl-PL: Mjanma / Birma
+  pt-BR: Myanmar
 formal_name:
-  en: The Republic of the Union of Myanmar
-  de: Republik der Union Myanmar
+  en-US: The Republic of the Union of Myanmar
+  de-CH: Republik der Union Myanmar
+  pl-PL: Republika Związku Mjanmy
+  pt-BR: República da União de Myanmar
 capitals:
 - name:
-    en: Naypyidaw
-    de: Naypyidaw
+    en-US: Naypyidaw
+    de-CH: Naypyidaw
+    pl-PL: Naypyidaw
+    pt-BR: Nay Pyi Taw
   role: capital
   wikidata: Q37400
   lat: 19.7475
@@ -27,5 +33,7 @@ regions:
 - Asia
 - South-eastern Asia
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Myanmar
-  de: https://de.wikipedia.org/wiki/Myanmar
+  en-US: https://en.wikipedia.org/wiki/Myanmar
+  de-CH: https://de.wikipedia.org/wiki/Myanmar
+  pl-PL: https://pl.wikipedia.org/wiki/Mjanma
+  pt-BR: https://pt.wikipedia.org/wiki/Myanmar

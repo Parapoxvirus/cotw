@@ -4,15 +4,21 @@ iso3: GBR
 wikidata: Q145
 status: sovereign
 name:
-  en: United Kingdom, The
-  de: Vereinigtes Königreich
+  en-US: United Kingdom, The
+  de-CH: Vereinigtes Königreich
+  pl-PL: Wielka Brytania / Zjednoczone Królestwo
+  pt-BR: Reino Unido
 formal_name:
-  en: The United Kingdom of Great Britain and Northern Ireland
-  de: Vereinigtes Königreich Grossbritannien und Nordirland
+  en-US: The United Kingdom of Great Britain and Northern Ireland
+  de-CH: Vereinigtes Königreich Grossbritannien und Nordirland
+  pl-PL: Zjednoczone Królestwo Wielkiej Brytanii i Irlandii Północnej
+  pt-BR: Reino Unido da Grã-Bretanha e Irlanda do Norte
 capitals:
 - name:
-    en: London
-    de: London
+    en-US: London
+    de-CH: London
+    pl-PL: Londyn
+    pt-BR: Londres
   role: capital
   wikidata: Q84
   lat: 51.50722
@@ -24,5 +30,7 @@ regions:
 - Europe
 - Northern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/United_Kingdom
-  de: https://de.wikipedia.org/wiki/Vereinigtes_Königreich
+  en-US: https://en.wikipedia.org/wiki/United_Kingdom
+  de-CH: https://de.wikipedia.org/wiki/Vereinigtes_Königreich
+  pl-PL: https://pl.wikipedia.org/wiki/Wielka_Brytania
+  pt-BR: https://pt.wikipedia.org/wiki/Reino_Unido

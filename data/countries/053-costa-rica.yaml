@@ -4,15 +4,21 @@ iso3: CRI
 wikidata: Q800
 status: sovereign
 name:
-  en: Costa Rica
-  de: Costa Rica
+  en-US: Costa Rica
+  de-CH: Costa Rica
+  pl-PL: Kostaryka
+  pt-BR: Costa Rica
 formal_name:
-  en: The Republic of Costa Rica
-  de: Republik Costa Rica
+  en-US: The Republic of Costa Rica
+  de-CH: Republik Costa Rica
+  pl-PL: Republika Kostaryki
+  pt-BR: República da Costa Rica
 capitals:
 - name:
-    en: San José
-    de: San José
+    en-US: San José
+    de-CH: San José
+    pl-PL: San José
+    pt-BR: São José
   role: capital
   wikidata: Q3070
   lat: 9.93274
@@ -25,5 +31,7 @@ regions:
 - Latin America and the Caribbean
 - Central America
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Costa_Rica
-  de: https://de.wikipedia.org/wiki/Costa_Rica
+  en-US: https://en.wikipedia.org/wiki/Costa_Rica
+  de-CH: https://de.wikipedia.org/wiki/Costa_Rica
+  pl-PL: https://pl.wikipedia.org/wiki/Kostaryka
+  pt-BR: https://pt.wikipedia.org/wiki/Costa_Rica

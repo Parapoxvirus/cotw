@@ -4,15 +4,20 @@ iso3: XKX
 wikidata: Q1246
 status: disputed
 name:
-  en: Kosovo
-  de: Kosovo
+  en-US: Kosovo
+  de-CH: Kosovo
+  pl-PL: Kosowo
+  pt-BR: Kosovo
 formal_name:
-  en: Republic of Kosovo
-  de: Republik Kosovo
+  en-US: Republic of Kosovo
+  de-CH: Republik Kosovo
+  pl-PL: Republika Kosowa
 capitals:
 - name:
-    en: Pristina
-    de: Pristina
+    en-US: Pristina
+    de-CH: Pristina
+    pl-PL: Prisztina
+    pt-BR: Pristina
   role: capital
   wikidata: Q25270
   lat: 42.66667
@@ -26,5 +31,7 @@ regions:
 - Europe
 - Southern Europe
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Kosovo
-  de: https://de.wikipedia.org/wiki/Kosovo
+  en-US: https://en.wikipedia.org/wiki/Kosovo
+  de-CH: https://de.wikipedia.org/wiki/Kosovo
+  pl-PL: https://pl.wikipedia.org/wiki/Kosowo
+  pt-BR: https://pt.wikipedia.org/wiki/Kosovo

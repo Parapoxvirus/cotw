@@ -4,15 +4,21 @@ iso3: URY
 wikidata: Q77
 status: sovereign
 name:
-  en: Uruguay
-  de: Uruguay
+  en-US: Uruguay
+  de-CH: Uruguay
+  pl-PL: Urugwaj
+  pt-BR: Uruguai
 formal_name:
-  en: The Oriental Republic of Uruguay
-  de: Republik Östlich des Uruguay
+  en-US: The Oriental Republic of Uruguay
+  de-CH: Republik Östlich des Uruguay
+  pl-PL: Wschodnia Republika Urugwaju
+  pt-BR: República Oriental do Uruguai
 capitals:
 - name:
-    en: Montevideo
-    de: Montevideo
+    en-US: Montevideo
+    de-CH: Montevideo
+    pl-PL: Montevideo
+    pt-BR: Montevidéu
   role: capital
   wikidata: Q1335
   lat: -34.90592
@@ -25,5 +31,7 @@ regions:
 - Latin America and the Caribbean
 - South America
 wikipedia:
-  en: https://en.wikipedia.org/wiki/Uruguay
-  de: https://de.wikipedia.org/wiki/Uruguay
+  en-US: https://en.wikipedia.org/wiki/Uruguay
+  de-CH: https://de.wikipedia.org/wiki/Uruguay
+  pl-PL: https://pl.wikipedia.org/wiki/Urugwaj
+  pt-BR: https://pt.wikipedia.org/wiki/Uruguai
